@@ -1,0 +1,14 @@
+Utilizando no tcc
+
+
+GitHub
+MikTex
+Sublime Text 2
+
+Análise
+RUP e UML
+
+Dev
+Playframework
+AngularJS ou Knockout
+PostgreSql
