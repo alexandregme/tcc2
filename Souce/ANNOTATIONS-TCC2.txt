@@ -17,3 +17,11 @@ PostgreSql
 Para utilização da documentação do sistema
 http://www.wthreex.com/rup/
 
+
+Fila para leitura
+http://jabref.sourceforge.net/
+
+
+
+comandos
+sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 2\sublime_text.exe\" \"%f:%l\""
