@@ -20,7 +20,9 @@ http://www.wthreex.com/rup/
 
 Fila para leitura
 http://jabref.sourceforge.net/
+http://economistry.com/2012/10/first-pdf-sublime-text-2-latex/
 
+https://github.com/SublimeText/LaTeXTools#readme
 
 
 comandos
