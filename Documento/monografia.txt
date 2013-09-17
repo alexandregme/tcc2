@@ -27,7 +27,9 @@ alocação
 
 2.1 - Alocação de horários
 
-Definição do problema, complexidade, exemplos de aplicação
+//Definição do problema, complexidade, exemplos de aplicação
+
+Sistema para alocação de salas da ufmg
 
 
 2.2 - Algoritmos/Heurísticas
@@ -38,6 +40,41 @@ como podiam ser usados para resolver o problema.
 
 3 - Metodologia
 
+GitHub
+MikTex
+Sublime Text 2
+
+Análise
+RUP e UML
+
+Dev
+Playframework
+
+Play is a high-productivity Java and Scala web application framework that integrates the components and APIs you need for modern web application development.
+
+Play is based on a lightweight, stateless, web-friendly architecture and features predictable and minimal resource consumption (CPU, memory, threads) for highly-scalable applications thanks to its reactive model, based on Iteratee IO.
+
+AngularJS
+
+Why AngularJS?
+
+HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
+
+Alternatives
+
+Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.
+
+Extensibility
+
+AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.
+
+Sobre o PostgreSQL
+
+O PostgreSQL é um poderoso sistema gerenciador de banco de dados objeto-relacional de código aberto.  Tem mais de 15 anos de desenvolvimento ativo e uma arquitetura que comprovadamente ganhou forte reputação de confiabilidade, integridade de dados e conformidade a padrões.  Roda em todos os grandes sistemas operacionais, incluindo GNU/Linux, Unix (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), e MS Windows. É totalmente compatível com ACID, tem suporte completo a chaves estrangeiras, junções (JOINs), visões, gatilhos e procedimentos armazenados (em múltiplas linguagens).  Inclui a maior parte dos tipos de dados do ISO SQL:1999, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, e TIMESTAMP.  Suporta também o armazenamento de objetos binários, incluindo figuras, sons ou vídeos.  Possui interfaces nativas de programação para C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e uma excepcional documentação.
+
+Como um banco de dados de nível corporativo, o PostgreSQL  possui funcionalidades sofisticadas como o controle de concorrência multiversionado (MVCC, em inglês), recuperação em um ponto no tempo (PITR em inglês), tablespaces, replicação assíncrona, transações agrupadas (savepoints), cópias de segurança a quente (online/hot backup), um sofisticado planejador de consultas (otimizador) e registrador de transações sequencial (WAL) para tolerância a falhas.  Suporta conjuntos de caracteres internacionais, codificação de caracteres multibyte, Unicode e sua ordenação por localização, sensibilidade a caixa (maiúsculas e minúsculas) e formatação.  É altamente escalável, tanto na quantidade enorme de dados que pode gerenciar, quanto no número de usuários concorrentes que pode acomodar. Existem sistemas ativos com o PostgreSQL em ambiente de produção que gerenciam mais de 4TB de dados.  Alguns limites do PostgreSQL estão incluídos na tabela abaixo.
+
+
 Escrever o que foi decidido usar e porque. Documentação do sistema,
 explicação das estruturas de dados e parâmetros do algoritmo
 
@@ -45,3 +82,14 @@ explicação das estruturas de dados e parâmetros do algoritmo
 Os outros capítulos são referentes ao que for implementado; ou seja,
 por enquanto creio que temos que nos preocupar com os acima. Veja que
 não é pouco trabalho, hein...
+
+
+
+Links para pesquisa dos artigos
+
+http://dl.acm.org/dl.cfm?CFID=246430573&CFTOKEN=96025967
+http://ieee.org.br/news-item/vantagens-de-ser-um-membro-ieee/
+http://scholar.google.com.br/
+
+Para utilização da documentação do sistema
+http://www.wthreex.com/rup/
