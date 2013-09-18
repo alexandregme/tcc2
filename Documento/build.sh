@@ -1,0 +1,13 @@
+rm Monografia.log
+rm Monografia.toc
+rm Monografia.aux
+rm Monografia.lof
+rm Monografia.lot
+rm Monografia.bbl
+rm Monografia.blg
+rm Monografia.siglax
+rm Monografia.symbolsx
+pdflatex Monografia
+bibtex Monografia
+pdflatex Monografia
+pdflatex Monografia

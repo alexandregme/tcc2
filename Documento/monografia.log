@@ -1,36 +1,32 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  18 SEP 2013 15:06
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  18 SEP 2013 16:45
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto,
+ estonian, farsi, finnish, french, galician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian, lith
+uanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntpuc.cls
+Document Class: abntpuc 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
@@ -38,197 +34,619 @@ Package: babel 2008/07/08 v3.8m The Babel package
 *
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
-\babel@savecnt=\count87
+\babel@savecnt=\count88
 \U@D=\dimen103
 )
-\l@canadian = a dialect from \language\l@american 
-\l@australian = a dialect from \language\l@british 
-\l@newzealand = a dialect from \language\l@british 
+\l@brazil = a dialect from \language\l@portuges 
+Package babel Info: Making " an active character on input line 145.
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks15
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\caption.sty
+Package: caption 2012/02/19 v3.2f Customizing captions (AR)
+
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\caption3.sty
+Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
+\captionmargin=\dimen112
+\captionmargin@=\dimen113
+\captionwidth=\dimen114
+\caption@indent=\dimen115
+\caption@parindent=\dimen116
+\caption@hangindent=\dimen117
+)
+\c@ContinuedFloat=\count92
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks16
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\tocloft.sty
+Package: tocloft 2003/09/26 v2.3c parameterised ToC, etc., typesetting
+
+
+Package tocloft Note: The document has chapter divisions.
+
+\cftparskip=\skip43
+\cftbeforetoctitleskip=\skip44
+\cftaftertoctitleskip=\skip45
+\cftbeforepartskip=\skip46
+\cftpartnumwidth=\skip47
+\cftpartindent=\skip48
+\cftbeforechapskip=\skip49
+\cftchapindent=\skip50
+\cftchapnumwidth=\skip51
+\cftbeforesecskip=\skip52
+\cftsecindent=\skip53
+\cftsecnumwidth=\skip54
+\cftbeforesubsecskip=\skip55
+\cftsubsecindent=\skip56
+\cftsubsecnumwidth=\skip57
+\cftbeforesubsubsecskip=\skip58
+\cftsubsubsecindent=\skip59
+\cftsubsubsecnumwidth=\skip60
+\cftbeforeparaskip=\skip61
+\cftparaindent=\skip62
+\cftparanumwidth=\skip63
+\cftbeforesubparaskip=\skip64
+\cftsubparaindent=\skip65
+\cftsubparanumwidth=\skip66
+\cftbeforeloftitleskip=\skip67
+\cftafterloftitleskip=\skip68
+\cftbeforefigskip=\skip69
+\cftfigindent=\skip70
+\cftfignumwidth=\skip71
+\c@lofdepth=\count93
+\c@lotdepth=\count94
+\cftbeforelottitleskip=\skip72
+\cftafterlottitleskip=\skip73
+\cftbeforetabskip=\skip74
+\cfttabindent=\skip75
+\cfttabnumwidth=\skip76
+)
+\c@acronym=\count95
+\cftbeforeacronymskip=\skip77
+\cftacronymindent=\skip78
+\cftacronymnumwidth=\skip79
+\c@loacdepth=\count96
+\cftbeforeloactitleskip=\skip80
+\cftafterloactitleskip=\skip81
+ (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntcite.sty (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+Package: abntcite 2003/10/13 v1.26 Chamadas de referencias no texto (NBR10520)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count97
+\calc@Bcount=\count98
+\calc@Adimen=\dimen118
+\calc@Bdimen=\dimen119
+\calc@Askip=\skip82
+\calc@Bskip=\skip83
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count99
+\calc@Cskip=\skip84
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntex-abrev.sty (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+Package: abntex-abrev 2003/10/13 v1.3 Abreviacoes
+
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\nbr10522-1988.def (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:1988)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntex-abrev-pt_BR.def
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+File: abntex-abrev-pt_BR.def 2003/10/13 v1.2 definicao de abntex-abrev, traducao de termos en_US/pt_BR
+)) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\nbr10520-2002.def (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002)
+)
+\minimumbiblabelwidth=\skip85
+\ABCIauxlen=\skip86
+\c@ABCIaux=\count100
+\c@ABCImax=\count101
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
+\biblabelsep=\skip87
+LaTeX Info: Redefining \newblock on input line 562.
+LaTeX Info: Redefining \cite on input line 589.
+\ABCItoken=\toks17
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count102
 ))
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
-LaTeX Font Info:    ... okay on input line 7.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 9.
-Missing character: There is no √ in font cmss10!
-Missing character: There is no © in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no © in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no © in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ° in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no µ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≠ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ¢ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no © in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≥ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≠ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≥ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ° in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ™ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ° in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ° in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≠ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≠ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≠ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no © in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ° in font cmss10!
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\fancyhdr.sty
+\fancy@headwidth=\skip88
+\f@ncyO@elh=\skip89
+\f@ncyO@erh=\skip90
+\f@ncyO@olh=\skip91
+\f@ncyO@orh=\skip92
+\f@ncyO@elf=\skip93
+\f@ncyO@erf=\skip94
+\f@ncyO@olf=\skip95
+\f@ncyO@orf=\skip96
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen122
+\scratchbox=\box26
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen123
+\MPnumerator=\count107
+\everyMPtoPDFconversion=\toks19
+)
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ç in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ≠ in font ptmb7t!
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Missing character: There is no ‚ in font cmss10!
-Missing character: There is no Ä in font cmss10!
-Missing character: There is no ô in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ¢ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ≠ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no © in font cmss10!
-
-Overfull \hbox (198.97318pt too wide) in paragraph at lines 104--109
-[]\OT1/cmss/m/n/10 https://repositorio.ufsc.br/handle/123456789/78608 http://re
-vistas.unicentro.br/index.php/ambiencia/article/viewArticle/123
+{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ç in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ≠ in font ptmb7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 58.
+ [2]
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ç in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ≠ in font ptmb7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+ [3]
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≥ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ° in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ° in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no © in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no £ in font ptmri7t!
+ [4]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+ [5]
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ∫ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ß in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no £ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ß in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no µ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ° in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ß in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no £ in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ≠ in font ptmri7t!
+ [6]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+ [7]
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ∫ in font ptmr7t!
+ [8] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.lof
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+)
+\tf@lof=\write3
+ [9]
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.lot
+Overfull \hbox (1.39204pt too wide) detected at line 3
+\OT1/ptm/m/n/12 TABELA  1  --   
  []
 
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+)
+\tf@lot=\write4
+ [10] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.loac)
+\tf@loac=\write5
 
-Overfull \hbox (167.00095pt too wide) in paragraph at lines 104--109
-\OT1/cmss/m/n/10 http://revistaseletronicas.pucrs.br/ojs/index.php/hifen/articl
-e/view/4594 http://repositorio.ufu.br/handle/123456789/225
+Underfull \hbox (badness 10000) in paragraph at lines 1--114
+
  []
 
-! Misplaced alignment tab character &.
-l.113 http://dl.acm.org/dl.cfm?CFID=246430573&
-                                              CFTOKEN=96025967
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+[11] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.toc
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no á in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no É in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ß in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no £ in font ptmb7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ß in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no £ in font ptmri7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no É in font ptmb7t!
+)
+\tf@toc=\write6
+ [12]
+Cap\'{\i }tulo 1.
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no á in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no É in font ptmb7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 143.
+<LogoPUC.jpg, id=42, 100.375pt x 103.38625pt>
+File: LogoPUC.jpg Graphic file (type jpg)
+ <use LogoPUC.jpg>
+Package pdftex.def Info: LogoPUC.jpg used on input line 152.
+(pdftex.def)             Requested size: 100.37474pt x 103.38599pt.
+ [13
 
+ <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/LogoPUC.jpg>]
+Cap\'{\i }tulo 2.
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ≠ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ß in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no £ in font ptmb7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no ß in font ptmri7t!
+Missing character: There is no √ in font ptmri7t!
+Missing character: There is no £ in font ptmri7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no ß in font ptmb7t!
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no £ in font ptmb7t!
+[14
 
-Overfull \hbox (52.05646pt too wide) in paragraph at lines 113--116
-[]\OT1/cmss/m/n/10 http://dl.acm.org/dl.cfm?CFID=246430573CFTOKEN=96025967 http
-://ieee.org.br/news-
- []
+]
+Cap\'{\i }tulo 3.
+Missing character: There is no √ in font ptmb7t!
+Missing character: There is no É in font ptmb7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ° in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no © in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no £ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no ß in font ptmr7t!
+Missing character: There is no √ in font ptmr7t!
+Missing character: There is no µ in font ptmr7t!
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [15
 
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no ß in font cmss10!
-Missing character: There is no √ in font cmss10!
-Missing character: There is no £ in font cmss10!
-[2] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
+]) [16
+
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
 Here is how much of TeX's memory you used:
- 545 strings out of 493921
- 6606 string characters out of 3144864
- 60512 words of memory out of 3000000
- 3899 multiletter control sequences out of 15000+200000
- 7895 words of font info for 28 fonts, out of 3000000 for 9000
+ 4031 strings out of 493921
+ 60208 string characters out of 3144864
+ 121030 words of memory out of 3000000
+ 7254 multiletter control sequences out of 15000+200000
+ 16695 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 24i,6n,18p,346b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on monografia.pdf (2 pages, 48305 bytes).
+ 43i,7n,43p,375b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (16 pages, 71714 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

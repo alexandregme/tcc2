@@ -1,124 +1,193 @@
-\documentclass{article}
-\usepackage[english]{babel}
-\renewcommand{\familydefault}{\sfdefault}
-\title{Title}
-\author{Your Name}
- 
+% Template Latex para trabalhos academicos da PUC Minas
+%
+% Pontificia Universidade Catolica de Minas Gerais (www.pucminas.br)
+% Instituto de Ciencas Exatas e Informatica (www.icei.pucminas.br)
+%
+% VERSAO: 0.2
+% DATA: Maio de 2012
+%
+% AUTORES:
+% Prof. Joao Paulo Domingos Silva
+% Rodrigo Caetano de Oliveira Rocha
+%
+% COLABORADORES:
+% Tamara Márcia Mendes
+% Harison Herman Silva
+%
+% REVISORES:
+
+\documentclass{abntpuc}
+
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+
 \begin{document}
- 
-\maketitle{}
- 
-\section{Introduction}
- 
-This is where you will write your content.
- 
+
+% --- Campos que formarao: capa, folha de rosto, folha de aprovacao  ---
+
+\curso{Bacharelado em Sistemas de informação}
+
+\autor{Nome do Aluno}
+
+\titulo{TÍTULO DO TRABALHO} % Caixa alta
+
+\subtitulo{Subtítulo do Trabalho} % Caixa baixa
+
+\cidade{Belo Horizonte}
+
+\ano{2012}
+
+\trabalho{Monografia} % Tipo de trabalho: Monografia, Dissertacao, Tese...
+
+\grau{Bacharel em Ciência da Computação} % Grau do trabalho: Bacharel em..., Mestre em..., Doutor em...
+
+\orientador{Nome do Orientador}
+
+\avaliadorA{Nome do Avaliador 1}
+
+\avaliadorB{Nome do Avaliador 2}
+
+\datacompleta{DD de MM de 2012} % Dia, mes e ano
+
+% --- CAPA ---
+
+\capa
+
+% --- FOLHA DE ROSTO ---
+
+\folharosto
+
+% --- FOLHA DE APROVACAO ---
+
+\folhaaprovacao
+
+% --- DEDICATORIA (elemento opcional) ---
+
+\dedicatoria
+{
+	\textit{Dedicatória: Página onde o autor presta homenagem a uma ou mais pessoas.
+	O layout desta página fica a critério do autor, mas o tipo e tamanho de letras são definidos pela ABNT.}
+}
+
+% --- AGRADECIMENTOS (elemento opcional) ---
+
+\agradecimentos
+{
+	Agradecimentos a pessoas que contribuíram para o desenvolvimento do trabalho.
+	Agradecimentos a pessoas que contribuíram para o desenvolvimento do trabalho.
+}
+
+% --- EPIGRAFE (elemento opcional) ---
+
+\epigrafe
+{
+	\textit{Epígrafe: Pensamentos retirados de um livro, uma música, um poema, normalmente relacionados ao tema do trabalho.
+	Deve ser elaborada conforme norma NBR 10520/2002. Apresentação de citações em documentos.
+	Se desejar, a epígrafe pode ser grafada em itálico.
+	Ao final do trabalho deve-se fazer a referência completa da publicação de onde a epígrafe foi retirada.}
+}
+
+% --- RESUMO ---
+
+\resumo
+{
+	Apresentação concisa dos pontos relevantes do texto. Deve ressaltar o objetivo, o método, resultados e conclusões do trabalho. Deve-se utilizar o verbo na voz ativa ou terceira pessoa do singular. O resumo não deve conter citações ou indicações bibliográficas.
+} % Resumo
+{
+	Ao final do resumo deve-se elaborar palavras-chave representativas do conteúdo do trabalho, separadas entre si por um ponto.
+} % Palavras-chave
+
+% --- ABSTRACT ---
+
+\abstract
+{
+	Versão do resumo em idioma de divulgação internacional. Deve ser a tradução literal do resumo em português e apresentar palavras- chave no mesmo idioma, logo abaixo do texto, separadas entre si por um ponto.
+} % Abstract
+{
+	O resumo em língua estrangeira também deve conter palavras-chave representativas do conteúdo do trabalho, separadas entre si por um ponto.
+} % Keywords
+
+% --- LISTA DE FIGURAS, LISTA DE TABELAS, SUMARIO ---
+
+\listafiguras
+\listatabelas
+\listasiglas {
+   \sigla{S1}{Sigla 1}
+   \sigla{S2}{Sigla 2}
+   \sigla{S3}{Sigla 3}
+}
+\sumario
+
+% --- TEXTO ---
+
+\capitulo{INTRODUÇÃO}
+
+\iniciocapitulo
+A introdução deve conter a natureza do trabalho, justificativa, objetivos, o tema proposto e outros elementos para situar o trabalho.\par
+
+% Exemplo de tabela:
+
+\begin{table}[!htb]
+	\caption[Descrição na Lista de Tabelas]{Legenda da tabela}
+	\centering
+	\label{tab:tabela}
+	\begin{tabular}{c|c|c}
+		\hline
+		Coluna 1 & Coluna 2 & Coluna 3 \\
+		\hline
+ 		Célula 1 & Célula 2 & Célula 3 \\
+		Célula 4 & Célula 5 & Célula 6 \\
+		Célula 7 & Célula 8 & Célula 9 \\
+		\hline
+	\end{tabular}
+	\\ \textbf{\footnotesize Fonte: Fonte da tabela}
+\end{table}
+
+% Exemplo de figura:
+
+\begin{figure}[!htb]
+   \caption[Descrição na Lista de Figuras]{Legenda da figura}
+   \label{fig:figura1}
+   \centering
+   \includegraphics{LogoPUC.jpg}
+   \\ \textbf{\footnotesize Fonte: Fonte da figura}
+\end{figure}
 
 
+\capitulo{DESENVOLVIMENTO}
 
-tem um material bem interessante nessaspdflatextexify  monografias (gostei
-principalmente do modo como foi feita a 3a, do Leonardo Ciscon). Note
-que todas elas partem pela abordagem do algoritmo genético e tratam de
-problemas grandes, então isso é algo com o que devemos nos preocupar:
-qual o tamanho do problema do seu pai e se essa abordagem é válida, ou
-se o sistema precisa de algo diferehttp://jabref.sourceforge.net/nte.
+\iniciocapitulo
+Compreende a revisão da literatura ou estado da arte, metodologia e exposição da pesquisa.\par
 
-Ainda baseado no que eu vi delas, acho que podemos ratexify scunhar uma
-estrutura assim:
+A Revisão da Literatura compõe-se da evolução do tema e ideias de diferentes autores sobre o assunto. Deve conter citações textuais ou livres, com indicação dos autores conforme norma NBR 10520/2002.\par
 
+O Estado da Arte segundo definição no dicionário Aurélio é o nível de desenvolvimento atingido (por uma ciência, uma técnica) na atualidade, ou seja, refere-se ao quadro atual de uma área, suas tendências, potencialidades e excelência no assunto.\par
 
-1 - Introdução
-Contexto: falar do timetable problem, falar de soluções conhecidas e
-falar do seu problema específico de alocação de salas
-Motivação/objetivos: explorar o porque da importância do projeto e
-quais os objetivos (resultados) pretende-se atingir
-Organização da monografia: é aquela parte formal onde descreve-se a
-estrutura dos próximos capítulos
+A Metodologia deve apresentar o método adotado na entrevista, questionário, observação, experimentação na população pesquisada na características e quantificação.\par
 
-2 - Referencial teórico
+A Exposição da Pesquisa é a análise dos fatos apresentados, ou seja, os dados obtidos, as estatísticas, comparações com outros estudos e outras observações.\par
 
-Aqui precisamos definir qual será a abordagem adotada, mas de toda
-forma creio que você já pode começar escrevendo sobre o problema da
-alocação
+\secao{Seção}
 
+Exemplo de citação \cite{knuth68}.
 
-2.1 - Alocação de horários
+Exemplo de citação \cite{knuth69}.
 
-//Definição do problema, complexidade, exemplos de aplicação
+Exemplo de citação \cite{knuth73}.
 
-Sistema para alocação de salas da ufmg
+\subsecao{Subseção}
 
+\subsubsecao{Subsubseção}
 
-2.2 - Algoritmos/Heurísticas
+\capitulo{CONCLUSÃO}
 
-Se a abordagem for heurística, deveríamos abordar alguns algoritmos
-aqui, como o genético, "simulated annealing", tabu search, explicando
-como podiam ser usados para resolver o problema.
+\iniciocapitulo
+Discussão dos resultados obtidos na pesquisa, onde se verificam as observações pessoais do autor. Poderá também apresentar sugestões de novas linhas de estudo. A conclusão deve estar de acordo com os objetivos do trabalho. A conclusão não deve apresentar citações ou interpretações de outros autores.
 
-3 - Metodologia
+% --- REFERENCIAS ---
 
-GitHub
-MikTex
-Sublime Text 2
+% Para as referencias funcionarem, e preciso baixar e instalar o pacote ABNTEX.
 
-Análise
-RUP e UML
-
-Dev
-Playframework
-
-Play is a high-productivity Java and Scala web application framework that integrates the components and APIs you need for modern web application development.
-
-Play is based on a lightweight, stateless, web-friendly architecture and features predictable and minimal resource consumption (CPU, memory, threads) for highly-scalable applications thanks to its reactive model, based on Iteratee IO.
-
-AngularJS
-
-Why AngularJS?
-
-HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop.
-
-Alternatives
-
-Other frameworks deal with HTML’s shortcomings by either abstracting away HTML, CSS, and/or JavaScript or by providing an imperative way for manipulating the DOM. Neither of these address the root problem that HTML was not designed for dynamic views.
-
-Extensibility
-
-AngularJS is a toolset for building the framework most suited to your application development. It is fully extensible and works well with other libraries. Every feature can be modified or replaced to suit your unique development workflow and feature needs. Read on to find out how.
-
-Sobre o PostgreSQL
-
-
-
-Escrever o que foi decidido usar e porque. Documentação do sistema,
-explicação das estruturas de dados e parâmetros do algoritmo
-
-
-Os outros capítulos são referentes ao que for implementado; ou seja,
-por enquanto creio que temos que nos preocupar com os acima. Veja que
-não é pouco trabalho, hein...
-
-
-
-
-Artigos
-
-https://repositorio.ufsc.br/handle/123456789/78608
-http://revistas.unicentro.br/index.php/ambiencia/article/viewArticle/123
-http://revistaseletronicas.pucrs.br/ojs/index.php/hifen/article/view/4594
-http://repositorio.ufu.br/handle/123456789/225
-http://sbmac.org.br/tema/seer/index.php/tema/article/view/84
-
-
-Links para pesquisa dos artigos
-
-http://dl.acm.org/dl.cfm?CFID=246430573&CFTOKEN=96025967
-http://ieee.org.br/news-item/vantagens-de-ser-um-membro-ieee/
-http://scholar.google.com.br/
-
-Para utilização da documentação do sistema
-http://www.wthreex.com/rup/
-
-
-
-
+\referencias{Referencias}
 
 \end{document}
