@@ -27,3 +27,24 @@ https://github.com/SublimeText/LaTeXTools#readme
 
 comandos
 sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 2\sublime_text.exe\" \"%f:%l\""
+
+
+
+Artigos
+
+https://repositorio.ufsc.br/handle/123456789/78608
+http://revistas.unicentro.br/index.php/ambiencia/article/viewArticle/123
+http://revistaseletronicas.pucrs.br/ojs/index.php/hifen/article/view/4594
+http://repositorio.ufu.br/handle/123456789/225
+http://sbmac.org.br/tema/seer/index.php/tema/article/view/84
+
+
+Links para pesquisa dos artigos
+
+http://dl.acm.org/dl.cfm?CFID=246430573&CFTOKEN=96025967
+http://ieee.org.br/news-item/vantagens-de-ser-um-membro-ieee/
+http://scholar.google.com.br/
+
+Para utilização da documentação do sistema
+http://www.wthreex.com/rup/
+
