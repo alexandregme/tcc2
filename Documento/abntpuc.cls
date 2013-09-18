@@ -11,7 +11,7 @@
 % Rodrigo Caetano de Oliveira Rocha
 %
 % COLABORADORES:
-% Tamara Márcia Mendes
+% Tamara MÃ¡rcia Mendes
 % Harison Herman Silva
 %
 % REVISORES:
@@ -27,7 +27,7 @@
 \usepackage[brazil]{babel}
 
 %\usepackage[applemac]{inputenc} % Usar no Mac!
-%\usepackage[latin1]{inputenc} % Usar no PC!
+\usepackage[utf8]{inputenc} % Usar no PC!
 
 
 % --- Dimensoes da pagina ---
@@ -62,7 +62,7 @@
 }
 
 
-% -- Enumeração de Listas -- 
+% -- EnumeraÃ§Ã£o de Listas -- 
 \usepackage{enumerate}
 %\begin{enumerate}[a)]
 %	\item
