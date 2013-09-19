@@ -1,0 +1,52 @@
+Utilizando no tcc
+
+
+GitHub
+MikTex
+Sublime Text 2
+
+Análise
+RUP e UML
+
+Dev
+Playframework
+AngularJS ou Knockout
+PostgreSql
+
+
+Para utilização da documentação do sistema
+http://www.wthreex.com/rup/
+
+
+Fila para leitura
+http://jabref.sourceforge.net/
+http://economistry.com/2012/10/first-pdf-sublime-text-2-latex/
+
+https://github.com/SublimeText/LaTeXTools#readme
+
+
+comandos
+sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 2\sublime_text.exe\" \"%f:%l\""
+
+texify -b -p --tex-option=\"--synctex=1\" --tex-option=\"--max-print-line=200\" --tex-option=\"-file-line-error\" --run-viewer --viewer-option=\"-reuse-instance\" E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.tex E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.tex
+
+
+
+Artigos
+
+https://repositorio.ufsc.br/handle/123456789/78608
+http://revistas.unicentro.br/index.php/ambiencia/article/viewArticle/123
+http://revistaseletronicas.pucrs.br/ojs/index.php/hifen/article/view/4594
+http://repositorio.ufu.br/handle/123456789/225
+http://sbmac.org.br/tema/seer/index.php/tema/article/view/84
+
+
+Links para pesquisa dos artigos
+
+http://dl.acm.org/dl.cfm?CFID=246430573&CFTOKEN=96025967
+http://ieee.org.br/news-item/vantagens-de-ser-um-membro-ieee/
+http://scholar.google.com.br/
+
+Para utilização da documentação do sistema
+http://www.wthreex.com/rup/
+
