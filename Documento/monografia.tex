@@ -1,193 +1,106 @@
-% Template Latex para trabalhos academicos da PUC Minas
-%
-% Pontificia Universidade Catolica de Minas Gerais (www.pucminas.br)
-% Instituto de Ciencas Exatas e Informatica (www.icei.pucminas.br)
-%
-% VERSAO: 0.2
-% DATA: Maio de 2012
-%
-% AUTORES:
-% Prof. Joao Paulo Domingos Silva
-% Rodrigo Caetano de Oliveira Rocha
-%
-% COLABORADORES:
-% Tamara Márcia Mendes
-% Harison Herman Silva
-%
-% REVISORES:
-
 \documentclass{abntpuc}
 
 \usepackage[pdftex]{graphicx}
+
 \usepackage{fancyhdr}
 
 \begin{document}
 
-% --- Campos que formarao: capa, folha de rosto, folha de aprovacao  ---
+\include{apresentacao}
 
-\curso{Bacharelado em Sistemas de Informação}
+\include{introducao}
 
-\autor{Alexandre Gonzaga Mendes}
+\include{revisao}
 
-\titulo{DEFINIR O NOME} % Caixa alta
+%\include{metodologia}
+\capitulo{METODOLOGIA}
 
-\subtitulo{Subtítulo do Trabalho} % Caixa baixa
+\secao{Modelo Tratado}
 
-\cidade{Belo Horizonte}
+\secao{Proposta de Solução}
 
-\ano{2013}
+Será desenvolvido um sistema que otimiza a alocação das salas em até 90\% facilizando a vida do gerente.
 
-\trabalho{Monografia} % Tipo de trabalho: Monografia, Dissertacao, Tese...
+\secao{O Sistema Desenvolvido}
 
-\grau{Bacharel em Sistemas de Informação} % Grau do trabalho: Bacharel em..., Mestre em..., Doutor em...
+\subsecao{Linguagens e Ferramentas Utilizadas}
 
-\orientador{João Caram Adriano}
+\subsubsecao{Linguagens de Programação e Frameworks}
 
-\avaliadorA{Nome do Avaliador 1}
+	%-----JAVASCRIPT
+	JavaScript é uma linguagem de programação interpretada2 . Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o usuário sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo do documento exibido.
+	É atualmente a principal linguagem para programação client-side em navegadores web. Foi concebida para ser uma linguagem script com orientação a objetos baseada em protótipos, tipagem fraca e dinâmica e funções de primeira classe. Possui suporte à programação funcional e apresenta recursos como fechamentos e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++.
+	É baseada em ECMAScript padronizada pela Ecma international nas especificações ECMA-2623 e ISO/IEC 16262.
 
-\avaliadorB{Nome do Avaliador 2}
-
-\datacompleta{DD de MM de 2013} % Dia, mes e ano
-
-% --- CAPA ---
-
-\capa
-
-% --- FOLHA DE ROSTO ---
-
-\folharosto
-
-% --- FOLHA DE APROVACAO ---
-
-\folhaaprovacao
-
-% --- DEDICATORIA (elemento opcional) ---
-
-\dedicatoria
-{
-	\textit{Dedicatória: Página onde o autor presta homenagem a uma ou mais pessoas.
-	O layout desta página fica a critério do autor, mas o tipo e tamanho de letras são definidos pela ABNT.}
-}
-
-% --- AGRADECIMENTOS (elemento opcional) ---
-
-\agradecimentos
-{
-	Agradecimentos a pessoas que contribuíram para o desenvolvimento do trabalho.
-	Agradecimentos a pessoas que contribuíram para o desenvolvimento do trabalho.
-}
-
-% --- EPIGRAFE (elemento opcional) ---
-
-\epigrafe
-{
-	\textit{Epígrafe: Pensamentos retirados de um livro, uma música, um poema, normalmente relacionados ao tema do trabalho.
-	Deve ser elaborada conforme norma NBR 10520/2002. Apresentação de citações em documentos.
-	Se desejar, a epígrafe pode ser grafada em itálico.
-	Ao final do trabalho deve-se fazer a referência completa da publicação de onde a epígrafe foi retirada.}
-}
-
-% --- RESUMO ---
-
-\resumo
-{
-	Apresentação concisa dos pontos relevantes do texto. Deve ressaltar o objetivo, o método, resultados e conclusões do trabalho. Deve-se utilizar o verbo na voz ativa ou terceira pessoa do singular. O resumo não deve conter citações ou indicações bibliográficas.
-} % Resumo
-{
-	Ao final do resumo deve-se elaborar palavras-chave representativas do conteúdo do trabalho, separadas entre si por um ponto.
-} % Palavras-chave
-
-% --- ABSTRACT ---
-
-\abstract
-{
-	Versão do resumo em idioma de divulgação internacional. Deve ser a tradução literal do resumo em português e apresentar palavras- chave no mesmo idioma, logo abaixo do texto, separadas entre si por um ponto.
-} % Abstract
-{
-	O resumo em língua estrangeira também deve conter palavras-chave representativas do conteúdo do trabalho, separadas entre si por um ponto.
-} % Keywords
-
-% --- LISTA DE FIGURAS, LISTA DE TABELAS, SUMARIO ---
-
-\listafiguras
-\listatabelas
-\listasiglas {
-   \sigla{S1}{Sigla 1}
-   \sigla{S2}{Sigla 2}
-   \sigla{S3}{Sigla 3}
-}
-\sumario
-
-% --- TEXTO ---
-
-\capitulo{INTRODUÇÃO}
-
-\iniciocapitulo
-A introdução deve conter a natureza do trabalho, justificativa, objetivos, o tema proposto e outros elementos para situar o trabalho.\par
-
-% Exemplo de tabela:
-
-\begin{table}[!htb]
-	\caption[Descrição na Lista de Tabelas]{Legenda da tabela}
-	\centering
-	\label{tab:tabela}
-	\begin{tabular}{c|c|c}
-		\hline
-		Coluna 1 & Coluna 2 & Coluna 3 \\
-		\hline
- 		Célula 1 & Célula 2 & Célula 3 \\
-		Célula 4 & Célula 5 & Célula 6 \\
-		Célula 7 & Célula 8 & Célula 9 \\
-		\hline
-	\end{tabular}
-	\\ \textbf{\footnotesize Fonte: Fonte da tabela}
-\end{table}
-
-% Exemplo de figura:
-
-\begin{figure}[!htb]
-   \caption[Descrição na Lista de Figuras]{Legenda da figura}
-   \label{fig:figura1}
-   \centering
-   \includegraphics{LogoPUC.jpg}
-   \\ \textbf{\footnotesize Fonte: Fonte da figura}
-\end{figure}
+	%-----JAVA
+	Java é uma linguagem de programação orientada a objeto desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Diferentemente das linguagens convencionais, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é executado por uma máquina virtual. A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não sua única linguagem.
 
 
-\capitulo{DESENVOLVIMENTO}
+	%-----Play!
+	The Play! Framework is a modern Java (and Scala) web application open-source framework that provides a clean alternative to bloated Enterprise Java stacks. Play has two version Play 1.x (Java & Scala) and Play 2.x (Java & Scala).
+	Play is a high-productivity Java and Scala web application framework that integrates the components and APIs you need for modern web application development.
+	Play is based on a lightweight, stateless, web-friendly architecture and features predictable and minimal resource consumption (CPU, memory, threads) for highly-scalable applications thanks to its reactive model, based on Iteratee IO.\par
 
-\iniciocapitulo
-Compreende a revisão da literatura ou estado da arte, metodologia e exposição da pesquisa.\par
+	%-----Angular 
+	AngularJS is an open-source JavaScript framework, maintained by Google, that assists with running single-page applications. Its goal is to augment browser-based applications with model–view–controller (MVC) capability, in an effort to make both development and testing easier.
+	The library reads in HTML that contains additional custom tag attributes; it then obeys the directives in those custom attributes, and binds input or output parts of the page to a model represented by standard JavaScript variables. The values of those JavaScript variables can be manually set, or retrieved from static or dynamic JSON resources.
 
-A Revisão da Literatura compõe-se da evolução do tema e ideias de diferentes autores sobre o assunto. Deve conter citações textuais ou livres, com indicação dos autores conforme norma NBR 10520/2002.\par
+\subsubsecao{Sistema Gerenciador de Banco de Dados}
 
-O Estado da Arte segundo definição no dicionário Aurélio é o nível de desenvolvimento atingido (por uma ciência, uma técnica) na atualidade, ou seja, refere-se ao quadro atual de uma área, suas tendências, potencialidades e excelência no assunto.\par
+Postrgreesql
 
-A Metodologia deve apresentar o método adotado na entrevista, questionário, observação, experimentação na população pesquisada na características e quantificação.\par
+\subsubsecao{Ambiente de Desenvolvimento}
 
-A Exposição da Pesquisa é a análise dos fatos apresentados, ou seja, os dados obtidos, as estatísticas, comparações com outros estudos e outras observações.\par
+IDE eclipse, sublimeText, Google Chrome.
 
-\secao{Seção}
+\subsecao{Modegem do Sistema}
 
-Exemplo de citação \cite{knuth68}.
+\subsubsecao{Diagrama de Caso de Uso x}
 
-Exemplo de citação \cite{knuth69}.
+\subsubsecao{Diagrama de Caso de Uso y}
 
-Exemplo de citação \cite{knuth73}.
+\subsubsecao{Diagrama de Caso de Uso z}
 
-\subsecao{Subseção}
+\subsubsecao{Diagrama de Atividade x}
 
-\subsubsecao{Subsubseção}
+\subsubsecao{Diagrama de Classe x}
 
-\capitulo{CONCLUSÃO}
+\subsubsecao{Diagrama de Classe y}
 
-\iniciocapitulo
-Discussão dos resultados obtidos na pesquisa, onde se verificam as observações pessoais do autor. Poderá também apresentar sugestões de novas linhas de estudo. A conclusão deve estar de acordo com os objetivos do trabalho. A conclusão não deve apresentar citações ou interpretações de outros autores.
+\subsubsecao{Diagrama de Classe z}
 
-% --- REFERENCIAS ---
+\subsubsecao{Modelagem de Dados}
 
-% Para as referencias funcionarem, e preciso baixar e instalar o pacote ABNTEX.
+\subsecao{Interface}
+
+Twitter bootstrap.\par
+
+\subsecao{Funcionalidades}
+
+1.\par
+2.\par
+3.\par
+
+\subsecao{Dados de Entrada}
+
+Informados pelo gerente.
+
+\subsecao{Funcionamento}
+
+Processa os dados
+
+\subsecao{Dados de Saída}
+
+Grade de horarios completa
+
+\subsecao{Considerações Finais do Capítulo}
+
+Considerações finais do capitulo
+
+\include{conclusao}
 
 \referencias{Referencias}
+
+\include{apendices}
 
 \end{document}
