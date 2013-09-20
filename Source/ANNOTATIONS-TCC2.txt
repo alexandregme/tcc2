@@ -50,3 +50,7 @@ http://scholar.google.com.br/
 Para utilização da documentação do sistema
 http://www.wthreex.com/rup/
 
+LATEX
+
+Imagens
+http://latexbr.blogspot.com.br/2011/07/inserindo-figuras-no-latex.html
