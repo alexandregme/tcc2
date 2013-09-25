@@ -25,9 +25,9 @@ public class Curso extends GenericModel {
 	public Integer id;
 
 	@Column(name = "nome_curso")
-	public String nomeCurso;
+	public String nome;
 
 	@Column(name = "texto_descricao")
-	public String textoDescricao;
+	public String descricao;
 
 }

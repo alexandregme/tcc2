@@ -1,0 +1,17 @@
+Curso
+
+
+
+URL
+
+http://localhost:9000/curso/save
+http://localhost:9000/curso/list
+
+http://localhost:9000/curso/edit
+http://localhost:9000/curso/delete
+
+
+{
+	nome:"curso",
+	descricao:"descricaoCurso"
+}

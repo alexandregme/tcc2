@@ -5,6 +5,14 @@
 # Home page
 GET     /                                       Application.index
 
+POST	/curso/save							CursoController.save
+POST	/curso/edit							CursoController.edit
+POST	/curso/delete						CursoController.delete
+GET 	/curso/list							CursoController.list
+
+
+
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
