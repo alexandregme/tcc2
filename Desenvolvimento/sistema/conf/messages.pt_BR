@@ -1,0 +1,33 @@
+#
+# Documento de Mensagens estáticas do sistema
+# ICMS Ecológico
+#
+EXCEPTION=Ocorreu uma exceção no sistema. Informe ao responsável.
+EXCEPTION_DETAIL=Ocorreu uma exceção no sistema. O seguinte erro foi reportado: %s.
+INSERT_OK=Dados de %s inseridos com sucesso.
+INSERT_ERROR=Erro ao inserir os dados de %s. Informe o código %s ao responsável para identificar o erro.
+UPDATE_OK=Dados de %s alterados com sucesso.
+UPDATE_ERROR=Erro ao alterar os dados de %s. Informe o código %s ao responsável para identificar o erro.
+UPLOAD_ERROR_EXTENSION = É necessário o envio de um arquivo do tipo "%s"
+DELETE_OK=Dados de %s excluídos com sucesso.
+DELETE_ERROR=Erro ao excluir os dados de %s. Informe o código %s ao responsável para identificar o erro.
+LIST_OK=Consulta de lista de %s executada com sucesso.
+LIST_ERROR=Erro ao consultar lista de %s. Informe o código %s ao responsável para identificar o erro.
+LIST_EMPTY=A consulta de %s foi executada mas não retornou nenhum resultado.
+ENTITY_OK=Consulta de %s executada com sucesso.
+ENTITY_EMPTY=A consulta ao registro de %s não encontrou nenhum resultado.
+ENTITY_EXISTING=O registro de %s já está cadastrado no sistema.
+PARAMETER_INVALID=O parâmetro %s não pode ser vazio ou nulo.
+PARAMETERS_INVALID=Os parâmetros %s não podem ser vazios ou nulos.
+UPLOAD_NULL=Ao fazer um upload, o arquivo deve ser informado.
+UPLOAD_EMPTY=O arquivo enviado não possui conteúdo.
+UPLOAD_ERROR=Falha ao fazer o envio do arquivo. Informe o código %s ao responsável para identificar o erro.
+UPLOAD_OK=Arquivo %s enviado com sucesso.
+LOGIN_OK = Login realizado com sucesso
+LOGIN_ERROR = Erro ao tentar logar. Informe o código %s ao responsável para identificar o erro.
+LOGIN_INVALID = Login de usúario e/ou senha inválidos 
+FALHA_PERMISSAO = Você não possui a seguinte permissão: %s
+SEM_PERMISSAO = Você não possui permissões, entre em contato com o administrador do sistema
+PARCELA_ID_NULL = A planilha deve conter todos os valores da váriavel parcela preenchidos, erro linha %s
+NUMERO_PARCELAS_DIFERENTES = O numéro de parcelas informados não corresponde ao total de parcelas na planilha que é igual a: %s
+GEOM_IVALID = Tipo de Geometria invalido %s 
