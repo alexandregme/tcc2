@@ -5,19 +5,4 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
-\bibitem[Knuth 1968]{knuth68}
-\abntrefinfo{Knuth}{KNUTH}{1968}
-{KNUTH, D.~E. \emph{The Art of Computer Programming, Volume I: Fundamental
-  Algorithms}. [S.l.]: Addison-Wesley, 1968.}
-
-\bibitem[Knuth 1969]{knuth69}
-\abntrefinfo{Knuth}{KNUTH}{1969}
-{KNUTH, D.~E. \emph{The Art of Computer Programming, Volume II: Seminumerical
-  Algorithms}. [S.l.]: Addison-Wesley, 1969.}
-
-\bibitem[Knuth 1973]{knuth73}
-\abntrefinfo{Knuth}{KNUTH}{1973}
-{KNUTH, D.~E. \emph{The Art of Computer Programming, Volume III: Sorting and
-  Searching}. [S.l.]: Addison-Wesley, 1973.}
-
 \end{thebibliography}
