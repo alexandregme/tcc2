@@ -24,13 +24,10 @@ http://economistry.com/2012/10/first-pdf-sublime-text-2-latex/
 
 https://github.com/SublimeText/LaTeXTools#readme
 
-
 comandos
 sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 2\sublime_text.exe\" \"%f:%l\""
 
 texify -b -p --tex-option=\"--synctex=1\" --tex-option=\"--max-print-line=200\" --tex-option=\"-file-line-error\" --run-viewer --viewer-option=\"-reuse-instance\" E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.tex E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.tex
-
-
 
 Artigos
 
