@@ -1,34 +1,41 @@
 \select@language {brazil}
 \contentsline {chapter}{\numberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{13}
-\contentsline {section}{\numberline {1.1}Justificativas e Objetivos}{13}
-\contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{14}
-\contentsline {chapter}{\numberline {2}REVIS\IeC {\~A}O LITERARIA}{15}
-\contentsline {section}{\numberline {2.1}Descric\IeC {\~a}o do problema}{15}
-\contentsline {section}{\numberline {2.2}Complexidade do problema}{15}
-\contentsline {section}{\numberline {2.3}M\IeC {\'e}todos}{15}
-\contentsline {chapter}{\numberline {3}METODOLOGIA}{16}
-\contentsline {section}{\numberline {3.1}Modelo Tratado}{16}
-\contentsline {section}{\numberline {3.2}Proposta de Solu\IeC {\c c}\IeC {\~a}o}{16}
-\contentsline {section}{\numberline {3.3}O Sistema Desenvolvido}{16}
-\contentsline {subsection}{\numberline {3.3.1}Linguagens e Ferramentas Utilizadas}{16}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Linguagens de Programa\IeC {\c c}\IeC {\~a}o e Frameworks}{16}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Sistema Gerenciador de Banco de Dados}{17}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Ambiente de Desenvolvimento}{18}
-\contentsline {subsection}{\numberline {3.3.2}Modegem do Sistema}{18}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Diagrama de Caso de Uso: Sistema}{18}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Diagrama de Atividade: Aloca\IeC {\c c}\IeC {\~a}o}{19}
-\contentsline {subsubsection}{\numberline {3.3.2.3}Diagrama de Classe das controllers}{19}
-\contentsline {subsubsection}{\numberline {3.3.2.4}Diagrama de Classe das models}{19}
-\contentsline {subsubsection}{\numberline {3.3.2.5}Diagrama de Classe das views}{19}
-\contentsline {subsubsection}{\numberline {3.3.2.6}Modelagem de Dados}{19}
-\contentsline {subsection}{\numberline {3.3.3}Interface}{20}
-\contentsline {subsection}{\numberline {3.3.4}Funcionalidades}{20}
-\contentsline {subsection}{\numberline {3.3.5}Dados de Entrada}{21}
-\contentsline {subsection}{\numberline {3.3.6}Aloca\IeC {\c c}\IeC {\~a}o}{21}
-\contentsline {subsection}{\numberline {3.3.7}Relat\IeC {\'o}rios}{21}
-\contentsline {subsection}{\numberline {3.3.8}Considera\IeC {\c c}\IeC {\~o}es Finais do Cap\IeC {\'\i }tulo}{21}
-\contentsline {chapter}{\numberline {4}RESULTADOS E DISCUSS\IeC {\~O}ES}{22}
-\contentsline {chapter}{\numberline {5}CONCLUS\IeC {\~A}O}{23}
-\contentsline {section}{\numberline {5.1}Trabalhos futuros}{23}
-\contentsline {chapter}{REFER\^ENCIAS}{24}
-\contentsline {chapter}{\numberline {6}AP\IeC {\^E}NDICES}{25}
+\contentsline {section}{\numberline {1.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{13}
+\contentsline {section}{\numberline {1.2}Objetivos}{13}
+\contentsline {subsection}{\numberline {1.2.1}Objetivos Gerais}{13}
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{14}
+\contentsline {section}{\numberline {1.3}Justificativa}{14}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{14}
+\contentsline {chapter}{\numberline {2}REFERENCIAL TE\IeC {\'O}RICO}{15}
+\contentsline {section}{\numberline {2.1}Heur\IeC {\'\i }stica e Otimiza\IeC {\c c}\IeC {\~a}o Combinat\IeC {\'o}ria}{15}
+\contentsline {subsection}{\numberline {2.1.1}cadad1}{17}
+\contentsline {subsection}{\numberline {2.1.2}cadad1}{17}
+\contentsline {subsection}{\numberline {2.1.3}cadad1}{17}
+\contentsline {section}{\numberline {2.2}TimeTable}{17}
+\contentsline {section}{\numberline {2.3}Trabalhos Relacionados}{17}
+\contentsline {chapter}{\numberline {3}METODOLOGIA}{18}
+\contentsline {section}{\numberline {3.1}Ferramentas Utilizadas}{18}
+\contentsline {chapter}{\numberline {4}SISTEMA DESENVOLVIDO}{20}
+\contentsline {section}{\numberline {4.1}Modelo Tratado}{20}
+\contentsline {section}{\numberline {4.2}Proposta de Solu\IeC {\c c}\IeC {\~a}o}{20}
+\contentsline {section}{\numberline {4.3}O Sistema Desenvolvido}{20}
+\contentsline {subsection}{\numberline {4.3.1}Linguagens e Ferramentas Utilizadas}{20}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Sistema Gerenciador de Banco de Dados}{20}
+\contentsline {subsubsection}{\numberline {4.3.1.2}Ambiente de Desenvolvimento}{21}
+\contentsline {subsection}{\numberline {4.3.2}Modegem do Sistema}{21}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Diagrama de Caso de Uso: Sistema}{21}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Diagrama de Atividade: Aloca\IeC {\c c}\IeC {\~a}o}{22}
+\contentsline {subsubsection}{\numberline {4.3.2.3}Diagrama de Classe das controllers}{22}
+\contentsline {subsubsection}{\numberline {4.3.2.4}Diagrama de Classe das models}{22}
+\contentsline {subsubsection}{\numberline {4.3.2.5}Diagrama de Classe das views}{22}
+\contentsline {subsubsection}{\numberline {4.3.2.6}Modelagem de Dados}{22}
+\contentsline {subsection}{\numberline {4.3.3}Interface}{23}
+\contentsline {subsection}{\numberline {4.3.4}Funcionalidades}{23}
+\contentsline {subsection}{\numberline {4.3.5}Dados de Entrada}{24}
+\contentsline {subsection}{\numberline {4.3.6}Aloca\IeC {\c c}\IeC {\~a}o}{24}
+\contentsline {subsection}{\numberline {4.3.7}Relat\IeC {\'o}rios}{24}
+\contentsline {subsection}{\numberline {4.3.8}Considera\IeC {\c c}\IeC {\~o}es Finais do Cap\IeC {\'\i }tulo}{24}
+\contentsline {chapter}{\numberline {5}RESULTADOS OBTIDOS}{25}
+\contentsline {chapter}{\numberline {6}CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}{26}
+\contentsline {section}{\numberline {6.1}Trabalhos futuros}{26}
+\contentsline {chapter}{REFER\^ENCIAS}{27}

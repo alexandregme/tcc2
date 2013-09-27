@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  24 SEP 2013 13:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  26 SEP 2013 12:45
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex
@@ -1116,21 +1116,6 @@ Type  H <return>  for immediate help
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-Missing character: There is no J in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no O in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no j in font nullfont!
@@ -1140,13 +1125,35 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no v in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:12: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 11--12
+Missing character: There is no O in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 11--13
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:13: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:15: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1565,38 +1572,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 13--13
+Overfull \hbox (20.0pt too wide) in paragraph at lines 15--15
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:13: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no [ in font nullfont!
-\citation{knuth68}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:13: Undefined control sequence
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `knuth68' on page  undefined on input line 13.
-
-Missing character: There is no ] in font nullfont!
-
-Overfull \hbox (25.43053pt too wide) in paragraph at lines 13--14
-[][] 
- []
-
-
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:15: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:17: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1631,12 +1612,12 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no : in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 15--15
+Overfull \hbox (20.0pt too wide) in paragraph at lines 17--17
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:17: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:19: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1670,12 +1651,12 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 17--17
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--19
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:18: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:20: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1748,12 +1729,12 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 18--18
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--20
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:19: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:21: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1785,12 +1766,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 19--19
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--21
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:20: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:22: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1836,11 +1817,11 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 20--20
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--22
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:22: Undefined control sequence
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:24: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1848,7 +1829,48 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:22: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:24: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no O in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no Ã in font nullfont!
+Missing character: There is no ­ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--25
+[]
+ []
+
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:26: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:26: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1879,12 +1901,12 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no o in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 22--23
+Overfull \hbox (20.0pt too wide) in paragraph at lines 26--27
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:24: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:28: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -1999,12 +2021,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 24--24
+Overfull \hbox (20.0pt too wide) in paragraph at lines 28--28
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:26: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:30: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -2183,12 +2205,12 @@ Missing character: There is no - in font nullfont!
 Missing character: There is no - in font nullfont!
 Missing character: There is no - in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 26--26
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--30
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:28: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:32: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -2295,12 +2317,12 @@ Missing character: There is no £ in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 28--28
+Overfull \hbox (20.0pt too wide) in paragraph at lines 32--32
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:30: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:34: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -2442,12 +2464,12 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 30--30
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--34
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:32: LaTeX Error: Missing \begin{document}.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/introducao.tex:36: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -2473,27 +2495,3 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no b in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no Ã in font nullfont!
-Missing character: There is no £ in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no m in font n

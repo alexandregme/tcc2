@@ -135,7 +135,7 @@ CREATE TABLE colegiado (
 CREATE TABLE periodo (
   id_periodo SERIAL NOT NULL,
   id_colegiado INTEGER NOT NULL,
-  nome_descricao  CHARACTER varying(255),
+  texto_descricao  CHARACTER varying(255),
   flag_optativo NUMERIC(1,0),
 CONSTRAINT pk_periodo PRIMARY KEY (id_periodo)
 );

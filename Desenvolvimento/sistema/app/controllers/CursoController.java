@@ -1,8 +1,6 @@
 package controllers;
 
-import java.util.Hashtable;
 import java.util.List;
-import java.util.Map;
 
 import models.Curso;
 import play.mvc.Controller;
@@ -15,7 +13,6 @@ import utils.RequestSerializer;
  */
 public class CursoController extends Controller {
 
-	final static String nameController = "CursoController";
 	final static String complement = "curso";
 	private static Protocol protocol = null;
 
@@ -78,6 +75,7 @@ public class CursoController extends Controller {
 	 * Deleta um curso no banco
 	 */
 	public static void delete() {
+
 		try {
 
 			Curso c = RequestSerializer.get(request.body, Curso.class);
@@ -101,7 +99,7 @@ public class CursoController extends Controller {
 	}
 
 	/**
-	 * lista todos os registros de curso no banco
+	 * Lista todos os registros de curso do banco
 	 */
 	public static void list() {
 

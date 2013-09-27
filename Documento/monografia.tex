@@ -6,18 +6,66 @@
 
 \begin{document}
 
-\include{apresentacao}
+%\include{apresentacao}
+%\include{introducao}
+%\include{referencial}
 
-\include{introducao}
+\capitulo{REFERENCIAL TEÓRICO}
 
-\include{revisao}
 
-\include{metodologia}
 
-\include{conclusao}
+\secao{Metaheurísticas}
 
-\referencias{referencias}
+	falar sobre otimização combinatoria e metaheuristica
 
-\include{apendices}
+\subsecao{Algoritmos genéticos}
+
+\subsecao{Busca Tabu}
+
+		A metaheurística BT foi inicialmente desenvolvida por Glover (1986) como uma proposta de
+	solução para problemas de programação inteira. A partir de então, o autor formalizou esta
+	técnica e publicou uma série de trabalhos contendo diversas aplicações da mesma. A
+	metaheurística BT utiliza uma lista contendo o histórico da evolução do processo de busca, de
+	modo a evitar ciclagem; incorpora uma estratégia de balanceamento entre os movimentos
+	aceitos, rejeitados e aspirados; e adota procedimentos de diversificação e intensificação para o
+	processo de busca. A cada iteração, a solução atual (S) muda para outra que seja sua vizinha no espaço de busca
+	(S’). Partindo de uma solução inicial
+		S , um algoritmo BT explora, a cada iteração, um
+	subconjunto V da vizinhança  ) (S N da solução corrente S. O membro S’ de V com melhor
+	valor nessa região segundo a função f(.) torna-se a nova solução corrente mesmo que S’ seja
+	pior que S isto é, que f(S’) > f(S) para um problema de minimização (SOUZA, 2000).
+	A proibição de determinados movimentos tem a intenção de impedir que a solução retorne ao
+	ponto de mínimo local nas T iterações seguintes. O não veto de determinados movimentos
+	pode fazer com que o algoritmo entre em loop. Um artifício criado com o intuito de não
+	“autorizar” a ocorrência destes movimentos é a Lista Tabu. Esta possui uma lista de tamanho t
+	contendo as soluções visitadas durante as ultimas T iterações seqüenciadas na forma Fifo (first
+	in first out).
+	Souza (2000) e White et al. (2004) ressaltam a existência de um mecanismo, relacionado com
+	a Lista Tabu, que anula o status tabu de um movimento, denominado função de aspiração. Se
+	um movimento pode proporcionar uma melhora considerável da função objetivo, então o
+	status tabu é abandonado e a solução resultante é aceita como potencial vizinho.
+
+\subsecao{Algoritmo da colônia de formigas}	
+	
+
+\secao{TimeTable}
+
+\secao{Trabalhos Relacionados}
+
+
+trabalho do marinho que usa tabu.
+trabalho da silvia que usa algoritimo genetico.
+
+
+%\include{metodologia}
+
+%\include{sistema}
+
+%\include{conclusao}
+
+%\referencias{referencias}
+
+%\include{apendices}
 
 \end{document}
+
