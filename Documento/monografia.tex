@@ -12,17 +12,103 @@
 
 \capitulo{REFERENCIAL TEÓRICO}
 
+\secao{TimeTable}
+
+Falar sobre PAS
+1- Problema de Programação de Horários em Escolas (School Timetabling Problem) ou Problema Professor-Turma (Class-Teacher):
+2 - O Problema de Alocação de Horários (Course Timetabling Problem) ou Programação de Horários em Universidade (University Timetabling) 
+
+O Problema de Programação de Horários pode ser, por sua vez, classificados em
+dois tipos, conforme Souza (2000), dependendo de necessitarem otimizar ou não uma
+função objetivo:
+1-Problemas de otimização: neste tipo encontram-se os problemas nos quais, dentre
+todos os quadros de horários viáveis (satisfazem certo conjunto de restrições essenciais),
+deseja-se encontrar um quadro, chamado ótimo que minimize uma função objetivo, a qual
+incorpora as restrições ditas não-essenciais.
+2-Problemas de viabilidade: esta classificação refere-se a todos os problemas nos
+quais se requer encontrar um quadro de horário viável, ou seja, um quadro de horário que
+satisfaça a todas as restrições impostas.
 
 
-\secao{Metaheurísticas}
 
-	falar sobre otimização combinatoria e metaheuristica
+3- Problema de programação de horários de exames (Examination time-timebling problem).
+
+
+Conforme Souza (2000) cita Even (Even et. Al. 1976), o problema de geração de
+horários é NP-Completo em sua versão de decisão. A intratabilidade pode ser mostrada
+pela redução do problema de coloração de grafos em um problema de geração de horários.
+
+Conforme Souza (2000) a maioria das técnicas antigas usadas na automação do
+Problema de Geração de Horários era baseada no uso de heurísticas construtivas que, de
+um modo geral, adotavam um preenchimento gradual do quadro de horários. Ainda
+conforme Souza (2000), no segundo momento, os pesquisadores começaram a usar
+métodos gerais para resolver o problema, tais como coloração de grafos, programação
+inteira e fluxo em grafo. Mais recentemente, apareceram soluções baseadas em novas
+técnicas de pesquisa, como Recozimento Simulado, Algoritmos Genéticos, Busca Tabu,
+Satisfação de Restrições e inclusive a combinação destas técnicas.
+
+Conforme Silva (2005) cita Bardadym (1996), o Problema de Alocação de Salas
+pode ser tratado como um Problema de Geração de Horários, mais precisamente como um
+Problema de Programação de Cursos Universitários (Course Timetabling), ou como um
+problema derivado deste (Classroom Assigment). Na variante Classroom Assigment
+considera-se que as aulas dos cursos já têm seus horários de início e de término definidos
+sendo que o problema se resume a alocar as aulas às salas respeitando os horários destas
+aulas e outras restrições.
+O PAS é um exemplo de problema de Otimização Combinatória e por se tratar de
+um problema NP-Difícil tem sido tratado, atualmente, por técnicas heurísticas e meta-
+heurísticas.
+
+
+Complexidade do problema
+
+O problema de programação de horários é NP-Difícil, conforme Even et al. (1976).
+Cooper & Kingston (1996) demonstram para uma série de problemas de horários
+que aparecem comumente na prática estarem todos na classe NP-Difícil. Entretanto,
+algumas instâncias do problema podem ser resolvidas em tempo polinomial. Este é o caso
+do problema de programação de horários em escolas, em sua versão básica, quando turmas
+e professores estão sempre disponíveis. A maioria dos casos resolvíveis é, no entanto,
+muito especial e não incluem as restrições mais comuns.
+Em vista disso, justifica-se a abordagem do problema de programação de horários
+por métodos heurísticos, os quais, não garantem a existência de uma solução viável,
+mesmo que essa exista, e tampouco sua otimalidade. Para o problema de geração de
+horários, conceitua-se como solução viável aquele horário que pode ser utilizado pela
+escola, não necessariamente sendo o mais adequado possível. Isto é, existem restrições de
+inviabilidade e restrições de qualidade, sendo que a satisfação apenas das primeiras
+restrições já qualifica um horário como viável.
+
+
+\secao{Definição de Heurística}
+
+	Falar sobre euristica
+
+	Como dito anteriormente em Problemas de Otimização Combinatória cujo universo
+de dados é grande, existe um número muito extenso de combinações, tornando inviável a
+análise de todas possíveis soluções, visto que o tempo computacional para uma análise
+completa seria demasiadamente longo. Neste sentido, têm-se as heurísticas, também
+conhecidas como algoritmos heurísticos, que são métodos que compõem uma gama
+ralativamente nova de soluções para Problemas de Otimização Combinatória.\par
+O termo heurística é derivado do grego heuriskein, que significa descobrir ou achar.
+Mas o significado da palavra em pesquisa operacional
+1 vai um pouco além da raiz
+etimológica. De um modo geral, o sentido dado ao termo heurística, refere-se a um método
+de busca de soluções em que não existe qualquer garantia de sucesso.\par
+De acordo com P APADIMITRIOU  & S TEIGLITZ (1982), as heurísticas são quaisquer
+métodos de aproximação 2 sem uma garantia formal de seu desempenho. Sendo
+necessárias para implementação de problemas NP Difícil − , caso deseje-se resolver tais
+problemas em um tempo computacional razoável (E VANS  & M INIEKA , 1978).
+Para N ORONHA (2000), o sucesso de uma heurística depende de sua capacidade de:	\cite{glover}
+
+
 
 \subsecao{Algoritmos genéticos}
 
+citar os brother do algoritimo genetico
+
 \subsecao{Busca Tabu}
 
-		A metaheurística BT foi inicialmente desenvolvida por Glover (1986) como uma proposta de
+	\cite{glover}
+
+	A metaheurística BT foi inicialmente desenvolvida por Glover (1986) como uma proposta de
 	solução para problemas de programação inteira. A partir de então, o autor formalizou esta
 	técnica e publicou uma série de trabalhos contendo diversas aplicações da mesma. A
 	metaheurística BT utiliza uma lista contendo o histórico da evolução do processo de busca, de
@@ -48,24 +134,26 @@
 \subsecao{Algoritmo da colônia de formigas}	
 	
 
-\secao{TimeTable}
-
 \secao{Trabalhos Relacionados}
 
 
 trabalho do marinho que usa tabu.
-trabalho da silvia que usa algoritimo genetico.
 
+trabalho da silvia que usa Recozimento Simulado (Simulated Annealing)
 
-%\include{metodologia}
+trabalho da leonardo que usa Algoritmos Genéticos (AG)
 
-%\include{sistema}
+falar porque o trabalho do cara se assemelha ao meu trabalho.
 
-%\include{conclusao}
+\include{metodologia}
 
-%\referencias{referencias}
+\include{sistema}
 
-%\include{apendices}
+\include{conclusao}
+
+\referencias{referencias}
+
+\include{apendices}
 
 \end{document}
 

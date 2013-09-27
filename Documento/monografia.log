@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  26 SEP 2013 20:02
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  27 SEP 2013 16:22
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,7 +431,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -445,7 +446,8 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 7.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -500,23 +502,184 @@ Package caption Info: End \AtBeginDocument code.
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:65: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
-] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
+]
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:95: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:97: Package inputenc Error: Unicode char \u8:− not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:98: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Citation `glover' on page 2 undefined on input line 99.
+
+
+LaTeX Warning: Citation `glover' on page 2 undefined on input line 109.
+
+[2] [3] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: Citation `alterar' on page 4 undefined on input line 32.
+
+
+LaTeX Warning: Citation `alterar' on page 4 undefined on input line 35.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:39: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:39: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Citation `alterar' on page 4 undefined on input line 41.
+
+
+LaTeX Warning: Citation `alterar' on page 4 undefined on input line 45.
+
+) [4
+
+
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex
+Cap\'{\i }tulo 3.
+
+LaTeX Warning: Citation `alterar' on page 5 undefined on input line 19.
+
+
+LaTeX Warning: Citation `alterar' on page 5 undefined on input line 24.
+
+
+LaTeX Warning: Citation `alterar' on page 5 undefined on input line 30.
+
+
+LaTeX Warning: Citation `alterar' on page 5 undefined on input line 32.
+
+[5
+
+
+
+]
+
+LaTeX Warning: Citation `alterar' on page 6 undefined on input line 43.
+
+
+LaTeX Warning: Citation `alterar' on page 6 undefined on input line 45.
+
+<diagramaCasoUso.png, id=20, 502.12593pt x 236.38312pt>
+File: diagramaCasoUso.png Graphic file (type png)
+ <use diagramaCasoUso.png>
+Package pdftex.def Info: diagramaCasoUso.png used on input line 52.
+(pdftex.def)             Requested size: 251.06235pt x 118.19127pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+ <modelagemBanco.png, id=21, 401.24907pt x 301.125pt>
+File: modelagemBanco.png Graphic file (type png)
+ <use modelagemBanco.png>
+Package pdftex.def Info: modelagemBanco.png used on input line 86.
+(pdftex.def)             Requested size: 401.24808pt x 301.12425pt.
+ [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/diagramaCasoUso.png>] [7 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/modelagemBanco.png>]) [8] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.
+tex
+Cap\'{\i }tulo 4.
+[9
+
+
+
+]
+Cap\'{\i }tulo 5.
+) [10
+
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 8.
+
+) [11
+
+
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.tex
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.tex:1: LaTeX Error: Can be used only in preamble.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.tex:2: LaTeX Error: \appendixtocname undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.tex:3: LaTeX Error: \appendixpagename undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+) [12
+
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.aux))
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4167 strings out of 493921
- 60811 string characters out of 3144864
- 128506 words of memory out of 3000000
- 7402 multiletter control sequences out of 15000+200000
- 9362 words of font info for 22 fonts, out of 3000000 for 9000
+ 4234 strings out of 493921
+ 62878 string characters out of 3144864
+ 132956 words of memory out of 3000000
+ 7434 multiletter control sequences out of 15000+200000
+ 10988 words of font info for 24 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,4n,43p,299b,151s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (1 page, 44243 bytes).
+ 43i,6n,43p,579b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (12 pages, 129360 bytes).
 PDF statistics:
- 19 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
