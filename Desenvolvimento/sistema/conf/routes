@@ -9,48 +9,56 @@ POST	/curso/save				CursoController.save
 POST	/curso/edit				CursoController.edit
 POST	/curso/delete			CursoController.delete
 GET 	/curso/list				CursoController.list
+GET 	/cruso/view				CursoController.view
 
 #Colegiado
 POST	/colegiado/save			ColegiadoController.save
 POST	/colegiado/edit			ColegiadoController.edit
 POST	/colegiado/delete		ColegiadoController.delete
 GET 	/colegiado/list			ColegiadoController.list
+GET 	/colegiado/view			ColegiadoController.view
 
 #Periodo
 POST	/periodo/save			PeriodoController.save
 POST	/periodo/edit			PeriodoController.edit
 POST	/periodo/delete			PeriodoController.delete
 GET 	/periodo/list			PeriodoController.list
+GET 	/periodo/view			PeriodoController.view
 
 #Disciplina
 POST	/disciplina/save		DisciplinaController.save
 POST	/disciplina/edit		DisciplinaController.edit
 POST	/disciplina/delete		DisciplinaController.delete
 GET 	/disciplina/list		DisciplinaController.list
+GET 	/disciplina/view		DisciplinaController.view
 
 #Predio
 POST	/predio/save			PredioController.save
 POST	/predio/edit			PredioController.edit
 POST	/predio/delete			PredioController.delete
 GET 	/predio/list			PredioController.list
+GET 	/predio/view			PredioController.view
 
 #Sala
 POST	/sala/save				SalaController.save
 POST	/sala/edit				SalaController.edit
 POST	/sala/delete			SalaController.delete
 GET 	/sala/list				SalaController.list
+GET 	/sala/view				SalaController.view
 
 #Turno
 POST	/turno/save				TurnoController.save
 POST	/turno/edit				TurnoController.edit
 POST	/turno/delete			TurnoController.delete
 GET 	/turno/list				TurnoController.list
+GET 	/turno/view				TurnoController.view
 
 #Horario
 POST	/horario/save			HorarioController.save
 POST	/horario/edit			HorarioController.edit
 POST	/horario/delete			HorarioController.delete
 GET 	/horario/list			HorarioController.list
+GET 	/horario/view			HorarioController.view
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

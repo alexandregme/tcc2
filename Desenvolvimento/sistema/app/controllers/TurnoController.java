@@ -127,7 +127,7 @@ public class TurnoController extends Controller {
 	 * Renderiza a interface de turno
 	 */
 	public static void view() {
-		// renderTemplate("usuario.html", parameters);
+		renderTemplate("turno.html");
 	}
 
 }

@@ -131,7 +131,7 @@ public class PeriodoController extends Controller {
 	 * Renderiza a interface de periodo
 	 */
 	public static void view() {
-		// renderTemplate("usuario.html", parameters);
+		renderTemplate("periodo.html");
 	}
 
 }

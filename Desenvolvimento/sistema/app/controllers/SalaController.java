@@ -137,7 +137,7 @@ public class SalaController extends Controller {
 	 * Renderiza a interface de sala
 	 */
 	public static void view() {
-		// renderTemplate("usuario.html", parameters);
+		renderTemplate("sala.html");
 	}
 
 }

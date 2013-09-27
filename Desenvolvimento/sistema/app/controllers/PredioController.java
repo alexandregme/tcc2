@@ -129,7 +129,7 @@ public class PredioController extends Controller {
 	 * Renderiza a interface de predio
 	 */
 	public static void view() {
-		// renderTemplate("usuario.html", parameters);
+		renderTemplate("predio.html");
 	}
 
 }

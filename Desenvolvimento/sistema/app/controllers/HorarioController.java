@@ -135,7 +135,7 @@ public class HorarioController extends Controller {
 	 * Renderiza a interface de horario
 	 */
 	public static void view() {
-		// renderTemplate("usuario.html", parameters);
+		renderTemplate("horario.html");
 	}
 
 	/**

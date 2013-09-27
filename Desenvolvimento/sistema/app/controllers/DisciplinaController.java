@@ -140,7 +140,7 @@ public class DisciplinaController extends Controller {
 	 * Renderiza a interface de disciplina
 	 */
 	public static void view() {
-		//renderTemplate("usuario.html", parameters);
+		renderTemplate("disciplina.html");
 	}
 
 }

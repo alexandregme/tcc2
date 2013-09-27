@@ -11,11 +11,11 @@ public class Application extends Controller {
 
 	public static void index() {
 
-		HorarioController.configurarHorarios();
+		//HorarioController.configurarHorarios();
 
-		//renderTemplate("index.html", parameters);
+		renderTemplate("index.html");
 
-		render();
+		//render();
 
 	}
 

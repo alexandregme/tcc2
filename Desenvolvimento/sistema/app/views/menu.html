@@ -1,0 +1,58 @@
+				<div class="btn-group" style="text-align: left">
+					<a href="@{Application.index}">
+						<button class="btn">
+							<i class="icon-home icon-black"></i>
+							<span>Página Inicial</span>
+						</button>
+					</a>
+				</div>
+				
+				<div class="btn-group" style="text-align: left">
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-pencil icon-black"></i>
+						<span>Controle Interno</span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+
+						<li><a href="@{PredioController.view}">Controle de Prédios</a></li>
+						<li><a href="@{SalaController.view}">Controle de Salas</a></li>
+						<li><a href="@{TurnoController.view}">Controle de Turnos</a></li>
+						<li><a href="@{HorarioController.view}">Controle de Horários</a></li>
+
+					</ul>
+				</div>
+
+				<div class="btn-group" style="text-align: left">
+					<button class="btn dropdown-toggle" data-toggle="dropdown">
+						<i class="icon-pencil icon-black"></i>
+						<span>Controle Externo</span>
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="@{CursoController.view}">Controle de Cursos</a></li>
+						<li><a href="@{ColegiadoController.view}">Controle de Colegiados</a></li>
+						<li><a href="@{PeriodoController.view}">Controle de Períodos</a></li>
+						<li><a href="@{DisciplinaController.view}">Controle de Disciplinas</a></li>
+
+					</ul>
+				</div>
+
+				<div class="btn-group" style="text-align: left">
+					<a href="#">
+						<button class="btn" onclick="window.alert('Função não implementada.')">
+							<i class="icon-file icon-black"></i>
+							<span>Relatórios</span>
+						</button>
+					</a>
+				</div>
+
+				
+				<div class="btn-group" style="text-align: left">
+					<a href="#">
+						<button class="btn" onclick="window.alert('Função não implementada.')">
+							<i class="icon-globe icon-black"></i>
+							<span>Configurações do Algoritmo</span>
+						</button>
+					</a>
+				</div>

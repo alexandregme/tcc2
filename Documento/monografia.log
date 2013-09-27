@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  27 SEP 2013 16:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  27 SEP 2013 18:48
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,8 +431,9 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux)
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.aux))
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -446,8 +447,7 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 7.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -498,23 +498,62 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-)
-Cap\'{\i }tulo 1.
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apresentacao.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:65: Misplaced alignment tab character &
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+ [1
 
-[1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
+ [2] [3] [4] [5] [6]
+Overfull \hbox (4.6042pt too wide) in paragraph at lines 73--74
+\OT1/ptm/m/n/12 Palavras-chave:  Ao fi-nal do re-sumo deve-se ela-bo-rar palavras-chave re-pre-sen-ta-ti-vas do conte[]udo
+ []
+
+[7] [8] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.lof)
+\tf@lof=\write3
+ [9] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.lot)
+\tf@lot=\write4
+ [10] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.loac)
+\tf@loac=\write5
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--89
+
+ []
+
+[11]) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\introducao.tex (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.toc)
+\tf@toc=\write6
+ [12
 
 
 ]
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:95: Misplaced alignment tab character &
+Cap\'{\i }tulo 1.
+[13
+
+] [14]) [15] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex)
+Cap\'{\i }tulo 2.
+[16
+
+
+
+
+]
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:67: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[17]
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:97: Misplaced alignment tab character &
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -523,7 +562,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:97: Package inputenc Error: Unicode char \u8:− not set up for use with LaTeX.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:99: Package inputenc Error: Unicode char \u8:− not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help
@@ -531,7 +570,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:98: Misplaced alignment tab character &
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:100: Misplaced alignment tab character &
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -540,97 +579,98 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-LaTeX Warning: Citation `glover' on page 2 undefined on input line 99.
+LaTeX Warning: Citation `glover' on page 18 undefined on input line 101.
 
 
-LaTeX Warning: Citation `glover' on page 2 undefined on input line 109.
+LaTeX Warning: Citation `glover' on page 18 undefined on input line 111.
 
-[2] [3] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex
-Cap\'{\i }tulo 2.
-
-LaTeX Warning: Citation `alterar' on page 4 undefined on input line 32.
-
-
-LaTeX Warning: Citation `alterar' on page 4 undefined on input line 35.
-
-E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:39: Misplaced alignment tab character &
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:39: Misplaced alignment tab character &
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-LaTeX Warning: Citation `alterar' on page 4 undefined on input line 41.
-
-
-LaTeX Warning: Citation `alterar' on page 4 undefined on input line 45.
-
-) [4
-
-
-] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex
+[18] [19] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex
 Cap\'{\i }tulo 3.
 
-LaTeX Warning: Citation `alterar' on page 5 undefined on input line 19.
+LaTeX Warning: Citation `alterar' on page 20 undefined on input line 32.
 
 
-LaTeX Warning: Citation `alterar' on page 5 undefined on input line 24.
+LaTeX Warning: Citation `alterar' on page 20 undefined on input line 35.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:39: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:39: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[20
 
 
-LaTeX Warning: Citation `alterar' on page 5 undefined on input line 30.
+]
+
+LaTeX Warning: Citation `alterar' on page 21 undefined on input line 41.
 
 
-LaTeX Warning: Citation `alterar' on page 5 undefined on input line 32.
+LaTeX Warning: Citation `alterar' on page 21 undefined on input line 45.
 
-[5
+) [21] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex
+Cap\'{\i }tulo 4.
+
+LaTeX Warning: Citation `alterar' on page 22 undefined on input line 19.
+
+
+LaTeX Warning: Citation `alterar' on page 22 undefined on input line 24.
+
+[22
 
 
 
 ]
 
-LaTeX Warning: Citation `alterar' on page 6 undefined on input line 43.
+LaTeX Warning: Citation `alterar' on page 23 undefined on input line 30.
 
 
-LaTeX Warning: Citation `alterar' on page 6 undefined on input line 45.
+LaTeX Warning: Citation `alterar' on page 23 undefined on input line 32.
 
-<diagramaCasoUso.png, id=20, 502.12593pt x 236.38312pt>
+
+LaTeX Warning: Citation `alterar' on page 23 undefined on input line 43.
+
+
+LaTeX Warning: Citation `alterar' on page 23 undefined on input line 45.
+
+<diagramaCasoUso.png, id=74, 502.12593pt x 236.38312pt>
 File: diagramaCasoUso.png Graphic file (type png)
  <use diagramaCasoUso.png>
 Package pdftex.def Info: diagramaCasoUso.png used on input line 52.
 (pdftex.def)             Requested size: 251.06235pt x 118.19127pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
- <modelagemBanco.png, id=21, 401.24907pt x 301.125pt>
+ [23] <modelagemBanco.png, id=78, 401.24907pt x 301.125pt>
 File: modelagemBanco.png Graphic file (type png)
  <use modelagemBanco.png>
 Package pdftex.def Info: modelagemBanco.png used on input line 86.
 (pdftex.def)             Requested size: 401.24808pt x 301.12425pt.
- [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/diagramaCasoUso.png>] [7 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/modelagemBanco.png>]) [8] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.
-tex
-Cap\'{\i }tulo 4.
-[9
+ [24 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/diagramaCasoUso.png>] [25 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/modelagemBanco.png>]) [26] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclus
+ao.tex
+Cap\'{\i }tulo 5.
+[27
 
 
 
 ]
-Cap\'{\i }tulo 5.
-) [10
+Cap\'{\i }tulo 6.
+) [28
 
 ] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 8.
 
-) [11
+) [29
 
 
 ] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.tex
@@ -659,27 +699,31 @@ Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-) [12
+) [30
 
-] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux)
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apresentacao.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\introducao.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux)
 (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apendices.aux))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4234 strings out of 493921
- 62878 string characters out of 3144864
- 132956 words of memory out of 3000000
- 7434 multiletter control sequences out of 15000+200000
- 10988 words of font info for 24 fonts, out of 3000000 for 9000
+ 4289 strings out of 493921
+ 64492 string characters out of 3144864
+ 131314 words of memory out of 3000000
+ 7452 multiletter control sequences out of 15000+200000
+ 15617 words of font info for 35 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,6n,43p,579b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,6n,43p,608b,301s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (12 pages, 129360 bytes).
+Output written on monografia.pdf (30 pages, 150007 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

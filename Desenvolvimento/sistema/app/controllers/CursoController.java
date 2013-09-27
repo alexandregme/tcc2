@@ -128,6 +128,6 @@ public class CursoController extends Controller {
 	 * Renderiza a interface de curso
 	 */
 	public static void view() {
-		// renderTemplate("usuario.html", parameters);
+		renderTemplate("curso.html");
 	}
 }

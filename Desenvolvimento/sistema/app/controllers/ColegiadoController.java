@@ -129,7 +129,7 @@ public class ColegiadoController extends Controller {
 	 * Renderiza a interface de colegiado
 	 */
 	public static void view() {
-		// renderTemplate("usuario.html", parameters);
+		renderTemplate("colegiado.html");
 	}
 
 }
