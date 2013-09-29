@@ -5,10 +5,10 @@
 %Explicar o que é
 
 %tipos
-\cite{souca(2000)}Muitas variantes do problema têm sido propostas na literatura, e diferem umas das outras pelo tipo de instituição de ensino envolvida, universidades ou escolas médias, e pelo tipo de restrições impostas ao problema. \cite{Schaerf (1999)} cita três classes de problemas:
+\cite{souza2000} muitas variantes do problema têm sido propostas na literatura, e diferem umas das outras pelo tipo de instituição de ensino envolvida, universidades ou escolas médias, e pelo tipo de restrições impostas ao problema. \cite{schaerf1999survey} cita três classes de problemas:
 
 
-\textit{Examination Timetabling}: seqüenciamento de exames de um conjunto de cursos em uma universidade, evitando exames simultâneos de cursos com estudantes em comum, e espalhando os exames o máximo possível. Segundo \cite{Souza (2000)}, apesar da similaridade com o course timetabling, eles se distinguem, sobretudo pela natureza das restrições envolvidas. Entre as restrições típicas deste tipo de problemas, destaca-se: nenhum estudante pode fazer mais do que certo número de exames por dia, exames de certas disciplinas não podem preceder a exames de determinadas disciplinas, alguns exames têm que ser realizados em um mesmo horário.\par
+\textit{Examination Timetabling}: seqüenciamento de exames de um conjunto de cursos em uma universidade, evitando exames simultâneos de cursos com estudantes em comum, e espalhando os exames o máximo possível. Segundo \cite{souza2000}, apesar da similaridade com o course timetabling, eles se distinguem, sobretudo pela natureza das restrições envolvidas. Entre as restrições típicas deste tipo de problemas, destaca-se: nenhum estudante pode fazer mais do que certo número de exames por dia, exames de certas disciplinas não podem preceder a exames de determinadas disciplinas, alguns exames têm que ser realizados em um mesmo horário.\par
 
 \textit{School Timetabling}: seqüenciamento semanal das aulas de uma escola, evitando que professores e alunos tenham mais de uma aula simultaneamente. Basicamente, existe um conjunto de turmas, um conjunto de professores e um conjunto de horários reservados para a realização das aulas.\par
 
@@ -16,13 +16,13 @@
 
 %Complexidade
 
-O problema de alocação de salas denotado por PAS é um problema NP-Difícil(\cite{Even et al. 1976} e \cite{Carter 1992}).\par
+O problema de alocação de salas denotado por PAS é um problema NP-Difícil(\cite{even1975complexity} e \cite{carter1992classroom}).\par
 
-Segundo \cite{marinho} diversas instituições universitárias se deparam com o PAS durante o início de cada semestre letivo. Boa parte destas ainda resolve tal problema manualmente, o que torna o processo árduo e demorado, podendo levar vários dias para ser concluído.Ainda segundo \cite{souza} a elaboração de um quadro de horários por esta via pode demandar duas semanas de trabalho em uma escola secundária ou até um mês em uma universidade e esta solução obtida pode ser insatisfatória com respeito a diversos aspectos.\par
+Segundo \cite{marinho2005heuristicas} diversas instituições universitárias se deparam com o PAS durante o início de cada semestre letivo. Boa parte destas ainda resolve tal problema manualmente, o que torna o processo árduo e demorado, podendo levar vários dias para ser concluído.Ainda segundo \cite{souza2000} a elaboração de um quadro de horários por esta via pode demandar duas semanas de trabalho em uma escola secundária ou até um mês em uma universidade e esta solução obtida pode ser insatisfatória com respeito a diversos aspectos.\par
 
 %algo a mais sobre o PAS
 
-\cite{Schaerf (1999)} e \cite{Werra (1985)} acreditam que problemas de geração de horários não podem ser completamente automatizados. Há duas justificativas para isso: por um lado, há razões que não podem ser facilmente expressas em um sistema automatizado, que tornam um quadro de horário melhor que o outro. Por outro, uma vez que o espaço de soluções é vasto, a intervenção humana pode conduzir a busca em direção a regiões promissoras, nas quais o sistema, por si só, dificilmente teria condições de chegar.\par
+\cite{schaerf1999survey} e \cite{de1985introduction} acreditam que problemas de geração de horários não podem ser completamente automatizados. Há duas justificativas para isso: por um lado, há razões que não podem ser facilmente expressas em um sistema automatizado, que tornam um quadro de horário melhor que o outro. Por outro, uma vez que o espaço de soluções é vasto, a intervenção humana pode conduzir a busca em direção a regiões promissoras, nas quais o sistema, por si só, dificilmente teria condições de chegar.\par
 
 Uma vez que não é possível encontrar a solução ótima do PAS em tempo razoável, esse problema é normalmente tratado através de técnicas heurísticas e algoritmos aproximativos que apesar de não garantirem encontrar a solução ótima do problema são capazes de retornar uma solução de qualidade em um tempo adequado para as necessidades da aplicação.\par
 
@@ -31,16 +31,16 @@ Uma vez que não é possível encontrar a solução ótima do PAS em tempo razo�
 \secao{Heurística}
 
 
-Segundo \cite{Papadimitriou & Steiglitz (1982)}, as heurísticas são quaisquer métodos de 
+Segundo \cite{steiglitz1982combinatorial}, as heurísticas são quaisquer métodos de 
 aproximação sem uma garantia formal de seu desempenho. As heurísticas, apesar de não garantirem encontrar a solução ótima para um problema, procuram por soluções consideradas de boa qualidade em um tempo computacional razoável.\par
 
-De acordo com \cite{P APADIMITRIOU & S TEIGLITZ (1982)}, as heurísticas são quaisquer métodos de aproximação sem uma garantia formal de seu desempenho. Sendo necessárias para implementação de problemas NP Difícil − , caso deseje-se resolver tais problemas em um tempo computacional razoável \cite{(E VANS & M INIEKA , 1978)}.\par
+De acordo com \cite{steiglitz1982combinatorial}, as heurísticas são quaisquer métodos de aproximação sem uma garantia formal de seu desempenho. Sendo necessárias para implementação de problemas NP Difícil, caso deseje-se resolver tais problemas em um tempo computacional razoável \cite{evans1992optimization}.\par
 
 O termo heurística é derivado do grego heuriskein, que significa descobrir ou achar. Mas o significado da 
 palavra em pesquisa operacional vai um pouco além da raiz etimológica. De um modo geral, o sentido dado ao termo heurística, refere-se a um método de busca de soluções em que não existe qualquer garantia de sucesso.\par
 
 
-\cite{leonardo}Em Problemas de Otimização Combinatória, cujo universo de dados é grande, existe um número muito extenso de combinações, tornando inviável a análise de todas possíveis soluções, visto que o tempo computacional para uma enumeração completa seria demasiadamente longo. Neste sentido, têm-se as heurísticas, também conhecidas como algoritmos heurísticos, que são métodos que compõem uma gama relativamente nova de soluções para Problemas de Otimização Combinatória. 
+\cite{deleonardo} Em Problemas de Otimização Combinatória, cujo universo de dados é grande, existe um número muito extenso de combinações, tornando inviável a análise de todas possíveis soluções, visto que o tempo computacional para uma enumeração completa seria demasiadamente longo. Neste sentido, têm-se as heurísticas, também conhecidas como algoritmos heurísticos, que são métodos que compõem uma gama relativamente nova de soluções para Problemas de Otimização Combinatória. 
 
 
 Ressalta-se que dentre as heurísticas merecem especial atenção as chamadas meta-heurísticas que adotam técnicas para amenizar a dificuldade que os métodos heurísticos têm de escapar dos chamados ótimos locais. As meta-heurísticas podem partir em busca de regiões mais promissoras no espaço de soluções. As meta-heurísticas possuem grande abrangência, podendo ser aplicada à maioria dos problemas de otimização combinatória.\par
@@ -50,51 +50,51 @@ Podem-se citar como exemplo as meta-heurísticas: Busca Tabu (\textit{Tabu Searc
 
 \subsecao{Busca Tabu}
 
-A metaheurística BT foi inicialmente desenvolvida por \cite{Glover (1986)} como uma proposta de
+A metaheurística BT foi inicialmente desenvolvida por \cite{glover1986future} como uma proposta de
 solução para problemas de programação inteira. A partir de então, o autor formalizou esta
 técnica e publicou uma série de trabalhos contendo diversas aplicações da mesma. A
 metaheurística BT utiliza uma lista contendo o histórico da evolução do processo de busca, de
 modo a evitar ciclagem; incorpora uma estratégia de balanceamento entre os movimentos
 aceitos, rejeitados e aspirados; e adota procedimentos de diversificação e intensificação para o
 processo de busca.\par
-\cite{Souza (2000)} e \cite{White et al. (2004)} ressaltam a existência de um mecanismo, relacionado com
+\cite{souza2000} e \cite{white2004using} ressaltam a existência de um mecanismo, relacionado com
 a Lista Tabu, que anula o status tabu de um movimento, denominado função de aspiração. Se
 um movimento pode proporcionar uma melhora considerável da função objetivo, então o
 status tabu é abandonado e a solução resultante é aceita como potencial vizinho.
 
-%\subsecao{Algoritmo da colônia de formigas}	
-%achar uma referencia sobre o algoritimo da colonia
+\subsecao{Algoritmo da colônia de formigas}	
+
+	Achar uma referencia sobre o algoritimo da colonia
 
 \subsecao{Recozimento Simulado}
 
-Técnica de busca local probabilística, proposta originalmente por \cite{Kirkpatrick et al. 
-(1983)}, que se fundamenta em uma analogia com a termodinâmica, ao simular o 
-resfriamento de um conjunto de átomos aquecidos. Isto é, conforme \cite{Noronha (2000)} em 
+Técnica de busca local probabilística, proposta originalmente por \cite{kirkpatrick1983optimization}, que se fundamenta em uma analogia com a termodinâmica, ao simular o 
+resfriamento de um conjunto de átomos aquecidos. Isto é, conforme \cite{noronha2003abordagem} em 
 analogia a física da matéria: levando um cristal a sua temperatura de fusão, as moléculas 
 estão desordenadas e se agitam livremente. Ao resfriar-se a amostra de maneira 
 infinitamente lenta, as moléculas vão adquirir a estrutura cristalina estável que tem um 
 nível de energia mais baixo possível. 
-Conforme \cite{Aarts & Korst (1989)} a analogia com a otimização (combinatória ou não) 
+Conforme \cite{aarts1988simulated} a analogia com a otimização (combinatória ou não) 
 é bastante direta. Os estados da matéria são as soluções realizáveis, a quantidade objetiva 
 substitui a energia, os estados metaestáveis da matéria sendo ótimos locais e a estrutura 
 cristalina corresponde ao ótimo global. 
-Segundo \cite{Downsland (1993)}, a temperatura Tassume, inicialmente, um valor 
+Segundo \cite{reeves1993modern}, a temperatura Tassume, inicialmente, um valor 
 elevado T0e o procedimento pára quando a temperatura chega a um valor próximo de zero 
 e nenhuma solução que piore o valor da função objetivo é mais aceita, isto é, quando o 
 sistema está estável.\par
-Mais informações em \cite{Downsland (1993)} e \cite{Kirkpatrick et al. (1983)}. 
+Mais informações em \cite{reeves1993modern} e \cite{kirkpatrick1983optimization}. 
 
 \subsecao{Algoritmos genéticos}
 
-Conforme cita \cite{Oliveira (2005)}, os algoritmos genéticos foram introduzidos 
-por \cite{John Holland (Holland 1975)}, com intuito de aplicar a teoria da evolução das espécies 
-elaborada por \cite{Darwin (Darwin 1859}) utilizando os conceitos da evolução biológica como 
+Conforme cita \cite{oliveira2005algoritmo}, os algoritmos genéticos foram introduzidos 
+por \cite{holland1975adaptation}, com intuito de aplicar a teoria da evolução das espécies 
+elaborada por \cite{darwin1968origin} utilizando os conceitos da evolução biológica como 
 genes, cromossomos, cruzamento, mutação e seleção na computação procurando explicar rigorosamente processos de adaptação em sistemas naturais e desenvolver sistemas artificiais (simulados em computador) que mantenham os mecanismos originais, encontrados em sistemas naturais.\par
 
-Segundo \cite{Oliveira (2005)}, o processo de evolução executado por um algoritmo genético corresponde a um procedimento de busca no espaço de soluções potenciais para o problema e, como enfatiza \cite{Michalewicz (1992)}, esta busca requer um equilíbrio entre dois objetivos aparentemente conflitantes: a procura das melhores soluções na região que se apresenta promissora ou fase de intensificação e a procura de outra região ou exploração do espaço de busca, também conhecida como diversificação.\par
-Ainda segundo \cite{Oliveira (2005)}, os algoritmos genéticos têm se mostrado ferramentas poderosas para resolver problemas onde o espaço de busca é muito grande e os métodos convencionais se mostraram ineficientes.\par
+Segundo \cite{oliveira2005algoritmo}, o processo de evolução executado por um algoritmo genético corresponde a um procedimento de busca no espaço de soluções potenciais para o problema e, como enfatiza \cite{michalewicz1996evolutionary}, esta busca requer um equilíbrio entre dois objetivos aparentemente conflitantes: a procura das melhores soluções na região que se apresenta promissora ou fase de intensificação e a procura de outra região ou exploração do espaço de busca, também conhecida como diversificação.\par
+Ainda segundo \cite{oliveira2005algoritmo}, os algoritmos genéticos têm se mostrado ferramentas poderosas para resolver problemas onde o espaço de busca é muito grande e os métodos convencionais se mostraram ineficientes.\par
 
-Mitchel \cite{(Mitchel 1996)} cita que a terminologia biológica é muito importante para a compreensão do funcionamento dos algoritmos genéticos. Eis os principais termos: \par
+Mitchel \cite{mitchell1998introduction} cita que a terminologia biológica é muito importante para a compreensão do funcionamento dos algoritmos genéticos. Eis os principais termos: \par
 •  Cromossomo: estrutura que representa uma determinada característica da solução ou a própria solução; \par
 •  Gene: característica particular de um cromossomo. O cromossomo é composto por um ou mais genes. \par
 •  Alelo: valor de determinado gene;\par
@@ -102,7 +102,7 @@ Mitchel \cite{(Mitchel 1996)} cita que a terminologia biológica é muito import
 •  Genótipo: estrutura que codifica uma solução. Um genótipo pode ser formado por um ou mais cromossomos; \par
 •  Fenótipo: decodificação ou o significado da estrutura; \par
 •  Fitness: significa aptidão. O quanto o indivíduo é apto para determinado ambiente; \par
-As principais características que diferenciam os algoritmos genéticos de métodos tradicionais são \cite{(Goldberg 1989)}: \par
+As principais características que diferenciam os algoritmos genéticos de métodos tradicionais são \cite{goldberg1989genetic}: \par
 •  Parâmetros: os algoritmos genéticos trabalham com a codificação dos parâmetros e não com os parâmetros propriamente; \par
 •  Número de soluções: os algoritmos genéticos trabalham com uma população de indivíduos (representando um conjunto de soluções) e não com uma única solução; \par
 
@@ -113,13 +113,13 @@ As principais características que diferenciam os algoritmos genéticos de méto
 O algoritmo genético é uma forma da estratégia gerar-e-testar realizando os testes baseados nos parâmetros da evolução biológica. Uma desvantagem notável é a variação dos operadores genéticos do algoritmo em cada problema. Dessa forma, para resolução de determinado problema, torna-se necessário um estudo particular a respeito do mesmo. \par
 
 O algoritmo genético atua sobre uma população fazendo com que esta evolua de acordo com uma função de avaliação. O funcionamento é iterativo iniciando com a geração de uma população inicial que pode ser aleatória ou não, seguida do processo de avaliação, seleção, cruzamento e mutação, que ocorre a cada iteração até que seja atingido algum critério de parada. Os passos gerais de um algoritmo genético são ilustrados na figura 
-Figura XXXX. Cada passo pode ser realizado de várias maneiras e pode variar de problema para problema \cite{Timóteo 2002}.\par 
+Figura XXXX. Cada passo pode ser realizado de várias maneiras e pode variar de problema para problema \cite{timoteo2005desenvolvimento}.\par 
 
 Figura Etapas de um Algoritmo Genético Básico 
 
-%\secao{Trabalhos Relacionados}
-%trabalho do marinho que usa tabu.
-%trabalho da silvia que usa Recozimento Simulado (Simulated Annealing).
-%trabalho da leonardo que usa Algoritmos Genéticos (AG).
-%achar algum trabalho que utiliza o algoritimo das formigas.
-%falar porque o trabalho do cara se assemelha ao meu trabalho.
+\secao{Trabalhos Relacionados}
+trabalho do marinho que usa tabu.
+trabalho da silvia que usa Recozimento Simulado (Simulated Annealing).
+trabalho da leonardo que usa Algoritmos Genéticos (AG).
+achar algum trabalho que utiliza o algoritimo das formigas.
+falar porque o trabalho do cara se assemelha ao meu trabalho.

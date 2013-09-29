@@ -1,23 +1,42 @@
-
 \capitulo{METODOLOGIA}
 
-A resolução deste trabalho
+A resolução deste trabalho\par
 
-Algoritmo e porque!
+Algoritmo gentetico, descrever o porque da utilização do mesmo e criar a função do mesmo\par
+ 
+A modelagem de dados do sistema utiliza a UML (Universal Modeling Language) para o desenvolvimento dos seguintes diagramas:\par
 
-Função Objetivo do algoritmo genetico
+a) Diagramas de Caso de Uso.\par
+b) Diagrama de Classes.\par
+c) Diagrama de Seqüência.\par
+d) Diagrama de Atividades.\par
+e) Diagrama de Estados.\par
 
-Levantamento de requisitos
+Para a configuração do ambiente para o desenvolvimento do sistema foram feitos os seguintes passos:\par
 
-Arquitetura
+a) Instalação do SGBD PostgreSQL.\par
+b) Instalação da linguagem de programação Java.\par
+c) Instalação do Play! framework.\par
+d) Instalação da IDE Eclipse.\par
+e) Instalação do software Astah.\par
 
-Documentação conversar com o Tadeu
+Para o desenvolvimento da aplicação foram executados os seguintes passos:\par
 
-Implementação
+a) Criação de um novo projeto atraves do Play! framework.\par
+b) Adatação do projeto para ser utilizado atraves da IDE Eclipse.\par
+c) Criação das tabelas no banco de dados após a análise do sistema feita.\par
+d) Configurações necessarias do projeto para conexão com o banco de dados.\par
+e) Desenvolvimento das Model, Controllers e Views.\par
+f) Desenvolvimento do algortimo proposto para solução da alocação de salas.\par
+g) Desenvolvimento dos reslatórios.\par
+h) Realização de testes.\par
 
-passo a passo do problema.
+A arquitetura utilizada pelo sistema MVC utiliza a comunicação via REST entre as Controllers e as Views atraves de um protocolo de comunicação no formato JSON estruturado da seguinte forma:
 
-ex: criou-se o crud, interface e testo o algoritimo de alocação, se der tempo teste de unidade.
+status : Indica o código da mensagem s = sucesso, e = erro, a = um aviso.\par
+data : Apresenta todas as informações necessarias para controller.\par
+message : Mensagem para a interface. Esta mensagem é exibida para o usuário.\par
+length : Quantidade de dados retornados.\par
 
 \secao{Ferramentas Utilizadas}
 
