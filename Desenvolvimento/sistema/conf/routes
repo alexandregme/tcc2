@@ -9,7 +9,7 @@ POST	/curso/save				CursoController.save
 POST	/curso/edit				CursoController.edit
 POST	/curso/delete			CursoController.delete
 GET 	/curso/list				CursoController.list
-GET 	/cruso/view				CursoController.view
+GET 	/curso/view				CursoController.view
 
 #Colegiado
 POST	/colegiado/save			ColegiadoController.save

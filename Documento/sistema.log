@@ -1,13 +1,21 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  26 SEP 2013 12:57
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.28)  28 SEP 2013 22:00
 entering extended mode
-**E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex
-(E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex
+**E:/tcc2/Documento/sistema.tex
+(E:/tcc2/Documento/sistema.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto,
- estonian, farsi, finnish, french, galician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian, lith
-uanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
-ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:1: Undefined control sequence
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+! Undefined control sequence.
+l.1 \capitulo
+             {SISTEMA DESENVOLVIDO}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -15,10 +23,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:1: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \capitulo{S
+               ISTEMA DESENVOLVIDO}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -46,7 +58,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:3: Undefined control sequence
+! Undefined control sequence.
+l.3 \secao
+          {Modelo Tratado}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -54,10 +68,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:3: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \secao{M
+            odelo Tratado}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -79,7 +97,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:5: Undefined control sequence
+! Undefined control sequence.
+l.5 \secao
+          {Proposta de Solução}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -87,10 +107,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:5: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \secao{P
+            roposta de Solução}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -119,10 +143,15 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:7: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 S
+     erá desenvolvido um sistema que otimiza a alocação das salas em até...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -404,7 +433,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 7--8
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:9: Undefined control sequence
+! Undefined control sequence.
+l.9 \secao
+          {O Sistema Desenvolvido}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -412,10 +443,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:9: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \secao{O
+             Sistema Desenvolvido}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -445,10 +480,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 9--10
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:11: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 	D
+       escrição sobre o Sistema
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -481,7 +520,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 11--12
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:13: Undefined control sequence
+! Undefined control sequence.
+l.13 \subsecao
+              {Linguagens e Ferramentas Utilizadas}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -489,10 +530,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:13: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \subsecao{L
+                inguagens e Ferramentas Utilizadas}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -534,10 +579,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 13--14
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:15: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 	D
+       escrição sobre o que o que será abordada nesta subseção
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -598,7 +647,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 15--16
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:17: Undefined control sequence
+! Undefined control sequence.
+l.17 \subsecao
+              {Sistema Gerenciador de Banco de Dados}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -606,10 +657,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:17: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \subsecao{S
+                istema Gerenciador de Banco de Dados}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -651,10 +706,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 17--18
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:19: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 	A
+       char alguma referencia sobre o postgresql\par\cite{alterar}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -701,16 +760,24 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 19--19
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:19: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 ...encia sobre o postgresql\par\cite{alterar}
+                                                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 \citation{alterar}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:19: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.19 ...encia sobre o postgresql\par\cite{alterar}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -738,7 +805,9 @@ Overfull \hbox (25.43053pt too wide) in paragraph at lines 19--21
 [][]
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:22: Undefined control sequence
+! Undefined control sequence.
+l.22 \subsecao
+              {Ambiente de Desenvolvimento}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -746,10 +815,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:22: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \subsecao{A
+                mbiente de Desenvolvimento}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -784,10 +857,15 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 22--23
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:24: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 	I
+       DE eclipse, sublimeText, Google Chrome, programa DIA para o desenvolv...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -872,7 +950,11 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{alterar}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:24: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.24 ...esenvolvimento dos diagramas\cite{alterar}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -893,7 +975,9 @@ Overfull \hbox (5.43053pt too wide) in paragraph at lines 24--25
 [] 
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:26: Undefined control sequence
+! Undefined control sequence.
+l.26 \subsecao
+              {Modegem do Sistema}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -901,10 +985,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:26: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \subsecao{M
+                odegem do Sistema}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -930,10 +1018,15 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 26--27
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:28: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 	A
+       ntes de tudo foi necessaria a modelagem do sistema, para que todos os...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1050,10 +1143,15 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 28--28
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:30: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 	A
+       char alguma referencia sobre metodologias de modelagem de dados UML\p...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1122,16 +1220,24 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 30--30
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:30: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...e modelagem de dados UML\par\cite{alterar}
+                                                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 \citation{alterar}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:30: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.30 ...e modelagem de dados UML\par\cite{alterar}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1148,10 +1254,15 @@ Overfull \hbox (25.43053pt too wide) in paragraph at lines 30--31
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:32: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 	P
+       ara a analise deste sistema foram desenvolvidos os seguintes diagrama...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1224,16 +1335,24 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 32--32
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:32: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 ... os seguintes diagramas:\par\cite{alterar}
+                                                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 \citation{alterar}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:32: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.32 ... os seguintes diagramas:\par\cite{alterar}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1250,10 +1369,14 @@ Overfull \hbox (25.43053pt too wide) in paragraph at lines 32--33
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:34: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 	D
+       iagramas de Caso de Uso\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1283,10 +1406,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 34--34
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:35: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 	D
+       iagramas de classes\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1314,10 +1441,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 35--35
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:36: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 	D
+       iagramas de Seqüência\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1349,10 +1480,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 36--36
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:37: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 	D
+       iagrama de Atividades\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1382,10 +1517,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 37--37
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:38: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 	D
+       iagrama de Estados\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1411,7 +1550,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 38--38
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:40: Undefined control sequence
+! Undefined control sequence.
+l.40 \subsecao
+              {Diagrama de Caso de Uso: Sistema}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1419,10 +1560,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:40: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 \subsecao{D
+                iagrama de Caso de Uso: Sistema}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1459,10 +1604,15 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 40--41
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:43: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 	C
+       riar o caso de uso que diz respeito a todas as funcionalidades que o ...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1562,16 +1712,24 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 43--43
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:43: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 ...cadastro e manutenção.\par\cite{alterar}
+                                                  
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 \citation{alterar}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:43: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.43 ...cadastro e manutenção.\par\cite{alterar}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1588,10 +1746,14 @@ Overfull \hbox (25.43053pt too wide) in paragraph at lines 43--44
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:45: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 	C
+       aso de uso do sistema\par\cite{alterar}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1619,16 +1781,24 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 45--45
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:45: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 	Caso de uso do sistema\par\cite{alterar}
+                                              
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 Missing character: There is no [ in font nullfont!
 \citation{alterar}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:45: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.45 	Caso de uso do sistema\par\cite{alterar}
+                                              
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1645,19 +1815,27 @@ Overfull \hbox (25.43053pt too wide) in paragraph at lines 45--46
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:47: LaTeX Error: Environment figure undefined.
+! LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 	\begin{figure}
+                    [!htb]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:47: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 	\begin{figure}[
+                     !htb]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1668,10 +1846,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:49: LaTeX Error: \caption outside float.
+! LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49    		\caption
+                  [Diagrama de caso de uso]{Diagrama de caso de uso}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1715,7 +1897,9 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:52: Undefined control sequence
+! Undefined control sequence.
+l.52    		\includegraphics
+                          [scale=0.5]{diagramaCasoUso.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1758,14 +1942,22 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 47--53
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:53: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53    		\\ \textbf{\footnotesize Fonte: Autor}
+                                                
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:53: Undefined control sequence
+! Undefined control sequence.
+<recently read> \footnotesize 
+                              
+l.53    		\\ \textbf{\footnotesize Fonte: Autor}
+                                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1773,10 +1965,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:54: LaTeX Error: \begin{document} ended by \end{figure}.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 	\end{figure}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1796,7 +1992,9 @@ Overfull \hbox (14.95827pt too wide) in paragraph at lines 53--55
 \OT1/cmr/bx/n/10 tor
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:57: Undefined control sequence
+! Undefined control sequence.
+l.57 \subsubsecao
+                 {Diagrama de Atividade: Alocação}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1804,10 +2002,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:57: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \subsubsecao{D
+                   iagrama de Atividade: Alocação}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1847,10 +2049,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 57--58
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:59: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 	D
+       escrever a rotina de atividades da alocação do sistema
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1908,7 +2114,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 59--60
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:62: Undefined control sequence
+! Undefined control sequence.
+l.62 \subsubsecao
+                 {Diagrama de Classe das controllers}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1916,10 +2124,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:62: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \subsubsecao{D
+                   iagrama de Classe das controllers}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1959,10 +2171,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:64: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 	A
+       char alguma referencia de diagrama de classe.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2012,10 +2228,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 64--65
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:66: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 	I
+       magem do diagrama de classe das controllers
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2062,7 +2282,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:68: Undefined control sequence
+! Undefined control sequence.
+l.68 \subsubsecao
+                 {Diagrama de Classe das models}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2070,10 +2292,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:68: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \subsubsecao{D
+                   iagrama de Classe das models}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2108,10 +2334,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 68--69
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:70: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 	I
+       magem do diagrama de classe das models
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2153,7 +2383,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 70--71
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:72: Undefined control sequence
+! Undefined control sequence.
+l.72 \subsubsecao
+                 {Diagrama de Classe das views}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2161,10 +2393,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:72: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \subsubsecao{D
+                   iagrama de Classe das views}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2198,10 +2434,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 72--73
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:74: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 	I
+       magem do diagrama de classe das views
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2242,7 +2482,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 74--75
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:76: Undefined control sequence
+! Undefined control sequence.
+l.76 \subsubsecao
+                 {Modelagem de Dados}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2250,10 +2492,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:76: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \subsubsecao{M
+                   odelagem de Dados}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2279,10 +2525,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 76--77
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:78: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 	A
+       char alguma referencia de modelagem de dados
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2331,10 +2581,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 78--79
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:80: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 	I
+       nserir imagem do modelo
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2365,19 +2619,27 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 80--81
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:82: LaTeX Error: Environment figure undefined.
+! LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 		\begin{figure}
+                     [!htb]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:82: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 		\begin{figure}[
+                      !htb]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2388,10 +2650,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:83: LaTeX Error: \caption outside float.
+! LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83    		\caption
+                  [Modelagem Banco de Dados]{Modelagem Banco de Dados}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2439,7 +2705,9 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:86: Undefined control sequence
+! Undefined control sequence.
+l.86    		\includegraphics
+                          {modelagemBanco.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2470,14 +2738,22 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 82--87
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:87: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87    		\\ \textbf{\footnotesize Fonte: Autor}
+                                                
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:87: Undefined control sequence
+! Undefined control sequence.
+<recently read> \footnotesize 
+                              
+l.87    		\\ \textbf{\footnotesize Fonte: Autor}
+                                                
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2485,10 +2761,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:88: LaTeX Error: \begin{document} ended by \end{figure}.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 	\end{figure}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -2508,7 +2788,9 @@ Overfull \hbox (14.95827pt too wide) in paragraph at lines 87--89
 \OT1/cmr/bx/n/10 tor
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:90: Undefined control sequence
+! Undefined control sequence.
+l.90 \subsecao
+              {Interface}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2516,10 +2798,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:90: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \subsecao{I
+                nterface}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2538,10 +2824,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 90--91
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:92: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 	A
+       char alguma referencia sobre interface
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2586,10 +2876,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 92--93
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:94: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.94 	T
+       witter bootstrap.\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2615,7 +2909,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 94--94
 [] 
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:96: Undefined control sequence
+! Undefined control sequence.
+l.96 \subsecao
+              {Funcionalidades}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2623,10 +2919,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:96: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.96 \subsecao{F
+                uncionalidades}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2651,10 +2951,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 96--97
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:98: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 	O
+        sistema consiste nas seguintes funcionalidades.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2708,10 +3012,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 98--99
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:100: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 	1
+        . Controle de cursos \par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2739,10 +3047,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 100--100
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:101: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 	2
+        . Controle de colegiados\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2774,10 +3086,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 101--101
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:102: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 	3
+        . Controle de disciplinas\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2810,10 +3126,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 102--102
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:103: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 	4
+        . Controle de salas\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2840,10 +3160,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 103--103
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:104: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104 	5
+        . Controle de prédios\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2873,10 +3197,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 104--104
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:105: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 	6
+        . Alocação de horários\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2909,10 +3237,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 105--105
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:106: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 	7
+        . Geração de relatórios\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2946,10 +3278,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 106--106
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:107: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 	8
+        . Exportar para pdf\par
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2975,7 +3311,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 107--107
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:111: Undefined control sequence
+! Undefined control sequence.
+l.111 \subsecao
+               {Dados de Entrada}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2983,10 +3321,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:111: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 \subsecao{D
+                 ados de Entrada}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3010,10 +3352,15 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 111--112
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:113: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 	C
+        omo serão inseriadas as informações, e quais são os dados de ent...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3085,10 +3432,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 113--114
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:115: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 	I
+        nformados pelo gerente.
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3119,7 +3470,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 115--116
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:117: Undefined control sequence
+! Undefined control sequence.
+l.117 \subsecao
+               {Alocação}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3127,10 +3480,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:117: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \subsecao{A
+                 locação}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3150,10 +3507,14 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 117--118
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:119: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 	P
+        rocessa os dados de alocação
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3189,7 +3550,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 119--120
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:121: Undefined control sequence
+! Undefined control sequence.
+l.121 \subsecao
+               {Relatórios}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3197,10 +3560,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:121: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \subsecao{R
+                 elatórios}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3221,10 +3588,15 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 121--122
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:123: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.123 	G
+        eração dos relatorios determinados na analise do sistema, todos os...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3328,7 +3700,9 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 123--124
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:125: Undefined control sequence
+! Undefined control sequence.
+l.125 \subsecao
+               {Considerações Finais do Capítulo}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3336,10 +3710,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/sistema.tex:125: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 \subsecao{C
+                 onsiderações Finais do Capítulo}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3362,23 +3740,4 @@ Missing character: There is no F in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no C in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no p in font nullfont!
-Missing character: There is no � in font nullfont!
-Missing character: There is no � in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-
-Overfull \hbox (20.0pt too wide) in paragraph at lines 125--126
-[]
- []
-
-
-E:/TI/Desenvolvimento/GitHub/
+Missing character: There is no i in font nullfon

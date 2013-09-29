@@ -6,156 +6,83 @@
 
 \begin{document}
 
-\include{apresentacao}
+%\include{apresentacao}
 \include{introducao}
 \include{referencial}
+%\include{metodologia}
 
-\capitulo{REFERENCIAL TEÓRICO}
+\capitulo{METODOLOGIA}
 
-\secao{TimeTable}
+A resolução deste trabalho
 
-Falar sobre PAS
-1- Problema de Programação de Horários em Escolas (School Timetabling Problem) ou Problema Professor-Turma (Class-Teacher):
-2 - O Problema de Alocação de Horários (Course Timetabling Problem) ou Programação de Horários em Universidade (University Timetabling) 
+Algoritmos e porque
+Função Objetivo do algoritmo genetico
 
-O Problema de Programação de Horários pode ser, por sua vez, classificados em
-dois tipos, conforme Souza (2000), dependendo de necessitarem otimizar ou não uma
-função objetivo:
-1-Problemas de otimização: neste tipo encontram-se os problemas nos quais, dentre
-todos os quadros de horários viáveis (satisfazem certo conjunto de restrições essenciais),
-deseja-se encontrar um quadro, chamado ótimo que minimize uma função objetivo, a qual
-incorpora as restrições ditas não-essenciais.
-2-Problemas de viabilidade: esta classificação refere-se a todos os problemas novas
-quais se requer encontrar um quadro de horário viável, ou seja, um quadro de horário que
-satisfaça a todas as restrições impostas.
+Levantamento de requisitos
 
+arquitetura
 
+Dcumentação com o tadeu
 
-3- Problema de programação de horários de exames (Examination time-timebling problem).
+Implementação
+
+passo a passo
+
+criou-se o crude a interface e testo o algoritimo de alocação se der tempo teste de unidade.
 
 
-!saudadesPUC
-
-Conforme Souza (2000) cita Even (Even et. Al. 1976), o problema de geração de
-horários é NP-Completo em sua versão de decisão. A intratabilidade pode ser mostrada
-pela redução do problema de coloração de grafos em um problema de geração de horários.
-
-Conforme Souza (2000) a maioria das técnicas antigas usadas na automação do
-Problema de Geração de Horários era baseada no uso de heurísticas construtivas que, de
-um modo geral, adotavam um preenchimento gradual do quadro de horários. Ainda
-conforme Souza (2000), no segundo momento, os pesquisadores começaram a usar
-métodos gerais para resolver o problema, tais como coloração de grafos, programação
-inteira e fluxo em grafo. Mais recentemente, apareceram soluções baseadas em novas
-técnicas de pesquisa, como Recozimento Simulado, Algoritmos Genéticos, Busca Tabu,
-Satisfação de Restrições e inclusive a combinação destas técnicas.
-
-Conforme Silva (2005) cita Bardadym (1996), o Problema de Alocação de Salas
-pode ser tratado como um Problema de Geração de Horários, mais precisamente como um
-Problema de Programação de Cursos Universitários (Course Timetabling), ou como um
-problema derivado deste (Classroom Assigment). Na variante Classroom Assigment
-considera-se que as aulas dos cursos já têm seus horários de início e de término definidos
-sendo que o problema se resume a alocar as aulas às salas respeitando os horários destas
-aulas e outras restrições.
-O PAS é um exemplo de problema de Otimização Combinatória e por se tratar de
-um problema NP-Difícil tem sido tratado, atualmente, por técnicas heurísticas e meta-
-heurísticas.
+\secao{Ferramentas Utilizadas}
 
 
-Complexidade do problema
-
-O problema de programação de horários é NP-Difícil, conforme Even et al. (1976).
-Cooper & Kingston (1996) demonstram para uma série de problemas de horários
-que aparecem comumente na prática estarem todos na classe NP-Difícil. Entretanto,
-algumas instâncias do problema podem ser resolvidas em tempo polinomial. Este é o caso
-do problema de programação de horários em escolas, em sua versão básica, quando turmas
-e professores estão sempre disponíveis. A maioria dos casos resolvíveis é, no entanto,
-muito especial e não incluem as restrições mais comuns.
-Em vista disso, justifica-se a abordagem do problema de programação de horários
-por métodos heurísticos, os quais, não garantem a existência de uma solução viável,
-mesmo que essa exista, e tampouco sua otimalidade. Para o problema de geração de
-horários, conceitua-se como solução viável aquele horário que pode ser utilizado pela
-escola, não necessariamente sendo o mais adequado possível. Isto é, existem restrições de
-inviabilidade e restrições de qualidade, sendo que a satisfação apenas das primeiras
-restrições já qualifica um horário como viável.
+	Este trabalho conta com a utilização de tecnologias proprias para o desenvolvimento de sistemas web, foram utilizadas as seguintes ferramentas: Para SGBD foi o utilizado PostgreSQL; No back-end foi utilizado Java e o \textit{framework Play!}; No front-end as tecnologias utilizadas foram HTML, CSS, JavaScript e \textit{framework AngularJS} e a IDE utilizada \textit{Eclipse}.
 
 
-\secao{Definição de Heurística}
-
-	Falar sobre euristica
-
-	Como dito anteriormente em Problemas de Otimização Combinatória cujo universo
-de dados é grande, existe um número muito extenso de combinações, tornando inviável a
-análise de todas possíveis soluções, visto que o tempo computacional para uma análise
-completa seria demasiadamente longo. Neste sentido, têm-se as heurísticas, também
-conhecidas como algoritmos heurísticos, que são métodos que compõem uma gama
-ralativamente nova de soluções para Problemas de Otimização Combinatória.\par
-O termo heurística é derivado do grego heuriskein, que significa descobrir ou achar.
-Mas o significado da palavra em pesquisa operacional
-1 vai um pouco além da raiz
-etimológica. De um modo geral, o sentido dado ao termo heurística, refere-se a um método
-de busca de soluções em que não existe qualquer garantia de sucesso.\par
-De acordo com P APADIMITRIOU  & S TEIGLITZ (1982), as heurísticas são quaisquer
-métodos de aproximação 2 sem uma garantia formal de seu desempenho. Sendo
-necessárias para implementação de problemas NP Difícil − , caso deseje-se resolver tais
-problemas em um tempo computacional razoável (E VANS  & M INIEKA , 1978).
-Para N ORONHA (2000), o sucesso de uma heurística depende de sua capacidade de:	\cite{glover}
+\subsecao{Sistema de Gerenciamento de Banco de Dados}
+	\textit{}:\cite{alterar}
 
 
+\subsecao{Ferramentas Back-end}
 
-\subsecao{Algoritmos genéticos}
+	Foi escolhida uma linguagem de programação Java por ser orientada a objeto. Tambem foi escolhido o \textit{Play! framework}, para que o desenvolvimento aconteça de forma mais rápida, fácil e eficiente.\par
 
-citar os brother do algoritimo genetico
+	%Java
+	Java foi criada pela Sun Microsystems para desenvolver inovações tecnológicas em 1992, time liderado por James Gosling. O Java utiliza do conceito de máquina virtual, onde existe, entre o sistema operacional e a aplicação, uma camada extra responsável por \"traduzir\" - mas não apenas isso - o que sua aplicação deseja fazer para as respectivas chamadas do sistema operacional, onde ela está rodando no momento. Sua aplicação roda sem nenhum envolvimento com o sistema operacional, sempre conversando apenas com a JVM - Java Virtual Machine \cite{caelum}.\par
 
-\subsecao{Busca Tabu}
+	Em 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre foi, junto com a IBM, uma das empresas que mais investiram e fizeram negócios através do uso da plataforma Java. Em 2011 surge a versão Java 7 com algumas pequenas mudanças na linguagem \cite{caelum}.\par
 
-	\cite{glover}
-
-	A metaheurística BT foi inicialmente desenvolvida por Glover (1986) como uma proposta de
-	solução para problemas de programação inteira. A partir de então, o autor formalizou esta
-	técnica e publicou uma série de trabalhos contendo diversas aplicações da mesma. A
-	metaheurística BT utiliza uma lista contendo o histórico da evolução do processo de busca, de
-	modo a evitar ciclagem; incorpora uma estratégia de balanceamento entre os movimentos
-	aceitos, rejeitados e aspirados; e adota procedimentos de diversificação e intensificação para o
-	processo de busca. A cada iteração, a solução atual (S) muda para outra que seja sua vizinha no espaço de busca
-	(S’). Partindo de uma solução inicial
-		S , um algoritmo BT explora, a cada iteração, um
-	subconjunto V da vizinhança  ) (S N da solução corrente S. O membro S’ de V com melhor
-	valor nessa região segundo a função f(.) torna-se a nova solução corrente mesmo que S’ seja
-	pior que S isto é, que f(S’) > f(S) para um problema de minimização (SOUZA, 2000).
-	A proibição de determinados movimentos tem a intenção de impedir que a solução retorne ao
-	ponto de mínimo local nas T iterações seguintes. O não veto de determinados movimentos
-	pode fazer com que o algoritmo entre em loop. Um artifício criado com o intuito de não
-	“autorizar” a ocorrência destes movimentos é a Lista Tabu. Esta possui uma lista de tamanho t
-	contendo as soluções visitadas durante as ultimas T iterações seqüenciadas na forma Fifo (first
-	in first out).
-	Souza (2000) e White et al. (2004) ressaltam a existência de um mecanismo, relacionado com
-	a Lista Tabu, que anula o status tabu de um movimento, denominado função de aspiração. Se
-	um movimento pode proporcionar uma melhora considerável da função objetivo, então o
-	status tabu é abandonado e a solução resultante é aceita como potencial vizinho.
-
-\subsecao{Algoritmo da colônia de formigas}	
-	
-
-\secao{Trabalhos Relacionados}
+	%-----Play! Framework
+	\textit{!}: Framework is a modern Java (and Scala) web application open-source framework that provides a clean alternative to bloated Enterprise Java stacks. Play has two version Play 1.x (Java & Scala) and Play 2.x (Java & Scala).
+	Play is a high-productivity Java and Scala web application framework that integrates the components and APIs you need for modern web application development.
+	Play is based on a lightweight, stateless, web-friendly architecture and features predictable and minimal resource consumption (CPU, memory, threads) for highly-scalable applications thanks to its reactive model, based on Iteratee IO.\cite{alterar}
 
 
-trabalho do marinho que usa tabu.
+	\subsecao{Ferramentas Front-end}
 
-trabalho da silvia que usa Recozimento Simulado (Simulated Annealing)
+	%html
+	%css
+	%JAVASCRIPT
+	\textit{}: é uma linguagem de programação interpretada2 . Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o usuário sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo do documento exibido.
+	É atualmente a principal linguagem para programação client-side em navegadores web. Foi concebida para ser uma linguagem script com orientação a objetos baseada em protótipos, tipagem fraca e dinâmica e funções de primeira classe. Possui suporte à programação funcional e apresenta recursos como fechamentos e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++.
+	É baseada em ECMAScript padronizada pela Ecma international nas especificações ECMA-2623 e ISO/IEC 16262.\cite{alterar}
 
-trabalho da leonardo que usa Algoritmos Genéticos (AG)
+	Angularjs é um \textit{framework JavaScript} construido e mantido pelo grupo de engenheiros do Google, ele usa o HTML como uma \textit{template engine}, tudo isso no intuito de fornecer uma solução completa para o cliente-side de sua aplicação. Além disso tem total compatibilidade com as bibliotecas javascript mais utilizadas, como jQuery. É um novo conceito para desenvolvimento de web apps client-site.\cite{angularjs}
 
-falar porque o trabalho do cara se assemelha ao meu trabalho.
+	\subsecao{IDE}
 
-\include{metodologia}
+	O Eclipse é uma IDE (\textit{integrated development environment}). Diferente de uma RAD(\textit{Rapid Application Development}), onde o objetivo é desenvolver o mais rápido possível através do arrastar-e-soltar do mouse, onde montanhas de código são gerados em background, uma IDE te auxilia no desenvolvimento, evitando se intrometer e fazer muita mágica \cite{caelum}.\par
 
-\include{sistema}
+	O Eclipse é a IDE líder de mercado. Formada por um consórcio liderado pela IBM, possui seu código livre. A última versão é a 4.3, mas com qualquer versão posterior a do 3.1 você terá suporte ao Java 5, 6 e 7 \cite{caelum}.\par
 
-\include{conclusao}
+	Está IDE foi escolhida devido ao grande reconhecimento mundial, por sua eficiencia ao se trabalhar com a linguagem de programação Java, por ser open-source e pela existencia de varias ferramentas criadas pela comunidade, para o auxilio no desenvolvimento de softwares.\par
 
-\referencias{referencias}
 
-\include{apendices}
+	\include{sistema}
 
-\end{document}
+	\include{conclusao}
+
+	\referencias{referencias}
+
+	\include{apendices}
+
+	\end{document}
 

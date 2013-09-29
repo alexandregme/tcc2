@@ -1,16 +1,132 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: monografia.aux
+A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: referencial.aux
-A level-1 auxiliary file: metodologia.aux
+White space in argument---line 3 of file referencial.aux
+ : \citation{Schaerf
+ :                   (1999)}
+I'm skipping whatever remains of this command
+White space in argument---line 4 of file referencial.aux
+ : \citation{Souza
+ :                 (2000)}
+I'm skipping whatever remains of this command
+White space in argument---line 5 of file referencial.aux
+ : \citation{Even
+ :                et al. 1976}
+I'm skipping whatever remains of this command
+White space in argument---line 6 of file referencial.aux
+ : \citation{Carter
+ :                  1992}
+I'm skipping whatever remains of this command
+White space in argument---line 13 of file referencial.aux
+ : \citation{Schaerf
+ :                   (1999)}
+I'm skipping whatever remains of this command
+White space in argument---line 14 of file referencial.aux
+ : \citation{Werra
+ :                 (1985)}
+I'm skipping whatever remains of this command
+White space in argument---line 15 of file referencial.aux
+ : \citation{Papadimitriou
+ :                         & Steiglitz (1982)}
+I'm skipping whatever remains of this command
+White space in argument---line 16 of file referencial.aux
+ : \citation{P
+ :             APADIMITRIOU & S TEIGLITZ (1982)}
+I'm skipping whatever remains of this command
+White space in argument---line 17 of file referencial.aux
+ : \citation{(E
+ :              VANS & M INIEKA }
+I'm skipping whatever remains of this command
+White space in argument---line 21 of file referencial.aux
+ : \citation{Glover
+ :                  (1986)}
+I'm skipping whatever remains of this command
+White space in argument---line 22 of file referencial.aux
+ : \citation{Souza
+ :                 (2000)}
+I'm skipping whatever remains of this command
+White space in argument---line 23 of file referencial.aux
+ : \citation{White
+ :                 et al. (2004)}
+I'm skipping whatever remains of this command
+White space in argument---line 24 of file referencial.aux
+ : \citation{Kirkpatrick
+ :                       et al. (1983)}
+I'm skipping whatever remains of this command
+White space in argument---line 25 of file referencial.aux
+ : \citation{Noronha
+ :                   (2000)}
+I'm skipping whatever remains of this command
+White space in argument---line 26 of file referencial.aux
+ : \citation{Aarts
+ :                 & Korst (1989)}
+I'm skipping whatever remains of this command
+White space in argument---line 27 of file referencial.aux
+ : \citation{Downsland
+ :                     (1993)}
+I'm skipping whatever remains of this command
+White space in argument---line 30 of file referencial.aux
+ : \citation{Downsland
+ :                     (1993)}
+I'm skipping whatever remains of this command
+White space in argument---line 31 of file referencial.aux
+ : \citation{Kirkpatrick
+ :                       et al. (1983)}
+I'm skipping whatever remains of this command
+White space in argument---line 32 of file referencial.aux
+ : \citation{Oliveira
+ :                    (2005)}
+I'm skipping whatever remains of this command
+White space in argument---line 33 of file referencial.aux
+ : \citation{John
+ :                Holland (Holland 1975)}
+I'm skipping whatever remains of this command
+White space in argument---line 34 of file referencial.aux
+ : \citation{Darwin
+ :                  (Darwin 1859}
+I'm skipping whatever remains of this command
+White space in argument---line 35 of file referencial.aux
+ : \citation{Oliveira
+ :                    (2005)}
+I'm skipping whatever remains of this command
+White space in argument---line 36 of file referencial.aux
+ : \citation{Michalewicz
+ :                       (1992)}
+I'm skipping whatever remains of this command
+White space in argument---line 37 of file referencial.aux
+ : \citation{Oliveira
+ :                    (2005)}
+I'm skipping whatever remains of this command
+White space in argument---line 38 of file referencial.aux
+ : \citation{(Mitchel
+ :                    1996)}
+I'm skipping whatever remains of this command
+White space in argument---line 40 of file referencial.aux
+ : \citation{(Goldberg
+ :                     1989)}
+I'm skipping whatever remains of this command
+White space in argument---line 41 of file referencial.aux
+ : \citation{Tim\unhbox
+ :                      \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {o\global \mathchardef \accent@spacefactor \spacefactor }\accent 19 o\egroup \spacefactor \accent@spacefactor teo 2002}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: sistema.aux
 A level-1 auxiliary file: conclusao.aux
 The style file: abnt-alf.bst
 A level-1 auxiliary file: apendices.aux
 Database file #1: referencias.bib
-Warning--I didn't find a database entry for "glover"
+Warning--entry type for "caelum" isn't style-file defined
+--line 33 of file referencias.bib
+Warning--entry type for "angularjs" isn't style-file defined
+--line 42 of file referencias.bib
+Warning--I didn't find a database entry for "souca(2000)"
+Warning--I didn't find a database entry for "marinho"
+Warning--I didn't find a database entry for "souza"
+Warning--I didn't find a database entry for "1978)"
+Warning--I didn't find a database entry for "leonardo"
 Warning--I didn't find a database entry for "alterar"
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-(There were 2 warnings)
+(There were 27 error messages)

@@ -5,4 +5,18 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
+\bibitem[Caelum 2013]{caelum}
+\abntrefinfo{Caelum}{CAELUM}{2013}
+{CAELUM. \emph{Apostila do curso FJ-11 - Java e Orientação a Objetos}. 2013.
+Dispon{\'\i}vel em:
+  $<$http://www.caelum.com.br/apostila-java-orientacao-objetos/$>$. Acesso em:
+  29 set. 2013.}
+
+\bibitem[Mendes 2013]{angularjs}
+\abntrefinfo{Mendes}{MENDES}{2013}
+{MENDES, W. \emph{AngularJS um framework para facilitar sua vida}. 2013.
+Dispon{\'\i}vel em:
+  $<$http://www.slideshare.net/WilsonMendes/angularjs-um-framework-para-facilitar-sua-vida/$>$.
+  Acesso em: 29 set. 2013.}
+
 \end{thebibliography}
