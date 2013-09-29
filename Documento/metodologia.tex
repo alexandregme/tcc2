@@ -1,45 +1,68 @@
+
 \capitulo{METODOLOGIA}
+
 A resolução deste trabalho
 
-	Algoritmos e porque
-	levantamento de requistiso
-	arquitetura
+Algoritmo e porque!
 
-	Dcumentação com o tadeu
+Função Objetivo do algoritmo genetico
 
-	Implementação
+Levantamento de requisitos
 
-	passo a passo
+Arquitetura
 
-	criou-se o crude a interface e testo o algoritimo de alocação se der tempo teste de unidade.
+Documentação conversar com o Tadeu
 
+Implementação
+
+passo a passo do problema.
+
+ex: criou-se o crud, interface e testo o algoritimo de alocação, se der tempo teste de unidade.
 
 \secao{Ferramentas Utilizadas}
 
-Breve descrição e falar das ferramentas utilizadas
+Este trabalho conta com a utilização de tecnologias proprias para o desenvolvimento de sistemas web, foram utilizadas as seguintes ferramentas: Para SGBD foi o utilizado PostgreSQL; No back-end foi utilizado Java e o \textit{framework Play!}; No front-end as tecnologias utilizadas foram HTML, CSS, JavaScript e \textit{framework AngularJS} e a IDE utilizada \textit{Eclipse}.\par
 
-Bibliotecas
+\subsecao{Sistema de Gerenciamento de Banco de Dados}
 
-IDE
-PGADMIN
+O SGBD escolhido foi o PostgreSQL pelo fato de ser uma ferramenta open-source e que trabalha perfeitamente com o framework escolhido Play!, uma vez que utilizado em projetos anteriores não foram apresentados conflitos entre o framework e o SGBD. A seguir pode ser notar que é uma ferramenta robusta e que tem visão no mercado internacional.\par
 
-falar pq tomei essas decisões
+O PostgreSQL é um poderoso sistema gerenciador de banco de dados objeto-relacional de código aberto.  Tem mais de 15 anos de desenvolvimento ativo e uma arquitetura que comprovadamente ganhou forte reputação de confiabilidade, integridade de dados e conformidade a padrões.  Roda em todos os grandes sistemas operacionais. É totalmente compatível com ACID, tem suporte completo a chaves estrangeiras, junções (JOINs), visões, gatilhos e procedimentos armazenados (em múltiplas linguagens).  Inclui a maior parte dos tipos de dados do ISO SQL:1999, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, e TIMESTAMP.  Suporta também o armazenamento de objetos binários, incluindo figuras, sons ou vídeos.  Possui interfaces nativas de programação para C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e uma excepcional documentação.\cite{postgresql}
+
+\subsecao{Ferramentas Back-end}
+
+Foi escolhida uma linguagem de programação Java por ser orientada a objeto. Tambem foi escolhido o \textit{Play! framework}, para que o desenvolvimento aconteça de forma mais rápida, fácil e eficiente.\par
+
+%Java
+Java foi criada pela Sun Microsystems para desenvolver inovações tecnológicas em 1992, time liderado por James Gosling. O Java utiliza do conceito de máquina virtual, onde existe, entre o sistema operacional e a aplicação, uma camada extra responsável por \"traduzir\" - mas não apenas isso - o que sua aplicação deseja fazer para as respectivas chamadas do sistema operacional, onde ela está rodando no momento. Sua aplicação roda sem nenhum envolvimento com o sistema operacional, sempre conversando apenas com a JVM - Java Virtual Machine \cite{caelum}.\par
+
+Em 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre foi, junto com a IBM, uma das empresas que mais investiram e fizeram negócios através do uso da plataforma Java. Em 2011 surge a versão Java 7 com algumas pequenas mudanças na linguagem \cite{caelum}.\par
+
+%-----Play! Framework
+
+The Play! É um moderno framework MVC de alta produtividade, que utiliza Java e Scala para o desenvolvimento web, open-source , utiliza templates, hibernate e JUnit  em sua arquitetura. Existe duas versões do framework Play! 1 e Play2! este trabalho utiliza a versão 1 do framework\cite{playframework}.\par
 
 
-	%-----JAVASCRIPT
-	JavaScript é uma linguagem de programação interpretada2 . Foi originalmente implementada como parte dos navegadores web para que scripts pudessem ser executados do lado do cliente e interagissem com o usuário sem a necessidade deste script passar pelo servidor, controlando o navegador, realizando comunicação assíncrona e alterando o conteúdo do documento exibido.
-	É atualmente a principal linguagem para programação client-side em navegadores web. Foi concebida para ser uma linguagem script com orientação a objetos baseada em protótipos, tipagem fraca e dinâmica e funções de primeira classe. Possui suporte à programação funcional e apresenta recursos como fechamentos e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++.
-	É baseada em ECMAScript padronizada pela Ecma international nas especificações ECMA-2623 e ISO/IEC 16262.\cite{alterar}
+\subsecao{Ferramentas Front-end}
 
-	%-----JAVA
-	Java é uma linguagem de programação orientada a objeto desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Diferentemente das linguagens convencionais, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é executado por uma máquina virtual. A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não sua única linguagem.\cite{alterar}
+As ferramentes de Front-end descritas abaixo, foram escolhidas devida a gande utilização na web grande parte dos sites contem HTML, CSS ou JavaScript em algum trexo de seu código, foi escolhido tambem o framework AngularJS para que o desenvolvimento ocorra de maneira agil e mais rapida.\par
 
+%HTML
+HTML que é defindo por (\textit{HyperText Markup Language}) ou linguagem de marcação, é uma linguagem que é utilizada no desenvolvimento de paginas web \cite{html}.\par
 
-	%-----Play!
-	The Play! Framework is a modern Java (and Scala) web application open-source framework that provides a clean alternative to bloated Enterprise Java stacks. Play has two version Play 1.x (Java & Scala) and Play 2.x (Java & Scala).
-	Play is a high-productivity Java and Scala web application framework that integrates the components and APIs you need for modern web application development.
-	Play is based on a lightweight, stateless, web-friendly architecture and features predictable and minimal resource consumption (CPU, memory, threads) for highly-scalable applications thanks to its reactive model, based on Iteratee IO.\par\cite{alterar}
+%css
+Cascading Style Sheets (CSS) é uma tecnologia utilizada para adicionar estilos como cores, fontes, espaçamentos em documentos escritos em uma linguagem de marcação como exemplo o HTML \cite{css}.\par
 
-	%-----Angular 
-	AngularJS is an open-source JavaScript framework, maintained by Google, that assists with running single-page applications. Its goal is to augment browser-based applications with model–view–controller (MVC) capability, in an effort to make both development and testing easier.
-	The library reads in HTML that contains additional custom tag attributes; it then obeys the directives in those custom attributes, and binds input or output parts of the page to a model represented by standard JavaScript variables. The values of those JavaScript variables can be manually set, or retrieved from static or dynamic JSON resources.\par\cite{alterar}
+%JAVASCRIPT
+
+JavaScript é uma linguagem de script utilizada no desenvolvimento de paginas na web, atualmente é a principal linguagem para programação client-side em navegadores web. Todas as paginas de HTML modernas estão usando JavaScript para adicionar funcionalidades e para se comunicar com os webServers\cite{javascript}.\par
+
+Angularjs é um \textit{framework JavaScript} construido e mantido pelo grupo de engenheiros do Google, ele usa o HTML como uma \textit{template engine}, tudo isso no intuito de fornecer uma solução completa para o cliente-side de sua aplicação. Além disso tem total compatibilidade com as bibliotecas javascript mais utilizadas, como jQuery. É um novo conceito para desenvolvimento de web apps client-site.\cite{angularjs}\par
+
+\subsecao{IDE}
+
+O Eclipse é uma IDE (\textit{integrated development environment}). Diferente de uma RAD(\textit{Rapid Application Development}), onde o objetivo é desenvolver o mais rápido possível através do arrastar-e-soltar do mouse, onde montanhas de código são gerados em background, uma IDE te auxilia no desenvolvimento, evitando se intrometer e fazer muita mágica \cite{caelum}.\par
+
+O Eclipse é a IDE líder de mercado. Formada por um consórcio liderado pela IBM, possui seu código livre. A última versão é a 4.3, mas com qualquer versão posterior a do 3.1 você terá suporte ao Java 5, 6 e 7 \cite{caelum}.\par
+
+Está IDE foi escolhida devido ao grande reconhecimento mundial, por sua eficiencia ao se trabalhar com a linguagem de programação Java, por ser open-source e pela existencia de varias ferramentas criadas pela comunidade, para o auxilio no desenvolvimento de softwares.\par
