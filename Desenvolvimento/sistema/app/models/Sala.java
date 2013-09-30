@@ -40,9 +40,9 @@ public class Sala extends GenericModel {
 	public String nome;
 
 	@Column(name = "flag_iluminacao")
-	public Integer iluminacao;
+	public String iluminacao;
 
 	@Column(name = "flag_ativa")
-	public Integer ativa;
+	public String ativa;
 
 }

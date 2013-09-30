@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html ng-app>
 	<!-- HEAD -->
 	<head>
 
@@ -49,13 +48,7 @@
 		</nav> 
 		<!-- MENU -->
 		
-		<!-- MESSAGES -->
-		<section id="message_container" class="message_container">
-			<div id="message_binder" style="margin-bottom: 8px;" data-bind="attr: { 'class': message.render() }">
-				<span id="message_text" data-bind="text: message.data().message"></span>
-			</div>
-		</section>
-		<!-- MESSAGES -->
+
 		
 		<!-- CONTENT -->
 		<section id="body_container" class="body_container">
@@ -91,6 +84,7 @@
 	<script src="@{'/public/javascripts/lib/bootstrap.min.js'}"></script>
 	<script src="@{'/public/javascripts/lib/maskedinput.min.js'}"></script>
 	<script src="@{'/public/javascripts/lib/knockout-2.2.1.js'}"></script>
+	<script src="@{'/public/javascripts/lib/angular.min.js'}"></script>
 	<script src="@{'/public/javascripts/model.js'}"></script>
 	<script src="@{'/public/javascripts/index.js'}"></script>
 	<!-- SCRIPTS -->

@@ -1,8 +1,308 @@
 #{extends 'layout.html' /}
 #{set title:'Controle de Salas' /}
-				
-<div class="alert alert-info">
-	<p>
-		<h4>salas</h4>
-	</p>
+
+
+<div ng-controller="SalaCtrl">
+
+	<!-- MESSAGES -->
+	<section id="message_container" class="message_container">
+		<div id="message_binder" style="margin-bottom: 8px;" class="{{status}}">
+			<span id="message_text">{{message}}</span>
+		</div>
+	</section>
+	<!-- MESSAGES -->
+
+	<div class="alert alert-info">
+
+		<h4>Cadastro de sala</h4> <br />
+
+		<form class="ng-pristine ng-valid form-horizontal">
+
+			<fieldset >
+
+				<div class="control-group">
+
+					<label class="control-label" for="predio">Prédio:</label>
+
+					<div class="controls">
+
+						<select ng-options="p.id as p.nome for p in predios" ng-model="predio.id"></select>
+
+					</div>
+
+				</div>
+
+
+				<div class="control-group">
+
+					<label class="control-label" for="nome">Nome:</label>
+
+					<div class="controls">
+
+						<input type="text" ng-model="nome" maxlength="255"/>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="andar">Andar:</label>
+
+					<div class="controls">
+
+						<input type = "text" ng-model = "andar" maxlength="255"/>
+
+					</div>
+
+				</div>
+
+
+				<div class="control-group">
+
+					<label class="control-label" for="vagas">Vagas:</label>
+
+					<div class="controls">
+
+						<input type = "text" ng-model = "vagas" maxlength="255"/>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="name">Iluminação:</label>
+
+					<div class="controls">
+
+
+						<label class="radio inline"><input type="radio" name="iluminacao" ng-model="iluminacao" value="c">Clara</label>
+
+						<label class="radio inline"><input type="radio" name="iluminacao" ng-model="iluminacao" value="e">Escura</label>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="name">Ativa:</label>
+
+					<div class="controls">
+
+
+						<label class="radio inline"><input type="radio" ng-model="ativa" name="ativa" ng-checked="ativa()" value="s">Sim</label>
+
+						<label class="radio inline"><input type="radio" ng-model="ativa" name="ativa" ng-checked="ativa()" value="n">Não</label>
+
+					</div>
+
+				</div>
+
+			</fieldset>
+
+			<div>
+				<input type="submit" value="Salvar" class="btn btn-success" ng-click="save()" />&nbsp;&nbsp;
+				<input type="button" value="Limpar" class="btn" ng-click="clear()" /> 
+			</div>
+
+		</form>
+
+	</div>
+
+	<h4>Lista de salas</h4> <br />
+
+	<table class="table table-striped table-bordered table-hover table-condensed">
+		<thead>
+			<tr>
+				<td>Id</td>
+				<td>Prédio</td>
+				<td>Nome</td>
+				<td>Andar</td>
+				<td>Número de vagas</td>
+				<td>Iluminação</td>
+				<td>Ativa</td>
+				<td>Ações</td>
+			</tr>
+		</thead>
+		<tbody >
+			<tr ng-repeat="item in data">
+				<td ng-model="id">{{item.id}}</td>
+				<td> {{item.predio.nome}} </td>
+				<td> {{item.nome}} </td>
+				<td> {{item.andar}} </td>
+				<td> {{item.vagas}} </td>
+				<td> {{item.iluminacao}} </td>
+				<td> {{item.ativa}} </td>
+				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.id)"></td>
+			</tr>
+		</tbody>
+	</table>
+
 </div>
+
+<script type="text/javascript">
+
+function SalaCtrl ($scope, $http) {
+
+	var object = null
+
+	$scope.edit = function(_id){
+
+		object = $scope.data[_id];
+
+		$scope.predio = object.predio;
+
+		$scope.nome = object.nome;
+
+		$scope.andar = object.andar;
+
+		$scope.vagas = object.vagas;
+
+		$scope.iluminacao = object.iluminacao;
+
+		$scope.ativa = object.ativa;
+	}
+
+	$scope.checkPredio = function(){
+
+		return $scope.predio == object.predio;
+
+	}
+
+	$scope.save = function(){
+
+		var data;
+
+		if (object == null)
+
+
+			data = { id : null , predio : $scope.predio, nome : $scope.nome, vagas : $scope.vagas, andar: $scope.andar, iluminacao : $scope.iluminacao , ativa : $scope.ativa }
+
+		else
+
+			data = { id : object.id , predio : $scope.predio, nome : $scope.nome, vagas : $scope.vagas, andar: $scope.andar, iluminacao : $scope.iluminacao , ativa : $scope.ativa }
+
+		var _url;
+
+		if (data.id == null)
+
+			_url = window.viewModel.url.base + 'sala/save';
+
+		else
+
+			_url = window.viewModel.url.base + 'sala/edit';
+
+		$http.post(_url, JSON.stringify(data)).success(
+			function(data, status, headers, config) {
+				$scope.list();
+				$scope.clear();
+				$scope.setmessage(data.message, data.status);
+				object = null;
+			})
+
+		. error(function(data, status, headers, config) {
+
+			$scope.message = "Erro ao chamar a url " + _url + " status " + status;
+
+		});
+	}
+
+	$scope.delete = function(_id){
+
+		var data = { id:_id };
+
+		var _url = window.viewModel.url.base + 'sala/delete';
+
+		$http.post(_url, JSON.stringify(data)).success(	
+			function(data, status, headers, config) {
+
+				$scope.list();
+
+				$scope.clear();
+
+				$scope.setmessage(data.message, data.status);
+
+				object = null;
+
+			})
+		. error(function(data, status, headers, config) {
+			$scope.message = "Erro ao chamar a url " + _url + " status " + status;
+		})	
+	}
+
+	$scope.list = function () {
+
+		var _url = window.viewModel.url.base + 'sala/list';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.data = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+	}
+
+	$scope.listPredios = function () {
+
+		var _url = window.viewModel.url.base + 'predio/list';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.predios = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+
+	}
+
+
+	$scope.clear = function () {
+		
+		$scope.predio = null;
+		$scope.nome = '';
+		$scope.andar = '';
+		$scope.vagas = '';
+		$scope.iluminacao = '';
+		$scope.ativa = '';
+		$scope.open();
+	}
+
+
+	$scope.setmessage = function(_message, _status){
+
+		$scope.message = _message;
+
+		if (_status == "s") {
+
+			$scope.status = 'message message-success';
+
+		} else if (_status == "a") {
+
+			$scope.status = 'message message-alert'
+
+		} else if (_status == "e") {
+
+			$scope.status = 'message message-error';
+
+		}
+	}
+
+	$scope.open = function(){
+
+		$scope.message = 'Nenhuma informação sobre essa página';
+
+		$scope.status = 'message message-info';
+	}
+
+	$scope.open();
+	$scope.list();
+	$scope.listPredios();
+}
+
+</script>

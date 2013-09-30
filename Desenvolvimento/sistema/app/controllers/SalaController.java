@@ -60,9 +60,9 @@ public class SalaController extends Controller {
 
 			sala.nome = s.nome;
 
-			sala.iluminacao = s.iluminacao;
+			sala.iluminacao = s.iluminacao.toString();
 
-			sala.ativa = s.ativa;
+			sala.ativa = s.ativa.toString();
 
 			sala.save();
 

@@ -53,7 +53,7 @@ body {
 
 /* >> MENU << */
 .menu_container {
-	background-color: rgba(25, 125, 35, 0.1);
+	background-color: rgba(30, 30, 30, 0.7);
 	border-top: 1px solid #BBBBBB;
 	border-bottom: 1px solid #BBBBBB;
 	padding: 6px 0px;
@@ -69,7 +69,7 @@ body {
 
 /* >> MESSAGES << */
 .message_container {
-	margin: 10px 6% 0px 6%;
+	margin: 10px 0px;
 	text-align: center;
 }
 
@@ -146,7 +146,7 @@ body {
 /* >> FOOTER << */
 .footer_container {
 	border-top: 1px solid #71add8;
-	margin: 20px 8% 10px 8%;
+	margin: 20px 6% 10px 6%;
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 

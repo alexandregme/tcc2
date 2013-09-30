@@ -60,3 +60,9 @@ gabriela sp,
 luciano SB,
 Jander,
 Ailtinho,
+
+
+
+RELATORIOS==================================
+
+por sala, por andar, por iluminação por ativo.

@@ -5,18 +5,184 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
+\bibitem[Aarts e Korst 1988]{aarts1988simulated}
+\abntrefinfo{Aarts e Korst}{AARTS; KORST}{1988}
+{AARTS, E.; KORST, J. Simulated annealing and boltzmann machines.
+New York, NY; John Wiley and Sons Inc., 1988.}
+
 \bibitem[Caelum 2013]{caelum}
 \abntrefinfo{Caelum}{CAELUM}{2013}
 {CAELUM. \emph{Apostila do curso FJ-11 - Java e Orientação a Objetos}. 2013.
 Dispon{\'\i}vel em:
-  $<$http://www.caelum.com.br/apostila-java-orientacao-objetos/$>$. Acesso em:
+  $<$http://www.caelum.com.br/apostila-java-orientacao-objetos$>$. Acesso em:
   29 set. 2013.}
+
+\bibitem[Carter e Tovey 1992]{carter1992classroom}
+\abntrefinfo{Carter e Tovey}{CARTER; TOVEY}{1992}
+{CARTER, M.~W.; TOVEY, C.~A. When is the classroom assignment problem hard?
+\emph{Operations Research}, INFORMS, v.~40, n. 1-Supplement-1, p. S28--S39,
+  1992.}
+
+\bibitem[CISCON 2006]{deleonardo}
+\abntrefinfo{CISCON}{CISCON}{2006}
+{CISCON, L.~A. O problema de geraÇÃo de horÁrios: Um foco na eliminaÇÃo de
+  janelas e aulas isoladas.
+2006.}
+
+\bibitem[Darwin 1968]{darwin1968origin}
+\abntrefinfo{Darwin}{DARWIN}{1968}
+{DARWIN, C. On the origin of species by means of natural selection. 1859.
+\emph{See also: http://www. literature.
+  org/authors/darwin-charles/the-origin-ofspecies}, 1968.}
+
+\bibitem[Evans e Minieka 1992]{evans1992optimization}
+\abntrefinfo{Evans e Minieka}{EVANS; MINIEKA}{1992}
+{EVANS, J.~R.; MINIEKA, E. \emph{Optimization algorithms for networks and
+  graphs}. [S.l.]: CRC Press, 1992.}
+
+\bibitem[Even, Itai e Shamir 1975]{even1975complexity}
+\abntrefinfo{Even, Itai e Shamir}{EVEN; ITAI; SHAMIR}{1975}
+{EVEN, S.; ITAI, A.; SHAMIR, A. On the complexity of time table and
+  multi-commodity flow problems. In:  IEEE. \emph{Foundations of Computer
+  Science, 1975., 16th Annual Symposium on}. [S.l.], 1975. p. 184--193.}
+
+\bibitem[Glover 1986]{glover1986future}
+\abntrefinfo{Glover}{GLOVER}{1986}
+{GLOVER, F. Future paths for integer programming and links to artificial
+  intelligence.
+\emph{Computers \& Operations Research}, Elsevier, v.~13, n.~5, p. 533--549,
+  1986.}
+
+\bibitem[Goldberg 1989]{goldberg1989genetic}
+\abntrefinfo{Goldberg}{GOLDBERG}{1989}
+{GOLDBERG, D. Genetic algorithms in optimization, search and machine learning.
+\emph{Addison Wesley, New York. Eiben AE, Smith JE (2003) Introduction to
+  Evolutionary Computing. Springer. Jacq J, Roux C (1995) Registration of
+  non-segmented images using a genetic algorithm. Lecture notes in computer
+  science}, v.~905, p. 205--211, 1989.}
+
+\bibitem[Holland 1975]{holland1975adaptation}
+\abntrefinfo{Holland}{HOLLAND}{1975}
+{HOLLAND, J.~H. \emph{Adaptation in natural and artificial systems: An
+  introductory analysis with applications to biology, control, and artificial
+  intelligence.} [S.l.]: U Michigan Press, 1975.}
+
+\bibitem[Kirkpatrick, Jr. e Vecchi 1983]{kirkpatrick1983optimization}
+\abntrefinfo{Kirkpatrick, Jr. e Vecchi}{KIRKPATRICK; JR.; VECCHI}{1983}
+{KIRKPATRICK, S.; JR., D.~G.; VECCHI, M.~P. Optimization by simmulated
+  annealing.
+\emph{science}, Washington, v.~220, n.~4598, p. 671--680, 1983.}
+
+\bibitem[Marinho 2005]{marinho2005heuristicas}
+\abntrefinfo{Marinho}{MARINHO}{2005}
+{MARINHO, E.
+\emph{Heur{\'\i}sticas busca tabu para o problema de programa{\c{c}}{\~a}o de
+  tripula{\c{c}}{\~o}es de {\^o}nibus urbano}.
+Tese (Doutorado) --- Master’s Thesis, Universidade Federal Fluminense, 2005.}
 
 \bibitem[Mendes 2013]{angularjs}
 \abntrefinfo{Mendes}{MENDES}{2013}
 {MENDES, W. \emph{AngularJS um framework para facilitar sua vida}. 2013.
 Dispon{\'\i}vel em:
-  $<$http://www.slideshare.net/WilsonMendes/angularjs-um-framework-para-facilitar-sua-vida/$>$.
+  $<$http://www.slideshare.net/WilsonMendes/angularjs-um-framework-para-facilitar-sua-vida$>$.
   Acesso em: 29 set. 2013.}
+
+\bibitem[Michalewicz e Schoenauer 1996]{michalewicz1996evolutionary}
+\abntrefinfo{Michalewicz e Schoenauer}{MICHALEWICZ; SCHOENAUER}{1996}
+{MICHALEWICZ, Z.; SCHOENAUER, M. Evolutionary algorithms for constrained
+  parameter optimization problems.
+\emph{Evolutionary computation}, MIT Press, v.~4, n.~1, p. 1--32, 1996.}
+
+\bibitem[Mitchell 1998]{mitchell1998introduction}
+\abntrefinfo{Mitchell}{MITCHELL}{1998}
+{MITCHELL, M. An introduction to genetic algorithms (complex adaptive systems).
+A Bradford Book, 1998.}
+
+\bibitem[Noronha 2003]{noronha2003abordagem}
+\abntrefinfo{Noronha}{NORONHA}{2003}
+{NORONHA, T. Uma abordagem sobre estrat{\'e}gias metaheur{\'\i}sticas. 2000.
+\emph{Projeto Orientado--Universidade Federal do Rio Grande do Norte. Rio
+  Grande do Norte. Dispon{\'\i}vel em: http://www. sbc. org.
+  br/reic/edicoes/2001e1/cientificos/UmaAbordagemsobreEstrategiasM
+  etaheuristicas. pdf}, 2003.}
+
+\bibitem[Oliveira 2005]{oliveira2005algoritmo}
+\abntrefinfo{Oliveira}{OLIVEIRA}{2005}
+{OLIVEIRA, H. Algoritmo evolutivo no tratamento do problema de roteamento de
+  ve{\'\i}culos com janela de tempo.
+\emph{Monografia, Departamento de Ci{\^e}ncia da Computa{\c{c}}{\~a}o,
+  Universidade Federal de Lavras}, 2005.}
+
+\bibitem[Play! 2013]{playframework}
+\abntrefinfo{Play!}{PLAY!}{2013}
+{PLAY! \emph{The High Velocity Web Framework For Java and Scala}. 2013.
+Dispon{\'\i}vel em: $<$http://www.playframework.com/$>$. Acesso em: 29 set.
+  2013.}
+
+\bibitem[PostgreSQL 2013]{postgresql}
+\abntrefinfo{PostgreSQL}{POSTGRESQL}{2013}
+{POSTGRESQL. \emph{Sobre o PostgreSQL}. 2013.
+Dispon{\'\i}vel em: $<$http://www.postgresql.org.br/sobre$>$. Acesso em: 29
+  set. 2013.}
+
+\bibitem[Reeves 1993]{reeves1993modern}
+\abntrefinfo{Reeves}{REEVES}{1993}
+{REEVES, C.~R. \emph{Modern heuristic techniques for combinatorial problems}.
+  [S.l.]: John Wiley \& Sons, Inc., 1993.}
+
+\bibitem[Schaerf 1999]{schaerf1999survey}
+\abntrefinfo{Schaerf}{SCHAERF}{1999}
+{SCHAERF, A. A survey of automated timetabling.
+\emph{Artificial intelligence review}, Springer, v.~13, n.~2, p. 87--127,
+  1999.}
+
+\bibitem[Souza 2000]{souza2000}
+\abntrefinfo{Souza}{SOUZA}{2000}
+{SOUZA, M. J.~F. Programa{\c{c}}{\~a}o de hor{\'a}rios em escolas: uma
+  aproxima{\c{c}}{\~a}o por metaheur{\'\i}sticas.
+\emph{Rio de Janeiro}, 2000.}
+
+\bibitem[Steiglitz e Papadimitriou 1982]{steiglitz1982combinatorial}
+\abntrefinfo{Steiglitz e Papadimitriou}{STEIGLITZ; PAPADIMITRIOU}{1982}
+{STEIGLITZ, K.; PAPADIMITRIOU, C.~H. Combinatorial optimization: Algorithms and
+  complexity.
+\emph{Prentice Hall, New Jersey., UV Vazirani (1984). On two geometric problems
+  related to the travelling salesman problem. J. Algorithms}, v.~5, p.
+  231--246, 1982.}
+
+\bibitem[TIM{\'O}TEO 2005]{timoteo2005desenvolvimento}
+\abntrefinfo{TIM{\'O}TEO}{TIM{\'O}TEO}{2005}
+{TIM{\'O}TEO, G. T.~S. \emph{Desenvolvimento de um Algoritmo Gen{\'e}tico para
+  a Resolu{\c{c}}{\~a}o do Timetabling}. 2005.}
+
+\bibitem[W3C 2013 a]{html}
+\abntrefinfo{W3C}{W3C}{2013 a}
+{W3C. \emph{HTML 4.01 Specification}. 2013 a.
+Dispon{\'\i}vel em: $<$http://www.w3.org/TR/html4$>$. Acesso em: 29 set. 2013.}
+
+\bibitem[W3C 2013 b]{css}
+\abntrefinfo{W3C}{W3C}{2013 b}
+{W3C. \emph{Cascading Style Sheets}. 2013 b.
+Dispon{\'\i}vel em: $<$http://www.w3.org/Style/CSS$>$. Acesso em: 29 set.
+  2013.}
+
+\bibitem[w3schools 2013]{javascript}
+\abntrefinfo{w3schools}{W3SCHOOLS}{2013}
+{W3SCHOOLS. \emph{JavaScript Tutorial}. 2013.
+Dispon{\'\i}vel em: $<$http://www.w3schools.com/js/$>$. Acesso em: 29 set.
+  2013.}
+
+\bibitem[Werra 1985]{de1985introduction}
+\abntrefinfo{Werra}{WERRA}{1985}
+{WERRA, D. de. An introduction to timetabling.
+\emph{European Journal of Operational Research}, Elsevier, v.~19, n.~2, p.
+  151--162, 1985.}
+
+\bibitem[White, Xie e Zonjic 2004]{white2004using}
+\abntrefinfo{White, Xie e Zonjic}{WHITE; XIE; ZONJIC}{2004}
+{WHITE, G.~M.; XIE, B.~S.; ZONJIC, S. Using tabu search with longer-term memory
+  and relaxation to create examination timetables.
+\emph{European Journal of Operational Research}, Elsevier, v.~153, n.~1, p.
+  80--91, 2004.}
 
 \end{thebibliography}

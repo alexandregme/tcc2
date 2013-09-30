@@ -31,7 +31,7 @@ DROP TABLE IF EXISTS predio;
 CREATE TABLE predio (
   id_predio SERIAL NOT NULL,
   nome_predio CHARACTER varying(255),
-  texto_descricao INTEGER NOT NULL,
+  texto_descricao CHARACTER varying(255),
   CONSTRAINT pk_predio PRIMARY KEY (id_predio)
 );
 
@@ -45,9 +45,9 @@ CREATE TABLE sala (
   id_predio INTEGER NOT NULL,
   numero_andar INTEGER NOT NULL,
   numero_vagas INTEGER NOT NULL,
-  nome_sala INTEGER NOT NULL,
-  flag_iluminacao NUMERIC(1,0),
-  flag_ativa NUMERIC(1,0),
+  nome_sala CHARACTER varying(255),
+  flag_iluminacao character(1),
+  flag_ativa character(1),
   CONSTRAINT pk_sala PRIMARY KEY (id_sala)
 );
 
