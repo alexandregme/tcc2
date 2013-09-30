@@ -100,12 +100,20 @@
 
 				</div>
 
-			</fieldset>
 
-			<div>
-				<input type="submit" value="Salvar" class="btn btn-success" ng-click="save()" />&nbsp;&nbsp;
-				<input type="button" value="Limpar" class="btn" ng-click="clear()" /> 
-			</div>
+				<div class="control-group">
+
+					<label class="control-label" for="name"></label>
+					<div class="controls">
+
+						<input type="submit" value="Salvar" class="btn btn-success" ng-click="save()" />&nbsp;&nbsp;
+
+						<input type="button" value="Limpar" class="btn" ng-click="clear()" /> 
+
+					</div>
+				</div>
+
+			</fieldset>
 
 		</form>
 
@@ -197,7 +205,9 @@ function SalaCtrl ($scope, $http) {
 		$http.post(_url, JSON.stringify(data)).success(
 			function(data, status, headers, config) {
 				$scope.list();
-				$scope.clear();
+				if (data.status != 'e'){
+					$scope.clear();
+				}
 				$scope.setmessage(data.message, data.status);
 				object = null;
 			})
@@ -263,7 +273,7 @@ function SalaCtrl ($scope, $http) {
 
 
 	$scope.clear = function () {
-		
+
 		$scope.predio = null;
 		$scope.nome = '';
 		$scope.andar = '';
