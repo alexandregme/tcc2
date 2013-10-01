@@ -2,7 +2,7 @@
 #{set title:'Controle de Horários' /}
 
 
-<div ng-controller="PredioCtrl">
+<div ng-controller="HorarioCtrl">
 
 	<!-- MESSAGES -->
 	<section id="message_container" class="message_container">
@@ -37,7 +37,7 @@
 
 					<div class="controls">
 
-						<input type="text" ng-model="horarioDe" maxlength="255"/>
+						<input horarioDeMask type="text" ng-model="horarioDe" ui-mask="'99:99'" maxlength="255"/>
 
 					</div>
 
@@ -49,7 +49,7 @@
 
 					<div class="controls">
 
-						<input type="text" ng-model="horarioAte" maxlength="255"/>
+						<input type="text" ng-model="horarioAte" id="horarioAte" maxlength="255"/>
 
 					</div>
 
@@ -111,9 +111,9 @@
 
 <script type="text/javascript">
 
-function PredioCtrl ($scope, $http) {
+function HorarioCtrl ($scope, $http) {
 
-	var object = null
+	var object = null;
 
 	$scope.edit = function(_id){
 
@@ -121,9 +121,9 @@ function PredioCtrl ($scope, $http) {
 
 		$scope.turno = object.turno;
 		
-		$scope.horarioDe = object.horarioDe;
+		$scope.horarioDe = new Date(79,5,24)//object.horarioDe;
 
-		$scope.horarioAte = object.horarioAte;
+		$scope.horarioAte = new Date(79,5,24)// object.horarioAte;
 
 	}
 
@@ -134,7 +134,7 @@ function PredioCtrl ($scope, $http) {
 		if (object == null)
 
 
-			data = { id : null , turno : $scope.turno,horarioDe : $scope.horarioDe , horarioAte : $scope.horarioAte}
+			data = { id : null , turno : $scope.turno, horarioDe :"2013-1-1 01:20:00" , horarioAte : "2013-1-1 01:20:00"}
 
 		else
 
@@ -263,5 +263,5 @@ function PredioCtrl ($scope, $http) {
 	$scope.listTurnos();
 
 }
-
 </script>
+

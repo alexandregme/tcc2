@@ -1,92 +1,91 @@
 <!DOCTYPE html>
 <html ng-app>
-	<!-- HEAD -->
-	<head>
+<!-- HEAD -->
+<head>
 
-		<!-- METAS -->
-		<title>#{get 'title' /}</title>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<!-- METAS -->
-		
-		<!-- LINKS -->
-		<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/bootstrap.min.css'}" />
-		<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/index.css'}" />
-		<!-- LINKS -->
-		
-    </head>
-	<!-- HEAD -->
-
-    <!-- BODY -->
-	<body>
-
-		<!-- LOADING -->
-		<div id="loading" class="loading"></div>
-		<!-- LOADING -->
-		
-		<!-- POPUP -->
-		<div id="popup_loading" class="popup_loading"></div>
-		<div id="popup" class="popup" style="display: none; padding: 2px;">
-			<button id="popup_button" type="button" class="close" onclick="return _A.popup.hide();">&times;</button>
-			<div id="popup_content" class="popup_content"></div>
-		</div>
-		<!-- POPUP -->
-		
-		<!-- HEADER -->
-		<header id="header_container" class="header_container">
-
-			<h1 style="color:#fff;text-align:center; padding:30px 0 0 0 ;">Título da monografia</h1>
-
-		</header>
-		<!-- HEADER -->
-		
-		<!-- MENU -->
-		<nav id="menu_container" class="menu_container">
-			<div>
-				#{include 'menu.html' /}
-			</div>
-		</nav> 
-		<!-- MENU -->
-		
-
-		
-		<!-- CONTENT -->
-		<section id="body_container" class="body_container">
-			<h3 class="body_title">#{get 'title' /}</h3>
-			<div id="body_container_content" class="body_container_content">
-				#{doLayout /}
-			</div>
-		</section>
-		<!-- CONTENT -->
-		
-		<!-- FOOTER -->
-		<footer id="footer_container" class="footer_container">
-
-			<div class="footer_container_image">
-				<img src="@{'/public/images/logopuc.png'}" alt="[PUC Minas]"  width="100px"/>
-			</div>
-
-			<div class="footer_container_text">
-
-				<span>PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS</span>
-				<br />
-				<span>Desenvolvimento: Alexandre Gonzaga Mendes - 391011</b></span>
-			</div>
-
-		</footer>
-		<!-- FOOTER -->
-		
-    </body>
-	<!-- BODY -->
+	<!-- METAS -->
+	<title>#{get 'title' /}</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- METAS -->
 	
-	<!-- SCRIPTS -->
-	<script src="@{'/public/javascripts/lib/jquery-1.10.1.min.js'}"></script>
-	<script src="@{'/public/javascripts/lib/bootstrap.min.js'}"></script>
-	<script src="@{'/public/javascripts/lib/maskedinput.min.js'}"></script>
-	<script src="@{'/public/javascripts/lib/knockout-2.2.1.js'}"></script>
-	<script src="@{'/public/javascripts/lib/angular.min.js'}"></script>
-	<script src="@{'/public/javascripts/model.js'}"></script>
-	<script src="@{'/public/javascripts/index.js'}"></script>
-	<!-- SCRIPTS -->
-		
+	<!-- LINKS -->
+	<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/bootstrap.min.css'}" />
+	<link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/index.css'}" />
+	<!-- LINKS -->
+	
+</head>
+<!-- HEAD -->
+
+<!-- BODY -->
+<body>
+
+	<!-- LOADING -->
+	<div id="loading" class="loading"></div>
+	<!-- LOADING -->
+	
+	<!-- POPUP -->
+	<div id="popup_loading" class="popup_loading"></div>
+	<div id="popup" class="popup" style="display: none; padding: 2px;">
+		<button id="popup_button" type="button" class="close" onclick="return _A.popup.hide();">&times;</button>
+		<div id="popup_content" class="popup_content"></div>
+	</div>
+	<!-- POPUP -->
+	
+	<!-- HEADER -->
+	<header id="header_container" class="header_container">
+
+		<h1 style="color:#fff;text-align:center; padding:30px 0 0 0 ; text-shadow: 0 1px 0 rgba(30,30,30,1);">Título da monografia</h1>
+
+	</header>
+	<!-- HEADER -->
+	
+	<!-- MENU -->
+	<nav id="menu_container" class="menu_container">
+		<div>
+			#{include 'menu.html' /}
+		</div>
+	</nav> 
+	<!-- MENU -->
+	
+
+	
+	<!-- CONTENT -->
+	<section id="body_container" class="body_container">
+		<h3 class="body_title">#{get 'title' /}</h3>
+		<div id="body_container_content" class="body_container_content">
+			#{doLayout /}
+		</div>
+	</section>
+	<!-- CONTENT -->
+	
+	<!-- FOOTER -->
+	<footer id="footer_container" class="footer_container">
+
+		<div class="footer_container_image">
+			<img src="@{'/public/images/logopuc.png'}" alt="[PUC Minas]"  width="100px"/>
+		</div>
+
+		<div class="footer_container_text">
+
+			<span>PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS</span>
+			<br />
+			<span>Desenvolvimento: Alexandre Gonzaga Mendes - 391011</b></span>
+		</div>
+
+	</footer>
+	<!-- FOOTER -->
+	
+</body>
+<!-- BODY -->
+
+<!-- SCRIPTS -->
+<script src="@{'/public/javascripts/lib/jquery-1.10.1.min.js'}"></script>
+<script src="@{'/public/javascripts/lib/bootstrap.min.js'}"></script>
+<script src="@{'/public/javascripts/lib/knockout-2.2.1.js'}"></script>
+<script src="@{'/public/javascripts/lib/angular.min.js'}"></script>
+<script src="@{'/public/javascripts/model.js'}"></script>
+<script src="@{'/public/javascripts/index.js'}"></script>
+<!-- SCRIPTS -->
+
 </html>

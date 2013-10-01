@@ -2,3 +2,4 @@
 
 require:
     - play
+    - org.jadira.usertype -> usertype.core 3.0.0.CR1

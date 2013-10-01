@@ -147,7 +147,7 @@ body {
 .footer_container {
 	border-top: 1px solid #71add8;
 	margin: 20px 6% 10px 6%;
-	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	text-shadow: 0 1px 0 rgba(30,30,30,1);
 }
 
 .footer_container_image {
@@ -156,9 +156,10 @@ body {
 }
 
 .footer_container_text {
-	font-size: x-small;
+	font-size: 11px;
 	margin: 6px 0px 6px 0px;
 	text-align: center;
+	color: #fff;
 }
 /* >> FOOTER << */
 
