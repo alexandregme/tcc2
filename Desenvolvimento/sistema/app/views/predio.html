@@ -16,22 +16,46 @@
 
 		<h4>Cadastro de prédio</h4> <br />
 
-		<form class="ng-pristine ng-valid">
+		<form class="ng-pristine ng-valid form-horizontal">
 			<fieldset >
-				<label for="nome">Nome:</label>
-				<div class="input">
-					<input type = "text" ng-model = "nome" maxlength="255"/>
+				<div class="control-group">
+
+					<label class="control-label" for="nome">Nome:</label>
+
+					<div class="controls">
+
+						<input type="text" ng-model="nome" maxlength="255"/>
+
+					</div>
+
 				</div>
-				<br />
-				<label for="descricao">Descrição:</label>
-				<div class="input">
-					<input type = "text" ng-model = "descricao" maxlength="255"/>
+
+				<div class="control-group">
+
+					<label class="control-label" for="descricao">Descrição:</label>
+
+					<div class="controls">
+
+						<input type="text" ng-model="descricao" maxlength="255"/>
+
+					</div>
+
 				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="name"></label>
+					<div class="controls">
+
+						<input type="submit" value="Salvar" class="btn btn-success" ng-click="save()" />&nbsp;&nbsp;
+
+						<input type="button" value="Limpar" class="btn" ng-click="clear()" /> 
+
+					</div>
+				</div>
+
 			</fieldset>
-			<div class="actions">
-				<input type="submit" value="Salvar" class="btn btn-success" ng-click="save()" />&nbsp;&nbsp;
-				<input type="button" value="Limpar" class="btn" ng-click="clear()" /> 
-			</div>
+
 		</form>
 
 	</div>
@@ -52,14 +76,21 @@
 		<tbody >
 
 			<tr ng-repeat="item in data">
+
 				<td ng-model="id">{{item.id}}</td>
+
 				<td> {{item.nome}} </td>
+
 				<td> {{item.descricao}} </td>
+
 				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.id)"></td>
+
 			</tr>
 
 		</tbody>
+
 	</table>
+
 </div>
 
 <script type="text/javascript">
@@ -104,11 +135,14 @@ function PredioCtrl ($scope, $http) {
 		$http.post(_url, JSON.stringify(data)).success(
 			function(data, status, headers, config) {
 				$scope.list();
-				$scope.clear();
-				$scope.setmessage(data.message, data.status);
-				object = null;
-			})
 
+				if (data.status != 'e'){
+					$scope.clear();
+					object = null;
+				}
+
+				$scope.setmessage(data.message, data.status);
+			})
 		. error(function(data, status, headers, config) {
 
 			$scope.message = "Erro ao chamar a url " + _url + " status " + status;

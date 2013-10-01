@@ -1,8 +1,215 @@
 #{extends 'layout.html' /}
 #{set title:'Controle de Turnos' /}
-				
-<div class="alert alert-info">
-	<p>
-		<h4>Turnos</h4>
-	</p>
+
+
+<div ng-controller="PredioCtrl">
+
+	<!-- MESSAGES -->
+	<section id="message_container" class="message_container">
+		<div id="message_binder" style="margin-bottom: 8px;" class="{{status}}">
+			<span id="message_text">{{message}}</span>
+		</div>
+	</section>
+	<!-- MESSAGES -->
+
+	<div class="alert alert-info">
+
+		<h4>Cadastro de turnos</h4> <br />
+
+		<form class="ng-pristine ng-valid form-horizontal">
+			<fieldset >
+
+				<div class="control-group">
+
+					<label class="control-label" for="descricao">Descrição:</label>
+
+					<div class="controls">
+
+						<input type="text" ng-model="descricao" maxlength="255"/>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="name"></label>
+					<div class="controls">
+
+						<input type="submit" value="Salvar" class="btn btn-success" ng-click="save()" />&nbsp;&nbsp;
+
+						<input type="button" value="Limpar" class="btn" ng-click="clear()" /> 
+
+					</div>
+				</div>
+
+			</fieldset>
+
+		</form>
+
+	</div>
+	
+	<h4>Lista de turnos</h4> <br />
+
+	<table class="table table-striped table-bordered table-hover table-condensed">
+		<thead>
+
+			<tr>
+				<td>Id</td>
+				<td>Descrição</td>
+				<td>Ações</td>
+			</tr>
+
+		</thead>
+		<tbody >
+
+			<tr ng-repeat="item in data">
+
+				<td ng-model="id">{{item.id}}</td>
+
+				<td> {{item.descricao}} </td>
+
+				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.id)"></td>
+
+			</tr>
+
+		</tbody>
+
+	</table>
+
 </div>
+
+<script type="text/javascript">
+
+function PredioCtrl ($scope, $http) {
+
+	var object = null
+
+	$scope.edit = function(_id){
+
+		object = $scope.data[_id];
+
+		$scope.descricao = object.descricao;
+
+	}
+
+	$scope.save = function(){
+
+		var data;
+
+		if (object == null)
+
+
+			data = { id : null , descricao : $scope.descricao}
+
+		else
+
+			data = { id : object.id , descricao : $scope.descricao}				
+
+		var _url;
+
+		if (data.id == null)
+
+			_url = window.viewModel.url.base + 'turno/save';
+
+		else
+
+			_url = window.viewModel.url.base + 'turno/edit';
+
+		$http.post(_url, JSON.stringify(data)).success(
+			function(data, status, headers, config) {
+				$scope.list();
+
+				if (data.status != 'e'){
+					$scope.clear();
+					object = null;
+				}
+
+				$scope.setmessage(data.message, data.status);
+			})
+		. error(function(data, status, headers, config) {
+
+			$scope.message = "Erro ao chamar a url " + _url + " status " + status;
+
+		});
+	}
+
+	$scope.delete = function(_id){
+
+		var data = { id:_id };
+
+		var _url = window.viewModel.url.base + 'turno/delete';
+
+		$http.post(_url, JSON.stringify(data)).success(	
+			function(data, status, headers, config) {
+				
+				$scope.list();
+				
+				$scope.clear();
+				
+				$scope.setmessage(data.message, data.status);
+
+				object = null;
+
+			})
+		. error(function(data, status, headers, config) {
+			$scope.message = "Erro ao chamar a url " + _url + " status " + status;
+		})	
+
+	}
+
+	$scope.list = function () {
+
+		var _url = window.viewModel.url.base + 'turno/list';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.data = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+	}
+
+	$scope.clear = function () {
+
+		$scope.descricao = '';
+
+		$scope.open();
+
+	}
+
+	$scope.setmessage = function(_message, _status){
+
+		$scope.message = _message;
+
+		if (_status == "s") {
+			
+			$scope.status = 'message message-success';
+
+		} else if (_status == "a") {
+
+			$scope.status = 'message message-alert'
+
+		} else if (_status == "e") {
+
+			$scope.status = 'message message-error';
+
+		}
+	}
+	
+	$scope.open = function(){
+
+		$scope.message = 'Nenhuma informação sobre essa página';
+
+		$scope.status = 'message message-info';
+	}
+
+	$scope.open();
+
+	$scope.list();
+
+}
+
+</script>

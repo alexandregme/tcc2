@@ -46,8 +46,8 @@ CREATE TABLE sala (
   numero_andar INTEGER NOT NULL,
   numero_vagas INTEGER NOT NULL,
   nome_sala CHARACTER varying(255),
-  flag_iluminacao character(1),
-  flag_ativa character(1),
+  flag_iluminacao CHARACTER varying(15),
+  flag_ativa CHARACTER varying(3),
   CONSTRAINT pk_sala PRIMARY KEY (id_sala)
 );
 
@@ -55,7 +55,7 @@ CREATE TABLE sala (
 -- Table horario
 -- 
 -- ---
-    
+
 CREATE TABLE horario (
   id_horario SERIAL NOT NULL,
   id_turno INTEGER NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE horario (
 -- Table turno
 -- 
 -- ---
-    
+
 CREATE TABLE turno (
   id_turno SERIAL NOT NULL,
   texto_descricao CHARACTER varying(255),
@@ -79,7 +79,7 @@ CREATE TABLE turno (
 -- Table disciplina
 -- 
 -- ---
-    
+
 CREATE TABLE disciplina (
   id_disciplina SERIAL NOT NULL,
   id_periodo INTEGER NOT NULL,
@@ -94,19 +94,19 @@ CREATE TABLE disciplina (
 -- Table relacionamento_disciplina_horario
 -- 
 -- ---
-    
+
 CREATE TABLE relacionamento_disciplina_horario (
   id_relacionamento SERIAL NOT NULL,
   id_disciplina INTEGER NOT NULL,
   id_horario INTEGER NOT NULL,
-   CONSTRAINT pk_relacionamento_disciplina_horario PRIMARY KEY (id_relacionamento)
+  CONSTRAINT pk_relacionamento_disciplina_horario PRIMARY KEY (id_relacionamento)
 );
 
 -- ---
 -- Table curso
 -- 
 -- ---
-    
+
 CREATE TABLE curso (
   id_curso SERIAL NOT NULL,
   nome_curso  CHARACTER varying(255),
@@ -118,39 +118,39 @@ CREATE TABLE curso (
 -- Table colegiado
 -- 
 -- ---
-    
+
 CREATE TABLE colegiado (
   id_colegiado SERIAL NOT NULL,
   id_curso INTEGER NOT NULL,
   nome_colegiado  CHARACTER varying(255),
   texto_descricao  CHARACTER varying(255),
-   CONSTRAINT pk_colegiado PRIMARY KEY (id_colegiado)
+  CONSTRAINT pk_colegiado PRIMARY KEY (id_colegiado)
 );
 
 -- ---
 -- Table periodo
 -- 
 -- ---
-    
+
 CREATE TABLE periodo (
   id_periodo SERIAL NOT NULL,
   id_colegiado INTEGER NOT NULL,
   texto_descricao  CHARACTER varying(255),
-  flag_optativo NUMERIC(1,0),
-CONSTRAINT pk_periodo PRIMARY KEY (id_periodo)
+  flag_optativo CHARACTER varying(3),
+  CONSTRAINT pk_periodo PRIMARY KEY (id_periodo)
 );
 
 -- ---
 -- Table alocacao
 -- 
 -- ---
-    
+
 CREATE TABLE alocacao (
   id_alocacao SERIAL NOT NULL,
   id_sala INTEGER NOT NULL,
   id_horario INTEGER NOT NULL,
   id_disciplina INTEGER NOT NULL,
- CONSTRAINT pk_alocacao PRIMARY KEY (id_alocacao)
+  CONSTRAINT pk_alocacao PRIMARY KEY (id_alocacao)
 );
 
 -- ---

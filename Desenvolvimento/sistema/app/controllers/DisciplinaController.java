@@ -28,11 +28,11 @@ public class DisciplinaController extends Controller {
 
 		try {
 
-			Periodo p = RequestSerializer.get(request.body, Periodo.class);
+			Disciplina d = RequestSerializer.get(request.body, Disciplina.class);
 
-			p.save();
+			d.save();
 
-			protocol = new Protocol('s', MessageHelper.get("INSERT_OK", complement), p, 1);
+			protocol = new Protocol('s', MessageHelper.get("INSERT_OK", complement), d, 1);
 
 		} catch (Exception e) {
 
@@ -59,13 +59,13 @@ public class DisciplinaController extends Controller {
 
 			disciplina.periodo = d.periodo;
 			
-			disciplina.numeroVagas = d.numeroVagas;
+			disciplina.vagas = d.vagas;
 			
-			disciplina.textoCodigo = d.textoCodigo;
+			disciplina.codigo = d.codigo;
 			
-			disciplina.nomeDisciplina = d.nomeDisciplina;
+			disciplina.nome = d.nome;
 			
-			disciplina.textoTurma = d.textoTurma;
+			disciplina.turma = d.turma;
 
 			disciplina.save();
 

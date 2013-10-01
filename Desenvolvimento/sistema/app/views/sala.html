@@ -32,7 +32,6 @@
 
 				</div>
 
-
 				<div class="control-group">
 
 					<label class="control-label" for="nome">Nome:</label>
@@ -77,9 +76,9 @@
 					<div class="controls">
 
 
-						<label class="radio inline"><input type="radio" name="iluminacao" ng-model="iluminacao" value="c">Clara</label>
+						<label class="radio inline"><input type="radio" name="iluminacao" ng-model="iluminacao" value="Clara">Clara</label>
 
-						<label class="radio inline"><input type="radio" name="iluminacao" ng-model="iluminacao" value="e">Escura</label>
+						<label class="radio inline"><input type="radio" name="iluminacao" ng-model="iluminacao" value="Escura">Escura</label>
 
 					</div>
 
@@ -92,9 +91,9 @@
 					<div class="controls">
 
 
-						<label class="radio inline"><input type="radio" ng-model="ativa" name="ativa" ng-checked="ativa()" value="s">Sim</label>
+						<label class="radio inline"><input type="radio" name="ativa" ng-model="ativa" value="Sim">Sim</label>
 
-						<label class="radio inline"><input type="radio" ng-model="ativa" name="ativa" ng-checked="ativa()" value="n">Não</label>
+						<label class="radio inline"><input type="radio" name="ativa" ng-model="ativa" value="Não">Não</label>
 
 					</div>
 
@@ -173,12 +172,6 @@ function SalaCtrl ($scope, $http) {
 		$scope.ativa = object.ativa;
 	}
 
-	$scope.checkPredio = function(){
-
-		return $scope.predio == object.predio;
-
-	}
-
 	$scope.save = function(){
 
 		var data;
@@ -207,9 +200,10 @@ function SalaCtrl ($scope, $http) {
 				$scope.list();
 				if (data.status != 'e'){
 					$scope.clear();
+					object = null;
 				}
 				$scope.setmessage(data.message, data.status);
-				object = null;
+				
 			})
 
 		. error(function(data, status, headers, config) {

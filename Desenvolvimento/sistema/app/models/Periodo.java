@@ -31,9 +31,9 @@ public class Periodo extends GenericModel {
 	public Colegiado colegiado;
 
 	@Column(name = "texto_descricao")
-	public String descricao;
+	public String periodo;
 
 	@Column(name = "flag_optativo")
-	public Integer flagOptativo;
+	public String optativo;
 
 }

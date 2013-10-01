@@ -54,9 +54,9 @@ public class PeriodoController extends Controller {
 
 			periodo.colegiado = p.colegiado;
 
-			periodo.descricao = p.descricao;
+			periodo.periodo = p.periodo;
 
-			periodo.flagOptativo = p.flagOptativo;
+			periodo.optativo = p.optativo;
 
 			periodo.save();
 

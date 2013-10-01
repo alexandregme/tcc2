@@ -31,15 +31,15 @@ public class Disciplina extends GenericModel {
 	public Periodo periodo;
 
 	@Column(name = "numero_vagas")
-	public Integer numeroVagas;
+	public Integer vagas;
 
 	@Column(name = "texto_codigo")
-	public String textoCodigo;
+	public String codigo;
 
 	@Column(name = "nome_disciplina")
-	public String nomeDisciplina;
+	public String nome;
 
 	@Column(name = "texto_turma")
-	public String textoTurma;
+	public String turma;
 
 }

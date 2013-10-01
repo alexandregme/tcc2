@@ -1,8 +1,267 @@
 #{extends 'layout.html' /}
 #{set title:'Controle de Horários' /}
-				
-<div class="alert alert-info">
-	<p>
-		<h4>Horários</h4>
-	</p>
+
+
+<div ng-controller="PredioCtrl">
+
+	<!-- MESSAGES -->
+	<section id="message_container" class="message_container">
+		<div id="message_binder" style="margin-bottom: 8px;" class="{{status}}">
+			<span id="message_text">{{message}}</span>
+		</div>
+	</section>
+	<!-- MESSAGES -->
+
+	<div class="alert alert-info">
+
+		<h4>Cadastro de horário</h4> <br />
+
+		<form class="ng-pristine ng-valid form-horizontal">
+			<fieldset >
+
+				<div class="control-group">
+
+					<label class="control-label" for="turno">Turno:</label>
+
+					<div class="controls">
+
+						<select ng-options="p.id as p.descricao for p in turnos" ng-model="turno.id"></select>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="horarioDe">Horário de:</label>
+
+					<div class="controls">
+
+						<input type="text" ng-model="horarioDe" maxlength="255"/>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="horarioAte">Horário até:</label>
+
+					<div class="controls">
+
+						<input type="text" ng-model="horarioAte" maxlength="255"/>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
+					<label class="control-label" for="name"></label>
+					<div class="controls">
+
+						<input type="submit" value="Salvar" class="btn btn-success" ng-click="save()" />&nbsp;&nbsp;
+
+						<input type="button" value="Limpar" class="btn" ng-click="clear()" /> 
+
+					</div>
+				</div>
+
+			</fieldset>
+
+		</form>
+
+	</div>
+	
+	<h4>Lista de horários</h4> <br />
+
+	<table class="table table-striped table-bordered table-hover table-condensed">
+		<thead>
+
+			<tr>
+				<td>Id</td>
+				<td>Turno</td>
+				<td>Horário de</td>
+				<td>Horário até</td>
+				<td>Ações</td>
+			</tr>
+
+		</thead>
+		<tbody >
+
+			<tr ng-repeat="item in data">
+
+				<td ng-model="id">{{item.id}}</td>
+
+				<td> {{item.turno.descricao}} </td>
+
+				<td> {{item.horarioDe}} </td>
+
+				<td> {{item.horarioAte}} </td>
+
+				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.id)"></td>
+
+			</tr>
+
+		</tbody>
+
+	</table>
+
 </div>
+
+<script type="text/javascript">
+
+function PredioCtrl ($scope, $http) {
+
+	var object = null
+
+	$scope.edit = function(_id){
+
+		object = $scope.data[_id];
+
+		$scope.turno = object.turno;
+		
+		$scope.horarioDe = object.horarioDe;
+
+		$scope.horarioAte = object.horarioAte;
+
+	}
+
+	$scope.save = function(){
+
+		var data;
+
+		if (object == null)
+
+
+			data = { id : null , turno : $scope.turno,horarioDe : $scope.horarioDe , horarioAte : $scope.horarioAte}
+
+		else
+
+			data = { id : object.id, turno : $scope.turno, horarioDe : $scope.horarioDe , horarioAte : $scope.horarioAte}				
+
+		var _url;
+
+		if (data.id == null)
+
+			_url = window.viewModel.url.base + 'horario/save';
+
+		else
+
+			_url = window.viewModel.url.base + 'horario/edit';
+
+		$http.post(_url, JSON.stringify(data)).success(
+			function(data, status, headers, config) {
+				$scope.list();
+
+				if (data.status != 'e'){
+					$scope.clear();
+					object = null;
+				}
+
+				$scope.setmessage(data.message, data.status);
+			})
+		. error(function(data, status, headers, config) {
+
+			$scope.message = "Erro ao chamar a url " + _url + " status " + status;
+
+		});
+	}
+
+	$scope.delete = function(_id){
+
+		var data = { id:_id };
+
+		var _url = window.viewModel.url.base + 'horario/delete';
+
+		$http.post(_url, JSON.stringify(data)).success(	
+			function(data, status, headers, config) {
+				
+				$scope.list();
+				
+				$scope.clear();
+				
+				$scope.setmessage(data.message, data.status);
+
+				object = null;
+
+			})
+		. error(function(data, status, headers, config) {
+			$scope.message = "Erro ao chamar a url " + _url + " status " + status;
+		})	
+
+	}
+
+	$scope.listTurnos = function () {
+
+		var _url = window.viewModel.url.base + 'turno/list';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.turnos = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+
+	}
+
+	$scope.list = function () {
+
+		var _url = window.viewModel.url.base + 'horario/list';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.data = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+	}
+
+	$scope.clear = function () {
+		
+		$scope.turno = null;
+		
+		$scope.horarioDe = null;
+
+		$scope.horarioAte = null;
+
+		$scope.open();
+	}
+
+	$scope.setmessage = function(_message, _status){
+
+		$scope.message = _message;
+
+		if (_status == "s") {
+			
+			$scope.status = 'message message-success';
+
+		} else if (_status == "a") {
+
+			$scope.status = 'message message-alert'
+
+		} else if (_status == "e") {
+
+			$scope.status = 'message message-error';
+
+		}
+	}
+	
+	$scope.open = function(){
+
+		$scope.message = 'Nenhuma informação sobre essa página';
+
+		$scope.status = 'message message-info';
+	}
+
+	$scope.open();
+	$scope.list();
+	$scope.listTurnos();
+
+}
+
+</script>
