@@ -418,3 +418,11 @@ body {
 /* >> POPUP << */
 
 /* -- CLASSES -- */
+
+.tableHorario{
+
+	float:left;
+	margin: 0 0 0 100px;
+}
+
+.clear{clear:both;padding:0px;margin:0px;}

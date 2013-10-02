@@ -16,7 +16,9 @@
 
 		<h4>Cadastro de disciplina</h4> <br />
 
-		<form class="ng-pristine ng-valid form-horizontal">
+
+
+		<form class="ng-pristine ng-valid form-horizontal" style="float:left;">
 
 			<fieldset >
 
@@ -128,6 +130,34 @@
 
 		</form>
 
+		<div class="tableHorario">
+
+			<table class="table table-bordered table-striped table-hover table-condensed">
+				<tr>
+					<td ng-style="bgstyle(false,false)">HORÁRIO</td>
+					<td ng-style="bgstyle(false,false)">SEGUNDA</td>
+					<td ng-style="bgstyle(false,false)">TERÇA</td>
+					<td ng-style="bgstyle(false,false)">QUARTA</td>
+					<td ng-style="bgstyle(false,false)">QUINTA</td>
+					<td ng-style="bgstyle(false,false)">SEXTA</td>
+					<td ng-style="bgstyle(false,false)">SÁBADO</td>
+					<td ng-style="bgstyle(false,false)">DOMINGO</td>
+				</tr>
+				<tr ng-repeat="item in listSemana">
+					<td ng-model="id" ng-style="bgstyle(false)">{{item.horario.turno.descricao}} - {{item.horario.horarioDe}} : {{item.horario.horarioAte}}</td>
+					<td ng-click="item.segunda.alocado = !item.segunda.alocado" ng-style="bgstyle(item.segunda.alocado,true)"></td>
+					<td ng-click="item.terca.alocado = !item.terca.alocado" ng-style="bgstyle(item.terca.alocado,true)"></td>
+					<td ng-click="item.quarta.alocado = !item.quarta.alocado" ng-style="bgstyle(item.quarta.alocado,true)"></td>
+					<td ng-click="item.quinta.alocado = !item.quinta.alocado" ng-style="bgstyle(item.quinta.alocado,true)"></td>
+					<td ng-click="item.sexta.alocado = !item.sexta.alocado" ng-style="bgstyle(item.sexta.alocado,true)"></td>
+					<td ng-click="item.sabado.alocado = !item.sabado.alocado" ng-style="bgstyle(item.sabado.alocado,true)"></td>
+					<td ng-click="item.domingo.alocado = !item.domingo.alocado" ng-style="bgstyle(item.domingo.alocado,true)"></td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="clear"></div>
+
 	</div>
 	
 	<h4>Lista de disciplinas</h4> <br />
@@ -144,31 +174,25 @@
 				<td>Nome</td>
 				<td>Turma</td>
 				<td>Vagas</td>
-
 			</tr>
-
 		</thead>
-		<tbody >
 
+		<tbody >
 			<tr ng-repeat="item in data">
 
-				<td ng-model="id">{{item.id}}</td>
-
-				<td> {{item.periodo.colegiado.curso.nome}} </td>
-				<td> {{item.periodo.colegiado.nome}} </td>
-				<td> {{item.periodo.periodo}} </td>
-				<td> {{item.codigo}} </td>
-				<td> {{item.nome}} </td>
-				<td> {{item.turma}} </td>
-				<td> {{item.vagas}} </td>
-				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.id)"></td>
+				<td ng-model="id">{{item.disciplina.id}}</td>
+				<td> {{item.disciplina.periodo.colegiado.curso.nome}} </td>
+				<td> {{item.disciplina.periodo.colegiado.nome}} </td>
+				<td> {{item.disciplina.periodo.periodo}} </td>
+				<td> {{item.disciplina.codigo}} </td>
+				<td> {{item.disciplina.nome}} </td>
+				<td> {{item.disciplina.turma}} </td>
+				<td> {{item.disciplina.vagas}} </td>
+				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.disciplina.id)"></td>
 
 			</tr>
-
 		</tbody>
-
 	</table>
-
 </div>
 
 <script type="text/javascript">
@@ -181,15 +205,44 @@ function DisciplinaCtrl ($scope, $http) {
 
 		object = $scope.data[_id];
 
-		$scope.periodo = object.periodo;
+		$scope.id = object.disciplina.id;
 
-		$scope.nome = object.nome;
+		$scope.periodo = object.disciplina.periodo;
+
+		$scope.nome = object.disciplina.nome;
 		
-		$scope.codigo = object.codigo;
+		$scope.codigo = object.disciplina.codigo;
 
-		$scope.turma = object.turma;
+		$scope.turma = object.disciplina.turma;
 
-		$scope.vagas = object.vagas;
+		$scope.vagas = object.disciplina.vagas;
+
+		$scope.listSemana = object.listSemana;
+
+	}
+
+	$scope.bgImage = function(item){
+
+		return
+
+	}
+
+	$scope.bgstyle = function (item, semana) {
+
+		var color;
+
+
+		if (semana) {
+	
+			
+
+			if (item)	
+
+				return {backgroundColor:'#C3060A', color:'#f9f9f9', width:'70px'};
+
+			return {width:'70px'};
+		}
+
 
 	}
 
@@ -200,15 +253,15 @@ function DisciplinaCtrl ($scope, $http) {
 		if (object == null)
 
 
-			data = { id : null , periodo : $scope.periodo , nome : $scope.nome, codigo : $scope.codigo, turma : $scope.turma, vagas: $scope.vagas}
+			data = {disciplina:{ id : null , periodo : $scope.periodo , nome : $scope.nome, codigo : $scope.codigo, turma : $scope.turma, vagas: $scope.vagas}, listSemana : $scope.listSemana};
 
 		else
 
-			data = { id : object.id , periodo : $scope.periodo , nome : $scope.nome, codigo : $scope.codigo, turma : $cope.turma, vagas: $scope.vagas}
+			data = {disciplina:{ id : $scope.id  , periodo : $scope.periodo , nome : $scope.nome, codigo : $scope.codigo, turma : $scope.turma, vagas: $scope.vagas}, listSemana : $scope.listSemana};
 
 		var _url;
 
-		if (data.id == null)
+		if (data.disciplina.id == null)
 
 			_url = window.viewModel.url.base + 'disciplina/save';
 
@@ -242,11 +295,11 @@ function DisciplinaCtrl ($scope, $http) {
 
 		$http.post(_url, JSON.stringify(data)).success(	
 			function(data, status, headers, config) {
-				
+
 				$scope.list();
-				
+
 				$scope.clear();
-				
+
 				$scope.setmessage(data.message, data.status);
 
 				object = null;
@@ -303,6 +356,37 @@ function DisciplinaCtrl ($scope, $http) {
 
 	}
 
+
+	$scope.listTurnos= function () {
+
+		var _url = window.viewModel.url.base + 'turnos/list';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.turnos = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+
+	}
+
+	$scope.listHorarios= function () {
+
+		var _url = window.viewModel.url.base + 'horario/list';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.horarios = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+
+	}
+
 	$scope.listPeriodos= function () {
 
 		var _url = window.viewModel.url.base + 'periodo/list';
@@ -325,6 +409,7 @@ function DisciplinaCtrl ($scope, $http) {
 		$scope.codigo = '';
 		$scope.turma = '';
 		$scope.vagas='';
+		$scope.listSemana = null;
 		$scope.open();
 
 	}
@@ -334,7 +419,7 @@ function DisciplinaCtrl ($scope, $http) {
 		$scope.message = _message;
 
 		if (_status == "s") {
-			
+
 			$scope.status = 'message message-success';
 
 		} else if (_status == "a") {
@@ -347,7 +432,7 @@ function DisciplinaCtrl ($scope, $http) {
 
 		}
 	}
-	
+
 	$scope.open = function(){
 
 		$scope.message = 'Nenhuma informação sobre essa página';

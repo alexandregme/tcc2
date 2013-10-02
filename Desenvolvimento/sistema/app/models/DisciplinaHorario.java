@@ -33,5 +33,14 @@ public class DisciplinaHorario extends GenericModel {
 	@ManyToOne
 	@JoinColumn(name = "id_disciplina")
 	public Disciplina disciplina;
+	
+	@Column(name = "dia_horario")
+	public Integer dia;
+	
+	@Column(name = "linha")
+	public Integer linha;
+	
+	@Column(name = "flag_alocado")
+	public Boolean alocado;
 
 }

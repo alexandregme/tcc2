@@ -60,6 +60,9 @@ POST	/horario/delete			HorarioController.delete
 GET 	/horario/list			HorarioController.list
 GET 	/horario/view			HorarioController.view
 
+#Algoritimo
+GET 	/ag/view			AlgoritimoController.view
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

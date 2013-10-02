@@ -40,5 +40,7 @@ public class Horario extends GenericModel {
 
 	@Column(name = "horario_ate")
 	public String horarioAte;
+	
+
 
 }
