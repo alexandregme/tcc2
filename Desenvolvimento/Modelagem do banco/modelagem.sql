@@ -59,8 +59,8 @@ CREATE TABLE sala (
 CREATE TABLE horario (
   id_horario SERIAL NOT NULL,
   id_turno INTEGER NOT NULL,
-  horario_de TIME NULL ,
-  horario_ate TIME NULL ,
+  horario_de CHARACTER varying(5),
+  horario_ate CHARACTER varying(5),
   CONSTRAINT pk_horario PRIMARY KEY (id_horario)
 );
 
@@ -124,6 +124,7 @@ CREATE TABLE colegiado (
   id_curso INTEGER NOT NULL,
   nome_colegiado  CHARACTER varying(255),
   texto_descricao  CHARACTER varying(255),
+  tipo_colegiado  CHARACTER varying(100),
   CONSTRAINT pk_colegiado PRIMARY KEY (id_colegiado)
 );
 

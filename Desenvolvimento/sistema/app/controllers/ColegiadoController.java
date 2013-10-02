@@ -55,6 +55,10 @@ public class ColegiadoController extends Controller {
 			colegiado.curso = c.curso;
 
 			colegiado.descricao = c.descricao;
+			
+			colegiado.nome = c.nome;
+			
+			colegiado.tipo = c.tipo;
 
 			colegiado.save();
 

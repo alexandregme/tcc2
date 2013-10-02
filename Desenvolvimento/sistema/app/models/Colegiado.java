@@ -36,4 +36,7 @@ public class Colegiado extends GenericModel {
 	@Column(name = "texto_descricao")
 	public String descricao;
 
+	@Column(name = "tipo_colegiado")
+	public String tipo;
+	
 }

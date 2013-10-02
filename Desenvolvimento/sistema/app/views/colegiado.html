@@ -59,6 +59,21 @@
 
 				<div class="control-group">
 
+					<label class="control-label" for="name">Ativa:</label>
+
+					<div class="controls">
+
+
+						<label class="radio inline"><input type="radio" name="ativa" ng-model="tipo" value="Graduação">Graduação</label>
+
+						<label class="radio inline"><input type="radio" name="ativa" ng-model="tipo" value="Pós-graduação">Pós-graduação</label>
+
+					</div>
+
+				</div>
+
+				<div class="control-group">
+
 					<label class="control-label" for="name"></label>
 					<div class="controls">
 
@@ -85,6 +100,7 @@
 				<td>Curso</td>
 				<td>Nome</td>
 				<td>Descrição</td>
+				<td>Tipo</td>
 				<td>Ações</td>
 			</tr>
 
@@ -100,6 +116,8 @@
 				<td> {{item.nome}} </td>
 
 				<td> {{item.descricao}} </td>
+
+				<td> {{item.tipo}} </td>
 
 				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.id)"></td>
 
@@ -127,6 +145,8 @@ function PredioCtrl ($scope, $http) {
 
 		$scope.descricao = object.descricao;
 
+		$scope.tipo = object.tipo;
+
 	}
 
 	$scope.save = function(){
@@ -136,11 +156,11 @@ function PredioCtrl ($scope, $http) {
 		if (object == null)
 
 
-			data = { id : null , curso : $scope.curso , nome : $scope.nome, descricao : $scope.descricao}
+			data = { id : null , curso : $scope.curso , nome : $scope.nome, descricao : $scope.descricao, tipo : $scope.tipo}				
 
 		else
 
-			data = { id : object.id, curso : $scope.curso, nome : $scope.nome, descricao : $scope.descricao}				
+			data = { id : object.id, curso : $scope.curso, nome : $scope.nome, descricao : $scope.descricao, tipo : $scope.tipo}				
 
 		var _url;
 
@@ -228,6 +248,7 @@ function PredioCtrl ($scope, $http) {
 		$scope.curso = null;
 		$scope.nome = '';
 		$scope.descricao = '';
+		$scope.tipo = null;
 		$scope.open();
 	}
 

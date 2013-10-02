@@ -35,20 +35,10 @@ public class Horario extends GenericModel {
 	@JoinColumn(name = "id_turno")
 	public Turno turno;
 
-	
-//	@Column(name="horario_de", nullable = false)
-//	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-//	public LocalDateTime horarioDe;
-//	
-//	@Column(name="horario_ate", nullable = false)
-//	@Type(type="org.jadira.usertype.dateandtime.joda.PersistentLocalDateTime")
-//	public LocalDateTime horarioAte;
-	//
-	
 	@Column(name = "horario_de")
-	public Date horarioDe;
+	public String horarioDe;
 
 	@Column(name = "horario_ate")
-	public Date horarioAte;
+	public String horarioAte;
 
 }
