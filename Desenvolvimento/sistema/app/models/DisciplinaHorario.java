@@ -36,10 +36,7 @@ public class DisciplinaHorario extends GenericModel {
 	
 	@Column(name = "dia_horario")
 	public Integer dia;
-	
-	@Column(name = "linha")
-	public Integer linha;
-	
+
 	@Column(name = "flag_alocado")
 	public Boolean alocado;
 

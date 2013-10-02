@@ -101,7 +101,6 @@ CREATE TABLE relacionamento_disciplina_horario (
   id_horario INTEGER NOT NULL,
   dia_horario INTEGER NOT NULL,
   flag_alocado BOOLEAN NOT NULL,
-  linha INTEGER NOT NULL,
   CONSTRAINT pk_relacionamento_disciplina_horario PRIMARY KEY (id_relacionamento)
 );
 

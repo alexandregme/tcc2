@@ -233,7 +233,7 @@ function DisciplinaCtrl ($scope, $http) {
 
 
 		if (semana) {
-	
+
 			
 
 			if (item)	
@@ -261,7 +261,7 @@ function DisciplinaCtrl ($scope, $http) {
 
 		var _url;
 
-		if (data.disciplina.id == null)
+		if ($scope.id  == null)
 
 			_url = window.viewModel.url.base + 'disciplina/save';
 
@@ -402,16 +402,31 @@ function DisciplinaCtrl ($scope, $http) {
 
 	}
 
+	$scope.getGrade= function () {
+
+		var _url = window.viewModel.url.base + 'horario/getGrade';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.listSemana = data.data;
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+
+	}
+
 	$scope.clear = function () {
 
+		$scope.getGrade();
+		$scope.id = null;
 		$scope.periodo = null;
 		$scope.nome='';
 		$scope.codigo = '';
 		$scope.turma = '';
 		$scope.vagas='';
-		$scope.listSemana = null;
 		$scope.open();
-
 	}
 
 	$scope.setmessage = function(_message, _status){
@@ -449,6 +464,8 @@ function DisciplinaCtrl ($scope, $http) {
 	$scope.listColegiados();
 
 	$scope.listPeriodos();
+
+	$scope.getGrade();
 
 }
 

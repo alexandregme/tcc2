@@ -34,17 +34,7 @@ public class DisciplinaController extends Controller {
 
 			d.save();
 
-			HorarioController.gerarHorarios(d);
-
-			// for (DisciplinaHorario dh : di.listHorarios) {
-			//
-			// DisciplinaHorario dhfind = DisciplinaHorario.find("horario.id = "
-			// + dh.horario.id + " AND disciplina.id = " +
-			// dh.disciplina.id).first();
-			// dhfind.alocado = true;
-			// dhfind.save();
-			//
-			// }
+			saveListaSemana(di.listSemana, d);
 
 			protocol = new Protocol('s', MessageHelper.get("INSERT_OK", complement), di, 1);
 
@@ -69,84 +59,23 @@ public class DisciplinaController extends Controller {
 
 			DisciplinaInterface di = RequestSerializer.get(request.body, DisciplinaInterface.class);
 
-			Disciplina disciplina = Disciplina.findById(di.disciplina.id);
+			Disciplina d = Disciplina.findById(di.disciplina.id);
 
-			disciplina.periodo = di.disciplina.periodo;
+			d.periodo = di.disciplina.periodo;
 
-			disciplina.vagas = di.disciplina.vagas;
+			d.vagas = di.disciplina.vagas;
 
-			disciplina.codigo = di.disciplina.codigo;
+			d.codigo = di.disciplina.codigo;
 
-			disciplina.nome = di.disciplina.nome;
+			d.nome = di.disciplina.nome;
 
-			disciplina.turma = di.disciplina.turma;
-			
-			disciplina.save();
-			
-			DisciplinaHorario.delete("disciplina.id", di.disciplina.id);
-			
-			for (DisciplinaSemana ds : di.listSemana) {
+			d.turma = di.disciplina.turma;
 
-				DisciplinaHorario segunda = new DisciplinaHorario();
-				segunda.disciplina = disciplina;
-				segunda.horario = Horario.findById(ds.horario.id);
-				segunda.dia = ds.segunda.dia;
-				segunda.alocado = ds.segunda.alocado;
-				segunda.linha = ds.segunda.linha;
-				segunda.save();
-				
-				DisciplinaHorario terca = new DisciplinaHorario();
-				terca.disciplina = disciplina;
-				terca.horario = Horario.findById(ds.horario.id);
-				terca.dia = ds.terca.dia;
-				terca.alocado = ds.terca.alocado;
-				terca.linha = ds.terca.linha;
-				terca.save();
-				
-				
-				DisciplinaHorario quarta = new DisciplinaHorario();
-				quarta.disciplina = disciplina;
-				quarta.horario = Horario.findById(ds.horario.id);
-				quarta.dia = ds.quarta.dia;
-				quarta.alocado = ds.quarta.alocado;
-				quarta.linha = ds.quarta.linha;
-				quarta.save();
-				
-				DisciplinaHorario quinta = new DisciplinaHorario();
-				quinta.disciplina = disciplina;
-				quinta.horario = Horario.findById(ds.horario.id);
-				quinta.dia = ds.quinta.dia;
-				quinta.alocado = ds.quinta.alocado;
-				quinta.linha = ds.quinta.linha;
-				quinta.save();
-				
-				DisciplinaHorario sexta = new DisciplinaHorario();
-				sexta.disciplina = disciplina;
-				sexta.horario = Horario.findById(ds.horario.id);
-				sexta.dia = ds.sexta.dia;
-				sexta.alocado = ds.sexta.alocado;
-				sexta.linha = ds.sexta.linha;
-				sexta.save();
-				
-				DisciplinaHorario sabado = new DisciplinaHorario();
-				sabado.disciplina = disciplina;
-				sabado.horario = Horario.findById(ds.horario.id);
-				sabado.dia = ds.sabado.dia;
-				sabado.alocado = ds.sabado.alocado;
-				sabado.linha = ds.sabado.linha;
-				sabado.save();
-				
-				DisciplinaHorario domingo = new DisciplinaHorario();
-				domingo.disciplina = disciplina;
-				domingo.horario = Horario.findById(ds.horario.id);
-				domingo.dia = ds.domingo.dia;
-				domingo.alocado = ds.domingo.alocado;
-				domingo.linha = ds.domingo.linha;
-				domingo.save();
+			d.save();
 
-			}
+			saveListaSemana(di.listSemana, d);
 
-			protocol = new Protocol('s', MessageHelper.get("UPDATE_OK", complement), disciplina, 1);
+			protocol = new Protocol('s', MessageHelper.get("UPDATE_OK", complement), d, 1);
 
 		} catch (Exception e) {
 
@@ -158,6 +87,67 @@ public class DisciplinaController extends Controller {
 
 		renderJSON(protocol);
 
+	}
+
+	/**
+	 * Salva o horario da semana no banco
+	 */
+	static void saveListaSemana(List<DisciplinaSemana> listSemana, Disciplina d) {
+
+		DisciplinaHorario.delete("disciplina.id", d.id);
+
+		for (DisciplinaSemana ds : listSemana) {
+
+			DisciplinaHorario segunda = new DisciplinaHorario();
+			segunda.disciplina = d;
+			segunda.horario = Horario.findById(ds.horario.id);
+			segunda.dia = ds.segunda.dia;
+			segunda.alocado = ds.segunda.alocado;
+			segunda.save();
+
+			DisciplinaHorario terca = new DisciplinaHorario();
+			terca.disciplina = d;
+			terca.horario = Horario.findById(ds.horario.id);
+			terca.dia = ds.terca.dia;
+			terca.alocado = ds.terca.alocado;
+			terca.save();
+
+			DisciplinaHorario quarta = new DisciplinaHorario();
+			quarta.disciplina = d;
+			quarta.horario = Horario.findById(ds.horario.id);
+			quarta.dia = ds.quarta.dia;
+			quarta.alocado = ds.quarta.alocado;
+			quarta.save();
+
+			DisciplinaHorario quinta = new DisciplinaHorario();
+			quinta.disciplina = d;
+			quinta.horario = Horario.findById(ds.horario.id);
+			quinta.dia = ds.quinta.dia;
+			quinta.alocado = ds.quinta.alocado;
+			quinta.save();
+
+			DisciplinaHorario sexta = new DisciplinaHorario();
+			sexta.disciplina = d;
+			sexta.horario = Horario.findById(ds.horario.id);
+			sexta.dia = ds.sexta.dia;
+			sexta.alocado = ds.sexta.alocado;
+			sexta.save();
+
+			DisciplinaHorario sabado = new DisciplinaHorario();
+			sabado.disciplina = d;
+			sabado.horario = Horario.findById(ds.horario.id);
+			sabado.dia = ds.sabado.dia;
+			sabado.alocado = ds.sabado.alocado;
+			sabado.save();
+
+			DisciplinaHorario domingo = new DisciplinaHorario();
+			domingo.disciplina = d;
+			domingo.horario = Horario.findById(ds.horario.id);
+			domingo.dia = ds.domingo.dia;
+			domingo.alocado = ds.domingo.alocado;
+			domingo.save();
+
+		}
 	}
 
 	/**
@@ -192,7 +182,6 @@ public class DisciplinaController extends Controller {
 	/**
 	 * Lista todos os registros de disciplina do banco
 	 */
-
 	public static void list() {
 
 		try {
@@ -217,19 +206,19 @@ public class DisciplinaController extends Controller {
 
 					ds.horario = listHorarios.get(i - 1);
 
-					ds.segunda = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 1 AND linha = " + i).first();
+					ds.segunda = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 1 AND horario = " +  listHorarios.get(i - 1).id).first();
 
-					ds.terca = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 2 AND linha = " + i).first();
+					ds.terca = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 2 AND horario = " +  listHorarios.get(i - 1).id).first();
 
-					ds.quarta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 3 AND linha = " + i).first();
+					ds.quarta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 3 AND horario = " +  listHorarios.get(i - 1).id).first();
 
-					ds.quinta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 4 AND linha = " + i).first();
+					ds.quinta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 4 AND horario = " +  listHorarios.get(i - 1).id).first();
 
-					ds.sexta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 5 AND linha = " + i).first();
+					ds.sexta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 5 AND horario = " +  listHorarios.get(i - 1).id).first();
 
-					ds.sabado = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 6 AND linha = " + i).first();
+					ds.sabado = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 6 AND horario = " +  listHorarios.get(i - 1).id).first();
 
-					ds.domingo = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 7 AND linha = " + i).first();
+					ds.domingo = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 7 AND horario = " +  listHorarios.get(i - 1).id).first();
 
 					di.listSemana.add(ds);
 				}

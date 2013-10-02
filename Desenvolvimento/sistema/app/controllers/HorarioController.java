@@ -1,5 +1,6 @@
 package controllers;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import org.joda.time.LocalDateTime;
 import models.Alocacao;
 import models.Disciplina;
 import models.DisciplinaHorario;
+import models.DisciplinaSemana;
 import models.Horario;
 import models.Turno;
 import play.mvc.Controller;
@@ -149,7 +151,6 @@ public class HorarioController extends Controller {
 
 			List<Horario> horarios = Horario.findAll();
 			// dias da semana
-			int linha = 1;
 			for (Horario horario : horarios) {
 				for (int i = 1; i <= 7; i++) {
 					DisciplinaHorario dh = new DisciplinaHorario();
@@ -157,10 +158,8 @@ public class HorarioController extends Controller {
 					dh.horario = horario;
 					dh.dia = i;
 					dh.alocado = false;
-					dh.linha = linha;
 					dh.save();
 				}
-				linha++;
 			}
 
 		} catch (Exception e) {
@@ -171,4 +170,77 @@ public class HorarioController extends Controller {
 
 	}
 
+	/**
+	 * Gera uma grade de horarios vazia sem disciplina
+	 */
+	public static void getGrade() {
+
+		try {
+
+			List<DisciplinaSemana> listDS = new ArrayList<DisciplinaSemana>();
+
+			List<Horario> listHorarios = Horario.findAll();
+
+			for (int i = 1; i <= listHorarios.size(); i++) {
+
+				DisciplinaSemana ds = new DisciplinaSemana();
+
+				ds.horario = listHorarios.get(i - 1);
+
+				ds.segunda = new DisciplinaHorario();
+				ds.segunda.disciplina = null;
+				ds.segunda.horario = listHorarios.get(i - 1);
+				ds.segunda.dia = 1;
+				ds.segunda.alocado = false;
+
+				ds.terca = new DisciplinaHorario();
+				ds.terca.disciplina = null;
+				ds.terca.horario = listHorarios.get(i - 1);
+				ds.terca.dia = 2;
+				ds.terca.alocado = false;
+
+				ds.quarta = new DisciplinaHorario();
+				ds.quarta.disciplina = null;
+				ds.quarta.horario = listHorarios.get(i - 1);
+				ds.quarta.dia = 3;
+				ds.quarta.alocado = false;
+
+				ds.quinta = new DisciplinaHorario();
+				ds.quinta.disciplina = null;
+				ds.quinta.horario = listHorarios.get(i - 1);
+				ds.quinta.dia = 4;
+				ds.quinta.alocado = false;
+
+				ds.sexta = new DisciplinaHorario();
+				ds.sexta.disciplina = null;
+				ds.sexta.horario = listHorarios.get(i - 1);
+				ds.sexta.dia = 5;
+				ds.sexta.alocado = false;
+
+				ds.sabado = new DisciplinaHorario();
+				ds.sabado.disciplina = null;
+				ds.sabado.horario = listHorarios.get(i - 1);
+				ds.sabado.dia = 6;
+				ds.sabado.alocado = false;
+
+				ds.domingo = new DisciplinaHorario();
+				ds.domingo.disciplina = null;
+				ds.domingo.horario = listHorarios.get(i - 1);
+				ds.domingo.dia = 7;
+				ds.domingo.alocado = false;
+				listDS.add(ds);
+			}
+
+			protocol = new Protocol('s', MessageHelper.get("LIST_OK", complement), listDS, listDS.size());
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+			protocol = new Protocol('e', MessageHelper.get("LIST_ERROR", complement), null, 0);
+
+		}
+
+		renderJSON(protocol);
+	}
 }

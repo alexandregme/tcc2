@@ -59,6 +59,7 @@ POST	/horario/edit			HorarioController.edit
 POST	/horario/delete			HorarioController.delete
 GET 	/horario/list			HorarioController.list
 GET 	/horario/view			HorarioController.view
+GET 	/horario/getGrade		HorarioController.getGrade
 
 #Algoritimo
 GET 	/ag/view			AlgoritimoController.view
