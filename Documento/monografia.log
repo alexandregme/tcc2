@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  30 SEP 2013 13:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  3 OCT 2013 13:29
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,9 +431,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\introducao.aux)
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux)
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux))
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -447,7 +446,8 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 7.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -503,11 +503,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
  (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 1.
+(Font)              <12> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
+(Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
+(Font)              <6> on input line 2.
 )
 \tf@toc=\write3
  [1
@@ -650,10 +650,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4463 strings out of 493921
- 67872 string characters out of 3144864
- 132812 words of memory out of 3000000
- 7635 multiletter control sequences out of 15000+200000
+ 4460 strings out of 493921
+ 67743 string characters out of 3144864
+ 132454 words of memory out of 3000000
+ 7634 multiletter control sequences out of 15000+200000
  15526 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  43i,6n,43p,996b,309s stack positions out of 5000i,500n,10000p,200000b,50000s

@@ -1,9 +1,11 @@
 package controllers;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import algoritimoGenetico.Algoritimo;
 import algoritimoGenetico.Populacao;
+import algoritimoGenetico.Populacaobackup;
 
 import models.Turno;
 import play.mvc.Controller;
@@ -126,7 +128,15 @@ public class AlgoritimoController extends Controller {
 
 	}
 
-	public static void main() {
+	public static void result() {
+
+		Populacao p = new Populacao();
+
+		protocol = new Protocol('s', MessageHelper.get("Genetica modificada"), p.populacao, 1);
+		renderJSON(protocol);
+
+		List<String> listSolucacao = new ArrayList<String>();
+
 		// Define a solução
 		Algoritimo.setSolucao("Olá Mundo");
 		// Define os caracteres existentes
@@ -138,7 +148,7 @@ public class AlgoritimoController extends Controller {
 		// elitismo
 		boolean eltismo = true;
 		// tamanho da população
-		int tamPop = 10;
+		int tamPop = 2000;
 		// numero máximo de gerações
 		int numMaxGeracoes = 10000;
 
@@ -146,12 +156,12 @@ public class AlgoritimoController extends Controller {
 		int numGenes = Algoritimo.getSolucao().length();
 
 		// cria a primeira população aleatérioa
-		Populacao populacao = new Populacao(numGenes, tamPop);
+		Populacaobackup populacao = new Populacaobackup(numGenes, tamPop);
 
 		boolean temSolucao = false;
 		int geracao = 0;
 
-		System.out.println("Iniciando... Aptidão da solução: " + Algoritimo.getSolucao().length());
+		listSolucacao.add("Iniciando... Aptidão da solução: " + Algoritimo.getSolucao().length());
 
 		// loop até o critério de parada
 		while (!temSolucao && geracao < numMaxGeracoes) {
@@ -160,21 +170,23 @@ public class AlgoritimoController extends Controller {
 			// cria nova populacao
 			populacao = Algoritimo.novaGeracao(populacao, eltismo);
 
-			System.out.println("Geração " + geracao + " | Aptidão: " + populacao.getIndivduo(0).getAptidao() + " | Melhor: " + populacao.getIndivduo(0).getGenes());
+			listSolucacao.add("Geração " + geracao + " | Aptidão: " + populacao.getIndivduo(0).getAptidao() + " | Melhor: " + populacao.getIndivduo(0).getGenes());
 
 			// verifica se tem a solucao
 			temSolucao = populacao.temSolocao(Algoritimo.getSolucao());
 		}
 
 		if (geracao == numMaxGeracoes) {
-			System.out.println("Número Maximo de Gerações | " + populacao.getIndivduo(0).getGenes() + " " + populacao.getIndivduo(0).getAptidao());
+			listSolucacao.add("Número Maximo de Gerações | " + populacao.getIndivduo(0).getGenes() + " " + populacao.getIndivduo(0).getAptidao());
 		}
 
 		if (temSolucao) {
-			System.out.println("Encontrado resultado na geração " + geracao + " | " + populacao.getIndivduo(0).getGenes() + " (Aptidão: " + populacao.getIndivduo(0).getAptidao() + ")");
+			listSolucacao.add("Encontrado resultado na geração " + geracao + " | " + populacao.getIndivduo(0).getGenes() + " (Aptidão: " + populacao.getIndivduo(0).getAptidao() + ")");
 		}
 
-		// render();
+		protocol = new Protocol('s', MessageHelper.get("Genetica modificada"), listSolucacao, 1);
+
+		renderJSON(protocol);
 
 	}
 

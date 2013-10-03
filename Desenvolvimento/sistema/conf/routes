@@ -63,6 +63,7 @@ GET 	/horario/getGrade		HorarioController.getGrade
 
 #Algoritimo
 GET 	/ag/view			AlgoritimoController.view
+GET 	/ag/result			AlgoritimoController.result
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
