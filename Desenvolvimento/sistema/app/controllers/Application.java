@@ -1,14 +1,6 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
-
-import java.util.*;
-
-import algoritimoGenetico.Algoritimo;
-import algoritimoGenetico.Populacaobackup;
-
-import models.*;
+import play.mvc.Controller;
 
 public class Application extends Controller {
 

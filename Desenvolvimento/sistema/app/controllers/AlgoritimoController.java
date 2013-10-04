@@ -3,136 +3,40 @@ package controllers;
 import java.util.ArrayList;
 import java.util.List;
 
-import algoritimoGenetico.Algoritimo;
-import algoritimoGenetico.Populacao;
-import algoritimoGenetico.Populacaobackup;
-
+import models.Alocacao;
+import models.AlocacaoInterface;
+import models.AlocacaoSemana;
+import models.DisciplinaHorario;
+import models.DisciplinaSemana;
+import models.Horario;
+import models.Sala;
 import models.Turno;
 import play.mvc.Controller;
 import utils.MessageHelper;
 import utils.Protocol;
 import utils.RequestSerializer;
+import algoritimoGenetico.Algoritimo;
+import algoritimoGenetico.Populacao;
+import algoritimoGenetico.Populacaobackup;
 
 /**
  * @author Alexandre Gonzaga Mendes 27/09/2013
  */
 public class AlgoritimoController extends Controller {
 
-	final static String complement = "turno";
+	final static String complement = "algoritimoGenetico";
 	private static Protocol protocol = null;
-
-	/**
-	 * Salva um turno no banco
-	 */
-	public static void save() {
-
-		try {
-
-			Turno t = RequestSerializer.get(request.body, Turno.class);
-
-			t.save();
-
-			protocol = new Protocol('s', MessageHelper.get("INSERT_OK", complement), t, 1);
-
-		} catch (Exception e) {
-
-			e.printStackTrace();
-
-			protocol = new Protocol('e', MessageHelper.get("INSERT_ERROR", complement), null, 0);
-
-		}
-
-		renderJSON(protocol);
-
-	}
-
-	/**
-	 * Altera um turno no banco
-	 */
-	public static void edit() {
-
-		try {
-
-			Turno t = RequestSerializer.get(request.body, Turno.class);
-
-			Turno turno = Turno.findById(t.id);
-
-			turno.descricao = t.descricao;
-
-			turno.save();
-
-			protocol = new Protocol('s', MessageHelper.get("UPDATE_OK", complement), turno, 1);
-
-		} catch (Exception e) {
-
-			e.printStackTrace();
-
-			protocol = new Protocol('e', MessageHelper.get("UPDATE_ERROR", complement), null, 0);
-
-		}
-
-		renderJSON(protocol);
-
-	}
-
-	/**
-	 * Deleta
-	 */
-	public static void delete() {
-
-		try {
-
-			Turno t = RequestSerializer.get(request.body, Turno.class);
-
-			Turno turno = Turno.findById(t.id);
-
-			turno.delete();
-
-			protocol = new Protocol('s', MessageHelper.get("DELETE_OK", complement), turno, 1);
-
-		} catch (Exception e) {
-
-			e.printStackTrace();
-
-			protocol = new Protocol('e', MessageHelper.get("DELETE_ERROR", complement), null, 0);
-
-		}
-
-		renderJSON(protocol);
-
-	}
-
-	/**
-	 * Lista todos os registros de turno do banco
-	 */
-	public static void list() {
-
-		try {
-
-			List<Turno> listTurno = Turno.findAll();
-
-			if (listTurno.size() == 0)
-				protocol = new Protocol('e', MessageHelper.get("LIST_EMPTY", complement), listTurno, listTurno.size());
-			else
-				protocol = new Protocol('s', MessageHelper.get("LIST_OK", complement), listTurno, listTurno.size());
-
-		} catch (Exception e) {
-
-			e.printStackTrace();
-
-			protocol = new Protocol('e', MessageHelper.get("LIST_ERROR", complement), null, 0);
-
-		}
-
-		renderJSON(protocol);
-
-	}
 
 	public static void result() {
 
+		Alocacao.deleteAll();
+		
 		Populacao p = new Populacao();
+		
+		p.alocar(p.melhor());
 
 		protocol = new Protocol('s', MessageHelper.get("Genetica modificada"), p.populacao, 1);
+
 		renderJSON(protocol);
 
 		List<String> listSolucacao = new ArrayList<String>();
@@ -188,6 +92,72 @@ public class AlgoritimoController extends Controller {
 
 		renderJSON(protocol);
 
+	}
+
+	/**
+	 * retorna a lista de alocação por salas
+	 */
+
+	public static void alocacao() {
+
+		List<AlocacaoInterface> listAi = new ArrayList<AlocacaoInterface>();
+
+		List<Sala> listSalas = Sala.findAll();
+
+		for (Sala sala : listSalas) {
+
+			AlocacaoInterface ai = new AlocacaoInterface();
+
+			ai.sala = sala;
+
+			ai.alocacao = new ArrayList<AlocacaoSemana>();
+
+			List<Horario> listHorarios = Horario.findAll();
+
+			for (int i = 1; i <= listHorarios.size(); i++) {
+
+				AlocacaoSemana as = new AlocacaoSemana();
+
+				as.horario = listHorarios.get(i - 1);
+
+				as.segunda = Alocacao.find("sala.id = " + sala.id + "AND dia = 1 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				as.terca = Alocacao.find("sala.id = " + sala.id + "AND dia = 2 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				as.quarta = Alocacao.find("sala.id = " + sala.id + "AND dia = 3 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				as.quinta = Alocacao.find("sala.id = " + sala.id + "AND dia = 4 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				as.sexta = Alocacao.find("sala.id = " + sala.id + "AND dia = 5 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				as.sabado = Alocacao.find("sala.id = " + sala.id + "AND dia = 6 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				as.domingo = Alocacao.find("sala.id = " + sala.id + "AND dia = 7 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				ai.alocacao.add(as);
+			}
+
+			listAi.add(ai);
+
+		}
+
+		if (listAi.size() == 0)
+
+			protocol = new Protocol('a', MessageHelper.get("LIST_EMPTY", "alocacao"), listAi, listAi.size());
+
+		else
+
+			protocol = new Protocol('s', MessageHelper.get("LIST_OK", "alocacao"), listAi, listAi.size());
+
+
+		renderJSON(protocol);
+	}
+
+	/**
+	 * Renderiza o relatorio na tela
+	 */
+	public static void relatorio() {
+		renderTemplate("relatorio.html");
 	}
 
 	/**

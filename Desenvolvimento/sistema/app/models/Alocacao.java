@@ -19,7 +19,7 @@ import play.db.jpa.GenericModel;
 @Entity
 @Table(name = "alocacao", schema = "public")
 public class Alocacao extends GenericModel {
-	
+
 	@Id
 	@Column(name = "id_alocacao")
 	@GeneratedValue(generator = "alocacao_id_alocacao_seq", strategy = GenerationType.SEQUENCE)
@@ -30,13 +30,15 @@ public class Alocacao extends GenericModel {
 	@JoinColumn(name = "id_sala")
 	public Sala sala;
 
-	
 	@ManyToOne
 	@JoinColumn(name = "id_horario")
 	public Horario horario;
-	
+
+	@Column(name = "dia_alocacao")
+	public Integer dia;
+
 	@ManyToOne
 	@JoinColumn(name = "id_disciplina")
 	public Disciplina disciplina;
-	
+
 }

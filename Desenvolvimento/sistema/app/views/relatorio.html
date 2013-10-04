@@ -1,0 +1,111 @@
+#{extends 'layout.html' /}
+#{set title:'Alocação das Disciplinas' /}
+
+
+<div ng-controller="AlocacaoCtrl">
+
+	<!-- MESSAGES -->
+	<section id="message_container" class="message_container">
+		<div id="message_binder" style="margin-bottom: 8px;" class="{{status}}">
+			<span id="message_text">{{message}}</span>
+		</div>
+	</section>
+	<!-- MESSAGES -->
+
+	<div class="alert alert-info">
+
+		<h4>Alocação das disciplinas</h4> <br />
+
+		<div ng-repeat="item in data">
+			{{item.sala.nome}} ({{item.sala.vagas}}) {{item.sala.iluminacao}}
+			<table class="table table-bordered table-striped table-hover table-condensed">
+				<tr>
+					<td ng-style="bgstyle()">HORÁRIO</td>
+					<td ng-style="bgstyle()">SEGUNDA</td>
+					<td ng-style="bgstyle()">TERÇA</td>
+					<td ng-style="bgstyle()">QUARTA</td>
+					<td ng-style="bgstyle()">QUINTA</td>
+					<td ng-style="bgstyle()">SEXTA</td>
+					<td ng-style="bgstyle()">SÁBADO</td>
+					<td ng-style="bgstyle()">DOMINGO</td>
+				</tr>
+
+				<tr ng-repeat="a in item.alocacao">
+					<td ng-style="bgstyle()">{{a.horario.turno.descricao}} - {{a.horario.horarioDe}} : {{a.horario.horarioAte}}</td>
+					<td ng-style="bgstyle(a.segunda.disciplina)">{{a.segunda.disciplina.nome}}</td>
+					<td ng-style="bgstyle(a.terca.disciplina)">{{a.terca.disciplina.nome}}</td>
+					<td ng-style="bgstyle(a.quarta.disciplina)">{{a.quarta.disciplina.nome}}</td>
+					<td ng-style="bgstyle(a.quinta.disciplina)">{{a.quinta.disciplina.nome}}</td>
+					<td ng-style="bgstyle(a.sexta.disciplina)">{{a.sexta.disciplina.nome}}</td>
+					<td ng-style="bgstyle(a.sabado.disciplina)">{{a.sabado.disciplina.nome}}</td>
+					<td ng-style="bgstyle(a.sabado.disciplina)">{{a.sabado.disciplina.nome}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+
+function AlocacaoCtrl ($scope, $http) {
+
+	$scope.list = function () {
+
+		var _url = window.viewModel.url.base + 'ag/alocacao';
+
+		$http({method: 'GET', url: _url}).success(function(data, status, headers, config) {
+
+			$scope.data = data.data;
+
+			$scope.setmessage(data.message, data.status);
+
+		}).error(function(data, status, headers, config) {
+
+			console.log(status);
+		});
+	}
+
+	$scope.bgstyle = function (item) {
+
+		if (item != null) {
+
+			return {backgroundColor:'#C3060A', color:'#f9f9f9'};
+
+		}else{
+
+			return {backgroundColor:'#f9f9f9'};
+
+		}
+	}
+
+	$scope.setmessage = function(_message, _status){
+
+		$scope.message = _message;
+
+		if (_status == "s") {
+
+			$scope.status = 'message message-success';
+
+		} else if (_status == "a") {
+
+			$scope.status = 'message message-alert'
+
+		} else if (_status == "e") {
+
+			$scope.status = 'message message-error';
+
+		}
+	}
+
+	$scope.open = function(){
+
+		$scope.message = 'Nenhuma informação sobre essa página';
+
+		$scope.status = 'message message-info';
+	}
+
+	$scope.open();
+	$scope.list();
+}
+
+</script>

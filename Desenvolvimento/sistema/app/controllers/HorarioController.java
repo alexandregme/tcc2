@@ -1,17 +1,12 @@
 package controllers;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
-import org.joda.time.LocalDateTime;
-
-import models.Alocacao;
 import models.Disciplina;
 import models.DisciplinaHorario;
 import models.DisciplinaSemana;
 import models.Horario;
-import models.Turno;
 import play.mvc.Controller;
 import utils.MessageHelper;
 import utils.Protocol;

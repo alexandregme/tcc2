@@ -152,7 +152,8 @@ CREATE TABLE alocacao (
   id_alocacao SERIAL NOT NULL,
   id_sala INTEGER NOT NULL,
   id_horario INTEGER NOT NULL,
-  id_disciplina INTEGER NOT NULL,
+  dia_alocacao INTEGER NOT NULL,
+  id_disciplina INTEGER,
   CONSTRAINT pk_alocacao PRIMARY KEY (id_alocacao)
 );
 
