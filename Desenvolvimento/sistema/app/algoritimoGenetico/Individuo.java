@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import com.sun.istack.FinalArrayList;
-
-import play.libs.Time.CronExpression;
-
 import models.Horario;
 import models.Sala;
 
@@ -19,8 +15,23 @@ public class Individuo {
 	
 	public String genoma;
 
+	
 	public Individuo() {
 
+		create();
+
+		fitness();
+
+	}// fim método Individuo
+
+	public Individuo(List<Gene> c) {
+
+		cromossomo = c;
+		fitness();
+
+	}// fim método Individuo
+
+	public void create(){
 		cromossomo = new ArrayList<Gene>();
 
 		List<Sala> salas = Sala.findAll();
@@ -40,8 +51,8 @@ public class Individuo {
 		}// fim for salas
 		fitness();
 		print();
-	}// fim método Individuo
 
+	}
 	public void fitness() {
 
 		Random r = new Random();
