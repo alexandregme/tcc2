@@ -14,7 +14,6 @@ public class Individuo {
 	public Integer fitness;
 	
 	public String genoma;
-
 	
 	public Individuo() {
 
@@ -24,14 +23,8 @@ public class Individuo {
 
 	}// fim método Individuo
 
-	public Individuo(List<Gene> c) {
-
-		cromossomo = c;
-		fitness();
-
-	}// fim método Individuo
-
 	public void create(){
+		
 		cromossomo = new ArrayList<Gene>();
 
 		List<Sala> salas = Sala.findAll();

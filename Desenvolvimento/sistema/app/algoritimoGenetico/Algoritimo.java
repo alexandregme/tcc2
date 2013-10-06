@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import models.Alocacao;
 import models.ParametrosAlgoritimo;
 
 public class Algoritimo {
@@ -20,12 +21,13 @@ public class Algoritimo {
 
 		parametros.tamanhoPopulacao = 100;
 
-		parametros.numeroMaximoGeracoes = 15;
+		parametros.numeroMaximoGeracoes = 10;
 
+		Alocacao.deleteAll();
+		
 		Populacao p = new Populacao();
 
 		p.populacaoInicial(parametros.tamanhoPopulacao);
-
 
 		boolean temSolucao = false;
 
@@ -41,7 +43,7 @@ public class Algoritimo {
 
 		} while (!temSolucao && geracao < parametros.numeroMaximoGeracoes);
 
-		//p.alocar(p.melhor());
+		p.alocar(p.melhor());
 
 	}
 
@@ -60,7 +62,6 @@ public class Algoritimo {
 		// máximo
 		while (p.populacao.size() < parametros.tamanhoPopulacao) {
 
-			
 			// seleciona os 2 pais por torneio
 			Individuo[] pais = selecaoTorneio(populacao);
 
@@ -75,8 +76,8 @@ public class Algoritimo {
 
 			} else {
 
-				filhos[0] = new Individuo(pais[0].cromossomo);
-				filhos[1] = new Individuo(pais[1].cromossomo);
+				filhos[0] = pais[0];
+				filhos[1] = pais[1];
 
 			}
 
@@ -99,46 +100,49 @@ public class Algoritimo {
 
 		// sorteia o ponto de corte
 		int pontoCorte1 = r.nextInt((pai.cromossomo.size() / 2) - 2) + 1;
-		int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2) + pai.cromossomo.size() / 2;
+		int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2)
+				+ pai.cromossomo.size() / 2;
 
 		Individuo[] filhos = new Individuo[2];
 
-		// pega os genes dos pais
-		List<Gene> cromossomoPai = pai.cromossomo;
-		List<Gene> cromossomMae = mae.cromossomo;
+		Individuo i1 = new Individuo();
+		i1.cromossomo = new ArrayList<Gene>();
 
-		List<Gene> cromossomFilho1 = new ArrayList<Gene>();
-		List<Gene> cromossomFilho2 = new ArrayList<Gene>();
+		Individuo i2 = new Individuo();
+		i2.cromossomo = new ArrayList<Gene>();
 
 		// filho 1
 		for (int i = 0; i < pontoCorte1; i++) {
-			cromossomFilho1.add(cromossomoPai.get(i));
+			i1.cromossomo.add(pai.cromossomo.get(i));
 		}
 
 		for (int i = pontoCorte1; i < pontoCorte2; i++) {
-			cromossomFilho1.add(cromossomMae.get(i));
+			i1.cromossomo.add(mae.cromossomo.get(i));
 		}
 
-		for (int i = pontoCorte2; i < cromossomoPai.size(); i++) {
-			cromossomFilho1.add(cromossomoPai.get(i));
+		for (int i = pontoCorte2; i < pai.cromossomo.size(); i++) {
+			i1.cromossomo.add(pai.cromossomo.get(i));
 		}
 
 		// filho 2
 		for (int i = 0; i < pontoCorte1; i++) {
-			cromossomFilho1.add(cromossomMae.get(i));
+			i2.cromossomo.add(mae.cromossomo.get(i));
 		}
 
 		for (int i = pontoCorte1; i < pontoCorte2; i++) {
-			cromossomFilho1.add(cromossomoPai.get(i));
+			i2.cromossomo.add(pai.cromossomo.get(i));
 		}
 
-		for (int i = pontoCorte2; i < cromossomoPai.size(); i++) {
-			cromossomFilho1.add(cromossomMae.get(i));
+		for (int i = pontoCorte2; i < pai.cromossomo.size(); i++) {
+			i2.cromossomo.add(mae.cromossomo.get(i));
 		}
 
 		// cria o novo indivíduo com os genes dos pais
-		filhos[0] = new Individuo(cromossomFilho1);
-		filhos[1] = new Individuo(cromossomFilho2);
+		i1.fitness();
+		i2.fitness();
+
+		filhos[0] = i1;
+		filhos[1] = i2;
 
 		return filhos;
 
@@ -152,9 +156,12 @@ public class Algoritimo {
 		Populacao pi = new Populacao();
 
 		// seleciona 3 indivíduos aleatóriamente na população
-		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
-		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
-		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
+		pi.populacao
+				.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
+		pi.populacao
+				.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
+		pi.populacao
+				.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
 
 		// ordena a população
 		pi.ordenar();
