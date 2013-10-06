@@ -1,7 +1,11 @@
 package algoritimoGenetico;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+import org.hibernate.mapping.Collection;
 
 import models.Alocacao;
 
@@ -44,35 +48,14 @@ public class Populacao {
 	// população, acesso a posição 0 do array de indivíduos
 	public void ordenar() {
 
-		// boolean trocou = true;
-
-		// while (trocou) {
-		//
-		// trocou = false;
-		//
-		// for (int i = 0; i < populacao.size() - 1; i++) {
-		//
-		// if (populacao.get(i).fitness < populacao.get(i + 1).fitness) {
-		//
-		// System.out.println(i);
-		//
-		// System.out.println(populacao.get(i).fitness);
-		//
-		// System.out.println(populacao.get(i + 1).fitness);
-		//
-		// Individuo temp = populacao.get(i);
-		//
-		// populacao.add(i, populacao.get(i + 1));
-		//
-		// populacao.add(i + 1, temp);
-		//
-		// trocou = true;
-		//
-		// }
-		//
-		// }
-		// }
-
+		Collections.sort(populacao, new Comparator() {
+			public int compare(Object o1, Object o2) {
+				Individuo i1 = (Individuo) o1;
+				Individuo i2 = (Individuo) o2;
+				return i1.fitness < i2.fitness ? +1
+						: (i1.fitness > i2.fitness ? -1 : 0);
+			}
+		});
 	}
 
 	public void alocar(Individuo i) {
@@ -87,7 +70,11 @@ public class Populacao {
 
 			a.dia = g.diaSemana;
 
-			a.disciplina = g.disciplina;
+			if (g.disciplinaHorario == null)
+				
+				a.disciplina = null;
+			else
+				a.disciplina = g.disciplinaHorario.disciplina;
 
 			a.save();
 

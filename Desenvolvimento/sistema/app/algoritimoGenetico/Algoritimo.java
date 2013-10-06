@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import models.Alocacao;
+import models.DisciplinaHorario;
 import models.ParametrosAlgoritimo;
 
 public class Algoritimo {
@@ -40,6 +41,7 @@ public class Algoritimo {
 			temSolucao = p.temSolucao();
 
 			geracao++;
+			System.out.println(p.populacao.size());
 
 		} while (!temSolucao && geracao < parametros.numeroMaximoGeracoes);
 
@@ -80,6 +82,13 @@ public class Algoritimo {
 				filhos[1] = pais[1];
 
 			}
+			
+			if (r.nextDouble() <= parametros.taxaMutacao){
+				
+				Individuo i = mutacao(populacao);
+				p.populacao.add(i);
+
+			}
 
 			// adiciona os filhos na nova geração
 			p.populacao.add(filhos[0]);
@@ -94,7 +103,7 @@ public class Algoritimo {
 
 	}
 
-	public static Individuo[] crossover(Individuo pai, Individuo mae) {
+	public Individuo[] crossover(Individuo pai, Individuo mae) {
 
 		Random r = new Random();
 
@@ -176,4 +185,25 @@ public class Algoritimo {
 
 	}
 
+	public Individuo mutacao(Populacao p){
+		
+		Random r = new Random();
+		
+		int ri = r.nextInt(p.populacao.size());
+		
+		Individuo individuo = p.populacao.get(ri);
+		
+		int rg = r.nextInt(individuo.cromossomo.size());
+		
+		List<DisciplinaHorario> listHorario = DisciplinaHorario.find("alocado=true").fetch();
+		
+		int rh = r.nextInt(listHorario.size());
+		
+		individuo.cromossomo.get(rg).disciplinaHorario = DisciplinaHorario.findById(listHorario.get(rh).id);
+		
+		individuo.cromossomo.get(rg).disciplinaHorario.save();
+	
+		return new Individuo();
+		
+	}
 }

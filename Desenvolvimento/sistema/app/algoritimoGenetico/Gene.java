@@ -1,6 +1,7 @@
 package algoritimoGenetico;
 
 import models.Disciplina;
+import models.DisciplinaHorario;
 import models.Horario;
 import models.Sala;
 
@@ -12,6 +13,6 @@ public class Gene {
 
 	public Horario horario;
 	
-	public Disciplina disciplina;
+	public DisciplinaHorario disciplinaHorario;
 
 }

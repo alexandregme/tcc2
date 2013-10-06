@@ -37,7 +37,7 @@ public class Individuo {
 					g.sala = sala;
 					g.horario = horario;
 					g.diaSemana = dia;
-					g.disciplina = null;
+					g.disciplinaHorario = null;
 					cromossomo.add(g);
 				}// fim for horarios
 			}// fim for dias
@@ -49,7 +49,7 @@ public class Individuo {
 	public void fitness() {
 
 		Random r = new Random();
-		fitness = r.nextInt(8);
+		fitness = r.nextInt(100);
 
 	}
 
@@ -57,8 +57,7 @@ public class Individuo {
 		genoma = "";
 		
 		for (Gene g : cromossomo) {
-			if (g.disciplina == null) {
-				//genoma += g.sala.id + " " + g.horario.id + " " + g.diaSemana + " " + "0";
+			if (g.disciplinaHorario == null) {
 				genoma +="0";
 			} else {
 				genoma +="1";
