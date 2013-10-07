@@ -1,8 +1,5 @@
 package models;
 
-import java.util.List;
-
-import algoritimoGenetico.Algoritimo;
 
 public class ParametrosAlgoritimo {
 

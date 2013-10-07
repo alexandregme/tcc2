@@ -22,10 +22,10 @@ public class Algoritimo {
 
 		parametros.tamanhoPopulacao = 100;
 
-		parametros.numeroMaximoGeracoes = 10;
+		parametros.numeroMaximoGeracoes = 30;
 
 		Alocacao.deleteAll();
-		
+
 		Populacao p = new Populacao();
 
 		p.populacaoInicial(parametros.tamanhoPopulacao);
@@ -82,9 +82,9 @@ public class Algoritimo {
 				filhos[1] = pais[1];
 
 			}
-			
-			if (r.nextDouble() <= parametros.taxaMutacao){
-				
+
+			if (r.nextDouble() <= parametros.taxaMutacao) {
+
 				Individuo i = mutacao(populacao);
 				p.populacao.add(i);
 
@@ -109,8 +109,7 @@ public class Algoritimo {
 
 		// sorteia o ponto de corte
 		int pontoCorte1 = r.nextInt((pai.cromossomo.size() / 2) - 2) + 1;
-		int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2)
-				+ pai.cromossomo.size() / 2;
+		int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2) + pai.cromossomo.size() / 2;
 
 		Individuo[] filhos = new Individuo[2];
 
@@ -165,12 +164,9 @@ public class Algoritimo {
 		Populacao pi = new Populacao();
 
 		// seleciona 3 indivíduos aleatóriamente na população
-		pi.populacao
-				.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
-		pi.populacao
-				.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
-		pi.populacao
-				.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
+		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
+		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
+		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
 
 		// ordena a população
 		pi.ordenar();
@@ -185,25 +181,25 @@ public class Algoritimo {
 
 	}
 
-	public Individuo mutacao(Populacao p){
-		
+	public Individuo mutacao(Populacao p) {
+
 		Random r = new Random();
-		
+
 		int ri = r.nextInt(p.populacao.size());
-		
+
 		Individuo individuo = p.populacao.get(ri);
-		
+
 		int rg = r.nextInt(individuo.cromossomo.size());
-		
+
 		List<DisciplinaHorario> listHorario = DisciplinaHorario.find("alocado=true").fetch();
-		
+
 		int rh = r.nextInt(listHorario.size());
-		
+
 		individuo.cromossomo.get(rg).disciplinaHorario = DisciplinaHorario.findById(listHorario.get(rh).id);
-		
+
 		individuo.cromossomo.get(rg).disciplinaHorario.save();
-	
+
 		return new Individuo();
-		
+
 	}
 }
