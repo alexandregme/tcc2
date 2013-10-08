@@ -114,3 +114,114 @@ Será desenvolvido um sistema que otimiza a alocação das salas em até 90\% fa
 \subsecao{Relatórios}
 
 	Geração dos relatorios determinados na analise do sistema, todos os relatorios podem ser exportados para pdf
+
+
+
+%==============================================%
+
+
+\secao{Definição da função objetivo}
+Somatorio disso
+
+Para o calculo do fitness foram definidos pesos para modelagem da função, estes pesos podem ser configurados de acordo com a necessidade da alocação.
+
+Graduação alocada ganha 05 de peso
+
+Pós graduação alocada ganha 03 de peso
+
+Periodos na mesma sala cada um ganha 05 de peso * o numero do periodo
+
+Quanditadade de vagas igual a da sala 05 de peso
+
+não optativa ganha 5
+
+optativa ganha 3
+
+iliminacao atendida 5
+
+Criar a função matematica com as legendas conforme o trabalho 117.pdf
+
+Falar o numero de salas, o numero de horarios, o numero de curos o numero de colegiados o numero de periodos o numero de disciplinas para cada colegiado.......
+
+
+\secao{Definição das restrições}
+
+falar um pouco das restrições e enumeralas
+
+As disciplinas não podem ser alocadas em horarios direfentes dos que já foram pré definidos pelo colegiado.
+
+As discplinas devem ter apenas a quantidade de alocações necessarias.
+
+As disciplinas devem respeitar a capacidade da sala.
+
+As diciplinas não optativas tem preferencia de alcação na mesma sala.
+
+Preferencias por salas claras ou escuras
+
+Restrição 1 
+
+
+Fitness
+
+Para se iniciar o calculo do fitness são verificados todos os horarios já alocados somando os pesos se adequados.
+
+para cada gene
+
+	se tem horario alocado 
+
+		horario bate
+
+		capacidade da turma
+
+		turma graduacao
+
+		optativa
+
+		iluminacao
+
+		soma tudo
+
+	fim se tem alocação
+
+	soma tudo
+
+fim para cada gene
+
+Calculo do fitness01 somatatoriox100/colocar algum valor  para dividir não sei ainda
+
+calculo fitness02 penaliza disciplinas com mais alocação do que se deve
+
+para cada gene 
+
+	para cada disciplina 
+
+	soma
+
+	fim
+
+	Calculo fitness02 -= fitnes01 x (1 - (total alocados - total necessario/ dividir pelo numero possivel de alocações))
+fim
+
+calculo fitness03 penalidade por capacidade
+
+	para cada gente
+
+		se a sala tiver capacidade diferente
+		
+	fim
+
+	calculo fitness03 = fitness02 x (1 - (numero de erros /  numero de possiveis alocações )))
+
+
+calculo fitness04 preferencias clara ou escura
+
+	para cada gene 
+
+		se tiver com o optativo errado 
+
+	fim	
+
+	calculo fitness04 = fitness03 x (1 - (numero de erros /  numero de possiveis alocações )))
+
+
+O fitness04 é o resultado final

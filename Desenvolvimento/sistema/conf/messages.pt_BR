@@ -16,7 +16,7 @@ LIST_OK=Consulta de lista de %s executada com sucesso.
 LIST_ERROR=Erro ao consultar lista de %s.
 LIST_EMPTY=A consulta de %s foi executada mas não retornou nenhum resultado.
 
-
+PARAMETROS_ERROR = É necessário o envio de parâmetros válidos
 
 
 

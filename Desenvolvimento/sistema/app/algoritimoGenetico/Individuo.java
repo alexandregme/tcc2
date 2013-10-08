@@ -4,18 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import models.Disciplina;
+import models.DisciplinaHorario;
 import models.Horario;
+import models.Parametros;
 import models.Sala;
 
 public class Individuo {
 
-	public List<Gene> cromossomo;
+	public List<Gene> cromossomo = new ArrayList<Gene>();;
 
-	public Integer fitness;
+	public Integer fitness = 0;
 
-	public String genoma;
+	public String genoma = "";
 
-	public Individuo() {
+	private Parametros parametros = null;
+
+	public Individuo(Parametros p) {
+
+		parametros = p;
 
 		create();
 
@@ -27,15 +34,11 @@ public class Individuo {
 
 		cromossomo = new ArrayList<Gene>();
 
-		List<Sala> salas = Sala.findAll();
-
-		List<Horario> horarios = Horario.findAll();
-
-		for (Sala sala : salas) {
+		for (Sala sala : parametros.listSalas) {
 
 			for (int dia = 1; dia < 8; dia++) {
 
-				for (Horario horario : horarios) {
+				for (Horario horario : parametros.listHorarios) {
 
 					Gene g = new Gene();
 
@@ -55,16 +58,83 @@ public class Individuo {
 
 		}// fim for salas
 
+
+		for (int i = 0; i < parametros.listHorarioDisciplina.size(); i++) {
+
+			cromossomo.get(i).disciplinaHorario = parametros.listHorarioDisciplina.get(i);
+
+		}
+
 		fitness();
-		print();
 
 	}
 
 	public void fitness() {
 
-		Random r = new Random();
+		int somatorioPesos = 0;
+		int countTotalAlocados = 0, countNecessario = 0;
 
-		fitness = r.nextInt(100);
+		int fitness02 = 0;
+		int fitness01 = 0;
+
+		for (Gene g : cromossomo) {
+
+			if (g.disciplinaHorario != null) {
+				
+				if ((g.horario.id == g.disciplinaHorario.horario.id) && (g.diaSemana == g.disciplinaHorario.dia)) {
+
+					countTotalAlocados++;
+
+				}
+
+			}
+
+		}
+
+		if (countTotalAlocados == 0)
+
+			fitness01 = 0;
+
+		else
+
+			fitness01 = (countTotalAlocados * 100) / parametros.listHorarioDisciplina.size();
+
+		// penalidade para disciplinas com alocação indevida
+
+//		for (Disciplina d : parametros.listDisciplinas) {
+//
+//			countNecessario = 0;
+//
+//			countTotalAlocados = 0;
+//
+//			for (DisciplinaHorario hp : parametros.listHorarioDisciplina) {
+//
+//				if (hp.disciplina.id == d.id)
+//
+//					countNecessario++;
+//
+//			}
+//
+//			for (Gene g : cromossomo) {
+//
+//				if ((g.disciplinaHorario != null) && (g.disciplinaHorario.disciplina.id == d.id))
+//
+//					countTotalAlocados++;
+//			}
+//
+//			if (countTotalAlocados > countNecessario) {
+//				fitness02 -= (parametros.listHorarioDisciplina.size() * 100) / (countTotalAlocados - countNecessario);
+//			}
+//
+//		}
+
+		// penalidades
+		
+		fitness = fitness01;
+		
+		print();
+
+		//System.out.println(fitness);
 
 	}
 

@@ -6,12 +6,12 @@ import models.Sala;
 
 public class Gene {
 
-	public Sala sala;
+	public Sala sala = null;
 
-	public Integer diaSemana;
+	public Integer diaSemana = null;
 
-	public Horario horario;
-	
-	public DisciplinaHorario disciplinaHorario;
+	public Horario horario = null;
+
+	public DisciplinaHorario disciplinaHorario = null;
 
 }

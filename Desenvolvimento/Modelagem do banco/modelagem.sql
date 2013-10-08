@@ -23,6 +23,8 @@ DROP TABLE IF EXISTS sala;
 
 DROP TABLE IF EXISTS predio;
 
+DROP TABLE IF EXISTS parametros;
+
 -- ---
 -- Table predio
 -- 
@@ -87,6 +89,7 @@ CREATE TABLE disciplina (
   texto_codigo CHARACTER varying(255),
   nome_disciplina CHARACTER varying(255),
   texto_turma CHARACTER varying(255),
+  flag_iluminacao CHARACTER varying(15),
   CONSTRAINT pk_disciplina PRIMARY KEY (id_disciplina)
 );
 
@@ -157,6 +160,30 @@ CREATE TABLE alocacao (
   CONSTRAINT pk_alocacao PRIMARY KEY (id_alocacao)
 );
 
+
+-- ---
+-- Table alocacao
+-- 
+-- ---
+CREATE TABLE parametros (
+  id_parametro SERIAL NOT NULL,
+  elitismo BOOLEAN NOT nULL,
+  taxa_crossover NUMERIC(2,2) NOT nULL,
+  taxa_mutacao NUMERIC(2,2) NOT NULL,
+  tamanho_populacao INTEGER NOT NULL,
+  maximo_geracoes INTEGER NOT NULL,
+  peso_discliplina_alocada INTEGER NOT NULL,
+  peso_graduacao INTEGER NOT NULL,
+  peso_pos INTEGER NOT NULL,
+  peso_mesmo_periodo INTEGER NOT NULL,
+  peso_capacidade INTEGER NOT NULL,
+  peso_optativa INTEGER NOT NULL,
+  peso_iluminacao INTEGER NOT NULL,
+  CONSTRAINT pk_parametro PRIMARY KEY (id_parametro)
+);
+
+INSERT INTO parametros (id_parametro,elitismo,taxa_crossover,taxa_mutacao,tamanho_populacao,maximo_geracoes,peso_discliplina_alocada,peso_graduacao,peso_pos,peso_mesmo_periodo,peso_capacidade,peso_optativa,peso_iluminacao) VALUES (1,true,0.6,0.3,100,50,1000,100,10,10,10,10,10);
+
 -- ---
 -- Foreign Keys 
 -- ---
@@ -191,7 +218,7 @@ ALTER TABLE alocacao ADD FOREIGN KEY (id_disciplina) REFERENCES disciplina (id_d
 -- Test Data
 -- ---
 
--- INSERT INTO predio (id_predio,nome_predio,texto_descricao) VALUES
+-- 
 -- (,,);
 -- INSERT INTO sala (id_sala,id_predio,numero_andar,numero_vagas,nome_sala,flag_iluminacao,flag_ativa) VALUES
 -- (,,,,,,);

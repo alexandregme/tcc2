@@ -4,29 +4,33 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import javax.persistence.Transient;
+import javax.persistence.criteria.CriteriaBuilder.In;
+
 import models.Alocacao;
+import models.Disciplina;
 import models.DisciplinaHorario;
-import models.ParametrosAlgoritimo;
+import models.Horario;
+import models.Parametros;
+import models.Sala;
 
 public class Algoritimo {
 
-	private ParametrosAlgoritimo parametros = new ParametrosAlgoritimo();
+	private Parametros parametros = Parametros.findById(1);
 
 	public Algoritimo() {
 
-		parametros.taxaCrossover = 0.6;
-
-		parametros.taxaMutacao = 0.3;
-
-		parametros.elitismo = true;
-
-		parametros.tamanhoPopulacao = 100;
-
-		parametros.numeroMaximoGeracoes = 30;
-
 		Alocacao.deleteAll();
 
-		Populacao p = new Populacao();
+		Populacao p = new Populacao(parametros);
+
+		parametros.listDisciplinas = Disciplina.findAll();
+
+		parametros.listHorarioDisciplina = DisciplinaHorario.find("alocado=true").fetch();
+
+		parametros.listSalas = Sala.findAll();
+
+		parametros.listHorarios = Horario.findAll();
 
 		p.populacaoInicial(parametros.tamanhoPopulacao);
 
@@ -41,11 +45,17 @@ public class Algoritimo {
 			temSolucao = p.temSolucao();
 
 			geracao++;
-			System.out.println(p.populacao.size());
+
+			System.out.println(geracao);
 
 		} while (!temSolucao && geracao < parametros.numeroMaximoGeracoes);
 
-		p.alocar(p.melhor());
+		Individuo i = p.melhor();
+
+		p.alocar(i);
+
+		System.out.println(i.genoma);
+		System.out.println(p.melhor().genoma);
 
 	}
 
@@ -53,11 +63,15 @@ public class Algoritimo {
 
 		Random r = new Random();
 
-		Populacao p = new Populacao();
+		Populacao p = new Populacao(parametros);
 
 		// se tiver elitismo, mantém o melhor indivíduo da geração atual
 		if (elitismo) {
+
 			p.populacao.add(populacao.melhor());
+
+			System.out.println("elitismo" + p.melhor().fitness);
+
 		}
 
 		// insere novos indivíduos na nova população, até atingir o tamanho
@@ -68,20 +82,22 @@ public class Algoritimo {
 			Individuo[] pais = selecaoTorneio(populacao);
 
 			Individuo[] filhos = new Individuo[2];
-
+			//
+			filhos[0] = pais[0];
+			filhos[1] = pais[1];
 			// verifica a taxa de crossover, se sim realiza o crossover, se não,
 			// mantém os pais selecionados para a próxima geração
 
-			if (r.nextDouble() <= parametros.taxaCrossover) {
-
-				filhos = crossover(pais[1], pais[0]);
-
-			} else {
-
-				filhos[0] = pais[0];
-				filhos[1] = pais[1];
-
-			}
+			// if (r.nextDouble() <= parametros.taxaCrossover) {
+			//
+			// filhos = crossover(pais[1], pais[0]);
+			//
+			// } else {
+			//
+			// filhos[0] = pais[0];
+			// filhos[1] = pais[1];
+			//
+			// }
 
 			if (r.nextDouble() <= parametros.taxaMutacao) {
 
@@ -113,10 +129,11 @@ public class Algoritimo {
 
 		Individuo[] filhos = new Individuo[2];
 
-		Individuo i1 = new Individuo();
+		Individuo i1 = new Individuo(parametros);
+
 		i1.cromossomo = new ArrayList<Gene>();
 
-		Individuo i2 = new Individuo();
+		Individuo i2 = new Individuo(parametros);
 		i2.cromossomo = new ArrayList<Gene>();
 
 		// filho 1
@@ -161,7 +178,7 @@ public class Algoritimo {
 		Random r = new Random();
 
 		// população intermediaria
-		Populacao pi = new Populacao();
+		Populacao pi = new Populacao(parametros);
 
 		// seleciona 3 indivíduos aleatóriamente na população
 		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
@@ -189,17 +206,17 @@ public class Algoritimo {
 
 		Individuo individuo = p.populacao.get(ri);
 
-		int rg = r.nextInt(individuo.cromossomo.size());
+		int c1 = r.nextInt(individuo.cromossomo.size());
 
-		List<DisciplinaHorario> listHorario = DisciplinaHorario.find("alocado=true").fetch();
+		int c2 = r.nextInt(individuo.cromossomo.size());
 
-		int rh = r.nextInt(listHorario.size());
+		DisciplinaHorario aux = individuo.cromossomo.get(c1).disciplinaHorario;
 
-		individuo.cromossomo.get(rg).disciplinaHorario = DisciplinaHorario.findById(listHorario.get(rh).id);
+		individuo.cromossomo.get(c1).disciplinaHorario = individuo.cromossomo.get(c2).disciplinaHorario;
 
-		individuo.cromossomo.get(rg).disciplinaHorario.save();
+y		individuo.cromossomo.get(c2).disciplinaHorario = aux;
 
-		return new Individuo();
+		return individuo;
 
 	}
 }

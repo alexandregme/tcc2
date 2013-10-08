@@ -41,5 +41,8 @@ public class Disciplina extends GenericModel {
 
 	@Column(name = "texto_turma")
 	public String turma;
+	
+	@Column(name = "flag_iluminacao")
+	public String iluminacao;
 
 }
