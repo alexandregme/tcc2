@@ -12,13 +12,13 @@ import models.Sala;
 
 public class Individuo {
 
-	public List<Gene> cromossomo = new ArrayList<Gene>();;
+	public List<Gene> cromossomo;
 
 	public Integer fitness = 0;
 
 	public String genoma = "";
 
-	private Parametros parametros = null;
+	private Parametros parametros;
 
 	public Individuo(Parametros p) {
 
@@ -58,11 +58,15 @@ public class Individuo {
 
 		}// fim for salas
 
+		fitness();
+
+	}
+	
+	public void populate(){
 
 		for (int i = 0; i < parametros.listHorarioDisciplina.size(); i++) {
 
 			cromossomo.get(i).disciplinaHorario = parametros.listHorarioDisciplina.get(i);
-
 		}
 
 		fitness();

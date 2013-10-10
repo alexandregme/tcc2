@@ -1,0 +1,1289 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000000005f89ae06, pid=3792, tid=2236
+#
+# JRE version: 7.0_11-b21
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.6-b04 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# V  [jvm.dll+0x1cae06]
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000014aec800):  JavaThread "play-thread-1" [_thread_in_vm, id=2236, stack(0x00000000161e0000,0x00000000162e0000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x000000000000000a
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00000000162de5f0, RCX=0x00000000162de5f0, RDX=0x0000000000000028
+RSP=0x00000000162de350, RBP=0x00000000162de6b9, RSI=0x0000000014aec800, RDI=0x0000000000000000
+R8 =0x0000000000000000, R9 =0x0000000000000006, R10=0x00000006ff511c08, R11=0x00000000f5de6b3c
+R12=0x0000000000000000, R13=0x00000006ff5118d0, R14=0x0000000015052730, R15=0x00000000000000b9
+RIP=0x000000005f89ae06, EFLAGS=0x0000000000010202
+
+Top of Stack: (sp=0x00000000162de350)
+0x00000000162de350:   0000000013f4b430 00000000030f43f9
+0x00000000162de360:   0000c5cfcdce21c7 0000000061d35b95
+0x00000000162de370:   00000006fdbfbc30 00000000162de5f0
+0x00000000162de380:   0000000000000000 0000000000000004
+0x00000000162de390:   0000000000000000 00000000162de470
+0x00000000162de3a0:   00000000162de4d0 0000000061d323b1
+0x00000000162de3b0:   00000004e028b752 0000000000002000
+0x00000000162de3c0:   0000000000000005 000000005f713b6c
+0x00000000162de3d0:   000000000000000d 00000000c1bf05a5
+0x00000000162de3e0:   0000000000000007 0000000013f48890
+0x00000000162de3f0:   0000000014aec800 0000000013f48890
+0x00000000162de400:   0000000013f48880 000000005f713d01
+0x00000000162de410:   0000000015052730 000000000000000d
+0x00000000162de420:   00000000c1bf05a5 000000005f773339
+0x00000000162de430:   00000007c1bf05a5 0000000701459c60
+0x00000000162de440:   0000000000000002 0000000013f48800 
+
+Instructions: (pc=0x000000005f89ae06)
+0x000000005f89ade6:   01 00 00 48 8b 05 20 75 4c 00 48 33 c4 48 89 84
+0x000000005f89adf6:   24 20 01 00 00 4c 63 41 10 48 8b 41 08 48 8b d9
+0x000000005f89ae06:   42 38 54 00 0a 74 33 44 0f be c2 48 8d 4c 24 20
+0x000000005f89ae16:   48 8d 15 1b 17 36 00 e8 2e 74 e3 ff 48 8d 0d c7 
+
+
+Register to memory mapping:
+
+RAX=0x0000000000000000 is an unknown value
+RBX=0x00000000162de5f0 is pointing into the stack for thread: 0x0000000014aec800
+RCX=0x00000000162de5f0 is pointing into the stack for thread: 0x0000000014aec800
+RDX=0x0000000000000028 is an unknown value
+RSP=0x00000000162de350 is pointing into the stack for thread: 0x0000000014aec800
+RBP=0x00000000162de6b9 is pointing into the stack for thread: 0x0000000014aec800
+RSI=0x0000000014aec800 is a thread
+RDI=0x0000000000000000 is an unknown value
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000000000000006 is an unknown value
+R10=0x00000006ff511c08 is an oop
+{constant pool} 
+ - klass: {other class}
+ - holder: 0x00000006ff3727b8
+ - cache: 0x00000006ff513bb8
+ -   1 :  : 'algoritimoGenetico/Algoritimo' {0xff3727b8}
+ -   2 :  : 'algoritimoGenetico/Algoritimo'
+ -   3 :  : 'java/lang/Object' {0xfb802df8}
+ -   4 :  : 'java/lang/Object'
+ -   5 :  : 'parametros'
+ -   6 :  : 'Lmodels/Parametros;'
+ -   7 :  : '<init>'
+ -   8 :  : '()V'
+ -   9 :  : 'Code'
+ -  10 :  : klass_index=3 name_and_type_index=11
+ -  11 :  : name_index=7 signature_index=8
+ -  12 :  : klass_index=13 name_and_type_index=15
+ -  13 :  : 'java/lang/Integer' {0xfb8a81b0}
+ -  14 :  : 'java/lang/Integer'
+ -  15 :  : name_index=16 signature_index=17
+ -  16 :  : 'valueOf'
+ -  17 :  : '(I)Ljava/lang/Integer;'
+ -  18 :  : klass_index=19 name_and_type_index=21
+ -  19 :  : 'models/Parametros' {0xff3896a8}
+ -  20 :  : 'models/Parametros'
+ -  21 :  : name_index=22 signature_index=23
+ -  22 :  : 'findById'
+ -  23 :  : '(Ljava/lang/Object;)Lplay/db/jpa/JPABase;'
+ -  24 :  : klass_index=1 name_and_type_index=25
+ -  25 :  : name_index=5 signature_index=6
+ -  26 :  : klass_index=27 name_and_type_index=29
+ -  27 :  : 'models/Alocacao' {0xff37d808}
+ -  28 :  : 'models/Alocacao'
+ -  29 :  : name_index=30 signature_index=31
+ -  30 :  : 'deleteAll'
+ -  31 :  : '()I'
+ -  32 :  : 'algoritimoGenetico/Populacao' {0xff384f60}
+ -  33 :  : 'algoritimoGenetico/Populacao'
+ -  34 :  : klass_index=32 name_and_type_index=35
+ -  35 :  : name_index=7 signature_index=36
+ -  36 :  : '(Lmodels/Parametros;)V'
+ -  37 :  : klass_index=38 name_and_type_index=40
+ -  38 :  : 'models/Disciplina' {0xff381778}
+ -  39 :  : 'models/Disciplina'
+ -  40 :  : name_index=41 signature_index=42
+ -  41 :  : 'findAll'
+ -  42 :  : '()Ljava/util/List;'
+ -  43 :  : klass_index=19 name_and_type_index=44
+ -  44 :  : name_index=45 signature_index=46
+ -  45 :  : 'listDisciplinas'
+ -  46 :  : 'Ljava/util/List;'
+ -  47 :  : "alocado=true" {0x13a18b0}
+ -  48 :  : 'alocado=true'
+ -  49 :  : klass_index=50 name_and_type_index=52
+ -  50 :  : 'models/DisciplinaHorario' {0xff363b00}
+ -  51 :  : 'models/DisciplinaHorario'
+ -  52 :  : name_index=53 signature_index=54
+ -  53 :  : 'find'
+ -  54 :  : '(Ljava/lang/String;[Ljava/lang/Object;)Lplay/db/jpa/GenericModel$JPAQuery;'
+ -  55 :  : klass_index=56 name_and_type_index=58
+ -  56 :  : 'play/db/jpa/GenericModel$JPAQuery' {0xfcdb8c30}
+ -  57 :  : 'play/db/jpa/GenericModel$JPAQuery'
+ -  58 :  : name_index=59 signature_index=42
+ -  59 :  : 'fetch'
+ -  60 :  : klass_index=19 name_and_type_index=61
+ -  61 :  : name_index=62 signature_index=46
+ -  62 :  : 'listHorarioDisciplina'
+ -  63 :  : klass_index=64 name_and_type_index=40
+ -  64 :  : 'models/Sala' {0xff38c580}
+ -  65 :  : 'models/Sala'
+ -  66 :  : klass_index=19 name_and_type_index=67
+ -  67 :  : name_index=68 signature_index=46
+ -  68 :  : 'listSalas'
+ -  69 :  : klass_index=70 name_and_type_index=40
+ -  70 :  : 'models/Horario' {0xff36bb08}
+ -  71 :  : 'models/Horario'
+ -  72 :  : klass_index=19 name_and_type_index=73
+ -  73 :  : name_index=74 signature_index=46
+ -  74 :  : 'listHorarios'
+ -  75 :  : klass_index=19 name_and_type_index=76
+ -  76 :  : name_index=77 signature_index=78
+ -  77 :  : 'tamanhoPopulacao'
+ -  78 :  : 'I'
+ -  79 :  : klass_index=32 name_and_type_index=80
+ -  80 :  : name_index=81 signature_index=82
+ -  81 :  : 'populacaoInicial'
+ -  82 :  : '(I)V'
+ -  83 :  : klass_index=19 name_and_type_index=84
+ -  84 :  : name_index=85 signature_index=86
+ -  85 :  : 'elitismo'
+ -  86 :  : 'Z'
+ -  87 :  : klass_index=1 name_and_type_index=88
+ -  88 :  : name_index=89 signature_index=90
+ -  89 :  : 'novaGeracao'
+ -  90 :  : '(LalgoritimoGenetico/Populacao;Z)LalgoritimoGenetico/Populacao;'
+ -  91 :  : klass_index=32 name_and_type_index=92
+ -  92 :  : name_index=93 signature_index=94
+ -  93 :  : 'temSolucao'
+ -  94 :  : '()Z'
+ -  95 :  : klass_index=96 name_and_type_index=98
+ -  96 :  : 'java/lang/System' {0xfb821a28}
+ -  97 :  : 'java/lang/System'
+ -  98 :  : name_index=99 signature_index=100
+ -  99 :  : 'out'
+ - 100 :  : 'Ljava/io/PrintStream;'
+ - 101 :  : klass_index=102 name_and_type_index=104
+ - 102 :  : 'java/io/PrintStream' {0xfb934d30}
+ - 103 :  : 'java/io/PrintStream'
+ - 104 :  : name_index=105 signature_index=82
+ - 105 :  : 'println'
+ - 106 :  : klass_index=19 name_and_type_index=107
+ - 107 :  : name_index=108 signature_index=78
+ - 108 :  : 'numeroMaximoGeracoes'
+ - 109 :  : klass_index=32 name_and_type_index=110
+ - 110 :  : name_index=111 signature_index=112
+ - 111 :  : 'melhor'
+ - 112 :  : '()LalgoritimoGenetico/Individuo;'
+ - 113 :  : klass_index=32 name_and_type_index=114
+ - 114 :  : name_index=115 signature_index=116
+ - 115 :  : 'alocar'
+ - 116 :  : '(LalgoritimoGenetico/Individuo;)V'
+ - 117 :  : klass_index=118 name_and_type_index=120
+ - 118 :  : 'algoritimoGenetico/Individuo' {0xff392518}
+ - 119 :  : 'algoritimoGenetico/Individuo'
+ - 120 :  : name_index=121 signature_index=122
+ - 121 :  : 'genoma'
+ - 122 :  : 'Ljava/lang/String;'
+ - 123 :  : klass_index=102 name_and_type_index=124
+ - 124 :  : name_index=105 signature_index=125
+ - 125 :  : '(Ljava/lang/String;)V'
+ - 126 :  : 'LineNumberTable'
+ - 127 :  : 'LocalVariableTable'
+ - 128 :  : 'this'
+ - 129 :  : 'LalgoritimoGenetico/Algoritimo;'
+ - 130 :  : 'p'
+ - 131 :  : 'LalgoritimoGenetico/Populacao;'
+ - 132 :  : 'geracao'
+ - 133 :  : 'i'
+ - 134 :  : 'LalgoritimoGenetico/Individuo;'
+ - 135 :  : 'StackMapTable'
+ - 136 :  : 'java/util/Random' {0xfb9a8f00}
+ - 137 :  : 'java/util/Random'
+ - 138 :  : klass_index=136 name_and_type_index=11
+ - 139 :  : klass_index=32 name_and_type_index=140
+ - 140 :  : name_index=141 signature_index=46
+ - 141 :  : 'populacao'
+ - 142 :  : klass_index=143 name_and_type_index=145
+ - 143 :  : 'java/util/List' {0xfb8c27b0}
+ - 144 :  : 'java/util/List'
+ - 145 :  : name_index=146 signature_index=147
+ - 146 :  : 'add'
+ - 147 :  : '(Ljava/lang/Object;)Z'
+ - 148 :  : 'java/lang/StringBuilder' {0xfb88eb58}
+ - 149 :  : 'java/lang/StringBuilder'
+ - 150 :  : "elitismo" {0x195b2b8}
+ - 151 :  : klass_index=148 name_and_type_index=152
+ - 152 :  : name_index=7 signature_index=125
+ - 153 :  : klass_index=118 name_and_type_index=154
+ - 154 :  : name_index=155 signature_index=156
+ - 155 :  : 'fitness'
+ - 156 :  : 'Ljava/lang/Integer;'
+ - 157 :  : klass_index=148 name_and_type_index=158
+ - 158 :  : name_index=159 signature_index=160
+ - 159 :  : 'append'
+ - 160 :  : '(Ljava/lang/Object;)Ljava/lang/StringBuilder;'
+ - 161 :  : klass_index=148 name_and_type_index=162
+ - 162 :  : name_index=163 signature_index=164
+ - 163 :  : 'toString'
+ - 164 :  : '()Ljava/lang/String;'
+ - 165 :  : klass_index=1 name_and_type_index=166
+ - 166 :  : name_index=167 signature_index=168
+ - 167 :  : 'selecaoTorneio'
+ - 168 :  : '(LalgoritimoGenetico/Populacao;)[LalgoritimoGenetico/Individuo;'
+ - 169 :  : klass_index=136 name_and_type_index=170
+ - 170 :  : name_index=171 signature_index=172
+ - 171 :  : 'nextDouble'
+ - 172 :  : '()D'
+ - 173 :  : klass_index=19 name_and_type_index=174
+ - 174 :  : name_index=175 signature_index=176
+ - 175 :  : 'taxaCrossover'
+ - 176 :  : 'D'
+ - 177 :  : klass_index=1 name_and_type_index=178
+ - 178 :  : name_index=179 signature_index=180
+ - 179 :  : 'crossover'
+ - 180 :  : '(LalgoritimoGenetico/Individuo;LalgoritimoGenetico/Individuo;)[LalgoritimoGenetico/Individuo;'
+ - 181 :  : klass_index=19 name_and_type_index=182
+ - 182 :  : name_index=183 signature_index=176
+ - 183 :  : 'taxaMutacao'
+ - 184 :  : klass_index=1 name_and_type_index=185
+ - 185 :  : name_index=186 signature_index=187
+ - 186 :  : 'mutacao'
+ - 187 :  : '(LalgoritimoGenetico/Populacao;)LalgoritimoGenetico/Individuo;'
+ - 188 :  : klass_index=143 name_and_type_index=189
+ - 189 :  : name_index=190 signature_index=31
+ - 190 :  : 'size'
+ - 191 :  : klass_index=32 name_and_type_index=192
+ - 192 :  : name_index=193 signature_index=8
+ - 193 :  : 'ordenar'
+ - 194 :  : 'r'
+ - 195 :  : 'Ljava/util/Random;'
+ - 196 :  : 'pais'
+ - 197 :  : '[LalgoritimoGenetico/Individuo;'
+ - 198 :  : 'filhos'
+ - 199 :  : '[LalgoritimoGenetico/Individuo;'
+ - 200 :  : klass_index=118 name_and_type_index=201
+ - 201 :  : name_index=202 signature_index=46
+ - 202 :  : 'cromossomo'
+ - 203 :  : klass_index=136 name_and_type_index=204
+ - 204 :  : name_index=205 signature_index=206
+ - 205 :  : 'nextInt'
+ - 206 :  : '(I)I'
+ - 207 :  : klass_index=118 name_and_type_index=35
+ - 208 :  : klass_index=143 name_and_type_index=209
+ - 209 :  : name_index=210 signature_index=211
+ - 210 :  : 'get'
+ - 211 :  : '(I)Ljava/lang/Object;'
+ - 212 :  : 'algoritimoGenetico/Gene' {0xff36cba8}
+ - 213 :  : 'algoritimoGenetico/Gene'
+ - 214 :  : klass_index=212 name_and_type_index=215
+ - 215 :  : name_index=216 signature_index=217
+ - 216 :  : 'disciplinaHorario'
+ - 217 :  : 'Lmodels/DisciplinaHorario;'
+ - 218 :  : klass_index=50 name_and_type_index=219
+ - 219 :  : name_index=220 signature_index=156
+ - 220 :  : 'id'
+ - 221 :  : klass_index=222 name_and_type_index=224
+ - 222 :  : 'java/lang/String' {0xfb80b8d0}
+ - 223 :  : 'java/lang/String'
+ - 224 :  : name_index=16 signature_index=225
+ - 225 :  : '(I)Ljava/lang/String;'
+ - 226 :  : "count" {0x1491740}
+ - 227 :  : 'count'
+ - 228 :  : klass_index=148 name_and_type_index=229
+ - 229 :  : name_index=159 signature_index=230
+ - 230 :  : '(Ljava/lang/String;)Ljava/lang/StringBuilder;'
+ - 231 :  : klass_index=118 name_and_type_index=232
+ - 232 :  : name_index=155 signature_index=8
+ - 233 :  : 'pai'
+ - 234 :  : 'mae'
+ - 235 :  : 'pontoCorte1'
+ - 236 :  : 'pontoCorte2'
+ - 237 :  : 'aux'
+ - 238 :  : 'i1'
+ - 239 :  : 'i2'
+ - 240 :  : 'j'
+ - 241 :  : 'pi'
+ - 242 :  : 'ri'
+ - 243 :  : 'individuo'
+ - 244 :  : 'c1'
+ - 245 :  : 'c2'
+ - 246 :  : 'SourceFile'
+ - 247 :  : 'Algoritimo.java'
+ - 248 :  : 'InnerClasses'
+ - 249 :  : 'play/db/jpa/GenericModel'
+ - 250 :  : 'play/db/jpa/GenericModel'
+ - 251 :  : 'JPAQuery'
+ - 252 :  : "listDisciplinas" {0x1af7320}
+ - 253 :  : 'models.Parametros'
+ - 254 :  : "models.Parametros" {0x1507ae8}
+ - 255 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 27'
+ - 256 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 27" {0x13ab8a0}
+ - 257 :  : 'play/classloading/enhancers/PropertiesEnhancer$FieldAccessor'
+ - 258 :  : 'play/classloading/enhancers/PropertiesEnhancer$FieldAccessor' {0xfd97a170}
+ - 259 :  : 'invokeWriteProperty'
+ - 260 :  : '(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V'
+ - 261 :  : name_index=259 signature_index=260
+ - 262 :  : klass_index=258 name_and_type_index=261
+ - 263 :  : "listHorarioDisciplina" {0x1af6dd0}
+ - 264 :  : "models.Parametros" {0x1507ae8}
+ - 265 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 29'
+ - 266 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 29" {0x13a18f0}
+ - 267 :  : name_index=259 signature_index=260
+ - 268 :  : klass_index=258 name_and_type_index=267
+ - 269 :  : "listSalas" {0x1af68c8}
+ - 270 :  : "models.Parametros" {0x1507ae8}
+ - 271 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 31'
+ - 272 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 31" {0x13a1980}
+ - 273 :  : name_index=259 signature_index=260
+ - 274 :  : klass_index=258 name_and_type_index=273
+ - 275 :  : "listHorarios" {0x1af63b0}
+ - 276 :  : "models.Parametros" {0x1507ae8}
+ - 277 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 33'
+ - 278 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 33" {0x13a1a10}
+ - 279 :  : name_index=259 signature_index=260
+ - 280 :  : klass_index=258 name_and_type_index=279
+ - 281 :  : "tamanhoPopulacao" {0x195aec8}
+ - 282 :  : "models.Parametros" {0x1507ae8}
+ - 283 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 35'
+ - 284 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 35" {0x13ab930}
+ - 285 :  : 'invokeReadProperty'
+ - 286 :  : '(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;'
+ - 287 :  : name_index=285 signature_index=286
+ - 288 :  : klass_index=258 name_and_type_index=287
+ - 289 :  : 'intValue'
+ - 290 :  : name_index=289 signature_index=31
+ - 291 :  : klass_index=13 name_and_type_index=290
+ - 292 :  : "elitismo" {0x195b2b8}
+ - 293 :  : "models.Parametros" {0x1507ae8}
+ - 294 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 43'
+ - 295 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 43" {0x1e97010}
+ - 296 :  : name_index=285 signature_index=286
+ - 297 :  : klass_index=258 name_and_type_index=296
+ - 298 :  : 'java/lang/Boolean'
+ - 299 :  : 'java/lang/Boolean' {0xfb893da8}
+ - 300 :  : 'booleanValue'
+ - 301 :  : name_index=300 signature_index=94
+ - 302 :  : klass_index=299 name_and_type_index=301
+ - 303 :  : "numeroMaximoGeracoes" {0x195b240}
+ - 304 :  : "models.Parametros" {0x1507ae8}
+ - 305 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 51'
+ - 306 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 51" {0x1ee1678}
+ - 307 :  : name_index=285 signature_index=286
+ - 308 :  : klass_index=258 name_and_type_index=307
+ - 309 :  : name_index=289 signature_index=31
+ - 310 :  : klass_index=13 name_and_type_index=309
+ - 311 :  : "genoma" {0x13ac0b8}
+ - 312 :  : 'algoritimoGenetico.Individuo'
+ - 313 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 314 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 57'
+ - 315 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 57" {0x1ee1708}
+ - 316 :  : name_index=285 signature_index=286
+ - 317 :  : klass_index=258 name_and_type_index=316
+ - 318 :  : "genoma" {0x13ac0b8}
+ - 319 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 320 :  : 'algoritimoGenetico.Algoritimo.Algoritimo, line 58'
+ - 321 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 58" {0x1ee1798}
+ - 322 :  : name_index=285 signature_index=286
+ - 323 :  : klass_index=258 name_and_type_index=322
+ - 324 :  : "populacao" {0x13a1c38}
+ - 325 :  : 'algoritimoGenetico.Populacao'
+ - 326 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 327 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 71'
+ - 328 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 71" {0x1e96f80}
+ - 329 :  : name_index=285 signature_index=286
+ - 330 :  : klass_index=258 name_and_type_index=329
+ - 331 :  : "fitness" {0x1e8c2c8}
+ - 332 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 333 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 73'
+ - 334 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 73" {0x1e96ef0}
+ - 335 :  : name_index=285 signature_index=286
+ - 336 :  : klass_index=258 name_and_type_index=335
+ - 337 :  : "taxaCrossover" {0x195ae58}
+ - 338 :  : "models.Parametros" {0x1507ae8}
+ - 339 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 89'
+ - 340 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 89" {0x1e96e60}
+ - 341 :  : name_index=285 signature_index=286
+ - 342 :  : klass_index=258 name_and_type_index=341
+ - 343 :  : 'java/lang/Double'
+ - 344 :  : 'java/lang/Double' {0xfb8a0658}
+ - 345 :  : 'doubleValue'
+ - 346 :  : name_index=345 signature_index=172
+ - 347 :  : klass_index=344 name_and_type_index=346
+ - 348 :  : "taxaMutacao" {0x195adf0}
+ - 349 :  : "models.Parametros" {0x1507ae8}
+ - 350 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 100'
+ - 351 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 100" {0x1e96dd0}
+ - 352 :  : name_index=285 signature_index=286
+ - 353 :  : klass_index=258 name_and_type_index=352
+ - 354 :  : name_index=345 signature_index=172
+ - 355 :  : klass_index=344 name_and_type_index=354
+ - 356 :  : "populacao" {0x13a1c38}
+ - 357 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 358 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 103'
+ - 359 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 103" {0x1e96d40}
+ - 360 :  : name_index=285 signature_index=286
+ - 361 :  : klass_index=258 name_and_type_index=360
+ - 362 :  : "populacao" {0x13a1c38}
+ - 363 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 364 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 108'
+ - 365 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 108" {0x1e96cb0}
+ - 366 :  : name_index=285 signature_index=286
+ - 367 :  : klass_index=258 name_and_type_index=366
+ - 368 :  : "populacao" {0x13a1c38}
+ - 369 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 370 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 109'
+ - 371 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 109" {0x1e96c20}
+ - 372 :  : name_index=285 signature_index=286
+ - 373 :  : klass_index=258 name_and_type_index=372
+ - 374 :  : "populacao" {0x13a1c38}
+ - 375 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 376 :  : 'algoritimoGenetico.Algoritimo.novaGeracao, line 79'
+ - 377 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 79" {0x1e96b90}
+ - 378 :  : name_index=285 signature_index=286
+ - 379 :  : klass_index=258 name_and_type_index=378
+ - 380 :  : "tamanhoPopulacao" {0x195aec8}
+ - 381 :  : "models.Parametros" {0x1507ae8}
+ - 382 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 79" {0x1e96b90}
+ - 383 :  : name_index=285 signature_index=286
+ - 384 :  : klass_index=258 name_and_type_index=383
+ - 385 :  : name_index=289 signature_index=31
+ - 386 :  : klass_index=13 name_and_type_index=385
+ - 387 :  : '[LalgoritimoGenetico/Individuo;'
+ - 388 :  : "cromossomo" {0x13ac078}
+ - 389 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 390 :  : 'algoritimoGenetico.Algoritimo.crossover, line 125'
+ - 391 :  : "algoritimoGenetico.Algoritimo.crossover, line 125" {0x1e96b00}
+ - 392 :  : name_index=285 signature_index=286
+ - 393 :  : klass_index=258 name_and_type_index=392
+ - 394 :  : "cromossomo" {0x13ac078}
+ - 395 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 396 :  : 'algoritimoGenetico.Algoritimo.crossover, line 126'
+ - 397 :  : "algoritimoGenetico.Algoritimo.crossover, line 126" {0x1e96a70}
+ - 398 :  : name_index=285 signature_index=286
+ - 399 :  : klass_index=258 name_and_type_index=398
+ - 400 :  : "cromossomo" {0x13ac078}
+ - 401 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 402 :  : "algoritimoGenetico.Algoritimo.crossover, line 126" {0x1e96a70}
+ - 403 :  : name_index=285 signature_index=286
+ - 404 :  : klass_index=258 name_and_type_index=403
+ - 405 :  : "cromossomo" {0x13ac078}
+ - 406 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 407 :  : 'algoritimoGenetico.Algoritimo.crossover, line 142'
+ - 408 :  : "algoritimoGenetico.Algoritimo.crossover, line 142" {0x2d47e90}
+ - 409 :  : name_index=285 signature_index=286
+ - 410 :  : klass_index=258 name_and_type_index=409
+ - 411 :  : "disciplinaHorario" {0x13a17e8}
+ - 412 :  : 'algoritimoGenetico.Gene'
+ - 413 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 414 :  : "algoritimoGenetico.Algoritimo.crossover, line 142" {0x2d47e90}
+ - 415 :  : name_index=285 signature_index=286
+ - 416 :  : klass_index=258 name_and_type_index=415
+ - 417 :  : "cromossomo" {0x13ac078}
+ - 418 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 419 :  : 'algoritimoGenetico.Algoritimo.crossover, line 144'
+ - 420 :  : "algoritimoGenetico.Algoritimo.crossover, line 144" {0x48aaed8}
+ - 421 :  : name_index=285 signature_index=286
+ - 422 :  : klass_index=258 name_and_type_index=421
+ - 423 :  : "cromossomo" {0x13ac078}
+ - 424 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 425 :  : "algoritimoGenetico.Algoritimo.crossover, line 144" {0x48aaed8}
+ - 426 :  : name_index=285 signature_index=286
+ - 427 :  : klass_index=258 name_and_type_index=426
+ - 428 :  : "disciplinaHorario" {0x13a17e8}
+ - 429 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 430 :  : "algoritimoGenetico.Algoritimo.crossover, line 144" {0x48aaed8}
+ - 431 :  : name_index=285 signature_index=286
+ - 432 :  : klass_index=258 name_and_type_index=431
+ - 433 :  : "disciplinaHorario" {0x13a17e8}
+ - 434 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 435 :  : "algoritimoGenetico.Algoritimo.crossover, line 144" {0x48aaed8}
+ - 436 :  : name_index=259 signature_index=260
+ - 437 :  : klass_index=258 name_and_type_index=436
+ - 438 :  : "cromossomo" {0x13ac078}
+ - 439 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 440 :  : 'algoritimoGenetico.Algoritimo.crossover, line 148'
+ - 441 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 442 :  : name_index=285 signature_index=286
+ - 443 :  : klass_index=258 name_and_type_index=442
+ - 444 :  : "disciplinaHorario" {0x13a17e8}
+ - 445 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 446 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 447 :  : name_index=285 signature_index=286
+ - 448 :  : klass_index=258 name_and_type_index=447
+ - 449 :  : "cromossomo" {0x13ac078}
+ - 450 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 451 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 452 :  : name_index=285 signature_index=286
+ - 453 :  : klass_index=258 name_and_type_index=452
+ - 454 :  : "disciplinaHorario" {0x13a17e8}
+ - 455 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 456 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 457 :  : name_index=285 signature_index=286
+ - 458 :  : klass_index=258 name_and_type_index=457
+ - 459 :  : "id" {0x145a050}
+ - 460 :  : 'models.DisciplinaHorario'
+ - 461 :  : "models.DisciplinaHorario" {0x1507c18}
+ - 462 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 463 :  : name_index=285 signature_index=286
+ - 464 :  : klass_index=258 name_and_type_index=463
+ - 465 :  : "cromossomo" {0x13ac078}
+ - 466 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 467 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 468 :  : name_index=285 signature_index=286
+ - 469 :  : klass_index=258 name_and_type_index=468
+ - 470 :  : "disciplinaHorario" {0x13a17e8}
+ - 471 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 472 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 473 :  : name_index=285 signature_index=286
+ - 474 :  : klass_index=258 name_and_type_index=473
+ - 475 :  : "id" {0x145a050}
+ - 476 :  : "models.DisciplinaHorario" {0x1507c18}
+ - 477 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 478 :  : name_index=285 signature_index=286
+ - 479 :  : klass_index=258 name_and_type_index=478
+ - 480 :  : "cromossomo" {0x13ac078}
+ - 481 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 482 :  : 'algoritimoGenetico.Algoritimo.crossover, line 150'
+ - 483 :  : "algoritimoGenetico.Algoritimo.crossover, line 150" {0x2d47c50}
+ - 484 :  : name_index=285 signature_index=286
+ - 485 :  : klass_index=258 name_and_type_index=484
+ - 486 :  : "cromossomo" {0x13ac078}
+ - 487 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 488 :  : "algoritimoGenetico.Algoritimo.crossover, line 150" {0x2d47c50}
+ - 489 :  : name_index=285 signature_index=286
+ - 490 :  : klass_index=258 name_and_type_index=489
+ - 491 :  : "disciplinaHorario" {0x13a17e8}
+ - 492 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 493 :  : "algoritimoGenetico.Algoritimo.crossover, line 150" {0x2d47c50}
+ - 494 :  : name_index=285 signature_index=286
+ - 495 :  : klass_index=258 name_and_type_index=494
+ - 496 :  : "disciplinaHorario" {0x13a17e8}
+ - 497 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 498 :  : "algoritimoGenetico.Algoritimo.crossover, line 150" {0x2d47c50}
+ - 499 :  : name_index=259 signature_index=260
+ - 500 :  : klass_index=258 name_and_type_index=499
+ - 501 :  : "cromossomo" {0x13ac078}
+ - 502 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 503 :  : 'algoritimoGenetico.Algoritimo.crossover, line 146'
+ - 504 :  : "algoritimoGenetico.Algoritimo.crossover, line 146" {0x2d47e00}
+ - 505 :  : name_index=285 signature_index=286
+ - 506 :  : klass_index=258 name_and_type_index=505
+ - 507 :  : "cromossomo" {0x13ac078}
+ - 508 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 509 :  : 'algoritimoGenetico.Algoritimo.crossover, line 161'
+ - 510 :  : "algoritimoGenetico.Algoritimo.crossover, line 161" {0x4ad14f0}
+ - 511 :  : name_index=285 signature_index=286
+ - 512 :  : klass_index=258 name_and_type_index=511
+ - 513 :  : "disciplinaHorario" {0x13a17e8}
+ - 514 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 515 :  : "algoritimoGenetico.Algoritimo.crossover, line 161" {0x4ad14f0}
+ - 516 :  : name_index=285 signature_index=286
+ - 517 :  : klass_index=258 name_and_type_index=516
+ - 518 :  : "cromossomo" {0x13ac078}
+ - 519 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 520 :  : 'algoritimoGenetico.Algoritimo.crossover, line 163'
+ - 521 :  : "algoritimoGenetico.Algoritimo.crossover, line 163" {0x4ad1460}
+ - 522 :  : name_index=285 signature_index=286
+ - 523 :  : klass_index=258 name_and_type_index=522
+ - 524 :  : "cromossomo" {0x13ac078}
+ - 525 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 526 :  : "algoritimoGenetico.Algoritimo.crossover, line 163" {0x4ad1460}
+ - 527 :  : name_index=285 signature_index=286
+ - 528 :  : klass_index=258 name_and_type_index=527
+ - 529 :  : "disciplinaHorario" {0x13a17e8}
+ - 530 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 531 :  : "algoritimoGenetico.Algoritimo.crossover, line 163" {0x4ad1460}
+ - 532 :  : name_index=285 signature_index=286
+ - 533 :  : klass_index=258 name_and_type_index=532
+ - 534 :  : "disciplinaHorario" {0x13a17e8}
+ - 535 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 536 :  : "algoritimoGenetico.Algoritimo.crossover, line 163" {0x4ad1460}
+ - 537 :  : name_index=259 signature_index=260
+ - 538 :  : klass_index=258 name_and_type_index=537
+ - 539 :  : "cromossomo" {0x13ac078}
+ - 540 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 541 :  : 'algoritimoGenetico.Algoritimo.crossover, line 167'
+ - 542 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 543 :  : name_index=285 signature_index=286
+ - 544 :  : klass_index=258 name_and_type_index=543
+ - 545 :  : "disciplinaHorario" {0x13a17e8}
+ - 546 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 547 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 548 :  : name_index=285 signature_index=286
+ - 549 :  : klass_index=258 name_and_type_index=548
+ - 550 :  : "cromossomo" {0x13ac078}
+ - 551 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 552 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 553 :  : name_index=285 signature_index=286
+ - 554 :  : klass_index=258 name_and_type_index=553
+ - 555 :  : "disciplinaHorario" {0x13a17e8}
+ - 556 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 557 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 558 :  : name_index=285 signature_index=286
+ - 559 :  : klass_index=258 name_and_type_index=558
+ - 560 :  : "id" {0x145a050}
+ - 561 :  : "models.DisciplinaHorario" {0x1507c18}
+ - 562 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 563 :  : name_index=285 signature_index=286
+ - 564 :  : klass_index=258 name_and_type_index=563
+ - 565 :  : "cromossomo" {0x13ac078}
+ - 566 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 567 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 568 :  : name_index=285 signature_index=286
+ - 569 :  : klass_index=258 name_and_type_index=568
+ - 570 :  : "disciplinaHorario" {0x13a17e8}
+ - 571 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 572 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 573 :  : name_index=285 signature_index=286
+ - 574 :  : klass_index=258 name_and_type_index=573
+ - 575 :  : "id" {0x145a050}
+ - 576 :  : "models.DisciplinaHorario" {0x1507c18}
+ - 577 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 578 :  : name_index=285 signature_index=286
+ - 579 :  : klass_index=258 name_and_type_index=578
+ - 580 :  : "cromossomo" {0x13ac078}
+ - 581 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 582 :  : 'algoritimoGenetico.Algoritimo.crossover, line 169'
+ - 583 :  : "algoritimoGenetico.Algoritimo.crossover, line 169" {0x20695a0}
+ - 584 :  : name_index=285 signature_index=286
+ - 585 :  : klass_index=258 name_and_type_index=584
+ - 586 :  : "cromossomo" {0x13ac078}
+ - 587 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 588 :  : "algoritimoGenetico.Algoritimo.crossover, line 169" {0x20695a0}
+ - 589 :  : name_index=285 signature_index=286
+ - 590 :  : klass_index=258 name_and_type_index=589
+ - 591 :  : "disciplinaHorario" {0x13a17e8}
+ - 592 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 593 :  : "algoritimoGenetico.Algoritimo.crossover, line 169" {0x20695a0}
+ - 594 :  : name_index=285 signature_index=286
+ - 595 :  : klass_index=258 name_and_type_index=594
+ - 596 :  : "disciplinaHorario" {0x13a17e8}
+ - 597 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 598 :  : "algoritimoGenetico.Algoritimo.crossover, line 169" {0x20695a0}
+ - 599 :  : name_index=259 signature_index=260
+ - 600 :  : klass_index=258 name_and_type_index=599
+ - 601 :  : "cromossomo" {0x13ac078}
+ - 602 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 603 :  : 'algoritimoGenetico.Algoritimo.crossover, line 165'
+ - 604 :  : "algoritimoGenetico.Algoritimo.crossover, line 165" {0x2d47bc0}
+ - 605 :  : name_index=285 signature_index=286
+ - 606 :  : klass_index=258 name_and_type_index=605
+ - 607 :  : "cromossomo" {0x13ac078}
+ - 608 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 609 :  : 'algoritimoGenetico.Algoritimo.crossover, line 159'
+ - 610 :  : "algoritimoGenetico.Algoritimo.crossover, line 159" {0x1e96560}
+ - 611 :  : name_index=285 signature_index=286
+ - 612 :  : klass_index=258 name_and_type_index=611
+ - 613 :  : "cromossomo" {0x13ac078}
+ - 614 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 615 :  : 'algoritimoGenetico.Algoritimo.crossover, line 179'
+ - 616 :  : "algoritimoGenetico.Algoritimo.crossover, line 179" {0x25f3c88}
+ - 617 :  : name_index=285 signature_index=286
+ - 618 :  : klass_index=258 name_and_type_index=617
+ - 619 :  : "disciplinaHorario" {0x13a17e8}
+ - 620 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 621 :  : "algoritimoGenetico.Algoritimo.crossover, line 179" {0x25f3c88}
+ - 622 :  : name_index=285 signature_index=286
+ - 623 :  : klass_index=258 name_and_type_index=622
+ - 624 :  : "cromossomo" {0x13ac078}
+ - 625 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 626 :  : 'algoritimoGenetico.Algoritimo.crossover, line 180'
+ - 627 :  : "algoritimoGenetico.Algoritimo.crossover, line 180" {0x4e97af8}
+ - 628 :  : name_index=285 signature_index=286
+ - 629 :  : klass_index=258 name_and_type_index=628
+ - 630 :  : "cromossomo" {0x13ac078}
+ - 631 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 632 :  : "algoritimoGenetico.Algoritimo.crossover, line 180" {0x4e97af8}
+ - 633 :  : name_index=285 signature_index=286
+ - 634 :  : klass_index=258 name_and_type_index=633
+ - 635 :  : "disciplinaHorario" {0x13a17e8}
+ - 636 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 637 :  : "algoritimoGenetico.Algoritimo.crossover, line 180" {0x4e97af8}
+ - 638 :  : name_index=285 signature_index=286
+ - 639 :  : klass_index=258 name_and_type_index=638
+ - 640 :  : "disciplinaHorario" {0x13a17e8}
+ - 641 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 642 :  : "algoritimoGenetico.Algoritimo.crossover, line 180" {0x4e97af8}
+ - 643 :  : name_index=259 signature_index=260
+ - 644 :  : klass_index=258 name_and_type_index=643
+ - 645 :  : "populacao" {0x13a1c38}
+ - 646 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 647 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 253'
+ - 648 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 253" {0x1e95c58}
+ - 649 :  : name_index=285 signature_index=286
+ - 650 :  : klass_index=258 name_and_type_index=649
+ - 651 :  : "populacao" {0x13a1c38}
+ - 652 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 653 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 253" {0x1e95c58}
+ - 654 :  : name_index=285 signature_index=286
+ - 655 :  : klass_index=258 name_and_type_index=654
+ - 656 :  : "tamanhoPopulacao" {0x195aec8}
+ - 657 :  : "models.Parametros" {0x1507ae8}
+ - 658 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 253" {0x1e95c58}
+ - 659 :  : name_index=285 signature_index=286
+ - 660 :  : klass_index=258 name_and_type_index=659
+ - 661 :  : name_index=289 signature_index=31
+ - 662 :  : klass_index=13 name_and_type_index=661
+ - 663 :  : "populacao" {0x13a1c38}
+ - 664 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 665 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 254'
+ - 666 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 254" {0x1e95bc0}
+ - 667 :  : name_index=285 signature_index=286
+ - 668 :  : klass_index=258 name_and_type_index=667
+ - 669 :  : "populacao" {0x13a1c38}
+ - 670 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 671 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 254" {0x1e95bc0}
+ - 672 :  : name_index=285 signature_index=286
+ - 673 :  : klass_index=258 name_and_type_index=672
+ - 674 :  : "tamanhoPopulacao" {0x195aec8}
+ - 675 :  : "models.Parametros" {0x1507ae8}
+ - 676 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 254" {0x1e95bc0}
+ - 677 :  : name_index=285 signature_index=286
+ - 678 :  : klass_index=258 name_and_type_index=677
+ - 679 :  : name_index=289 signature_index=31
+ - 680 :  : klass_index=13 name_and_type_index=679
+ - 681 :  : "populacao" {0x13a1c38}
+ - 682 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 683 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 255'
+ - 684 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 255" {0x1e95b28}
+ - 685 :  : name_index=285 signature_index=286
+ - 686 :  : klass_index=258 name_and_type_index=685
+ - 687 :  : "populacao" {0x13a1c38}
+ - 688 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 689 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 255" {0x1e95b28}
+ - 690 :  : name_index=285 signature_index=286
+ - 691 :  : klass_index=258 name_and_type_index=690
+ - 692 :  : "tamanhoPopulacao" {0x195aec8}
+ - 693 :  : "models.Parametros" {0x1507ae8}
+ - 694 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 255" {0x1e95b28}
+ - 695 :  : name_index=285 signature_index=286
+ - 696 :  : klass_index=258 name_and_type_index=695
+ - 697 :  : name_index=289 signature_index=31
+ - 698 :  : klass_index=13 name_and_type_index=697
+ - 699 :  : "populacao" {0x13a1c38}
+ - 700 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 701 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 263'
+ - 702 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 263" {0x1e95a90}
+ - 703 :  : name_index=285 signature_index=286
+ - 704 :  : klass_index=258 name_and_type_index=703
+ - 705 :  : "populacao" {0x13a1c38}
+ - 706 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 707 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 264'
+ - 708 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 264" {0x1e959f8}
+ - 709 :  : name_index=285 signature_index=286
+ - 710 :  : klass_index=258 name_and_type_index=709
+ - 711 :  : "populacao" {0x13a1c38}
+ - 712 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 713 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 274'
+ - 714 :  : "algoritimoGenetico.Algoritimo.mutacao, line 274" {0x1e95970}
+ - 715 :  : name_index=285 signature_index=286
+ - 716 :  : klass_index=258 name_and_type_index=715
+ - 717 :  : "populacao" {0x13a1c38}
+ - 718 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 719 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 276'
+ - 720 :  : "algoritimoGenetico.Algoritimo.mutacao, line 276" {0x1e958e8}
+ - 721 :  : name_index=285 signature_index=286
+ - 722 :  : klass_index=258 name_and_type_index=721
+ - 723 :  : "cromossomo" {0x13ac078}
+ - 724 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 725 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 278'
+ - 726 :  : "algoritimoGenetico.Algoritimo.mutacao, line 278" {0x1e95860}
+ - 727 :  : name_index=285 signature_index=286
+ - 728 :  : klass_index=258 name_and_type_index=727
+ - 729 :  : "cromossomo" {0x13ac078}
+ - 730 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 731 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 280'
+ - 732 :  : "algoritimoGenetico.Algoritimo.mutacao, line 280" {0x1e957d8}
+ - 733 :  : name_index=285 signature_index=286
+ - 734 :  : klass_index=258 name_and_type_index=733
+ - 735 :  : "cromossomo" {0x13ac078}
+ - 736 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 737 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 282'
+ - 738 :  : "algoritimoGenetico.Algoritimo.mutacao, line 282" {0x1e95750}
+ - 739 :  : name_index=285 signature_index=286
+ - 740 :  : klass_index=258 name_and_type_index=739
+ - 741 :  : "disciplinaHorario" {0x13a17e8}
+ - 742 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 743 :  : "algoritimoGenetico.Algoritimo.mutacao, line 282" {0x1e95750}
+ - 744 :  : name_index=285 signature_index=286
+ - 745 :  : klass_index=258 name_and_type_index=744
+ - 746 :  : "cromossomo" {0x13ac078}
+ - 747 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 748 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 284'
+ - 749 :  : "algoritimoGenetico.Algoritimo.mutacao, line 284" {0x1e956c8}
+ - 750 :  : name_index=285 signature_index=286
+ - 751 :  : klass_index=258 name_and_type_index=750
+ - 752 :  : "cromossomo" {0x13ac078}
+ - 753 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 754 :  : "algoritimoGenetico.Algoritimo.mutacao, line 284" {0x1e956c8}
+ - 755 :  : name_index=285 signature_index=286
+ - 756 :  : klass_index=258 name_and_type_index=755
+ - 757 :  : "disciplinaHorario" {0x13a17e8}
+ - 758 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 759 :  : "algoritimoGenetico.Algoritimo.mutacao, line 284" {0x1e956c8}
+ - 760 :  : name_index=285 signature_index=286
+ - 761 :  : klass_index=258 name_and_type_index=760
+ - 762 :  : "disciplinaHorario" {0x13a17e8}
+ - 763 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 764 :  : "algoritimoGenetico.Algoritimo.mutacao, line 284" {0x1e956c8}
+ - 765 :  : name_index=259 signature_index=260
+ - 766 :  : klass_index=258 name_and_type_index=765
+ - 767 :  : "cromossomo" {0x13ac078}
+ - 768 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 769 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 286'
+ - 770 :  : "algoritimoGenetico.Algoritimo.mutacao, line 286" {0x1e82530}
+ - 771 :  : name_index=285 signature_index=286
+ - 772 :  : klass_index=258 name_and_type_index=771
+ - 773 :  : "disciplinaHorario" {0x13a17e8}
+ - 774 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 775 :  : "algoritimoGenetico.Algoritimo.mutacao, line 286" {0x1e82530}
+ - 776 :  : name_index=259 signature_index=260
+ - 777 :  : klass_index=258 name_and_type_index=776
+ - 778 :  : 'algoritimoGenetico.Algoritimo.crossover, line 182'
+ - 779 :  : "algoritimoGenetico.Algoritimo.crossover, line 182" {0x53e6938}
+ - 780 :  : 'algoritimoGenetico.Algoritimo.crossover, line 183'
+ - 781 :  : "algoritimoGenetico.Algoritimo.crossover, line 183" {0x4ad1580}
+ - 782 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 256'
+ - 783 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 256" {0x25ce0d8}
+ - 784 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 257'
+ - 785 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 257" {0x556d198}
+ - 786 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 258'
+ - 787 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 258" {0x4ad1738}
+ - 788 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 266'
+ - 789 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 266" {0x556d100}
+ - 790 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 267'
+ - 791 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 267" {0x78f53e0}
+ - 792 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 277'
+ - 793 :  : "algoritimoGenetico.Algoritimo.mutacao, line 277" {0x25cdf30}
+ - 794 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 279'
+ - 795 :  : "algoritimoGenetico.Algoritimo.mutacao, line 279" {0x25cdea8}
+ - 796 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 281'
+ - 797 :  : "algoritimoGenetico.Algoritimo.mutacao, line 281" {0x25cde20}
+ - 798 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 283'
+ - 799 :  : "algoritimoGenetico.Algoritimo.mutacao, line 283" {0x25cdd98}
+ - 800 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 285'
+ - 801 :  : "algoritimoGenetico.Algoritimo.mutacao, line 285" {0x25cdd10}
+ - 802 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 287'
+ - 803 :  : "algoritimoGenetico.Algoritimo.mutacao, line 287" {0x25cdc88}
+ - 804 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 289'
+ - 805 :  : "algoritimoGenetico.Algoritimo.mutacao, line 289" {0x78f5358}
+ - 806 :  : '(Ljava/lang/Object;)V'
+ - 807 :  : name_index=105 signature_index=806
+ - 808 :  : klass_index=102 name_and_type_index=807
+ - 809 :  : "count" {0x1491740}
+ - 810 :  : "count" {0x1491740}
+ - 811 :  : "listDisciplinas" {0x1af7320}
+ - 812 :  : "models.Parametros" {0x1507ae8}
+ - 813 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 27" {0x13ab8a0}
+ - 814 :  : "listHorarioDisciplina" {0x1af6dd0}
+ - 815 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 29" {0x13a18f0}
+ - 816 :  : "listSalas" {0x1af68c8}
+ - 817 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 31" {0x13a1980}
+ - 818 :  : "listHorarios" {0x1af63b0}
+ - 819 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 33" {0x13a1a10}
+ - 820 :  : "tamanhoPopulacao" {0x195aec8}
+ - 821 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 35" {0x13ab930}
+ - 822 :  : "elitismo" {0x195b2b8}
+ - 823 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 43" {0x1e97010}
+ - 824 :  : "numeroMaximoGeracoes" {0x195b240}
+ - 825 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 51" {0x1ee1678}
+ - 826 :  : "genoma" {0x13ac0b8}
+ - 827 :  : "algoritimoGenetico.Individuo" {0x15076a8}
+ - 828 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 57" {0x1ee1708}
+ - 829 :  : "algoritimoGenetico.Algoritimo.Algoritimo, line 58" {0x1ee1798}
+ - 830 :  : "populacao" {0x13a1c38}
+ - 831 :  : "algoritimoGenetico.Populacao" {0x150d390}
+ - 832 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 71" {0x1e96f80}
+ - 833 :  : "fitness" {0x1e8c2c8}
+ - 834 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 73" {0x1e96ef0}
+ - 835 :  : "taxaCrossover" {0x195ae58}
+ - 836 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 89" {0x1e96e60}
+ - 837 :  : "taxaMutacao" {0x195adf0}
+ - 838 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 100" {0x1e96dd0}
+ - 839 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 103" {0x1e96d40}
+ - 840 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 108" {0x1e96cb0}
+ - 841 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 109" {0x1e96c20}
+ - 842 :  : "algoritimoGenetico.Algoritimo.novaGeracao, line 79" {0x1e96b90}
+ - 843 :  : "cromossomo" {0x13ac078}
+ - 844 :  : "algoritimoGenetico.Algoritimo.crossover, line 125" {0x1e96b00}
+ - 845 :  : "algoritimoGenetico.Algoritimo.crossover, line 126" {0x1e96a70}
+ - 846 :  : "algoritimoGenetico.Algoritimo.crossover, line 142" {0x2d47e90}
+ - 847 :  : "disciplinaHorario" {0x13a17e8}
+ - 848 :  : "algoritimoGenetico.Gene" {0x150dd98}
+ - 849 :  : "algoritimoGenetico.Algoritimo.crossover, line 144" {0x48aaed8}
+ - 850 :  : "algoritimoGenetico.Algoritimo.crossover, line 146" {0x2d47e00}
+ - 851 :  : "id" {0x145a050}
+ - 852 :  : "models.DisciplinaHorario" {0x1507c18}
+ - 853 :  : "algoritimoGenetico.Algoritimo.crossover, line 150" {0x2d47c50}
+ - 854 :  : 'algoritimoGenetico.Algoritimo.crossover, line 152'
+ - 855 :  : "algoritimoGenetico.Algoritimo.crossover, line 152" {0x2d47ce0}
+ - 856 :  : "algoritimoGenetico.Algoritimo.crossover, line 148" {0x2d47d70}
+ - 857 :  : "algoritimoGenetico.Algoritimo.crossover, line 163" {0x4ad1460}
+ - 858 :  : "algoritimoGenetico.Algoritimo.crossover, line 165" {0x2d47bc0}
+ - 859 :  : "algoritimoGenetico.Algoritimo.crossover, line 167" {0x20692d0}
+ - 860 :  : 'algoritimoGenetico.Algoritimo.crossover, line 171'
+ - 861 :  : "algoritimoGenetico.Algoritimo.crossover, line 171" {0x2069510}
+ - 862 :  : 'algoritimoGenetico.Algoritimo.crossover, line 173'
+ - 863 :  : "algoritimoGenetico.Algoritimo.crossover, line 173" {0x2069360}
+ - 864 :  : "algoritimoGenetico.Algoritimo.crossover, line 169" {0x20695a0}
+ - 865 :  : "algoritimoGenetico.Algoritimo.crossover, line 161" {0x4ad14f0}
+ - 866 :  : 'algoritimoGenetico.Algoritimo.crossover, line 184'
+ - 867 :  : "algoritimoGenetico.Algoritimo.crossover, line 184" {0x48aadb8}
+ - 868 :  : 'algoritimoGenetico.Algoritimo.crossover, line 186'
+ - 869 :  : "algoritimoGenetico.Algoritimo.crossover, line 186" {0x3d21838}
+ - 870 :  : 'algoritimoGenetico.Algoritimo.crossover, line 187'
+ - 871 :  : "algoritimoGenetico.Algoritimo.crossover, line 187" {0x1e96290}
+ - 872 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 261'
+ - 873 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 261" {0x2d47728}
+ - 874 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 262'
+ - 875 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 262" {0x2d47690}
+ - 876 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 263" {0x1e95a90}
+ - 877 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 271'
+ - 878 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 271" {0x79eb458}
+ - 879 :  : 'algoritimoGenetico.Algoritimo.selecaoTorneio, line 272'
+ - 880 :  : "algoritimoGenetico.Algoritimo.selecaoTorneio, line 272" {0x79eb3c0}
+ - 881 :  : "algoritimoGenetico.Algoritimo.mutacao, line 282" {0x1e95750}
+ - 882 :  : "algoritimoGenetico.Algoritimo.mutacao, line 284" {0x1e956c8}
+ - 883 :  : "algoritimoGenetico.Algoritimo.mutacao, line 286" {0x1e82530}
+ - 884 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 288'
+ - 885 :  : "algoritimoGenetico.Algoritimo.mutacao, line 288" {0x556d078}
+ - 886 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 290'
+ - 887 :  : "algoritimoGenetico.Algoritimo.mutacao, line 290" {0x79eb338}
+ - 888 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 292'
+ - 889 :  : "algoritimoGenetico.Algoritimo.mutacao, line 292" {0x79eb2b0}
+ - 890 :  : 'algoritimoGenetico.Algoritimo.mutacao, line 294'
+ - 891 :  : "algoritimoGenetico.Algoritimo.mutacao, line 294" {0x79eb228}
+
+R11=0x00000000f5de6b3c is an unknown value
+R12=0x0000000000000000 is an unknown value
+R13=0x00000006ff5118d0 is an oop
+{method} 
+ - klass: {other class}
+R14=0x0000000015052730 is an unknown value
+R15=0x00000000000000b9 is an unknown value
+
+
+Stack: [0x00000000161e0000,0x00000000162e0000],  sp=0x00000000162de350,  free space=1016k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1cae06]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  algoritimoGenetico.Algoritimo.crossover(LalgoritimoGenetico/Individuo;LalgoritimoGenetico/Individuo;)[LalgoritimoGenetico/Individuo;+575
+j  algoritimoGenetico.Algoritimo.novaGeracao(LalgoritimoGenetico/Populacao;Z)LalgoritimoGenetico/Populacao;+181
+j  algoritimoGenetico.Algoritimo.<init>()V+235
+j  controllers.AlgoritimoController.result()V+830
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+87
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+57
+j  play.mvc.ActionInvoker.invokeWithContinuation(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+234
+j  play.mvc.ActionInvoker.invoke(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+10
+j  play.mvc.ActionInvoker.invokeControllerMethod(Ljava/lang/reflect/Method;[Ljava/lang/Object;)Ljava/lang/Object;+40
+j  play.mvc.ActionInvoker.invokeControllerMethod(Ljava/lang/reflect/Method;)Ljava/lang/Object;+2
+j  play.mvc.ActionInvoker.invoke(Lplay/mvc/Http$Request;Lplay/mvc/Http$Response;)V+341
+j  play.server.PlayHandler$NettyInvocation.execute()V+64
+j  play.Invoker$Invocation.run()V+31
+j  play.server.PlayHandler$NettyInvocation.run()V+16
+j  java.util.concurrent.Executors$RunnableAdapter.call()Ljava/lang/Object;+4
+j  java.util.concurrent.FutureTask$Sync.innerRun()V+29
+j  java.util.concurrent.FutureTask.run()V+4
+j  java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Ljava/util/concurrent/ScheduledThreadPoolExecutor$ScheduledFutureTask;)V+1
+j  java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run()V+30
+j  java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V+46
+j  java.util.concurrent.ThreadPoolExecutor$Worker.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000018887800 JavaThread "JDWP Command Reader" daemon [_thread_in_native, id=6800, stack(0x00000000137c0000,0x00000000138c0000)]
+  0x00000000181d9000 JavaThread "JDWP Transport Listener: dt_socket" daemon [_thread_blocked, id=2100, stack(0x0000000017b00000,0x0000000017c00000)]
+  0x0000000015763800 JavaThread "net.sf.ehcache.CacheManager@3effb3a9" daemon [_thread_blocked, id=6120, stack(0x0000000015ec0000,0x0000000015fc0000)]
+  0x0000000015762000 JavaThread "New I/O  worker #2" [_thread_in_native, id=3892, stack(0x0000000019200000,0x0000000019300000)]
+  0x0000000014b0a800 JavaThread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2" daemon [_thread_blocked, id=2120, stack(0x0000000017c10000,0x0000000017d10000)]
+  0x0000000015daf800 JavaThread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1" daemon [_thread_blocked, id=5672, stack(0x0000000017870000,0x0000000017970000)]
+  0x0000000014135000 JavaThread "com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0" daemon [_thread_blocked, id=3024, stack(0x00000000179c0000,0x0000000017ac0000)]
+  0x0000000015544000 JavaThread "Timer-0" daemon [_thread_blocked, id=5820, stack(0x0000000017730000,0x0000000017830000)]
+=>0x0000000014aec800 JavaThread "play-thread-1" [_thread_in_vm, id=2236, stack(0x00000000161e0000,0x00000000162e0000)]
+  0x0000000002a0f800 JavaThread "DestroyJavaVM" [_thread_blocked, id=5756, stack(0x0000000002af0000,0x0000000002bf0000)]
+  0x000000001486d000 JavaThread "New I/O server boss #1 ([id: 0x29f3f6e7, /0:0:0:0:0:0:0:0:9000])" [_thread_in_native, id=1184, stack(0x00000000143b0000,0x00000000144b0000)]
+  0x00000000118f7000 JavaThread "Service Thread" daemon [_thread_blocked, id=4636, stack(0x0000000013e40000,0x0000000013f40000)]
+  0x00000000118ed000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=5420, stack(0x0000000013c80000,0x0000000013d80000)]
+  0x00000000118ec000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=5516, stack(0x0000000013b60000,0x0000000013c60000)]
+  0x00000000118e1800 JavaThread "JDWP Event Helper Thread" daemon [_thread_blocked, id=5804, stack(0x0000000013940000,0x0000000013a40000)]
+  0x00000000118ab800 JavaThread "Attach Listener" daemon [_thread_blocked, id=5688, stack(0x0000000013680000,0x0000000013780000)]
+  0x00000000118a4800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3068, stack(0x0000000013520000,0x0000000013620000)]
+  0x00000000029ac000 JavaThread "Finalizer" daemon [_thread_blocked, id=5720, stack(0x0000000013390000,0x0000000013490000)]
+  0x00000000029a5000 JavaThread "Reference Handler" daemon [_thread_blocked, id=4948, stack(0x00000000131f0000,0x00000000132f0000)]
+
+Other Threads:
+  0x0000000011820800 VMThread [stack: 0x0000000013060000,0x0000000013160000] [id=5744]
+  0x0000000013f77000 WatcherThread [stack: 0x00000000144e0000,0x00000000145e0000] [id=492]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 76096K, used 76096K [0x00000007aae00000, 0x00000007b18d0000, 0x0000000800000000)
+  eden space 76032K, 100% used [0x00000007aae00000,0x00000007af840000,0x00000007af840000)
+  from space 64K, 100% used [0x00000007b18c0000,0x00000007b18d0000,0x00000007b18d0000)
+  to   space 384K, 0% used [0x00000007b1810000,0x00000007b1810000,0x00000007b1870000)
+ ParOldGen       total 174336K, used 114887K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a31f90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62565K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff5197e0,0x00000006ff540000)
+
+Card table byte_map: [0x0000000005df0000,0x0000000006620000] byte_map_base: 0x0000000002614000
+
+Polling page: 0x0000000000150000
+
+Code Cache  [0x0000000002df0000, 0x0000000003610000, 0x0000000005df0000)
+ total_blobs=2357 nmethods=1686 adapters=629 free_code_cache=41043Kb largest_free_block=41822400
+
+Compilation events (10 events):
+Event: 5761.414 Thread 0x00000000118ed000 1837             algoritimoGenetico.Algoritimo::crossover (1737 bytes)
+Event: 5761.484 Thread 0x00000000118ed000 nmethod 1837 0x00000000035d1e50 code [0x00000000035d2880, 0x00000000035d9a78]
+Event: 5762.232 Thread 0x00000000118ec000 1838             algoritimoGenetico.Populacao::ordenar (88 bytes)
+Event: 5762.236 Thread 0x00000000118ec000 nmethod 1838 0x0000000003426650 code [0x0000000003426820, 0x0000000003426cf0]
+Event: 6007.735 Thread 0x00000000118ed000 1839             algoritimoGenetico.Algoritimo::crossover (725 bytes)
+Event: 6007.846 Thread 0x00000000118ed000 nmethod 1839 0x00000000035e0790 code [0x00000000035e0e80, 0x00000000035e7be8]
+Event: 6017.815 Thread 0x00000000118ec000 1840             algoritimoGenetico.Algoritimo::crossover (2016 bytes)
+Event: 6017.935 Thread 0x00000000118ec000 nmethod 1840 0x00000000035f9090 code [0x00000000035f9d80, 0x0000000003603ee0]
+Event: 6018.522 Thread 0x00000000118ed000 1841             algoritimoGenetico.Populacao$1::compare (137 bytes)
+Event: 6018.524 Thread 0x00000000118ed000 nmethod 1841 0x0000000003425dd0 code [0x0000000003425f80, 0x0000000003426290]
+
+GC Heap History (10 events):
+Event: 6018.132 GC heap before
+{Heap before GC invocations=958 (full 0):
+ PSYoungGen      total 87616K, used 87584K [0x00000007aae00000, 0x00000007b19f0000, 0x0000000800000000)
+  eden space 87488K, 100% used [0x00000007aae00000,0x00000007b0370000,0x00000007b0370000)
+  from space 128K, 75% used [0x00000007b1900000,0x00000007b1918000,0x00000007b1920000)
+  to   space 512K, 0% used [0x00000007b1970000,0x00000007b1970000,0x00000007b19f0000)
+ ParOldGen       total 174336K, used 114719K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a07f90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517508,0x00000006ff540000)
+Event: 6018.134 GC heap after
+Heap after GC invocations=958 (full 0):
+ PSYoungGen      total 85120K, used 96K [0x00000007aae00000, 0x00000007b1990000, 0x0000000800000000)
+  eden space 84992K, 0% used [0x00000007aae00000,0x00000007aae00000,0x00000007b0100000)
+  from space 128K, 75% used [0x00000007b1970000,0x00000007b1988000,0x00000007b1990000)
+  to   space 448K, 0% used [0x00000007b18b0000,0x00000007b18b0000,0x00000007b1920000)
+ ParOldGen       total 174336K, used 114751K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a0ff90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517508,0x00000006ff540000)
+}
+Event: 6018.314 GC heap before
+{Heap before GC invocations=959 (full 0):
+ PSYoungGen      total 85120K, used 85088K [0x00000007aae00000, 0x00000007b1990000, 0x0000000800000000)
+  eden space 84992K, 100% used [0x00000007aae00000,0x00000007b0100000,0x00000007b0100000)
+  from space 128K, 75% used [0x00000007b1970000,0x00000007b1988000,0x00000007b1990000)
+  to   space 448K, 0% used [0x00000007b18b0000,0x00000007b18b0000,0x00000007b1920000)
+ ParOldGen       total 174336K, used 114751K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a0ff90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517508,0x00000006ff540000)
+Event: 6018.315 GC heap after
+Heap after GC invocations=959 (full 0):
+ PSYoungGen      total 82752K, used 96K [0x00000007aae00000, 0x00000007b1980000, 0x0000000800000000)
+  eden space 82624K, 0% used [0x00000007aae00000,0x00000007aae00000,0x00000007afeb0000)
+  from space 128K, 75% used [0x00000007b18b0000,0x00000007b18c8000,0x00000007b18d0000)
+  to   space 448K, 0% used [0x00000007b1910000,0x00000007b1910000,0x00000007b1980000)
+ ParOldGen       total 174336K, used 114791K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a19f90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517508,0x00000006ff540000)
+}
+Event: 6018.492 GC heap before
+{Heap before GC invocations=960 (full 0):
+ PSYoungGen      total 82752K, used 82720K [0x00000007aae00000, 0x00000007b1980000, 0x0000000800000000)
+  eden space 82624K, 100% used [0x00000007aae00000,0x00000007afeb0000,0x00000007afeb0000)
+  from space 128K, 75% used [0x00000007b18b0000,0x00000007b18c8000,0x00000007b18d0000)
+  to   space 448K, 0% used [0x00000007b1910000,0x00000007b1910000,0x00000007b1980000)
+ ParOldGen       total 174336K, used 114791K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a19f90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517528,0x00000006ff540000)
+Event: 6018.493 GC heap after
+Heap after GC invocations=960 (full 0):
+ PSYoungGen      total 80448K, used 96K [0x00000007aae00000, 0x00000007b1930000, 0x0000000800000000)
+  eden space 80320K, 0% used [0x00000007aae00000,0x00000007aae00000,0x00000007afc70000)
+  from space 128K, 75% used [0x00000007b1910000,0x00000007b1928000,0x00000007b1930000)
+  to   space 448K, 0% used [0x00000007b1850000,0x00000007b1850000,0x00000007b18c0000)
+ ParOldGen       total 174336K, used 114823K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a21f90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517528,0x00000006ff540000)
+}
+Event: 6018.664 GC heap before
+{Heap before GC invocations=961 (full 0):
+ PSYoungGen      total 80448K, used 80416K [0x00000007aae00000, 0x00000007b1930000, 0x0000000800000000)
+  eden space 80320K, 100% used [0x00000007aae00000,0x00000007afc70000,0x00000007afc70000)
+  from space 128K, 75% used [0x00000007b1910000,0x00000007b1928000,0x00000007b1930000)
+  to   space 448K, 0% used [0x00000007b1850000,0x00000007b1850000,0x00000007b18c0000)
+ ParOldGen       total 174336K, used 114823K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a21f90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517528,0x00000006ff540000)
+Event: 6018.665 GC heap after
+Heap after GC invocations=961 (full 0):
+ PSYoungGen      total 78592K, used 96K [0x00000007aae00000, 0x00000007b1920000, 0x0000000800000000)
+  eden space 78144K, 0% used [0x00000007aae00000,0x00000007aae00000,0x00000007afa50000)
+  from space 448K, 21% used [0x00000007b1850000,0x00000007b1868000,0x00000007b18c0000)
+  to   space 384K, 0% used [0x00000007b18c0000,0x00000007b18c0000,0x00000007b1920000)
+ ParOldGen       total 174336K, used 114863K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a2bf90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517528,0x00000006ff540000)
+}
+Event: 6018.839 GC heap before
+{Heap before GC invocations=962 (full 0):
+ PSYoungGen      total 78592K, used 78240K [0x00000007aae00000, 0x00000007b1920000, 0x0000000800000000)
+  eden space 78144K, 100% used [0x00000007aae00000,0x00000007afa50000,0x00000007afa50000)
+  from space 448K, 21% used [0x00000007b1850000,0x00000007b1868000,0x00000007b18c0000)
+  to   space 384K, 0% used [0x00000007b18c0000,0x00000007b18c0000,0x00000007b1920000)
+ ParOldGen       total 174336K, used 114863K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a2bf90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517528,0x00000006ff540000)
+Event: 6018.840 GC heap after
+Heap after GC invocations=962 (full 0):
+ PSYoungGen      total 76096K, used 64K [0x00000007aae00000, 0x00000007b18d0000, 0x0000000800000000)
+  eden space 76032K, 0% used [0x00000007aae00000,0x00000007aae00000,0x00000007af840000)
+  from space 64K, 100% used [0x00000007b18c0000,0x00000007b18d0000,0x00000007b18d0000)
+  to   space 384K, 0% used [0x00000007b1810000,0x00000007b1810000,0x00000007b1870000)
+ ParOldGen       total 174336K, used 114887K [0x0000000700a00000, 0x000000070b440000, 0x00000007aae00000)
+  object space 174336K, 65% used [0x0000000700a00000,0x0000000707a31f90,0x000000070b440000)
+ PSPermGen       total 62720K, used 62557K [0x00000006fb800000, 0x00000006ff540000, 0x0000000700a00000)
+  object space 62720K, 99% used [0x00000006fb800000,0x00000006ff517528,0x00000006ff540000)
+}
+
+Deoptimization events (10 events):
+Event: 6018.603 Thread 0x0000000014aec800 Uncommon trap -58 fr.pc 0x000000000340d5e4
+Event: 6018.696 Thread 0x0000000014aec800 Uncommon trap -58 fr.pc 0x000000000340d5e4
+Event: 6018.960 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+Event: 6018.960 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+Event: 6018.960 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+Event: 6018.960 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+Event: 6025.716 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+Event: 6025.717 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+Event: 6025.718 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+Event: 6025.718 Thread 0x0000000014aec800 Uncommon trap -89 fr.pc 0x00000000031bb36c
+
+Internal exceptions (10 events):
+Event: 5732.102 Thread 0x0000000014aec800 Threw 0x00000007ac4a8b38 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 5732.108 Thread 0x0000000014aec800 Threw 0x00000007ac4c6d70 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 5732.109 Thread 0x0000000014aec800 Threw 0x00000007ac4c9af0 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 5732.109 Thread 0x0000000014aec800 Threw 0x00000007ac4ca218 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 5732.109 Thread 0x0000000014aec800 Threw 0x00000007ac4ccf98 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\prims\jvm.cpp:1166
+Event: 5733.516 Thread 0x0000000014aec800 Threw 0x00000007ac01b100 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\runtime\reflection.cpp:1039
+Event: 5762.718 Thread 0x0000000014aec800 Threw 0x00000007ad8c0a20 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\runtime\reflection.cpp:1039
+Event: 6008.711 Thread 0x0000000014aec800 Threw 0x00000007ac292b38 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\runtime\reflection.cpp:1039
+Event: 6017.216 Thread 0x0000000014aec800 Threw 0x00000007ac2cb938 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\interpreter\interpreterRuntime.cpp:347
+Event: 6018.961 Thread 0x0000000014aec800 Threw 0x00000007ad6b26d0 at C:\jdk7u1_64p\jdk7u11\hotspot\src\share\vm\runtime\reflection.cpp:1039
+
+Events (10 events):
+Event: 6024.035 Executing VM operation: ChangeBreakpoints
+Event: 6024.035 Executing VM operation: ChangeBreakpoints done
+Event: 6025.716 Thread 0x0000000014aec800 DEOPT PACKING pc=0x00000000031bb36c sp=0x00000000162de0a0
+Event: 6025.716 Thread 0x0000000014aec800 DEOPT UNPACKING pc=0x0000000002e29164 sp=0x00000000162de0b0 mode 2
+Event: 6025.717 Thread 0x0000000014aec800 DEOPT PACKING pc=0x00000000031bb36c sp=0x00000000162de0a0
+Event: 6025.717 Thread 0x0000000014aec800 DEOPT UNPACKING pc=0x0000000002e29164 sp=0x00000000162de0b0 mode 2
+Event: 6025.718 Thread 0x0000000014aec800 DEOPT PACKING pc=0x00000000031bb36c sp=0x00000000162de0a0
+Event: 6025.718 Thread 0x0000000014aec800 DEOPT UNPACKING pc=0x0000000002e29164 sp=0x00000000162de0b0 mode 2
+Event: 6025.718 Thread 0x0000000014aec800 DEOPT PACKING pc=0x00000000031bb36c sp=0x00000000162de0a0
+Event: 6025.718 Thread 0x0000000014aec800 DEOPT UNPACKING pc=0x0000000002e29164 sp=0x00000000162de0b0 mode 2
+
+
+Dynamic libraries:
+0x000000013f330000 - 0x000000013f363000 	C:\Program Files\Java\jdk1.7.0_11\bin\java.exe
+0x0000000077ac0000 - 0x0000000077c69000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000779a0000 - 0x0000000077abf000 	C:\Windows\system32\kernel32.dll
+0x000007fefdc60000 - 0x000007fefdccb000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefec10000 - 0x000007fefeceb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefe210000 - 0x000007fefe2af000 	C:\Windows\system32\msvcrt.dll
+0x000007fefe1f0000 - 0x000007fefe20f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe0c0000 - 0x000007fefe1ed000 	C:\Windows\system32\RPCRT4.dll
+0x00000000778a0000 - 0x000000007799a000 	C:\Windows\system32\USER32.dll
+0x000007feffb40000 - 0x000007feffba7000 	C:\Windows\system32\GDI32.dll
+0x000007feffdc0000 - 0x000007feffdce000 	C:\Windows\system32\LPK.dll
+0x000007fefe670000 - 0x000007fefe739000 	C:\Windows\system32\USP10.dll
+0x000007fefc1e0000 - 0x000007fefc3d4000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007fefe4e0000 - 0x000007fefe551000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefebe0000 - 0x000007fefec0e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe560000 - 0x000007fefe669000 	C:\Windows\system32\MSCTF.dll
+0x000007fef5fb0000 - 0x000007fef6011000 	C:\Program Files\ConEmu\ConEmu\ConEmuHk64.dll
+0x0000000061b00000 - 0x0000000061bd1000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\msvcr100.dll
+0x000000005f6d0000 - 0x000000005fdef000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\server\jvm.dll
+0x000007fef9120000 - 0x000007fef9129000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefdcd0000 - 0x000007fefdd1d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefeb30000 - 0x000007fefeb38000 	C:\Windows\system32\NSI.dll
+0x000007fefb4c0000 - 0x000007fefb4fb000 	C:\Windows\system32\WINMM.dll
+0x0000000077c90000 - 0x0000000077c97000 	C:\Windows\system32\PSAPI.DLL
+0x0000000068090000 - 0x000000006809f000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\verify.dll
+0x0000000061d30000 - 0x0000000061d58000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\java.dll
+0x0000000067a50000 - 0x0000000067a85000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\jdwp.dll
+0x0000000061c90000 - 0x0000000061cb3000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\instrument.dll
+0x0000000068370000 - 0x0000000068378000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\npt.dll
+0x0000000061d10000 - 0x0000000061d25000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\zip.dll
+0x0000000066040000 - 0x0000000066049000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\dt_socket.dll
+0x000007fefd0f0000 - 0x000007fefd145000 	C:\Windows\system32\mswsock.dll
+0x000007fefcad0000 - 0x000007fefcad7000 	C:\Windows\System32\wshtcpip.dll
+0x0000000061c70000 - 0x0000000061c89000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\net.dll
+0x000007fefd0e0000 - 0x000007fefd0e7000 	C:\Windows\System32\wship6.dll
+0x0000000061c50000 - 0x0000000061c61000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\nio.dll
+0x000007fefd150000 - 0x000007fefd167000 	C:\Windows\system32\CRYPTSP.dll
+0x000007fefce50000 - 0x000007fefce97000 	C:\Windows\system32\rsaenh.dll
+0x000007fefcbf0000 - 0x000007fefcc0e000 	C:\Windows\system32\USERENV.dll
+0x000007fefd8a0000 - 0x000007fefd8af000 	C:\Windows\system32\profapi.dll
+0x000007fefd7d0000 - 0x000007fefd7df000 	C:\Windows\system32\CRYPTBASE.dll
+0x000007fefb120000 - 0x000007fefb135000 	C:\Windows\system32\NLAapi.dll
+0x000007fef7730000 - 0x000007fef7745000 	C:\Windows\system32\napinsp.dll
+0x000007fef7710000 - 0x000007fef7729000 	C:\Windows\system32\pnrpnsp.dll
+0x000007fefcf70000 - 0x000007fefcfcb000 	C:\Windows\system32\DNSAPI.dll
+0x000007fef7700000 - 0x000007fef770b000 	C:\Windows\System32\winrnr.dll
+0x000007fefaed0000 - 0x000007fefaef7000 	C:\Windows\system32\IPHLPAPI.DLL
+0x000007fefaeb0000 - 0x000007fefaebb000 	C:\Windows\system32\WINNSI.DLL
+0x000007fef8250000 - 0x000007fef8258000 	C:\Windows\system32\rasadhlp.dll
+0x000007fefad50000 - 0x000007fefada3000 	C:\Windows\System32\fwpuclnt.dll
+0x0000000066030000 - 0x000000006603b000 	C:\Program Files\Java\jdk1.7.0_11\jre\bin\management.dll
+0x000007fef74c0000 - 0x000007fef75e5000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -javaagent:E:\TI\Desenvolvimento\Frameworks\play-1.2.5\framework/play-1.2.5.jar -XX:-UseSplitVerifier -Dfile.encoding=utf-8 -XX:CompileCommand=exclude,jregex/Pretokenizer,next -Xdebug -Xrunjdwp:transport=dt_socket,address=8000,server=y,suspend=n -Dplay.debug=yes -Dapplication.path=E:\TI\Desenvolvimento\GitHub\tcc2\Desenvolvimento\sistema -Dplay.id= 
+java_command: play.server.Server 
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_11
+PATH=C:\Program Files\ConEmu\ConEmu;C:\Program Files\ConEmu;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin;C:\Program Files (x86)\SumatraPDF;E:\TI\Desenvolvimento\Frameworks\adt-blundle\sdk\platform-tools;C:\Program Files\Java\jdk1.7.0_11\bin;E:\TI\Desenvolvimento\Frameworks\ant\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Java\jdk1.7.0_11\bin;E:\TI\Desenvolvimento\Frameworks\play-1.2.5;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\nodejs\;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\;C:\Users\Alexandre\AppData\Roaming\npm;E:\TI\Desenvolvimento\Frameworks\adt-blundle\sdk;E:\TI\Desenvolvimento\Frameworks\adt-blundle\sdk\tools
+USERNAME=Alexandre
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 16729564k(11477464k free), swap 33457268k(27124968k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.6-b04) for windows-amd64 JRE (1.7.0_11-b21), built on Jan 12 2013 02:38:42 by "java_re" with unknown MS VC++:1600
+
+time: Thu Oct 10 14:08:45 2013
+elapsed time: 6026 seconds
+

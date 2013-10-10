@@ -130,106 +130,133 @@ public class Algoritimo {
 		Individuo aux = new Individuo(parametros);
 
 		Individuo i1 = new Individuo(parametros);
-		i1.cromossomo = new ArrayList<Gene>();
 
 		Individuo i2 = new Individuo(parametros);
-		i2.cromossomo = new ArrayList<Gene>();
 
 		// filho 1
 		aux = mae;
-
-		System.out.println(mae.cromossomo.size());
+		int count = 0;
 
 		for (int i = 0; i < pontoCorte1; i++) {
 
-			i1.cromossomo.add(pai.cromossomo.get(i));
+			i1.cromossomo.get(i).disciplinaHorario = pai.cromossomo.get(i).disciplinaHorario;
 
-			if (pai.cromossomo.get(i).disciplinaHorario != null) {
+			if ((aux.cromossomo.get(i).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario == null)) {
 
-				for (int j = 0; j < aux.cromossomo.size(); j++) {
+				for (int m = pontoCorte1; m < pontoCorte2; m++) {
 
-			
-					
-					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario != null) && (aux.cromossomo.get(j).disciplinaHorario.id == pai.cromossomo.get(i).disciplinaHorario.id)){
+					if (i1.cromossomo.get(m).disciplinaHorario == null) {
 
-						System.out.println("alterou");
-						System.out.println(aux.cromossomo.get(j).disciplinaHorario.id);
-						//System.out.println(aux.cromossomo.get(i).disciplinaHorario.id);
-						System.out.println(pai.cromossomo.get(i).disciplinaHorario.id);
-							aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
+						i1.cromossomo.get(m).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
 
+						m = pontoCorte2;
 					}
 
 				}
+
+			} else {
+
+				if (pai.cromossomo.get(i).disciplinaHorario != null) {
+					for (int j = 0; j < aux.cromossomo.size(); j++) {
+
+						if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id))
+
+							aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
+
+					}
+				}
+
 			}
 
 		}
 
 		for (int i = pontoCorte2; i < pai.cromossomo.size(); i++) {
 
-			i1.cromossomo.add(pai.cromossomo.get(i));
+			i1.cromossomo.get(i).disciplinaHorario = pai.cromossomo.get(i).disciplinaHorario;
 
-			if (pai.cromossomo.get(i).disciplinaHorario != null) {
+			if ((aux.cromossomo.get(i).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario == null)) {
 
-				for (int j = 0; j < aux.cromossomo.size(); j++) {
+				for (int m = pontoCorte1; m < pontoCorte2; m++) {
 
-					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario != null) && (aux.cromossomo.get(j).disciplinaHorario.id == pai.cromossomo.get(i).disciplinaHorario.id)) {
+					if (i1.cromossomo.get(m).disciplinaHorario == null) {
 
-						aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
+						i1.cromossomo.get(m).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
+
+						m = pontoCorte2;
 					}
 
 				}
+
+			} else {
+
+				if (pai.cromossomo.get(i).disciplinaHorario != null) {
+					for (int j = 0; j < aux.cromossomo.size(); j++) {
+
+						if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id))
+
+							aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
+
+					}
+				}
+
 			}
+
 		}
 
 		for (int i = pontoCorte1; i < pontoCorte2; i++) {
 
-			i1.cromossomo.add(aux.cromossomo.get(i));
+			i1.cromossomo.get(i).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
 
 		}
-
-		System.out.println(i1.cromossomo.size());
 
 		// filho 2
-		aux = new Individuo(parametros);
-		aux = pai;
+		// aux = new Individuo(parametros);
+		// aux = pai;
+		//
+		// for (int i = 0; i < pontoCorte1; i++) {
+		// i2.cromossomo.add(mae.cromossomo.get(i));
+		//
+		// if (mae.cromossomo.get(i).disciplinaHorario != null) {
+		//
+		// for (int j = 0; j < aux.cromossomo.size(); j++) {
+		// if ((aux.cromossomo.get(j).disciplinaHorario != null) &&
+		// (mae.cromossomo.get(i).disciplinaHorario != null) &&
+		// (aux.cromossomo.get(j).disciplinaHorario.id ==
+		// mae.cromossomo.get(i).disciplinaHorario.id))
+		// aux.cromossomo.get(j).disciplinaHorario =
+		// aux.cromossomo.get(i).disciplinaHorario;
+		//
+		// }
+		// }
+		// }
+		//
+		// for (int i = pontoCorte2; i < mae.cromossomo.size(); i++) {
+		//
+		// i2.cromossomo.add(mae.cromossomo.get(i));
+		//
+		// if (mae.cromossomo.get(i).disciplinaHorario != null) {
+		//
+		// for (int j = 0; j < aux.cromossomo.size(); j++) {
+		// if ((aux.cromossomo.get(j).disciplinaHorario != null) &&
+		// (mae.cromossomo.get(i).disciplinaHorario != null) &&
+		// (aux.cromossomo.get(j).disciplinaHorario.id ==
+		// mae.cromossomo.get(i).disciplinaHorario.id)) {
+		// System.out.println(aux.cromossomo.size() + "*");
+		// System.out.println(mae.cromossomo.size() + "-");
+		// System.out.println(j);
+		// System.out.println(i);
+		// aux.cromossomo.get(j).disciplinaHorario =
+		// aux.cromossomo.get(i).disciplinaHorario;
+		// }
+		//
+		// }
+		// }
+		//
+		// }
 
-		for (int i = 0; i < pontoCorte1; i++) {
-			i2.cromossomo.add(mae.cromossomo.get(i));
-
-			if (mae.cromossomo.get(i).disciplinaHorario != null) {
-
-				for (int j = 0; j < aux.cromossomo.size(); j++) {
-					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (mae.cromossomo.get(i).disciplinaHorario != null) && (aux.cromossomo.get(j).disciplinaHorario.id == mae.cromossomo.get(i).disciplinaHorario.id))
-						aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
-
-				}
-			}
-		}
-
-		for (int i = pontoCorte2; i < mae.cromossomo.size(); i++) {
-
-			i2.cromossomo.add(mae.cromossomo.get(i));
-
-			if (mae.cromossomo.get(i).disciplinaHorario != null) {
-
-				for (int j = 0; j < aux.cromossomo.size(); j++) {
-					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (mae.cromossomo.get(i).disciplinaHorario != null) && (aux.cromossomo.get(j).disciplinaHorario.id == mae.cromossomo.get(i).disciplinaHorario.id)) {
-						System.out.println(aux.cromossomo.size() + "*");
-						System.out.println(mae.cromossomo.size() + "-");
-						System.out.println(j);
-						System.out.println(i);
-						aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
-					}
-
-				}
-			}
-
-		}
-
-		for (int i = pontoCorte1; i < pontoCorte2; i++) {
-			i2.cromossomo.add(aux.cromossomo.get(i));
-		}
+		// for (int i = pontoCorte1; i < pontoCorte2; i++) {
+		// i2.cromossomo.add(aux.cromossomo.get(i));
+		// }
 
 		// cria o novo indivíduo com os genes dos pais
 		i1.fitness();

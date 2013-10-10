@@ -31,6 +31,8 @@ public class Populacao {
 
 			Individuo individuo = new Individuo(parametros);
 
+			individuo.populate();
+
 			populacao.add(individuo);
 
 		}
