@@ -43,24 +43,17 @@ public class Populacao {
 
 	public Individuo melhor() {
 
-		ordenar();
-
 		Individuo melhor = populacao.get(0);
-
-		for (Individuo i : populacao) {
-			if (i.fitness > melhor.fitness)
-				melhor = i;
-		}
 
 		return melhor;
 
 	}
 
 	public boolean temSolucao(Individuo i) {
-		
-		if (i.fitness >= 50)
+
+		if (i.fitness > 50)
 			return true;
-		
+
 		return false;
 	}
 
@@ -69,15 +62,11 @@ public class Populacao {
 	// população, acesso a posição 0 do array de indivíduos
 	public void ordenar() {
 
-		for (Individuo i : populacao) {
-			i.fitness();
-		}
-
 		Collections.sort(populacao, new Comparator() {
 			public int compare(Object o1, Object o2) {
 				Individuo i1 = (Individuo) o1;
 				Individuo i2 = (Individuo) o2;
-				return i1.fitness < i2.fitness ? +1 : (i1.fitness > i2.fitness ? -1 : 0);
+				return i1.fitness.compareTo(i2.fitness)*-1;
 			}
 		});
 

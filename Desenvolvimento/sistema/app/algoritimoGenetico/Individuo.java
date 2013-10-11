@@ -14,7 +14,7 @@ public class Individuo {
 
 	public List<Gene> cromossomo;
 
-	public float fitness = 0;
+	public Float fitness = null;
 
 	public String genoma = "";
 

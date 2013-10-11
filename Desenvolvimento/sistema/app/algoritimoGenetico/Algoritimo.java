@@ -29,15 +29,17 @@ public class Algoritimo {
 		boolean temSolucao = false;
 
 		int geracao = 0;
-		
+
 		Individuo i = null;
 
 		do {
 
-			p = novaGeracao(p, parametros.elitismo);
-			
-			 i = p.melhor();
-			
+			Populacao nova = novaGeracao(p);
+
+			p = nova;
+
+			i = p.melhor();
+
 			temSolucao = p.temSolucao(i);
 
 			geracao++;
@@ -49,23 +51,27 @@ public class Algoritimo {
 		p.alocar(i);
 
 		System.out.println(i.genoma);
+		System.out.println(i.fitness);
 		System.out.println(p.melhor().genoma);
 
 	}
 
-	public Populacao novaGeracao(Populacao populacao, boolean elitismo) {
+	public Populacao novaGeracao(Populacao populacao) {
 
 		Random r = new Random();
 
 		Populacao p = new Populacao(parametros);
 
 		// se tiver elitismo, mantém o melhor indivíduo da geração atual
-		if (elitismo) {
+		if (parametros.elitismo) {
 
-			p.populacao.add(populacao.melhor());
-			// p.populacao.add(populacao.populacao.get(1));
-			// p.populacao.add(populacao.populacao.get(2));
-			// p.populacao.add(populacao.populacao.get(3));
+			int elitismoPeople = (int) (populacao.populacao.size() * 0.2);
+
+			for (int i = 0; i < elitismoPeople; i++) {
+
+				p.populacao.add(populacao.populacao.get(i));
+
+			}
 
 			System.out.println("elitismo" + populacao.melhor().fitness);
 
@@ -121,7 +127,8 @@ public class Algoritimo {
 		Random r = new Random();
 
 		// sorteia o ponto de corte
-		int pontoCorte1 = r.nextInt((pai.cromossomo.size() / 2) - 2) + 1;
+		int pontoCorte = r.nextInt(pai.cromossomo.size());
+		// int pontoCorte1 = r.nextInt((pai.cromossomo.size() / 2) - 2) + 1;
 		// int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2) +
 		// pai.cromossomo.size() / 2;
 
@@ -134,78 +141,45 @@ public class Algoritimo {
 		// Individuo i2 = new Individuo(parametros);
 
 		// filho 1
-		// aux = mae;
+		aux = mae;
 
-		for (int i = 0; i < pontoCorte1; i++) {
+		for (int i = 0; i < pontoCorte; i++) {
 
 			i1.cromossomo.get(i).disciplinaHorario = pai.cromossomo.get(i).disciplinaHorario;
 
-			// apaga o item que foi inserido do vetor
-			if (pai.cromossomo.get(i).disciplinaHorario != null) {
-
+			// percorre o aux para apagar o item que ja foi inserido
 				for (int j = 0; j < aux.cromossomo.size(); j++) {
+					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id)) {
 
-					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id)) {
-
-						aux.cromossomo.get(i).disciplinaHorario = null;
-
+						aux.cromossomo.get(j).disciplinaHorario = null;
 						j = aux.cromossomo.size();
-
 					}
-
 				}
 
-			}// fim if pai é nulo
-		}
-		//
-		// for (int i = pontoCorte2; i < pai.cromossomo.size(); i++) {
-		//
-		// i1.cromossomo.get(i).disciplinaHorario =
-		// pai.cromossomo.get(i).disciplinaHorario;
-		//
-		// // apaga o item que foi inserido do vetor
-		// if (pai.cromossomo.get(i).disciplinaHorario != null) {
-		//
-		// for (int j = 0; j < aux.cromossomo.size(); j++) {
-		//
-		// if ((aux.cromossomo.get(j).disciplinaHorario != null) &&
-		// (pai.cromossomo.get(i).disciplinaHorario.id ==
-		// aux.cromossomo.get(j).disciplinaHorario.id)) {
-		//
-		// aux.cromossomo.get(j).disciplinaHorario = null;
-		//
-		// j = aux.cromossomo.size();
-		//
-		// }
-		//
-		// }
-		//
-		// }// fim if pai é nulo
-		//
-		// }// fim for
+		}// fim for ponto de corte
+//
+//		for (int i = 0; i < pontoCorte; i++) {
+//			if (aux.cromossomo.get(i).disciplinaHorario != null) {
+//
+//				for (int j = pontoCorte; j < aux.cromossomo.size(); j++) {
+//					if (aux.cromossomo.get(j).disciplinaHorario == null)
+//						i1.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(j).disciplinaHorario;
+//
+//				}// fim for completa
+//
+//			}
+//		}
 
-		for (int j = 0; j < aux.cromossomo.size(); j++) {
-
-			for (int i = pontoCorte1; i < i1.cromossomo.size(); i++) {
-
-				if ((i1.cromossomo.get(i).disciplinaHorario == null) && (aux.cromossomo.get(j).disciplinaHorario != null)) {
-
-					i1.cromossomo.get(i).disciplinaHorario = aux.cromossomo.get(j).disciplinaHorario;
-
-					aux.cromossomo.get(j).disciplinaHorario = null;
-
-					i = i1.cromossomo.size();
-
-				}
-
-			}
-
+		for (int j = pontoCorte; j < aux.cromossomo.size(); j++) {
+			i1.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(j).disciplinaHorario;
 		}// fim for completa
+
+		// filho 2
 
 		i1.fitness();
 
-		filhos[0] = pai;
-		filhos[1] = mae;
+		filhos[0] = i1;
+		filhos[1] = pai;
 
 		return filhos;
 
