@@ -14,7 +14,7 @@ public class Individuo {
 
 	public List<Gene> cromossomo;
 
-	public Integer fitness = 0;
+	public float fitness = 0;
 
 	public String genoma = "";
 
@@ -27,6 +27,7 @@ public class Individuo {
 		create();
 
 		fitness();
+
 
 	}// fim método Individuo
 
@@ -78,8 +79,8 @@ public class Individuo {
 		int somatorioPesos = 0;
 		int countTotalAlocados = 0, countNecessario = 0;
 
-		int fitness02 = 0;
-		int fitness01 = 0;
+		float fitness02 = 0;
+		float fitness01 = 0;
 
 		for (Gene g : cromossomo) {
 

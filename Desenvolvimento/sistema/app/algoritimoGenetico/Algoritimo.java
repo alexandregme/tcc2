@@ -24,33 +24,27 @@ public class Algoritimo {
 
 		Populacao p = new Populacao(parametros);
 
-		parametros.listDisciplinas = Disciplina.findAll();
-
-		parametros.listHorarioDisciplina = DisciplinaHorario.find("alocado=true").fetch();
-
-		parametros.listSalas = Sala.findAll();
-
-		parametros.listHorarios = Horario.findAll();
-
 		p.populacaoInicial(parametros.tamanhoPopulacao);
 
 		boolean temSolucao = false;
 
 		int geracao = 0;
+		
+		Individuo i = null;
 
 		do {
 
 			p = novaGeracao(p, parametros.elitismo);
-
-			temSolucao = p.temSolucao();
+			
+			 i = p.melhor();
+			
+			temSolucao = p.temSolucao(i);
 
 			geracao++;
 
 			System.out.println(geracao);
 
 		} while (!temSolucao && geracao < parametros.numeroMaximoGeracoes);
-
-		Individuo i = p.melhor();
 
 		p.alocar(i);
 
@@ -69,14 +63,18 @@ public class Algoritimo {
 		if (elitismo) {
 
 			p.populacao.add(populacao.melhor());
+			// p.populacao.add(populacao.populacao.get(1));
+			// p.populacao.add(populacao.populacao.get(2));
+			// p.populacao.add(populacao.populacao.get(3));
 
-			System.out.println("elitismo" + p.melhor().fitness);
+			System.out.println("elitismo" + populacao.melhor().fitness);
 
 		}
 
 		// insere novos indivíduos na nova população, até atingir o tamanho
 		// máximo
-		while (p.populacao.size() < parametros.tamanhoPopulacao) {
+
+		for (int i = p.populacao.size(); i < parametros.tamanhoPopulacao; i++) {
 
 			// seleciona os 2 pais por torneio
 			Individuo[] pais = selecaoTorneio(populacao);
@@ -99,8 +97,7 @@ public class Algoritimo {
 
 			if (r.nextDouble() <= parametros.taxaMutacao) {
 
-				Individuo i = mutacao(populacao);
-				p.populacao.add(i);
+				filhos[0] = mutacao(populacao);
 
 			}
 
@@ -108,7 +105,9 @@ public class Algoritimo {
 			p.populacao.add(filhos[0]);
 			p.populacao.add(filhos[1]);
 
-		}
+		}// fim preenche populacao
+
+		System.out.println(p.populacao.size() + "populacao");
 
 		// ordena a nova população
 		p.ordenar();
@@ -123,7 +122,8 @@ public class Algoritimo {
 
 		// sorteia o ponto de corte
 		int pontoCorte1 = r.nextInt((pai.cromossomo.size() / 2) - 2) + 1;
-		int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2) + pai.cromossomo.size() / 2;
+		// int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2) +
+		// pai.cromossomo.size() / 2;
 
 		Individuo[] filhos = new Individuo[2];
 
@@ -131,139 +131,81 @@ public class Algoritimo {
 
 		Individuo i1 = new Individuo(parametros);
 
-		Individuo i2 = new Individuo(parametros);
+		// Individuo i2 = new Individuo(parametros);
 
 		// filho 1
-		aux = mae;
-		int count = 0;
+		// aux = mae;
 
 		for (int i = 0; i < pontoCorte1; i++) {
 
 			i1.cromossomo.get(i).disciplinaHorario = pai.cromossomo.get(i).disciplinaHorario;
 
-			if ((aux.cromossomo.get(i).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario == null)) {
+			// apaga o item que foi inserido do vetor
+			if (pai.cromossomo.get(i).disciplinaHorario != null) {
 
-				for (int m = pontoCorte1; m < pontoCorte2; m++) {
+				for (int j = 0; j < aux.cromossomo.size(); j++) {
 
-					if (i1.cromossomo.get(m).disciplinaHorario == null) {
+					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id)) {
 
-						i1.cromossomo.get(m).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
+						aux.cromossomo.get(i).disciplinaHorario = null;
 
-						m = pontoCorte2;
+						j = aux.cromossomo.size();
+
 					}
 
 				}
 
-			} else {
+			}// fim if pai é nulo
+		}
+		//
+		// for (int i = pontoCorte2; i < pai.cromossomo.size(); i++) {
+		//
+		// i1.cromossomo.get(i).disciplinaHorario =
+		// pai.cromossomo.get(i).disciplinaHorario;
+		//
+		// // apaga o item que foi inserido do vetor
+		// if (pai.cromossomo.get(i).disciplinaHorario != null) {
+		//
+		// for (int j = 0; j < aux.cromossomo.size(); j++) {
+		//
+		// if ((aux.cromossomo.get(j).disciplinaHorario != null) &&
+		// (pai.cromossomo.get(i).disciplinaHorario.id ==
+		// aux.cromossomo.get(j).disciplinaHorario.id)) {
+		//
+		// aux.cromossomo.get(j).disciplinaHorario = null;
+		//
+		// j = aux.cromossomo.size();
+		//
+		// }
+		//
+		// }
+		//
+		// }// fim if pai é nulo
+		//
+		// }// fim for
 
-				if (pai.cromossomo.get(i).disciplinaHorario != null) {
-					for (int j = 0; j < aux.cromossomo.size(); j++) {
+		for (int j = 0; j < aux.cromossomo.size(); j++) {
 
-						if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id))
+			for (int i = pontoCorte1; i < i1.cromossomo.size(); i++) {
 
-							aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
+				if ((i1.cromossomo.get(i).disciplinaHorario == null) && (aux.cromossomo.get(j).disciplinaHorario != null)) {
 
-					}
+					i1.cromossomo.get(i).disciplinaHorario = aux.cromossomo.get(j).disciplinaHorario;
+
+					aux.cromossomo.get(j).disciplinaHorario = null;
+
+					i = i1.cromossomo.size();
+
 				}
 
 			}
 
-		}
+		}// fim for completa
 
-		for (int i = pontoCorte2; i < pai.cromossomo.size(); i++) {
-
-			i1.cromossomo.get(i).disciplinaHorario = pai.cromossomo.get(i).disciplinaHorario;
-
-			if ((aux.cromossomo.get(i).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario == null)) {
-
-				for (int m = pontoCorte1; m < pontoCorte2; m++) {
-
-					if (i1.cromossomo.get(m).disciplinaHorario == null) {
-
-						i1.cromossomo.get(m).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
-
-						m = pontoCorte2;
-					}
-
-				}
-
-			} else {
-
-				if (pai.cromossomo.get(i).disciplinaHorario != null) {
-					for (int j = 0; j < aux.cromossomo.size(); j++) {
-
-						if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id))
-
-							aux.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
-
-					}
-				}
-
-			}
-
-		}
-
-		for (int i = pontoCorte1; i < pontoCorte2; i++) {
-
-			i1.cromossomo.get(i).disciplinaHorario = aux.cromossomo.get(i).disciplinaHorario;
-
-		}
-
-		// filho 2
-		// aux = new Individuo(parametros);
-		// aux = pai;
-		//
-		// for (int i = 0; i < pontoCorte1; i++) {
-		// i2.cromossomo.add(mae.cromossomo.get(i));
-		//
-		// if (mae.cromossomo.get(i).disciplinaHorario != null) {
-		//
-		// for (int j = 0; j < aux.cromossomo.size(); j++) {
-		// if ((aux.cromossomo.get(j).disciplinaHorario != null) &&
-		// (mae.cromossomo.get(i).disciplinaHorario != null) &&
-		// (aux.cromossomo.get(j).disciplinaHorario.id ==
-		// mae.cromossomo.get(i).disciplinaHorario.id))
-		// aux.cromossomo.get(j).disciplinaHorario =
-		// aux.cromossomo.get(i).disciplinaHorario;
-		//
-		// }
-		// }
-		// }
-		//
-		// for (int i = pontoCorte2; i < mae.cromossomo.size(); i++) {
-		//
-		// i2.cromossomo.add(mae.cromossomo.get(i));
-		//
-		// if (mae.cromossomo.get(i).disciplinaHorario != null) {
-		//
-		// for (int j = 0; j < aux.cromossomo.size(); j++) {
-		// if ((aux.cromossomo.get(j).disciplinaHorario != null) &&
-		// (mae.cromossomo.get(i).disciplinaHorario != null) &&
-		// (aux.cromossomo.get(j).disciplinaHorario.id ==
-		// mae.cromossomo.get(i).disciplinaHorario.id)) {
-		// System.out.println(aux.cromossomo.size() + "*");
-		// System.out.println(mae.cromossomo.size() + "-");
-		// System.out.println(j);
-		// System.out.println(i);
-		// aux.cromossomo.get(j).disciplinaHorario =
-		// aux.cromossomo.get(i).disciplinaHorario;
-		// }
-		//
-		// }
-		// }
-		//
-		// }
-
-		// for (int i = pontoCorte1; i < pontoCorte2; i++) {
-		// i2.cromossomo.add(aux.cromossomo.get(i));
-		// }
-
-		// cria o novo indivíduo com os genes dos pais
 		i1.fitness();
-		i2.fitness();
 
-		filhos[0] = i1;
-		filhos[1] = i1;
+		filhos[0] = pai;
+		filhos[1] = mae;
 
 		return filhos;
 
@@ -277,9 +219,9 @@ public class Algoritimo {
 		Populacao pi = new Populacao(parametros);
 
 		// seleciona 3 indivíduos aleatóriamente na população
-		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
-		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
-		pi.populacao.add(p.populacao.get(r.nextInt(parametros.tamanhoPopulacao)));
+		pi.populacao.add(p.populacao.get(r.nextInt(p.populacao.size())));
+		pi.populacao.add(p.populacao.get(r.nextInt(p.populacao.size())));
+		pi.populacao.add(p.populacao.get(r.nextInt(p.populacao.size())));
 
 		// ordena a população
 		pi.ordenar();

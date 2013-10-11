@@ -5,6 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import javax.persistence.criteria.CriteriaBuilder.In;
+
 import models.Alocacao;
 import models.Disciplina;
 import models.Horario;
@@ -43,11 +45,22 @@ public class Populacao {
 
 		ordenar();
 
-		return populacao.get(0);
+		Individuo melhor = populacao.get(0);
+
+		for (Individuo i : populacao) {
+			if (i.fitness > melhor.fitness)
+				melhor = i;
+		}
+
+		return melhor;
 
 	}
 
-	public boolean temSolucao() {
+	public boolean temSolucao(Individuo i) {
+		
+		if (i.fitness >= 50)
+			return true;
+		
 		return false;
 	}
 
@@ -59,7 +72,7 @@ public class Populacao {
 		for (Individuo i : populacao) {
 			i.fitness();
 		}
-		
+
 		Collections.sort(populacao, new Comparator() {
 			public int compare(Object o1, Object o2) {
 				Individuo i1 = (Individuo) o1;
@@ -67,6 +80,7 @@ public class Populacao {
 				return i1.fitness < i2.fitness ? +1 : (i1.fitness > i2.fitness ? -1 : 0);
 			}
 		});
+
 	}
 
 	public void alocar(Individuo i) {
