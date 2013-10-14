@@ -132,19 +132,21 @@ public class Algoritimo {
 		// filho 1
 		Individuo i1 = new Individuo(parametros);
 
-		Individuo aux = new Individuo((Individuo) mae.clone());
+		Individuo auxMae = new Individuo((Individuo) mae.clone());
 
 		for (int i = 0; i < pontoCorte; i++) {
 
-			i1.setHorarioDiscplina(pai.getCromossomoPosition(i), i);
+			i1.setHorarioDiscplina((Gene) pai.getCromossomoPosition(i).clone(), i);
 
 			if (pai.getCromossomoPosition(i).getDisciplinaHorario() != null) {
 
-				for (int j = 0; j < aux.getCromossomo().size(); j++) {
+				for (int j = 0; j < auxMae.getCromossomo().size(); j++) {
 
-					if ((aux.getCromossomoPosition(j).getDisciplinaHorario() != null) && (aux.getCromossomoPosition(j).getDisciplinaHorario().id == pai.getCromossomoPosition(i).getDisciplinaHorario().id)) {
+					if ((auxMae.getCromossomoPosition(j).getDisciplinaHorario() != null) && (auxMae.getCromossomoPosition(j).getDisciplinaHorario().id == pai.getCromossomoPosition(i).getDisciplinaHorario().id)) {
 
-						aux.removeCromossomoPosition(j);
+						auxMae.removeCromossomoPosition(j);
+
+						j = auxMae.getCromossomo().size();
 
 					}
 
@@ -152,13 +154,13 @@ public class Algoritimo {
 
 			} else {
 
-				for (int j = 0; j < aux.getCromossomo().size(); j++) {
+				for (int j = 0; j < auxMae.getCromossomo().size(); j++) {
 
-					if (aux.getCromossomoPosition(j).getDisciplinaHorario() == null) {
+					if (auxMae.getCromossomoPosition(j).getDisciplinaHorario() == null) {
 
-						aux.removeCromossomoPosition(j);
+						auxMae.removeCromossomoPosition(j);
 
-						j = aux.getCromossomo().size();
+						j = auxMae.getCromossomo().size();
 
 					}
 
@@ -168,18 +170,64 @@ public class Algoritimo {
 
 		}
 
-		for (int j = 0; j < aux.getCromossomo().size(); j++) {
+		for (int j = 0; j < auxMae.getCromossomo().size(); j++) {
 
-			i1.setHorarioDiscplina(aux.getCromossomoPosition(j), j);
+			i1.setHorarioDiscplina((Gene) auxMae.getCromossomoPosition(j).clone(), j + pontoCorte);
 
 		}// fim for completa
 
 		// filho 2
+		Individuo i2 = new Individuo(parametros);
 
-		// Individuo i2 = new Individuo(parametros);
+		Individuo auxPai = new Individuo((Individuo) pai.clone());
 
-		filhos[0] = new Individuo(i1);
-		filhos[1] = new Individuo(i1);
+		for (int i = 0; i < pontoCorte; i++) {
+
+			i2.setHorarioDiscplina((Gene) mae.getCromossomoPosition(i).clone(), i);
+
+			if (mae.getCromossomoPosition(i).getDisciplinaHorario() != null) {
+
+				for (int j = 0; j < auxPai.getCromossomo().size(); j++) {
+
+					if ((auxPai.getCromossomoPosition(j).getDisciplinaHorario() != null) && (auxPai.getCromossomoPosition(j).getDisciplinaHorario().id == mae.getCromossomoPosition(i).getDisciplinaHorario().id)) {
+
+						auxPai.removeCromossomoPosition(j);
+
+						j = auxPai.getCromossomo().size();
+
+					}
+
+				}// fim for completa
+
+			} else {
+
+				for (int j = 0; j < auxPai.getCromossomo().size(); j++) {
+
+					if (auxPai.getCromossomoPosition(j).getDisciplinaHorario() == null) {
+
+						auxPai.removeCromossomoPosition(j);
+
+						j = auxPai.getCromossomo().size();
+
+					}
+
+				}
+
+			}
+
+		}
+
+		for (int j = 0; j < auxPai.getCromossomo().size(); j++) {
+
+			i2.setHorarioDiscplina((Gene) auxPai.getCromossomoPosition(j).clone(), j + pontoCorte);
+
+		}// fim for completa
+
+		i1.validate();
+		i2.validate();
+
+		filhos[0] = new Individuo((Individuo) i1.clone());
+		filhos[1] = new Individuo((Individuo) i2.clone());
 
 		return filhos;
 

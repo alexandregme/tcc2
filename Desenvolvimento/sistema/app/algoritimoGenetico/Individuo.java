@@ -25,7 +25,9 @@ public class Individuo implements Cloneable {
 		this.cromossomo = new ArrayList<Gene>();
 
 		for (int i = 0; i < individuo.getCromossomo().size(); i++) {
+
 			this.cromossomo.add((Gene) individuo.getCromossomoPosition(i).clone());
+
 		}
 
 		this.parametros = individuo.parametros;
@@ -85,9 +87,9 @@ public class Individuo implements Cloneable {
 	// calcula a apitidao do individuo
 	private void fitness() {
 
-		int countTotalAlocados = 0;
+		int countTotalAlocados = 0, countSala = 0, countGroupDiscplina = 0;
 
-		float fitness01 = 0;
+		float fitness01 = 0, fitness02 = 0;
 
 		for (Gene g : cromossomo) {
 
@@ -103,17 +105,51 @@ public class Individuo implements Cloneable {
 
 		}
 
-		if (countTotalAlocados == 0)
+		fitness01 = (countTotalAlocados * 100) / parametros.listHorarioDisciplina.size();
 
-			fitness01 = 0;
+		// penalidade para disciplinas fora da mesma sala
 
-		else
-
-			fitness01 = (countTotalAlocados * 100) / parametros.listHorarioDisciplina.size();
+		// for (Disciplina d : parametros.listDisciplinas) {
+		//
+		// Sala salaAnterior = null;
+		//
+		// for (Gene g : this.cromossomo) {
+		//
+		// if ((g.getDisciplinaHorario() != null) &&
+		// (g.getDisciplinaHorario().disciplina.id == d.id)) {
+		// countGroupDiscplina++;
+		//
+		// if (salaAnterior == null) {
+		//
+		// countSala++;
+		//
+		// salaAnterior = g.getSala();
+		//
+		// } else {
+		// // soma mais 1 se a sala for igual a anterior
+		// if (salaAnterior == g.getSala()) {
+		// countSala++;
+		//
+		// salaAnterior = g.getSala();
+		// }
+		// }
+		//
+		// }// fim if disciplina
+		//
+		// }// fim for cromossomo
+		//
+		// fitness02 += ((countGroupDiscplina-countSala) * 100) /
+		// parametros.listHorarioDisciplina.size();
+		//
+		// salaAnterior = null;
+		//
+		// countSala = 0;
+		//
+		// }// fim for disciplina
 
 		// penalidade para disciplinas com alocação indevida
 
-		// for (Disciplina d : parametros.listDisciplinas) {
+		//
 		//
 		// countNecessario = 0;
 		//
@@ -121,19 +157,11 @@ public class Individuo implements Cloneable {
 		//
 		// for (DisciplinaHorario hp : parametros.listHorarioDisciplina) {
 		//
-		// if (hp.disciplina.id == d.id)
-		//
-		// countNecessario++;
+		// countSala++;
 		//
 		// }
 		//
-		// for (Gene g : cromossomo) {
-		//
-		// if ((g.disciplinaHorario != null) &&
-		// (g.disciplinaHorario.disciplina.id == d.id))
-		//
-		// countTotalAlocados++;
-		// }
+
 		//
 		// if (countTotalAlocados > countNecessario) {
 		// fitness02 -= (parametros.listHorarioDisciplina.size() * 100) /
@@ -141,8 +169,6 @@ public class Individuo implements Cloneable {
 		// }
 		//
 		// }
-
-		// penalidades
 
 		this.fitness = fitness01;
 
@@ -199,10 +225,24 @@ public class Individuo implements Cloneable {
 
 	}
 
-	public void setHorarioDiscplina(Gene g, Integer i) {
+	public void setHorarioDiscplina(Gene g, Integer i) throws CloneNotSupportedException {
 
-		this.cromossomo.get(i).setDisciplinaHorario(g.getDisciplinaHorario());
+		Gene gene = (Gene) g.clone();
 
+		this.cromossomo.get(i).setDisciplinaHorario(gene.getDisciplinaHorario());
+
+	}
+
+	public void validate() {
+
+		int count = 0;
+
+		for (Gene g : this.cromossomo) {
+			if (g.getDisciplinaHorario() != null)
+				count++;
+		}
+		if (count != parametros.listHorarioDisciplina.size())
+			System.out.println("bug");
 	}
 
 	@Override
