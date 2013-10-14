@@ -25,7 +25,7 @@ public class AlgoritimoController extends Controller {
 	final static String complement = "algoritimoGenetico";
 	private static Protocol protocol = null;
 
-	public static void result() {
+	public static void result() throws CloneNotSupportedException {
 
 		try {
 			Parametros p = RequestSerializer.get(request.body, Parametros.class);

@@ -13,21 +13,54 @@ import models.Horario;
 import models.Parametros;
 import models.Sala;
 
-public class Populacao {
+public class Populacao implements Cloneable {
 
-	public List<Individuo> populacao = new ArrayList<Individuo>();
+	private List<Individuo> populacao = null;
 
 	private Parametros parametros;
 
+	public Populacao(Populacao populacao) throws CloneNotSupportedException {
+
+		this.populacao = new ArrayList<Individuo>();
+
+		for (int i = 0; i < populacao.getPopulacao().size(); i++) {
+			this.addIndividuo((Individuo) populacao.getIndividuo(i).clone());
+
+		}
+
+		this.parametros = populacao.parametros;
+
+	}
+
 	public Populacao(Parametros p) {
 
-		parametros = p;
-
 		populacao = new ArrayList<Individuo>();
+
+		this.parametros = p;
+
+	}
+
+	public List<Individuo> getPopulacao() {
+
+		return this.populacao;
+
+	}
+
+	public void addIndividuo(Individuo i) throws CloneNotSupportedException {
+
+		this.populacao.add(new Individuo((Individuo) i.clone()));
+
+	}
+
+	public Individuo getIndividuo(Integer i) {
+
+		return this.populacao.get(i);
 
 	}
 
 	public void populacaoInicial(int tamanhoPopulacao) {
+
+		populacao = new ArrayList<Individuo>();
 
 		for (int i = 0; i < tamanhoPopulacao; i++) {
 
@@ -43,15 +76,16 @@ public class Populacao {
 
 	public Individuo melhor() {
 
-		Individuo melhor = populacao.get(0);
-
-		return melhor;
+		return populacao.get(0);
 
 	}
 
+	// calcula se a população tem a solução metodo ainda não implementado
 	public boolean temSolucao(Individuo i) {
 
-		if (i.fitness > 50)
+		// TODO calcular a solução do problema
+
+		if (i.getFitness() == 100.0)
 			return true;
 
 		return false;
@@ -60,39 +94,50 @@ public class Populacao {
 	// ordena a população pelo valor de aptidão de cada indivíduo, do maior
 	// valor para o menor, assim se eu quiser obter o melhor indivíduo desta
 	// população, acesso a posição 0 do array de indivíduos
+
 	public void ordenar() {
 
+		// TODO implementar um quicksort
 		Collections.sort(populacao, new Comparator() {
 			public int compare(Object o1, Object o2) {
 				Individuo i1 = (Individuo) o1;
 				Individuo i2 = (Individuo) o2;
-				return i1.fitness.compareTo(i2.fitness)*-1;
+				return i1.getFitness().compareTo(i2.getFitness()) * -1;
 			}
 		});
 
 	}
 
+	// salva a melhor individuo no banco / melhor solução do problema
 	public void alocar(Individuo i) {
 
-		for (Gene g : i.cromossomo) {
+		for (Gene g : i.getCromossomo()) {
 
 			Alocacao a = new Alocacao();
 
-			a.sala = Sala.findById(g.sala.id);
+			a.sala = Sala.findById(g.getSala().id);
 
-			a.horario = Horario.findById(g.horario.id);
+			a.horario = Horario.findById(g.getHorario().id);
 
-			a.dia = g.diaSemana;
+			a.dia = g.getDiaSemana();
 
-			if (g.disciplinaHorario == null)
+			if (g.getDisciplinaHorario() == null)
 
 				a.disciplina = null;
 			else
-				a.disciplina = Disciplina.findById(g.disciplinaHorario.disciplina.id);
+				a.disciplina = Disciplina.findById(g.getDisciplinaHorario().disciplina.id);
 
 			a.save();
 
 		}
 
 	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+
+		return super.clone();
+
+	}
+
 }

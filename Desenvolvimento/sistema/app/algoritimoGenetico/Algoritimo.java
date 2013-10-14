@@ -18,13 +18,7 @@ public class Algoritimo {
 
 	private Parametros parametros = Parametros.findById(1);
 
-	public Algoritimo() {
-
-		Alocacao.deleteAll();
-
-		Populacao p = new Populacao(parametros);
-
-		p.populacaoInicial(parametros.tamanhoPopulacao);
+	public Algoritimo() throws CloneNotSupportedException {
 
 		boolean temSolucao = false;
 
@@ -32,13 +26,17 @@ public class Algoritimo {
 
 		Individuo i = null;
 
+		Alocacao.deleteAll();
+
+		Populacao p = new Populacao(parametros);
+
+		p.populacaoInicial(parametros.tamanhoPopulacao);
+
 		do {
 
-			Populacao nova = novaGeracao(p);
+			p = new Populacao((Populacao) novaGeracao(p).clone());
 
-			p = nova;
-
-			i = p.melhor();
+			i = (Individuo) p.melhor().clone();
 
 			temSolucao = p.temSolucao(i);
 
@@ -50,13 +48,11 @@ public class Algoritimo {
 
 		p.alocar(i);
 
-		System.out.println(i.genoma);
-		System.out.println(i.fitness);
-		System.out.println(p.melhor().genoma);
-
+		System.out.println(i.getGenoma());
+		System.out.println(i.getFitness());
 	}
 
-	public Populacao novaGeracao(Populacao populacao) {
+	public Populacao novaGeracao(Populacao populacao) throws CloneNotSupportedException {
 
 		Random r = new Random();
 
@@ -65,25 +61,27 @@ public class Algoritimo {
 		// se tiver elitismo, mantém o melhor indivíduo da geração atual
 		if (parametros.elitismo) {
 
-			int elitismoPeople = (int) (populacao.populacao.size() * 0.2);
+			int elitismoPeople = (int) (populacao.getPopulacao().size() * 0.2);
 
 			for (int i = 0; i < elitismoPeople; i++) {
 
-				p.populacao.add(populacao.populacao.get(i));
+				p.addIndividuo(new Individuo((Individuo) populacao.getIndividuo(i).clone()));
 
 			}
 
-			System.out.println("elitismo" + populacao.melhor().fitness);
-
 		}
+
+		System.out.println(populacao.melhor().getFitness());
 
 		// insere novos indivíduos na nova população, até atingir o tamanho
 		// máximo
 
-		for (int i = p.populacao.size(); i < parametros.tamanhoPopulacao; i++) {
+		for (int i = p.getPopulacao().size(); i < parametros.tamanhoPopulacao; i++) {
 
 			// seleciona os 2 pais por torneio
-			Individuo[] pais = selecaoTorneio(populacao);
+			Individuo[] pais = new Individuo[2];
+
+			pais = selecaoTorneio(populacao);
 
 			Individuo[] filhos = new Individuo[2];
 
@@ -92,28 +90,28 @@ public class Algoritimo {
 
 			if (r.nextDouble() <= parametros.taxaCrossover) {
 
-				filhos = crossover(pais[1], pais[0]);
+				filhos = crossover(new Individuo((Individuo) pais[0].clone()), (Individuo) new Individuo(pais[1]).clone());
 
 			} else {
 
-				filhos[0] = pais[0];
-				filhos[1] = pais[1];
+				filhos[0] = new Individuo(pais[0]);
+				filhos[1] = new Individuo(pais[1]);
 
 			}
 
 			if (r.nextDouble() <= parametros.taxaMutacao) {
 
-				filhos[0] = mutacao(populacao);
+				filhos[0] = new Individuo((Individuo) mutacao(populacao).clone());
 
 			}
 
 			// adiciona os filhos na nova geração
-			p.populacao.add(filhos[0]);
-			p.populacao.add(filhos[1]);
+
+			p.addIndividuo(filhos[0]);
+
+			p.addIndividuo(filhos[1]);
 
 		}// fim preenche populacao
-
-		System.out.println(p.populacao.size() + "populacao");
 
 		// ordena a nova população
 		p.ordenar();
@@ -122,70 +120,73 @@ public class Algoritimo {
 
 	}
 
-	public Individuo[] crossover(Individuo pai, Individuo mae) {
+	public Individuo[] crossover(Individuo pai, Individuo mae) throws CloneNotSupportedException {
 
 		Random r = new Random();
 
 		// sorteia o ponto de corte
-		int pontoCorte = r.nextInt(pai.cromossomo.size());
-		// int pontoCorte1 = r.nextInt((pai.cromossomo.size() / 2) - 2) + 1;
-		// int pontoCorte2 = r.nextInt((pai.cromossomo.size() / 2) - 2) +
-		// pai.cromossomo.size() / 2;
+		int pontoCorte = r.nextInt(pai.getCromossomo().size());
 
 		Individuo[] filhos = new Individuo[2];
 
-		Individuo aux = new Individuo(parametros);
-
+		// filho 1
 		Individuo i1 = new Individuo(parametros);
 
-		// Individuo i2 = new Individuo(parametros);
-
-		// filho 1
-		aux = mae;
+		Individuo aux = new Individuo((Individuo) mae.clone());
 
 		for (int i = 0; i < pontoCorte; i++) {
 
-			i1.cromossomo.get(i).disciplinaHorario = pai.cromossomo.get(i).disciplinaHorario;
+			i1.setHorarioDiscplina(pai.getCromossomoPosition(i), i);
 
-			// percorre o aux para apagar o item que ja foi inserido
-				for (int j = 0; j < aux.cromossomo.size(); j++) {
-					if ((aux.cromossomo.get(j).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario != null) && (pai.cromossomo.get(i).disciplinaHorario.id == aux.cromossomo.get(j).disciplinaHorario.id)) {
+			if (pai.getCromossomoPosition(i).getDisciplinaHorario() != null) {
 
-						aux.cromossomo.get(j).disciplinaHorario = null;
-						j = aux.cromossomo.size();
+				for (int j = 0; j < aux.getCromossomo().size(); j++) {
+
+					if ((aux.getCromossomoPosition(j).getDisciplinaHorario() != null) && (aux.getCromossomoPosition(j).getDisciplinaHorario().id == pai.getCromossomoPosition(i).getDisciplinaHorario().id)) {
+
+						aux.removeCromossomoPosition(j);
+
 					}
+
+				}// fim for completa
+
+			} else {
+
+				for (int j = 0; j < aux.getCromossomo().size(); j++) {
+
+					if (aux.getCromossomoPosition(j).getDisciplinaHorario() == null) {
+
+						aux.removeCromossomoPosition(j);
+
+						j = aux.getCromossomo().size();
+
+					}
+
 				}
 
-		}// fim for ponto de corte
-//
-//		for (int i = 0; i < pontoCorte; i++) {
-//			if (aux.cromossomo.get(i).disciplinaHorario != null) {
-//
-//				for (int j = pontoCorte; j < aux.cromossomo.size(); j++) {
-//					if (aux.cromossomo.get(j).disciplinaHorario == null)
-//						i1.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(j).disciplinaHorario;
-//
-//				}// fim for completa
-//
-//			}
-//		}
+			}
 
-		for (int j = pontoCorte; j < aux.cromossomo.size(); j++) {
-			i1.cromossomo.get(j).disciplinaHorario = aux.cromossomo.get(j).disciplinaHorario;
+		}
+
+		for (int j = 0; j < aux.getCromossomo().size(); j++) {
+
+			i1.setHorarioDiscplina(aux.getCromossomoPosition(j), j);
+
 		}// fim for completa
 
 		// filho 2
 
-		i1.fitness();
+		// Individuo i2 = new Individuo(parametros);
 
-		filhos[0] = i1;
-		filhos[1] = pai;
+		filhos[0] = new Individuo(i1);
+		filhos[1] = new Individuo(i1);
 
 		return filhos;
 
 	}
 
-	public Individuo[] selecaoTorneio(Populacao p) {
+	// escolhe 3 individuos aleatoriamente da população e pega os 2 melhores
+	public Individuo[] selecaoTorneio(Populacao p) throws CloneNotSupportedException {
 
 		Random r = new Random();
 
@@ -193,9 +194,9 @@ public class Algoritimo {
 		Populacao pi = new Populacao(parametros);
 
 		// seleciona 3 indivíduos aleatóriamente na população
-		pi.populacao.add(p.populacao.get(r.nextInt(p.populacao.size())));
-		pi.populacao.add(p.populacao.get(r.nextInt(p.populacao.size())));
-		pi.populacao.add(p.populacao.get(r.nextInt(p.populacao.size())));
+		pi.addIndividuo(p.getIndividuo(r.nextInt(p.getPopulacao().size())));
+		pi.addIndividuo(p.getIndividuo(r.nextInt(p.getPopulacao().size())));
+		pi.addIndividuo(p.getIndividuo(r.nextInt(p.getPopulacao().size())));
 
 		// ordena a população
 		pi.ordenar();
@@ -203,32 +204,34 @@ public class Algoritimo {
 		Individuo[] pais = new Individuo[2];
 
 		// seleciona os 2 melhores deste população
-		pais[0] = pi.populacao.get(0);
-		pais[1] = pi.populacao.get(1);
+		pais[0] = new Individuo(pi.getIndividuo(0));
+		pais[1] = new Individuo(pi.getIndividuo(1));
 
 		return pais;
 
 	}
 
-	public Individuo mutacao(Populacao p) {
+	// mutação troca dois genes randomicamente de lugar.
+	public Individuo mutacao(Populacao p) throws CloneNotSupportedException {
 
 		Random r = new Random();
 
-		int ri = r.nextInt(p.populacao.size());
+		int ri = r.nextInt(p.getPopulacao().size());
 
-		Individuo individuo = p.populacao.get(ri);
+		Individuo individuo = new Individuo((Individuo) p.getIndividuo(ri).clone());
 
-		int c1 = r.nextInt(individuo.cromossomo.size());
+		int c1 = r.nextInt(individuo.getCromossomo().size());
 
-		int c2 = r.nextInt(individuo.cromossomo.size());
+		int c2 = r.nextInt(individuo.getCromossomo().size());
 
-		DisciplinaHorario aux = individuo.cromossomo.get(c1).disciplinaHorario;
+		DisciplinaHorario aux = individuo.getCromossomo().get(c1).getDisciplinaHorario();
 
-		individuo.cromossomo.get(c1).disciplinaHorario = individuo.cromossomo.get(c2).disciplinaHorario;
+		individuo.getCromossomo().get(c1).setDisciplinaHorario(individuo.getCromossomo().get(c2).getDisciplinaHorario());
 
-		individuo.cromossomo.get(c2).disciplinaHorario = aux;
+		individuo.getCromossomo().get(c2).setDisciplinaHorario(aux);
 
-		return individuo;
+		return new Individuo((Individuo) individuo.clone());
 
 	}
+
 }
