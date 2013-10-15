@@ -3,6 +3,7 @@ package controllers;
 import java.util.List;
 
 import models.Sala;
+import play.db.jpa.JPA;
 import play.mvc.Controller;
 import utils.MessageHelper;
 import utils.Protocol;
@@ -114,12 +115,12 @@ public class SalaController extends Controller {
 
 		try {
 
-			List<Sala> listSala = Sala.findAll();
+			List<Sala> listSalas = JPA.em().createNativeQuery("SELECT * FROM Sala ORDER BY id_sala", Sala.class).getResultList();
 
-			if (listSala.size() == 0)
-				protocol = new Protocol('e', MessageHelper.get("LIST_EMPTY", complement), listSala, listSala.size());
+			if (listSalas.size() == 0)
+				protocol = new Protocol('e', MessageHelper.get("LIST_EMPTY", complement), listSalas, listSalas.size());
 			else
-				protocol = new Protocol('s', MessageHelper.get("LIST_OK", complement), listSala, listSala.size());
+				protocol = new Protocol('s', MessageHelper.get("LIST_OK", complement), listSalas, listSalas.size());
 
 		} catch (Exception e) {
 

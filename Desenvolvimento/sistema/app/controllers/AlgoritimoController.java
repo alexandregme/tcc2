@@ -3,15 +3,20 @@ package controllers;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.Column;
-
 import models.Alocacao;
 import models.AlocacaoInterface;
 import models.AlocacaoSemana;
 import models.Horario;
 import models.Parametros;
 import models.Sala;
+import net.sf.ehcache.hibernate.HibernateUtil;
+
+import org.hibernate.Criteria;
+import org.hibernate.criterion.Order;
+
+import play.db.jpa.JPA;
 import play.mvc.Controller;
+import play.mvc.Scope.Session;
 import utils.MessageHelper;
 import utils.Protocol;
 import utils.RequestSerializer;
@@ -28,6 +33,7 @@ public class AlgoritimoController extends Controller {
 	public static void result() throws CloneNotSupportedException {
 
 		try {
+
 			Parametros p = RequestSerializer.get(request.body, Parametros.class);
 
 			Parametros parametros = Parametros.findById(p.id);
@@ -83,7 +89,7 @@ public class AlgoritimoController extends Controller {
 
 		List<AlocacaoInterface> listAi = new ArrayList<AlocacaoInterface>();
 
-		List<Sala> listSalas = Sala.findAll();
+		List<Sala> listSalas = JPA.em().createNativeQuery("SELECT * FROM Sala ORDER BY nome_sala", Sala.class).getResultList();
 
 		for (Sala sala : listSalas) {
 
@@ -116,6 +122,7 @@ public class AlgoritimoController extends Controller {
 				as.domingo = Alocacao.find("sala.id = " + sala.id + "AND dia = 7 AND horario.id = " + listHorarios.get(i).id).first();
 
 				ai.alocacao.add(as);
+
 			}
 
 			listAi.add(ai);

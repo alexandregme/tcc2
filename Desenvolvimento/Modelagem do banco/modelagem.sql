@@ -182,7 +182,7 @@ CREATE TABLE parametros (
   CONSTRAINT pk_parametro PRIMARY KEY (id_parametro)
 );
 
-INSERT INTO parametros (id_parametro,elitismo,taxa_crossover,taxa_mutacao,tamanho_populacao,maximo_geracoes,peso_discliplina_alocada,peso_graduacao,peso_pos,peso_mesmo_periodo,peso_capacidade,peso_optativa,peso_iluminacao) VALUES (1,true,0.6,0.3,100,50,1000,100,10,10,10,10,10);
+
 
 -- ---
 -- Foreign Keys 
@@ -198,6 +198,90 @@ ALTER TABLE periodo ADD FOREIGN KEY (id_colegiado) REFERENCES colegiado (id_cole
 ALTER TABLE alocacao ADD FOREIGN KEY (id_sala) REFERENCES sala (id_sala);
 ALTER TABLE alocacao ADD FOREIGN KEY (id_horario) REFERENCES horario (id_horario);
 ALTER TABLE alocacao ADD FOREIGN KEY (id_disciplina) REFERENCES disciplina (id_disciplina);
+
+INSERT INTO parametros (id_parametro,elitismo,taxa_crossover,taxa_mutacao,tamanho_populacao,maximo_geracoes,peso_discliplina_alocada,peso_graduacao,peso_pos,peso_mesmo_periodo,peso_capacidade,peso_optativa,peso_iluminacao) VALUES (1,true,0.6,0.3,100,50,1000,100,10,10,10,10,10);
+
+INSERT INTO turno (id_turno, texto_descricao) VALUES (50, 'Manhã');
+INSERT INTO turno (id_turno, texto_descricao) VALUES (51, 'Tarde');
+INSERT INTO turno (id_turno, texto_descricao) VALUES (52, 'Noite');
+
+SELECT pg_catalog.setval('turno_id_turno_seq', 52);
+
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (50, 50, '7:30', '8:20');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (51, 50, '8:20', '9:10');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (52, 50, '9:30', '10:20');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (53, 50, '10:20', '11:10');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (54, 50, '11:10', '12:00');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (55, 51, '13:00', '13:45');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (56, 51, '13:50', '14:40');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (57, 51, '14:50', '15:40');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (58, 51, '15:40', '16:30');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (59, 51, '16:30', '17:20');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (60, 51, '17:20', '18:10');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (61, 52, '19:00', '19:50');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (62, 52, '19:50', '20:40');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (63, 52, '20:50', '21:40');
+INSERT INTO horario (id_horario, id_turno, horario_de, horario_ate) VALUES (64, 52, '21:40', '22:30');
+
+SELECT pg_catalog.setval('horario_id_horario_seq', 64);
+
+INSERT INTO predio (id_predio, nome_predio, texto_descricao) VALUES (50, 'Fafich', 'Faculdade de Filosofia e Ciências Humanas');
+
+SELECT pg_catalog.setval('predio_id_predio_seq', 50);
+
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (50, 50, 1, 90, '1012', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (51, 50, 2, 75, '2060', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (52, 50, 2, 40, '2013', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (53, 50, 2, 60, '2017', 'Clara', 'Não');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (54, 50, 2, 40, '2019', 'Escura', 'Não');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (55, 50, 2, 60, '2045', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (56, 50, 2, 50, '2055', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (57, 50, 2, 40, '2070', 'Clara', 'Não');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (58, 50, 2, 40, '2072', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (59, 50, 2, 40, '2074', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (60, 50, 2, 60, '2076', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (61, 50, 2, 40, '2080', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (62, 50, 2, 40, '2082', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (63, 50, 2, 40, '2084', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (64, 50, 2, 60, '2090', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (65, 50, 2, 60, '2094', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (66, 50, 2, 40, '2096', 'Clara', 'Não');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (67, 50, 3, 20, '3001', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (68, 50, 3, 60, '3002', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (69, 50, 3, 30, '3003', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (70, 50, 3, 40, '3004', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (71, 50, 3, 30, '3005', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (72, 50, 3, 40, '3006', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (73, 50, 3, 40, '3008', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (74, 50, 3, 40, '3010', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (75, 50, 3, 40, '3011', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (76, 50, 3, 40, '3012', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (77, 50, 3, 40, '3014', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (78, 50, 3, 40, '3016', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (79, 50, 3, 40, '3018', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (80, 50, 3, 40, '3020', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (81, 50, 3, 30, '3022', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (82, 50, 3, 60, '3030', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (83, 50, 3, 60, '3032', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (84, 50, 3, 20, '3034', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (85, 50, 3, 30, '3036', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (86, 50, 3, 30, '3038', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (87, 50, 3, 40, '3040', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (88, 50, 3, 40, '3042', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (89, 50, 3, 40, '3044', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (90, 50, 3, 40, '3046', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (91, 50, 3, 40, '3048', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (92, 50, 3, 60, '3049', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (93, 50, 3, 45, '3050', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (94, 50, 3, 60, '3052', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (95, 50, 3, 60, '3054', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (96, 50, 3, 60, '3056', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (97, 50, 3, 30, '3068', 'Escura', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (98, 50, 3, 40, '3070', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (99, 50, 3, 60, '3100', 'Clara', 'Sim');
+INSERT INTO sala (id_sala, id_predio, numero_andar, numero_vagas, nome_sala, flag_iluminacao, flag_ativa) VALUES (100, 50, 3, 40, '3112', 'Escura', 'Sim');
+
+SELECT pg_catalog.setval('sala_id_sala_seq', 100);
 
 -- ---
 -- Table Properties

@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import javax.persistence.criteria.CriteriaBuilder.In;
-
 import models.Alocacao;
 import models.Disciplina;
 import models.Horario;

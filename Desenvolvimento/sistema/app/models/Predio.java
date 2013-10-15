@@ -20,8 +20,8 @@ public class Predio extends GenericModel {
 
 	@Id
 	@Column(name = "id_predio")
-	@GeneratedValue(generator = "colegiado_id_colegiado_seq", strategy = GenerationType.SEQUENCE)
-	@SequenceGenerator(name = "colegiado_id_colegiado_seq", sequenceName = "colegiado_id_colegiado_seq")
+	@GeneratedValue(generator = "predio_id_predio_seq", strategy = GenerationType.SEQUENCE)
+	@SequenceGenerator(name = "predio_id_predio_seq", sequenceName = "predio_id_predio_seq")
 	public Integer id;
 
 	@Column(name = "nome_predio")

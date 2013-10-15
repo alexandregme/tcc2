@@ -2,10 +2,8 @@ package algoritimoGenetico;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import models.Disciplina;
-import models.DisciplinaHorario;
 import models.Horario;
 import models.Parametros;
 import models.Sala;
@@ -87,9 +85,9 @@ public class Individuo implements Cloneable {
 	// calcula a apitidao do individuo
 	private void fitness() {
 
-		int countTotalAlocados = 0, countSala = 0, countGroupDiscplina = 0;
+		int countTotalAlocados = 0, countSala = 0, countGroupDiscplina = 0, countCapacidade = 0;
 
-		float fitness01 = 0, fitness02 = 0;
+		float fitness01 = 0, fitness02 = 0, fitness03 = 0;
 
 		for (Gene g : cromossomo) {
 
@@ -101,76 +99,59 @@ public class Individuo implements Cloneable {
 
 				}
 
+				if (g.getSala().vagas == g.getDisciplinaHorario().disciplina.vagas) {
+
+					// contator para as salas que atendem a capacidade
+					countCapacidade++;
+
+				}
+
 			}
 
 		}
 
 		fitness01 = (countTotalAlocados * 100) / parametros.listHorarioDisciplina.size();
 
+		fitness02 = (countCapacidade * 100) / parametros.listHorarioDisciplina.size();
+
 		// penalidade para disciplinas fora da mesma sala
 
-		// for (Disciplina d : parametros.listDisciplinas) {
-		//
-		// Sala salaAnterior = null;
-		//
-		// for (Gene g : this.cromossomo) {
-		//
-		// if ((g.getDisciplinaHorario() != null) &&
-		// (g.getDisciplinaHorario().disciplina.id == d.id)) {
-		// countGroupDiscplina++;
-		//
-		// if (salaAnterior == null) {
-		//
-		// countSala++;
-		//
-		// salaAnterior = g.getSala();
-		//
-		// } else {
-		// // soma mais 1 se a sala for igual a anterior
-		// if (salaAnterior == g.getSala()) {
-		// countSala++;
-		//
-		// salaAnterior = g.getSala();
-		// }
-		// }
-		//
-		// }// fim if disciplina
-		//
-		// }// fim for cromossomo
-		//
-		// fitness02 += ((countGroupDiscplina-countSala) * 100) /
-		// parametros.listHorarioDisciplina.size();
-		//
-		// salaAnterior = null;
-		//
-		// countSala = 0;
-		//
-		// }// fim for disciplina
+//		for (Disciplina d : parametros.listDisciplinas) {
+//
+//			Sala salaAnterior = null;
+//
+//			for (Gene g : this.cromossomo) {
+//
+//				if ((g.getDisciplinaHorario() != null) && (g.getDisciplinaHorario().disciplina.id == d.id)) {
+//
+//					if (salaAnterior == null) {
+//
+//						countSala++;
+//
+//						salaAnterior = g.getSala();
+//
+//					} else {
+//
+//						// soma mais 1 se a sala for igual a anterior
+//
+//						if (salaAnterior.id == g.getSala().id) {
+//
+//							countSala++;
+//
+//							salaAnterior = g.getSala();
+//
+//						}
+//					}
+//
+//				}// fim if disciplina
+//
+//			}// fim for cromossomo
+//
+//		}// fim for disciplina
 
-		// penalidade para disciplinas com alocação indevida
+		//fitness03 = (countSala * 100) / parametros.listHorarioDisciplina.size();
 
-		//
-		//
-		// countNecessario = 0;
-		//
-		// countTotalAlocados = 0;
-		//
-		// for (DisciplinaHorario hp : parametros.listHorarioDisciplina) {
-		//
-		// countSala++;
-		//
-		// }
-		//
-
-		//
-		// if (countTotalAlocados > countNecessario) {
-		// fitness02 -= (parametros.listHorarioDisciplina.size() * 100) /
-		// (countTotalAlocados - countNecessario);
-		// }
-		//
-		// }
-
-		this.fitness = fitness01;
+		this.fitness = ((fitness01 + fitness02) / 2);
 
 		print();
 

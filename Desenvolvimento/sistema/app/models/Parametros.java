@@ -61,7 +61,7 @@ public class Parametros extends GenericModel {
 	public List<DisciplinaHorario> listHorarioDisciplina = DisciplinaHorario.find("alocado=true").fetch();
 
 	@Transient
-	public List<Sala> listSalas = Sala.findAll();
+	public List<Sala> listSalas = Sala.find("ativa='Sim'").fetch();
 
 	@Transient
 	public List<Horario> listHorarios = Horario.findAll();

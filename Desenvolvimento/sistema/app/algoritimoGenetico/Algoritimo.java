@@ -1,18 +1,10 @@
 package algoritimoGenetico;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
-import javax.persistence.Transient;
-import javax.persistence.criteria.CriteriaBuilder.In;
-
 import models.Alocacao;
-import models.Disciplina;
 import models.DisciplinaHorario;
-import models.Horario;
 import models.Parametros;
-import models.Sala;
 
 public class Algoritimo {
 
