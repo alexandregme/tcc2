@@ -1,42 +1,60 @@
+
 \capitulo{METODOLOGIA}
 
-A resolução deste trabalho\par
 
-Algoritmo gentetico, descrever o porque da utilização do mesmo e criar a função do mesmo\par
- 
-A modelagem de dados do sistema utiliza a UML (Universal Modeling Language) para o desenvolvimento dos seguintes diagramas:\par
 
-a) Diagramas de Caso de Uso.\par
-b) Diagrama de Classes.\par
-c) Diagrama de Seqüência.\par
-d) Diagrama de Atividades.\par
-e) Diagrama de Estados.\par
 
-Para a configuração do ambiente para o desenvolvimento do sistema foram feitos os seguintes passos:\par
 
-a) Instalação do SGBD PostgreSQL.\par
-b) Instalação da linguagem de programação Java.\par
-c) Instalação do Play! framework.\par
-d) Instalação da IDE Eclipse.\par
-e) Instalação do software Astah.\par
+A resolução deste trabalho está dividida nos seguintes tópicos algoritimo escolhido para resolução do problema, análise de requisitos, e implementação.\par
 
-Para o desenvolvimento da aplicação foram executados os seguintes passos:\par
 
-a) Criação de um novo projeto atraves do Play! framework.\par
-b) Adatação do projeto para ser utilizado atraves da IDE Eclipse.\par
-c) Criação das tabelas no banco de dados após a análise do sistema feita.\par
-d) Configurações necessarias do projeto para conexão com o banco de dados.\par
-e) Desenvolvimento das Model, Controllers e Views.\par
-f) Desenvolvimento do algortimo proposto para solução da alocação de salas.\par
-g) Desenvolvimento dos reslatórios.\par
-h) Realização de testes.\par
+Para a resolução do problema de timetable foi escolhido o algoritimo genetico, a escolha do algoritimo foi devida a grande utilização do mesmo para resolução de problemas do tipo NP-dificil que foram encontrados na literatura.
+\par
 
-A arquitetura utilizada pelo sistema MVC utiliza a comunicação via REST entre as Controllers e as Views atraves de um protocolo de comunicação no formato JSON estruturado da seguinte forma:
+Foi realizada uma análise dos requisistos atravez de entrevista com o steakholder, após as entrevistas a modelagem de dados foi realizada de acordo com a demanda do projeto, para o desenvolvimento destes diagramas foi utilizadas a UML (Universal Modeling Language). Os seguintes diagramas foram desenhados, diagrama de caso de uso, diagrama de classe e diagrama de entidade relacionamento. Foram escolhidos os seguintes diagramas para que o sistema tenha uma documentação minima tendo em vista que o foco do trabalho é a resolução do problema de timetable através da utilização do algoritimo genetico.
 
-status : Indica o código da mensagem s = sucesso, e = erro, a = um aviso.\par
-data : Apresenta todas as informações necessarias para controller.\par
-message : Mensagem para a interface. Esta mensagem é exibida para o usuário.\par
-length : Quantidade de dados retornados.\par
+Por se tratar de um sistema complexo, antes de iniciar a implementação do sistema
+fez-se necessário a sua modelagem. Segundo Elmasri & Navathe (2005) as metodologias
+de modelagem de dados de objetos como UML (Universal Modeling Language –
+Linguagem de Modelagem Universal) estão se tornando cada vez mais populares no
+projeto e engenharia de software. Essas metodologias vão além do projeto de um banco de
+dados, especificando o projeto detalhado dos módulos de software e suas interações,
+utilizando vários tipos de diagramas.
+
+
+\par
+
+
+A implementação do sistema de deve primeiramente a configuração do ambiente para que o desenvolvimento se torne agil. Os seguintes passos devem ser feitos para que o sistema seja reproduzido novamente primeiramente deve se instalar o SGBD PostgreSQL, logo em seguida deve se tomar todas as providencias para que o JAVA 7 rode na sua maquina para validar a instalação do mesmo deve-se executar o seguinte comando 
+
+java -version && javac -version a mensagem abaixo deve ser mostrada.
+
+java version \"1.7.0_11\"\par
+Java(TM) SE Runtime Environment (build 1.7.0_11-b21)\par
+Java HotSpot(TM) 64-Bit Server VM (build 23.6-b04, mixed mode)\par
+javac 1.7.0_11\par
+
+Após a instalão do java deve-se instalar o Play! framework seguindo os passos encontrados no site \cite{play} para validar a isntalação do play deve se excutar o comando play version e o prompt de comando deve retornar a seguinte mensagem mostrando a versão 1.2.5 do framework:
+
+~        _            _
+~  _ __ | | __ _ _  _| |
+~ | \'_ \| |/ _\' | || |_|
+~ |  __/|_|\____|\__ (_)
+~ |_|            |__/
+~
+~ play! 1.2.5, http://www.playframework.org
+~
+1.2.5
+
+Enquando é executada a instalação do ambiente o download da IDE pode ser excutado atravez do site \cite{eclipse} juntamente com o software astah \cite{astah}\par
+
+Uma vez que o ambiente já está configurado devemos inciar um projeto no framework instalado atravez do comando play new \"nome_do_projeto\", logo em seguida devemos adaptar os arquivos gerados pelo framework para que o eclipse entanda o projeto atravez do comando play eclipsify.
+
+
+Inicialmente foi criado um script para que o banco de dados fosse criado e para que população das informações inciais como, prédios, salas, turnos, horários, e disciplinas com suas respectivas informações que são necessarias todo inicio de semestre para execução do problema.
+
+Assim que o banco estiver configurado no SGBD é feita a configuração para que o projeto se comunique com o banco de dados. Após a conexão com o ocorreu o desenvolvimento das Model, Controllers, Views e o algoritimo proposto para solução.
+
 
 \secao{Ferramentas Utilizadas}
 

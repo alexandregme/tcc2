@@ -1,126 +1,132 @@
 \capitulo{SISTEMA DESENVOLVIDO}
 
-\secao{Modelo Tratado}
+Será desenvolvido um sistema que otimiza a alocação das salas facilizando a vida do gerente. Por se tratar de um problema especifico fica dificil encontrar tecnlogias disponiveis para a resolução do problema sendo assim necessario o atendimento de um sistema que atenda todas as necessisdades exigidas.
 
-\secao{Proposta de Solução}
+\secao{Modelagem}
 
-Será desenvolvido um sistema que otimiza a alocação das salas em até 90\% facilizando a vida do gerente.Por se tratar de um problema especifico fica dificil encontrar tecnoloagias disponiveis para a resolução do problema sendo assim necessario o atendimento de um sistema que atenda todas as necessisdades exigidas.
+Segundo Booch et al. (2001) a modelagem de um diagrama de caso de uso é uma
+técnica usada para descrever e definir os requisitos funcionais de um sistema. Para sistemas
+que possuem um número elevado de funcionalidades, a construção destes diagramas visa
+facilitar o entendimento do problema, a documentação do que será desenvolvido bem
+como facilita o próprio desenvolvimento.
 
-\secao{O Sistema Desenvolvido}
-	
-	Descrição sobre o Sistema
 
-\subsecao{Ambiente de Desenvolvimento}
+\subsecao{Diagramas de entidade relacionamento}
 
-	IDE eclipse, sublimeText, Google Chrome, programa DIA para o desenvolvimento dos diagramas\cite{alterar}
+Por se tratar de uma aplicação de banco de dados, a modelagem de dados foi
+também construída. Segundo Elmasri & Navathe (2005) a modelagem conceitual é uma
+fase muito importante no planejamento de uma aplicação de um banco de dados bem
+sucedida.
+Ainda segundo Elmasri & Navathe (2005), o modelo relacional representa o banco
+de dados como uma coleção de relações. Informalmente, cada relação se parece com uma
+tabela de valores.
+Na Figura 3.8 tem-se o diagrama para o esquema do banco de dados relacional do
+sistema. Cada tabela é chamada de relação e cada cabeçalho de coluna é conhecido como
+atributo. Os atributos sublinhados em cada tabela indicam a chave-primária e a indicação
+“(FK)” exibe a chave-estrangeira em cada relação.
 
-\subsecao{Modegem do Sistema}
-
-	Antes de tudo foi necessaria a modelagem do sistema, para que todos os requisitos fossem atendidos de acordo com a necessidade.\par
-
-	Achar alguma referencia sobre metodologias de modelagem de dados UML\par\cite{alterar}
-
-	Para a analise deste sistema foram desenvolvidos os seguintes diagramas:\par\cite{alterar}
-	
-	Diagramas de Caso de Uso\par
-	Diagramas de classes\par
-	Diagramas de Seqüência\par
-	Diagrama de Atividades\par
-	Diagrama de Estados\par
 \begin{figure}[!htb]
-   \caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
-   \label{fig:figura1}
-   \centering
-   \includegraphics{images/diagramaComponentes.png}
-   \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
+\label{fig:figura1}
+\centering
+\includegraphics{images/diagramaComponentes.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
 
-\subsecao{Diagrama de Caso de Uso: Sistema}
+\subsecao{Diagramas de caso de uso}
 
 
-	Criar o caso de uso que diz respeito a todas as funcionalidades que o sistema tem de cadastro e manutenção.\par\cite{alterar}
-
-	Caso de uso do sistema\par\cite{alterar}
-
-	\begin{figure}[!htb]
-		\centering
-   		\caption[Diagrama de caso de uso]{Diagrama de caso de uso}
-   		\label{fig:figura2}
-   		\centering
-   		\includegraphics[scale=0.5]{diagramaCasoUso.png}
-   		\\ \textbf{\footnotesize Fonte: Autor}
-	\end{figure}
+A Figura 3.4 descreve todas as funcionalidades que o usuário de perfil
+“Administrador” poderá executar na ferramenta.
 
 
-\subsubsecao{Diagrama de Atividade: Alocação}
-	
-	Descrever a rotina de atividades da alocação do sistema
-	
+\begin{figure}[!htb]
+\caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
+\label{fig:figura1}
+\centering
+\includegraphics{images/diagramaComponentes.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
 
-\subsubsecao{Diagrama de Classe das controllers}
-		
-	Achar alguma referencia de diagrama de classe.
+Já a Figura 3.5 apresenta as funcionalidades que o usuário de perfil Consulta pode
+executar. A seta partindo do usuário Administrador indica que este pode executar qualquer
+funcionalidade que o usuário Consulta tem acesso.
 
-	Imagem do diagrama de classe das controllers
-
-\subsubsecao{Diagrama de Classe das models}
-	
-	Imagem do diagrama de classe das models
-
-\subsubsecao{Diagrama de Classe das views}
-	
-	Imagem do diagrama de classe das views
-
-\subsubsecao{Modelagem de Dados}
-
-	Achar alguma referencia de modelagem de dados
-
-	Inserir imagem do modelo
-
-		\begin{figure}[!htb]
-   		\caption[Modelagem Banco de Dados]{Modelagem Banco de Dados}
-   		\label{fig:figura3}
-   		\centering
-   		\includegraphics{modelagemBanco.png}
-   		\\ \textbf{\footnotesize Fonte: Autor}
-	\end{figure}
-
-\subsecao{Funcionalidades}
-
-	O sistema consiste nas seguintes funcionalidades.
-
-	1. Controle de cursos \par
-	2. Controle de colegiados\par
-	3. Controle de disciplinas\par
-	4. Controle de salas\par
-	5. Controle de prédios\par
-	6. Alocação de horários\par
-	7. Geração de relatórios\par
-	8. Exportar para pdf\par
+\begin{figure}[!htb]
+\caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
+\label{fig:figura1}
+\centering
+\includegraphics{images/diagramaComponentes.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
 
 
 
-\subsecao{Dados de Entrada}
+\subsecao{Diagramas de classe}
 
-	Como serão inseriadas as informações, e quais são os dados de entrada
+Segundo Booch et al. (2001), Diagrama de Classes demonstram a estrutura estática
+das classes de um sistema, onde estas representam as “coisas” que são gerenciadas pela
+aplicação modelada. Ainda segundo Booch et al. (2001), uma classe num diagrama pode
+ser diretamente implementada utilizando-se uma linguagem de programação orientada a
+objetos, no caso deste trabalho, a Linguagem Java.
+A partir da Figura 3.7 pode-se observar as classes manipuladores do sistema. Elas
+estão identificadas, descritas com seus métodos e relacionadas entre si. Geralmente um
+sistema possui mais de um diagrama, pois nem todas se encaixam em um diagrama
+específico.
 
-	Informados pelo gerente.
-
-\subsecao{Alocação}
-
-	Processa os dados de alocação
-
-\subsecao{Relatórios}
-
-	Geração dos relatorios determinados na analise do sistema, todos os relatorios podem ser exportados para pdf
-
-
-
+\begin{figure}[!htb]
+\caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
+\label{fig:figura1}
+\centering
+\includegraphics{images/diagramaComponentes.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
 %==============================================%
 
+\secao{Algoritimo Genético}
 
-\secao{Definição da função objetivo}
+
+Por se tratar de um algoritimo que é baseado na teoria da evolução descrita por dawin \cite{darwin} serão descritos cada termo através da utilização da tabela abaixo 
+
+\subsecao{Gene}
+
+Um gene é composto pelas seguintes informações Sala, Dia da Semana, Horario, Relacionamento DisciplinaHorario. Apenas o Relacionamento DisciplinaHorario pode conter valores nulos pois é a principal informação que é utilizada para o calculo de fitness. O gene pode ser representado da seguinte forma.
+
+Gene{
+	sala:{
+		id:1
+	},
+	diaSemana:1,
+	horario:{
+		id:2
+	},
+	disciplinaHorario:null
+}
+
+\subsecao{Cromossomo}
+
+	Um cromossomo é a seguencia de Genes do individuo, alguns trabalhos definem cromossomo e individuo como a mesma representação, neste trabalho o termo cromossomo se refere a segquencia de genes e o termo Indiviuo será a combinação de cromossomo e fitness. O cromossomo pode ser representado da seguinte forma:
+
+	Cromossomo{
+		0:Gene{},
+		1:Gene{},
+		2:Gene{},
+	}
+
+\subsecao{Individuo}
+
+	O termo individuo se deve a combinação da sequencia de cromossomos e a pontuação adquirida apos o calculo de fitness.
+
+\subsecao{Populacao}
+	
+	População é o conjunto de individuos
+
+\subsecao{Populacao Inicial}
+
+\subsecao{Nova População}
+
+\subsecao{Definição da função objetivo}
 Somatorio disso
 
 Para o calculo do fitness foram definidos pesos para modelagem da função, estes pesos podem ser configurados de acordo com a necessidade da alocação.
@@ -143,8 +149,8 @@ Criar a função matematica com as legendas conforme o trabalho 117.pdf
 
 Falar o numero de salas, o numero de horarios, o numero de curos o numero de colegiados o numero de periodos o numero de disciplinas para cada colegiado.......
 
+restrições 
 
-\secao{Definição das restrições}
 
 falar um pouco das restrições e enumeralas
 
@@ -167,23 +173,23 @@ Para se iniciar o calculo do fitness são verificados todos os horarios já aloc
 
 para cada gene
 
-	se tem horario alocado 
+se tem horario alocado 
 
-		horario bate
+horario bate
 
-		capacidade da turma
+capacidade da turma
 
-		turma graduacao
+turma graduacao
 
-		optativa
+optativa
 
-		iluminacao
+iluminacao
 
-		soma tudo
+soma tudo
 
-	fim se tem alocação
+fim se tem alocação
 
-	soma tudo
+soma tudo
 
 fim para cada gene
 
@@ -193,35 +199,43 @@ calculo fitness02 penaliza disciplinas com mais alocação do que se deve
 
 para cada gene 
 
-	para cada disciplina 
+para cada disciplina 
 
-	soma
+soma
 
-	fim
+fim
 
-	Calculo fitness02 -= fitnes01 x (1 - (total alocados - total necessario/ dividir pelo numero possivel de alocações))
+Calculo fitness02 -= fitnes01 x (1 - (total alocados - total necessario/ dividir pelo numero possivel de alocações))
 fim
 
 calculo fitness03 penalidade por capacidade
 
-	para cada gente
+para cada gente
 
-		se a sala tiver capacidade diferente
-		
-	fim
+se a sala tiver capacidade diferente
 
-	calculo fitness03 = fitness02 x (1 - (numero de erros /  numero de possiveis alocações )))
+fim
+
+calculo fitness03 = fitness02 x (1 - (numero de erros /  numero de possiveis alocações )))
 
 
 calculo fitness04 preferencias clara ou escura
 
-	para cada gene 
+para cada gene 
 
-		se tiver com o optativo errado 
+se tiver com o optativo errado 
 
-	fim	
+fim	
 
-	calculo fitness04 = fitness03 x (1 - (numero de erros /  numero de possiveis alocações )))
+calculo fitness04 = fitness03 x (1 - (numero de erros /  numero de possiveis alocações )))
 
 
 O fitness04 é o resultado final
+
+\subsecao{Seleçao por torneio}
+
+
+\subsecao{Operadores Geneticos}
+elitismo
+crossover
+mutacao

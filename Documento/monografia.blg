@@ -1,4 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: monografia.aux
+A level-1 auxiliary file: apresentacao.aux
+A level-1 auxiliary file: introducao.aux
 A level-1 auxiliary file: referencial.aux
 A level-1 auxiliary file: metodologia.aux
 A level-1 auxiliary file: sistema.aux
@@ -19,10 +21,13 @@ Warning--entry type for "javascript" isn't style-file defined
 --line 273 of file referencias.bib
 Warning--entry type for "angularjs" isn't style-file defined
 --line 282 of file referencias.bib
-Warning--I didn't find a database entry for "alterar"
+Warning--I didn't find a database entry for "play"
+Warning--I didn't find a database entry for "eclipse"
+Warning--I didn't find a database entry for "astah"
+Warning--I didn't find a database entry for "darwin"
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-(There were 8 warnings)
+(There were 11 warnings)

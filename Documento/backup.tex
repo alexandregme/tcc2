@@ -77,3 +77,13 @@ Exemplo de citação \cite{knuth73}.
    \includegraphics{LogoPUC.jpg}
    \\ \textbf{\footnotesize Fonte: Fonte da figura}
 \end{figure}
+
+
+
+
+A arquitetura utilizada pelo sistema MVC utiliza a comunicação via REST entre as Controllers e as Views atraves de um protocolo de comunicação no formato JSON estruturado da seguinte forma:
+
+status : Indica o código da mensagem s = sucesso, e = erro, a = um aviso.\par
+data : Apresenta todas as informações necessarias para controller.\par
+message : Mensagem para a interface. Esta mensagem é exibida para o usuário.\par
+length : Quantidade de dados retornados.\par
