@@ -4,6 +4,8 @@ Será desenvolvido um sistema que otimiza a alocação das salas facilizando a v
 
 \secao{Modelagem}
 
+Arrumar referencia.\par
+
 Segundo Booch et al. (2001) a modelagem de um diagrama de caso de uso é uma
 técnica usada para descrever e definir os requisitos funcionais de um sistema. Para sistemas
 que possuem um número elevado de funcionalidades, a construção destes diagramas visa
@@ -13,6 +15,7 @@ como facilita o próprio desenvolvimento.
 
 \subsecao{Diagramas de entidade relacionamento}
 
+Arrumar referencia.\par
 Por se tratar de uma aplicação de banco de dados, a modelagem de dados foi
 também construída. Segundo Elmasri & Navathe (2005) a modelagem conceitual é uma
 fase muito importante no planejamento de uma aplicação de um banco de dados bem
@@ -45,7 +48,7 @@ A Figura 3.4 descreve todas as funcionalidades que o usuário de perfil
 \caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
 \label{fig:figura1}
 \centering
-\includegraphics{images/diagramaComponentes.png}
+\includegraphics[scale=0.8]{images/diagramaComponentes.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
@@ -87,36 +90,30 @@ específico.
 \secao{Algoritimo Genético}
 
 
-Por se tratar de um algoritimo que é baseado na teoria da evolução descrita por dawin \cite{darwin} serão descritos cada termo através da utilização da tabela abaixo 
+O primeiro passo a ser dado para o desenvolvimento do algoritimo é o pleno conhecimento do problema e a ligação entre os termos utilizados na biologia com os itens do problema proposto anteriormente. Foram utilizadas varias fontes para o desenvolvimento do trabalho, porem foram feitas modificação para que o modelo tratado por outros autores funcionasse como necessario.\par
 
-\subsecao{Gene}
+Para o melhor entendimento dos passos tomados durante a interpretação do problema e da sua ligação com o algoritmo genetico será criado um pequeno ambiente de alocação. Este ambiente contem as seguintes propriedades, três salas, seis horarios, sete dias da semana, cinco discplinas, e 9 relacionamentos de obrigatoriedade entre discplina e horário.\par
 
-Um gene é composto pelas seguintes informações Sala, Dia da Semana, Horario, Relacionamento DisciplinaHorario. Apenas o Relacionamento DisciplinaHorario pode conter valores nulos pois é a principal informação que é utilizada para o calculo de fitness. O gene pode ser representado da seguinte forma.
-
-Gene{
-	sala:{
-		id:1
-	},
-	diaSemana:1,
-	horario:{
-		id:2
-	},
-	disciplinaHorario:null
-}
-
-\subsecao{Cromossomo}
-
-	Um cromossomo é a seguencia de Genes do individuo, alguns trabalhos definem cromossomo e individuo como a mesma representação, neste trabalho o termo cromossomo se refere a segquencia de genes e o termo Indiviuo será a combinação de cromossomo e fitness. O cromossomo pode ser representado da seguinte forma:
-
-	Cromossomo{
-		0:Gene{},
-		1:Gene{},
-		2:Gene{},
-	}
+\begin{figure}[!htb]
+\caption[Representação do ambiente]{Representação do ambiente}
+\label{fig:figura1}
+\centering
+\includegraphics{imagens/representacaoAmbiente.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
 
 \subsecao{Individuo}
 
-	O termo individuo se deve a combinação da sequencia de cromossomos e a pontuação adquirida apos o calculo de fitness.
+	Alguns trabalhos tratam cromossomos e inidviduos pela mesma representação biologica, neste caso cromosso neste trabalho o termo cromossomo se refere a segquencia de genes e o termo Indiviuo será a combinação de cromossomo e fitness.\par
+
+	O termo Gene representa uma combinação de quatro variaveis Sala, Dia da Semana, Horario, e o relacionamento entre Disciplina Horario. As três primeiras variaveis são fixas e não podem ser nulas pois o conjunto de Genes forma um cromossomo que é a alocação de todas as discplinas em horarios diferentes.\par
+
+	Um Gene com o relacionamento Disciplina Horario igual a nulo, representa um horario vago, como exemplo podemos descrever a seguinte situação, {sala:"3001", diaDaSemana:"1", horario:"3", disciplinaHorario:"null"} mostra que nos determinados parametros não existe nenhuma sala alocada.\par
+
+	Um cromossomo é uma seguencia de genes o que representa uma alocação completa que engloba todas as salas, todos os dias da semana, e todos os horarios disponiveis para alocação de disciplinas. Uma vez que este valor não é variavel temos um cromossomo com um valor fixo, que serão inseridos os horarios disponiveis para alocação das disciplinas.\par
+
+
+	Por fim individuo é a combinação do cromossom e a poutnação adquirida após a execuação do metodo de calculo de fitness.
 
 \subsecao{Populacao}
 	
