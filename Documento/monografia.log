@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  17 OCT 2013 12:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  17 OCT 2013 13:59
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,7 +431,14 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux
+
+LaTeX Warning: Label `fig:figura8' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura8' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -568,4 +575,50 @@ Package pdftex.def Info: imagens/representacaoGene.png used on input line 106.
 File: imagens/representacaoCromossomo.png Graphic file (type png)
 
 <use imagens/representacaoCromossomo.png>
-Package pdftex.def Info: imagens/representacaoCromossomo.png used on input lin
+Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 117.
+(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
+ <imagens/representacaoIndividuo.png, id=23, 480.29437pt x 63.23625pt>
+File: imagens/representacaoIndividuo.png Graphic file (type png)
+ <use imagens/representacaoIndividuo.png>
+Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 127.
+(pdftex.def)             Requested size: 384.23601pt x 50.58905pt.
+ [4 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoAmbiente.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Docum
+ento/imagens/representacaoCromossomo.png>]
+<imagens/fluxoNovaPopulacao.png, id=27, 621.82312pt x 864.22874pt>
+File: imagens/fluxoNovaPopulacao.png Graphic file (type png)
+ <use imagens/fluxoNovaPopulacao.png>
+Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 143.
+(pdftex.def)             Requested size: 435.27321pt x 604.956pt.
+ <imagens/representacaoMutacao.png, id=28, 484.81125pt x 158.09062pt>
+File: imagens/representacaoMutacao.png Graphic file (type png)
+
+<use imagens/representacaoMutacao.png>
+Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 167.
+(pdftex.def)             Requested size: 339.36555pt x 110.66267pt.
+ [5 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoIndividuo.png>] [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoNovaPopulacao.png>] [7 <E:/TI/Desenvolvimento/GitHub/
+tcc2/Documento/imagens/representacaoMutacao.png>] <imagens/fluxoAlgoritimo.png, id=40, 683.55376pt x 672.26157pt>
+File: imagens/fluxoAlgoritimo.png Graphic file (type png)
+ <use imagens/fluxoAlgoritimo.png>
+Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 287.
+(pdftex.def)             Requested size: 341.77605pt x 336.12996pt.
+ [8] [9 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoAlgoritimo.png>] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4272 strings out of 493921
+ 63209 string characters out of 3144864
+ 129610 words of memory out of 3000000
+ 7488 multiletter control sequences out of 15000+200000
+ 11503 words of font info for 26 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 43i,7n,43p,871b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb
+8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (9 pages, 469197 bytes).
+PDF statistics:
+ 63 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
