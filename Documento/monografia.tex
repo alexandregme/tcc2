@@ -14,7 +14,7 @@
 
 \capitulo{SISTEMA DESENVOLVIDO}
 
-Será desenvolvido um sistema que otimiza a alocação das salas facilizando a vida do gerente. Por se tratar de um problema especifico fica dificil encontrar tecnlogias disponiveis para a resolução do problema sendo assim necessario o atendimento de um sistema que atenda todas as necessisdades exigidas.
+Será desenvolvido um sistema que otimiza a alocação das salas facilizando a vida do gerente. Por se tratar de um problema especifico fica dificil encontrar tecnologias disponiveis para a resolução do problema sendo assim necessario o desenvolvimento de um sistema que atenda todas as necessisdades exigidas.
 
 \secao{Modelagem}
 
@@ -46,10 +46,9 @@ Na Figura XXX tem-se o diagrama para o esquema do banco de dados relacional do s
 Breve explicação de cada tabela? \par
 
 
-
 \begin{figure}[!htb]
 \caption[Diagrama de Entidade Relacionamento]{Diagrama de Entidade Relacionamento}
-\label{fig:figura1}
+\label{fig:figura2}
 \centering
 \includegraphics[scale=0.55]{imagens/diagramaEntidadeRelacionamento.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
@@ -71,7 +70,7 @@ específico.
 
 \begin{figure}[!htb]
 \caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
-\label{fig:figura1}
+\label{fig:figura3}
 \centering
 \includegraphics{images/diagramaComponentes.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
@@ -86,7 +85,7 @@ Para o melhor entendimento dos passos tomados durante a interpretação do probl
 
 \begin{figure}[!htb]
 \caption[Representação do ambiente]{Representação do ambiente}
-\label{fig:figura1}
+\label{fig:figura4}
 \centering
 \includegraphics[scale=0.8]{imagens/representacaoAmbiente.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
@@ -102,7 +101,7 @@ Um Gene com o relacionamento Disciplina Horario igual a nulo, representa um hora
 
 \begin{figure}[!htb]
 \caption[Representação Gene]{Representação Gene}
-\label{fig:figura1}
+\label{fig:figura5}
 \centering
 \includegraphics[scale=0.7]{imagens/representacaoGene.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
@@ -113,30 +112,55 @@ Um cromossomo é uma seguencia de genes o que representa uma alocação completa
 
 \begin{figure}[!htb]
 \caption[Representação Cromossomo]{Representação Cromossomo}
-\label{fig:figura1}
+\label{fig:figura6}
 \centering
 \includegraphics[scale=0.8]{imagens/representacaoCromossomo.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-Por fim individuo é a combinação do cromossomo e a pontuação adquirida após a execuação do metodo de calculo de fitness.
+Por fim individuo é a combinação do cromossomo e a pontuação adquirida após a execuação do metodo de calculo de fitness.\par
+
+\begin{figure}[!htb]
+\caption[Representação Individuo]{Representação Individuo}
+\label{fig:figura7}
+\centering
+\includegraphics[scale=0.8]{imagens/representacaoIndividuo.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
 
 \subsecao{Populacao}
 
-População é o conjunto de individuos
+População é o conjunto de individuos Explicar melhor fazer uma representação grafica.\par
 
-Populacao Inicial  escrever como funciona o random
+Populacao Inicial  escrever como funciona o random fazer um fluxograma que mostra a criação da população inicial\par
 
-Nova População
+Nova População fazer um fluxograma que mostra a ordem dos acontecimentos em uma nova população \par
 
 Melhor
 
 \subsecao{Operadores Geneticos}
-elitismo
-crossover
-mutacao
+
+Este trabalho utiliza elitismo como operador genetico ao se inciar uma nova população, vinte porcento dos melhors individuos são escolhidos para compar a nova população. O elitismo é calculdo atravez da função objetiva criada para o problema especifico do trabalho.\par
+
+Para selecionar os inviduos para realizar o crossover é utilizado metodo de seleção por torneio, são escolhidos três Individuos da população anterior, e destes três são escolhidos os dois com maior pountuação de fitness, os dois Individuos selecionados são enviados para o crossover.\par
+
+Crossover é o cruzamento dos Individuos selecionados pela seleção torneio. Explicar com figuras. apos o cruzamento dos individuo os dois filhos gerados são inseridos na nova população.\par
+
+Mutacao é a inversão genetica dos genes de um Individuo escolhido randomicamente da população anterior, apos a realização da mutação genetica o individuo é inserido na nova população.\par
+
+Primeiramente são escolhidos dois Genes do cromossomo, apos a escolha randomica dos itens a serem trocados, é feita a troca dos Genes e retornado um Individuo que tem a composição genetica apos a alteração, Apos a mutação este Individuo recebe uma nova nota de fitness de acordo com a sua nova sequencia de Genes e sua adaptação no ambiente, está nota pode ser maior ou menor do que a anterior.\par
+
+\begin{figure}[!htb]
+\caption[Representação Mutação]{Representação Mutação}
+\label{fig:figura8}
+\centering
+\includegraphics[scale=0.7]{imagens/representacaoMutacao.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
 
 \subsecao{Definição da função objetivo}
+
 Somatorio disso
 
 Para o calculo do fitness foram definidos pesos para modelagem da função, estes pesos podem ser configurados de acordo com a necessidade da alocação.
@@ -242,10 +266,17 @@ calculo fitness04 = fitness03 x (1 - (numero de erros /  numero de possiveis alo
 
 O fitness04 é o resultado final
 
-\subsecao{Seleçao por torneio}
+\subsecao{Fluxo do algoritimo}
 
+O fluxo do algorimo conforme a imagem XX é iniciado pela criação da população inicial, para cada interação do algoritimo é verificado se a população contem o resultado e se o algoritimo não atingiu o numero de gerações pré defindas. Se as duas condições forem falsas o algoritimo cria uma nova População de acordo coma figura XXX
 
-
+\begin{figure}[!htb]
+\caption[Fluxo Algoritimo]{Fluxo Algoritimo}
+\label{fig:figura8}
+\centering
+\includegraphics[scale=0.5]{imagens/fluxoAlgoritimo.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
 
 %\include{conclusao}
 

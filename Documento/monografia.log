@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  16 OCT 2013 17:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  17 OCT 2013 12:49
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,23 +431,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux
-
-LaTeX Warning: Label `fig:figura1' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura1' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura1' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura1' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura1' multiply defined.
-
-)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -546,19 +530,19 @@ might try typing `S' now just to see what is salvageable.
 <imagens/diagramaEntidadeRelacionamento.png, id=11, 852.93657pt x 745.28438pt>
 File: imagens/diagramaEntidadeRelacionamento.png Graphic file (type png)
  <use imagens/diagramaEntidadeRelacionamento.png>
-Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on input line 54.
+Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on input line 53.
 (pdftex.def)             Requested size: 469.11656pt x 409.90767pt.
 
-Overfull \hbox (13.87245pt too wide) in paragraph at lines 54--55
+Overfull \hbox (13.87245pt too wide) in paragraph at lines 53--54
  [][] 
  []
 
 [2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaEntidadeRelacionamento.png>]
 
-LaTeX Warning: File `images/diagramaComponentes.png' not found on input line 76.
+LaTeX Warning: File `images/diagramaComponentes.png' not found on input line 75.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:76: Package pdftex.def Error: File `images/diagramaComponentes.png' not found.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:75: Package pdftex.def Error: File `images/diagramaComponentes.png' not found.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help
@@ -566,45 +550,22 @@ Using draft setting for this image.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 76.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 75.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) <imagens/representacaoAmbiente.png, id=16, 495.35063pt x 300.3722pt>
 File: imagens/representacaoAmbiente.png Graphic file (type png)
  <use imagens/representacaoAmbiente.png>
-Package pdftex.def Info: imagens/representacaoAmbiente.png used on input line 91.
+Package pdftex.def Info: imagens/representacaoAmbiente.png used on input line 90.
 (pdftex.def)             Requested size: 396.28105pt x 240.29807pt.
 
 <imagens/representacaoGene.png, id=17, 310.15875pt x 137.7647pt>
 File: imagens/representacaoGene.png Graphic file (type png)
  <use imagens/representacaoGene.png>
-Package pdftex.def Info: imagens/representacaoGene.png used on input line 107.
+Package pdftex.def Info: imagens/representacaoGene.png used on input line 106.
 (pdftex.def)             Requested size: 217.10963pt x 96.43462pt.
  [3] <imagens/representacaoCromossomo.png, id=22, 426.84468pt x 45.92157pt>
 File: imagens/representacaoCromossomo.png Graphic file (type png)
 
 <use imagens/representacaoCromossomo.png>
-Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 118.
-(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
- [4 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoAmbiente.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Docum
-ento/imagens/representacaoCromossomo.png>] [5] [6] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
-Here is how much of TeX's memory you used:
- 4245 strings out of 493921
- 62459 string characters out of 3144864
- 129553 words of memory out of 3000000
- 7465 multiletter control sequences out of 15000+200000
- 11503 words of font info for 26 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 43i,7n,43p,871b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb
-8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (6 pages, 292839 bytes).
-PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+Package pdftex.def Info: imagens/representacaoCromossomo.png used on input lin
