@@ -36,7 +36,6 @@ A Figura XX descreve todas as funcionalidades que o sistema possui, essas funcio
 
 \subsecao{Diagrama de Entidade Relacionamento}
 
-
 Arrumar referencia \par
 
 Por se tratar de uma aplicação de banco de dados, a modelagem de dados foi também construída. Segundo Elmasri & Navathe (2005) a modelagem conceitual é uma fase muito importante no planejamento de uma aplicação de um banco de dados bem sucedida. Ainda segundo Elmasri & Navathe (2005), o modelo relacional representa o banco de dados como uma coleção de relações. Informalmente, cada relação se parece com uma tabela de valores.
@@ -69,10 +68,10 @@ sistema possui mais de um diagrama, pois nem todas se encaixam em um diagrama
 específico.
 
 \begin{figure}[!htb]
-\caption[Diagrama de componetes do sistema xxx]{Diagrama de componetes do sistema xxx}
+\caption[Diagrama de Classe]{Diagrama de Classe}
 \label{fig:figura3}
 \centering
-\includegraphics{images/diagramaComponentes.png}
+\includegraphics[scale=0.6]{imagens/diagramaClasse.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
@@ -87,9 +86,11 @@ Para o melhor entendimento dos passos tomados durante a interpretação do probl
 \caption[Representação do ambiente]{Representação do ambiente}
 \label{fig:figura4}
 \centering
-\includegraphics[scale=0.8]{imagens/representacaoAmbiente.png}
+\includegraphics[scale=0.9]{imagens/representacaoAmbiente.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
+
+
 
 \subsecao{Individuo}
 
@@ -130,31 +131,28 @@ Por fim individuo é a combinação do cromossomo e a pontuação adquirida apó
 
 \subsecao{Populacao}
 
-População é o conjunto de individuos Explicar melhor fazer uma representação grafica.\par
+População é o conjunto de Individuos, a população tem um numero fixo de Individuos, e uma porcentagem para que os operadores geneticos possam ser executados. Os Melhores Individuos de uma População são indicados pelas maiores pontuações de fitness de cada Individuo\par
 
-Populacao Inicial  escrever como funciona o random fazer um fluxograma que mostra a criação da população inicial\par
+Populacao Inicial cria Individuos randomicos até que o número da população maxima seja atingida. Para a criação de cada individuo são utilizados operadores randomicos para adicionar os relacionamento DisciplinaHorario em cada um dos Gens que estão previamente criados como Nulo. Uma vez que o Indiviuo inicial é populado a quandiadde de Genes com relacionamento entre as tabelas DisciplinaHorario não se modificaram para ser manter uma itnegridade dos dados que serão utilizados para o resultado final do algoritimo.\par
 
-Nova População fazer um fluxograma que mostra a ordem dos acontecimentos em uma nova população \par
+Nova População é criada a partir de uma População criada anteriormente, se o operador genetico elitismo estiver como valor verdadeiro, inciamos está nova população com 20\% dos melhores Individuos da População anterior. Para cada interação do algoritimo até se completar o número total de Individuos para aquela nova População, podemos ter duas operaçãoes ocorrendo, Mutação e Crossover. Para que estas operações genéticas aconteção são utilizados valores randomicos para serem comparados com os valores dos parametros utilizados para Mutação e Croosover.Em cada interação são selecionados por torneio os pais para o crossover, se der verdadeira a condiação para se executar o crossover os pais descartados e os filhos gerados a partir dos Gens dos pais serão adicionados na nova População. Caso a condição de Mutação seja verdadeira um dos itens selicionados no torneio sofre a mutação genetica, O Individuo antes da mutação genetica é descartado e o Individuo Mutado é adicionado na nova população.
+\par
 
 \begin{figure}[!htb]
 \caption[Fluxo Nova População]{Fluxo Nova População}
 \label{fig:figura8}
 \centering
-\includegraphics[scale=0.7]{imagens/fluxoNovaPopulacao.png}
+\includegraphics[scale=0.5]{imagens/fluxoNovaPopulacao.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-
-
-Melhor
+Melhor Individuo é aquele que contem o resultado o o que tiver a melhor pontuação ao se passar o numero de gerações pré definidas.
 
 \subsecao{Operadores Geneticos}
 
 Este trabalho utiliza elitismo como operador genetico ao se inciar uma nova população, vinte porcento dos melhors individuos são escolhidos para compar a nova população. O elitismo é calculdo atravez da função objetiva criada para o problema especifico do trabalho.\par
 
 Para selecionar os inviduos para realizar o crossover é utilizado metodo de seleção por torneio, são escolhidos três Individuos da população anterior, e destes três são escolhidos os dois com maior pountuação de fitness, os dois Individuos selecionados são enviados para o crossover.\par
-
-Crossover é o cruzamento dos Individuos selecionados pela seleção torneio. Explicar com figuras. apos o cruzamento dos individuo os dois filhos gerados são inseridos na nova população.\par
 
 Mutacao é a inversão genetica dos genes de um Individuo escolhido randomicamente da população anterior, apos a realização da mutação genetica o individuo é inserido na nova população.\par
 
@@ -167,6 +165,11 @@ Primeiramente são escolhidos dois Genes do cromossomo, apos a escolha randomica
 \includegraphics[scale=0.7]{imagens/representacaoMutacao.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
+
+Crossover é o cruzamento dos Individuos selecionados pela seleção torneio. Explicar com figuras. apos o cruzamento dos individuo os dois filhos gerados são inseridos na nova população.\par
+
+
+
 
 
 \subsecao{Definição da função objetivo}
@@ -284,9 +287,13 @@ O fluxo do algorimo conforme a imagem XX é iniciado pela criação da populaç�
 \caption[Fluxo Algoritimo]{Fluxo Algoritimo}
 \label{fig:figura8}
 \centering
-\includegraphics[scale=0.5]{imagens/fluxoAlgoritimo.png}
+\includegraphics[scale=0.7]{imagens/fluxoAlgoritimo.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
+
+\subsecao{Parametros Algoritimo}
+
+\secao{Arquitetura e Telas do sistema}
 
 %\include{conclusao}
 
