@@ -74,3 +74,6 @@ Palavras em ingles sem italico
 Corretor ortografico.
 Imagens com o numero certo
 Siglas no trabalho inteiro
+alterar a mensagem do cromossomo.
+rever as figuras.
+explicar os anexos no topico 1.4

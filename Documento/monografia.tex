@@ -25,7 +25,7 @@ A Figura XX descreve todas as funcionalidades que o sistema possui, essas funcio
 
 As funcionalidades controle de turnos, controle de horários, controle de prédios, controle de salas, controle de cursos, controle de colegiados, controle de períodos e controle de disciplinas são disponibilizadas através de módulos CRUD para que o responsável tenha total controle sobre o que será alocado, onde e como.\par
 
-Já as funcionalidades alocação de horários e geração de relatórios, são rotinas executadas pelo "Sistema". A funcionalidade alocação de horários é uma rotina que utiliza conceitos de algoritmo genético para encontrar a melhor solução do problema e a funcionalidade geração de relatórios mostra para o "Gerente" o melhor resultado de alocação encontrado pelo algoritmo.\par
+Já as funcionalidades alocação de horários e geração de relatórios, são rotinas executadas pelo "Sistema". A funcionalidade alocação de horários é uma rotina que utiliza conceitos de algorítimo genético para encontrar a melhor solução do problema e a funcionalidade geração de relatórios mostra para o "Gerente" o melhor resultado de alocação encontrado pelo algorítimo.\par
 
 \begin{figure}[!htb]
 \caption[Diagrama de Caso de Uso]{Diagrama de Caso de Uso}
@@ -43,9 +43,9 @@ As tabelas curso, colegiado, período, disciplina, sala, prédio, turno, horári
 
 A tabela relacionamento\_disciplina\_horário, salva as obrigatoriedades dos horários das disciplinas uma vez que todos os horários são montados pelos colegiados e não pelo responsável pela alocação das disciplinas nas salas.\par
 
-A tabela alocação contem o relacionamento de disciplina, horário e sala o que corresponde a melhor alocação encontrada pelo algoritmo. O item disciplina pode ter o seu valor como nulo o que significa que em um especifico horário e em uma determinada sala não existe disciplina alocada.\par
+A tabela alocação contem o relacionamento de disciplina, horário e sala o que corresponde a melhor alocação encontrada pelo algorítimo. O item disciplina pode ter o seu valor como nulo o que significa que em um especifico horário e em uma determinada sala não existe disciplina alocada.\par
 
-A tabela parâmetro é utilizada apenas para guardar os últimos parâmetros utilizados na execução do algoritmo genético.\par
+A tabela parâmetro é utilizada apenas para guardar os últimos parâmetros utilizados na execução do algorítimo genético.\par
 
 \begin{figure}[!htb]
 \caption[Diagrama de Entidade Relacionamento]{Diagrama de Entidade Relacionamento}
@@ -57,7 +57,7 @@ A tabela parâmetro é utilizada apenas para guardar os últimos parâmetros uti
 
 \subsecao{Diagramas de classe}
 
-Este diagrama é das classes do algoritmo genético, as classes do sistema em geral não serão abordados. Quando terminar o codigo revisar e explicar.\par
+Este diagrama é das classes do algorítimo genético, as classes do sistema em geral não serão abordados. Quando terminar o codigo revisar e explicar.\par
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mauris at velit varius aliquet. Nulla at risus vehicula, tempus orci sagittis, molestie nibh. Fusce sodales sollicitudin viverra. Aliquam erat volutpat. Nullam nec odio mi. Suspendisse vel mauris felis. In mi diam, auctor vel feugiat ut, pulvinar ac ipsum. In a convallis arcu. Integer a augue accue rutrum mauris. Phasellus id massa a lorem semper placerat eget eu urna.\par
 
 \begin{figure}[!htb]
@@ -68,13 +68,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mauris
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-\secao{Algoritmo Genético}
+\secao{Algorítimo Genético}
 
-Após a execução da modelagem do sistema com pleno conhecimento do problema e o levantamento bibliográfico sobre algoritmos genéticos, foi feito o relacionamento do problema com os termos da biologia. Foram encontradas varias fontes que agregaram valor para o desenvolvimento do trabalho, porem algumas modificação foram feitas para que o modelo tratado por outros autores funcionasse adequadamente para a resolução do problema proposto para este trabalho. A seguir serão apresentados os itens da biologia utilizados no desenvolvimento do algoritmo juntamente com sua ligação com o problema.\par
+Após a execução da modelagem do sistema com pleno conhecimento do problema e o levantamento bibliográfico sobre algorítimos genéticos, foi feito o relacionamento do problema com os termos da biologia. Foram encontradas varias fontes que agregaram valor para o desenvolvimento do trabalho, porem algumas modificação foram feitas para que o modelo tratado por outros autores funcionasse adequadamente para a resolução do problema proposto para este trabalho. A seguir serão apresentados os itens da biologia utilizados no desenvolvimento do algorítimo juntamente com sua ligação com o problema.\par
 
 \subsecao{Indivíduo}
 
-Alguns trabalhos tratam os termos indivíduo e cromossomo como a mesma representação biológica, neste trabalho o termo indivíduo é composto por cromossomo juntamente com a pontuação adquirida após a execução do método de calculo de fitness, já o termo cromossomo se refere a combinação dos genes do indivíduo.\par
+Alguns trabalhos tratam os termos indivíduo e cromossomo como a mesma representação biológica, neste trabalho o termo indivíduo é composto pelo cromossomo juntamente com a pontuação adquirida após a execução do método de calculo de fitness, já o termo cromossomo se refere a combinação dos genes do indivíduo, a figura XX demonstra a representação de um indivíduo.\par
 
 \begin{figure}[!htb]
 \caption[Representação Individuo]{Representação Individuo}
@@ -84,21 +84,18 @@ Alguns trabalhos tratam os termos indivíduo e cromossomo como a mesma represent
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-Um cromossomo é uma sequência de genes o que representa uma alocação completa, que engloba todas as salas, todos os dias da semana, e todos os horários disponíveis
-para alocação de disciplinas. Uma vez que este valor não é variável temos um cromossomo com um valor fixo, que serão inseridos os horarios disponiveis para alocação das disciplinas. O tamanho do cromossomo é medido pela seguinte fórmula (Número de Salas * Número de Horários * Número de dias da semana) neste ambiente o valor é igual a 210 Genes que compoe o cromossomo. A representação binaria do cromossomo se deve ao item relacionamento do Gene estar preenchido ou não 1 para preenchido e zero para nulo. A representação gráfica do cromossomo apenas id do relacionamento para uma melhor visualização.\par
-
+Um cromossomo é uma sequência de genes, neste trabalho esta sequência tem um tamanho fixo e pode ser medido pela seguinte formula (número de Salas * número de Horários * número de dias da semana). Inicialmente o individuo contem todos as variáveis relacionamentos de obrigatoriedade nulas, estas variáveis serão preenchidas randomicamente na criação da população inicial que em breve será explicada. O cromossomo do indivíduo preenchido com os relacionamentos de obrigatoriedades representa uma alocação, está alocação é medida pela sua pontuação de fitness, podendo ser ou não o resultado do problema. Os valores utilizados na representação do cromossomo na figura XX são os ID's do relacionamento de obrigatoriedade entre horário e disciplina, em caso de horário vago em um determinado gene esta variável terá o valor nulo.\par
 
 \begin{figure}[!htb]
 \caption[Representação Cromossomo]{Representação Cromossomo}
 \label{fig:figura6}
 \centering
-\includegraphics[scale=0.8]{imagens/representacaoCromossomo.png}
+\includegraphics[scale=0.9]{imagens/representacaoCromossomo.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-
 O termo gene representado pela figura XX possui uma combinação de quatro variáveis sala, dia da semana, horário e o relacionamento de obrigatoriedade 
-"disciplina horário". As três primeiras variáveis são fixas e não podem ser nulas ou alteradas pelo fato de que o conjunto de genes formam um cromossomo que representa uma alocação, que serão melhores explicados em breve.\par
+"disciplina horário". As variáveis sala, horário e dia da semana são fixas, não podem ser nulas uma vez que todas as combinações possíveis destas três variáveis formam um cromossomo que tem um tamanho fixo para todos os indivíduos. \par
 
 Um gene com o relacionamento "disciplina horário" igual a nulo, representa um horário vago para aquela combinação especifica de sala, horário e dia da semana.\par
 
@@ -110,28 +107,30 @@ Um gene com o relacionamento "disciplina horário" igual a nulo, representa um h
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
+O fitness do indivíduo é calculo através da função objetivo que será abordada em outro tópico brevemente explicando se trada de um valor que vai de 0 a 100 onde 100 é a pontuação máxima de do indivíduo está nota é alcançada quando todos os requisitos de alocação desejados foram atendidos.
 
 \subsecao{População}
 
-População é o conjunto de Individuos, a população tem um numero fixo de Individuos, e uma porcentagem para que os operadores geneticos possam ser executados. Os Melhores Individuos de uma População são indicados pelas maiores pontuações de fitness de cada Individuo\par
+Uma população, quando relacionada aos termos genéticos se trata de um conjunto de indivíduos, também representa uma interação do algorítimo genético, ou seja uma geração.A manipulação da população e de suas propriedades é feita através de parâmetros enviados antes da execução do algorítimo, estes parâmetros são elitismo, taxa de crossover, taxa de mutação, tamanho da população e número máximo de gerações.
 
-População Inicial cria Individuos randomicos até que o número da população maxima seja atingida. Para a criação de cada individuo são utilizados operadores randomicos para adicionar os relacionamento DisciplinaHorario em cada um dos Gens que estão previamente criados como Nulo. Uma vez que o Indiviuo inicial é populado a quandiadde de Genes com relacionamento entre as tabelas DisciplinaHorario não se modificaram para ser manter uma itnegridade dos dados que serão utilizados para o resultado final do algoritimo.\par
+De acordo com os parâmetros passados é criada a população inicial. Para cada indivíduo criado é utilizado um método para inserir randomicamente todos os registros de relacionamento de obrigatoriedade entre disciplina e horário em cada um dos genes que previamente foram criados como nulo, estes indivíduos são criados até a população atinga o tamanho da população que deve ser igual ao parâmetro tamanho da população.\par
 
-Nova População é criada a partir de uma População criada anteriormente, se o operador genetico elitismo estiver como valor verdadeiro, inciamos está nova população com 20\% dos melhores Individuos da População anterior. Para cada interação do algoritimo até se completar o número total de Individuos para aquela nova População, podemos ter duas operaçãoes ocorrendo, Mutação e Crossover. Para que estas operações genéticas aconteção são utilizados valores randomicos para serem comparados com os valores dos parametros utilizados para Mutação e Croosover.Em cada interação são selecionados por torneio os pais para o crossover, se der verdadeira a condiação para se executar o crossover os pais descartados e os filhos gerados a partir dos Gens dos pais serão adicionados na nova População. Caso a condição de Mutação seja verdadeira um dos itens selicionados no torneio sofre a mutação genetica, O Individuo antes da mutação genetica é descartado e o Individuo Mutado é adicionado na nova população.\par
+Para cada geração é criada uma nova população a partir da população criada na geração anterior, se o operador genético elitismo estiver como valor verdadeiro, iniciamos está nova população com 20\% dos melhores indivíduos da população anterior, os melhores indivíduos de uma População são indicados pelas maiores pontuações de fitness de da população anterior.\par
+
+Durante a criação da nova população podemos ter duas operações ocorrendo mutação e crossover, para a execução destes operadores genéticos são utilizadas porcentagens enviadas pelos parâmetros do algorítimo. Para que estas operações genéticas aconteçam são utilizados valores randomicos para serem comparados com as taxas de mutação e crossover. Em cada interação da criação desta nova população são selecionados por torneio os pais que serão utilizados no crossover, se a condição da taxa de execução for verdadeira os pais serão descartados e os filhos gerados a partir dos genes dos pais, serão adicionados na nova população, em caso de falso os pais serão adicionados na nova população.\par
+Para se utilizar a operação de mutação novamente é utilizado outro valor randominco se a condição for verdadeira um indivíduo da população anterior é selecionado e sofrerá a mutação genética, o individuo antes da mutação genética é descartado e o novo indivíduo que sofreu a mutação é adicionado na nova população. O fluxo de uma nova população é descrito na figura XX.\par
 
 \begin{figure}[!htb]
 \caption[Fluxo Nova População]{Fluxo Nova População}
 \label{fig:figura8}
 \centering
-\includegraphics[scale=0.5]{imagens/fluxoNovaPopulacao.png}
+\includegraphics[scale=0.7]{imagens/fluxoNovaPopulacao.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-Melhor Individuo é aquele que contem o resultado o o que tiver a melhor pontuação ao se passar o numero de gerações pré definidas.
-
 \subsecao{Operadores genéticos}
 
-Este trabalho utiliza elitismo como operador genético ao se inciar uma nova população, vinte porcento dos melhors individuos são escolhidos para compar a nova população. O elitismo é calculdo atravez da função objetiva criada para o problema especifico do trabalho.\par
+Este trabalho utiliza elitismo como operador genético ao se inciar uma nova população, vinte porcento dos melhores indivíduos são escolhidos para compor a nova população.O elitismo é calculdo atravez da função objetiva criada para o problema especifico do trabalho.\par
 
 Para selecionar os inviduos para realizar o crossover é utilizado metodo de seleção por torneio, são escolhidos três Individuos da população anterior, e destes três são escolhidos os dois com maior pountuação de fitness, os dois Individuos selecionados são enviados para o crossover.\par
 
@@ -147,11 +146,7 @@ Primeiramente são escolhidos dois Genes do cromossomo, apos a escolha randomica
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-Crossover é o cruzamento dos Individuos selecionados pela seleção torneio. Explicar com figuras. apos o cruzamento dos individuo os dois filhos gerados são inseridos na nova população.\par
-
-
-
-
+Crossover é o cruzamento dos individuos selecionados pela seleção torneio. Explicar com figuras. apos o cruzamento dos individuo os dois filhos gerados são inseridos na nova população.\par
 
 \subsecao{Definição da função objetivo}
 
@@ -262,7 +257,9 @@ O fitness04 é o resultado final
 
 \subsecao{Fluxo do algoritimo}
 
-O fluxo do algorimo conforme a imagem XX é iniciado pela criação da população inicial, para cada interação do algoritimo é verificado se a população contem o resultado e se o algoritimo não atingiu o numero de gerações pré defindas. Se as duas condições forem falsas o algoritimo cria uma nova População de acordo coma figura XXX
+parametros Algoritimo
+
+O fluxo do algorimo conforme a imagem XX é iniciado pela criação da população inicial, para cada interação do algoritimo é verificado se a população contem o resultado e se o algoritimo não atingiu o numero de gerações pré defindas. Se as duas condições forem falsas o algoritimo cria uma nova População de acordo coma figura XX
 
 \begin{figure}[!htb]
 \caption[Fluxo Algoritimo]{Fluxo Algoritimo}
@@ -272,9 +269,7 @@ O fluxo do algorimo conforme a imagem XX é iniciado pela criação da populaç�
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-\subsecao{Parametros Algoritimo}
 
-\secao{Arquitetura e Telas do sistema}
 
 %\include{conclusao}
 

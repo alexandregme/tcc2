@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  21 OCT 2013 14:23
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  21 OCT 2013 17:50
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -541,34 +541,37 @@ Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 8
 File: imagens/representacaoCromossomo.png Graphic file (type png)
 
 <use imagens/representacaoCromossomo.png>
-Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 95.
-(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
- <imagens/representacaoGene.png, id=23, 310.15875pt x 137.7647pt>
+Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 93.
+(pdftex.def)             Requested size: 384.15666pt x 41.32901pt.
+ [4 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoIndividuo.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoCromossomo.png>] <imagens/representacaoGene.png, 
+id=26, 310.15875pt x 137.7647pt>
 File: imagens/representacaoGene.png Graphic file (type png)
  <use imagens/representacaoGene.png>
-Package pdftex.def Info: imagens/representacaoGene.png used on input line 109.
+Package pdftex.def Info: imagens/representacaoGene.png used on input line 106.
 (pdftex.def)             Requested size: 217.10963pt x 96.43462pt.
- [4 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoIndividuo.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoCromossomo.png>] <imagens/fluxoNovaPopulacao.png,
- id=27, 621.82312pt x 864.22874pt>
+ <imagens/fluxoNovaPopulacao.png, id=27, 621.82312pt x 864.22874pt>
 File: imagens/fluxoNovaPopulacao.png Graphic file (type png)
 
 <use imagens/fluxoNovaPopulacao.png>
-Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 126.
-(pdftex.def)             Requested size: 310.9108pt x 432.11331pt.
- [5 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png>] <imagens/representacaoMutacao.png, id=31, 484.81125pt x 158.09062pt>
-File: imagens/representacaoMutacao.png Graphic file (type png)
+Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 127.
+(pdftex.def)             Requested size: 435.27321pt x 604.956pt.
+ [5 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png>]
+Overfull \vbox (21.95781pt too high) has occurred while \output is active []
 
-<use imagens/representacaoMutacao.png>
-Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 146.
+ [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoNovaPopulacao.png>]
+<imagens/representacaoMutacao.png, id=35, 484.81125pt x 158.09062pt>
+File: imagens/representacaoMutacao.png Graphic file (type png)
+ <use imagens/representacaoMutacao.png>
+Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 145.
 (pdftex.def)             Requested size: 339.36555pt x 110.66267pt.
- [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoNovaPopulacao.png>] [7 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoMutacao.png>] <imagens/fluxoAlgoritimo.png, id=40
-, 683.55376pt x 672.26157pt>
+ [7 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoMutacao.png>]
+<imagens/fluxoAlgoritimo.png, id=40, 683.55376pt x 672.26157pt>
 File: imagens/fluxoAlgoritimo.png Graphic file (type png)
  <use imagens/fluxoAlgoritimo.png>
-Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 271.
+Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 268.
 (pdftex.def)             Requested size: 478.48438pt x 470.57988pt.
 
-Overfull \hbox (23.24026pt too wide) in paragraph at lines 271--272
+Overfull \hbox (23.24026pt too wide) in paragraph at lines 268--269
  [][] 
  []
 
@@ -580,14 +583,14 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  4239 strings out of 493921
  62702 string characters out of 3144864
- 130601 words of memory out of 3000000
+ 132601 words of memory out of 3000000
  7462 multiletter control sequences out of 15000+200000
  10988 words of font info for 24 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,7n,43p,1122b,305s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,7n,43p,932b,305s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (9 pages, 611503 bytes).
+Output written on monografia.pdf (9 pages, 612535 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
