@@ -66,3 +66,11 @@ Ailtinho,
 RELATORIOS==================================
 
 por sala, por andar, por iluminação por ativo.
+
+
+Correções.
+
+Palavras em ingles sem italico
+Corretor ortografico.
+Imagens com o numero certo
+Siglas no trabalho inteiro

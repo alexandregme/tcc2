@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  17 OCT 2013 16:26
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  21 OCT 2013 14:23
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -510,107 +510,86 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 <imagens/diagramaCasoUso.png, id=1, 702.37407pt x 539.01375pt>
 File: imagens/diagramaCasoUso.png Graphic file (type png)
  <use imagens/diagramaCasoUso.png>
-Package pdftex.def Info: imagens/diagramaCasoUso.png used on input line 33.
-(pdftex.def)             Requested size: 351.18617pt x 269.50621pt.
+Package pdftex.def Info: imagens/diagramaCasoUso.png used on input line 34.
+(pdftex.def)             Requested size: 280.94466pt x 215.60167pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
  [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
- <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaCasoUso.png>]
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:41: Misplaced alignment tab character &
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:41: Misplaced alignment tab character &
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-<imagens/diagramaEntidadeRelacionamento.png, id=11, 852.93657pt x 745.28438pt>
+ <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaCasoUso.png>] <imagens/diagramaEntidadeRelacionamento.png, id=11, 852.93657pt x 745.28438pt>
 File: imagens/diagramaEntidadeRelacionamento.png Graphic file (type png)
  <use imagens/diagramaEntidadeRelacionamento.png>
-Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on input line 52.
-(pdftex.def)             Requested size: 469.11656pt x 409.90767pt.
-
-Overfull \hbox (13.87245pt too wide) in paragraph at lines 52--53
- [][] 
- []
-
-[2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaEntidadeRelacionamento.png>] <imagens/diagramaClasse.png, id=16, 738.50906pt x 761.84625pt>
+Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on input line 54.
+(pdftex.def)             Requested size: 426.46724pt x 372.64128pt.
+ [2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaEntidadeRelacionamento.png>] <imagens/diagramaClasse.png, id=16, 738.50906pt x 761.84625pt>
 File: imagens/diagramaClasse.png Graphic file (type png)
  <use imagens/diagramaClasse.png>
-Package pdftex.def Info: imagens/diagramaClasse.png used on input line 74.
+Package pdftex.def Info: imagens/diagramaClasse.png used on input line 67.
 (pdftex.def)             Requested size: 443.10886pt x 457.11128pt.
- [3 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaClasse.png>] <imagens/representacaoAmbiente.png, id=21, 495.35063pt x 300.3722pt>
-File: imagens/representacaoAmbiente.png Graphic file (type png)
- <use imagens/representacaoAmbiente.png>
-Package pdftex.def Info: imagens/representacaoAmbiente.png used on input line 89.
-(pdftex.def)             Requested size: 445.81145pt x 270.33246pt.
+ [3 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaClasse.png>]
+Overfull \hbox (2.3695pt too wide) in paragraph at lines 77--77
+[]\OT1/ptm/m/n/12 Alguns tra-ba-lhos tra-tam os ter-mos in-div[]duo e cro-mos-somo como a mesma representa[][]ao
+ []
 
-<imagens/representacaoGene.png, id=22, 310.15875pt x 137.7647pt>
+<imagens/representacaoIndividuo.png, id=21, 480.29437pt x 63.23625pt>
+File: imagens/representacaoIndividuo.png Graphic file (type png)
+ <use imagens/representacaoIndividuo.png>
+Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 83.
+(pdftex.def)             Requested size: 384.23601pt x 50.58905pt.
+ <imagens/representacaoCromossomo.png, id=22, 426.84468pt x 45.92157pt>
+File: imagens/representacaoCromossomo.png Graphic file (type png)
+
+<use imagens/representacaoCromossomo.png>
+Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 95.
+(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
+ <imagens/representacaoGene.png, id=23, 310.15875pt x 137.7647pt>
 File: imagens/representacaoGene.png Graphic file (type png)
  <use imagens/representacaoGene.png>
-Package pdftex.def Info: imagens/representacaoGene.png used on input line 107.
+Package pdftex.def Info: imagens/representacaoGene.png used on input line 109.
 (pdftex.def)             Requested size: 217.10963pt x 96.43462pt.
- [4 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoAmbiente.png>]
-<imagens/representacaoCromossomo.png, id=26, 426.84468pt x 45.92157pt>
-File: imagens/representacaoCromossomo.png Graphic file (type png)
- <use imagens/representacaoCromossomo.png>
-Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 118.
-(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
- <imagens/representacaoIndividuo.png, id=27, 480.29437pt x 63.23625pt>
-File: imagens/representacaoIndividuo.png Graphic file (type png)
-
-<use imagens/representacaoIndividuo.png>
-Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 128.
-(pdftex.def)             Requested size: 384.23601pt x 50.58905pt.
- [5 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoCromossomo.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Doc
-umento/imagens/representacaoIndividuo.png>] <imagens/fluxoNovaPopulacao.png, id=31, 621.82312pt x 864.22874pt>
+ [4 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoIndividuo.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoCromossomo.png>] <imagens/fluxoNovaPopulacao.png,
+ id=27, 621.82312pt x 864.22874pt>
 File: imagens/fluxoNovaPopulacao.png Graphic file (type png)
- <use imagens/fluxoNovaPopulacao.png>
-Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 145.
+
+<use imagens/fluxoNovaPopulacao.png>
+Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 126.
 (pdftex.def)             Requested size: 310.9108pt x 432.11331pt.
- [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoNovaPopulacao.png>] <imagens/representacaoMutacao.png, id=36, 484.81125pt x 158.09062pt>
+ [5 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png>] <imagens/representacaoMutacao.png, id=31, 484.81125pt x 158.09062pt>
 File: imagens/representacaoMutacao.png Graphic file (type png)
- <use imagens/representacaoMutacao.png>
-Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 165.
+
+<use imagens/representacaoMutacao.png>
+Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 146.
 (pdftex.def)             Requested size: 339.36555pt x 110.66267pt.
- [7 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoMutacao.png>] [8] <imagens/fluxoAlgoritimo.png, id=44, 683.55376pt x 672.26157pt>
+ [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoNovaPopulacao.png>] [7 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoMutacao.png>] <imagens/fluxoAlgoritimo.png, id=40
+, 683.55376pt x 672.26157pt>
 File: imagens/fluxoAlgoritimo.png Graphic file (type png)
  <use imagens/fluxoAlgoritimo.png>
-Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 290.
+Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 271.
 (pdftex.def)             Requested size: 478.48438pt x 470.57988pt.
 
-Overfull \hbox (23.24026pt too wide) in paragraph at lines 290--291
+Overfull \hbox (23.24026pt too wide) in paragraph at lines 271--272
  [][] 
  []
 
-[9 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoAlgoritimo.png>] [10] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
+[8] [9 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoAlgoritimo.png>] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4240 strings out of 493921
- 62817 string characters out of 3144864
- 127610 words of memory out of 3000000
+ 4239 strings out of 493921
+ 62702 string characters out of 3144864
+ 130601 words of memory out of 3000000
  7462 multiletter control sequences out of 15000+200000
  10988 words of font info for 24 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,7n,43p,1125b,305s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,7n,43p,1122b,305s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (10 pages, 625838 bytes).
+Output written on monografia.pdf (9 pages, 611503 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

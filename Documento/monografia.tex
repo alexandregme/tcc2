@@ -14,58 +14,51 @@
 
 \capitulo{SISTEMA DESENVOLVIDO}
 
-Será desenvolvido um sistema que otimiza a alocação das salas facilizando a vida do gerente. Por se tratar de um problema especifico fica dificil encontrar tecnologias disponiveis para a resolução do problema sendo assim necessario o desenvolvimento de um sistema que atenda todas as necessisdades exigidas.
+\iniciocapitulo
+O capítulo descreve o sistema desenvolvido neste trabalho, tem como objetivo o sistema, otimizar a alocação das disciplinas envidas pelos colegiados em salas de uma universidade, neste caso as salas do prédio FAFICH na UFMG. Por se tratar de um problema especifico do local torna-se difícil o trabalho de encontrar tecnologias disponíveis para otimização do problema, neste caso o desenvolvimento de um sistema que atenda todas as necessidades é de grande importância para o responsável pela alocação.\par
 
 \secao{Modelagem}
 
 \subsecao{Diagramas de caso de uso}
 
-Arrumar referencia \par
+A Figura XX descreve todas as funcionalidades que o sistema possui, essas funcionalidades foram dividias em 2 atores "Gerente" e "Sistema" cada um ligado com suas respectivas funcionalidades, porem, o "Gerente" pode acessar o ator "Sistema" para ter acessos funcionalidades que são encontradas no mesmo. O sentido das setas informa o que cada ator pode acessar no sistema.\par
 
-Segundo Booch et al. (2001) a modelagem de um diagrama de caso de uso é uma técnica usada para descrever e definir os requisitos funcionais de um sistema. Para sistemas que possuem um número elevado de funcionalidades, a construção destes diagramas visa facilitar o entendimento do problema, a documentação do que será desenvolvido bem como facilita o próprio desenvolvimento.\par
+As funcionalidades controle de turnos, controle de horários, controle de prédios, controle de salas, controle de cursos, controle de colegiados, controle de períodos e controle de disciplinas são disponibilizadas através de módulos CRUD para que o responsável tenha total controle sobre o que será alocado, onde e como.\par
 
-A Figura XX descreve todas as funcionalidades que o sistema possui, essas funcionalidades foram dividias em 2 atores "Gerente" e "Sistema" cada um ligado com suas respectigas funcionalidades, porem, o "Gerente" acessa o "Sistema" para ter acessos funcionalidades do mesmo. O sentido das setas informa o que cada ator pode acessar.\par
+Já as funcionalidades alocação de horários e geração de relatórios, são rotinas executadas pelo "Sistema". A funcionalidade alocação de horários é uma rotina que utiliza conceitos de algoritmo genético para encontrar a melhor solução do problema e a funcionalidade geração de relatórios mostra para o "Gerente" o melhor resultado de alocação encontrado pelo algoritmo.\par
 
 \begin{figure}[!htb]
 \caption[Diagrama de Caso de Uso]{Diagrama de Caso de Uso}
 \label{fig:figura1}
 \centering
-\includegraphics[scale=0.5]{imagens/diagramaCasoUso.png}
+\includegraphics[scale=0.4]{imagens/diagramaCasoUso.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
 \subsecao{Diagrama de Entidade Relacionamento}
 
-Arrumar referencia \par
+Na Figura XX mostra o relacionamento das tabelas no sistema atraves do diagrama de entidade relacionamento.\par
 
-Por se tratar de uma aplicação de banco de dados, a modelagem de dados foi também construída. Segundo Elmasri & Navathe (2005) a modelagem conceitual é uma fase muito importante no planejamento de uma aplicação de um banco de dados bem sucedida. Ainda segundo Elmasri & Navathe (2005), o modelo relacional representa o banco de dados como uma coleção de relações. Informalmente, cada relação se parece com uma tabela de valores.
+As tabelas curso, colegiado, período, disciplina, sala, prédio, turno, horário são utilizadas para armazenar as informações dos respectivos objetos que são controlados pelo CRUD e suas respectivas funcionalidades.\par
 
+A tabela relacionamento\_disciplina\_horário, salva as obrigatoriedades dos horários das disciplinas uma vez que todos os horários são montados pelos colegiados e não pelo responsável pela alocação das disciplinas nas salas.\par
 
-Na Figura XXX tem-se o diagrama para o esquema do banco de dados relacional do sistema. \par
-Breve explicação de cada tabela? \par
+A tabela alocação contem o relacionamento de disciplina, horário e sala o que corresponde a melhor alocação encontrada pelo algoritmo. O item disciplina pode ter o seu valor como nulo o que significa que em um especifico horário e em uma determinada sala não existe disciplina alocada.\par
 
+A tabela parâmetro é utilizada apenas para guardar os últimos parâmetros utilizados na execução do algoritmo genético.\par
 
 \begin{figure}[!htb]
 \caption[Diagrama de Entidade Relacionamento]{Diagrama de Entidade Relacionamento}
 \label{fig:figura2}
 \centering
-\includegraphics[scale=0.55]{imagens/diagramaEntidadeRelacionamento.png}
+\includegraphics[scale=0.5]{imagens/diagramaEntidadeRelacionamento.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
 \subsecao{Diagramas de classe}
 
-Quando terminar o codigo revisar.\par
-
-Segundo Booch et al. (2001), Diagrama de Classes demonstram a estrutura estática
-das classes de um sistema, onde estas representam as “coisas” que são gerenciadas pela
-aplicação modelada. Ainda segundo Booch et al. (2001), uma classe num diagrama pode
-ser diretamente implementada utilizando-se uma linguagem de programação orientada a
-objetos, no caso deste trabalho, a Linguagem Java.
-A partir da Figura 3.7 pode-se observar as classes manipuladores do sistema. Elas
-estão identificadas, descritas com seus métodos e relacionadas entre si. Geralmente um
-sistema possui mais de um diagrama, pois nem todas se encaixam em um diagrama
-específico.
+Este diagrama é das classes do algoritmo genético, as classes do sistema em geral não serão abordados. Quando terminar o codigo revisar e explicar.\par
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum mauris at velit varius aliquet. Nulla at risus vehicula, tempus orci sagittis, molestie nibh. Fusce sodales sollicitudin viverra. Aliquam erat volutpat. Nullam nec odio mi. Suspendisse vel mauris felis. In mi diam, auctor vel feugiat ut, pulvinar ac ipsum. In a convallis arcu. Integer a augue accue rutrum mauris. Phasellus id massa a lorem semper placerat eget eu urna.\par
 
 \begin{figure}[!htb]
 \caption[Diagrama de Classe]{Diagrama de Classe}
@@ -75,40 +68,24 @@ específico.
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-\secao{Algoritimo Genético}
+\secao{Algoritmo Genético}
 
+Após a execução da modelagem do sistema com pleno conhecimento do problema e o levantamento bibliográfico sobre algoritmos genéticos, foi feito o relacionamento do problema com os termos da biologia. Foram encontradas varias fontes que agregaram valor para o desenvolvimento do trabalho, porem algumas modificação foram feitas para que o modelo tratado por outros autores funcionasse adequadamente para a resolução do problema proposto para este trabalho. A seguir serão apresentados os itens da biologia utilizados no desenvolvimento do algoritmo juntamente com sua ligação com o problema.\par
 
-O primeiro passo a ser dado para o desenvolvimento do algoritimo é o pleno conhecimento do problema e a ligação entre os termos utilizados na biologia com os itens do problema proposto anteriormente. Foram utilizadas varias fontes para o desenvolvimento do trabalho, porem foram feitas modificação para que o modelo tratado por outros autores funcionasse como necessario.\par
+\subsecao{Indivíduo}
 
-Para o melhor entendimento dos passos tomados durante a interpretação do problema e da sua ligação com o algoritmo genetico será criado um pequeno ambiente de alocação. Este ambiente contem as seguintes propriedades, três salas, seis horarios, sete dias da semana, cinco discplinas e nove relacionamentos de obrigatoriedade entre discplina e horário.\par
+Alguns trabalhos tratam os termos indivíduo e cromossomo como a mesma representação biológica, neste trabalho o termo indivíduo é composto por cromossomo juntamente com a pontuação adquirida após a execução do método de calculo de fitness, já o termo cromossomo se refere a combinação dos genes do indivíduo.\par
 
 \begin{figure}[!htb]
-\caption[Representação do ambiente]{Representação do ambiente}
-\label{fig:figura4}
+\caption[Representação Individuo]{Representação Individuo}
+\label{fig:figura7}
 \centering
-\includegraphics[scale=0.9]{imagens/representacaoAmbiente.png}
+\includegraphics[scale=0.8]{imagens/representacaoIndividuo.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-
-
-\subsecao{Individuo}
-
-Alguns trabalhos tratam cromossomos e inidviduos pela mesma representação biologica, neste caso cromosso neste trabalho o termo cromossomo se refere a segquencia de genes e o termo Indiviuo será a combinação de cromossomo e fitness.\par
-
-O termo Gene representa uma combinação de quatro variaveis Sala, Dia da Semana, Horario, e o relacionamento entre Disciplina Horario. As três primeiras variaveis são fixas e não podem ser nulas pois o conjunto de Genes forma um cromossomo que é a alocação de todas as discplinas em horarios diferentes.\par
-
-Um Gene com o relacionamento Disciplina Horario igual a nulo, representa um horario vago, como exemplo podemos descrever a seguinte situação, mostra que nos determinados parametros não existe nenhuma sala alocada.\par
-
-\begin{figure}[!htb]
-\caption[Representação Gene]{Representação Gene}
-\label{fig:figura5}
-\centering
-\includegraphics[scale=0.7]{imagens/representacaoGene.png}
-\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
-\end{figure}
-
-Um cromossomo é uma seguencia de genes o que representa uma alocação completa que engloba todas as salas, todos os dias da semana, e todos os horarios disponiveis para alocação de disciplinas. Uma vez que este valor não é variavel temos um cromossomo com um valor fixo, que serão inseridos os horarios disponiveis para alocação das disciplinas. O tamanho do cromossomo é medido pela seguinte formala (Número de Salas * Número de Horários * Número de dias da semana) neste ambiente o valor é igual a 210 Genes que compoe o cromossomo. A representação binaria do cromossomo se deve ao item relacionamento do Gene estar preenchido ou não 1 para preenchido e zero para nulo. A representação gráfica do cromossomo apenas id do relacionamento para uma melhor visualização.\par
+Um cromossomo é uma sequência de genes o que representa uma alocação completa, que engloba todas as salas, todos os dias da semana, e todos os horários disponíveis
+para alocação de disciplinas. Uma vez que este valor não é variável temos um cromossomo com um valor fixo, que serão inseridos os horarios disponiveis para alocação das disciplinas. O tamanho do cromossomo é medido pela seguinte fórmula (Número de Salas * Número de Horários * Número de dias da semana) neste ambiente o valor é igual a 210 Genes que compoe o cromossomo. A representação binaria do cromossomo se deve ao item relacionamento do Gene estar preenchido ou não 1 para preenchido e zero para nulo. A representação gráfica do cromossomo apenas id do relacionamento para uma melhor visualização.\par
 
 
 \begin{figure}[!htb]
@@ -119,24 +96,28 @@ Um cromossomo é uma seguencia de genes o que representa uma alocação completa
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-Por fim individuo é a combinação do cromossomo e a pontuação adquirida após a execuação do metodo de calculo de fitness.\par
+
+O termo gene representado pela figura XX possui uma combinação de quatro variáveis sala, dia da semana, horário e o relacionamento de obrigatoriedade 
+"disciplina horário". As três primeiras variáveis são fixas e não podem ser nulas ou alteradas pelo fato de que o conjunto de genes formam um cromossomo que representa uma alocação, que serão melhores explicados em breve.\par
+
+Um gene com o relacionamento "disciplina horário" igual a nulo, representa um horário vago para aquela combinação especifica de sala, horário e dia da semana.\par
 
 \begin{figure}[!htb]
-\caption[Representação Individuo]{Representação Individuo}
-\label{fig:figura7}
+\caption[Representação Gene]{Representação Gene}
+\label{fig:figura5}
 \centering
-\includegraphics[scale=0.8]{imagens/representacaoIndividuo.png}
+\includegraphics[scale=0.7]{imagens/representacaoGene.png}
 \\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
 \end{figure}
 
-\subsecao{Populacao}
+
+\subsecao{População}
 
 População é o conjunto de Individuos, a população tem um numero fixo de Individuos, e uma porcentagem para que os operadores geneticos possam ser executados. Os Melhores Individuos de uma População são indicados pelas maiores pontuações de fitness de cada Individuo\par
 
-Populacao Inicial cria Individuos randomicos até que o número da população maxima seja atingida. Para a criação de cada individuo são utilizados operadores randomicos para adicionar os relacionamento DisciplinaHorario em cada um dos Gens que estão previamente criados como Nulo. Uma vez que o Indiviuo inicial é populado a quandiadde de Genes com relacionamento entre as tabelas DisciplinaHorario não se modificaram para ser manter uma itnegridade dos dados que serão utilizados para o resultado final do algoritimo.\par
+População Inicial cria Individuos randomicos até que o número da população maxima seja atingida. Para a criação de cada individuo são utilizados operadores randomicos para adicionar os relacionamento DisciplinaHorario em cada um dos Gens que estão previamente criados como Nulo. Uma vez que o Indiviuo inicial é populado a quandiadde de Genes com relacionamento entre as tabelas DisciplinaHorario não se modificaram para ser manter uma itnegridade dos dados que serão utilizados para o resultado final do algoritimo.\par
 
-Nova População é criada a partir de uma População criada anteriormente, se o operador genetico elitismo estiver como valor verdadeiro, inciamos está nova população com 20\% dos melhores Individuos da População anterior. Para cada interação do algoritimo até se completar o número total de Individuos para aquela nova População, podemos ter duas operaçãoes ocorrendo, Mutação e Crossover. Para que estas operações genéticas aconteção são utilizados valores randomicos para serem comparados com os valores dos parametros utilizados para Mutação e Croosover.Em cada interação são selecionados por torneio os pais para o crossover, se der verdadeira a condiação para se executar o crossover os pais descartados e os filhos gerados a partir dos Gens dos pais serão adicionados na nova População. Caso a condição de Mutação seja verdadeira um dos itens selicionados no torneio sofre a mutação genetica, O Individuo antes da mutação genetica é descartado e o Individuo Mutado é adicionado na nova população.
-\par
+Nova População é criada a partir de uma População criada anteriormente, se o operador genetico elitismo estiver como valor verdadeiro, inciamos está nova população com 20\% dos melhores Individuos da População anterior. Para cada interação do algoritimo até se completar o número total de Individuos para aquela nova População, podemos ter duas operaçãoes ocorrendo, Mutação e Crossover. Para que estas operações genéticas aconteção são utilizados valores randomicos para serem comparados com os valores dos parametros utilizados para Mutação e Croosover.Em cada interação são selecionados por torneio os pais para o crossover, se der verdadeira a condiação para se executar o crossover os pais descartados e os filhos gerados a partir dos Gens dos pais serão adicionados na nova População. Caso a condição de Mutação seja verdadeira um dos itens selicionados no torneio sofre a mutação genetica, O Individuo antes da mutação genetica é descartado e o Individuo Mutado é adicionado na nova população.\par
 
 \begin{figure}[!htb]
 \caption[Fluxo Nova População]{Fluxo Nova População}
@@ -148,9 +129,9 @@ Nova População é criada a partir de uma População criada anteriormente, se 
 
 Melhor Individuo é aquele que contem o resultado o o que tiver a melhor pontuação ao se passar o numero de gerações pré definidas.
 
-\subsecao{Operadores Geneticos}
+\subsecao{Operadores genéticos}
 
-Este trabalho utiliza elitismo como operador genetico ao se inciar uma nova população, vinte porcento dos melhors individuos são escolhidos para compar a nova população. O elitismo é calculdo atravez da função objetiva criada para o problema especifico do trabalho.\par
+Este trabalho utiliza elitismo como operador genético ao se inciar uma nova população, vinte porcento dos melhors individuos são escolhidos para compar a nova população. O elitismo é calculdo atravez da função objetiva criada para o problema especifico do trabalho.\par
 
 Para selecionar os inviduos para realizar o crossover é utilizado metodo de seleção por torneio, são escolhidos três Individuos da população anterior, e destes três são escolhidos os dois com maior pountuação de fitness, os dois Individuos selecionados são enviados para o crossover.\par
 
