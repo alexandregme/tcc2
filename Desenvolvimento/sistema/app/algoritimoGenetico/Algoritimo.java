@@ -53,13 +53,13 @@ public class Algoritimo {
 		// se tiver elitismo, mantém o melhor indivíduo da geração atual
 		if (parametros.elitismo) {
 
-			int elitismoPeople = (int) (populacao.getPopulacao().size() * 0.2);
+			//int elitismoPeople = (int) (populacao.getPopulacao().size() * 0.2);
 
-			for (int i = 0; i < elitismoPeople; i++) {
+			//for (int i = 0; i < elitismoPeople; i++) {
 
-				p.addIndividuo(new Individuo((Individuo) populacao.getIndividuo(i).clone()));
+				p.addIndividuo(new Individuo((Individuo) populacao.melhor()));
 
-			}
+			//}
 
 		}
 
