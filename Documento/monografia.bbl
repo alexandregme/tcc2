@@ -10,13 +10,6 @@
 {AARTS, E.; KORST, J. Simulated annealing and boltzmann machines.
 New York, NY; John Wiley and Sons Inc., 1988.}
 
-\bibitem[Caelum 2013]{caelum}
-\abntrefinfo{Caelum}{CAELUM}{2013}
-{CAELUM. \emph{Apostila do curso FJ-11 - Java e Orientação a Objetos}. 2013.
-Dispon{\'\i}vel em:
-  $<$http://www.caelum.com.br/apostila-java-orientacao-objetos$>$. Acesso em:
-  29 set. 2013.}
-
 \bibitem[Carter e Tovey 1992]{carter1992classroom}
 \abntrefinfo{Carter e Tovey}{CARTER; TOVEY}{1992}
 {CARTER, M.~W.; TOVEY, C.~A. When is the classroom assignment problem hard?
@@ -73,19 +66,18 @@ Dispon{\'\i}vel em:
   annealing.
 \emph{science}, Washington, v.~220, n.~4598, p. 671--680, 1983.}
 
+\bibitem[Luvezute e Kripka 2013]{kripkasimulated}
+\abntrefinfo{Luvezute e Kripka}{LUVEZUTE; KRIPKA}{2013}
+{LUVEZUTE, R.~M.; KRIPKA, K.~M. Simulated annealing aplicado ao problema de
+  aloca{\c{c}}{\~a}o de salas com deslocamentos m{\'\i}nimos.
+2013.}
+
 \bibitem[Marinho 2005]{marinho2005heuristicas}
 \abntrefinfo{Marinho}{MARINHO}{2005}
 {MARINHO, E.
 \emph{Heur{\'\i}sticas busca tabu para o problema de programa{\c{c}}{\~a}o de
   tripula{\c{c}}{\~o}es de {\^o}nibus urbano}.
 Tese (Doutorado) --- Master’s Thesis, Universidade Federal Fluminense, 2005.}
-
-\bibitem[Mendes 2013]{angularjs}
-\abntrefinfo{Mendes}{MENDES}{2013}
-{MENDES, W. \emph{AngularJS um framework para facilitar sua vida}. 2013.
-Dispon{\'\i}vel em:
-  $<$http://www.slideshare.net/WilsonMendes/angularjs-um-framework-para-facilitar-sua-vida$>$.
-  Acesso em: 29 set. 2013.}
 
 \bibitem[Michalewicz e Schoenauer 1996]{michalewicz1996evolutionary}
 \abntrefinfo{Michalewicz e Schoenauer}{MICHALEWICZ; SCHOENAUER}{1996}
@@ -113,17 +105,13 @@ A Bradford Book, 1998.}
 \emph{Monografia, Departamento de Ci{\^e}ncia da Computa{\c{c}}{\~a}o,
   Universidade Federal de Lavras}, 2005.}
 
-\bibitem[Play! 2013]{playframework}
-\abntrefinfo{Play!}{PLAY!}{2013}
-{PLAY! \emph{The High Velocity Web Framework For Java and Scala}. 2013.
-Dispon{\'\i}vel em: $<$http://www.playframework.com/$>$. Acesso em: 29 set.
-  2013.}
-
-\bibitem[PostgreSQL 2013]{postgresql}
-\abntrefinfo{PostgreSQL}{POSTGRESQL}{2013}
-{POSTGRESQL. \emph{Sobre o PostgreSQL}. 2013.
-Dispon{\'\i}vel em: $<$http://www.postgresql.org.br/sobre$>$. Acesso em: 29
-  set. 2013.}
+\bibitem[Pinheiro e Oliveira 2001]{pinheiro2001ambiente}
+\abntrefinfo{Pinheiro e Oliveira}{PINHEIRO; OLIVEIRA}{2001}
+{PINHEIRO, P.; OLIVEIRA, J.~A. Um ambiente de apoio a constru{\c{c}}{\~a}o de
+  hor{\'a}rio escolar na web: modelagem, implementa{\c{c}}{\~a}o e
+  aplica{\c{c}}{\~a}o nas escolas de ensino m{\'e}dio.
+\emph{XXXIII Simp{\'o}sio Brasileiro de Pesquisa Operacional”, Campos do
+  Jord{\~a}o, SP}, 2001.}
 
 \bibitem[Reeves 1993]{reeves1993modern}
 \abntrefinfo{Reeves}{REEVES}{1993}
@@ -154,29 +142,6 @@ Dispon{\'\i}vel em: $<$http://www.postgresql.org.br/sobre$>$. Acesso em: 29
 \abntrefinfo{TIM{\'O}TEO}{TIM{\'O}TEO}{2005}
 {TIM{\'O}TEO, G. T.~S. \emph{Desenvolvimento de um Algoritmo Gen{\'e}tico para
   a Resolu{\c{c}}{\~a}o do Timetabling}. 2005.}
-
-\bibitem[W3C 2013 a]{html}
-\abntrefinfo{W3C}{W3C}{2013 a}
-{W3C. \emph{HTML 4.01 Specification}. 2013 a.
-Dispon{\'\i}vel em: $<$http://www.w3.org/TR/html4$>$. Acesso em: 29 set. 2013.}
-
-\bibitem[W3C 2013 b]{css}
-\abntrefinfo{W3C}{W3C}{2013 b}
-{W3C. \emph{Cascading Style Sheets}. 2013 b.
-Dispon{\'\i}vel em: $<$http://www.w3.org/Style/CSS$>$. Acesso em: 29 set.
-  2013.}
-
-\bibitem[w3schools 2013]{javascript}
-\abntrefinfo{w3schools}{W3SCHOOLS}{2013}
-{W3SCHOOLS. \emph{JavaScript Tutorial}. 2013.
-Dispon{\'\i}vel em: $<$http://www.w3schools.com/js/$>$. Acesso em: 29 set.
-  2013.}
-
-\bibitem[Werra 1985]{de1985introduction}
-\abntrefinfo{Werra}{WERRA}{1985}
-{WERRA, D. de. An introduction to timetabling.
-\emph{European Journal of Operational Research}, Elsevier, v.~19, n.~2, p.
-  151--162, 1985.}
 
 \bibitem[White, Xie e Zonjic 2004]{white2004using}
 \abntrefinfo{White, Xie e Zonjic}{WHITE; XIE; ZONJIC}{2004}

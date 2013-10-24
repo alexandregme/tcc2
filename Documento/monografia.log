@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  22 OCT 2013 13:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  24 OCT 2013 18:30
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,14 +431,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux
-
-LaTeX Warning: Label `fig:figura8' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura8' multiply defined.
-
-)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -452,7 +445,8 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 7.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -503,96 +497,75 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 15.
-<imagens/diagramaCasoUso.png, id=1, 702.37407pt x 539.01375pt>
-File: imagens/diagramaCasoUso.png Graphic file (type png)
- <use imagens/diagramaCasoUso.png>
-Package pdftex.def Info: imagens/diagramaCasoUso.png used on input line 34.
-(pdftex.def)             Requested size: 280.94466pt x 215.60167pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
- [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 
-
- <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaCasoUso.png>] <imagens/diagramaEntidadeRelacionamento.png, id=11, 852.93657pt x 745.28438pt>
-File: imagens/diagramaEntidadeRelacionamento.png Graphic file (type png)
- <use imagens/diagramaEntidadeRelacionamento.png>
-Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on input line 54.
-(pdftex.def)             Requested size: 426.46724pt x 372.64128pt.
- [2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaEntidadeRelacionamento.png>] <imagens/diagramaClasse.png, id=16, 738.50906pt x 761.84625pt>
-File: imagens/diagramaClasse.png Graphic file (type png)
- <use imagens/diagramaClasse.png>
-Package pdftex.def Info: imagens/diagramaClasse.png used on input line 67.
-(pdftex.def)             Requested size: 443.10886pt x 457.11128pt.
- [3 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaClasse.png>]
-Overfull \hbox (2.3695pt too wide) in paragraph at lines 77--77
-[]\OT1/ptm/m/n/12 Alguns tra-ba-lhos tra-tam os ter-mos in-div[]duo e cro-mos-somo como a mesma representa[][]ao
+Overfull \hbox (3.81163pt too wide) in paragraph at lines 6--6
+\OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
  []
 
-<imagens/representacaoIndividuo.png, id=21, 480.29437pt x 63.23625pt>
-File: imagens/representacaoIndividuo.png Graphic file (type png)
- <use imagens/representacaoIndividuo.png>
-Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 83.
-(pdftex.def)             Requested size: 384.23601pt x 50.58905pt.
- <imagens/representacaoCromossomo.png, id=22, 426.84468pt x 45.92157pt>
-File: imagens/representacaoCromossomo.png Graphic file (type png)
 
-<use imagens/representacaoCromossomo.png>
-Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 93.
-(pdftex.def)             Requested size: 384.15666pt x 41.32901pt.
- [4 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoIndividuo.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoCromossomo.png>] <imagens/representacaoGene.png, 
-id=26, 310.15875pt x 137.7647pt>
-File: imagens/representacaoGene.png Graphic file (type png)
- <use imagens/representacaoGene.png>
-Package pdftex.def Info: imagens/representacaoGene.png used on input line 106.
-(pdftex.def)             Requested size: 217.10963pt x 96.43462pt.
- <imagens/fluxoNovaPopulacao.png, id=27, 621.82312pt x 864.22874pt>
-File: imagens/fluxoNovaPopulacao.png Graphic file (type png)
+LaTeX Warning: Citation `alguem' on page 1 undefined on input line 21.
 
-<use imagens/fluxoNovaPopulacao.png>
-Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 127.
-(pdftex.def)             Requested size: 435.27321pt x 604.956pt.
- [5 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png>]
-Overfull \vbox (21.95781pt too high) has occurred while \output is active []
+[1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- [6 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoNovaPopulacao.png>]
-<imagens/representacaoMutacao.png, id=35, 484.81125pt x 158.09062pt>
-File: imagens/representacaoMutacao.png Graphic file (type png)
- <use imagens/representacaoMutacao.png>
-Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 145.
-(pdftex.def)             Requested size: 339.36555pt x 110.66267pt.
- [7 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoMutacao.png>]
-<imagens/fluxoAlgoritimo.png, id=40, 683.55376pt x 672.26157pt>
-File: imagens/fluxoAlgoritimo.png Graphic file (type png)
- <use imagens/fluxoAlgoritimo.png>
-Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 268.
-(pdftex.def)             Requested size: 478.48438pt x 470.57988pt.
 
-Overfull \hbox (23.24026pt too wide) in paragraph at lines 268--269
- [][] 
+
+]
+Overfull \hbox (2.63252pt too wide) in paragraph at lines 30--30
+[]\OT1/ptm/m/n/12 De acordo com (\OT1/ptm/m/n/10 STEI-GLITZ; PA-PA-DI-MI-TRIOU\OT1/ptm/m/n/12 , 1982), as heur[]sticas s[]ao quais-quer m[]etodos
  []
 
-[8] [9 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoAlgoritimo.png>] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (25.45921pt too wide) in paragraph at lines 30--30
+\OT1/ptm/m/n/12 de aproxima[][]ao sem uma ga-ran-tia for-mal de seu de-sem-pe-nho. Sendo ne-cess[]arias para implementa[][]ao
+ []
+
+
+Overfull \hbox (20.97989pt too wide) in paragraph at lines 39--39
+[]\OT1/ptm/m/n/12 Ressalta-se que den-tre as heur[]sticas me-re-cem es-pe-cial aten[][]ao as cha-ma-das meta-heur[]sticas
+ []
+
+
+Overfull \hbox (7.73378pt too wide) in paragraph at lines 41--41
+[]\OT1/ptm/m/n/12 Podem-se ci-tar como exem-plo as meta-heur[]sticas: Busca Tabu (\OT1/ptm/m/it/12 Tabu Se-arch\OT1/ptm/m/n/12 ), Otimiza[][]ao
+ []
+
+[2]
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 87--87
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 91.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
+ [3]) [4] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [5
+
+
+]) [6]
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux))
+
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4239 strings out of 493921
- 62702 string characters out of 3144864
- 132601 words of memory out of 3000000
- 7462 multiletter control sequences out of 15000+200000
- 10988 words of font info for 24 fonts, out of 3000000 for 9000
+ 4322 strings out of 493921
+ 64801 string characters out of 3144864
+ 132180 words of memory out of 3000000
+ 7543 multiletter control sequences out of 15000+200000
+ 11204 words of font info for 25 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,7n,43p,932b,305s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (9 pages, 612530 bytes).
+ 43i,4n,43p,1015b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (6 pages, 81986 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
+ 38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

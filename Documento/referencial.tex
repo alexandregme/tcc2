@@ -1,32 +1,25 @@
 \capitulo{REFERENCIAL TEÓRICO}
 
-\secao{TimeTable}
+\secao{TimeTabling}
 
-%Explicar o que é
+% explicação minima
+Segundo \cite{kripkasimulated} os problemas de programação de horários (PPH), também conhecidos como \textit{TimeTabling}, são os problemas que mais se destacam nas organizações acadêmicas. \cite{schaerf1999survey} define estes problemas em três categorias \textit{school timetabling}, \textit{course timetabling} e \textit{examination timetabling}.\par
 
-%tipos
-\cite{souza2000} muitas variantes do problema têm sido propostas na literatura, e diferem umas das outras pelo tipo de instituição de ensino envolvida, universidades ou escolas médias, e pelo tipo de restrições impostas ao problema. \cite{schaerf1999survey} cita três classes de problemas:
+\textit{School TimeTabling}: Basicamente a abordagem deste problema, trata da geração de horários semanais em escolas de segundo grau, onde deve-se evitar os choques entre os horários das disciplinas e que cada professor receba apenas uma turma para cada horário. Neste caso o aluno recebe um número fixo de disciplinas que devem ser cursadas.\par
 
+\textit{Course TimeTabling}: Diz respeito à alocação de aulas de uma universidade típica. Neste problema os alunos podem escolher as matérias em que vão se matricular, portando o problema tem como objetivo minimizar os possíveis choques entre as disciplinas, professores e horários disponibilizados pela instituição de ensino.\par
 
-\textit{Examination Timetabling}: seqüenciamento de exames de um conjunto de cursos em uma universidade, evitando exames simultâneos de cursos com estudantes em comum, e espalhando os exames o máximo possível. Segundo \cite{souza2000}, apesar da similaridade com o course timetabling, eles se distinguem, sobretudo pela natureza das restrições envolvidas. Entre as restrições típicas deste tipo de problemas, destaca-se: nenhum estudante pode fazer mais do que certo número de exames por dia, exames de certas disciplinas não podem preceder a exames de determinadas disciplinas, alguns exames têm que ser realizados em um mesmo horário.\par
+\textit{Examination TimeTabling}: Aborda o problema de programação de horários, de maneira que, disciplinas que tenham alunos em comum, distanciem o máximo possível as datas das provas.\par
 
-\textit{School Timetabling}: seqüenciamento semanal das aulas de uma escola, evitando que professores e alunos tenham mais de uma aula simultaneamente. Basicamente, existe um conjunto de turmas, um conjunto de professores e um conjunto de horários reservados para a realização das aulas.\par
+Segundo \cite{pinheiro2001ambiente} problema de programação de horários vem sendo abordado desde a década de 60, sendo que os primeiros trabalhos a se destacarem foram realizados na década de 80.\par
 
-\textit{Course Timetabling}: diz respeito à alocação de aulas de uma universidade típica. Basicamente há um conjunto de disciplinas (Cálculo I, Engenharia de Software, Genética, etc.) e para cada disciplina um número de aulas. Há, também, um conjunto de cursos (Engenharia de Alimentos, Ciência da Computação, Agronomia, etc). Cada curso envolve um conjunto de disciplinas. Os alunos matriculam-se em turmas das disciplinas de seu curso. Uma turma de uma disciplina pode ter estudantes de cursos diferentes. Há, por último, um conjunto de horários disponibilizados para a realização das aulas. O problema, então, trata do seqüenciamento semanal das aulas evitando a simultaneidade de disciplinas e respeitando os horários disponibilizados.\par
+O Problema de Alocação de Salas (PAS) também conhecido como \textit{Classroom Assignment} é tratado como parte do problema de programação de cursos universitários \textit{course timetabling}. Segundo \cite{marinho2005heuristicas} varias instituições universitárias se deparam com o PAS durante o início de cada semestre letivo, este problema é considerado NP-Difícil por \cite{even1975complexity} e \cite{carter1992classroom}, com isto, a determinação da solução ótima do problema, em um período de tempo aceitável, se torma uma tarefa difícil. Segundo \cite{kripkasimulated} o problema deve considerar que as disciplinas dos cursos universitários já tenham seus horários de início e de término definidos. O problema se resume então na alocação das disciplinas às salas desta universidade respeitando os horários destas disciplinas e as demais restrições exigidas.\par
 
-%Complexidade
+% dificuldade
+Segundo \cite{souza2000} boa parte das universidades ainda resolvem este problema de forma manual, o que torna o processo árduo e demorado, podendo levar vários dias para ser concluído.\par
 
-O problema de alocação de salas denotado por PAS é um problema NP-Difícil(\cite{even1975complexity} e \cite{carter1992classroom}).\par
+Uma vez que não é de extrema dificuldade encontrar a solução ótima do PAS em tempo razoável, este problema é normalmente tratado através de técnicas heurísticas, que apesar de não garantirem encontrar a solução ótima do problema, são capazes de retornar uma solução de qualidade em um tempo adequado. As meta-heurísticas merecem uma atenção especial, pois surgiram como uma alternativa para amenizar a dificuldade que os métodos heurísticos tem de escapar dos chamados ótimos locais. Sem essa dificuldade, as meta-heurísticas podem partir em busca de regiões mais promissoras no espaço de soluções possíveis.\cite{alguem}\par
 
-Segundo \cite{marinho2005heuristicas} diversas instituições universitárias se deparam com o PAS durante o início de cada semestre letivo. Boa parte destas ainda resolve tal problema manualmente, o que torna o processo árduo e demorado, podendo levar vários dias para ser concluído.Ainda segundo \cite{souza2000} a elaboração de um quadro de horários por esta via pode demandar duas semanas de trabalho em uma escola secundária ou até um mês em uma universidade e esta solução obtida pode ser insatisfatória com respeito a diversos aspectos.\par
-
-%algo a mais sobre o PAS
-
-\cite{schaerf1999survey} e \cite{de1985introduction} acreditam que problemas de geração de horários não podem ser completamente automatizados. Há duas justificativas para isso: por um lado, há razões que não podem ser facilmente expressas em um sistema automatizado, que tornam um quadro de horário melhor que o outro. Por outro, uma vez que o espaço de soluções é vasto, a intervenção humana pode conduzir a busca em direção a regiões promissoras, nas quais o sistema, por si só, dificilmente teria condições de chegar.\par
-
-Uma vez que não é possível encontrar a solução ótima do PAS em tempo razoável, esse problema é normalmente tratado através de técnicas heurísticas e algoritmos aproximativos que apesar de não garantirem encontrar a solução ótima do problema são capazes de retornar uma solução de qualidade em um tempo adequado para as necessidades da aplicação.\par
-
-%onde pode ser usado
 
 \secao{Heurística}
 
