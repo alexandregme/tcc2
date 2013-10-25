@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  24 OCT 2013 18:30
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  25 OCT 2013 16:59
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -506,9 +506,6 @@ Overfull \hbox (3.81163pt too wide) in paragraph at lines 6--6
 \OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
  []
 
-
-LaTeX Warning: Citation `alguem' on page 1 undefined on input line 21.
-
 [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
@@ -548,22 +545,19 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 
 
 ]) [6]
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux))
-
-LaTeX Warning: There were undefined references.
-
- ) 
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux)) ) 
 Here is how much of TeX's memory you used:
- 4322 strings out of 493921
- 64801 string characters out of 3144864
+ 4320 strings out of 493921
+ 64773 string characters out of 3144864
  132180 words of memory out of 3000000
- 7543 multiletter control sequences out of 15000+200000
+ 7541 multiletter control sequences out of 15000+200000
  11204 words of font info for 25 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,4n,43p,1015b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (6 pages, 81986 bytes).
+ 43i,4n,43p,1014b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (6 pages, 81410 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
