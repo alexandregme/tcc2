@@ -1,13 +1,19 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  26 OCT 2013 18:23
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.28)  26 OCT 2013 19:56
 entering extended mode
-**E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
-(E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
+**E:/tcc2/Documento/monografia.tex
+(E:/tcc2/Documento/monografia.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto,
- estonian, farsi, finnish, french, galician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian, lith
-uanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
-ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntpuc.cls
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+(E:\tcc2\Documento\abntpuc.cls
 Document Class: abntpuc 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
@@ -26,7 +32,8 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
@@ -34,26 +41,31 @@ Package: babel 2008/07/08 v3.8m The Babel package
 *
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -233,7 +245,8 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -256,20 +269,23 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -285,14 +301,16 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks17
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\chngcntr.sty
-Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\caption.sty
+(E:\tcc2\Documento\chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+) (E:\tcc2\Documento\caption.sty
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
- (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\caption3.sty
+
+(E:\tcc2\Documento\caption3.sty
 Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \captionmargin=\dimen112
 \captionmargin@=\dimen113
@@ -302,11 +320,12 @@ Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \caption@hangindent=\dimen117
 )
 \c@ContinuedFloat=\count92
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks18
 )
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\tocloft.sty
+(E:\tcc2\Documento\tocloft.sty
 Package: tocloft 2003/09/26 v2.3c parameterised ToC, etc., typesetting
 
 
@@ -356,9 +375,10 @@ Package tocloft Note: The document has chapter divisions.
 \c@loacdepth=\count96
 \cftbeforeloactitleskip=\skip80
 \cftafterloactitleskip=\skip81
- (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntcite.sty (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+ (E:\tcc2\Documento\abntcite.sty (E:\tcc2\Documento\cvs-id.def)
 Package: abntcite 2003/10/13 v1.26 Chamadas de referencias no texto (NBR10520)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
@@ -373,16 +393,21 @@ LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count99
 \calc@Cskip=\skip84
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntex-abrev.sty (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+)
+(E:\tcc2\Documento\abntex-abrev.sty (E:\tcc2\Documento\cvs-id.def)
 Package: abntex-abrev 2003/10/13 v1.3 Abreviacoes
 
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\nbr10522-1988.def (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
-File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:1988)
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntex-abrev-pt_BR.def
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
-File: abntex-abrev-pt_BR.def 2003/10/13 v1.2 definicao de abntex-abrev, traducao de termos en_US/pt_BR
-)) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\nbr10520-2002.def (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
-File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002)
+(E:\tcc2\Documento\nbr10522-1988.def (E:\tcc2\Documento\cvs-id.def)
+File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:19
+88)
+)
+(E:\tcc2\Documento\abntex-abrev-pt_BR.def (E:\tcc2\Documento\cvs-id.def)
+File: abntex-abrev-pt_BR.def 2003/10/13 v1.2 definicao de abntex-abrev, traduca
+o de termos en_US/pt_BR
+))
+(E:\tcc2\Documento\nbr10520-2002.def (E:\tcc2\Documento\cvs-id.def)
+File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002
+)
 )
 \minimumbiblabelwidth=\skip85
 \ABCIauxlen=\skip86
@@ -396,24 +421,28 @@ Package: relsize 2003/07/04 ver 3.1
 LaTeX Info: Redefining \newblock on input line 562.
 LaTeX Info: Redefining \cite on input line 589.
 \ABCItoken=\toks19
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count102
@@ -421,7 +450,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\fancyhdr.sty
+(E:\tcc2\Documento\fancyhdr.sty
 \fancy@headwidth=\skip88
 \f@ncyO@elh=\skip89
 \f@ncyO@erh=\skip90
@@ -431,7 +460,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux))
+) (E:\tcc2\Documento\monografia.aux
+(E:\tcc2\Documento\referencial.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -485,7 +515,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\supp-pdf.mkii
+(E:\tcc2\Documento\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen122
@@ -497,45 +527,49 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex
+) (E:\tcc2\Documento\referencial.tex
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 <imagens/problemaOtimizacao.png, id=1, 593.96906pt x 362.85562pt>
 File: imagens/problemaOtimizacao.png Graphic file (type png)
- <use imagens/problemaOtimizacao.png>
-Package pdftex.def Info: imagens/problemaOtimizacao.png used on input line 17.
+
+<use imagens/problemaOtimizacao.png>
+Package pdftex.def Info: imagens/problemaOtimizacao.png used on input line 15.
 (pdftex.def)             Requested size: 326.68399pt x 199.5712pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
- [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+ [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 
- <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/problemaOtimizacao.png>] [2]
-Overfull \hbox (1.6055pt too wide) in paragraph at lines 85--85
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
+ <E:/tcc2/Documento/imagens/problemaOtimizacao.png>] [2]
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 89--89
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o 
+pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 89.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 93.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
  [3]
-Overfull \hbox (3.81163pt too wide) in paragraph at lines 113--113
-\OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
+Overfull \hbox (3.81163pt too wide) in paragraph at lines 117--117
+\OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1
+/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
  []
 
 [4]
-Overfull \hbox (6.35178pt too wide) in paragraph at lines 130--130
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 EVEN; ITAI; SHA-MIR\OT1/ptm/m/n/12 , 1975) o PAS per-tence a classe de Pro-ble-mas de Otimiza[][]ao
+Overfull \hbox (6.35178pt too wide) in paragraph at lines 134--134
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 EVEN; ITAI; SHA-MIR\OT1/ptm/m/n/12 ,
+ 1975) o PAS per-tence a classe de Pro-ble-mas de Otimiza[][]ao
  []
 
-) [5] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl
+) [5] (E:\tcc2\Documento\monografia.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -547,22 +581,27 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Underfull \hbox (badness 1496) in paragraph at lines 157--160
-[]\OT1/ptm/m/n/12 POSTGRESQL. \OT1/ptm/m/it/12 So-bre o Post-greSQL\OT1/ptm/m/n/12 . 2013. Dis-pon[]vel em: 
+[]\OT1/ptm/m/n/12 POSTGRESQL. \OT1/ptm/m/it/12 So-bre o Post-greSQL\OT1/ptm/m/n
+/12 . 2013. Dis-pon[]vel em: 
  []
 
-) [7] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux)) ) 
+) [7] (E:\tcc2\Documento\monografia.aux (E:\tcc2\Documento\referencial.aux)) ) 
 Here is how much of TeX's memory you used:
  4414 strings out of 493921
- 66428 string characters out of 3144864
+ 65154 string characters out of 3144864
  134749 words of memory out of 3000000
  7623 multiletter control sequences out of 15000+200000
  16637 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,7n,43p,830b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
-w/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (7 pages, 127083 bytes).
+ 43i,7n,43p,804b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
+{
+C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (7 pages, 127102 bytes).
 PDF statistics:
  48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
