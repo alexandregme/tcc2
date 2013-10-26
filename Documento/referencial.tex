@@ -1,59 +1,43 @@
 \capitulo{REFERENCIAL TEÓRICO}
-Introdução
-
-
-\secao{TimeTabling}
-
-Segundo \cite{kripkasimulated} os problemas de programação de horários (PPH), também conhecidos como \textit{TimeTabling}, são os problemas que mais se destacam nas organizações acadêmicas. De acrodo com \cite{schaerf1999survey} estes problemas são divididos em três categorias \textit{school timetabling}, \textit{course timetabling} e \textit{examination timetabling}.\par
-
-\textit{School TimeTabling}: Se trata basicamente da geração de horários semanais, em escolas de segundo grau, onde deve-se evitar os choques entre os horários das disciplinas e que cada professor receba apenas uma turma para cada horário. Neste caso o aluno recebe um número fixo de disciplinas a serem cursadas.\par
-
-\textit{Course TimeTabling}: Diz respeito à alocação de aulas de uma universidade típica. Neste problema os alunos podem escolher as matérias em que vão se matricular, portando o problema tem como objetivo minimizar os possíveis choques entre as disciplinas, professores e horários disponibilizados pela instituição de ensino.\par
-
-\textit{Examination TimeTabling}: Aborda o problema de programação de horários dos exames da instituição, de maneira que, disciplinas que tenham alunos em comum, distanciem o máximo possível as datas dos exames.\par
-
-Segundo \cite{pinheiro2001ambiente} o problema de programação de horários vem sendo abordado desde a década de 60, sendo que os primeiros trabalhos a se destacarem foram realizados na década de 80.\par
-
-O Problema de Alocação de Salas (PAS) também conhecido como \textit{Classroom Assignment} é tratado como parte do problema de programação de cursos universitários \textit{course timetabling}. Segundo \cite{marinho2005heuristicas} varias instituições universitárias se deparam com o PAS durante o início de cada semestre letivo, este problema é considerado NP-Difícil por \cite{even1975complexity} e \cite{carter1992classroom}, com isto, a determinação da solução ótima do problema, em um período de tempo aceitável se torna uma tarefa difícil. Segundo \cite{kripkasimulated} o problema deve considerar que as disciplinas dos cursos universitários já tenham seus horários de início e de término definidos. O problema se resume então na alocação das disciplinas às salas desta universidade respeitando os horários destas disciplinas e as demais restrições exigidas.
-
-Segundo \cite{souza2000} boa parte das universidades ainda resolvem este problema de forma manual, o que torna o processo árduo e demorado, podendo levar vários dias para ser concluído.\par
-
-Uma vez que é de extrema dificuldade encontrar a solução ótima do PAS em tempo razoável, este problema é normalmente tratado através de técnicas heurísticas, que apesar de não garantirem encontrar a solução ótima do problema, são capazes de retornar uma solução de qualidade em um tempo adequado. As meta-heurísticas merecem uma atenção especial, pois surgiram como uma alternativa para amenizar a dificuldade que os métodos heurísticos tem de escapar dos chamados ótimos locais. Sem essa dificuldade, as meta-heurísticas podem partir em busca de regiões mais promissoras no espaço de soluções possíveis\cite{nascimento2005aplicaccao}.\par
-
-Segundo \cite{even1975complexity} o PAS pertence a classe de Problemas de Otimização Combinatória (POC).\par
 
 \secao{Problemas de Otimização}
 
-Otimização é o processo de encontrar a melhor solução, também chamada de solução ótima para determinado problema \cite{timoteo2005desenvolvimento}.
+Otimização é o processo de encontrar a melhor solução, também chamada de solução ótima para um determinado problema \cite{timoteo2005desenvolvimento}.\par
 
-Segundo \cite{steiglitz1982combinatorial}, os problemas de otimização são divididos em duas categorias, problemas com variáveis contínuas e problemas com variáveis discretas, problemas com variáveis discretas também podem ser conhecidos como Problemas de Otimização Combinatória (POC). De acordo com \cite{opac-b1092847} o problema de otimização combinatória trata do estudo matemático para encontrar agrupamentos, arranjos ou seleção ótima de objetos discretos, logo, não permitindo, a utilização de métodos clássicos de otimização contínua para sua resolução.
+De acordo com \cite{steiglitz1982combinatorial} a constituição de um problema de otimização se deve aos termos vizinhança, ótimo local e ótimo global. O termo vizinhança se trata de um subconjunto do conjunto do problema, ótimo local pode ser tratado como o melhor resultado em uma vizinhança, e ótimo global é a melhor solução encontrada no conjunto de acordo com a função objetivo.\par
 
-Conforme \cite{raupp2003introduccao}, o problema de otimização combinatória pode ser denominado como a ação de maximizar ou minimizar uma função de diversas variáveis sujeita a um conjunto de restrições, dentro de um domínio finito.
+Conforme cita \cite{raupp2003introduccao}, o problema de otimização combinatória pode ser denominado como a ação de maximizar ou minimizar uma função objetiva de diversas variáveis sujeita a um conjunto de restrições, dentro de contexto.\par
 
-Segundo \cite{golbarg2000otimizaccao} a ocorrência de problemas de otimização combinatória podem acontecer em diversas áreas, projetos de sistemas de distribuição de energia elétrica, posicionamento de satélites, roteamento ou escalonamento de veículos, sequenciamento de genes e DNA, classificação de plantas e animais.
+De acordo com a figura 1 pode se observar a relação entre ótimo local e ótimo global em um problema típico de minimização.
+
+\begin{figure}[!htb]
+\caption[Representação de um problema de minimização com ótimos locais]{Representação de um problema de minimização com ótimos locais}
+\label{fig:figura2}
+\centering
+\includegraphics[scale=0.55]{imagens/problemaOtimizacao.png}
+\\ \textbf{\footnotesize Fonte: \cite{timoteo2005desenvolvimento}}
+\end{figure}
+
+Segundo \cite{steiglitz1982combinatorial}, os problemas de otimização são divididos em duas categorias, problemas com variáveis contínuas e problemas com variáveis discretas. Problemas com variáveis discretas também podem ser conhecidos como Problemas de Otimização Combinatória (POC).\par
+
+De acordo com \cite{opac-b1092847} problemas do tipo POC tratam do estudo matemático para encontrar agrupamentos, arranjos ou a seleção ótima de objetos discretos, logo, não permitindo, a utilização de métodos clássicos de otimização contínua para sua resolução.\par
+
+
+Segundo \cite{golbarg2000otimizaccao} a ocorrência de problemas de otimização combinatória podem acontecer em diversas áreas, projetos de sistemas de distribuição de energia elétrica, posicionamento de satélites, roteamento ou escalonamento de veículos, sequenciamento de genes e DNA, classificação de plantas e animais.\par
+
+De acordo com \cite{deleonardo} em problemas de otimização combinatória, cujo universo de dados é grande e existe um grande número de combinações, o que torna inviável a análise de todas soluções possíveis em um tempo adequado, utilizamos as heurísticas, também conhecidas como algoritmos heurísticos, que são métodos que compõem uma gama de soluções para problemas de otimização combinatória.
 
 \secao{Heurística}
 
+O termo heurística é derivado do grego \textit{heuriskein}, o que significa descobrir ou achar. De acordo com \cite{timoteo2005desenvolvimento} o significado da palavra em pesquisa operacional vai um pouco além da raiz etimológica. Segundo \cite{steiglitz1982combinatorial}, heurísticas são consideradas métodos de aproximação ou métodos de busca de solução, deve se levar em consideração que não exista uma garantia formal de seu desempenho e uma garantia de estas heurísticas que iram encontrar uma solução. As heurísticas, apesar de não garantirem encontrar a solução ótima para um problema, procuram por soluções consideradas de boa qualidade em um tempo computacional razoável.\par
 
-O termo heurística é derivado do grego heuriskein, que significa descobrir ou achar. Mas o significado da 
-palavra em pesquisa operacional vai um pouco além da raiz etimológica. De um modo geral, o sentido dado ao termo heurística, refere-se a um método de busca de soluções em que não existe qualquer garantia de sucesso.\par
+Segundo \cite{evans1992optimization} heurísticas são necessárias para implementação de problemas NP Difícil, caso deseje-se resolver tais problemas em um tempo  razoável.\par
 
+Ressalta-se que dentre as heurísticas, as chamadas meta-heurísticas, merecem especial atenção pois adotam técnicas para amenizar, a dificuldade que os métodos heurísticos têm de escapar dos ótimos locais. As meta-heurísticas podem partir em busca de regiões mais promissoras no espaço de soluções, alem disto, as meta-heurísticas possuem grande abrangência, podendo ser aplicada à maioria dos problemas de otimização combinatória.\cite{nascimento2005aplicaccao}\par
 
-Segundo \cite{steiglitz1982combinatorial}, as heurísticas são quaisquer métodos de 
-aproximação sem uma garantia formal de seu desempenho. As heurísticas, apesar de não garantirem encontrar a solução ótima para um problema, procuram por soluções consideradas de boa qualidade em um tempo computacional razoável.\par
+Segundo \cite{adrianocesar} uma heurística é a instanciação de uma meta-heurística, ou seja, a aplicação da mesma em um problema específico de otimização.\par
 
-De acordo com \cite{steiglitz1982combinatorial}, as heurísticas são quaisquer métodos de aproximação sem uma garantia formal de seu desempenho. Sendo necessárias para implementação de problemas NP Difícil, caso deseje-se resolver tais problemas em um tempo computacional razoável \cite{evans1992optimization}.\par
-
-
-
-\cite{deleonardo} Em Problemas de Otimização Combinatória, cujo universo de dados é grande, existe um número muito extenso de combinações, tornando inviável a análise de todas possíveis soluções, visto que o tempo computacional para uma enumeração completa seria demasiadamente longo. Neste sentido, têm-se as heurísticas, também conhecidas como algoritmos heurísticos, que são métodos que compõem uma gama relativamente nova de soluções para Problemas de Otimização Combinatória. 
-
-
-Ressalta-se que dentre as heurísticas merecem especial atenção as chamadas meta-heurísticas que adotam técnicas para amenizar a dificuldade que os métodos heurísticos têm de escapar dos chamados ótimos locais. As meta-heurísticas podem partir em busca de regiões mais promissoras no espaço de soluções. As meta-heurísticas possuem grande abrangência, podendo ser aplicada à maioria dos problemas de otimização combinatória.\par
-
-Podem-se citar como exemplo as meta-heurísticas: Busca Tabu (\textit{Tabu Search}), Otimização por Colônias de Formigas (\textit{Ant Colony Optimization}), Recozimento Simulado (\textit{Simulated Annealing}) e Algoritmo Genético (\textit{Genetic Algorithm}). Uma heurística é a instanciação de uma meta-heurística, ou seja, a aplicação da mesma em um problema específico de otimização.\par
-
-
+Como exemplos de meta-heurísticas temos Busca Tabu (\textit{Tabu Search}), Otimização por Colônias de Formigas (\textit{Ant Colony Optimization}), Recozimento Simulado (\textit{Simulated Annealing}) e Algoritmo Genético (\textit{Genetic Algorithm}).\par
 
 \subsecao{Busca Tabu}
 
@@ -123,6 +107,28 @@ O algoritmo genético atua sobre uma população fazendo com que esta evolua de 
 Figura XXXX. Cada passo pode ser realizado de várias maneiras e pode variar de problema para problema \cite{timoteo2005desenvolvimento}.\par 
 
 Figura Etapas de um Algoritmo Genético Básico 
+
+\secao{TimeTabling}
+
+Segundo \cite{kripkasimulated} os problemas de programação de horários (PPH), também conhecidos como \textit{TimeTabling}, são os problemas que mais se destacam nas organizações acadêmicas. De acrodo com \cite{schaerf1999survey} estes problemas são divididos em três categorias \textit{school timetabling}, \textit{course timetabling} e \textit{examination timetabling}.\par
+
+\textit{School TimeTabling}: Se trata basicamente da geração de horários semanais, em escolas de segundo grau, onde deve-se evitar os choques entre os horários das disciplinas e que cada professor receba apenas uma turma para cada horário. Neste caso o aluno recebe um número fixo de disciplinas a serem cursadas.\par
+
+\textit{Course TimeTabling}: Diz respeito à alocação de aulas de uma universidade típica. Neste problema os alunos podem escolher as matérias em que vão se matricular, portando o problema tem como objetivo minimizar os possíveis choques entre as disciplinas, professores e horários disponibilizados pela instituição de ensino.\par
+
+\textit{Examination TimeTabling}: Aborda o problema de programação de horários dos exames da instituição, de maneira que, disciplinas que tenham alunos em comum, distanciem o máximo possível as datas dos exames.\par
+
+Segundo \cite{pinheiro2001ambiente} o problema de programação de horários vem sendo abordado desde a década de 60, sendo que os primeiros trabalhos a se destacarem foram realizados na década de 80.\par
+
+O Problema de Alocação de Salas (PAS) também conhecido como \textit{Classroom Assignment} é tratado como parte do problema de programação de cursos universitários \textit{course timetabling}. Segundo \cite{marinho2005heuristicas} varias instituições universitárias se deparam com o PAS durante o início de cada semestre letivo, este problema é considerado NP-Difícil por \cite{even1975complexity} e \cite{carter1992classroom}, com isto, a determinação da solução ótima do problema, em um período de tempo aceitável se torna uma tarefa difícil.\par
+Segundo \cite{kripkasimulated} o problema deve considerar que as disciplinas dos cursos universitários já tenham seus horários de início e de término definidos. O problema se resume então na alocação das disciplinas às salas desta universidade respeitando os horários destas disciplinas e as demais restrições exigidas.
+
+Segundo \cite{souza2000} boa parte das universidades ainda resolvem este problema de forma manual, o que torna o processo árduo e demorado, podendo levar vários dias para ser concluído.\par
+
+Uma vez que é de extrema dificuldade encontrar a solução ótima do PAS em tempo razoável, este problema é normalmente tratado através de técnicas heurísticas, que apesar de não garantirem encontrar a solução ótima do problema, são capazes de retornar uma solução de qualidade em um tempo adequado. As meta-heurísticas surgiram como uma alternativa para amenizar a dificuldade que os métodos heurísticos tem de escapar dos chamados ótimos locais.\cite{nascimento2005aplicaccao}.\par
+
+Segundo \cite{even1975complexity} o PAS pertence a classe de Problemas de Otimização Combinatória (POC).\par
+
 
 \secao{Trabalhos Relacionados}
 trabalho do marinho que usa tabu.

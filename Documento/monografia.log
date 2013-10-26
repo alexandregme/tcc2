@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  26 OCT 2013 15:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  26 OCT 2013 18:23
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,7 +431,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -445,7 +445,8 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 7.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -496,55 +497,74 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex
+Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+<imagens/problemaOtimizacao.png, id=1, 593.96906pt x 362.85562pt>
+File: imagens/problemaOtimizacao.png Graphic file (type png)
+ <use imagens/problemaOtimizacao.png>
+Package pdftex.def Info: imagens/problemaOtimizacao.png used on input line 17.
+(pdftex.def)             Requested size: 326.68399pt x 199.5712pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+ [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-Overfull \hbox (2.63252pt too wide) in paragraph at lines 25--25
-[]\OT1/ptm/m/n/12 De acordo com (\OT1/ptm/m/n/10 STEI-GLITZ; PA-PA-DI-MI-TRIOU\OT1/ptm/m/n/12 , 1982), as heur[]sticas s[]ao quais-quer m[]etodos
+
+
+ <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/problemaOtimizacao.png>] [2]
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 85--85
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
  []
 
-
-Overfull \hbox (25.45921pt too wide) in paragraph at lines 25--25
-\OT1/ptm/m/n/12 de aproxima[][]ao sem uma ga-ran-tia for-mal de seu de-sem-pe-nho. Sendo ne-cess[]arias para implementa[][]ao
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 89.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 89.
+ [3]
+Overfull \hbox (3.81163pt too wide) in paragraph at lines 113--113
+\OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
  []
 
-
-Overfull \hbox (20.97989pt too wide) in paragraph at lines 32--32
-[]\OT1/ptm/m/n/12 Ressalta-se que den-tre as heur[]sticas me-re-cem es-pe-cial aten[][]ao as cha-ma-das meta-heur[]sticas
+[4]
+Overfull \hbox (6.35178pt too wide) in paragraph at lines 130--130
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 EVEN; ITAI; SHA-MIR\OT1/ptm/m/n/12 , 1975) o PAS per-tence a classe de Pro-ble-mas de Otimiza[][]ao
  []
 
+) [5] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 17.
+ [6
 
-Overfull \hbox (7.73378pt too wide) in paragraph at lines 34--34
-[]\OT1/ptm/m/n/12 Podem-se ci-tar como exem-plo as meta-heur[]sticas: Busca Tabu (\OT1/ptm/m/it/12 Tabu Se-arch\OT1/ptm/m/n/12 ), Otimiza[][]ao
- []
-
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 30.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 30.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 30.
-) [2
+Underfull \hbox (badness 1496) in paragraph at lines 157--160
+[]\OT1/ptm/m/n/12 POSTGRESQL. \OT1/ptm/m/it/12 So-bre o Post-greSQL\OT1/ptm/m/n/12 . 2013. Dis-pon[]vel em: 
+ []
 
-] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
+) [7] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux)) ) 
 Here is how much of TeX's memory you used:
- 4231 strings out of 493921
- 62148 string characters out of 3144864
- 127884 words of memory out of 3000000
- 7455 multiletter control sequences out of 15000+200000
- 13385 words of font info for 32 fonts, out of 3000000 for 9000
+ 4414 strings out of 493921
+ 66428 string characters out of 3144864
+ 134749 words of memory out of 3000000
+ 7623 multiletter control sequences out of 15000+200000
+ 16637 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,4n,43p,586b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
-i12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on monografia.pdf (2 pages, 58347 bytes).
+ 43i,7n,43p,830b,304s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
+w/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (7 pages, 127083 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 48 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
