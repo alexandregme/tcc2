@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  25 OCT 2013 16:59
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  26 OCT 2013 15:53
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,7 +431,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux))
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -445,8 +445,7 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 7.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -497,69 +496,55 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex
-Cap\'{\i }tulo 1.
+)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
 
-Overfull \hbox (3.81163pt too wide) in paragraph at lines 6--6
-\OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
- []
-
-[1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
-
-
-
-]
-Overfull \hbox (2.63252pt too wide) in paragraph at lines 30--30
+Overfull \hbox (2.63252pt too wide) in paragraph at lines 25--25
 []\OT1/ptm/m/n/12 De acordo com (\OT1/ptm/m/n/10 STEI-GLITZ; PA-PA-DI-MI-TRIOU\OT1/ptm/m/n/12 , 1982), as heur[]sticas s[]ao quais-quer m[]etodos
  []
 
 
-Overfull \hbox (25.45921pt too wide) in paragraph at lines 30--30
+Overfull \hbox (25.45921pt too wide) in paragraph at lines 25--25
 \OT1/ptm/m/n/12 de aproxima[][]ao sem uma ga-ran-tia for-mal de seu de-sem-pe-nho. Sendo ne-cess[]arias para implementa[][]ao
  []
 
 
-Overfull \hbox (20.97989pt too wide) in paragraph at lines 39--39
+Overfull \hbox (20.97989pt too wide) in paragraph at lines 32--32
 []\OT1/ptm/m/n/12 Ressalta-se que den-tre as heur[]sticas me-re-cem es-pe-cial aten[][]ao as cha-ma-das meta-heur[]sticas
  []
 
 
-Overfull \hbox (7.73378pt too wide) in paragraph at lines 41--41
+Overfull \hbox (7.73378pt too wide) in paragraph at lines 34--34
 []\OT1/ptm/m/n/12 Podem-se ci-tar como exem-plo as meta-heur[]sticas: Busca Tabu (\OT1/ptm/m/it/12 Tabu Se-arch\OT1/ptm/m/n/12 ), Otimiza[][]ao
  []
 
-[2]
-Overfull \hbox (1.6055pt too wide) in paragraph at lines 87--87
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
- []
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 91.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 91.
- [3]) [4] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [5
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 30.
+) [2
 
-
-]) [6]
-(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux)) ) 
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
 Here is how much of TeX's memory you used:
- 4320 strings out of 493921
- 64773 string characters out of 3144864
- 132180 words of memory out of 3000000
- 7541 multiletter control sequences out of 15000+200000
- 11204 words of font info for 25 fonts, out of 3000000 for 9000
+ 4231 strings out of 493921
+ 62148 string characters out of 3144864
+ 127884 words of memory out of 3000000
+ 7455 multiletter control sequences out of 15000+200000
+ 13385 words of font info for 32 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,4n,43p,1014b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (6 pages, 81410 bytes).
+ 43i,4n,43p,586b,193s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on monografia.pdf (2 pages, 58347 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
+ 26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
