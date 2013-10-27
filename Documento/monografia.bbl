@@ -10,12 +10,10 @@
 {AARTS, E.; KORST, J. Simulated annealing and boltzmann machines.
 New York, NY; John Wiley and Sons Inc., 1988.}
 
-\bibitem[Caelum 2013]{caelum}
-\abntrefinfo{Caelum}{CAELUM}{2013}
-{CAELUM. \emph{Apostila do curso FJ-11 - Java e Orientação a Objetos}. 2013.
-Dispon{\'\i}vel em:
-  $<$http://www.caelum.com.br/apostila-java-orientacao-objetos$>$. Acesso em:
-  29 set. 2013.}
+\bibitem[Armentano e Branchini 2013]{armentanointroduccao}
+\abntrefinfo{Armentano e Branchini}{ARMENTANO; BRANCHINI}{2013}
+{ARMENTANO, V.~A.; BRANCHINI, R.~M. Uma introdu{\c{c}}{\~a}o {\`a} busca tabu.
+2013.}
 
 \bibitem[Carter e Tovey 1992]{carter1992classroom}
 \abntrefinfo{Carter e Tovey}{CARTER; TOVEY}{1992}
@@ -92,13 +90,6 @@ Dispon{\'\i}vel em:
   tripula{\c{c}}{\~o}es de {\^o}nibus urbano}.
 Tese (Doutorado) --- Master’s Thesis, Universidade Federal Fluminense, 2005.}
 
-\bibitem[Mendes 2013]{angularjs}
-\abntrefinfo{Mendes}{MENDES}{2013}
-{MENDES, W. \emph{AngularJS um framework para facilitar sua vida}. 2013.
-Dispon{\'\i}vel em:
-  $<$http://www.slideshare.net/WilsonMendes/angularjs-um-framework-para-facilitar-sua-vida$>$.
-  Acesso em: 29 set. 2013.}
-
 \bibitem[Michalewicz e Schoenauer 1996]{michalewicz1996evolutionary}
 \abntrefinfo{Michalewicz e Schoenauer}{MICHALEWICZ; SCHOENAUER}{1996}
 {MICHALEWICZ, Z.; SCHOENAUER, M. Evolutionary algorithms for constrained
@@ -146,18 +137,6 @@ A Bradford Book, 1998.}
 \emph{XXXIII Simp{\'o}sio Brasileiro de Pesquisa Operacional”, Campos do
   Jord{\~a}o, SP}, 2001.}
 
-\bibitem[Play! 2013]{playframework}
-\abntrefinfo{Play!}{PLAY!}{2013}
-{PLAY! \emph{The High Velocity Web Framework For Java and Scala}. 2013.
-Dispon{\'\i}vel em: $<$http://www.playframework.com/$>$. Acesso em: 29 set.
-  2013.}
-
-\bibitem[PostgreSQL 2013]{postgresql}
-\abntrefinfo{PostgreSQL}{POSTGRESQL}{2013}
-{POSTGRESQL. \emph{Sobre o PostgreSQL}. 2013.
-Dispon{\'\i}vel em: $<$http://www.postgresql.org.br/sobre$>$. Acesso em: 29
-  set. 2013.}
-
 \bibitem[Rao 1984]{opac-b1092847}
 \abntrefinfo{Rao}{RAO}{1984}
 {RAO, S.~S. \emph{Optimization : theory and applications}. New Delhi: Wiley
@@ -195,33 +174,17 @@ ISBN 0-85226-780-0. Dispon{\'\i}vel em:
   related to the travelling salesman problem. J. Algorithms}, v.~5, p.
   231--246, 1982.}
 
+\bibitem[Subramanian et al. 2006]{subramanian2006aplicaccao}
+\abntrefinfo{Subramanian et al.}{SUBRAMANIAN et al.}{2006}
+{SUBRAMANIAN, A. et al. Aplica{\c{c}}{\~a}o da metaheur{\'\i}stica busca tabu
+  na resolu{\c{c}}{\~a}o do problema de aloca{\c{c}}{\~a}o de salas do centro
+  de tecnologia da ufpb.
+\emph{Anais do XXVI Encontro Nacional de Engenharia de Produ{\c{c}}{\~a}o},
+  p.~1, 2006.}
+
 \bibitem[TIM{\'O}TEO 2005]{timoteo2005desenvolvimento}
 \abntrefinfo{TIM{\'O}TEO}{TIM{\'O}TEO}{2005}
 {TIM{\'O}TEO, G. T.~S. \emph{Desenvolvimento de um Algoritmo Gen{\'e}tico para
   a Resolu{\c{c}}{\~a}o do Timetabling}. 2005.}
-
-\bibitem[W3C 2013 a]{html}
-\abntrefinfo{W3C}{W3C}{2013 a}
-{W3C. \emph{HTML 4.01 Specification}. 2013 a.
-Dispon{\'\i}vel em: $<$http://www.w3.org/TR/html4$>$. Acesso em: 29 set. 2013.}
-
-\bibitem[W3C 2013 b]{css}
-\abntrefinfo{W3C}{W3C}{2013 b}
-{W3C. \emph{Cascading Style Sheets}. 2013 b.
-Dispon{\'\i}vel em: $<$http://www.w3.org/Style/CSS$>$. Acesso em: 29 set.
-  2013.}
-
-\bibitem[w3schools 2013]{javascript}
-\abntrefinfo{w3schools}{W3SCHOOLS}{2013}
-{W3SCHOOLS. \emph{JavaScript Tutorial}. 2013.
-Dispon{\'\i}vel em: $<$http://www.w3schools.com/js/$>$. Acesso em: 29 set.
-  2013.}
-
-\bibitem[White, Xie e Zonjic 2004]{white2004using}
-\abntrefinfo{White, Xie e Zonjic}{WHITE; XIE; ZONJIC}{2004}
-{WHITE, G.~M.; XIE, B.~S.; ZONJIC, S. Using tabu search with longer-term memory
-  and relaxation to create examination timetables.
-\emph{European Journal of Operational Research}, Elsevier, v.~153, n.~1, p.
-  80--91, 2004.}
 
 \end{thebibliography}

@@ -41,24 +41,39 @@ Como exemplos de meta-heurísticas temos Busca Tabu (\textit{Tabu Search}), Otim
 
 \subsecao{Busca Tabu}
 
-A metaheurística BT foi inicialmente desenvolvida por \cite{glover1986future} como uma proposta de
-solução para problemas de programação inteira. A partir de então, o autor formalizou esta
-técnica e publicou uma série de trabalhos contendo diversas aplicações da mesma. A
-metaheurística BT utiliza uma lista contendo o histórico da evolução do processo de busca, de
-modo a evitar ciclagem; incorpora uma estratégia de balanceamento entre os movimentos
-aceitos, rejeitados e aspirados; e adota procedimentos de diversificação e intensificação para o
-processo de busca.\par
-\cite{souza2000} e \cite{white2004using} ressaltam a existência de um mecanismo, relacionado com
-a Lista Tabu, que anula o status tabu de um movimento, denominado função de aspiração. Se
-um movimento pode proporcionar uma melhora considerável da função objetivo, então o
-status tabu é abandonado e a solução resultante é aceita como potencial vizinho.
+%O que é
 
-\subsecao{Algoritmo da colônia de formigas}	
+Busca tabu (BT) é uma meta-heurística adaptativa, que utiliza uma estrutura de memória através de uma lista, contendo um histórico de evolução para evitar que o processo de busca forme ciclos, ou seja, o retorno a um ótimo local previamente visitado \cite{souza2000} , \cite{armentanointroduccao} e \cite{subramanian2006aplicaccao}.\par
 
-	Achar uma referencia sobre o algoritimo da colonia
+
+%Histótiria
+
+Segundo \cite{subramanian2006aplicaccao} BT foi desenvolvida por \cite{glover1986future} com o objetivo de encontrar soluções para problemas de programação linear. Ao formalizar a técnica, o autor publicou uma serie de trabalhos envolvendo diversas aplicações da meta-heurística. \par
+
+%Funcionamento
+
+Basicamente o funcionamento do BT a feito partir da definição de uma população inicial ${S_0}$, o algoritmo explora cada iteração, de um subconjunto V da vizinhança N(S) da solução corrente S. O membro S’ de V com melhor valor nessa região segundo a função f(.) torna-se a nova solução corrente mesmo que S’ seja pior que S isto é, que f(S’) $>$ f(S) para um problema de minimização\cite{souza2000}. A figura 2 representa o pseudocódigo do algorítimo da Busca Tabu.
+
+%Caracteristicas
+
+Segundo \cite{armentanointroduccao}  o algorítimo tem um intensivo uso de memória o que é uma característica essencial deste método. Para o autor o uso da memória pode ajudar a intensificar a busca em regiões com grande chances de se encontrar o resultado, ou até mesmo, diversificar a busca através de regiões inexploradas.
+\begin{figure}[!htb]
+\caption[Representação do pseudocódigo do algorítimo da Busca Tabu]{Representação do pseudocódigo do algorítimo da Busca Tabu}
+\label{fig:figura2}
+\centering
+\includegraphics[scale=0.50]{imagens/representacaoBuscaTabu.png}
+\\ \textbf{\footnotesize Fonte: \cite{souza2000}}
+\end{figure}
+
+De acordo com \cite{armentanointroduccao}  devemos adotar alguns procedimentos para que o processo de busca tenha um melhor resultado, listas tabu dinâmicas, passagens por regiões planas, intensificação, diversificação,\textit{path relinking}. Listas tabu dinâmicas tem como objetivo evitar que o algorítimo entre em processo de ciclo.Passagens por regiões planas pode levar o algorítimo a pensar que não existem melhoras significativas na qualidade das soluções e atingir o critério de parada, para evitar esta situação é necessário aumentar o tamanho da lista tabu enquanto o algorítimo estiver passando pela região plana e voltar a reduzir quando houver mudança no valor da função objetiva.Intensificação são técnicas utilizadas para concentrar os esforços da pesquisa em regiões consideradas promissoras. Diversificação é uma técnica que utiliza memória de longo prazo para redirecionar a pesquisa para regiões que ainda não foram suficientemente exploradas. PathRelinking trada ta intensificação de incorporar atributos de soluções de boa qualidade (chamadas de soluções elite), em seguida explora caminhos que contenham uma ou mais soluções de elite.
+
+Ainda segundo \cite{armentanointroduccao} uma característica importante do método é que a solução final tem pouca ou nenhuma dependência da escolha feita para a solução inicial, isso graças aos mecanismos implementados pelo método, que fogem de ótimos locais.
 
 \subsecao{Recozimento Simulado}
 
+%O que é
+%Histótiria
+%Caracteristicas
 Técnica de busca local probabilística, proposta originalmente por \cite{kirkpatrick1983optimization}, que se fundamenta em uma analogia com a termodinâmica, ao simular o 
 resfriamento de um conjunto de átomos aquecidos. Isto é, conforme \cite{noronha2003abordagem} em 
 analogia a física da matéria: levando um cristal a sua temperatura de fusão, as moléculas 
