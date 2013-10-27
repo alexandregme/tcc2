@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  27 OCT 2013 17:33
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  27 OCT 2013 19:27
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -431,11 +431,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux
 
 LaTeX Warning: Label `fig:figura2' multiply defined.
 
-))
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -500,88 +500,109 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex
+)
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-<imagens/problemaOtimizacao.png, id=1, 593.96906pt x 362.85562pt>
-File: imagens/problemaOtimizacao.png Graphic file (type png)
- <use imagens/problemaOtimizacao.png>
-Package pdftex.def Info: imagens/problemaOtimizacao.png used on input line 15.
-(pdftex.def)             Requested size: 326.68399pt x 199.5712pt.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 14.
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:24: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:24: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+<imagens/mensagemJava.png, id=1, 477.28313pt x 69.25874pt>
+File: imagens/mensagemJava.png Graphic file (type png)
+ <use imagens/mensagemJava.png>
+Package pdftex.def Info: imagens/mensagemJava.png used on input line 30.
+(pdftex.def)             Requested size: 381.82701pt x 55.40706pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
- [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 
 
+LaTeX Warning: Citation `play' on page 1 undefined on input line 35.
 
- <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/problemaOtimizacao.png>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 55.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 55.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 55.
- <imagens/representacaoBuscaTabu.png, id=8, 800.9925pt x 647.41875pt>
-File: imagens/representacaoBuscaTabu.png Graphic file (type png)
- <use imagens/representacaoBuscaTabu.png>
-Package pdftex.def Info: imagens/representacaoBuscaTabu.png used on input line 64.
-(pdftex.def)             Requested size: 400.49527pt x 323.70857pt.
+<imagens/mensagemPlay.png, id=2, 478.78876pt x 161.85469pt>
+File: imagens/mensagemPlay.png Graphic file (type png)
+ <use imagens/mensagemPlay.png>
+Package pdftex.def Info: imagens/mensagemPlay.png used on input line 41.
+(pdftex.def)             Requested size: 383.03152pt x 129.4839pt.
 
-Overfull \hbox (6.57072pt too wide) in paragraph at lines 59--67
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 AR-MEN-TANO; BRAN-CHINI\OT1/ptm/m/n/12 , 2013) o al-gor[]timo tem um in-ten-sivo uso de mem[]oria
+Overfull \hbox (4.92317pt too wide) in paragraph at lines 54--55
+\OT1/ptm/m/n/12 HEUR[]ISTICA E M[]ETODO MISTO NA OTIMIZA[][]AO DA PROGRAMA[][]AO DE HOR[]ARIO
  []
+
+
+Overfull \hbox (58.82884pt too wide) in paragraph at lines 56--57
+[]\OT1/ptm/m/n/12 restri[][]oes do pro-blema e mo-delo ma-te-ma-tico http://www.dcc.ufla.br/infocomp/artigos/v4.3/art08.pdf 
+ []
+
+[1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+ <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/mensagemJava.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/mensagemPlay.png>]
+E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:61: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 [2]
-Overfull \hbox (9.83441pt too wide) in paragraph at lines 70--71
-[]\OT1/ptm/m/n/12 Ainda se-gundo (\OT1/ptm/m/n/10 AR-MEN-TANO; BRAN-CHINI\OT1/ptm/m/n/12 , 2013) uma ca-rac-ter[]stica im-por-tante do m[]etodo
+Overfull \hbox (2.06952pt too wide) in paragraph at lines 104--104
+[]\OT1/ptm/m/n/12 As fer-ra-men-tes de Front-end des-cri-tas abaixo, fo-ram es-co-lhi-das de-vida a gande utiliza[][]ao
  []
 
-[3 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoBuscaTabu.png>]
-Overfull \hbox (1.6055pt too wide) in paragraph at lines 100--100
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
+
+Overfull \hbox (11.18895pt too wide) in paragraph at lines 120--120
+[]\OT1/ptm/m/n/12 O Eclipse []e uma IDE (\OT1/ptm/m/it/12 in-te-gra-ted de-ve-lop-ment en-vi-ron-ment\OT1/ptm/m/n/12 ). Di-fe-rente de uma RAD(\OT1/ptm/m/it/12 Rapid
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 104.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 104.
- [4]
-Overfull \hbox (3.81163pt too wide) in paragraph at lines 128--128
-\OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
+[3] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [4]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 12.
+
+Underfull \hbox (badness 1496) in paragraph at lines 30--33
+[]\OT1/ptm/m/n/12 POSTGRESQL. \OT1/ptm/m/it/12 So-bre o Post-greSQL\OT1/ptm/m/n/12 . 2013. Dis-pon[]vel em: 
  []
 
-[5]
-Overfull \hbox (6.35178pt too wide) in paragraph at lines 145--145
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 EVEN; ITAI; SHA-MIR\OT1/ptm/m/n/12 , 1975) o PAS per-tence a classe de Pro-ble-mas de Otimiza[][]ao
- []
+) [5
 
-) [6] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [7
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
 
+LaTeX Warning: There were undefined references.
 
-]) [8] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4389 strings out of 493921
- 66267 string characters out of 3144864
- 132588 words of memory out of 3000000
- 7597 multiletter control sequences out of 15000+200000
- 16637 words of font info for 36 fonts, out of 3000000 for 9000
+ 4260 strings out of 493921
+ 62249 string characters out of 3144864
+ 127834 words of memory out of 3000000
+ 7479 multiletter control sequences out of 15000+200000
+ 15011 words of font info for 34 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,8n,43p,1312b,309s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (8 pages, 298661 bytes).
+ 43i,6n,43p,974b,294s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (5 pages, 79128 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

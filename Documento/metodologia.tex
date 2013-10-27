@@ -1,3 +1,15 @@
+\documentclass{abntpuc}
+
+\usepackage[pdftex]{graphicx}
+
+\usepackage{fancyhdr}
+
+\begin{document}
+
+%\include{apresentacao}
+%\include{introducao}
+%\include{referencial}
+%\include{metodologia}
 
 \capitulo{METODOLOGIA}
 
@@ -5,57 +17,34 @@
 
 
 
-A resolução deste trabalho está dividida nos seguintes tópicos algoritimo escolhido para resolução do problema, análise de requisitos, e implementação.\par
+A resolução deste trabalho está dividida na seguinte sequencia descrição do ambiente, análise e algorítimo.\par
 
 
-Para a resolução do problema de timetable foi escolhido o algoritimo genetico, a escolha do algoritimo foi devida a grande utilização do mesmo para resolução de problemas do tipo NP-dificil que foram encontrados na literatura.
-\par
 
-Foi realizada uma análise dos requisistos atravez de entrevista com o steakholder, após as entrevistas a modelagem de dados foi realizada de acordo com a demanda do projeto, para o desenvolvimento destes diagramas foi utilizadas a UML (Universal Modeling Language). Os seguintes diagramas foram desenhados, diagrama de caso de uso, diagrama de classe e diagrama de entidade relacionamento. Foram escolhidos os seguintes diagramas para que o sistema tenha uma documentação minima tendo em vista que o foco do trabalho é a resolução do problema de timetable através da utilização do algoritimo genetico.
+A implementação do sistema se deve primeiramente a configuração do ambiente para o início do desenvolvimento os seguintes passos devem ser tomados para que o ambiente seja reproduzido novamente. Primeiramente deve se instalar o SGBD PostgreSQL, logo em seguida deve se instalar o JAVA 7 em sua maquina, para validar a instalação deve-se executar o seguinte comando "java -version && javac -version" a mensagem descrita na figura XX deve ser mostrada.
 
-Por se tratar de um sistema complexo, antes de iniciar a implementação do sistema
-fez-se necessário a sua modelagem. Segundo Elmasri & Navathe (2005) as metodologias
-de modelagem de dados de objetos como UML (Universal Modeling Language –
-Linguagem de Modelagem Universal) estão se tornando cada vez mais populares no
-projeto e engenharia de software. Essas metodologias vão além do projeto de um banco de
-dados, especificando o projeto detalhado dos módulos de software e suas interações,
-utilizando vários tipos de diagramas.
+\begin{figure}[!htb]
+\caption[Versão Framework]{Versão Framework}
+\label{fig:figura2}
+\centering
+\includegraphics[scale=0.8]{imagens/mensagemJava.png}
+\\ \textbf{\footnotesize Fonte: Autor}
+\end{figure}
 
 
-\par
+Após a instalação do java deve-se instalar o Play! framework seguindo os passos encontrados no site \cite{play} para validar a instalação do Play! deve se executar o comando "play version" e o \textit{prompt} de comando deve retornar a mensagem conforme mostra a figura figura XX.
 
+\begin{figure}[!htb]
+\caption[Versão Framework]{Versão Framework}
+\label{fig:figura2}
+\centering
+\includegraphics[scale=0.8]{imagens/mensagemPlay.png}
+\\ \textbf{\footnotesize Fonte: Autor}
+\end{figure}
 
-A implementação do sistema de deve primeiramente a configuração do ambiente para que o desenvolvimento se torne agil. Os seguintes passos devem ser feitos para que o sistema seja reproduzido novamente primeiramente deve se instalar o SGBD PostgreSQL, logo em seguida deve se tomar todas as providencias para que o JAVA 7 rode na sua maquina para validar a instalação do mesmo deve-se executar o seguinte comando 
+Uma vez que o ambiente já está configurado devemos inciar um projeto no framework instalado através do comando "play new nomeDoProjeto", a partir dai é possível escolher IDE que será utilizada.
 
-java -version && javac -version a mensagem abaixo deve ser mostrada.
-
-java version \"1.7.0_11\"\par
-Java(TM) SE Runtime Environment (build 1.7.0_11-b21)\par
-Java HotSpot(TM) 64-Bit Server VM (build 23.6-b04, mixed mode)\par
-javac 1.7.0_11\par
-
-Após a instalão do java deve-se instalar o Play! framework seguindo os passos encontrados no site \cite{play} para validar a isntalação do play deve se excutar o comando play version e o prompt de comando deve retornar a seguinte mensagem mostrando a versão 1.2.5 do framework:
-
-~        _            _
-~  _ __ | | __ _ _  _| |
-~ | \'_ \| |/ _\' | || |_|
-~ |  __/|_|\____|\__ (_)
-~ |_|            |__/
-~
-~ play! 1.2.5, http://www.playframework.org
-~
-1.2.5
-
-Enquando é executada a instalação do ambiente o download da IDE pode ser excutado atravez do site \cite{eclipse} juntamente com o software astah \cite{astah}\par
-
-Uma vez que o ambiente já está configurado devemos inciar um projeto no framework instalado atravez do comando play new \"nome_do_projeto\", logo em seguida devemos adaptar os arquivos gerados pelo framework para que o eclipse entanda o projeto atravez do comando play eclipsify.
-
-
-Inicialmente foi criado um script para que o banco de dados fosse criado e para que população das informações inciais como, prédios, salas, turnos, horários, e disciplinas com suas respectivas informações que são necessarias todo inicio de semestre para execução do problema.
-
-Assim que o banco estiver configurado no SGBD é feita a configuração para que o projeto se comunique com o banco de dados. Após a conexão com o ocorreu o desenvolvimento das Model, Controllers, Views e o algoritimo proposto para solução.
-
-Sobre o sistema
+Foi criado um \textit{script} para criação do banco de dados e população inicial das informações como, prédios, salas, turnos, horários, e disciplinas com informações que são necessárias em todo inicio de semestre na instituição de ensino escolhida.
 
 PQ do algoritimo genetico
 segundo renand dupas a escolha de algoritimoes geneticos se dá através de uma comparação com outras técnicas e através disso de uma evidenciação das vantagens de sua utilização , logo o algoritimo genetico foi escolhido para este trabalho.
@@ -66,15 +55,35 @@ modelo matematico ----APLICAÇÃO DE MODELO MATEMÁTICO, ABORDAGEM HEURÍSTICA E
 
 restrições do problema e modelo matematico http://www.dcc.ufla.br/infocomp/artigos/v4.3/art08.pdf
 
+Foi realizada uma análise dos requisistos atravez de entrevista com o steakholder, após as entrevistas a modelagem de dados foi realizada de acordo com a demanda do projeto, para o desenvolvimento destes diagramas foi utilizadas a UML (Universal Modeling Language). Os seguintes diagramas foram desenhados, diagrama de caso de uso, diagrama de classe e diagrama de entidade relacionamento. Foram escolhidos os seguintes diagramas para que o sistema tenha uma documentação minima tendo em vista que o foco do trabalho é a resolução do problema de timetable através da utilização do algoritimo genetico.
+
+Por se tratar de um sistema complexo, antes de iniciar a implementação do sistema
+fez-se necessário a sua modelagem. Segundo Elmasri & Navathe (2005) as metodologias
+de modelagem de dados de objetos como UML (Universal Modeling Language –
+Linguagem de Modelagem Universal) estão se tornando cada vez mais populares no
+projeto e engenharia de software. Essas metodologias vão além do projeto de um banco de
+dados, especificando o projeto detalhado dos módulos de software e suas interações,
+utilizando vários tipos de diagramas.\par
+
 \secao{Ferramentas Utilizadas}
 
 Este trabalho conta com a utilização de tecnologias proprias para o desenvolvimento de sistemas web, foram utilizadas as seguintes ferramentas: Para SGBD foi o utilizado PostgreSQL; No back-end foi utilizado Java e o \textit{framework Play!}; No front-end as tecnologias utilizadas foram HTML, CSS, JavaScript e \textit{framework AngularJS} e a IDE utilizada \textit{Eclipse}.\par
+
+
 
 \subsecao{Sistema de Gerenciamento de Banco de Dados}
 
 O SGBD escolhido foi o PostgreSQL pelo fato de ser uma ferramenta open-source e que trabalha perfeitamente com o framework escolhido Play!, uma vez que utilizado em projetos anteriores não foram apresentados conflitos entre o framework e o SGBD. A seguir pode ser notar que é uma ferramenta robusta e que tem visão no mercado internacional.\par
 
 O PostgreSQL é um poderoso sistema gerenciador de banco de dados objeto-relacional de código aberto.  Tem mais de 15 anos de desenvolvimento ativo e uma arquitetura que comprovadamente ganhou forte reputação de confiabilidade, integridade de dados e conformidade a padrões.  Roda em todos os grandes sistemas operacionais. É totalmente compatível com ACID, tem suporte completo a chaves estrangeiras, junções (JOINs), visões, gatilhos e procedimentos armazenados (em múltiplas linguagens).  Inclui a maior parte dos tipos de dados do ISO SQL:1999, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, e TIMESTAMP.  Suporta também o armazenamento de objetos binários, incluindo figuras, sons ou vídeos.  Possui interfaces nativas de programação para C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e uma excepcional documentação.\cite{postgresql}
+
+
+
+Para a resolução do problema de timetable foi escolhido o algoritimo genetico, a escolha do algoritimo foi devida a grande utilização do mesmo para resolução de problemas do tipo NP-dificil que foram encontrados na literatura.
+\par
+
+
+
 
 \subsecao{Ferramentas Back-end}
 
@@ -113,3 +122,10 @@ O Eclipse é uma IDE (\textit{integrated development environment}). Diferente de
 O Eclipse é a IDE líder de mercado. Formada por um consórcio liderado pela IBM, possui seu código livre. A última versão é a 4.3, mas com qualquer versão posterior a do 3.1 você terá suporte ao Java 5, 6 e 7 \cite{caelum}.\par
 
 Está IDE foi escolhida devido ao grande reconhecimento mundial, por sua eficiencia ao se trabalhar com a linguagem de programação Java, por ser open-source e pela existencia de varias ferramentas criadas pela comunidade, para o auxilio no desenvolvimento de softwares.\par
+
+%\include{sistema}
+%\include{conclusao}
+\referencias{referencias}
+%\include{apendices}
+
+\end{document}

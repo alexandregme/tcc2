@@ -1,9 +1,24 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: monografia.aux
-A level-1 auxiliary file: referencial.aux
 The style file: abnt-alf.bst
 Database file #1: referencias.bib
+Warning--entry type for "postgresql" isn't style-file defined
+--line 334 of file referencias.bib
+Warning--entry type for "caelum" isn't style-file defined
+--line 343 of file referencias.bib
+Warning--entry type for "playframework" isn't style-file defined
+--line 352 of file referencias.bib
+Warning--entry type for "html" isn't style-file defined
+--line 361 of file referencias.bib
+Warning--entry type for "css" isn't style-file defined
+--line 370 of file referencias.bib
+Warning--entry type for "javascript" isn't style-file defined
+--line 379 of file referencias.bib
+Warning--entry type for "angularjs" isn't style-file defined
+--line 388 of file referencias.bib
+Warning--I didn't find a database entry for "play"
 +---------------------------------------------------------+
 | Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
+(There were 8 warnings)

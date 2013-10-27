@@ -41,20 +41,12 @@ Como exemplos de meta-heurísticas temos Busca Tabu (\textit{Tabu Search}), Otim
 
 \subsecao{Busca Tabu}
 
-%O que é
-
 Busca tabu (BT) é uma meta-heurística adaptativa, que utiliza uma estrutura de memória através de uma lista, contendo um histórico de evolução para evitar que o processo de busca forme ciclos, ou seja, o retorno a um ótimo local previamente visitado \cite{souza2000} , \cite{armentanointroduccao} e \cite{subramanian2006aplicaccao}.\par
 
 
-%Histótiria
-
 Segundo \cite{subramanian2006aplicaccao} BT foi desenvolvida por \cite{glover1986future} com o objetivo de encontrar soluções para problemas de programação linear. Ao formalizar a técnica, o autor publicou uma serie de trabalhos envolvendo diversas aplicações da meta-heurística. \par
 
-%Funcionamento
-
 Basicamente o funcionamento do BT a feito partir da definição de uma população inicial ${S_0}$, o algoritmo explora cada iteração, de um subconjunto V da vizinhança N(S) da solução corrente S. O membro S’ de V com melhor valor nessa região segundo a função f(.) torna-se a nova solução corrente mesmo que S’ seja pior que S isto é, que f(S’) $>$ f(S) para um problema de minimização\cite{souza2000}. A figura 2 representa o pseudocódigo do algorítimo da Busca Tabu.
-
-%Caracteristicas
 
 Segundo \cite{armentanointroduccao}  o algorítimo tem um intensivo uso de memória o que é uma característica essencial deste método. Para o autor o uso da memória pode ajudar a intensificar a busca em regiões com grande chances de se encontrar o resultado, ou até mesmo, diversificar a busca através de regiões inexploradas.
 \begin{figure}[!htb]
@@ -71,24 +63,26 @@ Ainda segundo \cite{armentanointroduccao} uma característica importante do mét
 
 \subsecao{Recozimento Simulado}
 
-%O que é
-%Histótiria
-%Caracteristicas
 Técnica de busca local probabilística, proposta originalmente por \cite{kirkpatrick1983optimization}, que se fundamenta em uma analogia com a termodinâmica, ao simular o 
-resfriamento de um conjunto de átomos aquecidos. Isto é, conforme \cite{noronha2003abordagem} em 
-analogia a física da matéria: levando um cristal a sua temperatura de fusão, as moléculas 
-estão desordenadas e se agitam livremente. Ao resfriar-se a amostra de maneira 
-infinitamente lenta, as moléculas vão adquirir a estrutura cristalina estável que tem um 
-nível de energia mais baixo possível. 
-Conforme \cite{aarts1988simulated} a analogia com a otimização (combinatória ou não) 
-é bastante direta. Os estados da matéria são as soluções realizáveis, a quantidade objetiva 
-substitui a energia, os estados metaestáveis da matéria sendo ótimos locais e a estrutura 
-cristalina corresponde ao ótimo global. 
-Segundo \cite{reeves1993modern}, a temperatura Tassume, inicialmente, um valor 
-elevado T0e o procedimento pára quando a temperatura chega a um valor próximo de zero 
-e nenhuma solução que piore o valor da função objetivo é mais aceita, isto é, quando o 
-sistema está estável.\par
-Mais informações em \cite{reeves1993modern} e \cite{kirkpatrick1983optimization}. 
+resfriamento de um conjunto de átomos aquecidos.\par 
+
+Isto é, conforme \cite{noronha2003abordagem} em analogia a física da matéria: levando um cristal a sua temperatura de fusão, as moléculas estão desordenadas e se agitam livremente. Ao resfriar-se a amostra de maneira infinitamente lenta, as moléculas vão adquirir a estrutura cristalina estável que tem um nível de energia mais baixo possível.\par 
+
+Segundo \cite{souza2002experiencias} o processo se inicia com um membro qualquer do espaço de soluções, normalmente gerado aleatoriamente, e seleciona um de seus vizinhos randomicamente. Se este vizinho for melhor que o original ele é aceito e substitui a solução corrente. Se ele for pior por uma quantidade ∆, ele é aceito com uma probabilidade e -∆/T , onde T decresce gradualmente conforme o progresso do algoritmo. Esse processo é repetido até que T seja tão pequeno que mais nenhum movimento seja aceito. A melhor solução encontrada durante a busca é tomada como uma boa aproximação para a solução ótima. Originalmente, Simulated Annealing foi derivado de simulações em termodinâmica e por esta razão o parâmetro T é referenciado como temperatura e a maneira pela qual ela é reduzida é chamada de processo de resfriamento.
+
+
+A figura 3 representa o pseudocódigo do algoritmo Simulated Annealing.
+
+\begin{figure}[!htb]
+\caption[Representação do pseudocódigo do algorítimo Simulated Annealing]{Representação do pseudocódigo do algorítimo Simulated Annealing}
+\label{fig:figura2}
+\centering
+\includegraphics[scale=0.55]{imagens/representacaoSimulatedAnnealing.png}
+\\ \textbf{\footnotesize Fonte: \cite{souza2002experiencias}}
+\end{figure}
+
+Conforme \cite{aarts1988simulated} a analogia com a otimização (combinatória ou não) é bastante direta. Os estados da matéria são as soluções realizáveis, a quantidade objetiva substitui a energia, os estados metaestáveis da matéria sendo ótimos locais e a estrutura cristalina corresponde ao ótimo global.\par 
+
 
 \subsecao{Algoritmos genéticos}
 
