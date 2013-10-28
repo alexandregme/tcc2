@@ -10,10 +10,10 @@
 \contentsline {section}{\numberline {2.1}Problemas de Otimiza\IeC {\c c}\IeC {\~a}o}{6}
 \contentsline {section}{\numberline {2.2}Heur\IeC {\'\i }stica}{7}
 \contentsline {subsection}{\numberline {2.2.1}Busca Tabu}{8}
-\contentsline {subsection}{\numberline {2.2.2}Recozimento Simulado}{10}
+\contentsline {subsection}{\numberline {2.2.2}Recozimento Simulado}{9}
 \contentsline {subsection}{\numberline {2.2.3}Algoritmos gen\IeC {\'e}ticos}{11}
 \contentsline {section}{\numberline {2.3}TimeTabling}{12}
-\contentsline {section}{\numberline {2.4}Trabalhos Relacionados}{14}
+\contentsline {section}{\numberline {2.4}Trabalhos Relacionados}{13}
 \contentsline {chapter}{\numberline {3}METODOLOGIA}{15}
 \contentsline {section}{\numberline {3.1}Ferramentas Utilizadas}{16}
 \contentsline {subsection}{\numberline {3.1.1}Sistema de Gerenciamento de Banco de Dados}{17}
@@ -28,10 +28,10 @@
 \contentsline {section}{\numberline {4.2}Algor\IeC {\'\i }timo Gen\IeC {\'e}tico}{23}
 \contentsline {subsection}{\numberline {4.2.1}Indiv\IeC {\'\i }duo}{24}
 \contentsline {subsection}{\numberline {4.2.2}Popula\IeC {\c c}\IeC {\~a}o}{25}
-\contentsline {subsection}{\numberline {4.2.3}Operadores gen\IeC {\'e}ticos}{26}
-\contentsline {subsection}{\numberline {4.2.4}Defini\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o objetivo}{28}
-\contentsline {subsection}{\numberline {4.2.5}Fluxo do algoritimo}{30}
-\contentsline {chapter}{\numberline {5}RESULTADOS OBTIDOS}{32}
-\contentsline {chapter}{\numberline {6}CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}{33}
-\contentsline {section}{\numberline {6.1}Trabalhos futuros}{33}
-\contentsline {chapter}{REFER\^ENCIAS}{34}
+\contentsline {subsection}{\numberline {4.2.3}Operadores gen\IeC {\'e}ticos}{27}
+\contentsline {subsection}{\numberline {4.2.4}Defini\IeC {\c c}\IeC {\~a}o da fun\IeC {\c c}\IeC {\~a}o objetivo}{29}
+\contentsline {subsection}{\numberline {4.2.5}Fluxo do algoritimo}{29}
+\contentsline {chapter}{\numberline {5}RESULTADOS OBTIDOS}{31}
+\contentsline {chapter}{\numberline {6}CONSIDERA\IeC {\c C}\IeC {\~O}ES FINAIS}{32}
+\contentsline {section}{\numberline {6.1}Trabalhos futuros}{32}
+\contentsline {chapter}{REFER\^ENCIAS}{33}
