@@ -1,17 +1,74 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  28 OCT 2013 10:42
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.22)  28 OCT 2013 18:34
 entering extended mode
-**E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex
-(E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex
+**D:/workspace/tcc2/Documento/metodologia.tex
+(D:/workspace/tcc2/Documento/metodologia.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto,
- estonian, farsi, finnish, french, galician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian, lith
-uanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
-ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+! Undefined control sequence.
+l.2 \capitulo
+             {METODOLOGIA}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:2: LaTeX Error: Missing \begin{document}.
+
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \capitulo{M
+               ETODOLOGIA}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no O in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no I in font nullfont!
+Missing character: There is no A in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--3
+[] 
+ []
+
+! Undefined control sequence.
+l.4 \iniciocapitulo
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 A
+      resolução deste trabalho está dividida na seguinte sequencia descri...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -116,15 +173,20 @@ Missing character: There is no m in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 2--2
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--5
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:4: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 A
+      implementação do sistema se deve primeiramente a configuração do a...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -456,7 +518,9 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:4: Misplaced alignment tab character &
+! Misplaced alignment tab character &.
+l.7 ...xecutar o seguinte comando "java -version &
+                                                  & javac -version" a mensag...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -464,7 +528,9 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:4: Misplaced alignment tab character &
+! Misplaced alignment tab character &.
+l.7 ...ecutar o seguinte comando "java -version &&
+                                                   javac -version" a mensage...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -530,24 +596,32 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+Overfull \hbox (20.0pt too wide) in paragraph at lines 7--8
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:6: LaTeX Error: Environment figure undefined.
+! LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{figure}
+                  [!htb]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:6: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{figure}[
+                   !htb]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -558,10 +632,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:7: LaTeX Error: \caption outside float.
+! LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \caption
+             [Versão Java]{Versão Java}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -573,15 +651,10 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no F in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no J in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no k in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no V in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -590,16 +663,13 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no � in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no F in font nullfont!
-Missing character: There is no r in font nullfont!
+Missing character: There is no J in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no k in font nullfont!
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:10: Undefined control sequence
+Missing character: There is no v in font nullfont!
+Missing character: There is no a in font nullfont!
+! Undefined control sequence.
+l.13 \includegraphics
+                     [scale=0.8]{imagens/mensagemJava.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -642,19 +712,27 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 6--11
+Overfull \hbox (20.0pt too wide) in paragraph at lines 9--14
  [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:11: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \\ \textbf{\footnotesize Fonte: Autor}
+                                           
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:11: Undefined control sequence
+! Undefined control sequence.
+<recently read> \footnotesize 
+                              
+l.14 \\ \textbf{\footnotesize Fonte: Autor}
+                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -662,34 +740,43 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:12: LaTeX Error: \begin{document} ended by \end{figure}.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \end{figure}
+                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (31.03456pt too wide) in paragraph at lines 11--13
+Overfull \hbox (31.03456pt too wide) in paragraph at lines 14--16
 []\OT1/cmr/bx/n/10 Fonte:
  []
 
 
-Overfull \hbox (18.91656pt too wide) in paragraph at lines 11--13
+Overfull \hbox (18.91656pt too wide) in paragraph at lines 14--16
 \OT1/cmr/bx/n/10 Au-
  []
 
 
-Overfull \hbox (14.95827pt too wide) in paragraph at lines 11--13
+Overfull \hbox (14.95827pt too wide) in paragraph at lines 14--16
 \OT1/cmr/bx/n/10 tor
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:15: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 A
+      pós a instalação do java deve-se instalar o Play! framework seguind...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -782,7 +869,11 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{play}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:15: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.18 ... os passos encontrados no site \cite{play}
+                                                   para validar a instalaç�...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -790,7 +881,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `play' on page  undefined on input line 15.
+LaTeX Warning: Citation `play' on page  undefined on input line 18.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -922,34 +1013,42 @@ Missing character: There is no X in font nullfont!
 Missing character: There is no X in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 15--16
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 15--16
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 18--19
 []
  []
 
 
-Overfull \hbox (30.53868pt too wide) in paragraph at lines 15--16
+Overfull \hbox (30.53868pt too wide) in paragraph at lines 18--19
 \OT1/cmr/m/it/10 prompt
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:17: LaTeX Error: Environment figure undefined.
+! LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \begin{figure}
+                   [!htb]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:17: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \begin{figure}[
+                    !htb]
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -960,10 +1059,14 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:18: LaTeX Error: \caption outside float.
+! LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \caption
+             [Versão Framework]{Versão Framework}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1001,7 +1104,9 @@ Missing character: There is no w in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:21: Undefined control sequence
+! Undefined control sequence.
+l.24 \includegraphics
+                     [scale=0.8]{imagens/mensagemPlay.png}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1044,19 +1149,27 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no g in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 17--22
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--25
  [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:22: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \\ \textbf{\footnotesize Fonte: Autor}
+                                           
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:22: Undefined control sequence
+! Undefined control sequence.
+<recently read> \footnotesize 
+                              
+l.25 \\ \textbf{\footnotesize Fonte: Autor}
+                                           
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1064,34 +1177,43 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:23: LaTeX Error: \begin{document} ended by \end{figure}.
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \end{figure}
+                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (31.03456pt too wide) in paragraph at lines 22--24
+Overfull \hbox (31.03456pt too wide) in paragraph at lines 25--27
 []\OT1/cmr/bx/n/10 Fonte:
  []
 
 
-Overfull \hbox (18.91656pt too wide) in paragraph at lines 22--24
+Overfull \hbox (18.91656pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 Au-
  []
 
 
-Overfull \hbox (14.95827pt too wide) in paragraph at lines 22--24
+Overfull \hbox (14.95827pt too wide) in paragraph at lines 25--27
 \OT1/cmr/bx/n/10 tor
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:25: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 U
+      ma vez que o ambiente já está configurado devemos inciar um projeto ...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1265,15 +1387,20 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 25--26
+Overfull \hbox (20.0pt too wide) in paragraph at lines 28--29
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:27: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 F
+      oi criado um \textit{script} para criação do banco de dados e popula...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1490,20 +1617,24 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 27--28
+Overfull \hbox (20.0pt too wide) in paragraph at lines 30--31
 []
  []
 
 
-Overfull \hbox (24.40538pt too wide) in paragraph at lines 27--28
+Overfull \hbox (24.40538pt too wide) in paragraph at lines 30--31
 \OT1/cmr/m/it/10 script
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:29: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 P
+      Q do algoritimo genetico
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1742,15 +1873,20 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 29--31
+Overfull \hbox (20.0pt too wide) in paragraph at lines 32--34
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:32: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 P
+      opulação inicial = --UMA NOVA ABORDAGEM PARA AUMENTAR A DIVERSIDADE.pdf
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1820,15 +1956,20 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no f in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 32--33
+Overfull \hbox (20.0pt too wide) in paragraph at lines 35--36
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:34: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 m
+      odelo matematico ----APLICAÇÃO DE MODELO MATEMÁTICO, ABORDAGEM HEUR...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1980,15 +2121,20 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no f in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 34--35
+Overfull \hbox (20.0pt too wide) in paragraph at lines 37--38
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:36: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 r
+      estrições do problema e modelo matematico http://www.dcc.ufla.br/inf...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2086,15 +2232,20 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no f in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 36--37
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--40
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:38: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 F
+      oi realizada uma análise dos requisistos atravez de entrevista com o ...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2619,15 +2770,20 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 38--39
+Overfull \hbox (20.0pt too wide) in paragraph at lines 41--42
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:40: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 P
+      or se tratar de um sistema complexo, antes de iniciar a implementaçã...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2746,7 +2902,9 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:41: Misplaced alignment tab character &
+! Misplaced alignment tab character &.
+l.44 ...ssário a sua modelagem. Segundo Elmasri &
+                                                   Navathe (2005) as metodol...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -3097,11 +3255,13 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 40--46
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--49
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:48: Undefined control sequence
+! Undefined control sequence.
+l.51 \secao
+           {Ferramentas Utilizadas}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3109,10 +3269,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:48: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \secao{F
+             erramentas Utilizadas}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3138,15 +3302,20 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 48--49
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--52
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:50: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 E
+      ste trabalho conta com a utilização de tecnologias proprias para o d...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3412,56 +3581,58 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 50--50
+Overfull \hbox (20.0pt too wide) in paragraph at lines 53--53
 []
  []
 
 
-Overfull \hbox (28.23868pt too wide) in paragraph at lines 50--50
+Overfull \hbox (28.23868pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 frame-
  []
 
 
-Overfull \hbox (20.57208pt too wide) in paragraph at lines 50--50
+Overfull \hbox (20.57208pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 work
  []
 
 
-Overfull \hbox (22.37209pt too wide) in paragraph at lines 50--50
+Overfull \hbox (22.37209pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 Play!
  []
 
 
-Overfull \hbox (28.23868pt too wide) in paragraph at lines 50--50
+Overfull \hbox (28.23868pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 frame-
  []
 
 
-Overfull \hbox (20.57208pt too wide) in paragraph at lines 50--50
+Overfull \hbox (20.57208pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 work
  []
 
 
-Overfull \hbox (16.37766pt too wide) in paragraph at lines 50--50
+Overfull \hbox (16.37766pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 An-
  []
 
 
-Overfull \hbox (13.54434pt too wide) in paragraph at lines 50--50
+Overfull \hbox (13.54434pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 gu-
  []
 
 
-Overfull \hbox (22.7554pt too wide) in paragraph at lines 50--50
+Overfull \hbox (22.7554pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 larJS
  []
 
 
-Overfull \hbox (30.80536pt too wide) in paragraph at lines 50--50
+Overfull \hbox (30.80536pt too wide) in paragraph at lines 53--53
 \OT1/cmr/m/it/10 Eclipse 
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:54: Undefined control sequence
+! Undefined control sequence.
+l.57 \subsecao
+              {Sistema de Gerenciamento de Banco de Dados}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3469,10 +3640,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:54: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \subsecao{S
+                istema de Gerenciamento de Banco de Dados}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3513,15 +3688,20 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 54--55
+Overfull \hbox (20.0pt too wide) in paragraph at lines 57--58
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:56: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 O
+       SGBD escolhido foi o PostgreSQL pelo fato de ser uma ferramenta open-...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -3814,15 +3994,20 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 56--56
+Overfull \hbox (20.0pt too wide) in paragraph at lines 59--59
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:58: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 O
+       PostgreSQL é um poderoso sistema gerenciador de banco de dados objet...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -4580,7 +4765,11 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{postgresql}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:58: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.61 ...cepcional documentação.\cite{postgresql}
+                                                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4588,24 +4777,29 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `postgresql' on page  undefined on input line 58.
+LaTeX Warning: Citation `postgresql' on page  undefined on input line 61.
 
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 58--59
+Overfull \hbox (20.0pt too wide) in paragraph at lines 61--62
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 58--59
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 61--62
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:62: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 P
+      ara a resolução do problema de timetable foi escolhido o algoritimo ...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -4808,11 +5002,13 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 62--63
+Overfull \hbox (20.0pt too wide) in paragraph at lines 65--66
 []
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:68: Undefined control sequence
+! Undefined control sequence.
+l.71 \subsecao
+              {Ferramentas Back-end}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4820,10 +5016,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:68: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 \subsecao{F
+                erramentas Back-end}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -4847,15 +5047,20 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 68--69
+Overfull \hbox (20.0pt too wide) in paragraph at lines 71--72
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:70: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 F
+      oi escolhida uma linguagem de programação Java por ser orientada a o...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5014,30 +5219,35 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 70--70
+Overfull \hbox (20.0pt too wide) in paragraph at lines 73--73
 []
  []
 
 
-Overfull \hbox (22.37209pt too wide) in paragraph at lines 70--70
+Overfull \hbox (22.37209pt too wide) in paragraph at lines 73--73
 \OT1/cmr/m/it/10 Play!
  []
 
 
-Overfull \hbox (28.23868pt too wide) in paragraph at lines 70--70
+Overfull \hbox (28.23868pt too wide) in paragraph at lines 73--73
 \OT1/cmr/m/it/10 frame-
  []
 
 
-Overfull \hbox (20.57208pt too wide) in paragraph at lines 70--70
+Overfull \hbox (20.57208pt too wide) in paragraph at lines 73--73
 \OT1/cmr/m/it/10 work
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:73: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 J
+      ava foi criada pela Sun Microsystems para desenvolver inovações tecn...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5265,13 +5475,17 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no p in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no r in font nullfont!
-LaTeX Font Info:    Try loading font information for +cmr on input line 73.
-LaTeX Font Info:    No file cmr.fd. on input line 73.
+LaTeX Font Info:    Try loading font information for +cmr on input line 76.
+LaTeX Font Info:    No file cmr.fd. on input line 76.
 
 LaTeX Font Warning: Font shape `/cmr/m/n' undefined
-(Font)              using `/cmr/m/n' instead on input line 73.
+(Font)              using `/cmr/m/n' instead on input line 76.
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:73: Corrupted NFSS tables
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.76 ...ão, uma camada extra responsável por \"t
+                                                  raduzir\" - mas não apena...
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
 Pretend that you're Hercule Poirot: Examine all clues,
@@ -5279,7 +5493,7 @@ and deduce the truth by order and method.
 
 
 LaTeX Font Warning: Font shape `/cmr/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 73.
+(Font)              using `OT1/cmr/m/n' instead on input line 76.
 
 Missing character: There is no r in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -5523,7 +5737,11 @@ Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{caelum}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:73: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.76 ...a JVM - Java Virtual Machine \cite{caelum}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5531,30 +5749,35 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `caelum' on page  undefined on input line 73.
+LaTeX Warning: Citation `caelum' on page  undefined on input line 76.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 73--73
+Overfull \hbox (20.0pt too wide) in paragraph at lines 76--76
 []
  []
 
 
-Overfull \hbox (12.22224pt too wide) in paragraph at lines 73--73
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 76--76
 \/cmr/m/n/10 t-
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 73--73
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 76--76
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:75: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 E
+      m 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre f...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -5774,7 +5997,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{caelum}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:75: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.78 ...uenas mudanças na linguagem \cite{caelum}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5782,25 +6009,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `caelum' on page  undefined on input line 75.
+LaTeX Warning: Citation `caelum' on page  undefined on input line 78.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 75--75
+Overfull \hbox (20.0pt too wide) in paragraph at lines 78--78
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 75--75
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 78--78
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:79: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.82 T
+      he Play! É um moderno framework MVC de alta produtividade, que utiliz...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6043,7 +6275,11 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{playframework}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:79: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.82 ...versão 1 do framework\cite{playframework}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6051,21 +6287,23 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `playframework' on page  undefined on input line 79.
+LaTeX Warning: Citation `playframework' on page  undefined on input line 82.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 79--79
+Overfull \hbox (20.0pt too wide) in paragraph at lines 82--82
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 79--79
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 82--82
 [] 
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:82: Undefined control sequence
+! Undefined control sequence.
+l.85 \subsecao
+              {Ferramentas Front-end}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6073,10 +6311,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:82: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \subsecao{F
+                erramentas Front-end}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6101,15 +6343,20 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no d in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 82--83
+Overfull \hbox (20.0pt too wide) in paragraph at lines 85--86
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:84: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 A
+      s ferramentes de Front-end descritas abaixo, foram escolhidas devida a...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6359,15 +6606,20 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 84--84
+Overfull \hbox (20.0pt too wide) in paragraph at lines 87--87
 []
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:87: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 H
+      TML que é defindo por (\textit{HyperText Markup Language}) ou linguag...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6475,7 +6727,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no b in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{html}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:87: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.90 ...desenvolvimento de paginas web \cite{html}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6483,55 +6739,60 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `html' on page  undefined on input line 87.
+LaTeX Warning: Citation `html' on page  undefined on input line 90.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 87--87
+Overfull \hbox (20.0pt too wide) in paragraph at lines 90--90
 []
  []
 
 
-Overfull \hbox (15.86655pt too wide) in paragraph at lines 87--87
+Overfull \hbox (15.86655pt too wide) in paragraph at lines 90--90
 \OT1/cmr/m/it/10 Hy-
  []
 
 
-Overfull \hbox (16.9943pt too wide) in paragraph at lines 87--87
+Overfull \hbox (16.9943pt too wide) in paragraph at lines 90--90
 \OT1/cmr/m/it/10 per-
  []
 
 
-Overfull \hbox (18.94986pt too wide) in paragraph at lines 87--87
+Overfull \hbox (18.94986pt too wide) in paragraph at lines 90--90
 \OT1/cmr/m/it/10 Text
  []
 
 
-Overfull \hbox (33.37201pt too wide) in paragraph at lines 87--87
+Overfull \hbox (33.37201pt too wide) in paragraph at lines 90--90
 \OT1/cmr/m/it/10 Markup
  []
 
 
-Overfull \hbox (20.07207pt too wide) in paragraph at lines 87--87
+Overfull \hbox (20.07207pt too wide) in paragraph at lines 90--90
 \OT1/cmr/m/it/10 Lan-
  []
 
 
-Overfull \hbox (24.2776pt too wide) in paragraph at lines 87--87
+Overfull \hbox (24.2776pt too wide) in paragraph at lines 90--90
 \OT1/cmr/m/it/10 guage
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 87--87
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 90--90
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:90: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 C
+      ascading Style Sheets (CSS) é uma tecnologia utilizada para adicionar...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6698,7 +6959,11 @@ Missing character: There is no M in font nullfont!
 Missing character: There is no L in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{css}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:90: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.93 ... marcação como exemplo o HTML \cite{css}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6706,25 +6971,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `css' on page  undefined on input line 90.
+LaTeX Warning: Citation `css' on page  undefined on input line 93.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 90--90
+Overfull \hbox (20.0pt too wide) in paragraph at lines 93--93
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 90--90
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 93--93
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:94: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 J
+      avaScript é uma linguagem de script utilizada no desenvolvimento de p...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -6988,7 +7258,11 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{javascript}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:94: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.97 ...municar com os webServers\cite{javascript}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6996,25 +7270,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `javascript' on page  undefined on input line 94.
+LaTeX Warning: Citation `javascript' on page  undefined on input line 97.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 94--94
+Overfull \hbox (20.0pt too wide) in paragraph at lines 97--97
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 94--94
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 97--97
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:96: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 A
+      ngularjs é um \textit{framework JavaScript} construido e mantido pelo...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7323,7 +7602,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{angularjs}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:96: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.99 ...o de web apps client-site.\cite{angularjs}
+                                                  \par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7331,55 +7614,57 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `angularjs' on page  undefined on input line 96.
+LaTeX Warning: Citation `angularjs' on page  undefined on input line 99.
 
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 96--96
+Overfull \hbox (20.0pt too wide) in paragraph at lines 99--99
 []
  []
 
 
-Overfull \hbox (28.23868pt too wide) in paragraph at lines 96--96
+Overfull \hbox (28.23868pt too wide) in paragraph at lines 99--99
 \OT1/cmr/m/it/10 frame-
  []
 
 
-Overfull \hbox (20.57208pt too wide) in paragraph at lines 96--96
+Overfull \hbox (20.57208pt too wide) in paragraph at lines 99--99
 \OT1/cmr/m/it/10 work
  []
 
 
-Overfull \hbox (46.01079pt too wide) in paragraph at lines 96--96
+Overfull \hbox (46.01079pt too wide) in paragraph at lines 99--99
 \OT1/cmr/m/it/10 JavaScript
  []
 
 
-Overfull \hbox (19.67763pt too wide) in paragraph at lines 96--96
+Overfull \hbox (19.67763pt too wide) in paragraph at lines 99--99
 \OT1/cmr/m/it/10 tem-
  []
 
 
-Overfull \hbox (20.69986pt too wide) in paragraph at lines 96--96
+Overfull \hbox (20.69986pt too wide) in paragraph at lines 99--99
 \OT1/cmr/m/it/10 plate
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 96--96
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 99--99
 \OT1/cmr/m/it/10 en-
  []
 
 
-Overfull \hbox (17.88876pt too wide) in paragraph at lines 96--96
+Overfull \hbox (17.88876pt too wide) in paragraph at lines 99--99
 \OT1/cmr/m/it/10 gine
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 96--96
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 99--99
 [] 
  []
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:98: Undefined control sequence
+! Undefined control sequence.
+l.101 \subsecao
+               {IDE}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7387,10 +7672,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:98: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 \subsecao{I
+                 DE}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7398,15 +7687,20 @@ Missing character: There is no I in font nullfont!
 Missing character: There is no D in font nullfont!
 Missing character: There is no E in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 98--99
+Overfull \hbox (20.0pt too wide) in paragraph at lines 101--102
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:100: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 O
+        Eclipse é uma IDE (\textit{integrated development environment}). Di...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7650,7 +7944,11 @@ Missing character: There is no c in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{caelum}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:100: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.103 ...meter e fazer muita mágica \cite{caelum}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7658,125 +7956,130 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `caelum' on page  undefined on input line 100.
+LaTeX Warning: Citation `caelum' on page  undefined on input line 103.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 100--100
+Overfull \hbox (20.0pt too wide) in paragraph at lines 103--103
 []
  []
 
 
-Overfull \hbox (12.26659pt too wide) in paragraph at lines 100--100
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 in-
  []
 
 
-Overfull \hbox (11.4999pt too wide) in paragraph at lines 100--100
+Overfull \hbox (11.4999pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 te-
  []
 
 
-Overfull \hbox (25.93866pt too wide) in paragraph at lines 100--100
+Overfull \hbox (25.93866pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 grated
  []
 
 
-Overfull \hbox (13.28879pt too wide) in paragraph at lines 100--100
+Overfull \hbox (13.28879pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 de-
  []
 
 
-Overfull \hbox (15.3332pt too wide) in paragraph at lines 100--100
+Overfull \hbox (15.3332pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 vel-
  []
 
 
-Overfull \hbox (13.79991pt too wide) in paragraph at lines 100--100
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 op-
  []
 
 
-Overfull \hbox (21.72208pt too wide) in paragraph at lines 100--100
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 ment
  []
 
 
-Overfull \hbox (13.7999pt too wide) in paragraph at lines 100--100
+Overfull \hbox (13.7999pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 en-
  []
 
 
-Overfull \hbox (11.24435pt too wide) in paragraph at lines 100--100
+Overfull \hbox (11.24435pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 vi-
  []
 
 
-Overfull \hbox (18.01653pt too wide) in paragraph at lines 100--100
+Overfull \hbox (18.01653pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 ron-
  []
 
 
-Overfull \hbox (21.72208pt too wide) in paragraph at lines 100--100
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 ment
  []
 
 
-Overfull \hbox (25.18318pt too wide) in paragraph at lines 100--100
+Overfull \hbox (25.18318pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 Rapid
  []
 
 
-Overfull \hbox (16.12212pt too wide) in paragraph at lines 100--100
+Overfull \hbox (16.12212pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 Ap-
  []
 
 
-Overfull \hbox (14.31102pt too wide) in paragraph at lines 100--100
+Overfull \hbox (14.31102pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 pli-
  []
 
 
-Overfull \hbox (12.77766pt too wide) in paragraph at lines 100--100
+Overfull \hbox (12.77766pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 ca-
  []
 
 
-Overfull \hbox (17.12212pt too wide) in paragraph at lines 100--100
+Overfull \hbox (17.12212pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 tion
  []
 
 
-Overfull \hbox (15.72765pt too wide) in paragraph at lines 100--100
+Overfull \hbox (15.72765pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 De-
  []
 
 
-Overfull \hbox (15.3332pt too wide) in paragraph at lines 100--100
+Overfull \hbox (15.3332pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 vel-
  []
 
 
-Overfull \hbox (13.79991pt too wide) in paragraph at lines 100--100
+Overfull \hbox (13.79991pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 op-
  []
 
 
-Overfull \hbox (21.72208pt too wide) in paragraph at lines 100--100
+Overfull \hbox (21.72208pt too wide) in paragraph at lines 103--103
 \OT1/cmr/m/it/10 ment
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 100--100
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 103--103
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:102: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 O
+        Eclipse é a IDE líder de mercado. Formada por um consórcio lidera...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -7958,7 +8261,11 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no 7 in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{caelum}
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:102: Undefined control sequence
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .
+l.105 ...á suporte ao Java 5, 6 e 7 \cite{caelum}
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7966,25 +8273,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `caelum' on page  undefined on input line 102.
+LaTeX Warning: Citation `caelum' on page  undefined on input line 105.
 
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 102--102
+Overfull \hbox (20.0pt too wide) in paragraph at lines 105--105
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 102--102
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 105--105
 [] 
  []
 
 
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/metodologia.tex:104: LaTeX Error: Missing \begin{document}.
+! LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 E
+       stá IDE foi escolhida devido ao grande reconhecimento mundial, por s...
+
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -8212,11 +8524,4 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no o in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing char
+Missing character: Th

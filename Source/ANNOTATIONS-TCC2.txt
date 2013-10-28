@@ -77,3 +77,12 @@ Siglas no trabalho inteiro
 alterar a mensagem do cromossomo.
 rever as figuras.
 explicar os anexos no topico 1.4
+
+===========================pre banca
+
+adicionar um topidco de benchmar para compara com o sistema utilizado na puc ask.
+
+por mais que existam trabalho utilizados relacionados do problema os resultados ainda não são satisfatorios oferecendo espaço para novos trabalhos.
+
+
+porque eu escolhi estes topicos de metaheuristicas "principais utilizados na literatura"
