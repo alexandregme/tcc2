@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.22)  28 OCT 2013 21:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.22)  29 OCT 2013 20:19
 entering extended mode
 **D:/workspace/tcc2/Documento/monografia.tex
 (D:/workspace/tcc2/Documento/monografia.tex
@@ -468,7 +468,42 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@orf=\skip96
 )
 (D:\workspace\tcc2\Documento\monografia.aux
-(D:\workspace\tcc2\Documento\introducao.aux))
+(D:\workspace\tcc2\Documento\apresentacao.aux)
+(D:\workspace\tcc2\Documento\introducao.aux)
+(D:\workspace\tcc2\Documento\referencial.aux
+
+LaTeX Warning: Label `fig:figura2' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura2' multiply defined.
+
+) (D:\workspace\tcc2\Documento\metodologia.aux
+
+LaTeX Warning: Label `fig:figura2' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura2' multiply defined.
+
+) (D:\workspace\tcc2\Documento\sistema.aux
+
+LaTeX Warning: Label `fig:figura2' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura8' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura8' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura8' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura8' multiply defined.
+
+
+LaTeX Warning: Label `fig:figura8' multiply defined.
+
+) (D:\workspace\tcc2\Documento\conclusao.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -534,33 +569,552 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-) (D:\workspace\tcc2\Documento\introducao.tex
+) (D:\workspace\tcc2\Documento\apresentacao.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-
-(D:\workspace\tcc2\Documento\monografia.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
-)
-\tf@toc=\write3
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
  [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Cap\'{\i }tulo 1.
-
-Overfull \hbox (14.08144pt too wide) in paragraph at lines 9--9
-[]\OT1/ptm/m/n/12 Em suma o tra-ba-lho con-siste na distrui[][]oes das dis-ci-p
-li-nas dos di-ver-sos cur-sos de gradua[][]ao
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
+ [2] [3] [4] [5] [6]
+Overfull \hbox (4.6042pt too wide) in paragraph at lines 73--74
+\OT1/ptm/m/n/12 Palavras-chave:  Ao fi-nal do re-sumo deve-se ela-bo-rar palavr
+as-chave re-pre-sen-ta-ti-vas do conte[]udo
  []
 
-[2
+[7] [8] (D:\workspace\tcc2\Documento\monografia.lof
+Overfull \hbox (5.84384pt too wide) detected at line 15
+\OT1/ptm/m/n/12 FIGURA  10  --   
+ []
 
-] [3]) [4] (D:\workspace\tcc2\Documento\monografia.bbl [5
+
+Overfull \hbox (5.84384pt too wide) detected at line 16
+\OT1/ptm/m/n/12 FIGURA  11  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 17
+\OT1/ptm/m/n/12 FIGURA  12  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 18
+\OT1/ptm/m/n/12 FIGURA  13  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 19
+\OT1/ptm/m/n/12 FIGURA  14  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 20
+\OT1/ptm/m/n/12 FIGURA  15  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 21
+\OT1/ptm/m/n/12 FIGURA  16  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 22
+\OT1/ptm/m/n/12 FIGURA  17  --   
+ []
+
+)
+\tf@lof=\write3
+ [9] (D:\workspace\tcc2\Documento\monografia.lot)
+\tf@lot=\write4
+ [10]
+(D:\workspace\tcc2\Documento\monografia.loac)
+\tf@loac=\write5
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--89
+
+ []
+
+[11]) (D:\workspace\tcc2\Documento\introducao.tex
+(D:\workspace\tcc2\Documento\monografia.toc)
+\tf@toc=\write6
+ [12
+
+
+] [13]
+Cap\'{\i }tulo 1.
+[14
+
+] [15]) [16] (D:\workspace\tcc2\Documento\referencial.tex
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 17 undefined on in
+put line 5.
+
+
+LaTeX Warning: Citation `steiglitz1982combinatorial' on page 17 undefined on in
+put line 7.
+
+<imagens/problemaOtimizacao.png, id=55, 593.96906pt x 362.85562pt>
+File: imagens/problemaOtimizacao.png Graphic file (type png)
+
+<use imagens/problemaOtimizacao.png>
+Package pdftex.def Info: imagens/problemaOtimizacao.png used on input line 15.
+(pdftex.def)             Requested size: 326.68399pt x 199.5712pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+
+
+LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 17 undefined on in
+put line 16.
+
+
+LaTeX Warning: Citation `steiglitz1982combinatorial' on page 17 undefined on in
+put line 19.
+
+
+LaTeX Warning: Citation `raupp2003introduccao' on page 17 undefined on input li
+ne 21.
+
+
+LaTeX Warning: Citation `opac-b1092847' on page 17 undefined on input line 23.
+
+[17
+
+
+
+ <D:/workspace/tcc2/Documento/imagens/problemaOtimizacao.png>]
+
+LaTeX Warning: Citation `golbarg2000otimizaccao' on page 18 undefined on input 
+line 26.
+
+
+LaTeX Warning: Citation `deleonardo' on page 18 undefined on input line 28.
+
+
+LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 18 undefined on in
+put line 32.
+
+
+LaTeX Warning: Citation `steiglitz1982combinatorial' on page 18 undefined on in
+put line 32.
+
+
+LaTeX Warning: Citation `evans1992optimization' on page 18 undefined on input l
+ine 34.
+
+
+LaTeX Warning: Citation `nascimento2005aplicaccao' on page 18 undefined on inpu
+t line 36.
+
+
+LaTeX Warning: Citation `nascimento2005aplicaccao' on page 18 undefined on inpu
+t line 38.
+
+
+LaTeX Warning: Citation `adrianocesar' on page 18 undefined on input line 40.
+
+
+Overfull \hbox (3.82152pt too wide) in paragraph at lines 40--40
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/b/n/12 ??\OT1/ptm/m/n/12 ) uma heur[]stica
+ []e a instancia[][]ao de uma meta-heur[]stica, ou seja, a aplica[][]ao
+ []
+
+[18]
+
+LaTeX Warning: Citation `souza2000' on page 19 undefined on input line 46.
+
+
+LaTeX Warning: Citation `armentanointroduccao' on page 19 undefined on input li
+ne 46.
+
+
+LaTeX Warning: Citation `subramanian2006aplicaccao' on page 19 undefined on inp
+ut line 46.
+
+
+LaTeX Warning: Citation `subramanian2006aplicaccao' on page 19 undefined on inp
+ut line 49.
+
+
+LaTeX Warning: Citation `glover1986future' on page 19 undefined on input line 4
+9.
+
+
+LaTeX Warning: Citation `souza2000' on page 19 undefined on input line 51.
+
+
+LaTeX Warning: Citation `armentanointroduccao' on page 19 undefined on input li
+ne 53.
+
+<imagens/representacaoBuscaTabu.png, id=62, 800.9925pt x 647.41875pt>
+File: imagens/representacaoBuscaTabu.png Graphic file (type png)
+
+<use imagens/representacaoBuscaTabu.png>
+Package pdftex.def Info: imagens/representacaoBuscaTabu.png used on input line 
+58.
+(pdftex.def)             Requested size: 400.49527pt x 323.70857pt.
+
+
+LaTeX Warning: Citation `souza2000' on page 19 undefined on input line 59.
+
+
+LaTeX Warning: Citation `armentanointroduccao' on page 19 undefined on input li
+ne 62.
+
+[19]
+
+LaTeX Warning: Citation `armentanointroduccao' on page 20 undefined on input li
+ne 64.
+
+
+LaTeX Warning: Citation `kirkpatrick1983optimization' on page 20 undefined on i
+nput line 68.
+
+
+LaTeX Warning: Citation `noronha2003abordagem' on page 20 undefined on input li
+ne 71.
+
+[20 <D:/workspace/tcc2/Documento/imagens/representacaoBuscaTabu.png>]
+
+LaTeX Warning: Citation `souza2002experiencias' on page 21 undefined on input l
+ine 73.
+
+
+! Package inputenc Error: Unicode char \u8:∆ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...te. Se ele for pior por uma quantidade ∆
+                                                  , ele é aceito com uma pr...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:∆ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 ...ele é aceito com uma probabilidade e -∆
+                                                  /T , onde T decresce gradu...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+<imagens/representacaoSimulatedAnnealing.png, id=72, 358.33875pt x 359.09157pt>
+File: imagens/representacaoSimulatedAnnealing.png Graphic file (type png)
+<use imagens/representacaoSimulatedAnnealing.png>
+Package pdftex.def Info: imagens/representacaoSimulatedAnnealing.png used on in
+put line 82.
+(pdftex.def)             Requested size: 197.08691pt x 197.50096pt.
+
+
+LaTeX Warning: Citation `souza2002experiencias' on page 21 undefined on input l
+ine 83.
+
+
+LaTeX Warning: Citation `aarts1988simulated' on page 21 undefined on input line
+ 86.
+
+
+LaTeX Warning: Citation `oliveira2005algoritmo' on page 21 undefined on input l
+ine 91.
+
+
+LaTeX Warning: Citation `holland1975adaptation' on page 21 undefined on input l
+ine 92.
+
+
+LaTeX Warning: Citation `darwin1968origin' on page 21 undefined on input line 9
+3.
+
+[21 <D:/workspace/tcc2/Documento/imagens/representacaoSimulatedAnnealing.png>]
+
+LaTeX Warning: Citation `oliveira2005algoritmo' on page 22 undefined on input l
+ine 96.
+
+
+LaTeX Warning: Citation `michalewicz1996evolutionary' on page 22 undefined on i
+nput line 96.
+
+
+LaTeX Warning: Citation `oliveira2005algoritmo' on page 22 undefined on input l
+ine 97.
+
+
+LaTeX Warning: Citation `mitchell1998introduction' on page 22 undefined on inpu
+t line 99.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
+
+
+LaTeX Warning: Citation `goldberg1989genetic' on page 22 undefined on input lin
+e 107.
+
+[22]
+
+LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 23 undefined on in
+put line 118.
+
+
+LaTeX Warning: Citation `kripkasimulated' on page 23 undefined on input line 12
+4.
+
+
+LaTeX Warning: Citation `schaerf1999survey' on page 23 undefined on input line 
+124.
+
+[23]
+
+LaTeX Warning: Citation `pinheiro2001ambiente' on page 24 undefined on input li
+ne 132.
+
+
+LaTeX Warning: Citation `marinho2005heuristicas' on page 24 undefined on input 
+line 134.
+
+
+LaTeX Warning: Citation `even1975complexity' on page 24 undefined on input line
+ 134.
+
+
+LaTeX Warning: Citation `carter1992classroom' on page 24 undefined on input lin
+e 134.
+
+
+LaTeX Warning: Citation `kripkasimulated' on page 24 undefined on input line 13
+5.
+
+
+LaTeX Warning: Citation `souza2000' on page 24 undefined on input line 137.
+
+
+LaTeX Warning: Citation `nascimento2005aplicaccao' on page 24 undefined on inpu
+t line 139.
+
+
+LaTeX Warning: Citation `even1975complexity' on page 24 undefined on input line
+ 139.
+
+) [24] (D:\workspace\tcc2\Documento\metodologia.tex
+Cap\'{\i }tulo 3.
+! Misplaced alignment tab character &.
+l.7 ...xecutar o seguinte comando "java -version &
+                                                  & javac -version" a mensag...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.7 ...ecutar o seguinte comando "java -version &&
+                                                   javac -version" a mensage...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+<imagens/mensagemJava.png, id=86, 477.28313pt x 69.25874pt>
+File: imagens/mensagemJava.png Graphic file (type png)
+
+<use imagens/mensagemJava.png>
+Package pdftex.def Info: imagens/mensagemJava.png used on input line 13.
+(pdftex.def)             Requested size: 381.82701pt x 55.40706pt.
+
+
+LaTeX Warning: Citation `play' on page 25 undefined on input line 18.
+
+<imagens/mensagemPlay.png, id=87, 478.78876pt x 161.85469pt>
+File: imagens/mensagemPlay.png Graphic file (type png)
+
+<use imagens/mensagemPlay.png>
+Package pdftex.def Info: imagens/mensagemPlay.png used on input line 24.
+(pdftex.def)             Requested size: 383.03152pt x 129.4839pt.
+ [25
+
+
+
+ <D:/workspace/tcc2/Documento/imagens/mensagemJava.png> <D:/workspace/tcc2/Docu
+mento/imagens/mensagemPlay.png>]
+Overfull \hbox (4.92317pt too wide) in paragraph at lines 37--38
+\OT1/ptm/m/n/12 HEUR[]ISTICA E M[]ETODO MISTO NA OTIMIZA[][]AO DA PROGRAMA[][]A
+O DE HOR[]ARIO
+ []
+
+
+Overfull \hbox (58.82884pt too wide) in paragraph at lines 39--40
+[]\OT1/ptm/m/n/12 restri[][]oes do pro-blema e mo-delo ma-te-ma-tico http://www
+.dcc.ufla.br/infocomp/artigos/v4.3/art08.pdf 
+ []
+
+! Misplaced alignment tab character &.
+l.44 ...ssário a sua modelagem. Segundo Elmasri &
+                                                   Navathe (2005) as metodol...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[26] [27]
+Overfull \hbox (2.06952pt too wide) in paragraph at lines 87--87
+[]\OT1/ptm/m/n/12 As fer-ra-men-tes de Front-end des-cri-tas abaixo, fo-ram es-
+co-lhi-das de-vida a gande utiliza[][]ao
+ []
+
+
+Overfull \hbox (11.18895pt too wide) in paragraph at lines 103--103
+[]\OT1/ptm/m/n/12 O Eclipse []e uma IDE (\OT1/ptm/m/it/12 in-te-gra-ted de-ve-l
+op-ment en-vi-ron-ment\OT1/ptm/m/n/12 ). Di-fe-rente de uma RAD(\OT1/ptm/m/it/1
+2 Rapid
+ []
+
+[28]) [29] (D:\workspace\tcc2\Documento\sistema.tex
+Cap\'{\i }tulo 4.
+<imagens/diagramaCasoUso.png, id=104, 702.37407pt x 539.01375pt>
+File: imagens/diagramaCasoUso.png Graphic file (type png)
+
+<use imagens/diagramaCasoUso.png>
+Package pdftex.def Info: imagens/diagramaCasoUso.png used on input line 16.
+(pdftex.def)             Requested size: 351.18617pt x 269.50621pt.
+ [30
+
+
+
+]
+<imagens/diagramaEntidadeRelacionamento.png, id=109, 852.93657pt x 745.28438pt>
+File: imagens/diagramaEntidadeRelacionamento.png Graphic file (type png)
+<use imagens/diagramaEntidadeRelacionamento.png>
+Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on inp
+ut line 32.
+(pdftex.def)             Requested size: 426.46724pt x 372.64128pt.
+ [31 <D:/workspace/tcc2/Documento/imagens/diagramaCasoUso.png>]
+<imagens/diagramaClasse.png, id=115, 738.50906pt x 761.84625pt>
+File: imagens/diagramaClasse.png Graphic file (type png)
+
+<use imagens/diagramaClasse.png>
+Package pdftex.def Info: imagens/diagramaClasse.png used on input line 53.
+(pdftex.def)             Requested size: 369.25363pt x 380.9222pt.
+ [32 <D:/workspace/tcc2/Documento/imagens/diagramaEntidadeRelacionamento.png>] 
+[33 <D:/workspace/tcc2/Documento/imagens/diagramaClasse.png>]
+<imagens/representacaoGene.png, id=124, 310.15875pt x 137.7647pt>
+File: imagens/representacaoGene.png Graphic file (type png)
+
+<use imagens/representacaoGene.png>
+Package pdftex.def Info: imagens/representacaoGene.png used on input line 74.
+(pdftex.def)             Requested size: 217.10963pt x 96.43462pt.
+
+<imagens/representacaoCromossomo.png, id=125, 426.84468pt x 45.92157pt>
+File: imagens/representacaoCromossomo.png Graphic file (type png)
+
+<use imagens/representacaoCromossomo.png>
+Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line
+ 84.
+(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
+
+<imagens/representacaoIndividuo.png, id=126, 480.29437pt x 63.23625pt>
+File: imagens/representacaoIndividuo.png Graphic file (type png)
+
+<use imagens/representacaoIndividuo.png>
+Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 
+94.
+(pdftex.def)             Requested size: 384.23601pt x 50.58905pt.
+ [34 <D:/workspace/tcc2/Documento/imagens/representacaoGene.png>] [35 <D:/works
+pace/tcc2/Documento/imagens/representacaoCromossomo.png> <D:/workspace/tcc2/Doc
+umento/imagens/representacaoIndividuo.png>] <imagens/fluxoNovaPopulacao.png, id
+=133, 621.82312pt x 864.22874pt>
+File: imagens/fluxoNovaPopulacao.png Graphic file (type png)
+
+<use imagens/fluxoNovaPopulacao.png>
+Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 114.
+
+(pdftex.def)             Requested size: 310.9108pt x 432.11331pt.
+ [36 <D:/workspace/tcc2/Documento/imagens/fluxoNovaPopulacao.png>]
+<imagens/representacaoMutacao.png, id=138, 484.81125pt x 158.09062pt>
+File: imagens/representacaoMutacao.png Graphic file (type png)
+
+<use imagens/representacaoMutacao.png>
+Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 13
+0.
+(pdftex.def)             Requested size: 339.36555pt x 110.66267pt.
+
+<imagens/individuosAntesInsersaoGenetica.png, id=139, 539.76656pt x 150.5625pt>
+File: imagens/individuosAntesInsersaoGenetica.png Graphic file (type png)
+<use imagens/individuosAntesInsersaoGenetica.png>
+Package pdftex.def Info: imagens/individuosAntesInsersaoGenetica.png used on in
+put line 142.
+(pdftex.def)             Requested size: 377.83401pt x 105.39302pt.
+ [37 <D:/workspace/tcc2/Documento/imagens/representacaoMutacao.png>]
+<imagens/individuosAposInsersaoGenetica.png, id=144, 536.0025pt x 143.78719pt>
+File: imagens/individuosAposInsersaoGenetica.png Graphic file (type png)
+
+<use imagens/individuosAposInsersaoGenetica.png>
+Package pdftex.def Info: imagens/individuosAposInsersaoGenetica.png used on inp
+ut line 152.
+(pdftex.def)             Requested size: 321.60397pt x 86.27296pt.
+
+Overfull \hbox (7.66261pt too wide) in paragraph at lines 156--157
+[]\OT1/ptm/m/n/12 Ao ter-mino da adi[][]ao dos ge-nes do ponto de corte o fi-lh
+o 1 o mesmo re-cebe as informa[][]oes
+ []
+
+<imagens/insersaoMaterialMae.png, id=145, 543.53062pt x 147.55125pt>
+File: imagens/insersaoMaterialMae.png Graphic file (type png)
+
+<use imagens/insersaoMaterialMae.png>
+Package pdftex.def Info: imagens/insersaoMaterialMae.png used on input line 162
+.
+(pdftex.def)             Requested size: 380.46883pt x 103.28516pt.
+ [38 <D:/workspace/tcc2/Documento/imagens/individuosAntesInsersaoGenetica.png> 
+<D:/workspace/tcc2/Documento/imagens/individuosAposInsersaoGenetica.png> <D:/wo
+rkspace/tcc2/Documento/imagens/insersaoMaterialMae.png>]
+<imagens/fluxoAlgoritimo.png, id=149, 683.55376pt x 672.26157pt>
+File: imagens/fluxoAlgoritimo.png Graphic file (type png)
+
+<use imagens/fluxoAlgoritimo.png>
+Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 190.
+(pdftex.def)             Requested size: 478.48438pt x 470.57988pt.
+
+Overfull \hbox (23.24026pt too wide) in paragraph at lines 190--191
+ [][] 
+ []
+
+) [39] [40 <D:/workspace/tcc2/Documento/imagens/fluxoAlgoritimo.png>]
+(D:\workspace\tcc2\Documento\conclusao.tex
+Cap\'{\i }tulo 5.
+[41
+
+
+
+]
+Cap\'{\i }tulo 6.
+) [42
+
+] (D:\workspace\tcc2\Documento\monografia.bbl [43
 
 
 ]
@@ -569,24 +1123,40 @@ Underfull \hbox (badness 1496) in paragraph at lines 162--165
 /12 . 2013. Dis-pon[]vel em: 
  []
 
-[6]) [7] (D:\workspace\tcc2\Documento\monografia.aux
-(D:\workspace\tcc2\Documento\introducao.aux)) ) 
+[44]) [45] (D:\workspace\tcc2\Documento\monografia.aux
+(D:\workspace\tcc2\Documento\apresentacao.aux)
+(D:\workspace\tcc2\Documento\introducao.aux)
+(D:\workspace\tcc2\Documento\referencial.aux)
+(D:\workspace\tcc2\Documento\metodologia.aux)
+(D:\workspace\tcc2\Documento\sistema.aux)
+(D:\workspace\tcc2\Documento\conclusao.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4386 strings out of 493921
- 64906 string characters out of 3147263
- 130881 words of memory out of 3000000
- 7601 multiletter control sequences out of 15000+200000
- 11800 words of font info for 30 fonts, out of 3000000 for 9000
+ 4581 strings out of 493921
+ 70347 string characters out of 3147263
+ 132048 words of memory out of 3000000
+ 7727 multiletter control sequences out of 15000+200000
+ 16695 words of font info for 36 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,5n,43p,817b,253s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fon
-ts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (7 pages, 76966 bytes).
+ 43i,8n,43p,1296b,309s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on monografia.pdf (45 pages, 1008947 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
+ 208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
