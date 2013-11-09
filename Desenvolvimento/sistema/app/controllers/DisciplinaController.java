@@ -179,6 +179,52 @@ public class DisciplinaController extends Controller {
 
 	}
 
+	public static void getHorarios() {
+
+		try {
+
+			Disciplina disciplina = RequestSerializer.get(request.body, Disciplina.class);
+
+			List<DisciplinaSemana> listSemana = new ArrayList<DisciplinaSemana>();
+
+			List<Horario> listHorarios = Horario.findAll();
+
+			for (int i = 1; i <= listHorarios.size(); i++) {
+
+				DisciplinaSemana ds = new DisciplinaSemana();
+
+				ds.horario = listHorarios.get(i - 1);
+
+				ds.segunda = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 1 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				ds.terca = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 2 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				ds.quarta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 3 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				ds.quinta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 4 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				ds.sexta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 5 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				ds.sabado = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 6 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				ds.domingo = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 7 AND horario = " + listHorarios.get(i - 1).id).first();
+
+				listSemana.add(ds);
+			}
+
+			protocol = new Protocol('s', MessageHelper.get("LIST_OK", complement), listSemana, listSemana.size());
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+			protocol = new Protocol('e', MessageHelper.get("LIST_ERROR", complement), null, 0);
+
+		}
+		renderJSON(protocol);
+
+	}
+
 	/**
 	 * Lista todos os registros de disciplina do banco
 	 */
@@ -186,54 +232,15 @@ public class DisciplinaController extends Controller {
 
 		try {
 
-			List<DisciplinaInterface> listInterface = new ArrayList<DisciplinaInterface>();
-
 			List<Disciplina> listDisciplina = Disciplina.findAll();
 
-			for (Disciplina disciplina : listDisciplina) {
+			if (listDisciplina.size() == 0)
 
-				DisciplinaInterface di = new DisciplinaInterface();
-
-				di.listSemana = new ArrayList<DisciplinaSemana>();
-
-				di.disciplina = disciplina;
-
-				List<Horario> listHorarios = Horario.findAll();
-
-				for (int i = 1; i <= listHorarios.size(); i++) {
-
-					DisciplinaSemana ds = new DisciplinaSemana();
-
-					ds.horario = listHorarios.get(i - 1);
-
-					ds.segunda = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 1 AND horario = " +  listHorarios.get(i - 1).id).first();
-
-					ds.terca = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 2 AND horario = " +  listHorarios.get(i - 1).id).first();
-
-					ds.quarta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 3 AND horario = " +  listHorarios.get(i - 1).id).first();
-
-					ds.quinta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 4 AND horario = " +  listHorarios.get(i - 1).id).first();
-
-					ds.sexta = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 5 AND horario = " +  listHorarios.get(i - 1).id).first();
-
-					ds.sabado = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 6 AND horario = " +  listHorarios.get(i - 1).id).first();
-
-					ds.domingo = DisciplinaHorario.find("disciplina.id = " + disciplina.id + "AND dia = 7 AND horario = " +  listHorarios.get(i - 1).id).first();
-
-					di.listSemana.add(ds);
-				}
-
-				listInterface.add(di);
-
-			}
-
-			if (listInterface.size() == 0)
-
-				protocol = new Protocol('e', MessageHelper.get("LIST_EMPTY", complement), listInterface, listInterface.size());
+				protocol = new Protocol('e', MessageHelper.get("LIST_EMPTY", complement), listDisciplina, listDisciplina.size());
 
 			else
 
-				protocol = new Protocol('s', MessageHelper.get("LIST_OK", complement), listInterface, listInterface.size());
+				protocol = new Protocol('s', MessageHelper.get("LIST_OK", complement), listDisciplina, listDisciplina.size());
 
 		} catch (Exception e) {
 

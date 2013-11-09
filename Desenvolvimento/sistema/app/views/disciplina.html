@@ -175,14 +175,14 @@
 		<tbody >
 			<tr ng-repeat="item in data">
 
-				<td ng-model="id">{{item.disciplina.id}}</td>
-				<td> {{item.disciplina.periodo.colegiado.curso.nome}} </td>
-				<td> {{item.disciplina.periodo.colegiado.nome}} </td>
-				<td> {{item.disciplina.periodo.periodo}} </td>
-				<td> {{item.disciplina.codigo}} </td>
-				<td> {{item.disciplina.nome}} </td>
-				<td> {{item.disciplina.turma}} </td>
-				<td> {{item.disciplina.vagas}} </td>
+				<td ng-model="id">{{item.id}}</td>
+				<td> {{item.periodo.colegiado.curso.nome}} </td>
+				<td> {{item.periodo.colegiado.nome}} </td>
+				<td> {{item.periodo.periodo}} </td>
+				<td> {{item.codigo}} </td>
+				<td> {{item.nome}} </td>
+				<td> {{item.turma}} </td>
+				<td> {{item.vagas}} </td>
 				<td><input type="button" value="Editar" class="btn btn-primary" ng-click="edit($index)">&nbsp;&nbsp;<input type="button" value="Deletar" class="btn btn-danger" ng-click="delete(item.disciplina.id)"></td>
 
 			</tr>
@@ -200,19 +200,32 @@ function DisciplinaCtrl ($scope, $http) {
 
 		object = $scope.data[_id];
 
-		$scope.id = object.disciplina.id;
+		$scope.id = object.id;
 
-		$scope.periodo = object.disciplina.periodo;
+		$scope.periodo = object.periodo;
 
-		$scope.nome = object.disciplina.nome;
+		$scope.nome = object.nome;
 		
-		$scope.codigo = object.disciplina.codigo;
+		$scope.codigo = object.codigo;
 
-		$scope.turma = object.disciplina.turma;
+		$scope.turma = object.turma;
 
-		$scope.vagas = object.disciplina.vagas;
+		$scope.vagas = object.vagas;
 
-		$scope.listSemana = object.listSemana;
+
+		_url = window.viewModel.url.base + 'disciplina/getHorarios';
+
+		$http.post(_url, JSON.stringify({id:object.id}))
+		.success(function(data, status, headers, config) {
+
+			$scope.listSemana = data.data;
+
+		})
+		.error(function(data, status, headers, config) {
+
+			$scope.message = "Erro ao chamar a url " + _url + " status " + status;
+
+		});
 
 	}
 

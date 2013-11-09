@@ -19,9 +19,6 @@ LIST_EMPTY=A consulta de %s foi executada mas não retornou nenhum resultado.
 PARAMETROS_ERROR = É necessário o envio de parâmetros válidos
 
 
-
-
-
 ENTITY_OK=Consulta de %s executada com sucesso.
 ENTITY_EMPTY=A consulta ao registro de %s não encontrou nenhum resultado.
 ENTITY_EXISTING=O registro de %s já está cadastrado no sistema.

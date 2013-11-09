@@ -26,11 +26,12 @@ GET 	/periodo/list			PeriodoController.list
 GET 	/periodo/view			PeriodoController.view
 
 #Disciplina
-POST	/disciplina/save		DisciplinaController.save
-POST	/disciplina/edit		DisciplinaController.edit
-POST	/disciplina/delete		DisciplinaController.delete
-GET 	/disciplina/list		DisciplinaController.list
-GET 	/disciplina/view		DisciplinaController.view
+POST	/disciplina/save			DisciplinaController.save
+POST	/disciplina/edit			DisciplinaController.edit
+POST	/disciplina/delete			DisciplinaController.delete
+POST	/disciplina/getHorarios		DisciplinaController.getHorarios
+GET 	/disciplina/list			DisciplinaController.list
+GET 	/disciplina/view			DisciplinaController.view
 
 #Predio
 POST	/predio/save			PredioController.save
