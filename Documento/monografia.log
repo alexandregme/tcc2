@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  9 NOV 2013 19:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  9 NOV 2013 20:23
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -502,43 +502,41 @@ Overfull \hbox (1.37958pt too wide) in paragraph at lines 18--18
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 <imagens/ag.png, id=1, 325.215pt x 657.95813pt>
 File: imagens/ag.png Graphic file (type png)
  <use imagens/ag.png>
-Package pdftex.def Info: imagens/ag.png used on input line 41.
+Package pdftex.def Info: imagens/ag.png used on input line 42.
 (pdftex.def)             Requested size: 201.63121pt x 407.92982pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
-
-Overfull \hbox (1.6055pt too wide) in paragraph at lines 49--49
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
- []
-
-[1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+ [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 ]
-Overfull \hbox (1.6055pt too wide) in paragraph at lines 93--93
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 69--69
 []\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
  []
 
 [2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/ag.png>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 98.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 113--113
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 118.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
- (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [3])
-[4
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 118.
+ (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [3]) [4
 
 ] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
 Here is how much of TeX's memory you used:
  4261 strings out of 493921
  62898 string characters out of 3144864
- 132954 words of memory out of 3000000
+ 135954 words of memory out of 3000000
  7484 multiletter control sequences out of 15000+200000
  14456 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -546,7 +544,7 @@ Here is how much of TeX's memory you used:
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on monografia.pdf (4 pages, 96114 bytes).
+Output written on monografia.pdf (4 pages, 98309 bytes).
 PDF statistics:
  33 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

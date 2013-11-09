@@ -25,14 +25,15 @@ Primeiramente deve ser feita a inicialização básica da população, são util
 
 Para cada indivíduo de uma população é realizada um processo de avaliação o que representa o seu grau de adaptação no ambiente. Este é o primeiro passo da seleção que pode ocorrer de varias formas.\par
 
-Seleção roda de roleta é um método tradicional onde para cada 
+Seleção roda de roleta é um método tradicional, para cada indivíduo é atribuído um espaço na roleta sendo o tamanho proporcional ao valor da aptidão do individuo. Esta role gira N vezes onde N é o numero é o tamanho da população selecionando assim os pais para próxima geração. Seleção por torneio são selecionados indivíduos da população anterior e escolhidos os dois que que contêm o maior valor de aptidão.\par
 
-Seleção por \textit{ranking} os indivíduos da população são ordenados de acordo com seu valor 
+Cruzamento também conhecido como \textit{crossover} é um operador genético onde é selecionado um ponto de corte após isto é realizada a troca genética entre os subconjutos de genes dos pais criando um filho contendo material genético dos mesmos.
 
+Mutação consiste em mudar aleatoriamente um indivíduo para criar um novo indivíduo com um diferente material genético, este mecanismo serve para que exista uma variabilidade genética e para que o algorítimo não fique preso em um máximo ou minimo local.
 
+Geração corresponde a uma iteração realizada sobre a população.
 
-
-
+Elitismo pode ser definido como o operador genético que seleciona os melhores indivíduos de uma população com isto garantindo com que não haja perda da melhor solução encontrada.
 
 \begin{figure}[!htb]
 \caption[Estrutura funcional de um algoritmo genético tradicional]{Estrutura funcional de um algoritmo genético tradicional}
@@ -42,8 +43,27 @@ Seleção por \textit{ranking} os indivíduos da população são ordenados de a
 \\ \textbf{\footnotesize Fonte: \cite{lucas2000algoritmos}}
 \end{figure}
 
-
-
+ Estrutura de um Algoritmo Genético 
+ 
+Na maioria dos casos um algoritmo genético é estruturado da seguinte forma 
+(adaptado de Sivanandam e Deepa, 2008): 
+Início – Gera-se uma população aleatória de n cromossomos. Quando já se tem 
+alguma informação sobre o problema, pode-se introduzir soluções adequadas para já iniciar a 
+população com um valor de aptidão alto ou adequado. 
+Aptidão – é associado a cada cromossomo o seu valor de aptidão na população. 
+Seleção – os pais são selecionados de acordo com o seu valor de aptidão, quanto 
+melhor o valor de aptidão, maior a chance desses pais serem selecionados. 
+Cruzamento (crossover) – de acordo com a probabilidade de ocorrer o cruzamento, 
+as informações entre os pais são trocadas, formando-se os filhos. Se a operação de 
+cruzamento não acontecer, os filhos serão exatamente iguais aos pais (dependendo ainda se a 
+mutação ocorrerá ou não). 
+Mutação – com certa probabilidade, geralmente bem menor do que a probabilidade de 
+ocorrer o cruzamento, a mutação pode ocorrer em cada locus dos descendentes. 
+Aceitação – os filhos são colocados na nova população. 
+Troca – substitui-se a antiga população pela nova população. 
+Teste – Se a condição de parada é satisfeita, o programa deve retornar a melhor 
+solução encontrada na população atual. 
+Laço – Se não, volte para o passo em que a aptidão é calculada. 
 
 
 Segundo \cite{oliveira2005algoritmo}, o processo de evolução executado por um algoritmo genético corresponde a um procedimento de busca no espaço de soluções potenciais para o problema e, como enfatiza \cite{michalewicz1996evolutionary}, esta busca requer um equilíbrio entre dois objetivos aparentemente conflitantes: a procura das melhores soluções na região que se apresenta promissora ou fase de intensificação e a procura de outra região ou exploração do espaço de busca, também conhecida como diversificação.\par
