@@ -1,23 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.10.22)  29 OCT 2013 20:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  9 NOV 2013 19:51
 entering extended mode
-**D:/workspace/tcc2/Documento/monografia.tex
-(D:/workspace/tcc2/Documento/monografia.tex
+**E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
+(E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(D:\workspace\tcc2\Documento\abntpuc.cls
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto,
+ estonian, farsi, finnish, french, galician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian, lith
+uanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ngerman-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, sloven
+ian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishmax, welsh, loaded.
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntpuc.cls
 Document Class: abntpuc 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
 File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,40 +26,34 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2008/07/08 v3.8m The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\portuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -215,7 +203,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -245,8 +233,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -269,23 +256,20 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks16
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -301,17 +285,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen111
 \Gm@dimlist=\toks17
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg")) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-)
-(D:\workspace\tcc2\Documento\chngcntr.sty
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-(D:\workspace\tcc2\Documento\caption.sty
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\caption.sty
 Package: caption 2012/02/19 v3.2f Customizing captions (AR)
-
-(D:\workspace\tcc2\Documento\caption3.sty
+ (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\caption3.sty
 Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \captionmargin=\dimen112
 \captionmargin@=\dimen113
@@ -321,12 +302,11 @@ Package: caption3 2012/01/12 v1.4b caption3 kernel (AR)
 \caption@hangindent=\dimen117
 )
 \c@ContinuedFloat=\count92
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks18
 )
-(D:\workspace\tcc2\Documento\tocloft.sty
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\tocloft.sty
 Package: tocloft 2003/09/26 v2.3c parameterised ToC, etc., typesetting
 
 
@@ -376,14 +356,12 @@ Package tocloft Note: The document has chapter divisions.
 \c@loacdepth=\count96
 \cftbeforeloactitleskip=\skip80
 \cftafterloactitleskip=\skip81
- (D:\workspace\tcc2\Documento\abntcite.sty
-(D:\workspace\tcc2\Documento\cvs-id.def)
+ (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntcite.sty (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
 Package: abntcite 2003/10/13 v1.26 Chamadas de referencias no texto (NBR10520)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count97
 \calc@Bcount=\count98
@@ -395,60 +373,47 @@ LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count99
 \calc@Cskip=\skip84
-)
-(D:\workspace\tcc2\Documento\abntex-abrev.sty
-(D:\workspace\tcc2\Documento\cvs-id.def)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntex-abrev.sty (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
 Package: abntex-abrev 2003/10/13 v1.3 Abreviacoes
 
-(D:\workspace\tcc2\Documento\nbr10522-1988.def
-(D:\workspace\tcc2\Documento\cvs-id.def)
-File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:19
-88)
-)
-(D:\workspace\tcc2\Documento\abntex-abrev-pt_BR.def
-(D:\workspace\tcc2\Documento\cvs-id.def)
-File: abntex-abrev-pt_BR.def 2003/10/13 v1.2 definicao de abntex-abrev, traduca
-o de termos en_US/pt_BR
-))
-(D:\workspace\tcc2\Documento\nbr10520-2002.def
-(D:\workspace\tcc2\Documento\cvs-id.def)
-File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002
-)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\nbr10522-1988.def (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+File: nbr10522-1988.def 2003/10/13 v1.2 Abreviacoes bibliograficas (NBR10522:1988)
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\abntex-abrev-pt_BR.def
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+File: abntex-abrev-pt_BR.def 2003/10/13 v1.2 definicao de abntex-abrev, traducao de termos en_US/pt_BR
+)) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\nbr10520-2002.def (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\cvs-id.def)
+File: nbr10520-2002.def 2003/10/13 v1.2 Definicoes para abntcite (NBR10520:2002)
 )
 \minimumbiblabelwidth=\skip85
 \ABCIauxlen=\skip86
 \c@ABCIaux=\count100
 \c@ABCImax=\count101
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\relsize.sty"
 Package: relsize 2003/07/04 ver 3.1
 )
 \biblabelsep=\skip87
 LaTeX Info: Redefining \newblock on input line 562.
 LaTeX Info: Redefining \cite on input line 589.
 \ABCItoken=\toks19
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count102
@@ -456,7 +421,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen120
 \Gin@req@width=\dimen121
 )
-(D:\workspace\tcc2\Documento\fancyhdr.sty
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\fancyhdr.sty
 \fancy@headwidth=\skip88
 \f@ncyO@elh=\skip89
 \f@ncyO@erh=\skip90
@@ -466,44 +431,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \f@ncyO@erf=\skip94
 \f@ncyO@olf=\skip95
 \f@ncyO@orf=\skip96
-)
-(D:\workspace\tcc2\Documento\monografia.aux
-(D:\workspace\tcc2\Documento\apresentacao.aux)
-(D:\workspace\tcc2\Documento\introducao.aux)
-(D:\workspace\tcc2\Documento\referencial.aux
-
-LaTeX Warning: Label `fig:figura2' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura2' multiply defined.
-
-) (D:\workspace\tcc2\Documento\metodologia.aux
-
-LaTeX Warning: Label `fig:figura2' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura2' multiply defined.
-
-) (D:\workspace\tcc2\Documento\sistema.aux
-
-LaTeX Warning: Label `fig:figura2' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura8' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura8' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura8' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura8' multiply defined.
-
-
-LaTeX Warning: Label `fig:figura8' multiply defined.
-
-) (D:\workspace\tcc2\Documento\conclusao.aux))
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
@@ -517,8 +445,7 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 7.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -557,7 +484,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-(D:\workspace\tcc2\Documento\supp-pdf.mkii
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count103
 \scratchdimen=\dimen122
@@ -569,594 +496,59 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-) (D:\workspace\tcc2\Documento\apresentacao.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
- [1
-
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 33.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 33.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 33.
- [2] [3] [4] [5] [6]
-Overfull \hbox (4.6042pt too wide) in paragraph at lines 73--74
-\OT1/ptm/m/n/12 Palavras-chave:  Ao fi-nal do re-sumo deve-se ela-bo-rar palavr
-as-chave re-pre-sen-ta-ti-vas do conte[]udo
- []
-
-[7] [8] (D:\workspace\tcc2\Documento\monografia.lof
-Overfull \hbox (5.84384pt too wide) detected at line 15
-\OT1/ptm/m/n/12 FIGURA  10  --   
- []
-
-
-Overfull \hbox (5.84384pt too wide) detected at line 16
-\OT1/ptm/m/n/12 FIGURA  11  --   
- []
-
-
-Overfull \hbox (5.84384pt too wide) detected at line 17
-\OT1/ptm/m/n/12 FIGURA  12  --   
- []
-
-
-Overfull \hbox (5.84384pt too wide) detected at line 18
-\OT1/ptm/m/n/12 FIGURA  13  --   
- []
-
-
-Overfull \hbox (5.84384pt too wide) detected at line 19
-\OT1/ptm/m/n/12 FIGURA  14  --   
- []
-
-
-Overfull \hbox (5.84384pt too wide) detected at line 20
-\OT1/ptm/m/n/12 FIGURA  15  --   
- []
-
-
-Overfull \hbox (5.84384pt too wide) detected at line 21
-\OT1/ptm/m/n/12 FIGURA  16  --   
- []
-
-
-Overfull \hbox (5.84384pt too wide) detected at line 22
-\OT1/ptm/m/n/12 FIGURA  17  --   
- []
-
 )
-\tf@lof=\write3
- [9] (D:\workspace\tcc2\Documento\monografia.lot)
-\tf@lot=\write4
- [10]
-(D:\workspace\tcc2\Documento\monografia.loac)
-\tf@loac=\write5
-
-Underfull \hbox (badness 10000) in paragraph at lines 1--89
-
+Overfull \hbox (1.37958pt too wide) in paragraph at lines 18--18
+[]\OT1/ptm/m/n/12 Para en-ten-der me-lhor es-tes ter-mos (\OT1/ptm/m/n/10 MIT-CHELL\OT1/ptm/m/n/12 , 1998) cita os prin-ci-pais ter-mos biol[]ogicos
  []
 
-[11]) (D:\workspace\tcc2\Documento\introducao.tex
-(D:\workspace\tcc2\Documento\monografia.toc)
-\tf@toc=\write6
- [12
-
-
-] [13]
-Cap\'{\i }tulo 1.
-[14
-
-] [15]) [16] (D:\workspace\tcc2\Documento\referencial.tex
-Cap\'{\i }tulo 2.
-
-LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 17 undefined on in
-put line 5.
-
-
-LaTeX Warning: Citation `steiglitz1982combinatorial' on page 17 undefined on in
-put line 7.
-
-<imagens/problemaOtimizacao.png, id=55, 593.96906pt x 362.85562pt>
-File: imagens/problemaOtimizacao.png Graphic file (type png)
-
-<use imagens/problemaOtimizacao.png>
-Package pdftex.def Info: imagens/problemaOtimizacao.png used on input line 15.
-(pdftex.def)             Requested size: 326.68399pt x 199.5712pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+<imagens/ag.png, id=1, 325.215pt x 657.95813pt>
+File: imagens/ag.png Graphic file (type png)
+ <use imagens/ag.png>
+Package pdftex.def Info: imagens/ag.png used on input line 41.
+(pdftex.def)             Requested size: 201.63121pt x 407.92982pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
 
-
-LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 17 undefined on in
-put line 16.
-
-
-LaTeX Warning: Citation `steiglitz1982combinatorial' on page 17 undefined on in
-put line 19.
-
-
-LaTeX Warning: Citation `raupp2003introduccao' on page 17 undefined on input li
-ne 21.
-
-
-LaTeX Warning: Citation `opac-b1092847' on page 17 undefined on input line 23.
-
-[17
-
-
-
- <D:/workspace/tcc2/Documento/imagens/problemaOtimizacao.png>]
-
-LaTeX Warning: Citation `golbarg2000otimizaccao' on page 18 undefined on input 
-line 26.
-
-
-LaTeX Warning: Citation `deleonardo' on page 18 undefined on input line 28.
-
-
-LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 18 undefined on in
-put line 32.
-
-
-LaTeX Warning: Citation `steiglitz1982combinatorial' on page 18 undefined on in
-put line 32.
-
-
-LaTeX Warning: Citation `evans1992optimization' on page 18 undefined on input l
-ine 34.
-
-
-LaTeX Warning: Citation `nascimento2005aplicaccao' on page 18 undefined on inpu
-t line 36.
-
-
-LaTeX Warning: Citation `nascimento2005aplicaccao' on page 18 undefined on inpu
-t line 38.
-
-
-LaTeX Warning: Citation `adrianocesar' on page 18 undefined on input line 40.
-
-
-Overfull \hbox (3.82152pt too wide) in paragraph at lines 40--40
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/b/n/12 ??\OT1/ptm/m/n/12 ) uma heur[]stica
- []e a instancia[][]ao de uma meta-heur[]stica, ou seja, a aplica[][]ao
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 49--49
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
  []
 
-[18]
+[1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-LaTeX Warning: Citation `souza2000' on page 19 undefined on input line 46.
+]
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 93--93
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
+ []
 
-
-LaTeX Warning: Citation `armentanointroduccao' on page 19 undefined on input li
-ne 46.
-
-
-LaTeX Warning: Citation `subramanian2006aplicaccao' on page 19 undefined on inp
-ut line 46.
-
-
-LaTeX Warning: Citation `subramanian2006aplicaccao' on page 19 undefined on inp
-ut line 49.
-
-
-LaTeX Warning: Citation `glover1986future' on page 19 undefined on input line 4
-9.
-
-
-LaTeX Warning: Citation `souza2000' on page 19 undefined on input line 51.
-
-
-LaTeX Warning: Citation `armentanointroduccao' on page 19 undefined on input li
-ne 53.
-
-<imagens/representacaoBuscaTabu.png, id=62, 800.9925pt x 647.41875pt>
-File: imagens/representacaoBuscaTabu.png Graphic file (type png)
-
-<use imagens/representacaoBuscaTabu.png>
-Package pdftex.def Info: imagens/representacaoBuscaTabu.png used on input line 
-58.
-(pdftex.def)             Requested size: 400.49527pt x 323.70857pt.
-
-
-LaTeX Warning: Citation `souza2000' on page 19 undefined on input line 59.
-
-
-LaTeX Warning: Citation `armentanointroduccao' on page 19 undefined on input li
-ne 62.
-
-[19]
-
-LaTeX Warning: Citation `armentanointroduccao' on page 20 undefined on input li
-ne 64.
-
-
-LaTeX Warning: Citation `kirkpatrick1983optimization' on page 20 undefined on i
-nput line 68.
-
-
-LaTeX Warning: Citation `noronha2003abordagem' on page 20 undefined on input li
-ne 71.
-
-[20 <D:/workspace/tcc2/Documento/imagens/representacaoBuscaTabu.png>]
-
-LaTeX Warning: Citation `souza2002experiencias' on page 21 undefined on input l
-ine 73.
-
-
-! Package inputenc Error: Unicode char \u8:∆ not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...te. Se ele for pior por uma quantidade ∆
-                                                  , ele é aceito com uma pr...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! Package inputenc Error: Unicode char \u8:∆ not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.73 ...ele é aceito com uma probabilidade e -∆
-                                                  /T , onde T decresce gradu...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-<imagens/representacaoSimulatedAnnealing.png, id=72, 358.33875pt x 359.09157pt>
-File: imagens/representacaoSimulatedAnnealing.png Graphic file (type png)
-<use imagens/representacaoSimulatedAnnealing.png>
-Package pdftex.def Info: imagens/representacaoSimulatedAnnealing.png used on in
-put line 82.
-(pdftex.def)             Requested size: 197.08691pt x 197.50096pt.
-
-
-LaTeX Warning: Citation `souza2002experiencias' on page 21 undefined on input l
-ine 83.
-
-
-LaTeX Warning: Citation `aarts1988simulated' on page 21 undefined on input line
- 86.
-
-
-LaTeX Warning: Citation `oliveira2005algoritmo' on page 21 undefined on input l
-ine 91.
-
-
-LaTeX Warning: Citation `holland1975adaptation' on page 21 undefined on input l
-ine 92.
-
-
-LaTeX Warning: Citation `darwin1968origin' on page 21 undefined on input line 9
-3.
-
-[21 <D:/workspace/tcc2/Documento/imagens/representacaoSimulatedAnnealing.png>]
-
-LaTeX Warning: Citation `oliveira2005algoritmo' on page 22 undefined on input l
-ine 96.
-
-
-LaTeX Warning: Citation `michalewicz1996evolutionary' on page 22 undefined on i
-nput line 96.
-
-
-LaTeX Warning: Citation `oliveira2005algoritmo' on page 22 undefined on input l
-ine 97.
-
-
-LaTeX Warning: Citation `mitchell1998introduction' on page 22 undefined on inpu
-t line 99.
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 100.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
+[2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/ag.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 98.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 100.
-
-
-LaTeX Warning: Citation `goldberg1989genetic' on page 22 undefined on input lin
-e 107.
-
-[22]
-
-LaTeX Warning: Citation `timoteo2005desenvolvimento' on page 23 undefined on in
-put line 118.
-
-
-LaTeX Warning: Citation `kripkasimulated' on page 23 undefined on input line 12
-4.
-
-
-LaTeX Warning: Citation `schaerf1999survey' on page 23 undefined on input line 
-124.
-
-[23]
-
-LaTeX Warning: Citation `pinheiro2001ambiente' on page 24 undefined on input li
-ne 132.
-
-
-LaTeX Warning: Citation `marinho2005heuristicas' on page 24 undefined on input 
-line 134.
-
-
-LaTeX Warning: Citation `even1975complexity' on page 24 undefined on input line
- 134.
-
-
-LaTeX Warning: Citation `carter1992classroom' on page 24 undefined on input lin
-e 134.
-
-
-LaTeX Warning: Citation `kripkasimulated' on page 24 undefined on input line 13
-5.
-
-
-LaTeX Warning: Citation `souza2000' on page 24 undefined on input line 137.
-
-
-LaTeX Warning: Citation `nascimento2005aplicaccao' on page 24 undefined on inpu
-t line 139.
-
-
-LaTeX Warning: Citation `even1975complexity' on page 24 undefined on input line
- 139.
-
-) [24] (D:\workspace\tcc2\Documento\metodologia.tex
-Cap\'{\i }tulo 3.
-! Misplaced alignment tab character &.
-l.7 ...xecutar o seguinte comando "java -version &
-                                                  & javac -version" a mensag...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-l.7 ...ecutar o seguinte comando "java -version &&
-                                                   javac -version" a mensage...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-<imagens/mensagemJava.png, id=86, 477.28313pt x 69.25874pt>
-File: imagens/mensagemJava.png Graphic file (type png)
-
-<use imagens/mensagemJava.png>
-Package pdftex.def Info: imagens/mensagemJava.png used on input line 13.
-(pdftex.def)             Requested size: 381.82701pt x 55.40706pt.
-
-
-LaTeX Warning: Citation `play' on page 25 undefined on input line 18.
-
-<imagens/mensagemPlay.png, id=87, 478.78876pt x 161.85469pt>
-File: imagens/mensagemPlay.png Graphic file (type png)
-
-<use imagens/mensagemPlay.png>
-Package pdftex.def Info: imagens/mensagemPlay.png used on input line 24.
-(pdftex.def)             Requested size: 383.03152pt x 129.4839pt.
- [25
-
-
-
- <D:/workspace/tcc2/Documento/imagens/mensagemJava.png> <D:/workspace/tcc2/Docu
-mento/imagens/mensagemPlay.png>]
-Overfull \hbox (4.92317pt too wide) in paragraph at lines 37--38
-\OT1/ptm/m/n/12 HEUR[]ISTICA E M[]ETODO MISTO NA OTIMIZA[][]AO DA PROGRAMA[][]A
-O DE HOR[]ARIO
- []
-
-
-Overfull \hbox (58.82884pt too wide) in paragraph at lines 39--40
-[]\OT1/ptm/m/n/12 restri[][]oes do pro-blema e mo-delo ma-te-ma-tico http://www
-.dcc.ufla.br/infocomp/artigos/v4.3/art08.pdf 
- []
-
-! Misplaced alignment tab character &.
-l.44 ...ssário a sua modelagem. Segundo Elmasri &
-                                                   Navathe (2005) as metodol...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-[26] [27]
-Overfull \hbox (2.06952pt too wide) in paragraph at lines 87--87
-[]\OT1/ptm/m/n/12 As fer-ra-men-tes de Front-end des-cri-tas abaixo, fo-ram es-
-co-lhi-das de-vida a gande utiliza[][]ao
- []
-
-
-Overfull \hbox (11.18895pt too wide) in paragraph at lines 103--103
-[]\OT1/ptm/m/n/12 O Eclipse []e uma IDE (\OT1/ptm/m/it/12 in-te-gra-ted de-ve-l
-op-ment en-vi-ron-ment\OT1/ptm/m/n/12 ). Di-fe-rente de uma RAD(\OT1/ptm/m/it/1
-2 Rapid
- []
-
-[28]) [29] (D:\workspace\tcc2\Documento\sistema.tex
-Cap\'{\i }tulo 4.
-<imagens/diagramaCasoUso.png, id=104, 702.37407pt x 539.01375pt>
-File: imagens/diagramaCasoUso.png Graphic file (type png)
-
-<use imagens/diagramaCasoUso.png>
-Package pdftex.def Info: imagens/diagramaCasoUso.png used on input line 16.
-(pdftex.def)             Requested size: 351.18617pt x 269.50621pt.
- [30
-
-
-
-]
-<imagens/diagramaEntidadeRelacionamento.png, id=109, 852.93657pt x 745.28438pt>
-File: imagens/diagramaEntidadeRelacionamento.png Graphic file (type png)
-<use imagens/diagramaEntidadeRelacionamento.png>
-Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on inp
-ut line 32.
-(pdftex.def)             Requested size: 426.46724pt x 372.64128pt.
- [31 <D:/workspace/tcc2/Documento/imagens/diagramaCasoUso.png>]
-<imagens/diagramaClasse.png, id=115, 738.50906pt x 761.84625pt>
-File: imagens/diagramaClasse.png Graphic file (type png)
-
-<use imagens/diagramaClasse.png>
-Package pdftex.def Info: imagens/diagramaClasse.png used on input line 53.
-(pdftex.def)             Requested size: 369.25363pt x 380.9222pt.
- [32 <D:/workspace/tcc2/Documento/imagens/diagramaEntidadeRelacionamento.png>] 
-[33 <D:/workspace/tcc2/Documento/imagens/diagramaClasse.png>]
-<imagens/representacaoGene.png, id=124, 310.15875pt x 137.7647pt>
-File: imagens/representacaoGene.png Graphic file (type png)
-
-<use imagens/representacaoGene.png>
-Package pdftex.def Info: imagens/representacaoGene.png used on input line 74.
-(pdftex.def)             Requested size: 217.10963pt x 96.43462pt.
-
-<imagens/representacaoCromossomo.png, id=125, 426.84468pt x 45.92157pt>
-File: imagens/representacaoCromossomo.png Graphic file (type png)
-
-<use imagens/representacaoCromossomo.png>
-Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line
- 84.
-(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
-
-<imagens/representacaoIndividuo.png, id=126, 480.29437pt x 63.23625pt>
-File: imagens/representacaoIndividuo.png Graphic file (type png)
-
-<use imagens/representacaoIndividuo.png>
-Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 
-94.
-(pdftex.def)             Requested size: 384.23601pt x 50.58905pt.
- [34 <D:/workspace/tcc2/Documento/imagens/representacaoGene.png>] [35 <D:/works
-pace/tcc2/Documento/imagens/representacaoCromossomo.png> <D:/workspace/tcc2/Doc
-umento/imagens/representacaoIndividuo.png>] <imagens/fluxoNovaPopulacao.png, id
-=133, 621.82312pt x 864.22874pt>
-File: imagens/fluxoNovaPopulacao.png Graphic file (type png)
-
-<use imagens/fluxoNovaPopulacao.png>
-Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 114.
-
-(pdftex.def)             Requested size: 310.9108pt x 432.11331pt.
- [36 <D:/workspace/tcc2/Documento/imagens/fluxoNovaPopulacao.png>]
-<imagens/representacaoMutacao.png, id=138, 484.81125pt x 158.09062pt>
-File: imagens/representacaoMutacao.png Graphic file (type png)
-
-<use imagens/representacaoMutacao.png>
-Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 13
-0.
-(pdftex.def)             Requested size: 339.36555pt x 110.66267pt.
-
-<imagens/individuosAntesInsersaoGenetica.png, id=139, 539.76656pt x 150.5625pt>
-File: imagens/individuosAntesInsersaoGenetica.png Graphic file (type png)
-<use imagens/individuosAntesInsersaoGenetica.png>
-Package pdftex.def Info: imagens/individuosAntesInsersaoGenetica.png used on in
-put line 142.
-(pdftex.def)             Requested size: 377.83401pt x 105.39302pt.
- [37 <D:/workspace/tcc2/Documento/imagens/representacaoMutacao.png>]
-<imagens/individuosAposInsersaoGenetica.png, id=144, 536.0025pt x 143.78719pt>
-File: imagens/individuosAposInsersaoGenetica.png Graphic file (type png)
-
-<use imagens/individuosAposInsersaoGenetica.png>
-Package pdftex.def Info: imagens/individuosAposInsersaoGenetica.png used on inp
-ut line 152.
-(pdftex.def)             Requested size: 321.60397pt x 86.27296pt.
-
-Overfull \hbox (7.66261pt too wide) in paragraph at lines 156--157
-[]\OT1/ptm/m/n/12 Ao ter-mino da adi[][]ao dos ge-nes do ponto de corte o fi-lh
-o 1 o mesmo re-cebe as informa[][]oes
- []
-
-<imagens/insersaoMaterialMae.png, id=145, 543.53062pt x 147.55125pt>
-File: imagens/insersaoMaterialMae.png Graphic file (type png)
-
-<use imagens/insersaoMaterialMae.png>
-Package pdftex.def Info: imagens/insersaoMaterialMae.png used on input line 162
-.
-(pdftex.def)             Requested size: 380.46883pt x 103.28516pt.
- [38 <D:/workspace/tcc2/Documento/imagens/individuosAntesInsersaoGenetica.png> 
-<D:/workspace/tcc2/Documento/imagens/individuosAposInsersaoGenetica.png> <D:/wo
-rkspace/tcc2/Documento/imagens/insersaoMaterialMae.png>]
-<imagens/fluxoAlgoritimo.png, id=149, 683.55376pt x 672.26157pt>
-File: imagens/fluxoAlgoritimo.png Graphic file (type png)
-
-<use imagens/fluxoAlgoritimo.png>
-Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 190.
-(pdftex.def)             Requested size: 478.48438pt x 470.57988pt.
-
-Overfull \hbox (23.24026pt too wide) in paragraph at lines 190--191
- [][] 
- []
-
-) [39] [40 <D:/workspace/tcc2/Documento/imagens/fluxoAlgoritimo.png>]
-(D:\workspace\tcc2\Documento\conclusao.tex
-Cap\'{\i }tulo 5.
-[41
-
-
-
-]
-Cap\'{\i }tulo 6.
-) [42
-
-] (D:\workspace\tcc2\Documento\monografia.bbl [43
-
-
-]
-Underfull \hbox (badness 1496) in paragraph at lines 162--165
-[]\OT1/ptm/m/n/12 POSTGRESQL. \OT1/ptm/m/it/12 So-bre o Post-greSQL\OT1/ptm/m/n
-/12 . 2013. Dis-pon[]vel em: 
- []
-
-[44]) [45] (D:\workspace\tcc2\Documento\monografia.aux
-(D:\workspace\tcc2\Documento\apresentacao.aux)
-(D:\workspace\tcc2\Documento\introducao.aux)
-(D:\workspace\tcc2\Documento\referencial.aux)
-(D:\workspace\tcc2\Documento\metodologia.aux)
-(D:\workspace\tcc2\Documento\sistema.aux)
-(D:\workspace\tcc2\Documento\conclusao.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
+ (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [3])
+[4
+
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
 Here is how much of TeX's memory you used:
- 4581 strings out of 493921
- 70347 string characters out of 3147263
- 132048 words of memory out of 3000000
- 7727 multiletter control sequences out of 15000+200000
- 16695 words of font info for 36 fonts, out of 3000000 for 9000
+ 4261 strings out of 493921
+ 62898 string characters out of 3144864
+ 132954 words of memory out of 3000000
+ 7484 multiletter control sequences out of 15000+200000
+ 14456 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,8n,43p,1296b,309s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (45 pages, 1008947 bytes).
+ 43i,6n,43p,682b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on monografia.pdf (4 pages, 96114 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 33 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
