@@ -9,19 +9,34 @@
 %\include{apresentacao}
 %\include{introducao}
 %\include{referencial}
+
+
+%\include{metodologia}
+%\include{sistema}
+%\include{conclusao}
+
 \subsecao{Algoritmos genéticos}
 
 %o que é 
 
-De acordo com \cite{goldberg1989genetic} algoritmos genéticos são baseados na teoria da evolução das espécies elaborada por \cite{darwin1968origin} utilizando os conceitos da biológia tais como genes, individuo, população, cromossomos, cruzamento, mutação e seleção. Estes algoritmos foram introduzidos por \cite{holland1975adaptation} para resolver problemas chamados \textit{timetabling}.
+De acordo com \cite{goldberg1989genetic} algoritmos genéticos são baseados na teoria da evolução das espécies elaborada por \cite{darwin1968origin} utilizando os conceitos da biológia tais como genes, individuo, população, cromossomos, cruzamento, mutação e seleção. Estes algoritmos foram introduzidos por \cite{holland1975adaptation} para resolver os problemas chamados \textit{timetabling}.
 
-Para entender melhor estes termos \cite{mitchell1998introduction} cita os principais termos biológicos importantes para o entendimento do funcionamento dos algoritmos genéticos.\par
-Gene se trada de uma característica particular de um cromossomo. Um cromossomo é composto por um ou mais genes pode se dizer também que é uma sequencia de genes que será caracterizada como a solução do problema. \textit{Fitness} significa a aptidão do indivíduo em um determinado ambiente. Individuo é a combinação do cromossomo mais o \textit{fitness} calculado através da função objetiva.População é um grupo de indivíduos.\par
+Para entender melhor estes termos \cite{mitchell1998introduction} cita os principais termos biológicos que são importantes para o entendimento do funcionamento dos algoritmos genéticos. Gene se trada de uma característica particular de um cromossomo. Um cromossomo é composto por um ou mais genes, pode se dizer também que é uma sequencia de genes que será caracterizada como a solução do problema. \textit{Fitness} significa a aptidão do indivíduo em um determinado ambiente. Individuo é a combinação do cromossomo mais o \textit{fitness} calculado através da função objetiva. População é um grupo de indivíduos. Geração se trata de cada interação do algoritimo.\par
 
-Em seu trabalho \cite{lucas2000algoritmos} descreve algoritmo genéticos da seguinte forma. São algoritmos que trabalham sobre uma população, que através de uma função de adaptação aconteça a evolução, primeiramente é inicializada uma população, logo após acontece iram acontecer os processos de seleção reprodução e mutação, os mesmos ocorreram a cada geração até que os critérios de parada aconteçam. Afirma que os termos utilizados pertencem à tradição existente no meio da computação evolutiva de utilizar, com certa liberdade os termos da biologia.
+Em seu trabalho \cite{lucas2000algoritmos} descreve algoritmos genéticos da seguinte forma. São algoritmos que trabalham sobre uma população, através de uma função de adaptação, para que aconteça a evolução. Primeiramente é inicializada uma população, logo após iram acontecer os processos de seleção, reprodução também conhecida como \textit{crossover} e mutação, os mesmos ocorreram a cada geração até que os critérios de parada aconteçam. Tambem afirma que os termos utilizados pertencem à tradição existente no meio da computação evolutiva de utilizar, com certa liberdade os termos da biologia. A Figura~\ref{fig:ag} apresentada em seu  trabalho mostra a estrutura funcional de um algoritmo genético tradicional. 
 
-A Figura~\ref{fig:ag} apresentada no trabalho de \cite{lucas2000algoritmos} mostra a estrutura funcional de um algoritmo genético tradicional.\par
-Primeiramente deve ser feita a inicialização básica da população, são utilizadas funções aleatórias para gerar os indivíduos assim teremos uma biodiversidade na população, podemos utilizar varias alternativas para esta tarefa: Inicialização randômica uniforme onde cada gene recebe um valor sorteado de forma aleatória e uniforme. Inicialização randômica não uniforme alguns valores para se preencher o gene são escolhidos com mais frequência que os demais. Inicialização randômica com "dope" alguns indivíduos criados são otimizados e adicionados a população aleatória.
+
+\begin{figure}[!htb]
+\caption[Estrutura funcional de um algoritmo genético tradicional]{Estrutura funcional de um algoritmo genético tradicional}
+\label{fig:ag}
+\centering
+\includegraphics[scale=0.4]{imagens/ag.png}
+\\ \textbf{\footnotesize Fonte: \cite{lucas2000algoritmos}}
+\end{figure}
+
+
+
+O primeiro passo do algoritímo a ser feito é a inicialização básica da população, são utilizadas funções aleatórias para gerar os indivíduos assim teremos uma biodiversidade na população, podemos utilizar varias alternativas para esta tarefa: Inicialização randômica uniforme onde cada gene recebe um valor sorteado de forma aleatória e uniforme. Inicialização randômica não uniforme alguns valores para se preencher o gene são escolhidos com mais frequência que os demais. Inicialização randômica com "dope" alguns indivíduos criados são otimizados e adicionados a população aleatória.
 
 Para cada indivíduo de uma população é realizada um processo de avaliação o que representa o seu grau de adaptação no ambiente. Este é o primeiro passo da seleção que pode ocorrer de varias formas.\par
 
@@ -35,13 +50,7 @@ Geração corresponde a uma iteração realizada sobre a população.
 
 Elitismo pode ser definido como o operador genético que seleciona os melhores indivíduos de uma população com isto garantindo com que não haja perda da melhor solução encontrada.
 
-\begin{figure}[!htb]
-\caption[Estrutura funcional de um algoritmo genético tradicional]{Estrutura funcional de um algoritmo genético tradicional}
-\label{fig:ag}
-\centering
-\includegraphics[scale=0.62]{imagens/ag.png}
-\\ \textbf{\footnotesize Fonte: \cite{lucas2000algoritmos}}
-\end{figure}
+
 
  Estrutura de um Algoritmo Genético 
  
@@ -101,6 +110,8 @@ cruzamento
 mutação
 evolução
 
+crit´´erios d eparada
+
 
 %outros
 
@@ -125,10 +136,6 @@ O algoritmo genético atua sobre uma população fazendo com que esta evolua de 
 Figura XXXX. Cada passo pode ser realizado de várias maneiras e pode variar de problema para problema \cite{timoteo2005desenvolvimento}.\par 
 
 Figura Etapas de um Algoritmo Genético Básico 
-
-%\include{metodologia}
-%\include{sistema}
-%\include{conclusao}
 \referencias{referencias}
 %\include{apendices}
 

@@ -24,7 +24,11 @@ public class Algoritimo {
 
 		p.populacaoInicial(parametros.tamanhoPopulacao);
 
+		long startTotal = System.currentTimeMillis();
+
 		do {
+
+			long startGeracao = System.currentTimeMillis();
 
 			p = new Populacao((Populacao) novaGeracao(p).clone());
 
@@ -34,14 +38,24 @@ public class Algoritimo {
 
 			geracao++;
 
-			System.out.println(geracao);
+			long endGeracao = System.currentTimeMillis();
+
+			long diffGeracao = endGeracao - startGeracao;
+
+			System.out.println(geracao + ";" + p.melhor().getFitness() + ";" + diffGeracao);
 
 		} while (!temSolucao && geracao < parametros.numeroMaximoGeracoes);
 
+		long endTotal = System.currentTimeMillis();
+
+		long diffTotal = endTotal - startTotal;
+
+		System.out.println(geracao + "final" + ";" + p.melhor().getFitness() + ";" + diffTotal);
+
 		p.alocar(i);
 
-		System.out.println(i.getGenoma());
-		System.out.println(i.getFitness());
+		//System.out.println(i.getGenoma());
+		//System.out.println(i.getFitness());
 	}
 
 	public Populacao novaGeracao(Populacao populacao) throws CloneNotSupportedException {
@@ -53,17 +67,18 @@ public class Algoritimo {
 		// se tiver elitismo, mantém o melhor indivíduo da geração atual
 		if (parametros.elitismo) {
 
-			//int elitismoPeople = (int) (populacao.getPopulacao().size() * 0.2);
+			// int elitismoPeople = (int) (populacao.getPopulacao().size() *
+			// 0.2);
 
-			//for (int i = 0; i < elitismoPeople; i++) {
+			// for (int i = 0; i < elitismoPeople; i++) {
 
-				p.addIndividuo(new Individuo((Individuo) populacao.melhor()));
+			p.addIndividuo(new Individuo((Individuo) populacao.melhor()));
 
-			//}
+			// }
 
 		}
 
-		System.out.println(populacao.melhor().getFitness());
+		//System.out.println(populacao.melhor().getFitness());
 
 		// insere novos indivíduos na nova população, até atingir o tamanho
 		// máximo

@@ -88,25 +88,109 @@ Conforme \cite{aarts1988simulated} a analogia com a otimização (combinatória 
 
 \subsecao{Algoritmos genéticos}
 
-Conforme cita \cite{oliveira2005algoritmo}, os algoritmos genéticos foram introduzidos 
-por \cite{holland1975adaptation}, com intuito de aplicar a teoria da evolução das espécies 
-elaborada por \cite{darwin1968origin} utilizando os conceitos da evolução biológica como 
-genes, cromossomos, cruzamento, mutação e seleção na computação procurando explicar rigorosamente processos de adaptação em sistemas naturais e desenvolver sistemas artificiais (simulados em computador) que mantenham os mecanismos originais, encontrados em sistemas naturais.\par
+%o que é 
+
+De acordo com \cite{goldberg1989genetic} algoritmos genéticos são baseados na teoria da evolução das espécies elaborada por \cite{darwin1968origin} utilizando os conceitos da biológia tais como genes, individuo, população, cromossomos, cruzamento, mutação e seleção. Estes algoritmos foram introduzidos por \cite{holland1975adaptation} para resolver problemas chamados \textit{timetabling}.
+
+Para entender melhor estes termos \cite{mitchell1998introduction} cita os principais termos biológicos importantes para o entendimento do funcionamento dos algoritmos genéticos.\par
+Gene se trada de uma característica particular de um cromossomo. Um cromossomo é composto por um ou mais genes pode se dizer também que é uma sequencia de genes que será caracterizada como a solução do problema. \textit{Fitness} significa a aptidão do indivíduo em um determinado ambiente. Individuo é a combinação do cromossomo mais o \textit{fitness} calculado através da função objetiva.População é um grupo de indivíduos.\par
+
+Em seu trabalho \cite{lucas2000algoritmos} descreve algoritmo genéticos da seguinte forma. São algoritmos que trabalham sobre uma população, que através de uma função de adaptação aconteça a evolução, primeiramente é inicializada uma população, logo após acontece iram acontecer os processos de seleção reprodução e mutação, os mesmos ocorreram a cada geração até que os critérios de parada aconteçam. Afirma que os termos utilizados pertencem à tradição existente no meio da computação evolutiva de utilizar, com certa liberdade os termos da biologia.
+
+A Figura~\ref{fig:ag} apresentada no trabalho de \cite{lucas2000algoritmos} mostra a estrutura funcional de um algoritmo genético tradicional.\par
+Primeiramente deve ser feita a inicialização básica da população, são utilizadas funções aleatórias para gerar os indivíduos assim teremos uma biodiversidade na população, podemos utilizar varias alternativas para esta tarefa: Inicialização randômica uniforme onde cada gene recebe um valor sorteado de forma aleatória e uniforme. Inicialização randômica não uniforme alguns valores para se preencher o gene são escolhidos com mais frequência que os demais. Inicialização randômica com "dope" alguns indivíduos criados são otimizados e adicionados a população aleatória.
+
+Para cada indivíduo de uma população é realizada um processo de avaliação o que representa o seu grau de adaptação no ambiente. Este é o primeiro passo da seleção que pode ocorrer de varias formas.\par
+
+Seleção roda de roleta é um método tradicional, para cada indivíduo é atribuído um espaço na roleta sendo o tamanho proporcional ao valor da aptidão do individuo. Esta role gira N vezes onde N é o numero é o tamanho da população selecionando assim os pais para próxima geração. Seleção por torneio são selecionados indivíduos da população anterior e escolhidos os dois que que contêm o maior valor de aptidão.\par
+
+Cruzamento também conhecido como \textit{crossover} é um operador genético onde é selecionado um ponto de corte após isto é realizada a troca genética entre os subconjutos de genes dos pais criando um filho contendo material genético dos mesmos.
+
+Mutação consiste em mudar aleatoriamente um indivíduo para criar um novo indivíduo com um diferente material genético, este mecanismo serve para que exista uma variabilidade genética e para que o algorítimo não fique preso em um máximo ou minimo local.
+
+Geração corresponde a uma iteração realizada sobre a população.
+
+Elitismo pode ser definido como o operador genético que seleciona os melhores indivíduos de uma população com isto garantindo com que não haja perda da melhor solução encontrada.
+
+\begin{figure}[!htb]
+\caption[Estrutura funcional de um algoritmo genético tradicional]{Estrutura funcional de um algoritmo genético tradicional}
+\label{fig:ag}
+\centering
+\includegraphics[scale=0.62]{imagens/ag.png}
+\\ \textbf{\footnotesize Fonte: \cite{lucas2000algoritmos}}
+\end{figure}
+
+ Estrutura de um Algoritmo Genético 
+ 
+Na maioria dos casos um algoritmo genético é estruturado da seguinte forma 
+(adaptado de Sivanandam e Deepa, 2008): 
+Início – Gera-se uma população aleatória de n cromossomos. Quando já se tem 
+alguma informação sobre o problema, pode-se introduzir soluções adequadas para já iniciar a 
+população com um valor de aptidão alto ou adequado. 
+Aptidão – é associado a cada cromossomo o seu valor de aptidão na população. 
+Seleção – os pais são selecionados de acordo com o seu valor de aptidão, quanto 
+melhor o valor de aptidão, maior a chance desses pais serem selecionados. 
+Cruzamento (crossover) – de acordo com a probabilidade de ocorrer o cruzamento, 
+as informações entre os pais são trocadas, formando-se os filhos. Se a operação de 
+cruzamento não acontecer, os filhos serão exatamente iguais aos pais (dependendo ainda se a 
+mutação ocorrerá ou não). 
+Mutação – com certa probabilidade, geralmente bem menor do que a probabilidade de 
+ocorrer o cruzamento, a mutação pode ocorrer em cada locus dos descendentes. 
+Aceitação – os filhos são colocados na nova população. 
+Troca – substitui-se a antiga população pela nova população. 
+Teste – Se a condição de parada é satisfeita, o programa deve retornar a melhor 
+solução encontrada na população atual. 
+Laço – Se não, volte para o passo em que a aptidão é calculada. 
+
 
 Segundo \cite{oliveira2005algoritmo}, o processo de evolução executado por um algoritmo genético corresponde a um procedimento de busca no espaço de soluções potenciais para o problema e, como enfatiza \cite{michalewicz1996evolutionary}, esta busca requer um equilíbrio entre dois objetivos aparentemente conflitantes: a procura das melhores soluções na região que se apresenta promissora ou fase de intensificação e a procura de outra região ou exploração do espaço de busca, também conhecida como diversificação.\par
+
+
+Segundo \cite{hamawaki2011geraccao} e \cite{oliveira2005algoritmo} algoritmos genéticos são eficientes para encontrar soluções ótimas ou quase ótimas, pois as limitações são minimas dos demais métodos de busca tradicionais.
+
+
+Conforme cita \cite{oliveira2005algoritmo}, os algoritmos genéticos foram introduzidos por \cite{holland1975adaptation}, com intuito de aplicar a teoria da evolução das espécies elaborada por \cite{darwin1968origin} utilizando os conceitos da evolução biológica como genes, cromossomos, cruzamento, mutação e seleção na computação procurando explicar rigorosamente processos de adaptação em sistemas naturais e desenvolver sistemas artificiais (simulados em computador) que mantenham os mecanismos originais, encontrados em sistemas naturais.\par
+
+
+
+
+
+%historia
+
+
+%algoritimo
+
+Cofificação do indiviruo 
+
+sorteio e aleatoriedades
+
+base de dados
+
+criação da população inicial
+
+calculo da aptidao
+
+operadores geneticos
+
+seleção 
+elitismo 
+cruzamento
+mutação
+evolução
+
+
+%outros
+
+A computação 
+
+
+
+
+
+Segundo \cite{oliveira2005algoritmo}, o processo de evolução executado por um algoritmo genético corresponde a um procedimento de busca no espaço de soluções potenciais para o problema e, como enfatiza \cite{michalewicz1996evolutionary}, esta busca requer um equilíbrio entre dois objetivos aparentemente conflitantes: a procura das melhores soluções na região que se apresenta promissora ou fase de intensificação e a procura de outra região ou exploração do espaço de busca, também conhecida como diversificação.\par
+
 Ainda segundo \cite{oliveira2005algoritmo}, os algoritmos genéticos têm se mostrado ferramentas poderosas para resolver problemas onde o espaço de busca é muito grande e os métodos convencionais se mostraram ineficientes.\par
 
-Mitchel \cite{mitchell1998introduction} cita que a terminologia biológica é muito importante para a compreensão do funcionamento dos algoritmos genéticos. Eis os principais termos: \par
-•  Cromossomo: estrutura que representa uma determinada característica da solução ou a própria solução; \par
-•  Gene: característica particular de um cromossomo. O cromossomo é composto por um ou mais genes. \par
-•  Alelo: valor de determinado gene;\par
-•  Locus: determinada posição do gene no cromossomo;\par
-•  Genótipo: estrutura que codifica uma solução. Um genótipo pode ser formado por um ou mais cromossomos; \par
-•  Fenótipo: decodificação ou o significado da estrutura; \par
-•  Fitness: significa aptidão. O quanto o indivíduo é apto para determinado ambiente; \par
-As principais características que diferenciam os algoritmos genéticos de métodos tradicionais são \cite{goldberg1989genetic}: \par
-•  Parâmetros: os algoritmos genéticos trabalham com a codificação dos parâmetros e não com os parâmetros propriamente; \par
-•  Número de soluções: os algoritmos genéticos trabalham com uma população de indivíduos (representando um conjunto de soluções) e não com uma única solução; \par
 
 •  Avaliação das soluções: os algoritmos genéticos utilizam informações de custo ou recompensa penalizando ou premiando determinadas características das soluções; \par
 
