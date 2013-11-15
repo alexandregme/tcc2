@@ -35,15 +35,16 @@ Segundo \cite{oliveira2005algoritmo}, o processo de evolução executado por um 
 \\ \textbf{\footnotesize Fonte: \cite{de1999introduccao}}
 \end{figure}
 
-
 %falar sobre população inicial
 
 A Figura~\ref{fig:ag} trata de uma estrutura funcional típica de um algorítimo genético, \cite{de1999introduccao} cita em seu trabalho que o primeiro passo a ser tomado é a geração de uma população inicial, que é formada através de métodos aleatórios para gerar os indivíduos, assim teremos uma biodiversidade na população. Durante o processo evolutivo todos indivíduos da população são avaliados e cada um deles recebe o seu \textit{fitness}, o que representa a qualidade da solução representada por ele.\par
 
 %falar sobre seleção
-Seleção roda de roleta é um método tradicional, para cada indivíduo é atribuído um espaço na roleta sendo o tamanho proporcional ao valor da aptidão do individuo. Esta role gira N vezes onde N é o numero é o tamanho da população selecionando assim os pais para próxima geração. Seleção por torneio são selecionados indivíduos da população anterior e escolhidos os dois que que contêm o maior valor de aptidão.\par
+
+Segundo \cite{lobo2005soluccao} existem vários métodos para selecionar indivíduos para execução dos operadores genéticos, em seu trabalho o autor apresenta os seguintes métodos. Seleção por roleta é um método tradicional, para cada indivíduo é atribuído um espaço na roleta sendo o tamanho proporcional ao valor da aptidão do individuo. Esta roleta gira N vezes onde N é o numero do tamanho da população, selecionando assim os pais para próxima geração. Seleção por torneio são selecionados X indivíduos da população onde X é um valor aleatório anterior e escolhidos os dois que que contêm o maior valor de aptidão no caso os país, segundo o autor este método é o mais utilizado, pois oferece a vantagem de não exigir que a comparação seja feita entre todos os indivíduos da população.\par
 
 %falar sobre operadores genéticos.
+
 De acordo com \cite{goes2005otimizaccao} os principais operadores genéticos, utilizados ao se desenvolver algorítimos genéticos são inversão, mutação e \textit{crossover}, são responsáveis em realizar transformações nos indivíduos da população mas cada um possui suas diferentes funções dentro do algorítimo.\par
 Inversão é um operador que modifica a genética de um gene ele é fundamental para garantir a biodiversidade da população, ainda segundo \cite{goes2005otimizaccao} o operador mutação  desenvolve o mesmo papel que o operador inversão, o mesmo cita que vários autores consideram inversão e mutação como o mesmo operador genético e também afirmam que são os operadores mais importantes e optam por trabalhar somente com estes operadores. Estes operadores são fundamentais para o desenvolvimento de algorítimos genéticos por evitarem a convergência prematura da solução, ou seja, quando uma população se estabiliza com uma adaptação pouco adequada, podemos dizer então que, um super-indivíduo domina o processo seletivo de tal forma que não é possível gerar filhos melhores, este mesmo super-indivíduo transmite suas características para toda a população.\par
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  15 NOV 2013 20:25
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  15 NOV 2013 20:41
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -516,11 +516,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 
  <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/ag.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 53.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 54.
  <imagens/crossoverAG.png, id=9, 313.9228pt x 143.03438pt>
 File: imagens/crossoverAG.png Graphic file (type png)
  <use imagens/crossoverAG.png>
-Package pdftex.def Info: imagens/crossoverAG.png used on input line 56.
+Package pdftex.def Info: imagens/crossoverAG.png used on input line 57.
 (pdftex.def)             Requested size: 188.35512pt x 85.82127pt.
  [2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/crossoverAG.png>]
 (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [3]) [4
@@ -528,8 +528,8 @@ Package pdftex.def Info: imagens/crossoverAG.png used on input line 56.
 ] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
 Here is how much of TeX's memory you used:
  4261 strings out of 493921
- 63008 string characters out of 3144864
- 131111 words of memory out of 3000000
+ 62958 string characters out of 3144864
+ 131093 words of memory out of 3000000
  7484 multiletter control sequences out of 15000+200000
  15828 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -537,7 +537,7 @@ Here is how much of TeX's memory you used:
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a
 .pfb>
-Output written on monografia.pdf (4 pages, 131417 bytes).
+Output written on monografia.pdf (4 pages, 132065 bytes).
 PDF statistics:
  34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

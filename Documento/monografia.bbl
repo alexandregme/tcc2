@@ -54,6 +54,13 @@ Tese (Doutorado) --- Dissertation Abstracts International, 36(10),5140B.
 \emph{Sistemas inteligentes: aplica{\c{c}}oes a recursos h{\i}dricos e
   ci{\^e}ncias ambientais}, v.~1, p. 99--148, 1999.}
 
+\bibitem[Lobo 2005]{lobo2005soluccao}
+\abntrefinfo{Lobo}{LOBO}{2005}
+{LOBO, E. L.~M. Uma solu{\c{c}}{\~a}o do problema de hor{\'a}rio escolar via
+  algoritmo gen{\'e}tico paralelo.
+\emph{Centro Federal de Educa{\c{c}}{\~a}o Tecnol{\'o}gica de Minas Gerais},
+  2005.}
+
 \bibitem[Lucas 2000]{lucas2000algoritmos}
 \abntrefinfo{Lucas}{LUCAS}{2000}
 {LUCAS, D.~C. Algoritmos gen{\'e}ticos: um estudo de seus conceitos
@@ -77,10 +84,5 @@ A Bradford Book, 1998.}
   ve{\'\i}culos com janela de tempo.
 \emph{Monografia, Departamento de Ci{\^e}ncia da Computa{\c{c}}{\~a}o,
   Universidade Federal de Lavras}, 2005.}
-
-\bibitem[TIM{\'O}TEO 2005]{timoteo2005desenvolvimento}
-\abntrefinfo{TIM{\'O}TEO}{TIM{\'O}TEO}{2005}
-{TIM{\'O}TEO, G. T.~S. \emph{Desenvolvimento de um Algoritmo Gen{\'e}tico para
-  a Resolu{\c{c}}{\~a}o do Timetabling}. 2005.}
 
 \end{thebibliography}
