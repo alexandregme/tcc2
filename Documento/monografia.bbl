@@ -11,6 +11,14 @@
 \emph{See also: http://www. literature.
   org/authors/darwin-charles/the-origin-ofspecies}, 1968.}
 
+\bibitem[G{\'o}es 2005]{goes2005otimizaccao}
+\abntrefinfo{G{\'o}es}{G{\'O}ES}{2005}
+{G{\'O}ES, A. R.~T.
+\emph{Otimiza{\c{c}}{\~a}o na Distribui{\c{c}}{\~a}o da Carga Hor{\'a}ria de
+  Professores: m{\'e}todo exato, m{\'e}todo heur{\'\i}stico, m{\'e}todo misto e
+  interface}.
+Tese (Doutorado) --- Disserta{\c{c}}{\~a}o de Mestrado, UFPR, 2005.}
+
 \bibitem[Goldberg 1989]{goldberg1989genetic}
 \abntrefinfo{Goldberg}{GOLDBERG}{1989}
 {GOLDBERG, D. Genetic algorithms in optimization, search and machine learning.
@@ -31,6 +39,20 @@
 {HOLLAND, J.~H. \emph{Adaptation in natural and artificial systems: An
   introductory analysis with applications to biology, control, and artificial
   intelligence.} [S.l.]: U Michigan Press, 1975.}
+
+\bibitem[Jong 1975]{DeJong}
+\abntrefinfo{Jong}{JONG}{1975}
+{JONG, K.~A. D.
+\emph{An analysis of the behavior of a class of genetic adaptative systems}.
+Tese (Doutorado) --- Dissertation Abstracts International, 36(10),5140B.
+  (University Microlms No. 76-9381), 1975.}
+
+\bibitem[Lacerda e Carvalho 1999]{de1999introduccao}
+\abntrefinfo{Lacerda e Carvalho}{LACERDA; CARVALHO}{1999}
+{LACERDA, E.~G. de; CARVALHO, A. de. Introdu{\c{c}}{\~a}o aos algoritmos
+  gen{\'e}ticos.
+\emph{Sistemas inteligentes: aplica{\c{c}}oes a recursos h{\i}dricos e
+  ci{\^e}ncias ambientais}, v.~1, p. 99--148, 1999.}
 
 \bibitem[Lucas 2000]{lucas2000algoritmos}
 \abntrefinfo{Lucas}{LUCAS}{2000}

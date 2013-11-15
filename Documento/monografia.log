@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  15 NOV 2013 17:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  15 NOV 2013 20:25
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -497,78 +497,49 @@ Package caption Info: End \AtBeginDocument code.
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
 )
-Overfull \hbox (1.37958pt too wide) in paragraph at lines 24--24
-[]\OT1/ptm/m/n/12 Para en-ten-der me-lhor es-tes ter-mos (\OT1/ptm/m/n/10 MIT-CHELL\OT1/ptm/m/n/12 , 1998) cita os prin-ci-pais ter-mos biol[]ogicos
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 28--28
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
-<imagens/ag.png, id=1, 325.215pt x 657.95813pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+<imagens/ag.png, id=1, 537.50812pt x 322.20375pt>
 File: imagens/ag.png Graphic file (type png)
  <use imagens/ag.png>
-Package pdftex.def Info: imagens/ag.png used on input line 33.
-(pdftex.def)             Requested size: 130.0837pt x 263.17859pt.
+Package pdftex.def Info: imagens/ag.png used on input line 34.
+(pdftex.def)             Requested size: 322.50735pt x 193.32373pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
  [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/ag.png>]
-Overfull \hbox (1.6055pt too wide) in paragraph at lines 78--78
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
- []
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 53.
+ <imagens/crossoverAG.png, id=9, 313.9228pt x 143.03438pt>
+File: imagens/crossoverAG.png Graphic file (type png)
+ <use imagens/crossoverAG.png>
+Package pdftex.def Info: imagens/crossoverAG.png used on input line 56.
+(pdftex.def)             Requested size: 188.35512pt x 85.82127pt.
+ [2 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/crossoverAG.png>]
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [3]) [4
 
-[2]
-
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:113: Package inputenc Error: Unicode char \u8:´ not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex:113: Package inputenc Error: Unicode char \u8:´ not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (1.6055pt too wide) in paragraph at lines 124--124
-[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 129.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
- (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [3]) [4
-
-] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
 Here is how much of TeX's memory you used:
- 4262 strings out of 493921
- 62903 string characters out of 3144864
- 133954 words of memory out of 3000000
- 7485 multiletter control sequences out of 15000+200000
- 14456 words of font info for 29 fonts, out of 3000000 for 9000
+ 4261 strings out of 493921
+ 63008 string characters out of 3144864
+ 131111 words of memory out of 3000000
+ 7484 multiletter control sequences out of 15000+200000
+ 15828 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,6n,43p,840b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on monografia.pdf (4 pages, 98911 bytes).
+ 43i,6n,43p,977b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a
+.pfb>
+Output written on monografia.pdf (4 pages, 131417 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
+ 34 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
