@@ -2,23 +2,23 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o de um problema de minimiza\IeC {\c c}\IeC {\~a}o com \IeC {\'o}timos locais}}{17}
-\contentsline {figure}{\numberline {2}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do pseudoc\IeC {\'o}digo do algor\IeC {\'\i }timo da Busca Tabu}}{20}
-\contentsline {figure}{\numberline {3}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do pseudoc\IeC {\'o}digo do algor\IeC {\'\i }timo Simulated Annealing}}{21}
+\contentsline {figure}{\numberline {2}{\ignorespaces Estrutura funcional de um algoritmo gen\IeC {\'e}tico t\IeC {\'\i }pico}}{21}
+\contentsline {figure}{\numberline {3}{\ignorespaces Ponto de corte \textit {crossover}}}{23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4}{\ignorespaces Vers\IeC {\~a}o Java}}{26}
-\contentsline {figure}{\numberline {5}{\ignorespaces Vers\IeC {\~a}o Framework}}{26}
+\contentsline {figure}{\numberline {4}{\ignorespaces Diagrama de Caso de Uso}}{27}
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de Entidade Relacionamento}}{28}
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de Classe}}{29}
+\contentsline {figure}{\numberline {7}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Gene}}{30}
+\contentsline {figure}{\numberline {8}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Cromossomo}}{31}
+\contentsline {figure}{\numberline {9}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Individuo}}{31}
+\contentsline {figure}{\numberline {10}{\ignorespaces Fluxo Nova Popula\IeC {\c c}\IeC {\~a}o}}{32}
+\contentsline {figure}{\numberline {11}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Muta\IeC {\c c}\IeC {\~a}o}}{33}
+\contentsline {figure}{\numberline {12}{\ignorespaces Indiv\IeC {\'\i }duos antes do crossover}}{34}
+\contentsline {figure}{\numberline {13}{\ignorespaces Inser\IeC {\c c}\IeC {\~a}o do material gen\IeC {\'e}tico do pai}}{34}
+\contentsline {figure}{\numberline {14}{\ignorespaces Inser\IeC {\c c}\IeC {\~a}o do material gen\IeC {\'e}tico da m\IeC {\~a}e}}{34}
+\contentsline {figure}{\numberline {15}{\ignorespaces Fluxo do algor\IeC {\'\i }timo}}{36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de Caso de Uso}}{32}
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de Entidade Relacionamento}}{33}
-\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de Classe}}{34}
-\contentsline {figure}{\numberline {9}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Gene}}{35}
-\contentsline {figure}{\numberline {10}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Cromossomo}}{36}
-\contentsline {figure}{\numberline {11}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Individuo}}{36}
-\contentsline {figure}{\numberline {12}{\ignorespaces Fluxo Nova Popula\IeC {\c c}\IeC {\~a}o}}{37}
-\contentsline {figure}{\numberline {13}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o Muta\IeC {\c c}\IeC {\~a}o}}{38}
-\contentsline {figure}{\numberline {14}{\ignorespaces Indiv\IeC {\'\i }duos antes do crossover}}{39}
-\contentsline {figure}{\numberline {15}{\ignorespaces Inser\IeC {\c c}\IeC {\~a}o do material gen\IeC {\'e}tico do pai}}{39}
-\contentsline {figure}{\numberline {16}{\ignorespaces Inser\IeC {\c c}\IeC {\~a}o do material gen\IeC {\'e}tico da m\IeC {\~a}e}}{39}
-\contentsline {figure}{\numberline {17}{\ignorespaces Fluxo do algor\IeC {\'\i }timo}}{41}
+\contentsline {figure}{\numberline {16}{\ignorespaces Par\IeC {\^a}metros utilizados para o teste inicial}}{37}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {17}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do pseudoc\IeC {\'o}digo do algoritmo da Busca Tabu}}{42}
+\contentsline {figure}{\numberline {18}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o do pseudoc\IeC {\'o}digo do algoritmo \textit {Simulated Annealing}}}{42}
