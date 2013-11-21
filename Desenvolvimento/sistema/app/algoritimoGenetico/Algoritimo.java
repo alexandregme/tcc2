@@ -54,8 +54,8 @@ public class Algoritimo {
 
 		p.alocar(i);
 
-		//System.out.println(i.getGenoma());
-		//System.out.println(i.getFitness());
+		// System.out.println(i.getGenoma());
+		// System.out.println(i.getFitness());
 	}
 
 	public Populacao novaGeracao(Populacao populacao) throws CloneNotSupportedException {
@@ -78,7 +78,7 @@ public class Algoritimo {
 
 		}
 
-		//System.out.println(populacao.melhor().getFitness());
+		// System.out.println(populacao.melhor().getFitness());
 
 		// insere novos indivíduos na nova população, até atingir o tamanho
 		// máximo
@@ -275,18 +275,44 @@ public class Algoritimo {
 
 		Individuo individuo = new Individuo((Individuo) p.getIndividuo(ri).clone());
 
-		int c1 = r.nextInt(individuo.getCromossomo().size());
+		for (int i = 0; i < 4; i++) {
 
-		int c2 = r.nextInt(individuo.getCromossomo().size());
+			boolean procurar = true;
 
-		DisciplinaHorario aux = individuo.getCromossomo().get(c1).getDisciplinaHorario();
+			Gene geneMutacao = null;
 
-		individuo.getCromossomo().get(c1).setDisciplinaHorario(individuo.getCromossomo().get(c2).getDisciplinaHorario());
+			int c1;
 
-		individuo.getCromossomo().get(c2).setDisciplinaHorario(aux);
+			do {
+
+				c1 = r.nextInt(individuo.getCromossomo().size());
+
+				geneMutacao = (Gene) individuo.getCromossomo().get(c1).clone();
+
+			} while (geneMutacao.getDisciplinaHorario() == null);
+
+			while (procurar) {
+
+				int c2 = r.nextInt(individuo.getCromossomo().size());
+
+				Gene geneNovo = (Gene) individuo.getCromossomo().get(c2).clone();
+
+				if ((geneNovo.getSala().vagas >= geneMutacao.getDisciplinaHorario().disciplina.vagas) && (geneNovo.getHorario().id == geneMutacao.getDisciplinaHorario().horario.id)) {
+
+					DisciplinaHorario aux = individuo.getCromossomo().get(c1).getDisciplinaHorario();
+
+					individuo.getCromossomo().get(c1).setDisciplinaHorario(individuo.getCromossomo().get(c2).getDisciplinaHorario());
+
+					individuo.getCromossomo().get(c2).setDisciplinaHorario(aux);
+
+					procurar = false;
+
+				}
+
+			}
+		}
 
 		return new Individuo((Individuo) individuo.clone());
 
 	}
-
 }

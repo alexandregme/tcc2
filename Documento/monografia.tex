@@ -7,11 +7,53 @@
 \begin{document}
 
 %\include{apresentacao}
-\include{introducao}
-\include{referencial}
+%\include{introducao}
+%\include{referencial}
 %\include{metodologia}
-\include{sistema}
-\include{conclusao}
+%\include{sistema}
+%\include{conclusao}
+
+\capitulo{RESULTADOS OBTIDOS}
+
+
+\iniciocapitulo
+
+Após o sistema implementado foram realizadas uma bateria de testes para que os valores paramêtros inicias fossem definidos, o dados utiliados tem  em sua composição o total de 10 salas e um curso com o total de 46 disciplinas e duas respectivas obrigatoriedades, serão utilizados como paramêtros iniciais os dados representados na Figura~\ref{fig:parametrosAg}, no caso uma população com 140 individuos, 60\% de croosover 20\% de mutação, para entender melhor o andamento do algorítimo inicialmente será utilizada 400 gerações, o elitismos acontece em todos os testes realizados. Estes dados foram tirados como base na conclusão do trabalho de \cite{deleonardo}. Os testes realizados tiveram uma maquina com a seguinte configuração, Intel(R) Core(TM) i5 3.40GHz com 16Gb de mémoria RAM sob o sistema operacional Windows 7 64bit.\par
+
+\begin{figure}[!htb]
+\caption[Parâmetros utilizados para o teste inicial]{Parâmetros utilizados para o teste inicial}
+\label{fig:parametrosAg}
+\centering
+\includegraphics[scale=0.5]{imagens/parametrosDoAlgoritimo.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+Ao realizar o primeiro teste, que é realizado com o uso de  todos os parametros iniciais foi indentificado que o algoritímo fica preso em planicies, ou seja fica preso por muito tempo em uma solução sem evolução da mesma. Neste caso podemos notar no gráfico representado pela Figura X que o algorítmo no começo tem uma evolução rápida, mas em um determinado ponto ele perde seu poder de evolução e começa a caminha devagar em soluções que tem como valor da fuñção objetiva em torno de 50\% o que não faz da solução, uma solução que atenda ao objetivo deste trabalho.
+
+
+Tentando identificar as possíveis causas desta aceleração de evolução do algorítmo foram realizados teste onde são retirados alguns parâmetros para identificar o que está acontecendo. Primeiramente foi realizado o teste onde o parâmetro de mutação não é utilizado. A figura X mostra o desepenho do algoritmo nesta situação. Podemos observar que em determinado ponto o algorítimo evolui rapidamente, porem o mesmo entra em uma planicie e não consegue mais prosseguir com sua evolução, isso se deve ao fato de um super-indivíduo ter dominado a população passando a caracteristicas do seus gens para todos os indivíduos da população. Isto acontece pois não ocorre a mutação que é responsável pela troca de genes aleatoriamente de um indivíduo.
+
+Logo em seguida foi realizado o teste onde o parâmetro de crossover não é utilizado. A figura X representa a evolução do algoritmo de acordo com a velocidade com que acontece a evolução de acordo com as mutações podemos observar que, a evolução através da mutação é bem lenta e o algoritmo encontra varias planicies durante a evolução tornando assim o processo para encontrar a solução bem demorado.
+
+Comparando os gráficos três gráficos gerados apresentados na figura X podemos observar que o crossover é responsável por acelerar a evolução e a mutação faz com que o algoritmo tenha uma nova diversidade de invidivíduos para que não ocorra a parada do mesmo em planicies.
+
+
+Para acelerar a evolução do algoritmo como solução foi implementada na mutação, a mutação com melhoria genética onde o algorítimo ao realizar este operador genético ao invés de apenas realizar uma troca genética, ele procura fazer a troca dos genes, enviando as características de um gene para um lugar mais adequado que respeite a restrições do problema.
+
+A figura X representa a comparação entre o primeiro primeiro gráfico gerado com o parâmetro de mutação com a nova solução gerada através da utilização da melhoria genética. Podemos observar uma grande melhoria na evolução do algorítmo.
+
+
+Inicialmente o método de mutação com melhoria genética troca apenas um dos genes, foram então realizados testes trocando um gene, quatro genes e 10\% dos genes.O gráfico X mostra a comparação entre os três testes realizados. Podemos observar que quantos mais genes trocados durante a mutação maior é a evolução do algoritmo.
+
+Após a escolha do numero de genes a serem trocados durante a melhoria genética, foi realizado um novo teste que é a utilização do operador genético de mutação com o de crossover o resultado é apresentado na Figura X. Falar o que aconteceu.
+
+
+Logo em seguida foi aumentado o número de gerações para descobrir se o algoritmo encontraria a melhor solução e o mesmo encontro em X. O resultado pode ser encontrado no APENDICE X
+
+
+Após está bateria de testes para descobrir sobre os passos dados pelo algoritmo foi realizado um teste com a carga completa que é XXXXXX.
+
+Com o total de X horas e X gerações o algoritmo encontro a melhor solução que se encontra no APENDICE X.
 
 \referencias{referencias}
 
