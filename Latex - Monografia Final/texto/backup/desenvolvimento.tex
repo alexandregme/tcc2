@@ -1,0 +1,362 @@
+% Nome do capitulo
+\chapter{Desenvolvimento}
+% Label para referenciar
+\label{cap:desenvolvimento}
+% Diminuir espacamento entre titulo e texto
+\vspace{-1.9cm}
+
+% Texto do capitulo
+
+% Nome do subcapitulo
+\section{Processo KDD}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+Este capítulo tem como objetivo apresentar o processo de KDD que foi aplicado sobre os Microdados do Censo da Educação Superior. Será explicado como foi executada cada etapa desse processo. 
+
+% Nome do capitulo
+\subsection{Seleção de Dados}
+% Label para referenciar
+\vspace{0.3cm}
+% Texto do capitulo
+Os microdados do Censo da Educação Superior apresentam informações coletadas por todo o país desde 1995. Porém nesse trabalho delimitou-se o escopo nos dados sobre Minas Gerais entre o período de 2001 a 2008. O \ac{GTI} já disponibiliza uma base, em formato Excel, com as informações do portal do Inep agrupadas dentro desse intervalo temporal. O que auxilia no processo de seleção, pois originalmente os dados de cada ano são disponibilizados separadamente. Apesar de trabalhar nessa base selecionada pelo GTI, dentro dela tem ainda um foco maior sobre as informações relacionadas à PUC Minas e ao curso de Sistemas de Informação da PUC Minas.
+
+% Nome do capitulo
+\subsection{Pré-Processamento}
+% Label para referenciar
+\vspace{0.3cm}
+% Texto do capitulo
+Em relação aos relacionamentos, os dados trabalhados já estavam organizados de forma eficiente. Garantem agilidade e esforço reduzido nas análises das consultas por manter os campos que serão relacionados com o tipo inteiro.
+
+O maior problema encontrado na base de dados foi a ausência de informação na planilha Dados\_MG. Aplicando a função CONTAR.VAZIO do Excel, percebe-se que não havia falhas entre as colunas cujo os códigos se relacionam com as outras planilhas. Porém, observando as outras colunas, com os dados relativos às quantidades foi encontrado uma média de 53\% dos campos vazios.
+
+Substituir os valores ausentes em um conjunto de dados é muito importante. Os valores ausentes devem ser substituídos de forma que os valores inseridos não modifiquem os padrões já existentes nos dados \cite{Pyle1999}. Pensando nisso e observando que o tipo de dados das colunas com valores ausentes eram números inteiros positivos, foi então preenchido estrategicamente os campos com o valor zero. Assim os padrões das quantidades atuais não foram alterados.
+
+Nessa etapa foi identificado o código da Instituição foco do trabalho. Foi alterado o nome de ``Instituição 1934'' para ``PUC Minas''. Para identificar a Instituição foram filtrados os dados selecionando o Município de Arcos (código 310420) e o curso de Sistemas de Informação (código 518). Como resultado tivemos apenas o código de instituição 1934, indicando a comprovação do fato de que apenas a PUC Minas tem o curso de Sistemas de Informação no município de Arcos e que seu código nessa base é o 1934.
+
+Foram também criados dois novos campos: Ano e Semestre, Afim de suprir a necessidade de análises anuais. A base de dados original apresenta esses valores juntos limitando assim as análises por semestre. 
+
+% Nome do capitulo
+\subsection{Transformação}
+% Label para referenciar
+\vspace{0.3cm}
+% Texto do capitulo
+Nessa etapa foi realizado o enriquecimento dos dados. Analisando, pode-se perceber que existem informações ocultas que poderiam ser explicitadas. Foram adicionadas então quatro novas colunas ao documento afim de agregar valor ao trabalho. Essas colunas informam a Quantidades de Ingressantes, Quantidades de Evasão, Relação Candidato Vaga e Taxa de Ocupação.
+
+Quantidade de Ingressantes ($Qt\_{Ing}$) é obtida a partir do somatórios das colunas de Quantidade de Calouros ($Qt\_{Cal}$), Quantidade de Transferência Interna ($Qt\_{TransfInt}$), Quantidade de Transferência Externa ($Qt\_{TransfExt}$), Quantidade de Reingresso ($Qt\_{Reing}$) e Quantidade de Outros Ingressos ($Qt\_{Outros}$), conforme equação a seguir. 
+
+\begin{equation*}
+	$Qt_{Ing} = Qt_{Cal} + Qt_{TransfInt} + Qt_{TransfExt} + Qt_{Reing} + Qt_{Outros}$
+\end{equation*}
+
+A Quantidade de Evasão ($Qt\_{Ev}$) é obtida a partir do somatório das colunas Quantidade de Matrículas Trancadas ($Qt\_{Tranc}$), Quantidade de Desistentes ($Qt\_{Deist}$), Quantidade que Mudou de Curso ($Qt\_{MudCurso}$) e Quantidade que Mudou de Instituição ($Qt\_{MudInst}$).
+
+\begin{equation*}
+	$Qt_{Ev} = Qt_{Tranc} + Qt_{Deist} + Qt_{MudCurso} + Qt_{MudInst}$
+\end{equation*}
+
+A relação Candidato Vaga ($Cand\_vaga$) é obtida dividindo-se a Quantidade de Inscritos ($Qt\_{Insc}$) pela Quantidade de Vagas ($Qt\_{Vagas}$). 
+
+\begin{equation*}
+ 	$Cand\_vaga = \frac{Qt_{Insc}}{Qt_{Vagas}}$
+\end{equation*}
+
+Por último, a Taxa de Ocupação ($Qt\_{TxOcup}$) é representada em porcentagem e é o resultado da divisão entre a soma da Quantidade de Calouros ($Qt\_{Cal}$), Quantidade de Transferência Interna ($Qt\_{TransfInt}$), Quantidade de Transferência Externa ($Qt\_{TransfExt}$), Quantidade de Reingresso ($Qt\_{Reing}$), e Quantidade de Outros Ingressos ($Qt\_{Outros}$) sobre a Quantidade de Vagas ($Qt\_{Vagas}$).
+
+\begin{equation*}
+	$Qt_{TxOcup} = \frac{Qt_{Cal} + Qt_{TransfInt} + Qt_{TransfExt} + Qt_{Reing} + Qt_{Outros}}{Qt_{Vagas}}$
+\end{equation*}
+
+Após todo esse processo chegou-se ao modelo de dados representado pela Figura \ref{img:modelofinal}. Com o arquivo fonte tratado, foi feita a importação para o SQL Server 2012. Após isso o cubo foi criado utilizando-se o \textit{Analysis Services}.
+
+% Figura
+\ \ \ 
+\begin{figure}[ht]
+	\caption{\textbf{Modelo de Dados modificado}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=1\textwidth]{imagem/modelofinal.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Criação da autora.}
+	\label{img:modelofinal}
+\end{figure}
+
+% Nome do capitulo
+\subsection{Mineração de Dados}
+% Label para referenciar
+\vspace{0.3cm}
+% Texto do capitulo
+Na Mineração de Dados foi utilizado o Excel 2010 juntamente com o \textit{Data Mining Add-In} para SQL Server 2012. Com o Excel é possível fazer uma Análise Descritiva dos Dados, ou seja, apresentar o que os dados atuais trazem de informações. O uso do \textit{Add-In} viabiliza a análise de modelos aplicando os algorítimos de Mineração de Dados e visualizando os resultados em forma de gráficos. 
+
+Para gerar as Análises Descritivas dos Dados foi realizada uma conexão entre o Excel e o banco de dados. Então cria-se Gráficos Dinâmicos, utilizando essa conexão, selecionando os dados nas quais deseja que a análise seja feita. Nas Análises de Modelo de Dados a conexão é realizada com o \textit{Analysis Services}, assim são aplicados os algoritmos ao cubo criado anteriormente. O \textit{Add-In} possui diversos métodos que podemos utilizar para realizar as análises (Figura \ref{img:addin}), porém foram utilizados apenas os métodos de prever, detectar categorias, análise de influências e análise da cesta de compras.
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Ferramenta de Análise de Tabela}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=1\textwidth]{imagem/addin.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Add-in Excel 2010.}
+	\label{img:addin}
+\end{figure}
+
+O método Prever executa a previsão dos valores das colunas que forem selecionadas. Como padrão a quantidade de unidade de tempo a ser prevista é 5, porém esse valor pode ser modificado. Os valores gerados são adicionado ao final da tabela que foi utilizada. Também é gerado um gráfico mostrando em tracejados a evolução dos dados atuais para a previsão.
+
+Em Análise de Influências selecionamos uma coluna para análise. Então é detectado quais colunas interferem nos valores da coluna desejada. O resultado é apresentado na forma de relatório, mostrando a porcentagem que cada elemento interfere na coluna destino.
+
+O próximo método pode ser denominado como clusterização devido a sua semelhança nos resultados obtidos. Para Detectar Categorias selecionamos as colunas nas quais desejamos detectar alguma característica semelhante entre seus elementos. É possível também escolher a quantidade de categorias que se deseja criar ou deixar a detecção automática. Como resultado são apresentadas categorias de elementos com características semelhantes.
+
+Na Análise da Cesta de Compras verifica-se  itens que costumam aparecer juntos e expõe regras que podem servir em recomendações. Para esse método selecionamos a coluna que representa o ID da Transação, outra para representar o item e opcionalmente uma coluna para Valor do Item. Em configurações avançadas pode-se ainda definir o suporte mínimo, que é a quantidade mínima de ocorrências da regra no cenário atual, e também pode-se definir a probabilidade de regra mínima, que é a probabilidade daquela regra acontecer.
+
+% Nome do capitulo
+\subsection{Interpretação}
+% Label para referenciar
+\vspace{0.3cm}
+% Texto do capitulo
+
+Após aplicar os diversos métodos citados anteriormente obtém-se os resultados. As primeiras análises foram feitas através de Gráficos Dinâmicos no Excel. 
+
+Na Figura \ref{img:1} conta-se a quantidade de instituições durante o intervalo de anos definido nesse trabalho. Com base nisso, pode-se observar que a quantidade de instituições privadas veio aumentando linearmente, porém a partir de 2007 deu uma desacelerada. Já as instituições públicas mantiveram suas quantidades de instituições basicamente inalterada, com um crescimento irrisório comparado à rede administrativa oposta.
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Evolução do Número de Instituições por Rede Administrativa - MG (2001-2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/1.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:1}
+\end{figure}
+
+Contamos também a quantidade de Ingressantes nas instituições (Figura \ref{img:2A}). O Resultado foi bem semelhante ao observado anteriormente. A quantidade de ingressantes aumentou consideravelmente na rede privada e se manteve constante na rede pública. Podemos concluir com isso que devido ao aumento do número de instituições privadas, o número de ingressantes nessas instituições também aumentou. Comparando essa conclusão com os dados da PUC Minas (Figura \ref{img:2B}) percebe-se que o mesmo não ocorre nessa instituição. O número de ingressantes se mantém praticamente inalterado durante os anos, aumentando apenas a partir de 2007. Analisando-se também os ingressos no curso de Sistemas de Informação (Figura \ref{img:2C}), observamos um grande aumento da procura entre os anos de 2001 e 2003. Após 2003 houve uma desaceleração na procura por esse curso, porém seu crescimento não parou, apenas reduziu. Por fim, analisamos a evolução dos ingressantes no curso de Sistemas de Informação da PUC Minas (Figura \ref{img:2D}). Diferentemente do desempenho geral do curso, nessa instituição a quantidade de ingressantes aumentou consideravelmente até 2005, porém apresentou uma regressão em 2007. Após esse período voltou a crescer novamente.
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Evolução de Ingressantes por Rede Administrativa - MG (2001-2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/2A.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:2A}
+\end{figure}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Evolução de Ingressantes na PUC Minas (2001-2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/2B.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:2B}
+\end{figure}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Evolução de Ingressantes por Rede Administrativa nos Cursos de Sistemas de Informação - MG (2001-2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/2C.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:2C}
+\end{figure}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Evolução de Ingressantes na PUC Minas no Curso de Sistemas de Informação (2001-2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/2D.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:2D}
+\end{figure}
+
+Afim de observar o quão representativo é o curso de Sistemas de Informação comparado aos outros, foram geradas as Figuras \ref{img:3A} e Figura \ref{img:3B}. Nelas podemos observar que dentre os cursos de todas a instituições de Minas Gerais, Sistemas de Informação está posicionado entre os top 10. Considerando apenas a PUC Minas, o curso sobe para a posição de quarto lugar em número de ingressantes em 2008.
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Participação dos 10 maiores Cursos em relação ao total de Ingressantes - MG (2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/3A.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:3A}
+\end{figure}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Participação dos 10 maiores Cursos em relação ao total de Ingressantes na PUC Minas (2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/3B.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:3B}
+\end{figure}
+
+Afim de prever a quantidade de ingressantes para os próximos 6 semestres, foi utilizado o algoritmo de previsão do Add-in no Excel demonstrado na Figura \ref{img:4A}. Com isso verifica-se uma queda na quantidade de ingressantes, tanto para os primeiros, quanto para os segundos semestres. Nesse mesmo gráfico aproveita-se para colocar também a representação da Quantidade de Evasão. Essa se mantém em constante crescimento. Focando esses resultados no Curso de Sistemas de Informação da PUC Minas Figura (\ref{img:4B}) verifica-se uma previsão de instabilidade, com variação entre autos e baixos, na quantidade de ingressos e um ligeiro aumento na taxa de evasão. 
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Previsão para Ingressantes e Evasão}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/4A.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:4A}
+\end{figure}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Previsão para Ingressantes e Evasão no Curso de Sistemas de Informação da PUC Minas}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/4B.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:4B}
+\end{figure}
+
+O próximo algoritmo a ser utilizado é o de Detecção de Categorias. Nesse Algoritmo selecionamos as colunas que possivelmente terão características em comum e então é realizado o agrupamento de todos os seus elementos. Como resultado foram geradas 3 categorias:
+
+\begin{itemize}
+\item Categoria 1: Categoria com maior quantidade de elementos. Apresenta a quantidade de Candidatos/Vaga muito baixa, menor do que 1,1. A rede administrativa privada, turno noturno, área 	Educação, semestre 2 e instituição 2098 possuem relevância para que um elemento seja classificado nesse grupo.
+\item Categoria 2: Nessa categoria a relação candidato/vaga apresenta valores entre 1 e 5. Os fatores que influenciam os itens a pertencerem a essa categoria são: município de Belo Horizonte, rede administrativa privada, área geral em Ciências sociais, negócios e direito, curso de Direito, instituição PUC Minas, e semestre 1.
+\item Categoria 3: Para essa categoria entram os valores maiores que 5 na relação candidato/vaga. Também estão inclusos como influenciadores rede administrativa pública, turno diurno, municípios de viçosa e Ouro Preto, cursos de física e história, instituições 2047, 2058, dentre outros que podem ser visualizados na Figura \ref{img:5}.
+\end{itemize}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Detecção de Categorias}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/5.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:5}
+\end{figure}
+
+Analisando os Gráficos Dinâmicos gerados pelo Excel é possível perceber que a evolução da quantidade de candidatos por vaga em média se mantém entre 1 e 2. Tanto para o curso de Sistemas de Informação da PUC Minas (Figura \ref{img:6B}), quanto para os cursos de Sistemas de Informação em geral(Figura \ref{img:6A}). Assim conclui-se que os padrões gerais para os cursos de Sistema de Informação podem ser aplicados ao mesmo curso na PUC Minas devido ao seu estreito índice de correlação.
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Evolução Candidatos/Vaga nos Cursos de Sistemas de Informação (2001-2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/6A.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:6A}
+\end{figure}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Evolução Candidatos/Vaga no Curso de Sistemas de Informação da PUC Minas(2001-2008)}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/6B.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:6B}
+\end{figure}
+
+Usando o algoritmo Análise de Influências sobre o Tx\_Ocupcao temos como resultado a Figura \ref{img:8}. Nessa figura são apresentadas as colunas que interferem no resultado do campo escolhido. Observando a barra de impacto vemos que o fato de ser o segundo semestre do ano favorece uma ocupação menor que 50\%. Já o fato de ser o primeiro semestre, turno noturno e IES privada favorece a ocupação apresentar probabilidades de 50\% a 100\%. Já a instituição PUC Minas, o município Belo Horizonte e o curso de Direito favorecem para que a ocupação utrapassar seu limite.
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Influenciadores-chave e seu impacto sobre os valores de ``Tx\_Ocupacao''.}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/8.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:8}
+\end{figure}
+
+Aplicando o algoritmo Análise da Cesta de Compras (Associação) obtemos relação de itens que acontecem em conjunto juntamente com recomendações. Para esse trabalho definiu-se como premissa que a taxa de ocupação seja maior que 50\%. Como ID foi selecionado a instituição e como item os cursos. Para os resultados foi definido um suporte de 40\% e confiança de 80\%. O resultado disso é apresentado pela Figura \ref{img:7A} e Figura \ref{img:7B}. Nelas observamos, por exemplo, que os cursos de Direito e Administração aparecem constantemente juntos quando a taxa de ocupação é maior que 50\% nas suas instituições. O algorítmo também realiza recomendações, ou seja, observando a Figura \ref{img:7B}, vemos que ela nos recomenda Enfermagem dado o ocorrência de Fisioterapia com 91\% de precisão. 
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Associação entre itens}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/7A.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:7A}
+\end{figure}
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Recomendações}}
+	\centering
+	% Arquivo da figura
+	\includegraphics[width=12cm]{imagem/7B.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Dados da Pesquisa.}
+	\label{img:7B}
+\end{figure}

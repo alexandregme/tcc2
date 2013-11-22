@@ -1,0 +1,106 @@
+% Nome do capitulo
+\chapter{Mineração de Dados}
+% Label para referenciar
+\label{cap:mineracao}
+% Diminuir espacamento entre titulo e texto
+\vspace{-1.9cm}
+
+% Texto do capitulo
+Assim como na mineração geológica (carvão, ouro, etc), não há a garantia da obtenção de resultados significativos pela simples aplicação das ferramentas ao terreno. Uma enorme preparação é necessária. Primeiramente, os dados devem estar preparados. A partir daí é possível fazer a modelagem a fim de transformá-los em informações capazes de serem interpretadas pelos seres humanos. Modelar significa encontrar relações, fazer previsões dos dados para descrever a situação atual. Os fundamentos dos métodos utilizados para mineração são fáceis de entender, porém sua implementação já requer poderosos e sofisticados algoritmos para fazer com que esses métodos funcionem na prática \cite{Pyle1999}.
+
+Através da observação da Figura \ref{img:mineracao} é possível percebermos grupos formados pelos pontos. As ferramentas de modelagem tem como tarefa separar e agrupar os dados, nesse caso representado como pontos, de maneira com que tenham significado. Cada algoritmo realiza essa tarefa utilizando abordagens ligeiramente diferentes \cite{Pyle1999}. 
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Mineração de Dados}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.7\textwidth]{imagem/figura2.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: \cite{Pyle1999}.}
+	\label{img:mineracao}
+\end{figure}
+
+A mineração de dados, componente do processo KDD, envolve aplicação iterativa e repetida de um método particular.  Ajustando os modelos obtêm-se padrões a partir dos dados observados. A maioria dos métodos de \textit{data mining} é baseada em experiências e técnicas de testes das máquinas de aprendizado, reconhecimento de padrões e estatísticas. Algumas técnicas de mineração de dados são: árvores de decisão, clusterização, vizinho mais próximo e regressão \cite{Fayyad1996}.
+
+Árvores de Decisão: Algoritmo baseado no processo de partição. As partições visando a separação dos pontos são feitas através de pontos de decisões até algum critério de parada ou até não ser mais possível realizar separações (Figura \ref{img:arvore}) \cite{Pyle1999}.
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Árvores de Decisão}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.7\textwidth]{imagem/figura3.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: \cite{Pyle1999}.}
+	\label{img:arvore}
+\end{figure}
+
+Clusterização: Também particionam os espaços, porém agrupando pontos que compartilham as mesmas características. Existem diferentes métodos de clusterização, mas todos produzem esse tipo de arranjo. Uma grande diferença desse método é que ele não separa os grupos linearmente, o que facilita o encontro de similaridades (Figura \ref{img:cluster}) \cite{Pyle1999}.\\
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Clusterização}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.7\textwidth]{imagem/figura4.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: \cite{Pyle1999}.}
+	\label{img:cluster}
+\end{figure}
+
+Vizinho mais próximo: Um tipo de classificação utilizado para descrever interações. Esse método seleciona um número específico de vizinhos e para cada ponto calcula a vizinhança. A Figura \ref{img:visinho} ilustra como os vizinhos podem ser selecionados. Para cada ponto foi calculado os quatro vizinhos mais próximos \cite{Pyle1999}.\\
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Vizinho mais próximo}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.7\textwidth]{imagem/figura5.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: \cite{Pyle1999}.}
+	\label{img:visinho}
+\end{figure}
+
+Redes Neurais e Regressão: Esses métodos funcionam através da criação de uma expressão matemática representando uma linha ajustada aos pontos. No caso da regressão linear, para a predição é usado o ponto mais próximo da inferência para o ponto a ser previsto (Figura \ref{img:regressao}) \cite{Pyle1999}.\\
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Redes Neurais e Regressão}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.7\textwidth]{imagem/figura6.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: \cite{Pyle1999}.}
+	\label{img:regressao}
+\end{figure}

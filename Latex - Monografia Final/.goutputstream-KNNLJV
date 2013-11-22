@@ -1,0 +1,78 @@
+\documentclass[brazil,ruledheader,normaltoc,capchap]{abnt}
+% Pacotes de codificação das fontes para protugues
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+%\usepackage{units}
+%\unit[78,6]{mA}
+
+%\usepackage[printonlyused,withpage]{acronym}
+\usepackage[printonlyused]{acronym}
+
+% Merge em duas células (linhas diferentes)
+\usepackage{multirow}
+
+% Pacote para citação e referências seguindo ABNT no sistema (AUTOR, Data)
+\usepackage[alf]{abntcite}
+
+% Pacote para divisão silábica do portugues
+\usepackage[brazil]{babel}
+
+% Pacote de adequação do formato ABNT para normas da PUCMinas
+\usepackage{abnt-PPGInf-PUCMG}
+
+% Pacotes utilitários
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+
+\usepackage[all]{xy}
+\usepackage[tight]{subfigure}   % Permite a criação de subfiguras
+\usepackage{url,amsmath}            % Permite melhorias na codificação de fórmulas
+%\usepackage{amsthm}					  % Permite melhorias na escrita de teoremas
+\usepackage{amssymb}            % Permite utlização de simbolos matemáticos avançados
+
+\usepackage[portugues, linesnumbered, ruled, vlined]{algorithm2e}
+\usepackage{algorithmic} %algorithm
+\usepackage{listings}
+
+\setlength{\algomargin}{1em}
+
+\usepackage{setspace}
+%\usepackage{acronym}
+
+% Pacote para rotação de tabelas/figuras
+\usepackage{rotating}
+
+% Pacotes para criação de cronograma/tabela colorida
+\usepackage{pstricks}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage[size=normalsize]{caption}
+
+\setlength{\LTcapwidth}{\textwidth}
+
+\makeatletter
+%\renewcommand{\ALG@name}{Algoritmo}
+%\renewcommand{\listalgorithmname}{Lista de Algoritmos}
+
+% codigo
+\lstset{numbers=left,
+stepnumber=1,
+firstnumber=1,
+numberstyle=\tiny,
+extendedchars=true,
+breaklines=true,
+frame=htb,
+basicstyle=\footnotesize,
+stringstyle=\ttfamily,
+showstringspaces=false
+}
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de Códigos}
+\citeoption{abnt-etal-cite=1, abnt-and-type=e}
+
+\begin{document}
+
+% Alterar o título das refer

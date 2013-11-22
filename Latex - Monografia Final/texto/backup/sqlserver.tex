@@ -1,0 +1,52 @@
+% Nome do capitulo
+\chapter{SQL Server}
+% Label para referenciar
+\label{cap:sqlserver}
+% Diminuir espacamento entre titulo e texto
+\vspace{-1.9cm}
+
+% Texto do capitulo
+Um banco de dados é um sistema computacional para armazenamento de registros. Ou seja, é um repositório de dados que pode até mesmo ser comparado a um armário de arquivos. Os dados armazenados representam qualquer coisa que tenha sentido à organização. São tudo aquilo que é necessário para auxiliar a tomada de decisões. Intermediando o banco de dados e seus usuários existe uma camada conhecida como \ac{SGBD}.  Todas as alterações solicitadas ao banco de dados são realizadas pelo SGBD (Figura \ref{fig:sgbd}). Uma grande vantagem desse ambiente é que o sistema de banco de dados proporciona um controle centralizado dos dados \cite{Date2000}. Basicamente podemos aplicar o banco de dados em qualquer cenário que necessite armazenar informações como, por exemplo, em softwares de gestão e \textit{Data Warehouse}. 
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Composição do Banco de Dados}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.7\textwidth]{imagem/figura8.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: \cite{Date2000}.}
+	\label{fig:sgbd}
+\end{figure}
+
+O SQL Server é mais que um banco de dados, ele é uma plataforma de dados. Além de persistir os dados ele também possui todas as ferramentas necessárias para preparação de um Sistema de \ac{BI}. Esse tipo de sistema facilita a transformação dos dados em informações para auxiliar as tomadas de decisões. Os componentes do SQL Server são o \textit{SQL Server Management Studio} e \textit{SQL Server Bussiness Inteligence Development Studio} incluindo \textit{Reporting Services}, \textit{Analysis Services} e \textit{Integration Services}. A interface mais utilizada da plataforma SQL Server é o \textit{SQL Server Management Studio}, um software com foco na administração do banco de dados.  A outra interface do produto, usada com foco no desenvolvimento, é o\textit{SQL Server Bussiness Inteligence Development Studio}. Essa interface inclui outras ferramentas (Figura \ref{fig:sqldevstudio}) como por exemplo geradores de relatórios (\textit{Reporting Services}), operador de banco de dados multidimensionais (\textit{Analysis Services}) e ferramenta ETL (\textit{Integration Services}).
+
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Estruturas do SQL Server}}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.7\textwidth]{imagem/figura9.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: Tutorial \ac{S2B} - Componentes do Banco de Dados.}
+	\label{fig:sqldevstudio}
+\end{figure}
+
+O \textit{Analysis Services} é uma ferramenta de \textit{Data Mining} para apoiar as estratégias. A ferramenta possibilita obtenção de informações importantes que podem auxiliar no processo decisório da instituição. O \textit{Analysis Services} oferece diversas soluções para implantar banco de dados analíticos usados para apoio à decisão em aplicativos de BI e até mesmo Excel. A partir de dados históricos já coletados são criados metadados que permitem medir, manipular e comparar esses dados. A partir da criação de um modelo dos dados, ele é então implantado em um servidor do \textit{Analysis Services} como um banco de dados e disponibilizado para conexões externas como Excel ou outras ferramentas \cite{MSDNas}.
+
+Uma opção de ferramenta de apresentação para analisar os dados persistentes no \textit{Analysis Services} é o Microsoft Office Excel. O Excel além de criar tabelas e realizar cálculos o é também um software de análise de dados. Para isso necessita do \textit{Data Mining Add-in}, uma extenção da ferramenta que é instalada separadamente. Após a instalação deve-se conectar a uma fonte de dados de Processamento Analítico Online (OLAP), disponibilizada pelo SQL Server. Através dessa conexão é possível exibir os dados como relatório de tabelas ou gráficos dinâmicos \cite{OfficeOLAP}.
+
+
+

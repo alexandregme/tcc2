@@ -1,0 +1,40 @@
+% Nome do capitulo
+\chapter{Data Warehouse}
+% Label para referenciar
+\label{cap:dw}
+% Diminuir espacamento entre titulo e texto
+\vspace{-1.9cm}
+
+% Texto do capitulo
+\ac{DW}, ou armazém de dados, consolidam dados em espaços multidimensionais. Eles podem ser vistos como uma etapa importante para a mineração de dados. Além disso provê integração com ferramentas \ac{OLAP} para análise interativa dos dados. O DW provê ferramentas e arquitetura para que os responsáveis pelos negócios organizem, entendam e usem seus dados para tomarem decisões estratégicas \cite{Etal.Han2005}.
+
+O \textit{Data Warehouse} é orientado a um assunto específico, integrado, não volátil e com tempo variante para o suporte do processo de tomada de decisões. Ele é organizado em torno de um objetivo principal, como relações nas vendas, ao invés de se concentrar em operações e transações diárias. Dizemos que o DW é integrado por ser construído através de múltiplas fontes, como banco de dados relacionais diversos, planilhas e outros sistemas. Refere-se a um banco de dados que é mantido separado do banco de dados das operações organizacionais. Então não requer processamento de transações, \textit{backups} contínuos e mecanismos de controle. Basicamente o DW realiza apenas duas operações: carregamento inicial e acesso aos dados. Todas as informações armazenadas dizem respeito a um período de tempo definido normalmente entre 5 a 10 anos \cite{Etal.Han2005}.
+
+Para permitir modelar e visualizar as múltiplas dimensões do DW utiliza-se os CUBOS. Os Cubos são definidos por dimensões e fato. O fato significa o tema do modelo, representado por uma tabela principal. Já as dimensões são as entidades que dizem respeito aquilo que a organização deseja armazenar, as tabelas ao redor do fato. Apesar de pensarmos no Cubo como uma estrutura 3D, no \textit{data warehousing} ele é n-dimensional. É possível ver no cubo, por exemplo, dados de acordo com o tempo, item, localização e fornecedor. Ou seja, uma visualização 4D \cite{Etal.Han2005}.
+
+Assim como o fato e as dimensões, a hierarquia é uma característica do DW. O conceito de hierarquia define a sequência do mapeamento dos mais baixos aos mais altos conceitos. Um exemplo dessa hierarquia pode ser visto na dimensão Tempo, onde tem-se as horas como conceitos mais baixos e os anos como conceitos mais altos. Essa hierarquia provê ao usuários a flexibilidade de acordo com suas necessidades \cite{Etal.Han2005}.
+
+Para o modelo entidade-relacionamento é desenhado  um modelo de relações entre as entidades. Entretanto, para o DW é utilizado um modelo multidimensional como o estrela, floco de neve ou mesmo constelação. O esquema estrela contém uma grande tabela central, o fato, com uma série de tabelas menores em volta, as dimensões. O esquema floco de neve é uma variação do esquema estrela, porém as tabelas de dimensões são normalizadas. Então as tabelas existentes são divididas  resultando em uma forma final similar a um floco de neve. A maior diferença entre esses dois esquemas é que o segundo modelo reduz as redundâncias no banco, reduzindo também o espaço de armazenamento. Porém apesar dessa redução, esse esquema perde performance por ter que executar mais \textit{joins} em suas consultas. O último esquema, constelação, especifica duas tabelas fatos. Assim é permitido às dimensões serem compartilhadas entre os fatos \cite{Etal.Han2005}.
+
+A arquitetura de um DW pode ser representada de acordo com a Figura \ref{fig:arquiteturadw}. No centro da imagem está o repositório, composto pelos dados e metadados. Para alimentar esse banco são usadas fontes externas, ferramentas de \textit{back-end} e utilitárias. Essas ferramentas executam a extração dos dados das diferentes fontes, assim como sua limpeza e transformação. Essa camada é conhecida como Extração, Transformação e Carga, do inglês \ac{ETL}. A Camada \ac{OLAP} mapeia as operações nos dados multidimensionais. No topo da arquitetura a camada do cliente, \textit{front-end}. Essa camada contém as ferramentas de consultas, relatórios, análises e mineração de dados \cite{Etal.Han2005}.
+ 
+% Figura
+\begin{figure}[ht]
+	\caption{\textbf{Arquitetura de um Data Warehouse} (Tradução por Dayana Viana)}
+	\centering
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{0pt}
+	% Arquivo da figura
+	\includegraphics[width=.9\textwidth]{imagem/figura10.png}
+	% Caption centralizada
+	\captionsetup{justification=centering}
+	% Caption e fonte
+	\\
+	\small{Fonte: \cite{Reboucas}.}
+	\label{fig:arquiteturadw}
+\end{figure}
+
+As informações processadas são baseadas em consultas. Apesar de retornarem informações úteis, refletem diretamente as informações armazenadas. Ou seja, não refletem os padrões do banco de dados. Uma vez que a mineração de dados envolve uma análise mais profunda do que a OLAP, a utilização da mineração permitirá aplicações mais amplas do conhecimento obtido.
+
+

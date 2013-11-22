@@ -1,0 +1,750 @@
+% Modelo de Dissertacoes do Mestrado em Informatica da PUC
+\documentclass[a4paper,brazil,ruledheader,normaltoc,capchap]{abnt}
+
+%\usepackage{fancyhdr}
+
+% Usar a fonte Times New Roman
+\usepackage{pslatex}
+
+% Pacotes de codificacao das fontes para portugues
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+
+%\usepackage{units}		% Utilize da seguinte forma  \unit[78,6]{mA}
+
+\usepackage[printonlyused]{acronym}
+
+% Merge em duas celulas (linhas diferentes)
+\usepackage{multirow}
+
+% Pacote para citacao e referencias seguindo ABNT no sistema (AUTOR, Data)
+\usepackage[alf]{abntcite}
+
+% Pacote para divisao silabica do portugues
+\usepackage[brazil]{babel}
+
+% Pacote de adequacao do formato ABNT para normas da PUCMinas
+\usepackage{abnt-PPGInf-PUCMG}
+
+% Pacotes utilitarios
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+
+\usepackage[all]{xy}
+\usepackage[tight]{subfigure}	% Permite a criacao de subfiguras
+%\usepackage{url,amsmath}		% Permite melhorias na codificacao de formulas
+%\usepackage{amsthm}			% Permite melhorias na escrita de teoremas
+%\usepackage{amssymb}			% Permite utlizacao de simbolos matematicos avancados
+
+\usepackage[english, linesnumbered, ruled, vlined]{algorithm2e}
+\usepackage{algorithmic} %algorithm
+\usepackage{listings}
+
+% Alterar o espacamento da margem no algoritmo
+\setlength{\algomargin}{1em}
+\usepackage{setspace}
+\usepackage{acronym}
+
+% Pacote para rotacao de tabelas/figuras
+\usepackage{rotating}
+
+% Pacotes para criacao de cronograma/tabela colorida
+%\usepackage{auto-pst-pdf}
+\usepackage{epstopdf}
+\usepackage{graphics}
+%\usepackage{pstricks}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{colortbl}
+
+%Suporte a visualização landscape
+\usepackage{lscape}
+
+% Para inserir captions
+\usepackage[size=normalsize,bf,center]{caption}
+
+\setlength{\LTcapwidth}{\textwidth}
+
+\makeatletter
+\renewcommand\chapter{\par%
+  %\setcounter{page}{2}
+  \global\@topnum\z@
+  \@afterindentfalse
+  \secdef\@chapter\@schapter}
+\makeatother
+%\renewcommand{\ALG@name}{Algoritmo}
+%\renewcommand{\listalgorithmname}{Lista de Algoritmos}
+
+% Codigo
+\lstset{numbers=left,
+stepnumber=1,
+firstnumber=1,
+numberstyle=\tiny,
+extendedchars=true,
+breaklines=true,
+frame=htb,
+basicstyle=\footnotesize,
+stringstyle=\ttfamily,
+showstringspaces=false
+}
+%\renewcommand{\lstlistingname}{Código}
+%\renewcommand{\lstlistlistingname}{Lista de Códigos}
+\citeoption{abnt-etal-cite=3, abnt-and-type=e}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% PRÉ-TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Alterar o título das referências para somente 'Referências'
+\renewcommand{\bibname}{Referências}
+
+\autor{Alexandre Gonzaga Mendes}
+
+% Coloque o título em caixa alta. É o padrão da PUC.
+% Vá no arquivo abnt-PPGInf-PUCMG.sty e procure por esse título (linha 575). Altere para o seu título, sem ser em caixa alta. Isso será utilizado na folha de aprovação.
+\titulo{XX}
+
+\orientador[Orientador:]{João Caram Adriano}
+
+% Se não tiver, co-orientador, comente a próxima linha.
+%\coorientador[Co-orientador:]{Professor}
+
+% Texto
+\comentario{Monografia apresentada ao Curso de Sistemas de Informação da Pontifícia Universidade Católica de Minas Gerais, como requisito parcial para obtenção do título de Bacharel Sistemas de Informação.}
+
+% Instituição
+\instituicao{PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS \par Bacharelado em Sistemas de Informação}
+
+% Local
+\local{Belo Horizonte}
+
+% Data
+\data{2013}
+
+% Gera a capa
+\capa
+
+% Gera a folha de rosto
+\folhaderosto
+
+% Ficha catalográfica
+% Deve ser impressa atrás da folha de rosto!!!!
+%\include{pre-texto/ficha-catalografica}
+
+% Folha de aprovação
+\include{pre-texto/folha-aprovacao}
+
+% Dedicatória
+\include{pre-texto/dedicatoria}
+
+% Agradecimentos
+\include{pre-texto/agradecimentos}
+
+% Epígrafe
+\include{pre-texto/epigrafe}
+
+% Resumo
+\include{pre-texto/resumo}
+
+% Abstract
+%\include{pre-texto/abstract}
+
+% Lista de figuras
+\listoffigures
+
+% Lista de tabelas
+\listoftables
+
+% Lista de siglas
+\newpage
+\input{pre-texto/lista-siglas.tex}
+
+% Sumário
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+% Altere o numero da pagina para o correto. Conte todas as paginas, menos a capa, inclusive a ficha catalografica ate a pagina do primeiro capitulo.
+
+\newpage
+\pagenumbering{arabic}
+\pagestyle{myheadings}
+\setcounter{secnumdepth}{5}
+
+
+% Capítulos
+
+%\include{introducao}
+%\include{referencial}
+
+% Nome do capitulo
+\chapter{Referencial Teórico}
+% Label para referenciar
+\label{cap:desenvolvimento}
+% Diminuir espacamento entre titulo e texto
+\vspace{-1.9cm}
+
+% Texto do capitulo
+
+% Nome do subcapitulo
+\section{Problemas de Otimização}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+
+Otimização é o processo de encontrar a melhor solução, também chamada de solução ótima para um determinado problema \cite{timoteo2005desenvolvimento}.\par
+
+De acordo com \cite{steiglitz1982combinatorial} a constituição de um problema de otimização se deve aos termos vizinhança, ótimo local e ótimo global. O termo vizinhança trata de um subconjunto do conjunto de soluções do problema. Ótimo local pode ser tratado como o melhor resultado em uma vizinhança, e ótimo global é a melhor solução encontrada no conjunto de acordo com a função objetivo que é, uma especificação matemática, da relação entre as demais variáveis e a variável que desejamos maximizar ou minimizar.\par
+
+Função objetivo é o objeto de nossa otimização. Pode ser um problema de otimização, um conjunto de teste para identificar os indivíduos mais aptos, ou mesmo uma "caixa preta" onde sabemos apenas o formato das entradas e a função nos retorna um valor que queremos otimizar. A grande vantagem dos algoritmos genéticos esta no fato de não precisarmos saber como funciona esta função objetivo, apenas tê-la disponível para ser aplicada aos indivíduos e comparar os resultados.
+
+De acordo com a figura~\ref{fig:representacaoLocal}  pode se observar a relação entre ótimo local e ótimo global em conjunto de soluções de um problema típico de minimização, os quadrados mostram soluções quase ótimas chamadas de ótimo local e o circulo mostra a melhor solução encontrada dentro do conjunto de soluções, no caso o ótimo global.\par
+
+\begin{figure}[!htb]
+\caption[Representação de um problema de minimização com ótimos locais]{Representação de um problema de minimização com ótimos locais}
+\label{fig:representacaoLocal}
+\centering
+\includegraphics[scale=0.55]{imagens/problemaOtimizacao.png}
+\\ \textbf{\footnotesize Fonte: \cite{timoteo2005desenvolvimento}}
+\end{figure}
+	
+Segundo \cite{steiglitz1982combinatorial}, os problemas de otimização são divididos em duas categorias: problemas com variáveis contínuas e problemas com variáveis discretas. Problemas com variáveis discretas também podem ser conhecidos como Problemas de Otimização Combinatória (POC).\par
+
+Conforme cita \cite{raupp2003introduccao}, o problema de otimização combinatória pode ser denominado como a ação de maximizar ou minimizar uma função objetiva de diversas variáveis sujeita a um conjunto de restrições, dentro de um contexto.\par
+
+De acordo com \cite{opac-b1092847} problemas do tipo POC tratam do estudo matemático para encontrar agrupamentos, arranjos ou a seleção ótima de objetos discretos, logo, não permitindo, a utilização de métodos clássicos de otimização contínua para sua resolução.\par
+
+
+Em seu trabalho \cite{golbarg2000otimizaccao} afirma que a ocorrência de problemas de otimização combinatória podem acontecer em diversas áreas, projetos de sistemas de distribuição de energia elétrica, posicionamento de satélites, roteamento ou escalonamento de veículos, sequenciamento de genes e DNA, classificação de plantas e animais.\par
+
+De acordo com \cite{deleonardo} em problemas de otimização combinatória, cujo universo de dados é grande e existe um grande número de combinações, o que torna inviável a análise de todas soluções possíveis em um tempo adequado, utilizamos as heurísticas, também conhecidas como algoritmos heurísticos, que são métodos que compõem uma gama de soluções para problemas de otimização combinatória.
+
+% Nome do subcapitulo
+\section{Heurística}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+
+O termo heurística é derivado do grego \textit{heuriskein}, o que significa descobrir ou achar. De acordo com \cite{timoteo2005desenvolvimento} o significado da palavra em pesquisa operacional vai um pouco além da raiz etimológica. Segundo \cite{steiglitz1982combinatorial}, heurísticas são consideradas métodos de aproximação ou métodos de busca de solução. Deve se levar em consideração que não exista uma garantia formal de seu desempenho e uma garantia de que estas heurísticas que irão encontrar uma solução. As heurísticas, apesar de não garantirem encontrar a solução ótima para um problema, procuram por soluções consideradas de boa qualidade em um tempo computacional razoável.\par
+
+Segundo \cite{evans1992optimization} heurísticas são necessárias para implementação de problemas NP Difícil, caso deseje-se resolver tais problemas em um tempo  razoável.\par
+
+Ressalta-se que dentre as heurísticas, as chamadas meta-heurísticas, merecem especial atenção pois adotam técnicas para amenizar, a dificuldade que os métodos heurísticos têm de escapar dos ótimos locais. As meta-heurísticas podem partir em busca de regiões mais promissoras no espaço de soluções, alem disto, as meta-heurísticas possuem grande abrangência, podendo ser aplicada ÃƒÂ  maioria dos problemas de otimização combinatória \cite{nascimento2005aplicaccao}.\par
+
+As meta-heurísticas surgiram como uma alternativa para amenizar a dificuldade que os métodos heurísticos tem de escapar dos chamados ótimos locais \cite{nascimento2005aplicaccao}.
+
+Segundo \cite{adrianocesar} uma heurística é a instanciação de uma meta-heurística, ou seja, a aplicação da mesma em um problema específico de otimização.\par
+
+Como exemplos de meta-heurísticas temos Busca Tabu (\textit{Tabu Search}), Otimização por Colônias de Formigas (\textit{Ant Colony Optimization}), Recozimento Simulado (\textit{Simulated Annealing}) e Algoritmo Genético (\textit{Genetic Algorithm}).\par
+
+% Nome do subcapitulo
+\section{Busca Tabu}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+
+Busca tabu (BT) é uma meta-heurística adaptativa, que utiliza uma estrutura de memória através de uma lista, contendo um histórico de evolução para evitar que o processo de busca forme ciclos, ou seja, o retorno a um ótimo local previamente visitado \cite{souza2000} , \cite{armentanointroduccao} e \cite{subramanian2006aplicaccao}.\par
+
+
+Segundo \cite{subramanian2006aplicaccao} BT foi desenvolvida por \cite{glover1986future} com o objetivo de encontrar soluções para problemas de programação linear. Ao formalizar a técnica, o autor publicou uma série de trabalhos envolvendo diversas aplicações da meta-heurística. \par
+
+Basicamente o funcionamento do BT a feito partir da definição de uma população inicial ${S_0}$, o algoritmo explora cada iteração de um subconjunto V da vizinhança N(S) da solução corrente S. O membro S' de V com melhor valor nessa região segundo a função f(.) torna-se a nova solução corrente mesmo que S' seja pior que S isto é, que f(S') $>$ f(S) para um problema de minimização\cite{souza2000}. A figura~\ref{fig:buscaTabu} que se encontra no apêndice representa o pseudocódigo do algoritmo da Busca Tabu.
+
+Segundo \cite{armentanointroduccao}  o algoritmo tem um intensivo uso de memória o que é uma característica essencial deste método. Para os autores o uso da memória pode ajudar a intensificar a busca em regiões com grande chances de se encontrar o resultado, ou até mesmo, diversificar a busca através de regiões inexploradas.
+
+Ainda de acordo com \cite{armentanointroduccao}  devemos adotar alguns procedimentos para que o processo de busca tenha um melhor resultado: listas tabu dinâmicas, passagens por regiões planas, intensificação, diversificação, \textit{path relinking}. Listas tabu dinâmicas tem como objetivo evitar que o algoritmo entre em processo de ciclo. Passagens por regiões planas pode levar o algoritmo a pensar que não existem melhoras significativas na qualidade das soluções e atingir o critério de parada. Para evitar esta situação é necessário aumentar o tamanho da lista tabu enquanto o algoritmo estiver passando pela região plana e voltar a reduzir quando houver mudança no valor da função objetiva. Intensificação são técnicas utilizadas para concentrar os esforços da pesquisa em regiões consideradas promissoras. Diversificação é uma técnica que utiliza memória de longo prazo para redirecionar a pesquisa para regiões que ainda não foram suficientemente exploradas. PathRelinking trada da intensificação de incorporar atributos de soluções de boa qualidade (chamadas de soluções elite), em seguida explora caminhos que contenham uma ou mais soluções de elite.
+
+Ainda segundo \cite{armentanointroduccao} uma característica importante do método é que a solução final tem pouca ou nenhuma dependência da escolha feita para a solução inicial, isso graças aos mecanismos implementados pelo método, que fogem de ótimos locais.
+
+% Nome do subcapitulo
+\section{Recozimento Simulado}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+
+Recozimento Simulado é a técnica de busca local probabilística, proposta originalmente por \cite{kirkpatrick1983optimization}, que se fundamenta em uma analogia com a termodinâmica, ao simular o 
+resfriamento de um conjunto de átomos aquecidos.\par 
+
+Isto é, conforme \cite{noronha2003abordagem} em analogia a física da matéria: levando um cristal a sua temperatura de fusão, as moléculas estão desordenadas e se agitam livremente. Ao resfriar-se a amostra de maneira infinitamente lenta, as moléculas vão adquirir a estrutura cristalina estável que tem um nível de energia mais baixo possível.\par 
+
+Segundo \cite{souza2002experiencias} o processo se inicia com um membro qualquer do espaço de soluções, normalmente gerado aleatoriamente, e seleciona um de seus vizinhos randomicamente. Se este vizinho for melhor que o original ele é aceito e substitui a solução corrente. Se ele for pior por uma quantidade âÂˆÂ†, ele é aceito com uma probabilidade e -âÂˆÂ†/T , onde T decresce gradualmente conforme o progresso do algoritmo. Esse processo é repetido até que T seja tão pequeno que mais nenhum movimento seja aceito. A melhor solução encontrada durante a busca é tomada como uma boa aproximação para a solução ótima. Originalmente, \textit{Simulated Annealing} foi derivado de simulações em termodinâmica e por esta razão o parâmetro T é referenciado como temperatura e a maneira pela qual ela é reduzida é chamada de processo de resfriamento.
+
+
+A figura~\ref{fig:resozimentoSimulado} que se encontra no apêndice representa o pseudocódigo do algoritmo \textit{Simulated Annealing}.
+
+Conforme \cite{aarts1988simulated} a analogia com a otimização (combinatória ou não) é bastante direta. Os estados da matéria são as soluções realizáveis, a quantidade objetiva substitui a energia, os estados metaestáveis da matéria sendo ótimos locais e a estrutura cristalina corresponde ao ótimo global.\par 
+
+% Nome do subcapitulo
+\section{Algoritmos genéticos}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+
+%o que é 
+De acordo com \cite{goldberg1989genetic} Algoritmos Genéticos (AG) são baseados na teoria da evolução das espécies elaborada por \cite{darwin1968origin} utilizando os conceitos da biológia tais como genes, individuo, população, cromossomos, cruzamento, mutação e seleção. Estes algoritmos foram introduzidos por \cite{holland1975adaptation} para resolver os problemas chamados \textit{timetabling}.
+
+Para entender melhor \cite{mitchell1998introduction} descreve os principais termos biológicos necessários para o funcionamento dos algoritmos genéticos. Gene se trada de uma característica particular de um cromossomo. Um cromossomo é composto por um ou mais genes, pode se dizer também que é uma sequencia de genes que será caracterizada como a solução do problema. \textit{Fitness} significa a aptidão do indivíduo em um determinado ambiente. Individuo é a combinação do cromossomo mais o \textit{fitness} calculado através da função objetiva. População é um grupo de indivíduos. Geração se trata de cada interação do algoritmo.\par
+
+Em seu trabalho \cite{lucas2000algoritmos} descreve algoritmos genéticos da seguinte forma. São algoritmos que trabalham sobre uma população, através de uma função de adaptação, para que aconteça a evolução. Primeiramente é inicializada uma população, logo após iram acontecer os processos de seleção, reprodução também conhecida como \textit{crossover} e mutação, os mesmos ocorreram a cada geração até que os critérios de parada aconteçam. Também afirma que os termos utilizados pertencem a tradição existente no meio da computação evolutiva de utilizar, com certa liberdade os termos da biologia.
+
+Segundo \cite{oliveira2005algoritmo}, o processo de evolução executado por um algoritmo genético corresponde a um procedimento de busca no espaço de soluções potenciais para o problema e, como enfatiza \cite{michalewicz1996evolutionary}, esta busca requer um equilíbrio entre dois objetivos aparentemente conflitantes: a procura das melhores soluções na região que se apresenta promissora ou fase de intensificação e a procura de outra região ou exploração do espaço de busca, também conhecida como diversificação.\par
+
+\begin{figure}[!htb]
+\caption[Estrutura funcional de um algoritmo genético típico]{Estrutura funcional de um algoritmo genético típico}
+\label{fig:ag}
+\centering
+\includegraphics[scale=0.7]{imagens/ag.png}
+\\ \textbf{\footnotesize Fonte: \cite{de1999introduccao}}
+\end{figure}
+
+%falar sobre população inicial
+
+A Figura~\ref{fig:ag} trata de uma estrutura funcional típica de um algoritmo genético, \cite{de1999introduccao} cita em seu trabalho que o primeiro passo a ser tomado é a geração de uma população inicial, que é formada através de métodos aleatórios para gerar os indivíduos, assim teremos uma biodiversidade na população. Durante o processo evolutivo todos indivíduos da população são avaliados e cada um deles recebe o seu \textit{fitness}, o que representa a qualidade da solução representada por ele.\par
+
+%falar sobre seleção
+
+Segundo \cite{lobo2005soluccao} existem vários métodos para selecionar indivíduos para execução dos operadores genéticos, em seu trabalho o autor apresenta os seguintes métodos. Seleção por roleta é um método tradicional, para cada indivíduo é atribuído um espaço na roleta sendo o tamanho proporcional ao valor da aptidão do individuo. Esta roleta gira N vezes onde N é o numero do tamanho da população, selecionando assim os pais para próxima geração. Seleção por torneio são selecionados X indivíduos da população onde X é um valor aleatório anterior e escolhidos os dois que que contêm o maior valor de aptidão no caso os país, segundo o autor este método é o mais utilizado, pois oferece a vantagem de não exigir que a comparação seja feita entre todos os indivíduos da população.\par
+
+%falar sobre operadores genéticos.
+
+De acordo com \cite{goes2005otimizaccao} os principais operadores genéticos, utilizados ao se desenvolver algoritmos genéticos são inversão, mutação e \textit{crossover}, são responsáveis em realizar transformações nos indivíduos da população mas cada um possui suas diferentes funções dentro do algoritmo.\par
+Inversão é um operador que modifica a genética de um gene ele é fundamental para garantir a biodiversidade da população, ainda segundo \cite{goes2005otimizaccao} o operador mutação  desenvolve o mesmo papel que o operador inversão, o mesmo cita que vários autores consideram inversão e mutação como o mesmo operador genético e também afirmam que são os operadores mais importantes e optam por trabalhar somente com estes operadores. Estes operadores são fundamentais para o desenvolvimento de algoritmos genéticos por evitarem a convergência prematura da solução, ou seja, quando uma população se estabiliza com uma adaptação pouco adequada, podemos dizer então que, um super-indivíduo domina o processo seletivo de tal forma que não é possível gerar filhos melhores, este mesmo super-indivíduo transmite suas características para toda a população.\par
+
+O operador cruzamento também conhecido como \textit{crossover} é um operador genético onde é selecionado um ponto de corte produzindo duas cabeças e duas caldas após isto é realizada a troca das caldas dos pais criando dois filhos contendo material genético similares aos dos pais a figura~\ref{fig:pontoCorteAG} mostra onde é realizado o ponto de corte como ficam os filhos criado após a troca das caldas \cite{de1999introduccao}.
+
+\begin{figure}[!htb]
+\caption[Ponto de corte \textit{crossover}]{Ponto de corte \textit{crossover}}
+\label{fig:pontoCorteAG}
+\centering
+\includegraphics[scale=0.7]{imagens/crossoverAG.png}
+\\ \textbf{\footnotesize Fonte: \cite{de1999introduccao}}
+\end{figure}
+
+No artigo apresentado pelos autores \cite{de1999introduccao} o elitismo é descrito como um operador genético que foi proposto por \cite{DeJong} em seu trabalho, que é dos pioneiros sobre algoritmos genéticos. Uma vez que os melhores indivíduos, de acordo com a função objetiva, podem ser perdidos entre uma geração e outra devido ao corte do \textit{crossover} e a execução da mutação, torna-se interessante transferir o melhor indivíduo para a próxima geração, o nome dado para está estratégia se chama elitismo uma técnica muito utilizada ao se desenvolver AGs. Os autores apresentam gráficos que mostram o desempenho da utilização do operador, segundo os mesmo quando se é utilizado o operador fica claramente observado que, com o uso do elitismo o algoritmo encontra a solução mais rápida, do que quando não ocorre a utilização do operador.
+
+Segundo \cite{hamawaki2011geraccao} e \cite{oliveira2005algoritmo} algoritmos genéticos são eficientes para encontrar soluções ótimas ou quase ótimas, pois as limitações são minimas dos demais métodos de busca tradicionais. Ainda segundo \cite{oliveira2005algoritmo}, os algoritmos genéticos têm se mostrado ferramentas poderosas para resolver problemas onde o espaço de busca é muito grande e os métodos convencionais se mostraram ineficientes.\par
+
+% Nome do subcapitulo
+\section{TimeTabling}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+
+
+Segundo \cite{kripkasimulated} os problemas de programação de horários (PPH), também conhecidos como \textit{TimeTabling}, são os problemas que mais se destacam nas organizações acadêmicas. De acrodo com \cite{schaerf1999survey} estes problemas são divididos em três categorias \textit{school timetabling}, \textit{course timetabling} e \textit{examination timetabling}.\par
+
+\textit{School TimeTabling}: Trata-se basicamente da geração de horários semanais, em escolas de segundo grau, onde deve-se evitar os choques entre os horários das disciplinas e que cada professor receba apenas uma turma para cada horário. Neste caso o aluno recebe um número fixo de disciplinas a serem cursadas.\par
+
+\textit{Course TimeTabling}: Diz respeito ÃƒÂ  alocação de aulas de uma universidade típica. Neste problema os alunos podem escolher as matérias em que vão se matricular, portanto o problema tem como objetivo minimizar os possíveis choques entre as disciplinas, professores e horários disponibilizados pela instituição de ensino.\par
+
+\textit{Examination TimeTabling}: Aborda o problema de programação de horários dos exames da instituição, de maneira que, disciplinas que tenham alunos em comum, distanciem o máximo possível as datas dos exames.\par
+
+Segundo \cite{pinheiro2001ambiente} o problema de programação de horários vem sendo abordado desde a década de 60, sendo que os primeiros trabalhos a se destacarem foram realizados na década de 80.\par
+
+O Problema de Alocação de Salas (PAS) também conhecido como \textit{Classroom Assignment} é tratado como parte do problema de programação de cursos universitários \textit{course timetabling}. Conforme cita \cite{marinho2005heuristicas} várias instituições universitárias se deparam com o PAS durante o início de cada semestre letivo. Este problema é considerado NP-Difícil por \cite{even1975complexity} e \cite{carter1992classroom}, com isto, a determinação da solução ótima do problema, em um período de tempo aceitável se torna uma tarefa difícil.\par
+
+Uma vez que é de extrema dificuldade encontrar a solução ótima do PAS em tempo razoável, este problema é normalmente tratado através de técnicas heurísticas, que apesar de não garantirem encontrar a solução ótima do problema, são capazes de retornar uma solução de qualidade em um tempo adequado.\cite{nascimento2005aplicaccao}.Segundo \cite{even1975complexity} o PAS pertence a classe de Problemas de Otimização Combinatória (POC).\par
+
+Segundo \cite{kripkasimulated} o problema deve considerar que as disciplinas dos cursos universitários já tenham seus horários de início e de término definidos. O problema se resume então na alocação das disciplinas ÃƒÂ s salas desta universidade respeitando os horários destas disciplinas e as demais restrições exigidas.
+
+Em seu trabalho \cite{souza2000} afirma que boa parte das universidades ainda resolvem este problema de forma manual, o que torna o processo árduo e demorado, podendo levar vários dias para ser concluído.\par
+
+% Nome do subcapitulo
+\section{Trabalhos Relacionados}
+% Label para referenciar
+\vspace{0.4cm}
+% Texto do subcapitulo
+
+Foram encontrados vários trabalhos relacionados ao tema de resolução de problemas de otimização combinatória através de meta-heurísticas. Os trabalhos relacionados escolhidos contém formas diferentes de resolução do PAS.\par
+
+Ao desenvolver seu trabalho \cite{subramanian2006aplicaccao} concluirão que o BT teve um resultado adequado e sempre produzindo melhorias durante o processo de refinamento da solução inicial, o mesmo também afirma que o algoritmo apresentou-se robusto, uma vez que não houve grande variação na solução final, portando o mesmo sempre gerava soluções satisfatórias.
+
+A abordagem realizada por \cite{silva2005estudo} foi através da meta-heurística recozimento simulado. A autora afirma que o algoritmo se mostrou eficiente para resolução do PAS, produzindo bons resultados ao atender a maioria dos requisitos do problema, o uso deste algoritmo é indicado quando se trada da substituição do processo manual realizado pelas instituições de ensino.
+
+O trabalho desenvolvido por \cite{hamawaki2011geraccao} é realizado através da utilização de algoritmos genéticos, segundo a autora a aplicação do AG e a analise dos resultados obtidos é possível concluir que as técnicas implementadas favorecem a obtenção de uma solução satisfatória e eficiente.
+
+A resolução do problema PAS através de diferentes técnicas meta-heurísticas, podemos notar que a conclusão dos trabalhos apresentam uma solução satisfatória segundo ao autores ao se utilizar os estas técnicas através dos algoritmos.\par
+
+
+
+%\include{metodologia}
+
+\capitulo{METODOLOGIA}
+
+\iniciocapitulo
+A resolução deste trabalho está dividida nas seguintes partes instalação do ambiente, análise e algorítimo.\par
+
+A implementação do sistema se deve primeiramente a configuração do ambiente para o início do desenvolvimento os seguintes passos devem ser tomados para que o ambiente seja reproduzido novamente. Primeiramente deve se instalar o SGBD PostgreSQL, logo em seguida deve se instalar o JAVA 7 em sua maquina, para validar a instalação deve-se executar o seguinte comando "java -version && javac -version" a mensagem descrita na figura XX deve ser mostrada.
+
+\begin{figure}[!htb]
+\caption[Versão Java]{Versão Java}
+\label{fig:figura2}
+\centering
+\includegraphics[scale=0.8]{imagens/mensagemJava.png}
+\\ \textbf{\footnotesize Fonte: Autor}
+\end{figure}
+
+
+Após a instalação do java deve-se instalar o framework Play! seguindo os passos encontrados no site \cite{play} para validar a instalação do Play! deve se executar o comando "play version" e o \textit{prompt} de comando deve retornar a mensagem conforme mostra a figura figura XX.
+
+\begin{figure}[!htb]
+\caption[Versão Framework]{Versão Framework}
+\label{fig:figura2}
+\centering
+\includegraphics[scale=0.8]{imagens/mensagemPlay.png}
+\\ \textbf{\footnotesize Fonte: Autor}
+\end{figure}
+
+Uma vez que o ambiente já está configurado devemos inciar um projeto no framework instalado através do comando "play new nomeDoProjeto", a partir dai é possível escolher IDE que será utilizada.
+
+Foi criado um \textit{script} para criação do banco de dados e população inicial das informações como, prédios, salas, turnos, horários, e disciplinas com informações que são necessárias em todo inicio de semestre na instituição de ensino escolhida.
+
+PQ do algoritimo genetico
+segundo renand dupas a escolha de algoritimoes geneticos se dá através de uma comparação com outras técnicas e através disso de uma evidenciação das vantagens de sua utilização , logo o algoritimo genetico foi escolhido para este trabalho.
+
+População inicial = --UMA NOVA ABORDAGEM PARA AUMENTAR A DIVERSIDADE.pdf
+
+modelo matematico ----APLICAÃ‡ÃƒO DE MODELO MATEMÃTICO, ABORDAGEM HEURÃSTICA E MÉTODO MISTO NA OTIMIZAÃ‡ÃƒO DA PROGRAMAÃ‡ÃƒO DE HORÃRIO DOS PROFESSORESTURMAS.pdf
+
+restrições do problema e modelo matematico http://www.dcc.ufla.br/infocomp/artigos/v4.3/art08.pdf
+
+Foi realizada uma análise dos requisistos atravez de entrevista com o steakholder, após as entrevistas a modelagem de dados foi realizada de acordo com a demanda do projeto, para o desenvolvimento destes diagramas foi utilizadas a UML (Universal Modeling Language). Os seguintes diagramas foram desenhados, diagrama de caso de uso, diagrama de classe e diagrama de entidade relacionamento. Foram escolhidos os seguintes diagramas para que o sistema tenha uma documentação minima tendo em vista que o foco do trabalho é a resolução do problema de timetable através da utilização do algoritimo genetico.
+
+Por se tratar de um sistema complexo, antes de iniciar a implementação do sistema
+fez-se necessário a sua modelagem. Segundo Elmasri & Navathe (2005) as metodologias
+de modelagem de dados de objetos como UML (Universal Modeling Language â€“
+Linguagem de Modelagem Universal) estão se tornando cada vez mais populares no
+projeto e engenharia de software. Essas metodologias vão além do projeto de um banco de
+dados, especificando o projeto detalhado dos módulos de software e suas interações,
+utilizando vários tipos de diagramas.\par
+
+\secao{Ferramentas Utilizadas}
+
+Este trabalho conta com a utilização de tecnologias proprias para o desenvolvimento de sistemas web, foram utilizadas as seguintes ferramentas: Para SGBD foi o utilizado PostgreSQL; No back-end foi utilizado Java e o \textit{framework Play!}; No front-end as tecnologias utilizadas foram HTML, CSS, JavaScript e \textit{framework AngularJS} e a IDE utilizada \textit{Eclipse}.\par
+
+
+
+\subsecao{Sistema de Gerenciamento de Banco de Dados}
+
+O SGBD escolhido foi o PostgreSQL pelo fato de ser uma ferramenta open-source e que trabalha perfeitamente com o framework escolhido Play!, uma vez que utilizado em projetos anteriores não foram apresentados conflitos entre o framework e o SGBD. A seguir pode ser notar que é uma ferramenta robusta e que tem visão no mercado internacional.\par
+
+O PostgreSQL é um poderoso sistema gerenciador de banco de dados objeto-relacional de código aberto.  Tem mais de 15 anos de desenvolvimento ativo e uma arquitetura que comprovadamente ganhou forte reputação de confiabilidade, integridade de dados e conformidade a padrões.  Roda em todos os grandes sistemas operacionais. É totalmente compatível com ACID, tem suporte completo a chaves estrangeiras, junções (JOINs), visões, gatilhos e procedimentos armazenados (em múltiplas linguagens).  Inclui a maior parte dos tipos de dados do ISO SQL:1999, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, e TIMESTAMP.  Suporta também o armazenamento de objetos binários, incluindo figuras, sons ou vídeos.  Possui interfaces nativas de programação para C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e uma excepcional documentação.\cite{postgresql}
+
+
+
+Para a resolução do problema de timetable foi escolhido o algoritimo genetico, a escolha do algoritimo foi devida a grande utilização do mesmo para resolução de problemas do tipo NP-dificil que foram encontrados na literatura.
+\par
+
+
+
+
+\subsecao{Ferramentas Back-end}
+
+Foi escolhida uma linguagem de programação Java por ser orientada a objeto. Tambem foi escolhido o \textit{Play! framework}, para que o desenvolvimento aconteça de forma mais rápida, fácil e eficiente.\par
+
+%Java
+Java foi criada pela Sun Microsystems para desenvolver inovações tecnológicas em 1992, time liderado por James Gosling. O Java utiliza do conceito de máquina virtual, onde existe, entre o sistema operacional e a aplicação, uma camada extra responsável por \"traduzir\" - mas não apenas isso - o que sua aplicação deseja fazer para as respectivas chamadas do sistema operacional, onde ela está rodando no momento. Sua aplicação roda sem nenhum envolvimento com o sistema operacional, sempre conversando apenas com a JVM - Java Virtual Machine \cite{caelum}.\par
+
+Em 2009 a Oracle comprou a Sun, fortalecendo a marca. A Oracle sempre foi, junto com a IBM, uma das empresas que mais investiram e fizeram negócios através do uso da plataforma Java. Em 2011 surge a versão Java 7 com algumas pequenas mudanças na linguagem \cite{caelum}.\par
+
+%-----Play! Framework
+
+The Play! É um moderno framework MVC de alta produtividade, que utiliza Java e Scala para o desenvolvimento web, open-source , utiliza templates, hibernate e JUnit  em sua arquitetura. Existe duas versões do framework Play! 1 e Play2! este trabalho utiliza a versão 1 do framework\cite{playframework}.\par
+
+
+\subsecao{Ferramentas Front-end}
+
+As ferramentes de Front-end descritas abaixo, foram escolhidas devida a gande utilização na web grande parte dos sites contem HTML, CSS ou JavaScript em algum trexo de seu código, foi escolhido tambem o framework AngularJS para que o desenvolvimento ocorra de maneira agil e mais rapida.\par
+
+%HTML
+HTML que é defindo por (\textit{HyperText Markup Language}) ou linguagem de marcação, é uma linguagem que é utilizada no desenvolvimento de paginas web \cite{html}.\par
+
+%css
+Cascading Style Sheets (CSS) é uma tecnologia utilizada para adicionar estilos como cores, fontes, espaçamentos em documentos escritos em uma linguagem de marcação como exemplo o HTML \cite{css}.\par
+
+%JAVASCRIPT
+
+JavaScript é uma linguagem de script utilizada no desenvolvimento de paginas na web, atualmente é a principal linguagem para programação client-side em navegadores web. Todas as paginas de HTML modernas estão usando JavaScript para adicionar funcionalidades e para se comunicar com os webServers\cite{javascript}.\par
+
+Angularjs é um \textit{framework JavaScript} construido e mantido pelo grupo de engenheiros do Google, ele usa o HTML como uma \textit{template engine}, tudo isso no intuito de fornecer uma solução completa para o cliente-side de sua aplicação. Além disso tem total compatibilidade com as bibliotecas javascript mais utilizadas, como jQuery. É um novo conceito para desenvolvimento de web apps client-site.\cite{angularjs}\par
+
+\subsecao{IDE}
+
+O Eclipse é uma IDE (\textit{integrated development environment}). Diferente de uma RAD(\textit{Rapid Application Development}), onde o objetivo é desenvolver o mais rápido possível através do arrastar-e-soltar do mouse, onde montanhas de código são gerados em background, uma IDE te auxilia no desenvolvimento, evitando se intrometer e fazer muita mágica \cite{caelum}.\par
+
+O Eclipse é a IDE líder de mercado. Formada por um consórcio liderado pela IBM, possui seu código livre. A última versão é a 4.3, mas com qualquer versão posterior a do 3.1 você terá suporte ao Java 5, 6 e 7 \cite{caelum}.\par
+
+Está IDE foi escolhida devido ao grande reconhecimento mundial, por sua eficiencia ao se trabalhar com a linguagem de programação Java, por ser open-source e pela existencia de varias ferramentas criadas pela comunidade, para o auxilio no desenvolvimento de softwares.\par
+
+%\include{sistema}
+
+\capitulo{SISTEMA DESENVOLVIDO}
+
+\iniciocapitulo
+Todo início de semestre instituições de ensino se deparam com o PAS, um problema de alocação de salas que tem sua complexidade definia como NP-Difícil. Logo a resolução manual de problemas desse tipo se torna inviável em um espaço de tempo curto. Para isto são utilizadas meta-heurísticas que são métodos de aproximação, que ajudam a encontrar uma solução em um conjunto de soluções viáveis. Este trabalho utiliza informações fornecidas pela FAFICH UFMG, nestas informações estão contidas salas com suas propriedades, e disciplinas enviadas pelos colegiados com suas restrições de horários e informações básicas de cada uma. A resolução do problema PAS consiste então na alocação de todas as disciplinas enviadas pelos colegiados respeitando as restrições do problema. A técnica utilizada para tentar solucionar o problema é chamada de algoritmo genético uma meta-heurística bastante utilizada na resolução de problemas deste tipo.\par
+
+\secao{Modelagem}
+
+\subsecao{Diagramas de caso de uso}
+
+A Figura~\ref{fig:casodeuso} descreve todas as funcionalidades que o sistema possui. Essas funcionalidades foram dividias em 2 atores, "Gerente" e "Sistema", cada um ligado com suas respectivas funcionalidades, porém, o "Gerente" pode acessar o ator "Sistema" para ter acessos funcionalidades que são encontradas no mesmo. O sentido das setas informa o que cada ator pode acessar no sistema.\par
+
+\begin{figure}[!htb]
+\caption[Diagrama de Caso de Uso]{Diagrama de Caso de Uso}
+\label{fig:casodeuso}
+\centering
+\includegraphics[scale=0.5]{imagens/diagramaCasoUso.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+As funcionalidades "controle de turnos", "controle de horários", "controle de prédios", "controle de salas", "controle de cursos", "controle de colegiados", "controle de períodos" e "controle de disciplinas" são disponibilizadas através de módulos com as funcionalidades \textit{Create, Read, Update, Delete} (CRUD) para que o responsável tenha total controle sobre as informações a serem administradas.\par
+
+Já as funcionalidades "alocação de horários" e "geração de relatórios", são rotinas executadas pelo "Sistema". A funcionalidade alocação de horários é uma rotina que utiliza conceitos de algoritmo genético para encontrar a melhor solução do problema e a funcionalidade geração de relatórios mostra para o "Gerente" o melhor resultado de alocação encontrado pelo algoritmo. Detalhes do funcionamento serão explicados nas seções posteriores.\par
+
+\subsecao{Diagrama de Entidade Relacionamento}
+
+A Figura~\ref{fig:der} mostra o relacionamento das tabelas no sistema atraves do diagrama de entidade relacionamento.\par
+
+\begin{figure}[!htb]
+\caption[Diagrama de Entidade Relacionamento]{Diagrama de Entidade Relacionamento}
+\label{fig:der}
+\centering
+\includegraphics[scale=0.5]{imagens/diagramaEntidadeRelacionamento.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+As tabelas curso, colegiado, período, disciplina, sala, prédio, turno, horário são utilizadas para armazenar as informações dos respectivos objetos que são controlados pelos módulos de CRUD e suas respectivas funcionalidades.\par
+
+A tabela relacionamento\_disciplina\_horário, salva as obrigatoriedades dos horários das disciplinas, uma vez que, todos os horários são montados pelos colegiados e não pelo responsável pela alocação das disciplinas nas salas.\par
+
+A tabela alocação contem o relacionamento de disciplina, horário e sala o que corresponde a melhor alocação encontrada pelo algoritmo. O item disciplina pode ter o seu valor como nulo o que significa que em um especifico horário e em uma determinada sala não existe disciplina alocada.\par
+
+A tabela parâmetro é utilizada apenas para guardar os últimos parâmetros utilizados na execução do algoritmo genético.\par
+
+
+\subsecao{Diagramas de classe}
+
+Este diagrama é das classes do algoritmo genético, as classes do sistema em geral não serão abordados. Quando terminar o codigo revisar e explicar.\par
+~\ref{fig:dc}
+\begin{figure}[!htb]
+\caption[Diagrama de Classe]{Diagrama de Classe}
+\label{fig:dc}
+\centering
+\includegraphics[scale=0.5]{imagens/diagramaClasse.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+\secao{algoritmo Genético}
+
+Após a da modelagem do sistema com pleno conhecimento do problema e o levantamento bibliográfico sobre algoritmos genéticos, foi feito o relacionamento do problema com os termos da biologia.\par
+
+\subsecao{Indivíduo}
+
+O termo gene representado pela figura~\ref{fig:gene} possui uma combinação de quatro variáveis sala, dia da semana, horário e o relacionamento de obrigatoriedade 
+"disciplina horário". As variáveis sala, horário e dia da semana são fixas, não podem ser nulas uma vez que todas as combinações possíveis destas três variáveis formam um cromossomo que tem um tamanho fixo para todos os indivíduos. \par
+
+Um gene com o relacionamento "disciplina horário" igual a nulo representa um horário vago para aquela combinação especifica de sala, horário e dia da semana.\par
+
+\begin{figure}[!htb]
+\caption[Representação Gene]{Representação Gene}
+\label{fig:gene}
+\centering
+\includegraphics[scale=0.7]{imagens/representacaoGene.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+Um cromossomo é uma sequência de genes, esta sequência tem um tamanho fixo e pode ser medido pela seguinte fórmula.
+
+$$(número de Salas * número de Horários * número de dias da semana)$$
+
+Inicialmente o individuo contem todas as variáveis relacionamentos de obrigatoriedade nulas, estas variáveis serão preenchidas randomicamente na criação da população inicial que em breve será explicada. O cromossomo do indivíduo preenchido com os relacionamentos de obrigatoriedades representa uma alocação. Está alocação é medida pela sua pontuação de \textit{fitness} que será apresentado  em outro tópico, podendo ser ou não o resultado do problema. Os valores utilizados na representação do cromossomo. A figura~\ref{fig:cromossomo} são os ID's do relacionamento de obrigatoriedade entre horário e disciplina. Em caso de horário vago em um determinado gene esta variável terá o valor nulo.\par
+
+\begin{figure}[!htb]
+\caption[Representação Cromossomo]{Representação Cromossomo}
+\label{fig:cromossomo}
+\centering
+\includegraphics[scale=0.8]{imagens/representacaoCromossomo.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+O termo indivíduo é então composto pelo cromossomo juntamente com a pontuação adquirida após a execução do método calculo de \textit{fitness}, a figura~\ref{fig:individuo} demonstra a representação de um indivíduo.\par
+
+\begin{figure}[!htb]
+\caption[Representação Individuo]{Representação Individuo}
+\label{fig:individuo}
+\centering
+\includegraphics[scale=0.8]{imagens/representacaoIndividuo.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+\subsecao{Definição da função objetivo}
+
+O calculo da função objetivo é realizado através da execução da fórmula apresentada a seguir para calcular cada restrição. O calculo da primeira restrição chamada de \textit{fitness01} que se trata da restrição de obrigatoriedade entre as disciplinas e horários, é realizado um somatório de todos relacionamentos de obrigatoriedade que estão em uma posição correta acordo com os dados contidos no gene em que está alocado em seguida, utilizando o somatório dos relacionamento que estão em sua posição correta é aplicada a regra de 3.
+
+
+$$fitness01 = \sum_{i=1}^n * 100 / contDisciplinaHorario$$ 
+
+O mesmo calculo é realizado para as outras restrições, utilizando o somatório das disciplinas que tem os horários estão na mesma sala chamamos de \textit{fitness02}, e disciplinas que a capacidade da sala é atendida \textit{fitness03}.
+
+O fitness final é calculado pela formula este calculo tem como valor máximo 100 e minimo 0.
+
+$$ (fitness01+fitness02+fitness03)/3 $$ 
+
+
+
+\subsecao{Operadores genéticos}
+
+Um dos operadores genéticos utilizados neste trabalho conforme citado anteriormente é o elitismo. Este operador genético com valor verdadeiro garante a seleção 20\% dos melhores indivíduos para a próxima geração.\par
+
+Mutação é a inversão genética dos genes de um indivíduo, escolhido randomicamente, da população anterior. Apos a realização da mutação genética o individuo é inserido na nova população.\par
+
+Primeiramente são escolhidos de forma randômica dois genes do cromossomo. Apos a escolha dos genes a serem trocados, é feita a troca dos genes de posição. No caso apenas a relação de obrigatoriedade é trocada, permanecendo as outras propriedades, então retornado um novo indivíduo que tem a composição genética alterada. Apos a mutação este indivíduo recebe uma nova nota de \textit{fitness} de acordo com a sua nova sequencia de genes. Está nota pode ser maior ou menor do que a anterior a figura ~\ref{fig:mutacao} representa o processo descrito.\par
+
+\begin{figure}[!htb]
+\caption[Representação Mutação]{Representação Mutação}
+\label{fig:mutacao}
+\centering
+\includegraphics[scale=0.7]{imagens/representacaoMutacao.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+O método seleção por torneio é utilizado para selecionar os indivíduos que iram participar do \textit{crossover}. O método escolhe três indivíduos da população anterior randomicamente e dos três indivíduos escolhidos, os dois que contêm a maior pontuação de \textit{fitness} são selecionados e enviados para o \textit{crossover}.\par
+
+Para o método de \textit{crossover} inicialmente é escolhido um ponto de corte para se realizar o cruzamento entres os pais (pai e mãe). A figura~\ref{fig:antesCross} apresenta os indivíduos antes do cruzamento e o indivíduo pai marcado com o ponto de corte.\par
+
+\begin{figure}[!htb]
+\caption[Indivíduos antes do crossover]{Indivíduos antes do crossover}
+\label{fig:antesCross}
+\centering
+\includegraphics[scale=0.7]{imagens/individuosAntesInsersaoGenetica.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+Após a escolha o filho 1 recebe todos os genes contidos no pai que estão antes do valor do ponto de corte. Devemos lembrar que o filho é um indivíduo e que os mesmo já contem o numero de genes pré definidos e nulos quando criados. Quando ocorre a troca genética estamos falando do envio das obrigatoriedades das disciplinas em relação aos horários. Para que não ocorra a repetição das informações contidas no pai e na mãe, os genes já utilizados no ponto de corte são removidos do indivíduo mãe. A marca no cromossomo filho representa o ponto de corte. Conforme apresentado na figura~\ref{fig:materialPai}.
+
+\begin{figure}[!htb]
+\caption[Inserção do material genético do pai]{Inserção do material genético do pai}
+\label{fig:materialPai}
+\centering
+\includegraphics[scale=0.6]{imagens/individuosAposInsersaoGenetica.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+Ao término da adição dos genes do ponto de corte o filho 1 recebe as informações genéticas que faltavam da mãe. A figura~\ref{fig:materialMae} representa como os indivíduos ficaram após a operação.
+
+\begin{figure}[!htb]
+\caption[Inserção do material genético da mãe]{Inserção do material genético da mãe}
+\label{fig:materialMae}
+\centering
+\includegraphics[scale=0.7]{imagens/insersaoMaterialMae.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+Este mesmo processo é realizado para a criação do filho 2, porém, ao criar este novo filho, devemos trocas as operações realizadas entre o pai e a mãe invertendo os mesmo de lugar no fluxo descrito.
+
+Após a realização do \textit{crossover} os filhos recebem uma nova nota de \textit{fitness} que conforme dito anteriormente podendo ser maior ou menor do que a anterior.
+\subsecao{População}
+
+Uma população, quando relacionada aos termos genéticos, se trata de um conjunto de indivíduos, também representa uma interação do algoritmo genético, ou seja uma geração. A manipulação da população e de suas propriedades é feita através de parâmetros, enviados antes da execução do algoritmo. Estes parâmetros são elitismo, taxa de \textit{crossover}, taxa de mutação, tamanho da população e número máximo de gerações.
+
+De acordo com os parâmetros passados é criada a população inicial. Para cada indivíduo criado é utilizado um método para inserir randomicamente todos os registros de relacionamento de obrigatoriedade entre disciplina e horário em cada um dos genes que previamente foram criados como nulos, estes indivíduos são criados até que a população atinga o tamanho da população que deve ser igual ao parâmetro tamanho da população.\par
+
+Para cada geração, é criada uma nova população a partir da população criada na geração anterior. Se o operador genético elitismo estiver com o valor verdadeiro, iniciamos está nova população com 20\% dos melhores indivíduos da população anterior. Os melhores indivíduos de uma população são indicados pelas maiores pontuações de \textit{fitness}.\par
+
+Durante a criação da nova população podemos ter duas operações ocorrendo mutação e \textit{crossover}. Para a execução destes operadores genéticos são utilizadas porcentagens enviadas pelos parâmetros do algoritmo. Para que estas operações genéticas aconteçam são utilizados valores randômicos para serem comparados com as taxas de mutação e \textit{crossover}. Em cada interação da criação desta nova população são selecionados por torneio dois indivíduos que serão denominado como pais para serem utilizados na operação de \textit{crossover}. Se a condição da taxa de execução for verdadeira, os pais serão descartados e os filhos serão gerados a partir dos genes dos pais através de uma combinação. Logo em seguida serão adicionados na nova população. Em caso de falso os pais serão os indivíduos adicionados na nova população.\par
+
+Para utilizar a operação de mutação é utilizado outro valor randômico, se a condição for verdadeira, um indivíduo da população anterior é selecionado e o mesmo sofrerá a mutação genética, o individuo antes da mutação genética é descartado e o novo indivíduo que sofreu a mutação é adicionado na nova população. O fluxo de uma nova população é descrito na figura~\ref{fig:novaPopulacao}.\par
+
+\begin{figure}[!htb]
+\caption[Fluxo Nova População]{Fluxo Nova População}
+\label{fig:novaPopulacao}
+\centering
+\includegraphics[scale=0.5]{imagens/fluxoNovaPopulacao.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+\subsecao{Fluxo do algoritmo}
+
+O fluxo do algoritmo conforme a figura~\ref{fig:fluxoAlgoritmo}, é iniciado pela criação da população inicial. Para cada interação do algoritmo é verificado se a população contém o resultado e se o algoritmo não atingiu o numero de gerações pré-definidas. Se as duas condições forem falsas o algoritmo cria uma nova população.
+
+\begin{figure}[!htb]
+\caption[Fluxo do algoritmo]{Fluxo do algoritmo}
+\label{fig:fluxoAlgoritmo}
+\centering
+\includegraphics[scale=0.7]{imagens/fluxoAlgoritimo.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+%\include{conclusao}
+
+\capitulo{RESULTADOS OBTIDOS}
+
+
+\iniciocapitulo
+
+Após o sistema implementado foram realizadas uma bateria de testes para que os valores paramêtros inicias fossem definidos, o dados utiliados tem  em sua composição o total de 10 salas e um curso com o total de 46 disciplinas e duas respectivas obrigatoriedades, serão utilizados como paramêtros iniciais os dados representados na Figura~\ref{fig:parametrosAg}, no caso uma população com 140 individuos, 60\% de croosover 20\% de mutação, para entender melhor o andamento do algorítimo inicialmente será utilizada 400 gerações, o elitismos acontece em todos os testes realizados. Estes dados foram tirados como base na conclusão do trabalho de \cite{deleonardo}. Os testes realizados tiveram uma maquina com a seguinte configuração, Intel(R) Core(TM) i5 3.40GHz com 16Gb de mémoria RAM sob o sistema operacional Windows 7 64bit.\par
+
+\begin{figure}[!htb]
+\caption[Parâmetros utilizados para o teste inicial]{Parâmetros utilizados para o teste inicial}
+\label{fig:parametrosAg}
+\centering
+\includegraphics[scale=0.5]{imagens/parametrosDoAlgoritimo.png}
+\\ \textbf{\footnotesize Fonte: Desenvolvido pelo autor}
+\end{figure}
+
+Ao realizar o primeiro teste, que é realizado com o uso de  todos os parametros iniciais foi indentificado que o algoritímo fica preso em planicies, ou seja fica preso por muito tempo em uma solução sem evolução da mesma. Neste caso podemos notar no gráfico representado pela Figura X que o algorítmo no começo tem uma evolução rápida, mas em um determinado ponto ele perde seu poder de evolução e começa a caminha devagar em soluções que tem como valor da função objetiva em torno de 50\% o que não faz da solução, uma solução que atenda ao objetivo deste trabalho.
+
+
+Tentando identificar as possíveis causas desta aceleração de evolução do algorítmo foram realizados teste onde são retirados alguns parâmetros para identificar o que está acontecendo. Primeiramente foi realizado o teste onde o parâmetro de mutação não é utilizado. A figura X mostra o desepenho do algoritmo nesta situação. Podemos observar que em determinado ponto o algorítimo evolui rapidamente, porem o mesmo entra em uma planicie e não consegue mais prosseguir com sua evolução, isso se deve ao fato de um super-indivíduo ter dominado a população passando a caracteristicas do seus gens para todos os indivíduos da população. Isto acontece pois não ocorre a mutação que é responsável pela troca de genes aleatoriamente de um indivíduo.
+
+Logo em seguida foi realizado o teste onde o parâmetro de crossover não é utilizado. A figura X representa a evolução do algoritmo de acordo com a velocidade com que acontece a evolução de acordo com as mutações podemos observar que, a evolução através da mutação é bem lenta e o algoritmo encontra varias planicies durante a evolução tornando assim o processo para encontrar a solução bem demorado.
+
+Comparando os gráficos três gráficos gerados apresentados na figura X podemos observar que o crossover é responsável por acelerar a evolução e a mutação faz com que o algoritmo tenha uma nova diversidade de invidivíduos para que não ocorra a parada do mesmo em planicies.
+
+
+Para acelerar a evolução do algoritmo como solução foi implementada na mutação, a mutação com melhoria genética onde o algorítimo ao realizar este operador genético ao invés de apenas realizar uma troca genética, ele procura fazer a troca dos genes, enviando as características de um gene para um lugar mais adequado que respeite a restrições do problema.
+
+A figura X representa a comparação entre o primeiro primeiro gráfico gerado com o parâmetro de mutação com a nova solução gerada através da utilização da melhoria genética. Podemos observar uma grande melhoria na evolução do algorítmo.
+
+
+Inicialmente o método de mutação com melhoria genética troca apenas um dos genes, foram então realizados testes trocando um gene, quatro genes e 10\% dos genes.O gráfico X mostra a comparação entre os três testes realizados. Podemos observar que quantos mais genes trocados durante a mutação maior é a evolução do algoritmo.
+
+Após a escolha do numero de genes a serem trocados durante a melhoria genética, foi realizado um novo teste que é a utilização do operador genético de mutação com o de crossover o resultado é apresentado na Figura X. Falar o que aconteceu.
+
+
+Logo em seguida foi aumentado o número de gerações para descobrir se o algoritmo encontraria a melhor solução e o mesmo encontro em X. O resultado pode ser encontrado no APENDICE X
+
+
+Após está bateria de testes para descobrir sobre os passos dados pelo algoritmo foi realizado um teste com a carga completa que é XXXXXX.
+
+Com o total de X horas e X gerações o algoritmo encontro a melhor solução que se encontra no APENDICE X.
+
+%\include{texto/introducao}
+%\include{texto/kdd}
+%\include{texto/mineracao}
+%\include{texto/dw}
+%\include{texto/sqlserver}
+%\include{texto/inep}
+%\include{texto/metodologia}
+%\include{texto/desenvolvimento}
+%\include{texto/conclusao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% PÓS-TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bibliografia no arquivo 'monografia.bib'
+\bibliography{monografia}
+
+%\apendice
+
+%\include{pos-texto/apendice}
+
+%\anexo
+
+%\include{pos-texto/anexo}
+
+\end{document}
+
+
+
+
