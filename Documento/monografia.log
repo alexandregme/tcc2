@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  21 NOV 2013 18:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.9.17)  24 NOV 2013 16:00
 entering extended mode
 **E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
 (E:/TI/Desenvolvimento/GitHub/tcc2/Documento/monografia.tex
@@ -496,49 +496,481 @@ Package caption Info: End \AtBeginDocument code.
 \MPscratchDim=\dimen123
 \MPnumerator=\count107
 \everyMPtoPDFconversion=\toks21
-)
-Cap\'{\i }tulo 1.
+) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apresentacao.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
-<imagens/parametrosDoAlgoritimo.png, id=1, 262.73157pt x 257.46187pt>
-File: imagens/parametrosDoAlgoritimo.png Graphic file (type png)
- <use imagens/parametrosDoAlgoritimo.png>
-Package pdftex.def Info: imagens/parametrosDoAlgoritimo.png used on input line 27.
-(pdftex.def)             Requested size: 131.36545pt x 128.7306pt.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+ [1
+
+
+{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 33.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 33.
+ [2] [3] [4] [5] [6]
+Overfull \hbox (4.6042pt too wide) in paragraph at lines 73--74
+\OT1/ptm/m/n/12 Palavras-chave:  Ao fi-nal do re-sumo deve-se ela-bo-rar palavras-chave re-pre-sen-ta-ti-vas do conte[]udo
+ []
+
+[7] [8] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.lof
+Overfull \hbox (5.84384pt too wide) detected at line 14
+\OT1/ptm/m/n/12 FIGURA  10  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 15
+\OT1/ptm/m/n/12 FIGURA  11  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 16
+\OT1/ptm/m/n/12 FIGURA  12  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 17
+\OT1/ptm/m/n/12 FIGURA  13  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 18
+\OT1/ptm/m/n/12 FIGURA  14  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 19
+\OT1/ptm/m/n/12 FIGURA  15  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 21
+\OT1/ptm/m/n/12 FIGURA  16  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 23
+\OT1/ptm/m/n/12 FIGURA  17  --   
+ []
+
+
+Overfull \hbox (5.84384pt too wide) detected at line 24
+\OT1/ptm/m/n/12 FIGURA  18  --   
+ []
+
+)
+\tf@lof=\write3
+ [9] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.lot)
+\tf@lot=\write4
+ [10] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.loac)
+\tf@loac=\write5
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--89
+
+ []
+
+[11]) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\introducao.tex (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.toc)
+\tf@toc=\write6
+ [12
+
+
+] [13]
+Cap\'{\i }tulo 1.
+[14
+
+] [15]) [16] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex
+Cap\'{\i }tulo 2.
+
+LaTeX Warning: Reference `fig:representacaoLocal' on page 17 undefined on input line 11.
+
+<imagens/problemaOtimizacao.png, id=55, 593.96906pt x 362.85562pt>
+File: imagens/problemaOtimizacao.png Graphic file (type png)
+ <use imagens/problemaOtimizacao.png>
+Package pdftex.def Info: imagens/problemaOtimizacao.png used on input line 17.
+(pdftex.def)             Requested size: 326.68399pt x 199.5712pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
- [1{C:/Users/Alexandre/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 18.
+ [17
 
 
- <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/parametrosDoAlgoritimo.png>] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [2]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 22.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 22.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 22.
- [3
 
 ]
+Overfull \hbox (4.15863pt too wide) in paragraph at lines 28--28
+\OT1/ptm/m/n/12 otimiza[][]ao com-bi-nat[]oria po-dem acon-te-cer em di-ver-sas []areas, pro-je-tos de sis-te-mas de distribui[][]ao
+ []
+
+[18 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/problemaOtimizacao.png>]
+
+LaTeX Warning: Reference `fig:buscaTabu' on page 19 undefined on input line 53.
+
+[19]
+Overfull \hbox (3.23485pt too wide) in paragraph at lines 55--56
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 AR-MEN-TANO; BRAN-CHINI\OT1/ptm/m/n/12 , 2013) o al-go-ritmo tem um in-ten-sivo uso de mem[]oria
+ []
+
+
+Overfull \hbox (9.83441pt too wide) in paragraph at lines 59--60
+[]\OT1/ptm/m/n/12 Ainda se-gundo (\OT1/ptm/m/n/10 AR-MEN-TANO; BRAN-CHINI\OT1/ptm/m/n/12 , 2013) uma ca-rac-ter[]stica im-por-tante do m[]etodo
+ []
+
+[20]
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex:68: Package inputenc Error: Unicode char \u8:âˆ† not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.tex:68: Package inputenc Error: Unicode char \u8:âˆ† not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Reference `fig:resozimentoSimulado' on page 21 undefined on input line 71.
+
+[21]
+Overfull \hbox (1.6055pt too wide) in paragraph at lines 84--84
+[]\OT1/ptm/m/n/12 Segundo (\OT1/ptm/m/n/10 OLI-VEIRA\OT1/ptm/m/n/12 , 2005), o pro-cesso de evolu[][]ao exe-cu-tado por um al-go-ritmo gen[]etico
+ []
+
+<imagens/ag.png, id=74, 537.50812pt x 322.20375pt>
+File: imagens/ag.png Graphic file (type png)
+ <use imagens/ag.png>
+Package pdftex.def Info: imagens/ag.png used on input line 90.
+(pdftex.def)             Requested size: 376.25311pt x 225.54108pt.
+
+
+LaTeX Warning: Reference `fig:ag' on page 22 undefined on input line 96.
+
+[22 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/ag.png>]
+
+LaTeX Warning: Reference `fig:pontoCorteAG' on page 23 undefined on input line 107.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 110.
+<imagens/crossoverAG.png, id=78, 313.9228pt x 143.03438pt>
+File: imagens/crossoverAG.png Graphic file (type png)
+ <use imagens/crossoverAG.png>
+Package pdftex.def Info: imagens/crossoverAG.png used on input line 113.
+(pdftex.def)             Requested size: 219.74446pt x 100.12337pt.
+ [23]
+Overfull \hbox (3.81163pt too wide) in paragraph at lines 124--124
+\OT1/ptm/m/n/12 tamb[]em co-nhe-ci-dos como \OT1/ptm/m/it/12 Ti-me-Ta-bling\OT1/ptm/m/n/12 , s[]ao os pro-ble-mas que mais se des-ta-cam nas organiza[][]oes
+ []
+
+[24 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/crossoverAG.png>] [25]) [26] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex
+Cap\'{\i }tulo 3.
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:7: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:7: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+<imagens/mensagemJava.png, id=93, 477.28313pt x 69.25874pt>
+File: imagens/mensagemJava.png Graphic file (type png)
+ <use imagens/mensagemJava.png>
+Package pdftex.def Info: imagens/mensagemJava.png used on input line 13.
+(pdftex.def)             Requested size: 381.82701pt x 55.40706pt.
+
+
+LaTeX Warning: Citation `play' on page 27 undefined on input line 18.
+
+<imagens/mensagemPlay.png, id=94, 478.78876pt x 161.85469pt>
+File: imagens/mensagemPlay.png Graphic file (type png)
+ <use imagens/mensagemPlay.png>
+Package pdftex.def Info: imagens/mensagemPlay.png used on input line 24.
+(pdftex.def)             Requested size: 383.03152pt x 129.4839pt.
+ [27
+
+
+
+ <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/mensagemJava.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/mensagemPlay.png>]
+Overfull \hbox (4.92317pt too wide) in paragraph at lines 37--38
+\OT1/ptm/m/n/12 HEUR[]ISTICA E M[]ETODO MISTO NA OTIMIZA[][]AO DA PROGRAMA[][]AO DE HOR[]ARIO
+ []
+
+
+Overfull \hbox (58.82884pt too wide) in paragraph at lines 39--40
+[]\OT1/ptm/m/n/12 restri[][]oes do pro-blema e mo-delo ma-te-ma-tico http://www.dcc.ufla.br/infocomp/artigos/v4.3/art08.pdf 
+ []
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.tex:44: Misplaced alignment tab character &
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[28] [29]
+Overfull \hbox (2.06952pt too wide) in paragraph at lines 87--87
+[]\OT1/ptm/m/n/12 As fer-ra-men-tes de Front-end des-cri-tas abaixo, fo-ram es-co-lhi-das de-vida a gande utiliza[][]ao
+ []
+
+
+Overfull \hbox (11.18895pt too wide) in paragraph at lines 103--103
+[]\OT1/ptm/m/n/12 O Eclipse []e uma IDE (\OT1/ptm/m/it/12 in-te-gra-ted de-ve-lop-ment en-vi-ron-ment\OT1/ptm/m/n/12 ). Di-fe-rente de uma RAD(\OT1/ptm/m/it/12 Rapid
+ []
+
+[30]) [31] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex
+Cap\'{\i }tulo 4.
+
+LaTeX Warning: Reference `fig:casodeuso' on page 32 undefined on input line 10.
+
+<imagens/diagramaCasoUso.png, id=111, 702.37407pt x 539.01375pt>
+File: imagens/diagramaCasoUso.png Graphic file (type png)
+ <use imagens/diagramaCasoUso.png>
+Package pdftex.def Info: imagens/diagramaCasoUso.png used on input line 16.
+(pdftex.def)             Requested size: 351.18617pt x 269.50621pt.
+
+Overfull \hbox (15.09128pt too wide) in paragraph at lines 20--20
+\OT1/ptm/m/it/12 ate, Read, Up-date, De-lete \OT1/ptm/m/n/12 (CRUD) para que o res-pons[]avel te-nha to-tal con-trole so-bre as informa[][]oes
+ []
+
+[32
+
+
+
+]
+
+LaTeX Warning: Reference `fig:der' on page 33 undefined on input line 26.
+
+<imagens/diagramaEntidadeRelacionamento.png, id=116, 852.93657pt x 745.28438pt>
+File: imagens/diagramaEntidadeRelacionamento.png Graphic file (type png)
+ <use imagens/diagramaEntidadeRelacionamento.png>
+Package pdftex.def Info: imagens/diagramaEntidadeRelacionamento.png used on input line 32.
+(pdftex.def)             Requested size: 426.46724pt x 372.64128pt.
+ [33 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaCasoUso.png>]
+
+LaTeX Warning: Reference `fig:dc' on page 34 undefined on input line 48.
+
+<imagens/diagramaClasse.png, id=121, 738.50906pt x 761.84625pt>
+File: imagens/diagramaClasse.png Graphic file (type png)
+ <use imagens/diagramaClasse.png>
+Package pdftex.def Info: imagens/diagramaClasse.png used on input line 53.
+(pdftex.def)             Requested size: 369.25363pt x 380.9222pt.
+ [34 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaEntidadeRelacionamento.png>]
+
+LaTeX Warning: Reference `fig:gene' on page 35 undefined on input line 63.
+
+[35 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/diagramaClasse.png>] <imagens/representacaoGene.png, id=130, 310.15875pt x 137.7647pt>
+File: imagens/representacaoGene.png Graphic file (type png)
+ <use imagens/representacaoGene.png>
+Package pdftex.def Info: imagens/representacaoGene.png used on input line 72.
+(pdftex.def)             Requested size: 217.10963pt x 96.43462pt.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 78.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: Please use \mathaccent for accents in math mode
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: You can't use `\spacefactor' in display math mode
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 78.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: Please use \mathaccent for accents in math mode
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: You can't use `\spacefactor' in display math mode
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 78.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: Please use \mathaccent for accents in math mode
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: You can't use `\spacefactor' in display math mode
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 78.
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: Please use \mathaccent for accents in math mode
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.tex:78: You can't use `\spacefactor' in display math mode
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+Missing character: There is no è in font cmex10!
+
+LaTeX Warning: Reference `fig:cromossomo' on page 36 undefined on input line 80.
+
+<imagens/representacaoCromossomo.png, id=131, 426.84468pt x 45.92157pt>
+File: imagens/representacaoCromossomo.png Graphic file (type png)
+ <use imagens/representacaoCromossomo.png>
+Package pdftex.def Info: imagens/representacaoCromossomo.png used on input line 86.
+(pdftex.def)             Requested size: 341.47621pt x 36.73729pt.
+
+
+LaTeX Warning: Reference `fig:individuo' on page 36 undefined on input line 90.
+
+<imagens/representacaoIndividuo.png, id=132, 480.29437pt x 63.23625pt>
+File: imagens/representacaoIndividuo.png Graphic file (type png)
+ <use imagens/representacaoIndividuo.png>
+Package pdftex.def Info: imagens/representacaoIndividuo.png used on input line 96.
+(pdftex.def)             Requested size: 384.23601pt x 50.58905pt.
+ [36 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoGene.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoCromossomo.png>] [37 <E:/TI/Desenvolvimento/GitHub/tc
+c2/Documento/imagens/representacaoIndividuo.png>]
+
+LaTeX Warning: Reference `fig:mutacao' on page 38 undefined on input line 121.
+
+<imagens/representacaoMutacao.png, id=144, 484.81125pt x 158.09062pt>
+File: imagens/representacaoMutacao.png Graphic file (type png)
+ <use imagens/representacaoMutacao.png>
+Package pdftex.def Info: imagens/representacaoMutacao.png used on input line 127.
+(pdftex.def)             Requested size: 339.36555pt x 110.66267pt.
+
+
+LaTeX Warning: Reference `fig:antesCross' on page 38 undefined on input line 133.
+
+<imagens/individuosAntesInsersaoGenetica.png, id=145, 539.76656pt x 150.5625pt>
+File: imagens/individuosAntesInsersaoGenetica.png Graphic file (type png)
+ <use imagens/individuosAntesInsersaoGenetica.png>
+Package pdftex.def Info: imagens/individuosAntesInsersaoGenetica.png used on input line 139.
+(pdftex.def)             Requested size: 377.83401pt x 105.39302pt.
+
+
+LaTeX Warning: Reference `fig:materialPai' on page 38 undefined on input line 143.
+
+[38 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/representacaoMutacao.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/individuosAntesInsersaoGenetica.png>]
+<imagens/individuosAposInsersaoGenetica.png, id=149, 536.0025pt x 143.78719pt>
+File: imagens/individuosAposInsersaoGenetica.png Graphic file (type png)
+ <use imagens/individuosAposInsersaoGenetica.png>
+Package pdftex.def Info: imagens/individuosAposInsersaoGenetica.png used on input line 149.
+(pdftex.def)             Requested size: 321.60397pt x 86.27296pt.
+
+
+LaTeX Warning: Reference `fig:materialMae' on page 39 undefined on input line 153.
+
+<imagens/insersaoMaterialMae.png, id=150, 543.53062pt x 147.55125pt>
+File: imagens/insersaoMaterialMae.png Graphic file (type png)
+ <use imagens/insersaoMaterialMae.png>
+Package pdftex.def Info: imagens/insersaoMaterialMae.png used on input line 159.
+(pdftex.def)             Requested size: 380.46883pt x 103.28516pt.
+ [39 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/individuosAposInsersaoGenetica.png> <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/insersaoMaterialMae.png>]
+
+LaTeX Warning: Reference `fig:novaPopulacao' on page 40 undefined on input line 176.
+
+<imagens/fluxoNovaPopulacao.png, id=154, 621.82312pt x 864.22874pt>
+File: imagens/fluxoNovaPopulacao.png Graphic file (type png)
+ <use imagens/fluxoNovaPopulacao.png>
+Package pdftex.def Info: imagens/fluxoNovaPopulacao.png used on input line 182.
+(pdftex.def)             Requested size: 310.9108pt x 432.11331pt.
+
+
+LaTeX Warning: Reference `fig:fluxoAlgoritmo' on page 40 undefined on input line 188.
+
+[40] <imagens/fluxoAlgoritimo.png, id=158, 683.55376pt x 672.26157pt>
+File: imagens/fluxoAlgoritimo.png Graphic file (type png)
+ <use imagens/fluxoAlgoritimo.png>
+Package pdftex.def Info: imagens/fluxoAlgoritimo.png used on input line 194.
+(pdftex.def)             Requested size: 478.48438pt x 470.57988pt.
+
+Overfull \hbox (23.24026pt too wide) in paragraph at lines 194--195
+ [][] 
+ []
+
+) [41 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoNovaPopulacao.png>] [42 <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/fluxoAlgoritimo.png>]
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.tex
+Cap\'{\i }tulo 5.
+<imagens/parametrosDoAlgoritimo.png, id=167, 262.73157pt x 257.46187pt>
+File: imagens/parametrosDoAlgoritimo.png Graphic file (type png)
+ <use imagens/parametrosDoAlgoritimo.png>
+Package pdftex.def Info: imagens/parametrosDoAlgoritimo.png used on input line 12.
+(pdftex.def)             Requested size: 131.36545pt x 128.7306pt.
+ [43
+
+
+
+ <E:/TI/Desenvolvimento/GitHub/tcc2/Documento/imagens/parametrosDoAlgoritimo.png>]
+Cap\'{\i }tulo 6.
+) [44
+
+]
+Cap\'{\i }tulo 7.
+File: imagens/parametrosDoAlgoritimo.png Graphic file (type png)
+<use imagens/parametrosDoAlgoritimo.png>
+Package pdftex.def Info: imagens/parametrosDoAlgoritimo.png used on input line 27.
+(pdftex.def)             Requested size: 131.36545pt x 128.7306pt.
+ [45
+
+
+] [46] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.bbl [47] [48
+
+] [49]
 Underfull \hbox (badness 1496) in paragraph at lines 204--207
 []\OT1/ptm/m/n/12 POSTGRESQL. \OT1/ptm/m/it/12 So-bre o Post-greSQL\OT1/ptm/m/n/12 . 2013. Dis-pon[]vel em: 
  []
 
-[4]) [5] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux) ) 
+) [50] (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\monografia.aux (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\apresentacao.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\introducao.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\referencial.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\metodologia.aux) (E:\TI\Desenvolvimento\GitHub\tcc2\Documento\sistema.aux)
+(E:\TI\Desenvolvimento\GitHub\tcc2\Documento\conclusao.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4427 strings out of 493921
- 66785 string characters out of 3144864
- 132830 words of memory out of 3000000
- 7647 multiletter control sequences out of 15000+200000
- 15011 words of font info for 34 fonts, out of 3000000 for 9000
+ 4607 strings out of 493921
+ 72200 string characters out of 3144864
+ 133830 words of memory out of 3000000
+ 7764 multiletter control sequences out of 15000+200000
+ 19950 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,6n,43p,930b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on monografia.pdf (5 pages, 85536 bytes).
+ 43i,7n,43p,1315b,342s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on monografia.pdf (50 pages, 882277 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
+ 229 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

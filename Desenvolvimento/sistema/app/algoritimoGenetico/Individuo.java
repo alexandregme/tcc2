@@ -101,31 +101,6 @@ public class Individuo implements Cloneable {
 
 		float fitness01 = 0, fitness02 = 0, fitness03 = 0;
 
-		for (Gene g : cromossomo) {
-
-			if (g.getDisciplinaHorario() != null) {
-
-				if ((g.getHorario().id == g.getDisciplinaHorario().horario.id) && (g.getDiaSemana() == g.getDisciplinaHorario().dia)) {
-
-					countTotalAlocados++;
-
-				}
-
-				if (g.getSala().vagas >= g.getDisciplinaHorario().disciplina.vagas) {
-
-					// contator para as salas que atendem a capacidade
-					countCapacidade++;
-
-				}
-
-			}
-
-		}
-
-		fitness01 = (countTotalAlocados * 100) / parametros.listHorarioDisciplina.size();
-
-		fitness02 = (countCapacidade * 100) / parametros.listHorarioDisciplina.size();
-
 		// penalidade para disciplinas fora da mesma sala
 
 		for (Disciplina d : parametros.listDisciplinas) {
@@ -135,6 +110,19 @@ public class Individuo implements Cloneable {
 			for (Gene g : this.cromossomo) {
 
 				if ((g.getDisciplinaHorario() != null) && (g.getDisciplinaHorario().disciplina.id == d.id)) {
+
+					if ((g.getHorario().id == g.getDisciplinaHorario().horario.id) && (g.getDiaSemana() == g.getDisciplinaHorario().dia)) {
+
+						countTotalAlocados++;
+
+					}
+
+					if (g.getSala().vagas >= g.getDisciplinaHorario().disciplina.vagas) {
+
+						// contator para as salas que atendem a capacidade
+						countCapacidade++;
+
+					}
 
 					if (salaAnterior == null) {
 
@@ -161,9 +149,13 @@ public class Individuo implements Cloneable {
 
 		}// fim for disciplina
 
+		fitness01 = (countTotalAlocados * 100) / parametros.listHorarioDisciplina.size();
+
+		fitness02 = (countCapacidade * 100) / parametros.listHorarioDisciplina.size();
+
 		fitness03 = (countSala * 100) / parametros.listHorarioDisciplina.size();
 
-		this.fitness = ((fitness01 + fitness02 + fitness03)/3) ;
+		this.fitness = ((fitness01 + fitness02 + fitness03) / 3);
 
 		print();
 
