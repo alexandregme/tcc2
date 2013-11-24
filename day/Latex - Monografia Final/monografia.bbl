@@ -1,0 +1,83 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Cardoso 2008]{Cat2008}
+\abntrefinfo{Cardoso}{CARDOSO}{2008}
+{CARDOSO, O. N.~P. et~al. {Gest\~{a}o do conhecimento usando data mining :
+  estudo de caso na Universidade Federal de Lavras *}.
+v.~42, n.~3, p. 495--528, 2008.}
+
+\bibitem[Date 2000]{Date2000}
+\abntrefinfo{Date}{DATE}{2000}
+{DATE, C.~J. \emph{{Introdu\c{c}\~{a}o a Sistemas de Banco de Dados}}. [S.l.:
+  s.n.], 2000.
+ISBN 8535205608.}
+
+\bibitem[Fayyad 1996]{Fayyad1996}
+\abntrefinfo{Fayyad}{FAYYAD}{1996}
+{FAYYAD et~al. {From Data Mining to Knowledge Discovery in Databases}.
+p. 37--54, 1996.}
+
+\bibitem[Filho 2007]{Beatriz2007}
+\abntrefinfo{Filho}{FILHO}{2007}
+{FILHO, R. L. L. e.~S. et~al. {A evas\~{a}o no ensino superior Brasileiro}.
+\emph{Higher Education}, p. 641--659, 2007.}
+
+\bibitem[Han 2005]{Etal.Han2005}
+\abntrefinfo{Han}{HAN}{2005}
+{HAN et~al. \emph{{Data Mining Concepts and Techniques}}. [S.l.: s.n.], 2005.
+ISBN 9781558609013.}
+
+\bibitem[Inep 2012]{Inep2012}
+\abntrefinfo{Inep}{INEP}{2012}
+{INEP. \emph{{Censo da educa\c{c}\~{a}o superior: 2010 – resumo t\'{e}cnico.}}
+  Bras\'{\i}lia: [s.n.], 2012.
+ISBN 9788578630188.}
+
+\bibitem[Inep 2011]{Inep2011}
+\abntrefinfo{Inep}{INEP}{2011}
+{INEP, M. \emph{{Censo da Educa\c{c}\~{a}o Superior}}. 2011.
+Dispon{\'\i}vel em:
+  $<$http://portal.inep.gov.br/web/censo-da-educacao-superior$>$.}
+
+\bibitem[Luan 2002]{Luan2004}
+\abntrefinfo{Luan}{LUAN}{2002}
+{LUAN, J. {Data mining applications in higher education}.
+\emph{SPSS Executive Report}, 2002.
+Dispon{\'\i}vel em:
+  $<$http://www.insol.lt/media/collateral/modeling/education.pdf$>$.}
+
+\bibitem[Mendes 1997]{Mendes1997}
+\abntrefinfo{Mendes}{MENDES}{1997}
+{MENDES, M. {A demanda por vagas no ensino superior: an\'{a}lise dos
+  vestibulares da ufmg na d\'{e}cada de 90}.
+p. 1--26, 1997.}
+
+\bibitem[Microsoft 2012]{OfficeOLAP}
+\abntrefinfo{Microsoft}{MICROSOFT}{2012}
+{MICROSOFT. \emph{{Vis\~{a}o geral do OLAP}}. 2012.
+Dispon{\'\i}vel em:
+  $<$http://office.microsoft.com/pt-br/excel-help/visao-geral-do-olap-processamento-analitico-online-HP010177437.aspx$>$.}
+
+\bibitem[MSDN 2012]{MSDNas}
+\abntrefinfo{MSDN}{MSDN}{2012}
+{MSDN, M. \emph{{Analysis Services}}. 2012.
+Dispon{\'\i}vel em:
+  $<$http://msdn.microsoft.com/pt-br/library/bb522607.aspx$>$.}
+
+\bibitem[Pyle 1999]{Pyle1999}
+\abntrefinfo{Pyle}{PYLE}{1999}
+{PYLE et~al. \emph{{Data Preparation for Data Mining}}. [S.l.: s.n.], 1999.
+ISBN 4159822665.}
+
+\bibitem[Rebouças 2010]{Reboucas}
+\abntrefinfo{Rebouças}{REBOUçAS}{2010}
+{REBOUçAS, F. \emph{Data Warehouse}. 2010.
+Dispon{\'\i}vel em:
+  $<$http://www.infoescola.com/informatica/data-warehouse$>$.}
+
+\end{thebibliography}

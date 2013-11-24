@@ -1,0 +1,59 @@
+% Nome do capítulo
+\chapter{Introdução}
+% Label para referenciar
+\label{cap:introducao}
+% Diminuir espaçamento entre título e texto
+\vspace{-1.9cm}
+
+% Texto do capítulo
+A questão do acesso ao ensino superior brasileiro vêm sendo discutida como uma questão política brasileira. A partir dos anos 90 vêm se expandindo a quantidade de estudantes  que concluem o ensino médio. Esse crescimento deve-se à rede privada e as políticas implementadas no setor público pelo estado de Minas Gerais visando maior eficiência no ensino fundamental. Acrescido a isso, ações de âmbito universitário, como criação de novos cursos, aumento de vagas e facilidades nas inscrições ou realização das provas de vestibular estimulam a procura pela educação superior \cite{Mendes1997}. Como consequência, percebe-se um aumento na quantidade de ingressantes no ensino superior, conforme podemos ver na Tabela \ref{tab:ingressantes}. 
+
+% Tabela
+\begin{table}[htb]
+	\centering
+	\footnotesize
+	% Alterar espaçamentos antes e depois do caption
+	\setlength{\abovecaptionskip}{0pt}
+	\setlength{\belowcaptionskip}{3pt}
+	% Caption
+	\caption[Evolução do Número de Ingressos por Categoria Administrativa.]{\textbf{Evolução do Número de Ingressos por Categoria Administrativa – Brasil (2001-2010)}}
+	\label{tab:ingressantes}
+	% Conteúdo da tabela
+	\begin{tabular}{c}
+		% Arquivo da figura
+		\includegraphics[width=.8\textwidth]{imagem/Ingressos.png}
+		% Caption centralizada
+		\captionsetup{justification=centering}
+	\end{tabular}
+	% Fonte
+	\captionfont{\normalsize\\Fonte: \cite{Inep2012}.}
+\end{table}
+
+Um dos maiores desafios que o ensino superior enfrenta hoje é prever as decisões dos alunos. Instituições gostariam de saber, por exemplo, quais alunos irão se inscrever em cursos particulares, ou se existem alunos mais propensos realizar transferências do que outros. Além disso, a questão da gestão de inscrição continua a motivar as instituições de ensino superior procurar melhores soluções \cite{Luan2004}.
+
+Afim de oferecer informações detalhadas e tendências do setor, o \ac{Inep} realiza regularmente a coleta dos dados sobre a educação superior. Dentre os dados coletados podemos encontrar informações sobre as instituições de ensino superior, seus cursos, vagas ofertadas, número de inscrições, matrículas, ingressantes e concluintes. Esses dados são coletados através de questionários respondidos pelas \ac{IES}. Então, são publicados apenas como informações estatísticas mostrando, como exemplo, percentuais de crescimento do número de matrículas \cite{Inep2011}.
+
+Somente a coleta de dados não ajuda nas decisões das instituições. Para que exista melhoria no processo é necessário analisar os dados coletados e estabelecer indicadores, para então descobrir padrões que estavam ``escondidos'' entre os dados. Dada a quantidade e frequência de dados coletados é necessário despender um alto custo para se realizar toda análise em tempo hábil, sendo necessária a busca por ferramentas que automatizem esse processo. Afim de solucionar este problema, é oportuno utilizar-se a metodologia de \ac{DCBD} ou do termo mais conhecido em inglês \ac{KDD}. Com a utilização de técnicas como a mineração de dados, é possível explicitar o conhecimento antes oculto em grandes quantidades de informações. Através dessas técnicas podemos realizar análises dos dados, permitindo a previsão de tendências e comportamentos. Assim gerentes estratégicos podem tomar suas decisões baseadas nesses fatos descobertos e não mais em premissas \cite{Cat2008}.
+
+O \ac{KDD} possui várias etapas como: seleção de dados, limpeza e preparação dos dados, identificação de dados relevantes, \textit{data mining}, avaliação de padrões e apresentação de resultados. A mineração de dados é apenas uma etapa do processo de descoberta, que por sua vez é dividido em tarefas como: análise de regras de associação, classificação e predição, análise de padrões sequenciais, análise de agrupamentos e análise de exceções. Essas tarefas consistem respectivamente em encontrar itens que determinem a presença de outros, definir classes para objetos que ainda não foram analisados, encontrar comportamentos que ocorrem em sequência, identificar grupos com característica iguais e determinar itens que fogem do comportamento padrão da maioria \cite{Cat2008}.
+
+A demanda por cursos e a evasão estudantil são problemas que atingem instituições de ensino superior em geral \cite{Mendes1997, Beatriz2007}. Apesar da abundância de dados fornecida pelo \ac{Inep}, não é possível conhecer imediatamente as razões que geram esses problemas, para assim aplicar uma solução satisfatória de gestão. Tal quantidade de informações precisam passar por um processo de descoberta de conhecimento para trazerem à tona relações atualmente desconhecidas.
+
+Diversas universidades já realizaram mineração de dados em seus dados educacionais. Mendes (1997) elaborou um artigo analisando a demanda de vagas nos vestibulares da UFMG nos anos 90. Nesse estudo ele observou aspectos socioeconômicos dos candidatos, área de conhecimento mais aquecida no mercado e ações de âmbito universitário. Apesar de analisar os dados relativos às quantidade de alunos inscritos no vestibular, Mendes não analisa informações pós vestibular, como a quantidade de alunos efetivamente matriculados e valores relativos à alunos que conseguem concluir os cursos. Já Beatriz (2007) avança no ponto criticado anteriormente e publica seu trabalho sobre evasão brasileira no ensino superior. Ela correlaciona evasão e demanda, candidatos por vaga, em diversas áreas de conhecimento, regiões do país e categorias administrativas (púbico/privado). Apesar da relevância das informações, não é incluído no estudo uma proposta ou mesmo uma solução para o problema apresentado. Ramos (1996) teve como objeto de estudo a evasão dos cursos de graduação em IES públicas. Classificou as evasões em nível de curso, instituição e evasão a nível de sistema superior. Ele indica as possíveis causas das evasões classificado-as em três ordens: as que se relacionam ao estudante, ao curso e à instituição ou a fatores sócio-culturais e econômicos externos. Apesar de oferecer disgnósticos rigorosos não apresenta relatórios dimensionando as causa. Christine (2009), semelhante a proposta anterior, analisa os dados referente aos alunos de uma turma e conclui apresentando os motivos das evasões e as soluções cabíveis.
+
+Ao observar as soluções existentes para análise de dados educacionais percebemos que não existe um método automatizado para isso. São organizadas tabelas e gráficos como técnicas de descoberta de dados. Atualmente é possível a aplicação de ferramentas automáticas para extração de informações relevantes, como por exemplo, a extração de dados da plataforma \textit{Lattes} realizada por Cardoso (2008), que utilizou técnicas de \textit{data mining}. Juntamente à necessidade de automatização da descoberta de dados na área escolar percebemos que a PUC Minas ainda não possui um sistema para análise de demandas e evasões. Vê-se aí um ótimo cenário para suplantar as soluções existentes acrescentando o uso de uma metodologia automatizada visando um aumento eficaz de produtividade.
+
+
+
+% Nome do subcapitulo
+\section{Objetivo}
+%\chapter{Objetivo}
+% Label para referenciar
+\label{cap:objetivo}
+% Diminuir espacamento entre titulo e texto
+\vspace{0.3 cm}
+% Texto do subcapitulo
+
+O objetivo desse trabalho é aplicar as diversas etapas do processo de KDD em um banco com dados recebido pelo \ac{Inep}. Como foco desse banco teremos os alunos de sistema de informação da \ac{PUC Minas}. Assim será possível extrair conhecimento referente ao processo decisório da universidade quanto a esse curso. Será possível até mesmo estabelecer um modelo de gestão à instituição mencionada.
+
+Esse trabalho auxiliará no processo de descoberta do conhecimento, que pode servir de apoio à tomada de decisão, possibilitando aperfeiçoamento do sistema de ensino superior da instituição. Frequentemente más decisões são tomadas pela indisponibilidade do conhecimento para se escolher a melhor decisão \cite{Cat2008}. Obter uma reflexão sobre demanda e evasão nos últimos anos torna-se extremamente importante, permitindo a avaliação e possivelmente reformulação dos processos de seleção. Como também poderá ser possível dar mais suporte aos alunos, afim de que eles não abandonem o curso. Os estudantes serão qualificados garantindo bons resultados com a maior quantidade de diplomados. Portanto, as capacidades do \textit{data mining} aplicadas ao dados do ensino superior economizarão recursos, maximizarão a eficiência e aumentarão a produtividade sem aumentar os custos da instituição \cite{Luan2004}.

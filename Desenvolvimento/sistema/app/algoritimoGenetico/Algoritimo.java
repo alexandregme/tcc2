@@ -275,41 +275,38 @@ public class Algoritimo {
 
 		Individuo individuo = new Individuo((Individuo) p.getIndividuo(ri).clone());
 
-		for (int i = 0; i < 4; i++) {
+		boolean procurar = true;
 
-			boolean procurar = true;
+		Gene geneMutacao = null;
 
-			Gene geneMutacao = null;
+		int c1;
 
-			int c1;
+		do {
 
-			do {
+			c1 = r.nextInt(individuo.getCromossomo().size());
 
-				c1 = r.nextInt(individuo.getCromossomo().size());
+			geneMutacao = (Gene) individuo.getCromossomo().get(c1).clone();
 
-				geneMutacao = (Gene) individuo.getCromossomo().get(c1).clone();
+		} while (geneMutacao.getDisciplinaHorario() == null);
 
-			} while (geneMutacao.getDisciplinaHorario() == null);
+		while (procurar) {
 
-			while (procurar) {
+			int c2 = r.nextInt(individuo.getCromossomo().size());
 
-				int c2 = r.nextInt(individuo.getCromossomo().size());
+			Gene geneNovo = (Gene) individuo.getCromossomo().get(c2).clone();
 
-				Gene geneNovo = (Gene) individuo.getCromossomo().get(c2).clone();
+			if ((geneNovo.getSala().vagas >= geneMutacao.getDisciplinaHorario().disciplina.vagas) && (geneNovo.getHorario().id == geneMutacao.getDisciplinaHorario().horario.id)) {
 
-				if ((geneNovo.getSala().vagas >= geneMutacao.getDisciplinaHorario().disciplina.vagas) && (geneNovo.getHorario().id == geneMutacao.getDisciplinaHorario().horario.id)) {
+				DisciplinaHorario aux = individuo.getCromossomo().get(c1).getDisciplinaHorario();
 
-					DisciplinaHorario aux = individuo.getCromossomo().get(c1).getDisciplinaHorario();
+				individuo.getCromossomo().get(c1).setDisciplinaHorario(individuo.getCromossomo().get(c2).getDisciplinaHorario());
 
-					individuo.getCromossomo().get(c1).setDisciplinaHorario(individuo.getCromossomo().get(c2).getDisciplinaHorario());
+				individuo.getCromossomo().get(c2).setDisciplinaHorario(aux);
 
-					individuo.getCromossomo().get(c2).setDisciplinaHorario(aux);
-
-					procurar = false;
-
-				}
+				procurar = false;
 
 			}
+
 		}
 
 		return new Individuo((Individuo) individuo.clone());

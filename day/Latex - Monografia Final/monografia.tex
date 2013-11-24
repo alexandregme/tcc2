@@ -1,0 +1,208 @@
+% Modelo de Dissertacoes do Mestrado em Informatica da PUC
+\documentclass[a4paper,brazil,ruledheader,normaltoc,capchap]{abnt}
+
+%\usepackage{fancyhdr}
+
+% Usar a fonte Times New Roman
+\usepackage{pslatex}
+
+% Pacotes de codificacao das fontes para portugues
+\usepackage[T1]{fontenc}
+\usepackage[ansinew]{inputenc}
+
+%\usepackage{units}		% Utilize da seguinte forma  \unit[78,6]{mA}
+
+\usepackage[printonlyused]{acronym}
+
+% Merge em duas celulas (linhas diferentes)
+\usepackage{multirow}
+
+% Pacote para citacao e referencias seguindo ABNT no sistema (AUTOR, Data)
+\usepackage[alf]{abntcite}
+
+% Pacote para divisao silabica do portugues
+\usepackage[brazil]{babel}
+
+% Pacote de adequacao do formato ABNT para normas da PUCMinas
+\usepackage{abnt-PPGInf-PUCMG}
+
+% Pacotes utilitarios
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+
+\usepackage[all]{xy}
+\usepackage[tight]{subfigure}	% Permite a criacao de subfiguras
+%\usepackage{url,amsmath}		% Permite melhorias na codificacao de formulas
+%\usepackage{amsthm}			% Permite melhorias na escrita de teoremas
+%\usepackage{amssymb}			% Permite utlizacao de simbolos matematicos avancados
+
+\usepackage[english, linesnumbered, ruled, vlined]{algorithm2e}
+\usepackage{algorithmic} %algorithm
+\usepackage{listings}
+
+% Alterar o espacamento da margem no algoritmo
+\setlength{\algomargin}{1em}
+\usepackage{setspace}
+\usepackage{acronym}
+
+% Pacote para rotacao de tabelas/figuras
+\usepackage{rotating}
+
+% Pacotes para criacao de cronograma/tabela colorida
+%\usepackage{auto-pst-pdf}
+\usepackage{epstopdf}
+\usepackage{graphics}
+%\usepackage{pstricks}
+\usepackage{color}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{colortbl}
+
+%Suporte a visualiza��o landscape
+\usepackage{lscape}
+
+% Para inserir captions
+\usepackage[size=normalsize,bf,center]{caption}
+
+\setlength{\LTcapwidth}{\textwidth}
+
+\makeatletter
+\renewcommand\chapter{\par%
+  %\setcounter{page}{2}
+  \global\@topnum\z@
+  \@afterindentfalse
+  \secdef\@chapter\@schapter}
+\makeatother
+%\renewcommand{\ALG@name}{Algoritmo}
+%\renewcommand{\listalgorithmname}{Lista de Algoritmos}
+
+
+% Codigo
+\lstset{numbers=left,
+stepnumber=1,
+firstnumber=1,
+numberstyle=\tiny,
+extendedchars=true,
+breaklines=true,
+frame=htb,
+basicstyle=\footnotesize,
+stringstyle=\ttfamily,
+showstringspaces=false
+}
+%\renewcommand{\lstlistingname}{C+�digo}
+%\renewcommand{\lstlistlistingname}{Lista de C+�digos}
+\citeoption{abnt-etal-cite=3, abnt-and-type=e}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% PR�-TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% Alterar o t�tulo das refer�ncias para somente 'Refer�ncias'
+\renewcommand{\bibname}{Refer�ncias}
+
+\autor{Dayana Thalita Santos Viana}
+
+% Coloque o t�tulo em caixa alta. � o padr�o da PUC.
+% V� no arquivo abnt-PPGInf-PUCMG.sty e procure por esse t�tulo (linha 575). Altere para o seu t�tulo, sem ser em caixa alta. Isso ser� utilizado na folha de aprova��o.
+\titulo{PROCESSO DE KDD APLICADO AOS MICRODADOS DO CENSO DA EDUCA��O SUPERIOR DO INEP}
+
+\orientador[Orientador:]{Hugo Bastos de Paula}
+
+% Se n�o tiver, co-orientador, comente a pr�xima linha.
+%\coorientador[Co-orientador:]{Professor}
+
+% Texto
+\comentario{Monografia apresentada ao Curso de Sistemas de Informa��o da Pontif�cia Universidade Cat�lica de Minas Gerais, como requisito parcial para obten��o do t�tulo de Bacharel Sistemas de Informa��o.}
+
+% Institui��o
+\instituicao{PONTIF�CIA UNIVERSIDADE CAT�LICA DE MINAS GERAIS \par Bacharelado em Sistemas de Informa��o}
+
+% Local
+\local{Belo Horizonte}
+
+% Data
+\data{2012}
+
+% Gera a capa
+\capa
+
+% Gera a folha de rosto
+\folhaderosto
+
+% Ficha catalogr�fica
+% Deve ser impressa atr�s da folha de rosto!!!!
+%\include{pre-texto/ficha-catalografica}
+
+% Folha de aprova��o
+\include{pre-texto/folha-aprovacao}
+
+% Dedicat�ria
+\include{pre-texto/dedicatoria}
+
+% Agradecimentos
+\include{pre-texto/agradecimentos}
+
+% Ep�grafe
+\include{pre-texto/epigrafe}
+
+% Resumo
+\include{pre-texto/resumo}
+
+% Abstract
+%\include{pre-texto/abstract}
+
+% Lista de figuras
+\listoffigures
+
+% Lista de tabelas
+\listoftables
+
+% Lista de siglas
+\newpage
+\input{pre-texto/lista-siglas.tex}
+
+% Sum�rio
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+
+% Altere o numero da pagina para o correto. Conte todas as paginas, menos a capa, inclusive a ficha catalografica ate a pagina do primeiro capitulo.
+
+\newpage
+\pagenumbering{arabic}
+\pagestyle{myheadings}
+\setcounter{secnumdepth}{5}
+
+
+% Cap�tulos
+\include{texto/introducao}
+
+\cite{Date2000}
+
+\include{texto/kdd}
+\include{texto/mineracao}
+\include{texto/dw}
+\include{texto/sqlserver}
+\include{texto/inep}
+%\include{texto/metodologia}
+\include{texto/desenvolvimento}
+\include{texto/conclusao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% P�S-TEXTUAIS %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Bibliografia no arquivo 'monografia.bib'
+\bibliography{monografia}
+
+%\apendice
+
+%\include{pos-texto/apendice}
+
+%\anexo
+
+%\include{pos-texto/anexo}
+
+\end{document}
+
+
+
+
